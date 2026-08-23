@@ -1,0 +1,1393 @@
+[
+  {
+    "id": 1,
+    "title": "De los datos operativos a la información confiable",
+    "duracion": "45 a 60 min",
+    "dificultad": "Inicial",
+    "objetivos": [
+      "Diferenciar datos, información e indicadores.",
+      "Explicar qué significa preparar datos.",
+      "Distinguir entre captura, preparación, análisis y presentación.",
+      "Identificar problemas de calidad y estructura en archivos operativos.",
+      "Reconocer los riesgos de la preparación manual.",
+      "Comprender la importancia de conservar los datos originales.",
+      "Identificar actividades repetitivas que pueden automatizarse.",
+      "Reconocer que las reglas de preparación dependen del contexto de cada área."
+    ],
+    "situacion": "Todos los departamentos generan datos durante sus actividades cotidianas.",
+    "secciones": [
+      {
+        "num": "1",
+        "title": "¿Qué son los datos?",
+        "para": "Los datos son representaciones de hechos, eventos, cantidades, características o condiciones."
+      },
+      {
+        "num": "2",
+        "title": "¿Qué es la información?",
+        "para": "La información surge cuando los datos se organizan, relacionan y presentan dentro de un contexto."
+      },
+      {
+        "num": "3",
+        "title": "Datos, información e indicadores",
+        "para": "Los datos organizados pueden utilizarse para calcular indicadores."
+      },
+      {
+        "num": "4",
+        "title": "¿Qué significa preparar datos?",
+        "para": "Preparar datos significa aplicar reglas para que puedan utilizarse de forma consistente en un análisis, reporte o proceso."
+      },
+      {
+        "num": "5",
+        "title": "Capturar, preparar, analizar y presentar",
+        "para": "Estas actividades forman parte del trabajo con información, pero no significan lo mismo."
+      },
+      {
+        "num": "6",
+        "title": "¿Por qué un archivo puede no estar listo?",
+        "para": "Un archivo puede contener datos reales y, aun así, presentar problemas para su análisis."
+      }
+    ],
+    "resumen": [
+      "Los datos necesitan estructura y contexto para convertirse en información.",
+      "Los indicadores se construyen a partir de datos preparados y validados.",
+      "Preparar datos significa limpiarlos, estructurarlos y estandarizarlos.",
+      "Capturar, preparar, analizar y presentar son actividades diferentes.",
+      "Un archivo puede contener datos reales y no estar listo para utilizarse.",
+      "Los problemas de calidad pueden afectar la completitud, consistencia, exactitud, validez, unicidad y oportunidad.",
+      "La preparación manual consume tiempo y puede producir resultados variables.",
+      "Deben separarse los datos originales, las reglas de preparación y el resultado.",
+      "Un proceso repetible conserva y ejecuta nuevamente las mismas reglas.",
+      "Power Query permite crear consultas actualizables con pasos de transformación. [\\[power-query.pdf \\| PDF\\]](https://organizacionpinsa-my.sharepoint.com/personal/smoreno_pinsa_com/Documents/Archivos%20de%20chat%20de%20Microsoft%C2%A0Copilot/power-query.pdf)",
+      "El significado de duplicados, vacíos y errores cambia según el proceso.",
+      "El especialista del área debe definir las reglas de negocio.",
+      "Automatizar un procedimiento incorrecto puede repetir errores.",
+      "Todo proceso de preparación necesita controles de validación."
+    ],
+    "quiz": [
+      {
+        "q": "¿Cuál afirmación describe mejor la preparación de datos?",
+        "opts": [
+          "Cambiar colores y tamaños de fuente.",
+          "Aplicar reglas para que los datos puedan utilizarse consistentemente.",
+          "Crear una presentación.",
+          "Capturar nuevamente toda la información."
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Cuál actividad corresponde a la preparación?",
+        "opts": [
+          "Registrar una factura.",
+          "Calcular el cumplimiento mensual.",
+          "Estandarizar nombres de departamentos.",
+          "Crear un gráfico."
+        ],
+        "correct": 2
+      },
+      {
+        "q": "¿Qué debe hacerse antes de eliminar duplicados?",
+        "opts": [
+          "Ordenar los datos alfabéticamente.",
+          "Cambiar todos los campos a texto.",
+          "Definir qué combinación identifica un registro único.",
+          "Eliminar los valores vacíos."
+        ],
+        "correct": 2
+      },
+      {
+        "q": "Una actualización sin errores significa que:",
+        "opts": [
+          "Los resultados siempre son correctos.",
+          "Las reglas se ejecutaron, pero el resultado todavía debe validarse.",
+          "No existen datos duplicados.",
+          "Todos los campos están completos."
+        ],
+        "correct": 1
+      }
+    ],
+    "files": [
+      "M01_L01_Registro_Solicitudes_Internas.xlsx"
+    ],
+    "badgeIcon": "clipboard-list",
+    "badgeDesc": "Diagnóstico de datos antes de transformar."
+  },
+  {
+    "id": 2,
+    "title": "¿Qué es Power Query?",
+    "duracion": "50 a 70 min",
+    "dificultad": "Inicial",
+    "objetivos": [
+      "Definir qué es Power Query.",
+      "Explicar qué problemas ayuda a resolver.",
+      "Reconocer Power Query como una herramienta de preparación de datos.",
+      "Comprender qué es una consulta.",
+      "Identificar el origen, la consulta, las transformaciones y el destino.",
+      "Diferenciar Power Query de Excel y Power BI.",
+      "Reconocer las experiencias de Power Query Desktop y Power Query Online.",
+      "Comprender la relación inicial entre la interfaz gráfica y el lenguaje M."
+    ],
+    "situacion": "En la lección anterior identificamos que diferentes departamentos necesitan preparar información antes de generar sus reportes.",
+    "secciones": [
+      {
+        "num": "1",
+        "title": "¿Qué es Power Query?",
+        "para": "Power Query es una tecnología de conectividad, preparación y transformación de datos desarrollada por Microsoft."
+      },
+      {
+        "num": "2",
+        "title": "¿Qué problemas ayuda a resolver?",
+        "para": "Power Query resulta especialmente útil cuando una actividad presenta una o varias de las siguientes condiciones:"
+      },
+      {
+        "num": "3",
+        "title": "Power Query no es solamente una herramienta de limpieza",
+        "para": "Es frecuente describir Power Query como una herramienta para limpiar datos. Esa definición es parcialmente correcta, pero limitada."
+      },
+      {
+        "num": "4",
+        "title": "Los cuatro componentes básicos",
+        "para": "Una solución básica de Power Query puede explicarse mediante cuatro componentes."
+      },
+      {
+        "num": "5",
+        "title": "¿Qué es una consulta?",
+        "para": "Una consulta es un conjunto de instrucciones que Power Query utiliza para obtener y transformar datos."
+      },
+      {
+        "num": "6",
+        "title": "La consulta como instrucción de trabajo",
+        "para": "En un contexto operativo, una consulta puede compararse con una instrucción de trabajo."
+      }
+    ],
+    "resumen": [
+      "Power Query permite obtener, preparar, transformar y cargar datos.",
+      "Una consulta contiene las instrucciones del proceso.",
+      "El origen proporciona los datos.",
+      "Las transformaciones preparan la información.",
+      "El destino recibe el resultado.",
+      "Cada transformación se registra como un paso.",
+      "El orden de los pasos puede modificar el resultado.",
+      "La interfaz gráfica genera instrucciones en lenguaje M.",
+      "Actualizar significa ejecutar nuevamente la consulta.",
+      "Los cambios de datos suelen ser diferentes de los cambios de estructura.",
+      "Power Query está integrado en Excel, Power BI y servicios en línea.",
+      "Power Query no sustituye las reglas del negocio ni la validación.",
+      "Una consulta debe diseñarse con un resultado y controles definidos.",
+      "Los problemas recurrentes también deben corregirse en el origen."
+    ],
+    "quiz": [
+      {
+        "q": "Una consulta es:",
+        "opts": [
+          "Una copia permanente del archivo.",
+          "Un conjunto de instrucciones para obtener y transformar datos.",
+          "Una presentación de PowerPoint.",
+          "Un gráfico de Excel."
+        ],
+        "correct": 1
+      },
+      {
+        "q": "Actualizar una consulta significa:",
+        "opts": [
+          "Cambiar los colores de la tabla.",
+          "Volver a ejecutar las instrucciones sobre los datos disponibles.",
+          "Crear un archivo nuevo manualmente.",
+          "Eliminar el archivo original."
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Cuál es un cambio de estructura?",
+        "opts": [
+          "Agregar diez registros.",
+          "Cambiar un estatus.",
+          "Eliminar una columna utilizada por la consulta.",
+          "Actualizar una cantidad."
+        ],
+        "correct": 2
+      },
+      {
+        "q": "¿Qué genera Power Query al aplicar transformaciones visuales?",
+        "opts": [
+          "Fórmulas DAX exclusivamente.",
+          "Código VBA.",
+          "Instrucciones en lenguaje M.",
+          "Diapositivas."
+        ],
+        "correct": 2
+      },
+      {
+        "q": "¿Cuál afirmación es correcta?",
+        "opts": [
+          "Power Query sustituye al especialista.",
+          "Una consulta ejecutada sin errores siempre produce información correcta.",
+          "Power Query aplica reglas que deben definirse y validarse.",
+          "Power Query solo sirve para inventarios."
+        ],
+        "correct": 2
+      }
+    ],
+    "files": [
+      "M01_L02_Mi_Primera_Consulta_Conceptual.xlsx"
+    ],
+    "badgeIcon": "workflow",
+    "badgeDesc": "Origen, consulta, transformaciones y destino."
+  },
+  {
+    "id": 3,
+    "title": "Introducción al proceso ETL",
+    "duracion": "60 a 80 min",
+    "dificultad": "Inicial",
+    "objetivos": [
+      "Explicar el significado de ETL.",
+      "Diferenciar extracción, transformación y carga.",
+      "Clasificar actividades dentro de cada etapa.",
+      "Identificar los componentes de un proceso ETL.",
+      "Reconocer la importancia de validar las entradas y los resultados.",
+      "Distinguir entre origen, transformación, resultado y presentación.",
+      "Documentar un proceso ETL antes de construirlo.",
+      "Identificar riesgos relacionados con rutas, estructuras y tipos de datos."
+    ],
+    "situacion": "Una organización genera información desde diferentes departamentos:",
+    "secciones": [
+      {
+        "num": "1",
+        "title": "¿Qué significa ETL?",
+        "para": "ETL es un acrónimo formado por tres términos en inglés:"
+      },
+      {
+        "num": "2",
+        "title": "ETL no es únicamente tecnología",
+        "para": "Aunque ETL se relaciona con herramientas y sistemas, también representa una forma de organizar un proceso."
+      },
+      {
+        "num": "4",
+        "title": "Segunda etapa: transformación",
+        "para": "**4.1 ¿Qué es la transformación?**"
+      },
+      {
+        "num": "6",
+        "title": "El proceso ETL como flujo completo",
+        "para": "Un proceso ETL no debe diseñarse como una colección desordenada de acciones."
+      },
+      {
+        "num": "7",
+        "title": "ETL y ELT",
+        "para": "Además de ETL, en algunos contextos puede encontrarse el término ELT:"
+      },
+      {
+        "num": "8",
+        "title": "Validaciones dentro del proceso ETL",
+        "para": "La validación no debe dejarse únicamente para el final."
+      }
+    ],
+    "resumen": [
+      "ETL significa extraer, transformar y cargar.",
+      "La extracción permite acceder a los datos necesarios.",
+      "La transformación aplica reglas de preparación.",
+      "La carga entrega el resultado a un destino.",
+      "La carga no debe confundirse con el análisis o la presentación.",
+      "El diseño debe comenzar con el resultado esperado.",
+      "Cada transformación debe responder a una regla.",
+      "El origen debe conservarse siempre que sea posible.",
+      "La granularidad define lo que representa una fila.",
+      "Las claves permiten identificar y relacionar registros.",
+      "La validación debe aplicarse en cada etapa.",
+      "Las excepciones pueden separarse para su revisión.",
+      "La actualización ejecuta nuevamente las instrucciones.",
+      "Las estructuras y rutas deben mantenerse o administrarse.",
+      "Un proceso ETL debe documentarse antes de automatizarse.",
+      "Power Query permite desarrollar estos procesos mediante consultas y pasos aplicados. [\\[power-query.pdf \\| PDF\\]](https://organizacionpinsa-my.sharepoint.com/personal/smoreno_pinsa_com/Documents/Archivos%20de%20chat%20de%20Microsoft%C2%A0Copilot/power-query.pdf)"
+    ],
+    "quiz": [
+      {
+        "q": "¿Cuál actividad pertenece a la extracción?",
+        "opts": [
+          "Corregir una fecha.",
+          "Conectarse a un archivo.",
+          "Calcular una clasificación.",
+          "Crear un gráfico."
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Cuál actividad pertenece a la transformación?",
+        "opts": [
+          "Seleccionar la ruta del archivo.",
+          "Proporcionar credenciales.",
+          "Estandarizar departamentos.",
+          "Cargar una tabla en Excel."
+        ],
+        "correct": 2
+      },
+      {
+        "q": "¿Qué representa la granularidad?",
+        "opts": [
+          "El color de la tabla.",
+          "El nivel de detalle de cada fila.",
+          "La contraseña de la conexión.",
+          "La fecha de actualización."
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Cuál es una buena práctica para los registros problemáticos?",
+        "opts": [
+          "Eliminarlos inmediatamente.",
+          "Ocultarlos.",
+          "Separarlos como excepciones para revisión.",
+          "Convertir todos sus campos a texto."
+        ],
+        "correct": 2
+      },
+      {
+        "q": "¿Qué debe diseñarse primero?",
+        "opts": [
+          "Los colores del reporte.",
+          "El resultado esperado y sus validaciones.",
+          "El código M avanzado.",
+          "La cantidad de consultas."
+        ],
+        "correct": 1
+      }
+    ],
+    "files": [
+      "M01_L03_Mi_Proceso_ETL.xlsx"
+    ],
+    "badgeIcon": "route",
+    "badgeDesc": "Extracción, transformación y carga."
+  },
+  {
+    "id": 4,
+    "title": "Origen, conector, consulta y destino",
+    "duracion": "70 a 90 min",
+    "dificultad": "Inicial",
+    "objetivos": [
+      "Diferenciar archivo, libro, hoja, rango y tabla.",
+      "Explicar qué es un origen de datos.",
+      "Comprender la función de un conector.",
+      "Identificar los parámetros básicos de una conexión.",
+      "Reconocer la ventana Navegador.",
+      "Seleccionar correctamente un objeto de datos.",
+      "Diferenciar **Cargar** y **Transformar datos**.",
+      "Crear una consulta básica desde una tabla de Excel."
+    ],
+    "situacion": "Una persona recibe el archivo:",
+    "secciones": [
+      {
+        "num": "1",
+        "title": "Componentes de una solución básica",
+        "para": "Una solución inicial de Power Query contiene:"
+      },
+      {
+        "num": "2",
+        "title": "Archivo, libro, hoja, rango y tabla",
+        "para": "Aunque estos términos se utilizan frecuentemente como sinónimos, no representan lo mismo."
+      },
+      {
+        "num": "3",
+        "title": "¿Qué es un origen de datos?",
+        "para": "Un origen de datos es el recurso desde el cual Power Query obtiene información."
+      },
+      {
+        "num": "4",
+        "title": "¿Qué es un conector?",
+        "para": "Un conector es el componente que permite a Power Query comunicarse con un tipo específico de origen."
+      },
+      {
+        "num": "6",
+        "title": "Ruta de acceso",
+        "para": "La ruta indica dónde se encuentra el origen."
+      },
+      {
+        "num": "7",
+        "title": "El Navegador",
+        "para": "Después de conectarse a ciertos orígenes, Power Query muestra la ventana"
+      }
+    ],
+    "resumen": [
+      "El archivo contiene el libro de Excel.",
+      "El libro puede contener hojas, rangos y tablas.",
+      "Una tabla es normalmente un origen más estable que una hoja desorganizada.",
+      "El origen contiene la información.",
+      "El conector permite acceder al origen.",
+      "La conexión puede requerir rutas, credenciales y otros parámetros.",
+      "El Navegador permite seleccionar objetos.",
+      "La vista previa ayuda a revisar la estructura.",
+      "**Cargar** envía los datos al destino.",
+      "**Transformar datos** abre el Editor.",
+      "El destino recibe el resultado.",
+      "Origen, consulta y destino deben identificarse por separado.",
+      "Las rutas personales dificultan compartir soluciones.",
+      "Los cambios de estructura pueden afectar la actualización.",
+      "Los nombres descriptivos facilitan el mantenimiento.",
+      "La primera consulta debe probarse con registros nuevos."
+    ],
+    "quiz": [
+      {
+        "q": "¿Qué objeto es normalmente más conveniente como origen en Excel?",
+        "opts": [
+          "Una imagen.",
+          "Una tabla con encabezados.",
+          "Una portada.",
+          "Un gráfico."
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué es un conector?",
+        "opts": [
+          "El reporte final.",
+          "El mecanismo para acceder a un tipo de origen.",
+          "Una fórmula de Excel.",
+          "Una tabla dinámica."
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Cuál es el principal riesgo de una ruta personal?",
+        "opts": [
+          "La tabla tendrá demasiados colores.",
+          "Otros usuarios podrían no tener acceso.",
+          "Excel cambiará los datos.",
+          "Power Query eliminará el archivo."
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué opción abre el Editor?",
+        "opts": [
+          "Cargar.",
+          "Transformar datos.",
+          "Guardar como.",
+          "Imprimir."
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué sucede con modificaciones manuales realizadas sobre la salida?",
+        "opts": [
+          "Siempre se conservan.",
+          "Pueden perderse al actualizar.",
+          "Se convierten automáticamente en pasos.",
+          "Modifican el origen."
+        ],
+        "correct": 1
+      }
+    ],
+    "files": [
+      "M01_L04_Registro_Solicitudes_Internas.xlsx"
+    ],
+    "badgeIcon": "plug",
+    "badgeDesc": "Archivo, hoja, tabla, conector y Navegador."
+  },
+  {
+    "id": 5,
+    "title": "Primer recorrido por el Editor de Power Query",
+    "duracion": "80 a 100 min",
+    "dificultad": "Inicial",
+    "objetivos": [
+      "Reconocer las áreas principales del Editor de Power Query.",
+      "Utilizar la cinta de opciones.",
+      "Navegar entre consultas.",
+      "Interpretar la vista previa de datos.",
+      "Trabajar con el panel Configuración de consulta.",
+      "Revisar la secuencia de Pasos aplicados.",
+      "Mostrar e interpretar la barra de fórmulas.",
+      "Comprender la información de la barra de estado."
+    ],
+    "situacion": "En la lección anterior, el participante creó una consulta desde una tabla de Excel denominada:",
+    "secciones": [
+      {
+        "num": "1",
+        "title": "¿Qué es el Editor de Power Query?",
+        "para": "El Editor de Power Query es el entorno de trabajo donde se crean, revisan y modifican las consultas."
+      },
+      {
+        "num": "2",
+        "title": "La cinta de opciones",
+        "para": "La cinta de opciones contiene las principales herramientas del Editor."
+      },
+      {
+        "num": "3",
+        "title": "Panel de consultas",
+        "para": "El panel situado a la izquierda contiene las consultas disponibles."
+      },
+      {
+        "num": "4",
+        "title": "Vista previa de datos",
+        "para": "La sección central muestra el resultado del paso seleccionado."
+      },
+      {
+        "num": "5",
+        "title": "Selección de columnas",
+        "para": "Muchas transformaciones dependen de la columna seleccionada."
+      },
+      {
+        "num": "6",
+        "title": "El panel Configuración de consulta",
+        "para": "El panel derecho muestra información de la consulta seleccionada."
+      }
+    ],
+    "resumen": [
+      "El Editor es el espacio donde se desarrollan las consultas.",
+      "La cinta contiene las principales acciones.",
+      "El panel de consultas permite navegar y organizar.",
+      "La vista previa muestra el resultado del paso seleccionado.",
+      "Configuración de consulta contiene propiedades y pasos.",
+      "Cada paso representa una transformación.",
+      "Los pasos forman una secuencia dependiente.",
+      "Seleccionar un paso muestra un estado intermedio.",
+      "La barra de fórmulas muestra la expresión M.",
+      "El Editor avanzado muestra el código completo.",
+      "La barra de estado ofrece información contextual.",
+      "Los tipos deben definirse según la función del campo.",
+      "Los códigos deben conservarse como texto cuando corresponda.",
+      "Los filtros necesitan una regla documentada.",
+      "La vista previa no sustituye la validación completa.",
+      "La actualización vuelve a ejecutar todos los pasos.",
+      "Las modificaciones manuales de la salida pueden perderse.",
+      "Los errores deben localizarse desde el primer paso afectado."
+    ],
+    "quiz": [
+      {
+        "q": "¿Qué muestra la vista previa?",
+        "opts": [
+          "Únicamente los datos originales.",
+          "El resultado del paso seleccionado.",
+          "El archivo físico completo.",
+          "Solo los errores."
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué muestra la barra de fórmulas?",
+        "opts": [
+          "La expresión M del paso seleccionado.",
+          "La ruta de impresión.",
+          "Una tabla dinámica.",
+          "El gráfico del reporte."
+        ],
+        "correct": 0
+      },
+      {
+        "q": "¿Qué ocurre si se elimina un paso del cual dependen otros?",
+        "opts": [
+          "Nunca sucede nada.",
+          "Los pasos posteriores pueden presentar errores.",
+          "Se elimina el archivo original.",
+          "La consulta se convierte en tabla."
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué tipo debe usarse normalmente para un folio con ceros iniciales?",
+        "opts": [
+          "Número entero.",
+          "Número decimal.",
+          "Texto.",
+          "Fecha."
+        ],
+        "correct": 2
+      },
+      {
+        "q": "¿Qué debe hacerse con el paso Tipo cambiado?",
+        "opts": [
+          "Eliminarlo siempre.",
+          "Revisarlo conforme al significado de las columnas.",
+          "Ignorarlo.",
+          "Convertir todas las columnas a texto."
+        ],
+        "correct": 1
+      }
+    ],
+    "files": [
+      "M01_L05_Registro_Solicitudes_Internas.xlsx"
+    ],
+    "badgeIcon": "layout-panel-left",
+    "badgeDesc": "Cinta, pasos aplicados y primera transformación."
+  },
+  {
+    "id": 6,
+    "title": "Tipos de datos y calidad de la información",
+    "duracion": "90 a 120 min",
+    "dificultad": "Inicial",
+    "objetivos": [
+      "Explicar qué es un tipo de dato.",
+      "Diferenciar texto, números, fechas, horas, duraciones y valores lógicos.",
+      "Seleccionar el tipo correcto según la función de cada campo.",
+      "Distinguir entre cero, texto vacío, valor nulo y error.",
+      "Identificar errores de conversión.",
+      "Comprender el efecto de la configuración regional.",
+      "Utilizar las herramientas de calidad, distribución y perfil de columnas.",
+      "Detectar valores incompletos, inconsistentes y potencialmente inválidos."
+    ],
+    "situacion": "Un archivo de solicitudes internas contiene los siguientes registros:",
+    "secciones": [
+      {
+        "num": "1",
+        "title": "¿Qué es un tipo de dato?",
+        "para": "Un tipo de dato es una clasificación que indica cómo debe interpretar y procesar Power Query los valores de una columna."
+      },
+      {
+        "num": "2",
+        "title": "¿Por qué son importantes los tipos?",
+        "para": "Los tipos de datos influyen en:"
+      },
+      {
+        "num": "4",
+        "title": "El paso automático Tipo cambiado",
+        "para": "Al conectarse a algunos orígenes, Power Query puede intentar detectar automáticamente los tipos."
+      },
+      {
+        "num": "5",
+        "title": "Vacío, cadena vacía, nulo y cero",
+        "para": "Estos conceptos no deben confundirse."
+      },
+      {
+        "num": "6",
+        "title": "¿Qué es un error?",
+        "para": "Un error aparece cuando Power Query no puede evaluar un valor o ejecutar correctamente una operación."
+      },
+      {
+        "num": "7",
+        "title": "Error no significa eliminar",
+        "para": "Un error aporta información sobre un problema."
+      }
+    ],
+    "resumen": [
+      "El tipo indica cómo debe interpretarse un valor.",
+      "El significado del campo determina el tipo correcto.",
+      "Los códigos y folios suelen tratarse como texto.",
+      "Los números representan cantidades calculables.",
+      "Fecha, hora y duración son conceptos diferentes.",
+      "Los valores lógicos representan dos estados.",
+      "El tipo cualquiera debe revisarse.",
+      "El paso Tipo cambiado puede contener inferencias incorrectas.",
+      "Cero, vacío, espacio, nulo y error no significan lo mismo.",
+      "Un error debe investigarse antes de eliminarse.",
+      "La configuración regional afecta fechas y números.",
+      "La calidad incluye completitud, consistencia, validez, unicidad, exactitud y oportunidad.",
+      "La calidad de columnas identifica valores válidos, errores y vacíos.",
+      "La distribución muestra frecuencias, distintos y únicos.",
+      "El perfil proporciona estadísticas detalladas.",
+      "El perfilado puede usar una muestra o el conjunto completo.",
+      "Los registros problemáticos pueden separarse para revisión.",
+      "Power Query aplica reglas técnicas, pero el especialista define la validez de negocio."
+    ],
+    "quiz": [
+      {
+        "q": "El folio 00125 debe mantenerse como:",
+        "opts": [
+          "Número entero.",
+          "Número decimal.",
+          "Texto.",
+          "Porcentaje."
+        ],
+        "correct": 2
+      },
+      {
+        "q": "¿Qué representa null?",
+        "opts": [
+          "Cero.",
+          "Ausencia de valor.",
+          "Texto vacío.",
+          "Valor falso."
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué debe hacerse antes de eliminar un error?",
+        "opts": [
+          "Ordenar la tabla.",
+          "Investigar el valor y la causa.",
+          "Cambiar toda la columna a texto.",
+          "Eliminar la consulta."
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué puede afectar una configuración regional incorrecta?",
+        "opts": [
+          "Solo los colores.",
+          "Fechas y números.",
+          "El nombre de la consulta.",
+          "El número de pasos."
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué significa que un valor sea válido para el tipo?",
+        "opts": [
+          "Que necesariamente es correcto para el negocio.",
+          "Que puede procesarse conforme al tipo asignado.",
+          "Que es único.",
+          "Que no requiere validación."
+        ],
+        "correct": 1
+      }
+    ],
+    "files": [
+      "M01_L06_Registro_Solicitudes_Calidad.xlsx"
+    ],
+    "badgeIcon": "ruler",
+    "badgeDesc": "Tipos de datos, nulos, errores y perfilado."
+  },
+  {
+    "id": 7,
+    "title": "Transformaciones fundamentales",
+    "duracion": "110 a 140 min",
+    "dificultad": "Inicial",
+    "objetivos": [
+      "Preparar una tabla desorganizada para su análisis.",
+      "Promover correctamente una fila como encabezados.",
+      "Quitar filas superiores, inferiores y completamente vacías.",
+      "Seleccionar y retirar columnas.",
+      "Cambiar nombres de columnas.",
+      "Limpiar y recortar valores de texto.",
+      "Estandarizar categorías mediante reemplazos.",
+      "Filtrar registros con reglas documentadas."
+    ],
+    "situacion": "Un archivo mensual contiene solicitudes de diferentes departamentos. Antes de los encabezados aparecen:",
+    "secciones": [
+      {
+        "num": "1",
+        "title": "¿Qué es una transformación?",
+        "para": "Una transformación es una operación que modifica la estructura, el contenido o la selección de los datos dentro de una consulta."
+      },
+      {
+        "num": "2",
+        "title": "Preparar la estructura antes de limpiar valores",
+        "para": "Antes de corregir textos, fechas o cantidades, es necesario comprobar que la tabla tenga una estructura adecuada."
+      },
+      {
+        "num": "5",
+        "title": "Quitar filas inferiores",
+        "para": "Esta transformación se utiliza cuando la tabla contiene al final:"
+      },
+      {
+        "num": "6",
+        "title": "Quitar filas completamente vacías",
+        "para": "Power Query puede eliminar filas en las que todos los campos están vacíos."
+      },
+      {
+        "num": "8",
+        "title": "Renombrar columnas",
+        "para": "Los nombres de columna deben ser:"
+      },
+      {
+        "num": "9",
+        "title": "Reordenar columnas",
+        "para": "El orden de las columnas no siempre afecta el cálculo, pero puede mejorar la comprensión del resultado."
+      }
+    ],
+    "resumen": [
+      "Las transformaciones modifican la estructura, contenido o selección.",
+      "La estructura debe prepararse antes de limpiar valores.",
+      "Los títulos deben retirarse antes de promover encabezados.",
+      "Solo las filas completamente vacías pueden eliminarse sin afectar registros parciales.",
+      "Elegir columnas ofrece mayor control sobre la salida.",
+      "Los nombres de columna deben ser claros y estables.",
+      "Limpiar y recortar resuelven problemas diferentes.",
+      "La capitalización no sustituye un catálogo.",
+      "Los reemplazos deben aplicarse a columnas y valores controlados.",
+      "Los filtros necesitan una regla permanente.",
+      "Ordenar no equivale a quitar duplicados.",
+      "Los duplicados dependen de la granularidad y de una clave.",
+      "Rellenar requiere comprender la estructura del archivo.",
+      "Los errores deben investigarse antes de quitarlos.",
+      "Las excepciones deben conservarse cuando requieran revisión.",
+      "Cada transformación debe documentarse y validarse.",
+      "Los registros de entrada y salida deben conciliarse.",
+      "La consulta debe probarse con nuevos datos.",
+      "**Preparación de estructura**, 8 a 10 minutos.",
+      "**Encabezados y filas**, 8 a 12 minutos.",
+      "**Selección y nombres de columnas**, 7 a 9 minutos.",
+      "**Limpiar y recortar texto**, 7 a 10 minutos.",
+      "**Estandarizar y reemplazar valores**, 10 a 12 minutos.",
+      "**Filtrar y ordenar**, 8 a 10 minutos.",
+      "**Duplicados y claves**, 10 a 14 minutos.",
+      "**Rellenar valores**, 6 a 8 minutos.",
+      "**Tratamiento de errores**, 8 a 12 minutos.",
+      "**Práctica guiada completa**, 25 a 35 minutos."
+    ],
+    "quiz": [
+      {
+        "q": "¿Cuándo deben promoverse los encabezados?",
+        "opts": [
+          "Antes de revisar la tabla.",
+          "Cuando la primera fila de datos contiene los nombres correctos.",
+          "Después de cargar el resultado.",
+          "Siempre al abrir Power Query."
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué elimina Recortar?",
+        "opts": [
+          "Todos los espacios internos.",
+          "Los espacios iniciales y finales.",
+          "Todas las letras.",
+          "Los valores nulos."
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué debe definirse antes de quitar duplicados?",
+        "opts": [
+          "El color de la tabla.",
+          "La clave y granularidad.",
+          "El nombre del archivo.",
+          "La hoja de carga."
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Cuándo debe utilizarse Rellenar hacia abajo?",
+        "opts": [
+          "En todas las columnas vacías.",
+          "Cuando la estructura confirma que el valor superior aplica a las filas siguientes.",
+          "Para sustituir errores.",
+          "Antes de promover encabezados."
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué debe hacerse con un error sin causa identificada?",
+        "opts": [
+          "Eliminarlo siempre.",
+          "Reemplazarlo por cero.",
+          "Conservarlo o separarlo para revisión.",
+          "Cambiar toda la columna a texto."
+        ],
+        "correct": 2
+      }
+    ],
+    "files": [
+      "M01_L07_Registro_Solicitudes_Desordenado.xlsx"
+    ],
+    "badgeIcon": "wand-2",
+    "badgeDesc": "Encabezados, filtros, duplicados y relleno."
+  },
+  {
+    "id": 8,
+    "title": "Administración de Pasos aplicados",
+    "duracion": "100 a 130 min",
+    "dificultad": "Inicial-Intermedia",
+    "objetivos": [
+      "Explicar qué representa un paso aplicado.",
+      "Comprender la dependencia entre pasos.",
+      "Navegar por los estados intermedios de una consulta.",
+      "Editar la configuración de un paso.",
+      "Renombrar pasos para documentar reglas de negocio.",
+      "Agregar descripciones cuando la versión lo permita.",
+      "Insertar un paso intermedio.",
+      "Mover pasos de forma controlada."
+    ],
+    "situacion": "Una consulta denominada:",
+    "secciones": [
+      {
+        "num": "1",
+        "title": "¿Qué representa un paso aplicado?",
+        "para": "Un paso aplicado es una instrucción que recibe el resultado del paso anterior, realiza una operación y genera un nuevo resultado."
+      },
+      {
+        "num": "2",
+        "title": "Dependencia entre pasos",
+        "para": "Cada paso suele hacer referencia al resultado del paso anterior."
+      },
+      {
+        "num": "3",
+        "title": "Navegar entre pasos",
+        "para": "Seleccionar un paso permite revisar el resultado de la consulta hasta ese punto."
+      },
+      {
+        "num": "4",
+        "title": "Componentes de un paso",
+        "para": "Según la experiencia de Power Query, un paso puede contener:"
+      },
+      {
+        "num": "5",
+        "title": "Editar la configuración de un paso",
+        "para": "Algunos pasos cuentan con un icono de engrane."
+      },
+      {
+        "num": "6",
+        "title": "No todos los pasos tienen configuración visual",
+        "para": "Algunos pasos no muestran engrane porque:"
+      }
+    ],
+    "resumen": [
+      "Cada paso recibe el resultado del anterior.",
+      "Los pasos forman una cadena de dependencias.",
+      "La navegación permite revisar estados intermedios.",
+      "Algunos pasos tienen configuración editable.",
+      "Los nombres deben explicar reglas relevantes.",
+      "Las descripciones aportan contexto.",
+      "Insertar un paso puede afectar los posteriores.",
+      "Mover un paso puede cambiar la lógica.",
+      "Eliminar un paso puede romper dependencias.",
+      "Eliminar hasta el final requiere un respaldo.",
+      "Extraer pasos anteriores ayuda a dividir consultas.",
+      "Una consulta puede separarse por origen, limpieza, validación y salida.",
+      "No todos los pasos repetidos son redundantes.",
+      "Los pasos técnicos y de negocio requieren diferente documentación.",
+      "El diagnóstico debe comenzar en el primer paso que falla.",
+      "Una consulta puede ejecutarse sin errores y producir un resultado lógico incorrecto.",
+      "Las modificaciones deben ir acompañadas de conciliación.",
+      "La documentación facilita mantenimiento, auditoría y colaboración."
+    ],
+    "quiz": [
+      {
+        "q": "¿Qué ocurre cuando se selecciona un paso anterior?",
+        "opts": [
+          "Se eliminan los pasos posteriores.",
+          "Se muestra el estado de los datos hasta ese paso.",
+          "Se modifica el origen.",
+          "Se carga la consulta."
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué hace Eliminar hasta el final?",
+        "opts": [
+          "Elimina únicamente el primer paso.",
+          "Elimina el paso seleccionado y los posteriores.",
+          "Elimina el archivo fuente.",
+          "Elimina todas las consultas."
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué debe hacerse antes de mover un paso?",
+        "opts": [
+          "Cambiar todas las columnas a texto.",
+          "Revisar sus dependencias.",
+          "Eliminar los pasos posteriores.",
+          "Cargar el resultado."
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Cuál es la primera acción para diagnosticar?",
+        "opts": [
+          "Reemplazar todos los errores.",
+          "Identificar el último paso que funciona.",
+          "Eliminar la consulta.",
+          "Cambiar la ruta."
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Por qué documentar un paso de negocio?",
+        "opts": [
+          "Para cambiar su color.",
+          "Para explicar la regla, su motivo y validación.",
+          "Para reducir las filas.",
+          "Para evitar la actualización."
+        ],
+        "correct": 1
+      }
+    ],
+    "files": [
+      "M01_L08_Consulta_Pasos_Aplicados.xlsx"
+    ],
+    "badgeIcon": "list-tree",
+    "badgeDesc": "Insertar, mover, eliminar y diagnosticar pasos."
+  },
+  {
+    "id": 9,
+    "title": "Actualización y repetibilidad",
+    "duracion": "100 a 130 min",
+    "dificultad": "Inicial-Intermedia",
+    "objetivos": [
+      "Explicar qué sucede durante la actualización de una consulta.",
+      "Comprender el concepto de repetibilidad.",
+      "Diferenciar entre actualización, modificación y rediseño.",
+      "Distinguir un cambio de datos de un cambio de estructura.",
+      "Reconocer el efecto de nuevas filas, valores y categorías.",
+      "Identificar cambios de ruta, archivo, hoja y tabla.",
+      "Reconocer problemas de credenciales, permisos y privacidad.",
+      "Diseñar escenarios de prueba."
+    ],
+    "situacion": "La consulta:",
+    "secciones": [
+      {
+        "num": "1",
+        "title": "¿Qué significa actualizar?",
+        "para": "Actualizar una consulta significa volver a ejecutar sus instrucciones utilizando los datos disponibles en el origen."
+      },
+      {
+        "num": "2",
+        "title": "Actualización frente a rediseño",
+        "para": "No todos los cambios requieren reconstruir una consulta."
+      },
+      {
+        "num": "3",
+        "title": "¿Qué significa repetibilidad?",
+        "para": "Un proceso es repetible cuando puede ejecutarse nuevamente bajo las mismas reglas y producir un resultado consistente."
+      },
+      {
+        "num": "5",
+        "title": "Cambio de datos",
+        "para": "Un cambio de datos modifica el contenido, pero conserva la estructura."
+      },
+      {
+        "num": "6",
+        "title": "Nueva categoría",
+        "para": "Un cambio de datos aparentemente sencillo puede afectar las reglas."
+      },
+      {
+        "num": "7",
+        "title": "Cambio de estructura",
+        "para": "Un cambio de estructura modifica la organización esperada del origen."
+      }
+    ],
+    "resumen": [
+      "Actualizar significa volver a ejecutar la consulta.",
+      "La repetibilidad conserva reglas y produce resultados controlables.",
+      "Actualización, mantenimiento y rediseño son acciones diferentes.",
+      "Los cambios de datos suelen conservar la estructura.",
+      "Las categorías nuevas deben validarse.",
+      "Los cambios de estructura pueden afectar pasos y objetos.",
+      "Las columnas adicionales deben controlarse.",
+      "Las columnas faltantes pueden romper dependencias.",
+      "Renombrar una columna equivale a cambiar su identidad técnica.",
+      "El archivo y la tabla son dependencias diferentes.",
+      "Las rutas deben ser controladas y compartibles.",
+      "Las credenciales y permisos condicionan la actualización.",
+      "La privacidad afecta la combinación de orígenes.",
+      "Los cambios silenciosos pueden producir resultados incorrectos sin errores.",
+      "Una consulta estable ha sido documentada y probada.",
+      "Las pruebas deben incluir escenarios normales y excepcionales.",
+      "La actualización debe validarse mediante conteos, totales y distribuciones.",
+      "Las incidencias deben registrarse.",
+      "La salida no debe utilizarse como fuente de captura.",
+      "Las responsabilidades deben distribuirse entre origen, consulta y resultado."
+    ],
+    "quiz": [
+      {
+        "q": "Actualizar una consulta significa:",
+        "opts": [
+          "Copiar manualmente las filas nuevas.",
+          "Volver a ejecutar las instrucciones sobre el origen.",
+          "Cambiar el formato de la tabla.",
+          "Crear una consulta diferente."
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Cuál es un cambio de estructura?",
+        "opts": [
+          "Un estatus actualizado.",
+          "Una cantidad nueva.",
+          "Una columna renombrada.",
+          "Un registro adicional."
+        ],
+        "correct": 2
+      },
+      {
+        "q": "¿Qué debe hacerse con una categoría nueva?",
+        "opts": [
+          "Eliminarla automáticamente.",
+          "Validarla contra las reglas y catálogos.",
+          "Convertirla en cero.",
+          "Ocultarla."
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Cuál es un ejemplo de cambio silencioso?",
+        "opts": [
+          "Un archivo inexistente.",
+          "Una contraseña incorrecta.",
+          "Una unidad de medida diferente que conserva tipo numérico.",
+          "Una columna eliminada que genera error."
+        ],
+        "correct": 2
+      },
+      {
+        "q": "¿Qué debe hacerse después de actualizar?",
+        "opts": [
+          "Confiar en que el proceso es correcto.",
+          "Validar conteos, totales, categorías y excepciones.",
+          "Eliminar el origen.",
+          "Modificar la salida manualmente."
+        ],
+        "correct": 1
+      }
+    ],
+    "files": [
+      "M01_L09_Datos_Periodo_01.xlsx",
+      "M01_L09_Datos_Periodo_02.xlsx",
+      "M01_L09_Matriz_Pruebas.xlsx"
+    ],
+    "badgeIcon": "refresh-cw",
+    "badgeDesc": "Actualización, cambios de estructura y pruebas."
+  },
+  {
+    "id": 10,
+    "title": "Validación y buenas prácticas iniciales",
+    "duracion": "100 a 130 min",
+    "dificultad": "Inicial-Intermedia",
+    "objetivos": [
+      "Explicar por qué una consulta sin errores técnicos todavía puede ser incorrecta.",
+      "Diseñar controles de entrada, transformación y salida.",
+      "Conciliar registros entre el origen y el resultado.",
+      "Validar cantidades, importes, horas y otros totales.",
+      "Identificar valores vacíos, nulos y errores.",
+      "Definir controles de unicidad y duplicidad.",
+      "Documentar los registros excluidos.",
+      "Crear conceptualmente una consulta de excepciones."
+    ],
+    "situacion": "La consulta:",
+    "secciones": [
+      {
+        "num": "1",
+        "title": "¿Qué significa validar una consulta?",
+        "para": "Validar una consulta significa comprobar que:"
+      },
+      {
+        "num": "3",
+        "title": "Validación por etapas",
+        "para": "Los controles deben distribuirse a lo largo del proceso ETL."
+      },
+      {
+        "num": "4",
+        "title": "Conciliación de registros",
+        "para": "Conciliar significa explicar la relación entre los registros recibidos y los resultados generados."
+      },
+      {
+        "num": "5",
+        "title": "Excluir no significa perder",
+        "para": "Un registro puede no formar parte del resultado principal y, aun así, necesitar conservarse."
+      },
+      {
+        "num": "6",
+        "title": "Consulta de excepciones",
+        "para": "Una consulta de excepciones contiene registros que no cumplen una o varias reglas."
+      },
+      {
+        "num": "7",
+        "title": "Valores vacíos y campos obligatorios",
+        "para": "No todos los valores vacíos tienen el mismo impacto."
+      }
+    ],
+    "resumen": [
+      "Una consulta sin errores no siempre es correcta.",
+      "La validación debe ser técnica y de negocio.",
+      "Deben existir controles de entrada, transformación y salida.",
+      "Toda diferencia entre entrada y salida debe poder explicarse.",
+      "Las excepciones deben conservarse.",
+      "Los campos obligatorios necesitan reglas.",
+      "Los duplicados dependen de una clave.",
+      "Los totales deben validarse conforme al proceso.",
+      "Un total general correcto puede ocultar distribuciones incorrectas.",
+      "Las fechas deben validarse por periodo y secuencia.",
+      "Los catálogos permiten detectar valores no autorizados.",
+      "La estructura final debe estar documentada.",
+      "La nomenclatura facilita el mantenimiento.",
+      "Las consultas deben organizarse según su función.",
+      "Las consultas auxiliares no siempre necesitan carga visible.",
+      "La documentación debe incluir propósito, origen, reglas y validaciones.",
+      "El control de versiones registra cambios.",
+      "La salida debe contener únicamente la información necesaria.",
+      "Una consulta debe pasar una lista de liberación.",
+      "El resultado puede aprobarse, condicionarse o rechazarse."
+    ],
+    "quiz": [
+      {
+        "q": "Una consulta actualiza sin errores. Esto significa que:",
+        "opts": [
+          "El resultado necesariamente es correcto.",
+          "La ejecución técnica terminó, pero todavía debe validarse.",
+          "No existen duplicados.",
+          "Todos los registros son válidos."
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué debe ocurrir con una excepción?",
+        "opts": [
+          "Eliminarse sin registro.",
+          "Conservarse y clasificarse para revisión.",
+          "Convertirse en cero.",
+          "Mezclarse con los registros válidos."
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué debe producir la conciliación?",
+        "opts": [
+          "Una diferencia sin explicar.",
+          "Una explicación completa de entrada, exclusiones y salida.",
+          "Solamente el total final.",
+          "Una tabla sin errores visibles."
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Por qué se revisan distribuciones?",
+        "opts": [
+          "Para cambiar colores.",
+          "Para detectar cambios internos aunque el total coincida.",
+          "Para eliminar columnas.",
+          "Para reducir el archivo."
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué significa minimizar información?",
+        "opts": [
+          "Borrar todos los registros.",
+          "Conservar únicamente los campos necesarios para el propósito.",
+          "Convertir todo en resumen.",
+          "Ocultar errores."
+        ],
+        "correct": 1
+      }
+    ],
+    "files": [
+      "M01_L10_Ficha_Conciliacion.xlsx",
+      "M01_L10_Lista_Liberacion.xlsx",
+      "M01_L10_Registro_Excepciones.xlsx"
+    ],
+    "badgeIcon": "check-circle-2",
+    "badgeDesc": "Conciliación, excepciones y lista de liberación."
+  },
+  {
+    "id": 11,
+    "title": "Práctica integradora del Módulo 1",
+    "duracion": "180 a 240 min",
+    "dificultad": "Inicial-Intermedia",
+    "objetivos": [
+      "Analizar un archivo operativo antes de transformarlo.",
+      "Definir la granularidad y la clave de los registros.",
+      "Diseñar un proceso ETL completo (extracción, transformación, carga).",
+      "Crear y administrar consultas aplicando transformaciones fundamentales.",
+      "Estandarizar categorías contra catálogos autorizados.",
+      "Separar registros válidos, cancelados y en revisión.",
+      "Probar la actualización con un segundo periodo de datos.",
+      "Conciliar los registros de entrada y salida, y documentar la solución."
+    ],
+    "situacion": "Caso integrador: consolidación y preparación de un Registro de Solicitudes Internas. El participante recibe dos periodos de datos (Periodo 1 y Periodo 2) más los catálogos oficiales de Departamentos y Estatus, y debe construir la solución completa desde el diagnóstico hasta la liberación, aplicando 10 reglas de negocio del caso.",
+    "secciones": [
+      {
+        "title": "Fase 1. Diagnóstico del archivo",
+        "para": "Identificar problemas de estructura, columnas, folios duplicados y categorías no autorizadas antes de transformar nada."
+      },
+      {
+        "title": "Fase 2. Diseño del proceso ETL",
+        "para": "Definir extracción, transformación y carga como flujo conceptual antes de construir la consulta en Power Query."
+      },
+      {
+        "title": "Fase 3. Construcción de la consulta de origen",
+        "para": "Conectar el archivo, seleccionar la tabla correcta y nombrar la consulta base siguiendo la nomenclatura del curso."
+      },
+      {
+        "title": "Fase 4. Preparación de la estructura",
+        "para": "Quitar títulos ajenos a los datos, promover encabezados y seleccionar únicamente las columnas autorizadas."
+      },
+      {
+        "title": "Fase 5. Limpieza y estandarización",
+        "para": "Homologar departamentos y estatus contra los catálogos oficiales (por ejemplo 'RH' → 'Recursos Humanos')."
+      },
+      {
+        "title": "Fase 6. Tipos de datos",
+        "para": "Asignar tipos correctos a cada columna y proteger folios como texto para conservar ceros iniciales."
+      },
+      {
+        "title": "Fase 7. Reglas de calidad",
+        "para": "Aplicar las 10 reglas de negocio del caso: granularidad, clave, campos obligatorios, fechas, registros de prueba, entre otras."
+      },
+      {
+        "title": "Fase 8. Separación de resultados",
+        "para": "Generar salidas independientes: solicitudes válidas, canceladas, para revisión y el resultado final de seguimiento."
+      },
+      {
+        "title": "Fase 9. Duplicados",
+        "para": "Distinguir un duplicado confirmado de una repetición válida usando la clave definida para el caso."
+      },
+      {
+        "title": "Fase 10. Conciliación",
+        "para": "Explicar la diferencia entre registros de entrada y salida hasta que la diferencia sin explicar sea igual a 0."
+      }
+    ],
+    "resumen": [
+      "El caso integrador reúne todo lo aprendido en las Lecciones 1 a 10 en un solo flujo de trabajo.",
+      "El diagnóstico siempre debe realizarse antes de transformar cualquier dato.",
+      "Cada transformación debe estar respaldada por una regla de negocio documentada.",
+      "Las categorías se validan contra catálogos oficiales de Departamentos y Estatus.",
+      "Los registros se separan en válidos, cancelados y para revisión — nunca se eliminan sin evidencia.",
+      "La actualización se prueba con un segundo periodo de datos para confirmar repetibilidad.",
+      "La conciliación de registros de entrada y salida debe cerrar en una diferencia de 0.",
+      "La solución debe documentarse y pasar por una lista de liberación antes de considerarse terminada."
+    ],
+    "quiz": [],
+    "files": [
+      "M01_L11_Catalogo_Departamentos.xlsx",
+      "M01_L11_Catalogo_Estatus.xlsx",
+      "M01_L11_Solicitudes_Periodo_01.xlsx",
+      "M01_L11_Solicitudes_Periodo_02.xlsx"
+    ],
+    "badgeIcon": "layers",
+    "badgeDesc": "Caso completo: de origen a solución liberada.",
+    "entregableDescripcion": "Esta lección no tiene preguntas de opción múltiple: se aprueba entregando la solución completa del caso integrador.",
+    "entregableChecklist": [
+      "Diagnóstico del archivo (Periodo 1) documentado.",
+      "Consultas de válidas, canceladas y revisión separadas.",
+      "Actualización probada con el Periodo 2.",
+      "Conciliación con diferencia sin explicar = 0."
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Evaluación y reto final del Módulo 1",
+    "duracion": "150 a 200 min",
+    "dificultad": "Inicial-Intermedia",
+    "objetivos": [],
+    "situacion": "",
+    "secciones": [
+      {
+        "num": "1",
+        "title": "¿Qué representa una consulta?",
+        "para": "A. Una copia manual de un archivo.\\ B. Un conjunto de instrucciones para obtener y transformar datos.\\ C. Una tabla dinámica.\\ D. Un gráfico."
+      },
+      {
+        "num": "2",
+        "title": "¿Cuál actividad pertenece a la extracción?",
+        "para": "A. Limpiar espacios.\\ B. Conectarse a un archivo.\\ C. Reemplazar un estatus.\\ D. Agrupar registros."
+      },
+      {
+        "num": "3",
+        "title": "¿Qué debe determinarse antes de quitar duplicados?",
+        "para": "A. El color del reporte.\\ B. La clave y la granularidad.\\ C. El orden de las hojas.\\ D. El nombre del usuario."
+      },
+      {
+        "num": "4",
+        "title": "¿Qué significa null?",
+        "para": "A. Cero.\\ B. Texto vacío.\\ C. Ausencia de valor.\\ D. Valor falso."
+      },
+      {
+        "num": "5",
+        "title": "Una consulta finaliza sin errores técnicos. Esto significa:",
+        "para": "A. El resultado necesariamente es correcto.\\ B. Debe validarse con reglas del proceso.\\ C. No existen duplicados.\\ D. Todos los campos están completos."
+      },
+      {
+        "num": "6",
+        "title": "¿Cuál es un cambio de estructura?",
+        "para": "A. Agregar una fila.\\ B. Cambiar una cantidad.\\ C. Renombrar una columna.\\ D. Actualizar un estatus."
+      }
+    ],
+    "resumen": [],
+    "quiz": [],
+    "files": [
+      "M01_L12_Actividades_Periodo_A.xlsx",
+      "M01_L12_Actividades_Periodo_B.xlsx",
+      "M01_L12_Catalogo_Areas.xlsx",
+      "M01_L12_Catalogo_Estatus.xlsx"
+    ],
+    "badgeIcon": "graduation-cap",
+    "badgeDesc": "Reto final aplicando las 11 lecciones previas."
+  }
+]

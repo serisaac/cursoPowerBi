@@ -1,0 +1,5947 @@
+{
+  "generalFiles": [
+    "M01_Indice_Archivos_Practica.xlsx"
+  ],
+  "excelPreview": {
+    "M01_Indice_Archivos_Practica.xlsx": {
+      "Indice": {
+        "header": [
+          "Archivo",
+          "Lección",
+          "Propósito"
+        ],
+        "rows": [
+          [
+            "M01_L01_Registro_Solicitudes_Internas.xlsx",
+            "Lección 01",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M01_L02_Mi_Primera_Consulta_Conceptual.xlsx",
+            "Lección 02",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M01_L03_Mi_Proceso_ETL.xlsx",
+            "Lección 03",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M01_L04_Registro_Solicitudes_Internas.xlsx",
+            "Lección 04",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M01_L05_Registro_Solicitudes_Internas.xlsx",
+            "Lección 05",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M01_L06_Registro_Solicitudes_Calidad.xlsx",
+            "Lección 06",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M01_L07_Registro_Solicitudes_Desordenado.xlsx",
+            "Lección 07",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M01_L08_Consulta_Pasos_Aplicados.xlsx",
+            "Lección 08",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M01_L09_Datos_Periodo_01.xlsx",
+            "Lección 09",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M01_L09_Datos_Periodo_02.xlsx",
+            "Lección 09",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M01_L09_Matriz_Pruebas.xlsx",
+            "Lección 09",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M01_L10_Ficha_Conciliacion.xlsx",
+            "Lección 10",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M01_L10_Lista_Liberacion.xlsx",
+            "Lección 10",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M01_L10_Registro_Excepciones.xlsx",
+            "Lección 10",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M01_L11_Catalogo_Departamentos.xlsx",
+            "Lección 11",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M01_L11_Catalogo_Estatus.xlsx",
+            "Lección 11",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M01_L11_Solicitudes_Periodo_01.xlsx",
+            "Lección 11",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M01_L11_Solicitudes_Periodo_02.xlsx",
+            "Lección 11",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M01_L12_Actividades_Periodo_A.xlsx",
+            "Lección 12",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M01_L12_Actividades_Periodo_B.xlsx",
+            "Lección 12",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M01_L12_Catalogo_Areas.xlsx",
+            "Lección 12",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M01_L12_Catalogo_Estatus.xlsx",
+            "Lección 12",
+            "Consultar hoja LEEME"
+          ]
+        ],
+        "total_rows": 22
+      }
+    },
+    "M01_L01_Registro_Solicitudes_Internas.xlsx": {
+      "Datos": {
+        "header": [
+          "Folio",
+          "Fecha",
+          "Departamento",
+          "Tipo",
+          "Responsable",
+          "Estatus"
+        ],
+        "rows": [
+          [
+            "SOL-001",
+            "15/08/2026",
+            "Calidad",
+            "Inspección",
+            "Laura Pérez",
+            "Cerrada"
+          ],
+          [
+            "SOL-001 ",
+            "15-ago-26",
+            "CALIDAD",
+            "Inspección",
+            "Laura Perez",
+            "cerrada"
+          ],
+          [
+            "SOL-002",
+            "Pendiente",
+            "Mantenimiento",
+            "Reparación",
+            "",
+            "Abierta"
+          ],
+          [
+            "SOL-003",
+            "16/08/2026",
+            "Recursos Humanos",
+            "Capacitación",
+            "Carlos López",
+            "En proceso"
+          ]
+        ],
+        "total_rows": 4
+      }
+    },
+    "M01_L02_Mi_Primera_Consulta_Conceptual.xlsx": {
+      "Consulta conceptual": {
+        "header": [
+          "Elemento",
+          "Respuesta"
+        ],
+        "rows": [
+          [
+            "Nombre del proceso",
+            ""
+          ],
+          [
+            "Departamento",
+            ""
+          ],
+          [
+            "Origen",
+            ""
+          ],
+          [
+            "Frecuencia",
+            ""
+          ],
+          [
+            "Transformaciones manuales",
+            ""
+          ],
+          [
+            "Resultado esperado",
+            ""
+          ],
+          [
+            "Destino",
+            ""
+          ],
+          [
+            "Validaciones",
+            ""
+          ],
+          [
+            "Cambios de estructura posibles",
+            ""
+          ],
+          [
+            "Beneficio esperado",
+            ""
+          ]
+        ],
+        "total_rows": 10
+      }
+    },
+    "M01_L03_Mi_Proceso_ETL.xlsx": {
+      "Mapa ETL": {
+        "header": [
+          "Etapa",
+          "Actividad",
+          "Origen o campo",
+          "Regla",
+          "Validación"
+        ],
+        "rows": [
+          [
+            "Extracción",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Transformación",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Carga",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 3
+      },
+      "Clasificacion": {
+        "header": [
+          "Actividad",
+          "Clasificación"
+        ],
+        "rows": [
+          [
+            "Conectarse a un CSV",
+            ""
+          ],
+          [
+            "Seleccionar hoja Captura",
+            ""
+          ],
+          [
+            "Eliminar filas vacías",
+            ""
+          ],
+          [
+            "Corregir tipo fecha",
+            ""
+          ],
+          [
+            "Relacionar catálogo",
+            ""
+          ],
+          [
+            "Cargar en Excel",
+            ""
+          ],
+          [
+            "Crear gráfico",
+            ""
+          ]
+        ],
+        "total_rows": 7
+      }
+    },
+    "M01_L04_Registro_Solicitudes_Internas.xlsx": {
+      "Portada": {
+        "header": [
+          "REGISTRO DE SOLICITUDES INTERNAS"
+        ],
+        "rows": [
+          [
+            "Archivo de práctica"
+          ]
+        ],
+        "total_rows": 1
+      },
+      "Solicitudes": {
+        "header": [
+          "Folio",
+          "Fecha",
+          "Departamento",
+          "Tipo",
+          "Responsable",
+          "Estatus"
+        ],
+        "rows": [
+          [
+            "SOL-1001",
+            "01/08/2026",
+            "Calidad",
+            "Inspección",
+            "Laura Pérez",
+            "06/08/2026"
+          ],
+          [
+            "SOL-1002",
+            "02/08/2026",
+            "Mantenimiento",
+            "Reparación",
+            "Carlos Ruiz",
+            "08/08/2026"
+          ],
+          [
+            "SOL-1003",
+            "03/08/2026",
+            "Recursos Humanos",
+            "Capacitación",
+            "Ana López",
+            "06/08/2026"
+          ],
+          [
+            "SOL-1004",
+            "04/08/2026",
+            "Producción",
+            "Seguimiento",
+            "José Silva",
+            "17/08/2026"
+          ],
+          [
+            "SOL-1005",
+            "05/08/2026",
+            "Almacenes",
+            "Ajuste",
+            "María Gómez",
+            "13/08/2026"
+          ],
+          [
+            "SOL-1006",
+            "06/08/2026",
+            "Seguridad",
+            "Solicitud de material",
+            "Sergio Torres",
+            "15/08/2026"
+          ],
+          [
+            "SOL-1007",
+            "07/08/2026",
+            "Control de Procesos",
+            "Inspección",
+            "Lucía Ramos",
+            "11/08/2026"
+          ],
+          [
+            "SOL-1008",
+            "08/08/2026",
+            "Calidad",
+            "Reparación",
+            "Laura Pérez",
+            "11/08/2026"
+          ],
+          [
+            "SOL-1009",
+            "09/08/2026",
+            "Mantenimiento",
+            "Capacitación",
+            "Carlos Ruiz",
+            "12/08/2026"
+          ],
+          [
+            "SOL-1010",
+            "10/08/2026",
+            "Recursos Humanos",
+            "Seguimiento",
+            "Ana López",
+            "12/08/2026"
+          ],
+          [
+            "SOL-1011",
+            "11/08/2026",
+            "Producción",
+            "Ajuste",
+            "José Silva",
+            "19/08/2026"
+          ],
+          [
+            "SOL-1012",
+            "12/08/2026",
+            "Almacenes",
+            "Solicitud de material",
+            "María Gómez",
+            "22/08/2026"
+          ],
+          [
+            "SOL-1013",
+            "13/08/2026",
+            "Seguridad",
+            "Inspección",
+            "Sergio Torres",
+            "19/08/2026"
+          ],
+          [
+            "SOL-1014",
+            "14/08/2026",
+            "Control de Procesos",
+            "Reparación",
+            "Lucía Ramos",
+            "28/08/2026"
+          ],
+          [
+            "SOL-1015",
+            "15/08/2026",
+            "Calidad",
+            "Capacitación",
+            "Laura Pérez",
+            "29/08/2026"
+          ]
+        ],
+        "total_rows": 15
+      },
+      "Catalogos": {
+        "header": [
+          "Departamento",
+          "Activo"
+        ],
+        "rows": [
+          [
+            "Calidad",
+            "Sí"
+          ],
+          [
+            "Mantenimiento",
+            "Sí"
+          ],
+          [
+            "Recursos Humanos",
+            "Sí"
+          ],
+          [
+            "Producción",
+            "Sí"
+          ],
+          [
+            "Almacenes",
+            "Sí"
+          ],
+          [
+            "Seguridad",
+            "Sí"
+          ]
+        ],
+        "total_rows": 6
+      }
+    },
+    "M01_L05_Registro_Solicitudes_Internas.xlsx": {
+      "Datos": {
+        "header": [
+          "Folio",
+          "Fecha",
+          "Departamento",
+          "Tipo",
+          "Responsable",
+          "Fecha compromiso",
+          "Estatus",
+          "Observación",
+          "Comentario interno"
+        ],
+        "rows": [
+          [
+            "SOL-1001",
+            "01/08/2026",
+            "Calidad",
+            "Inspección",
+            "Laura Pérez",
+            "12/08/2026",
+            "Abierta",
+            "Alta",
+            "Observación 1"
+          ],
+          [
+            " SOL-1002 ",
+            "02/08/2026",
+            "Mantenimiento",
+            "Reparación",
+            "Carlos Ruiz",
+            "08/08/2026",
+            "En proceso",
+            "Media",
+            "Observación 2"
+          ],
+          [
+            "SOL-1003",
+            "03/08/2026",
+            "RH",
+            "Capacitación",
+            "Ana López",
+            "16/08/2026",
+            "Cerrada",
+            "Baja",
+            "Observación 3"
+          ],
+          [
+            "SOL-1004",
+            "04/08/2026",
+            "Mantto.",
+            "Seguimiento",
+            "José Silva",
+            "11/08/2026",
+            "Cancelada",
+            "Alta",
+            "Observación 4"
+          ],
+          [
+            "SOL-1005",
+            "05/08/2026",
+            "Almacenes",
+            "Ajuste",
+            "María Gómez",
+            "19/08/2026",
+            "CANCEL.",
+            "Media",
+            "Observación 5"
+          ],
+          [
+            "SOL-1006",
+            "06/08/2026",
+            "Seguridad",
+            "Solicitud de material",
+            "",
+            "19/08/2026",
+            "Abierta",
+            "Baja",
+            "Observación 6"
+          ],
+          [
+            "SOL-1007",
+            "07/08/2026",
+            "Control de Procesos",
+            "Inspección",
+            "Lucía Ramos",
+            "Pendiente",
+            "En proceso",
+            "Alta",
+            "Observación 7"
+          ],
+          [
+            "SOL-1008",
+            "08/08/2026",
+            "Área desconocida",
+            "Reparación",
+            "Laura Pérez",
+            "21/08/2026",
+            "Cerrada",
+            "Media",
+            "Observación 8"
+          ],
+          [
+            "SOL-1009",
+            "09/08/2026",
+            "Mantenimiento",
+            "Capacitación",
+            "Carlos Ruiz",
+            "21/08/2026",
+            "Cancelada",
+            "Baja",
+            "Observación 9"
+          ],
+          [
+            "SOL-1010",
+            "10/08/2026",
+            "Recursos Humanos",
+            "Seguimiento",
+            "Ana López",
+            "20/08/2026",
+            "Pendiente de asignación",
+            "Alta",
+            "Observación 10"
+          ],
+          [
+            "SOL-1011",
+            "11/08/2026",
+            "Producción",
+            "Ajuste",
+            "José Silva",
+            "13/08/2026",
+            "Abierta",
+            "Media",
+            "Observación 11"
+          ],
+          [
+            "SOL-1012",
+            "12/08/2026",
+            "Almacenes",
+            "Solicitud de material",
+            "María Gómez",
+            "27/08/2026",
+            "En proceso",
+            "Baja",
+            "Observación 12"
+          ],
+          [
+            "SOL-1013",
+            "13/08/2026",
+            "Seguridad",
+            "Inspección",
+            "Sergio Torres",
+            "22/08/2026",
+            "Cerrada",
+            "Alta",
+            "Observación 13"
+          ],
+          [
+            "SOL-1014",
+            "14/08/2026",
+            "Control de Procesos",
+            "Reparación",
+            "Lucía Ramos",
+            "28/08/2026",
+            "Cancelada",
+            "Media",
+            "Observación 14"
+          ],
+          [
+            "SOL-1015",
+            "15/08/2026",
+            "Calidad",
+            "Capacitación",
+            "Laura Pérez",
+            "20/08/2026",
+            "Pendiente de asignación",
+            "Baja",
+            "Observación 15"
+          ],
+          [
+            "SOL-1016",
+            "16/08/2026",
+            "Mantenimiento",
+            "Seguimiento",
+            "Carlos Ruiz",
+            "28/08/2026",
+            "Abierta",
+            "Alta",
+            "Observación 16"
+          ],
+          [
+            "SOL-1017",
+            "17/08/2026",
+            "Recursos Humanos",
+            "Ajuste",
+            "Ana López",
+            "19/08/2026",
+            "En proceso",
+            "Media",
+            "Observación 17"
+          ],
+          [
+            "SOL-1018",
+            "18/08/2026",
+            "Producción",
+            "Solicitud de material",
+            "José Silva",
+            "22/08/2026",
+            "Cerrada",
+            "Baja",
+            "Observación 18"
+          ],
+          [
+            "SOL-1019",
+            "19/08/2026",
+            "Almacenes",
+            "Inspección",
+            "María Gómez",
+            "22/08/2026",
+            "Cancelada",
+            "Alta",
+            "Observación 19"
+          ],
+          [
+            "SOL-1020",
+            "20/08/2026",
+            "Seguridad",
+            "Reparación",
+            "Sergio Torres",
+            "27/08/2026",
+            "Pendiente de asignación",
+            "Media",
+            "Observación 20"
+          ],
+          [
+            "SOL-1021",
+            "21/08/2026",
+            "Control de Procesos",
+            "Capacitación",
+            "Lucía Ramos",
+            "30/08/2026",
+            "Abierta",
+            "Baja",
+            "Observación 21"
+          ],
+          [
+            "SOL-1022",
+            "22/08/2026",
+            "Calidad",
+            "Seguimiento",
+            "Laura Pérez",
+            "06/09/2026",
+            "En proceso",
+            "Alta",
+            "Observación 22"
+          ],
+          [
+            "SOL-1023",
+            "23/08/2026",
+            "Mantenimiento",
+            "Ajuste",
+            "Carlos Ruiz",
+            "28/08/2026",
+            "Cerrada",
+            "Media",
+            "Observación 23"
+          ],
+          [
+            "SOL-1024",
+            "24/08/2026",
+            "Recursos Humanos",
+            "Solicitud de material",
+            "Ana López",
+            "01/09/2026",
+            "Cancelada",
+            "Baja",
+            "Observación 24"
+          ],
+          [
+            "SOL-1009",
+            "09/08/2026",
+            "Mantenimiento",
+            "Capacitación",
+            "Carlos Ruiz",
+            "21/08/2026",
+            "Cancelada",
+            "Baja",
+            "Observación 9"
+          ],
+          [
+            "TEST-001",
+            "01/08/2026",
+            "Calidad",
+            "Prueba",
+            "Usuario prueba",
+            "01/08/2026",
+            "Abierta",
+            "Baja",
+            "Prueba"
+          ]
+        ],
+        "total_rows": 26
+      }
+    },
+    "M01_L06_Registro_Solicitudes_Calidad.xlsx": {
+      "Datos": {
+        "header": [
+          "Folio",
+          "Fecha registro",
+          "Departamento",
+          "Cantidad",
+          "Fecha compromiso",
+          "Hora registro",
+          "Cerrada",
+          "Observación"
+        ],
+        "rows": [
+          [
+            "00125",
+            "15/08/2026",
+            "Calidad",
+            "10",
+            "20/08/2026",
+            "08:30",
+            "Sí",
+            "Correcto"
+          ],
+          [
+            "00126",
+            "08/16/2026",
+            "Mantenimiento",
+            "15.5",
+            "08/30/2026",
+            "14:45",
+            "No",
+            "Formato US"
+          ],
+          [
+            "00127",
+            "Pendiente",
+            "Recursos Humanos",
+            "N/A",
+            "Pendiente",
+            "09:00",
+            "No",
+            "Revisar"
+          ],
+          [
+            "00128",
+            "17-ago-26",
+            "Almacenes",
+            "20 KG",
+            "25-ago-26",
+            "10:15",
+            "Sí",
+            "Unidad mezclada"
+          ],
+          [
+            "00129",
+            "18/08/2026",
+            "",
+            "0",
+            "",
+            "",
+            "",
+            "Departamento vacío"
+          ],
+          [
+            "00130",
+            "31/02/2026",
+            "Seguridad",
+            "-2",
+            "15/08/2026",
+            "25:00",
+            "S",
+            "Valores inválidos"
+          ]
+        ],
+        "total_rows": 6
+      }
+    },
+    "M01_L07_Registro_Solicitudes_Desordenado.xlsx": {
+      "Reporte": {
+        "header": [
+          "Folio",
+          "Fecha",
+          "Área",
+          "Tipo de solicitud",
+          "Responsable",
+          "Fecha compromiso",
+          "Estatus",
+          "Observación",
+          "Comentario interno",
+          "Usuario captura",
+          "Fecha impresión"
+        ],
+        "rows": [
+          [
+            "SOL-1001",
+            "01/08/2026",
+            "Calidad",
+            "Inspección",
+            "Laura Pérez",
+            "08/08/2026",
+            "Abierta",
+            "Alta",
+            "Observación 1",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            " SOL-1002 ",
+            "02/08/2026",
+            "Mantenimiento",
+            "Reparación",
+            "Carlos Ruiz",
+            "06/08/2026",
+            "En proceso",
+            "Media",
+            "Observación 2",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            "SOL-1003",
+            "03/08/2026",
+            "RH",
+            "Capacitación",
+            "Ana López",
+            "11/08/2026",
+            "Cerrada",
+            "Baja",
+            "Observación 3",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            "SOL-1004",
+            "04/08/2026",
+            "Mantto.",
+            "Seguimiento",
+            "José Silva",
+            "16/08/2026",
+            "Cancelada",
+            "Alta",
+            "Observación 4",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            "SOL-1005",
+            "05/08/2026",
+            "Almacenes",
+            "Ajuste",
+            "María Gómez",
+            "07/08/2026",
+            "CANCEL.",
+            "Media",
+            "Observación 5",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            "SOL-1006",
+            "06/08/2026",
+            "Seguridad",
+            "Solicitud de material",
+            "",
+            "09/08/2026",
+            "Abierta",
+            "Baja",
+            "Observación 6",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            "SOL-1007",
+            "07/08/2026",
+            "Control de Procesos",
+            "Inspección",
+            "Lucía Ramos",
+            "Pendiente",
+            "En proceso",
+            "Alta",
+            "Observación 7",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            "SOL-1008",
+            "08/08/2026",
+            "Área desconocida",
+            "Reparación",
+            "Laura Pérez",
+            "18/08/2026",
+            "Cerrada",
+            "Media",
+            "Observación 8",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            "SOL-1009",
+            "09/08/2026",
+            "Mantenimiento",
+            "Capacitación",
+            "Carlos Ruiz",
+            "12/08/2026",
+            "Cancelada",
+            "Baja",
+            "Observación 9",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            "SOL-1010",
+            "10/08/2026",
+            "Recursos Humanos",
+            "Seguimiento",
+            "Ana López",
+            "17/08/2026",
+            "Pendiente de asignación",
+            "Alta",
+            "Observación 10",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            "SOL-1011",
+            "11/08/2026",
+            "Producción",
+            "Ajuste",
+            "José Silva",
+            "22/08/2026",
+            "Abierta",
+            "Media",
+            "Observación 11",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            "SOL-1012",
+            "12/08/2026",
+            "Almacenes",
+            "Solicitud de material",
+            "María Gómez",
+            "14/08/2026",
+            "En proceso",
+            "Baja",
+            "Observación 12",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            "SOL-1013",
+            "13/08/2026",
+            "Seguridad",
+            "Inspección",
+            "Sergio Torres",
+            "23/08/2026",
+            "Cerrada",
+            "Alta",
+            "Observación 13",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            "SOL-1014",
+            "14/08/2026",
+            "Control de Procesos",
+            "Reparación",
+            "Lucía Ramos",
+            "19/08/2026",
+            "Cancelada",
+            "Media",
+            "Observación 14",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            "SOL-1015",
+            "15/08/2026",
+            "Calidad",
+            "Capacitación",
+            "Laura Pérez",
+            "17/08/2026",
+            "Pendiente de asignación",
+            "Baja",
+            "Observación 15",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            "SOL-1016",
+            "16/08/2026",
+            "Mantenimiento",
+            "Seguimiento",
+            "Carlos Ruiz",
+            "19/08/2026",
+            "Abierta",
+            "Alta",
+            "Observación 16",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            "SOL-1017",
+            "17/08/2026",
+            "Recursos Humanos",
+            "Ajuste",
+            "Ana López",
+            "25/08/2026",
+            "En proceso",
+            "Media",
+            "Observación 17",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            "SOL-1018",
+            "18/08/2026",
+            "Producción",
+            "Solicitud de material",
+            "José Silva",
+            "26/08/2026",
+            "Cerrada",
+            "Baja",
+            "Observación 18",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            "SOL-1019",
+            "19/08/2026",
+            "Almacenes",
+            "Inspección",
+            "María Gómez",
+            "22/08/2026",
+            "Cancelada",
+            "Alta",
+            "Observación 19",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            "SOL-1020",
+            "20/08/2026",
+            "Seguridad",
+            "Reparación",
+            "Sergio Torres",
+            "25/08/2026",
+            "Pendiente de asignación",
+            "Media",
+            "Observación 20",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            "SOL-1021",
+            "21/08/2026",
+            "Control de Procesos",
+            "Capacitación",
+            "Lucía Ramos",
+            "24/08/2026",
+            "Abierta",
+            "Baja",
+            "Observación 21",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            "SOL-1022",
+            "22/08/2026",
+            "Calidad",
+            "Seguimiento",
+            "Laura Pérez",
+            "01/09/2026",
+            "En proceso",
+            "Alta",
+            "Observación 22",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            "SOL-1023",
+            "23/08/2026",
+            "Mantenimiento",
+            "Ajuste",
+            "Carlos Ruiz",
+            "31/08/2026",
+            "Cerrada",
+            "Media",
+            "Observación 23",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            "SOL-1024",
+            "24/08/2026",
+            "Recursos Humanos",
+            "Solicitud de material",
+            "Ana López",
+            "26/08/2026",
+            "Cancelada",
+            "Baja",
+            "Observación 24",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            "SOL-1025",
+            "25/08/2026",
+            "Producción",
+            "Inspección",
+            "José Silva",
+            "09/09/2026",
+            "Pendiente de asignación",
+            "Alta",
+            "Observación 25",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            "SOL-1026",
+            "01/08/2026",
+            "Almacenes",
+            "Reparación",
+            "María Gómez",
+            "12/08/2026",
+            "Abierta",
+            "Media",
+            "Observación 26",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            "SOL-1027",
+            "02/08/2026",
+            "Seguridad",
+            "Capacitación",
+            "Sergio Torres",
+            "05/08/2026",
+            "En proceso",
+            "Baja",
+            "Observación 27",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            "SOL-1028",
+            "03/08/2026",
+            "Control de Procesos",
+            "Seguimiento",
+            "Lucía Ramos",
+            "08/08/2026",
+            "Cerrada",
+            "Alta",
+            "Observación 28",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            "SOL-1029",
+            "04/08/2026",
+            "Calidad",
+            "Ajuste",
+            "Laura Pérez",
+            "16/08/2026",
+            "Cancelada",
+            "Media",
+            "Observación 29",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            "SOL-1030",
+            "05/08/2026",
+            "Mantenimiento",
+            "Solicitud de material",
+            "Carlos Ruiz",
+            "17/08/2026",
+            "Pendiente de asignación",
+            "Baja",
+            "Observación 30",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            "SOL-1009",
+            "09/08/2026",
+            "Mantenimiento",
+            "Capacitación",
+            "Carlos Ruiz",
+            "12/08/2026",
+            "Cancelada",
+            "Baja",
+            "Observación 9",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            "TEST-001",
+            "01/08/2026",
+            "Calidad",
+            "Prueba",
+            "Usuario prueba",
+            "01/08/2026",
+            "Abierta",
+            "Baja",
+            "Prueba",
+            "capturista",
+            "31/08/2026"
+          ],
+          [
+            "Total",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 33
+      }
+    },
+    "M01_L08_Consulta_Pasos_Aplicados.xlsx": {
+      "Datos": {
+        "header": [
+          "Folio",
+          "Fecha",
+          "Área",
+          "Responsable",
+          "Estatus"
+        ],
+        "rows": [
+          [
+            "SOL-001",
+            "02/08/2026",
+            "Calidad",
+            "Luis",
+            "CANCEL."
+          ],
+          [
+            "SOL-002",
+            "03/08/2026",
+            "Mantto.",
+            "Marta",
+            "Proceso"
+          ],
+          [
+            "SOL-003",
+            "04/08/2026",
+            "RH",
+            "Ana",
+            "ABIERTA"
+          ],
+          [
+            "SOL-004",
+            "05/08/2026",
+            "Calidad",
+            "Luis",
+            "CANCEL."
+          ],
+          [
+            "SOL-005",
+            "06/08/2026",
+            "Mantto.",
+            "Marta",
+            "Proceso"
+          ],
+          [
+            "SOL-006",
+            "07/08/2026",
+            "RH",
+            "",
+            "ABIERTA"
+          ],
+          [
+            "SOL-007",
+            "08/08/2026",
+            "Calidad",
+            "Luis",
+            "CANCEL."
+          ],
+          [
+            "SOL-008",
+            "09/08/2026",
+            "Mantto.",
+            "Marta",
+            "Proceso"
+          ],
+          [
+            "SOL-009",
+            "10/08/2026",
+            "RH",
+            "Ana",
+            "ABIERTA"
+          ],
+          [
+            "SOL-010",
+            "11/08/2026",
+            "Calidad",
+            "Luis",
+            "CANCEL."
+          ],
+          [
+            "SOL-011",
+            "12/08/2026",
+            "Mantto.",
+            "Marta",
+            "Proceso"
+          ],
+          [
+            "SOL-012",
+            "13/08/2026",
+            "RH",
+            "",
+            "ABIERTA"
+          ],
+          [
+            "SOL-013",
+            "14/08/2026",
+            "Calidad",
+            "Luis",
+            "CANCEL."
+          ],
+          [
+            "SOL-014",
+            "15/08/2026",
+            "Mantto.",
+            "Marta",
+            "Proceso"
+          ],
+          [
+            "SOL-015",
+            "16/08/2026",
+            "RH",
+            "Ana",
+            "ABIERTA"
+          ],
+          [
+            "SOL-016",
+            "17/08/2026",
+            "Calidad",
+            "Luis",
+            "CANCEL."
+          ],
+          [
+            "SOL-017",
+            "18/08/2026",
+            "Mantto.",
+            "Marta",
+            "Proceso"
+          ],
+          [
+            "SOL-018",
+            "19/08/2026",
+            "RH",
+            "",
+            "ABIERTA"
+          ],
+          [
+            "SOL-019",
+            "20/08/2026",
+            "Calidad",
+            "Luis",
+            "CANCEL."
+          ],
+          [
+            "SOL-020",
+            "21/08/2026",
+            "Mantto.",
+            "Marta",
+            "Proceso"
+          ],
+          [
+            "SOL-021",
+            "22/08/2026",
+            "RH",
+            "Ana",
+            "ABIERTA"
+          ],
+          [
+            "SOL-022",
+            "23/08/2026",
+            "Calidad",
+            "Luis",
+            "CANCEL."
+          ],
+          [
+            "SOL-023",
+            "24/08/2026",
+            "Mantto.",
+            "Marta",
+            "Proceso"
+          ],
+          [
+            "SOL-024",
+            "25/08/2026",
+            "RH",
+            "",
+            "ABIERTA"
+          ],
+          [
+            "SOL-025",
+            "01/08/2026",
+            "Calidad",
+            "Luis",
+            "CANCEL."
+          ]
+        ],
+        "total_rows": 25
+      },
+      "Pasos a revisar": {
+        "header": [
+          "Paso actual",
+          "Problema",
+          "Nombre mejorado"
+        ],
+        "rows": [
+          [
+            "Filas quitadas",
+            "No explica qué filas",
+            ""
+          ],
+          [
+            "Columnas quitadas",
+            "No explica campos",
+            ""
+          ],
+          [
+            "Valor reemplazado",
+            "No indica categoría",
+            ""
+          ],
+          [
+            "Filas filtradas",
+            "No explica regla",
+            ""
+          ],
+          [
+            "Tipo cambiado1",
+            "Duplicado potencial",
+            ""
+          ]
+        ],
+        "total_rows": 5
+      }
+    },
+    "M01_L09_Datos_Periodo_01.xlsx": {
+      "Datos": {
+        "header": [
+          "Folio",
+          "Fecha de registro",
+          "Departamento",
+          "Tipo de solicitud",
+          "Responsable",
+          "Fecha compromiso",
+          "Estatus",
+          "Prioridad",
+          "Observación",
+          "Comentario interno"
+        ],
+        "rows": [
+          [
+            "SOL-1001",
+            "01/08/2026",
+            "Calidad",
+            "Inspección",
+            "Laura Pérez",
+            "12/08/2026",
+            "Abierta",
+            "Alta",
+            "Observación 1",
+            "Interno 1"
+          ],
+          [
+            " SOL-1002 ",
+            "02/08/2026",
+            "Mantenimiento",
+            "Reparación",
+            "Carlos Ruiz",
+            "04/08/2026",
+            "En proceso",
+            "Media",
+            "Observación 2",
+            "Interno 2"
+          ],
+          [
+            "SOL-1003",
+            "03/08/2026",
+            "RH",
+            "Capacitación",
+            "Ana López",
+            "11/08/2026",
+            "Cerrada",
+            "Baja",
+            "Observación 3",
+            "Interno 3"
+          ],
+          [
+            "SOL-1004",
+            "04/08/2026",
+            "Mantto.",
+            "Seguimiento",
+            "José Silva",
+            "13/08/2026",
+            "Cancelada",
+            "Alta",
+            "Observación 4",
+            "Interno 4"
+          ],
+          [
+            "SOL-1005",
+            "05/08/2026",
+            "Almacenes",
+            "Ajuste",
+            "María Gómez",
+            "16/08/2026",
+            "CANCEL.",
+            "Media",
+            "Observación 5",
+            "Interno 5"
+          ],
+          [
+            "SOL-1006",
+            "06/08/2026",
+            "Seguridad",
+            "Solicitud de material",
+            "",
+            "08/08/2026",
+            "Abierta",
+            "Baja",
+            "Observación 6",
+            "Interno 6"
+          ],
+          [
+            "SOL-1007",
+            "07/08/2026",
+            "Control de Procesos",
+            "Inspección",
+            "Lucía Ramos",
+            "Pendiente",
+            "En proceso",
+            "Alta",
+            "Observación 7",
+            "Interno 7"
+          ],
+          [
+            "SOL-1008",
+            "08/08/2026",
+            "Área desconocida",
+            "Reparación",
+            "Laura Pérez",
+            "17/08/2026",
+            "Cerrada",
+            "Media",
+            "Observación 8",
+            "Interno 8"
+          ],
+          [
+            "SOL-1009",
+            "09/08/2026",
+            "Mantenimiento",
+            "Capacitación",
+            "Carlos Ruiz",
+            "24/08/2026",
+            "Cancelada",
+            "Baja",
+            "Observación 9",
+            "Interno 9"
+          ],
+          [
+            "SOL-1010",
+            "10/08/2026",
+            "Recursos Humanos",
+            "Seguimiento",
+            "Ana López",
+            "19/08/2026",
+            "Pendiente de asignación",
+            "Alta",
+            "Observación 10",
+            "Interno 10"
+          ],
+          [
+            "SOL-1011",
+            "11/08/2026",
+            "Producción",
+            "Ajuste",
+            "José Silva",
+            "26/08/2026",
+            "Abierta",
+            "Media",
+            "Observación 11",
+            "Interno 11"
+          ],
+          [
+            "SOL-1012",
+            "12/08/2026",
+            "Almacenes",
+            "Solicitud de material",
+            "María Gómez",
+            "18/08/2026",
+            "En proceso",
+            "Baja",
+            "Observación 12",
+            "Interno 12"
+          ],
+          [
+            "SOL-1013",
+            "13/08/2026",
+            "Seguridad",
+            "Inspección",
+            "Sergio Torres",
+            "25/08/2026",
+            "Cerrada",
+            "Alta",
+            "Observación 13",
+            "Interno 13"
+          ],
+          [
+            "SOL-1014",
+            "14/08/2026",
+            "Control de Procesos",
+            "Reparación",
+            "Lucía Ramos",
+            "28/08/2026",
+            "Cancelada",
+            "Media",
+            "Observación 14",
+            "Interno 14"
+          ],
+          [
+            "SOL-1015",
+            "15/08/2026",
+            "Calidad",
+            "Capacitación",
+            "Laura Pérez",
+            "19/08/2026",
+            "Pendiente de asignación",
+            "Baja",
+            "Observación 15",
+            "Interno 15"
+          ],
+          [
+            "SOL-1016",
+            "16/08/2026",
+            "Mantenimiento",
+            "Seguimiento",
+            "Carlos Ruiz",
+            "18/08/2026",
+            "Abierta",
+            "Alta",
+            "Observación 16",
+            "Interno 16"
+          ],
+          [
+            "SOL-1017",
+            "17/08/2026",
+            "Recursos Humanos",
+            "Ajuste",
+            "Ana López",
+            "27/08/2026",
+            "En proceso",
+            "Media",
+            "Observación 17",
+            "Interno 17"
+          ],
+          [
+            "SOL-1018",
+            "18/08/2026",
+            "Producción",
+            "Solicitud de material",
+            "José Silva",
+            "27/08/2026",
+            "Cerrada",
+            "Baja",
+            "Observación 18",
+            "Interno 18"
+          ],
+          [
+            "SOL-1019",
+            "19/08/2026",
+            "Almacenes",
+            "Inspección",
+            "María Gómez",
+            "26/08/2026",
+            "Cancelada",
+            "Alta",
+            "Observación 19",
+            "Interno 19"
+          ],
+          [
+            "SOL-1020",
+            "20/08/2026",
+            "Seguridad",
+            "Reparación",
+            "Sergio Torres",
+            "23/08/2026",
+            "Pendiente de asignación",
+            "Media",
+            "Observación 20",
+            "Interno 20"
+          ],
+          [
+            "SOL-1021",
+            "21/08/2026",
+            "Control de Procesos",
+            "Capacitación",
+            "Lucía Ramos",
+            "26/08/2026",
+            "Abierta",
+            "Baja",
+            "Observación 21",
+            "Interno 21"
+          ],
+          [
+            "SOL-1022",
+            "22/08/2026",
+            "Calidad",
+            "Seguimiento",
+            "Laura Pérez",
+            "04/09/2026",
+            "En proceso",
+            "Alta",
+            "Observación 22",
+            "Interno 22"
+          ],
+          [
+            "SOL-1023",
+            "23/08/2026",
+            "Mantenimiento",
+            "Ajuste",
+            "Carlos Ruiz",
+            "30/08/2026",
+            "Cerrada",
+            "Media",
+            "Observación 23",
+            "Interno 23"
+          ],
+          [
+            "SOL-1024",
+            "24/08/2026",
+            "Recursos Humanos",
+            "Solicitud de material",
+            "Ana López",
+            "26/08/2026",
+            "Cancelada",
+            "Baja",
+            "Observación 24",
+            "Interno 24"
+          ],
+          [
+            "SOL-1025",
+            "25/08/2026",
+            "Producción",
+            "Inspección",
+            "José Silva",
+            "02/09/2026",
+            "Pendiente de asignación",
+            "Alta",
+            "Observación 25",
+            "Interno 25"
+          ],
+          [
+            "SOL-1026",
+            "01/08/2026",
+            "Almacenes",
+            "Reparación",
+            "María Gómez",
+            "16/08/2026",
+            "Abierta",
+            "Media",
+            "Observación 26",
+            "Interno 26"
+          ],
+          [
+            "SOL-1027",
+            "02/08/2026",
+            "Seguridad",
+            "Capacitación",
+            "Sergio Torres",
+            "06/08/2026",
+            "En proceso",
+            "Baja",
+            "Observación 27",
+            "Interno 27"
+          ],
+          [
+            "SOL-1028",
+            "03/08/2026",
+            "Control de Procesos",
+            "Seguimiento",
+            "Lucía Ramos",
+            "14/08/2026",
+            "Cerrada",
+            "Alta",
+            "Observación 28",
+            "Interno 28"
+          ],
+          [
+            "SOL-1029",
+            "04/08/2026",
+            "Calidad",
+            "Ajuste",
+            "Laura Pérez",
+            "11/08/2026",
+            "Cancelada",
+            "Media",
+            "Observación 29",
+            "Interno 29"
+          ],
+          [
+            "SOL-1030",
+            "05/08/2026",
+            "Mantenimiento",
+            "Solicitud de material",
+            "Carlos Ruiz",
+            "13/08/2026",
+            "Pendiente de asignación",
+            "Baja",
+            "Observación 30",
+            "Interno 30"
+          ],
+          [
+            "SOL-1009",
+            "09/08/2026",
+            "Mantenimiento",
+            "Capacitación",
+            "Carlos Ruiz",
+            "24/08/2026",
+            "Cancelada",
+            "Baja",
+            "Observación 9",
+            "Interno 9"
+          ],
+          [
+            "TEST-001",
+            "01/08/2026",
+            "Calidad",
+            "Prueba",
+            "Usuario prueba",
+            "01/08/2026",
+            "Abierta",
+            "Baja",
+            "Prueba",
+            "No compartir"
+          ]
+        ],
+        "total_rows": 32
+      }
+    },
+    "M01_L09_Datos_Periodo_02.xlsx": {
+      "Datos": {
+        "header": [
+          "Folio",
+          "Fecha de registro",
+          "Departamento",
+          "Tipo de solicitud",
+          "Responsable",
+          "Fecha compromiso",
+          "Estatus",
+          "Prioridad",
+          "Observación",
+          "Comentario interno",
+          "Canal"
+        ],
+        "rows": [
+          [
+            "SOL-2001",
+            "01/09/2026",
+            "Calidad",
+            "Inspección",
+            "Laura Pérez",
+            "10/09/2026",
+            "Abierta",
+            "Alta",
+            "Observación 1",
+            "Interno 1",
+            "Correo"
+          ],
+          [
+            " SOL-2002 ",
+            "02/09/2026",
+            "Mantenimiento",
+            "Reparación",
+            "Carlos Ruiz",
+            "17/09/2026",
+            "En proceso",
+            "Media",
+            "Observación 2",
+            "Interno 2",
+            "Portal"
+          ],
+          [
+            "SOL-2003",
+            "03/09/2026",
+            "RH",
+            "Capacitación",
+            "Ana López",
+            "13/09/2026",
+            "Cerrada",
+            "Baja",
+            "Observación 3",
+            "Interno 3",
+            "Teléfono"
+          ],
+          [
+            "SOL-2004",
+            "04/09/2026",
+            "Mantto.",
+            "Seguimiento",
+            "José Silva",
+            "19/09/2026",
+            "Cancelada",
+            "Alta",
+            "Observación 4",
+            "Interno 4",
+            "Correo"
+          ],
+          [
+            "SOL-2005",
+            "05/09/2026",
+            "Almacenes",
+            "Ajuste",
+            "María Gómez",
+            "19/09/2026",
+            "CANCEL.",
+            "Media",
+            "Observación 5",
+            "Interno 5",
+            "Portal"
+          ],
+          [
+            "SOL-2006",
+            "06/09/2026",
+            "Seguridad",
+            "Solicitud de material",
+            "",
+            "15/09/2026",
+            "Abierta",
+            "Baja",
+            "Observación 6",
+            "Interno 6",
+            "Teléfono"
+          ],
+          [
+            "SOL-2007",
+            "07/09/2026",
+            "Control de Procesos",
+            "Inspección",
+            "Lucía Ramos",
+            "Pendiente",
+            "En proceso",
+            "Alta",
+            "Observación 7",
+            "Interno 7",
+            "Correo"
+          ],
+          [
+            "SOL-2008",
+            "08/09/2026",
+            "Área desconocida",
+            "Reparación",
+            "Laura Pérez",
+            "18/09/2026",
+            "Cerrada",
+            "Media",
+            "Observación 8",
+            "Interno 8",
+            "Portal"
+          ],
+          [
+            "SOL-2009",
+            "09/09/2026",
+            "Mantenimiento",
+            "Capacitación",
+            "Carlos Ruiz",
+            "24/09/2026",
+            "Cancelada",
+            "Baja",
+            "Observación 9",
+            "Interno 9",
+            "Teléfono"
+          ],
+          [
+            "SOL-2010",
+            "10/09/2026",
+            "Recursos Humanos",
+            "Seguimiento",
+            "Ana López",
+            "21/09/2026",
+            "Pendiente de asignación",
+            "Alta",
+            "Observación 10",
+            "Interno 10",
+            "Correo"
+          ],
+          [
+            "SOL-2011",
+            "11/09/2026",
+            "Producción",
+            "Ajuste",
+            "José Silva",
+            "16/09/2026",
+            "Abierta",
+            "Media",
+            "Observación 11",
+            "Interno 11",
+            "Portal"
+          ],
+          [
+            "SOL-2012",
+            "12/09/2026",
+            "Almacenes",
+            "Solicitud de material",
+            "María Gómez",
+            "16/09/2026",
+            "En proceso",
+            "Baja",
+            "Observación 12",
+            "Interno 12",
+            "Teléfono"
+          ],
+          [
+            "SOL-2013",
+            "13/09/2026",
+            "Seguridad",
+            "Inspección",
+            "Sergio Torres",
+            "27/09/2026",
+            "Cerrada",
+            "Alta",
+            "Observación 13",
+            "Interno 13",
+            "Correo"
+          ],
+          [
+            "SOL-2014",
+            "14/09/2026",
+            "Control de Procesos",
+            "Reparación",
+            "Lucía Ramos",
+            "24/09/2026",
+            "Cancelada",
+            "Media",
+            "Observación 14",
+            "Interno 14",
+            "Portal"
+          ],
+          [
+            "SOL-2015",
+            "15/09/2026",
+            "Calidad",
+            "Capacitación",
+            "Laura Pérez",
+            "24/09/2026",
+            "Pendiente de asignación",
+            "Baja",
+            "Observación 15",
+            "Interno 15",
+            "Teléfono"
+          ],
+          [
+            "SOL-2016",
+            "16/09/2026",
+            "Mantenimiento",
+            "Seguimiento",
+            "Carlos Ruiz",
+            "28/09/2026",
+            "Abierta",
+            "Alta",
+            "Observación 16",
+            "Interno 16",
+            "Correo"
+          ],
+          [
+            "SOL-2017",
+            "17/09/2026",
+            "Recursos Humanos",
+            "Ajuste",
+            "Ana López",
+            "28/09/2026",
+            "En proceso",
+            "Media",
+            "Observación 17",
+            "Interno 17",
+            "Portal"
+          ],
+          [
+            "SOL-2018",
+            "18/09/2026",
+            "Producción",
+            "Solicitud de material",
+            "José Silva",
+            "02/10/2026",
+            "Cerrada",
+            "Baja",
+            "Observación 18",
+            "Interno 18",
+            "Teléfono"
+          ],
+          [
+            "SOL-2019",
+            "19/09/2026",
+            "Almacenes",
+            "Inspección",
+            "María Gómez",
+            "23/09/2026",
+            "Cancelada",
+            "Alta",
+            "Observación 19",
+            "Interno 19",
+            "Correo"
+          ],
+          [
+            "SOL-2020",
+            "20/09/2026",
+            "Seguridad",
+            "Reparación",
+            "Sergio Torres",
+            "23/09/2026",
+            "Pendiente de asignación",
+            "Media",
+            "Observación 20",
+            "Interno 20",
+            "Portal"
+          ],
+          [
+            "SOL-2021",
+            "21/09/2026",
+            "Control de Procesos",
+            "Capacitación",
+            "Lucía Ramos",
+            "30/09/2026",
+            "Abierta",
+            "Baja",
+            "Observación 21",
+            "Interno 21",
+            "Teléfono"
+          ],
+          [
+            "SOL-2022",
+            "22/09/2026",
+            "Calidad",
+            "Seguimiento",
+            "Laura Pérez",
+            "28/09/2026",
+            "En proceso",
+            "Alta",
+            "Observación 22",
+            "Interno 22",
+            "Correo"
+          ],
+          [
+            "SOL-2023",
+            "23/09/2026",
+            "Mantenimiento",
+            "Ajuste",
+            "Carlos Ruiz",
+            "27/09/2026",
+            "Cerrada",
+            "Media",
+            "Observación 23",
+            "Interno 23",
+            "Portal"
+          ],
+          [
+            "SOL-2024",
+            "24/09/2026",
+            "Recursos Humanos",
+            "Solicitud de material",
+            "Ana López",
+            "27/09/2026",
+            "Cancelada",
+            "Baja",
+            "Observación 24",
+            "Interno 24",
+            "Teléfono"
+          ],
+          [
+            "SOL-2025",
+            "25/09/2026",
+            "Producción",
+            "Inspección",
+            "José Silva",
+            "05/10/2026",
+            "Pendiente de asignación",
+            "Alta",
+            "Observación 25",
+            "Interno 25",
+            "Correo"
+          ],
+          [
+            "SOL-2026",
+            "01/09/2026",
+            "Almacenes",
+            "Reparación",
+            "María Gómez",
+            "15/09/2026",
+            "Abierta",
+            "Media",
+            "Observación 26",
+            "Interno 26",
+            "Portal"
+          ],
+          [
+            "SOL-2027",
+            "02/09/2026",
+            "Seguridad",
+            "Capacitación",
+            "Sergio Torres",
+            "15/09/2026",
+            "En proceso",
+            "Baja",
+            "Observación 27",
+            "Interno 27",
+            "Teléfono"
+          ],
+          [
+            "SOL-2028",
+            "03/09/2026",
+            "Control de Procesos",
+            "Seguimiento",
+            "Lucía Ramos",
+            "15/09/2026",
+            "Cerrada",
+            "Alta",
+            "Observación 28",
+            "Interno 28",
+            "Correo"
+          ],
+          [
+            "SOL-2029",
+            "04/09/2026",
+            "Calidad",
+            "Ajuste",
+            "Laura Pérez",
+            "06/09/2026",
+            "Cancelada",
+            "Media",
+            "Observación 29",
+            "Interno 29",
+            "Portal"
+          ],
+          [
+            "SOL-2030",
+            "05/09/2026",
+            "Mantenimiento",
+            "Solicitud de material",
+            "Carlos Ruiz",
+            "16/09/2026",
+            "Pendiente de asignación",
+            "Baja",
+            "Observación 30",
+            "Interno 30",
+            "Teléfono"
+          ],
+          [
+            "SOL-2031",
+            "06/09/2026",
+            "Recursos Humanos",
+            "Inspección",
+            "Ana López",
+            "14/09/2026",
+            "Abierta",
+            "Alta",
+            "Observación 31",
+            "Interno 31",
+            "Correo"
+          ],
+          [
+            "SOL-2032",
+            "07/09/2026",
+            "Producción",
+            "Reparación",
+            "José Silva",
+            "16/09/2026",
+            "En proceso",
+            "Media",
+            "Observación 32",
+            "Interno 32",
+            "Portal"
+          ],
+          [
+            "SOL-2033",
+            "08/09/2026",
+            "Almacenes",
+            "Capacitación",
+            "María Gómez",
+            "20/09/2026",
+            "Cerrada",
+            "Baja",
+            "Observación 33",
+            "Interno 33",
+            "Teléfono"
+          ],
+          [
+            "SOL-2034",
+            "09/09/2026",
+            "Seguridad",
+            "Seguimiento",
+            "Sergio Torres",
+            "22/09/2026",
+            "Cancelada",
+            "Alta",
+            "Observación 34",
+            "Interno 34",
+            "Correo"
+          ],
+          [
+            "SOL-2035",
+            "10/09/2026",
+            "Control de Procesos",
+            "Ajuste",
+            "Lucía Ramos",
+            "21/09/2026",
+            "Pendiente de asignación",
+            "Media",
+            "Observación 35",
+            "Interno 35",
+            "Portal"
+          ],
+          [
+            "SOL-2009",
+            "09/09/2026",
+            "Mantenimiento",
+            "Capacitación",
+            "Carlos Ruiz",
+            "24/09/2026",
+            "Cancelada",
+            "Baja",
+            "Observación 9",
+            "Interno 9",
+            "Teléfono"
+          ],
+          [
+            "TEST-001",
+            "01/09/2026",
+            "Calidad",
+            "Prueba",
+            "Usuario prueba",
+            "01/09/2026",
+            "Abierta",
+            "Baja",
+            "Prueba",
+            "No compartir",
+            "Correo"
+          ]
+        ],
+        "total_rows": 37
+      }
+    },
+    "M01_L09_Matriz_Pruebas.xlsx": {
+      "Matriz": {
+        "header": [
+          "Prueba",
+          "Cambio",
+          "Resultado esperado",
+          "Resultado real",
+          "Estado",
+          "Acción"
+        ],
+        "rows": [
+          [
+            "P01",
+            "Nuevas filas",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "P02",
+            "Nueva categoría",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "P03",
+            "Campo obligatorio vacío",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "P04",
+            "Tipo inválido",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "P05",
+            "Columna adicional",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "P06",
+            "Columna faltante",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "P07",
+            "Cambio de nombre",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "P08",
+            "Cambio de ruta",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "P09",
+            "Otro usuario",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "P10",
+            "Mayor volumen",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 10
+      }
+    },
+    "M01_L10_Ficha_Conciliacion.xlsx": {
+      "Conciliacion": {
+        "header": [
+          "Concepto",
+          "Cantidad",
+          "Signo",
+          "Justificación"
+        ],
+        "rows": [
+          [
+            "Registros recibidos",
+            "",
+            "+",
+            ""
+          ],
+          [
+            "Filas vacías",
+            "",
+            "-",
+            ""
+          ],
+          [
+            "Registros de prueba",
+            "",
+            "-",
+            ""
+          ],
+          [
+            "Canceladas",
+            "",
+            "-",
+            ""
+          ],
+          [
+            "Duplicados confirmados",
+            "",
+            "-",
+            ""
+          ],
+          [
+            "Registros válidos",
+            "",
+            "=",
+            ""
+          ],
+          [
+            "Registros para revisión",
+            "",
+            "+",
+            ""
+          ],
+          [
+            "Diferencia sin explicar",
+            "",
+            "",
+            "Debe ser 0"
+          ]
+        ],
+        "total_rows": 8
+      }
+    },
+    "M01_L10_Lista_Liberacion.xlsx": {
+      "Liberacion": {
+        "header": [
+          "Control",
+          "Cumple",
+          "Evidencia",
+          "Observación"
+        ],
+        "rows": [
+          [
+            "Ruta controlada",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Objeto correcto",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Granularidad documentada",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Clave definida",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Columnas obligatorias",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Tipos correctos",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Filtros justificados",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Duplicados analizados",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Excepciones conservadas",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Conciliación completa",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Actualización probada",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Información sensible excluida",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Versión registrada",
+            "",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 13
+      }
+    },
+    "M01_L10_Registro_Excepciones.xlsx": {
+      "Excepciones": {
+        "header": [
+          "Identificador",
+          "Tipo de excepción",
+          "Campo afectado",
+          "Valor original",
+          "Regla incumplida",
+          "Acción requerida",
+          "Responsable",
+          "Estatus"
+        ],
+        "rows": [],
+        "total_rows": 0
+      }
+    },
+    "M01_L11_Catalogo_Departamentos.xlsx": {
+      "Datos": {
+        "header": [
+          "Valor autorizado",
+          "Activo"
+        ],
+        "rows": [
+          [
+            "Recursos Humanos",
+            "Sí"
+          ],
+          [
+            "Contabilidad",
+            "Sí"
+          ],
+          [
+            "Calidad",
+            "Sí"
+          ],
+          [
+            "Mantenimiento",
+            "Sí"
+          ],
+          [
+            "Producción",
+            "Sí"
+          ],
+          [
+            "Almacenes",
+            "Sí"
+          ],
+          [
+            "Seguridad",
+            "Sí"
+          ],
+          [
+            "Servicios médicos",
+            "Sí"
+          ],
+          [
+            "Control de Procesos",
+            "Sí"
+          ]
+        ],
+        "total_rows": 9
+      }
+    },
+    "M01_L11_Catalogo_Estatus.xlsx": {
+      "Datos": {
+        "header": [
+          "Valor autorizado",
+          "Activo"
+        ],
+        "rows": [
+          [
+            "Abierta",
+            "Sí"
+          ],
+          [
+            "En proceso",
+            "Sí"
+          ],
+          [
+            "En validación",
+            "Sí"
+          ],
+          [
+            "Cerrada",
+            "Sí"
+          ],
+          [
+            "Cancelada",
+            "Sí"
+          ],
+          [
+            "Pendiente de asignación",
+            "Sí"
+          ]
+        ],
+        "total_rows": 6
+      }
+    },
+    "M01_L11_Solicitudes_Periodo_01.xlsx": {
+      "Solicitudes": {
+        "header": [
+          "Folio",
+          "Fecha de registro",
+          "Departamento",
+          "Tipo de solicitud",
+          "Responsable",
+          "Fecha compromiso",
+          "Estatus",
+          "Prioridad",
+          "Observación",
+          "Comentario interno"
+        ],
+        "rows": [
+          [
+            "SOL-1001",
+            "01/08/2026",
+            "Calidad",
+            "Inspección",
+            "Laura Pérez",
+            "16/08/2026",
+            "Abierta",
+            "Alta",
+            "Observación 1",
+            "Interno 1"
+          ],
+          [
+            " SOL-1002 ",
+            "02/08/2026",
+            "Mantenimiento",
+            "Reparación",
+            "Carlos Ruiz",
+            "07/08/2026",
+            "En proceso",
+            "Media",
+            "Observación 2",
+            "Interno 2"
+          ],
+          [
+            "SOL-1003",
+            "03/08/2026",
+            "RH",
+            "Capacitación",
+            "Ana López",
+            "10/08/2026",
+            "Cerrada",
+            "Baja",
+            "Observación 3",
+            "Interno 3"
+          ],
+          [
+            "SOL-1004",
+            "04/08/2026",
+            "Mantto.",
+            "Seguimiento",
+            "José Silva",
+            "13/08/2026",
+            "Cancelada",
+            "Alta",
+            "Observación 4",
+            "Interno 4"
+          ],
+          [
+            "SOL-1005",
+            "05/08/2026",
+            "Almacenes",
+            "Ajuste",
+            "María Gómez",
+            "10/08/2026",
+            "CANCEL.",
+            "Media",
+            "Observación 5",
+            "Interno 5"
+          ],
+          [
+            "SOL-1006",
+            "06/08/2026",
+            "Seguridad",
+            "Solicitud de material",
+            "",
+            "14/08/2026",
+            "Abierta",
+            "Baja",
+            "Observación 6",
+            "Interno 6"
+          ],
+          [
+            "SOL-1007",
+            "07/08/2026",
+            "Control de Procesos",
+            "Inspección",
+            "Lucía Ramos",
+            "Pendiente",
+            "En proceso",
+            "Alta",
+            "Observación 7",
+            "Interno 7"
+          ],
+          [
+            "SOL-1008",
+            "08/08/2026",
+            "Área desconocida",
+            "Reparación",
+            "Laura Pérez",
+            "19/08/2026",
+            "Cerrada",
+            "Media",
+            "Observación 8",
+            "Interno 8"
+          ],
+          [
+            "SOL-1009",
+            "09/08/2026",
+            "Mantenimiento",
+            "Capacitación",
+            "Carlos Ruiz",
+            "23/08/2026",
+            "Cancelada",
+            "Baja",
+            "Observación 9",
+            "Interno 9"
+          ],
+          [
+            "SOL-1010",
+            "10/08/2026",
+            "Recursos Humanos",
+            "Seguimiento",
+            "Ana López",
+            "14/08/2026",
+            "Pendiente de asignación",
+            "Alta",
+            "Observación 10",
+            "Interno 10"
+          ],
+          [
+            "SOL-1011",
+            "11/08/2026",
+            "Producción",
+            "Ajuste",
+            "José Silva",
+            "23/08/2026",
+            "Abierta",
+            "Media",
+            "Observación 11",
+            "Interno 11"
+          ],
+          [
+            "SOL-1012",
+            "12/08/2026",
+            "Almacenes",
+            "Solicitud de material",
+            "María Gómez",
+            "17/08/2026",
+            "En proceso",
+            "Baja",
+            "Observación 12",
+            "Interno 12"
+          ],
+          [
+            "SOL-1013",
+            "13/08/2026",
+            "Seguridad",
+            "Inspección",
+            "Sergio Torres",
+            "26/08/2026",
+            "Cerrada",
+            "Alta",
+            "Observación 13",
+            "Interno 13"
+          ],
+          [
+            "SOL-1014",
+            "14/08/2026",
+            "Control de Procesos",
+            "Reparación",
+            "Lucía Ramos",
+            "22/08/2026",
+            "Cancelada",
+            "Media",
+            "Observación 14",
+            "Interno 14"
+          ],
+          [
+            "SOL-1015",
+            "15/08/2026",
+            "Calidad",
+            "Capacitación",
+            "Laura Pérez",
+            "25/08/2026",
+            "Pendiente de asignación",
+            "Baja",
+            "Observación 15",
+            "Interno 15"
+          ],
+          [
+            "SOL-1016",
+            "16/08/2026",
+            "Mantenimiento",
+            "Seguimiento",
+            "Carlos Ruiz",
+            "21/08/2026",
+            "Abierta",
+            "Alta",
+            "Observación 16",
+            "Interno 16"
+          ],
+          [
+            "SOL-1017",
+            "17/08/2026",
+            "Recursos Humanos",
+            "Ajuste",
+            "Ana López",
+            "21/08/2026",
+            "En proceso",
+            "Media",
+            "Observación 17",
+            "Interno 17"
+          ],
+          [
+            "SOL-1018",
+            "18/08/2026",
+            "Producción",
+            "Solicitud de material",
+            "José Silva",
+            "30/08/2026",
+            "Cerrada",
+            "Baja",
+            "Observación 18",
+            "Interno 18"
+          ],
+          [
+            "SOL-1019",
+            "19/08/2026",
+            "Almacenes",
+            "Inspección",
+            "María Gómez",
+            "28/08/2026",
+            "Cancelada",
+            "Alta",
+            "Observación 19",
+            "Interno 19"
+          ],
+          [
+            "SOL-1020",
+            "20/08/2026",
+            "Seguridad",
+            "Reparación",
+            "Sergio Torres",
+            "28/08/2026",
+            "Pendiente de asignación",
+            "Media",
+            "Observación 20",
+            "Interno 20"
+          ],
+          [
+            "SOL-1021",
+            "21/08/2026",
+            "Control de Procesos",
+            "Capacitación",
+            "Lucía Ramos",
+            "05/09/2026",
+            "Abierta",
+            "Baja",
+            "Observación 21",
+            "Interno 21"
+          ],
+          [
+            "SOL-1022",
+            "22/08/2026",
+            "Calidad",
+            "Seguimiento",
+            "Laura Pérez",
+            "30/08/2026",
+            "En proceso",
+            "Alta",
+            "Observación 22",
+            "Interno 22"
+          ],
+          [
+            "SOL-1023",
+            "23/08/2026",
+            "Mantenimiento",
+            "Ajuste",
+            "Carlos Ruiz",
+            "05/09/2026",
+            "Cerrada",
+            "Media",
+            "Observación 23",
+            "Interno 23"
+          ],
+          [
+            "SOL-1024",
+            "24/08/2026",
+            "Recursos Humanos",
+            "Solicitud de material",
+            "Ana López",
+            "30/08/2026",
+            "Cancelada",
+            "Baja",
+            "Observación 24",
+            "Interno 24"
+          ],
+          [
+            "SOL-1025",
+            "25/08/2026",
+            "Producción",
+            "Inspección",
+            "José Silva",
+            "02/09/2026",
+            "Pendiente de asignación",
+            "Alta",
+            "Observación 25",
+            "Interno 25"
+          ],
+          [
+            "SOL-1026",
+            "01/08/2026",
+            "Almacenes",
+            "Reparación",
+            "María Gómez",
+            "06/08/2026",
+            "Abierta",
+            "Media",
+            "Observación 26",
+            "Interno 26"
+          ],
+          [
+            "SOL-1027",
+            "02/08/2026",
+            "Seguridad",
+            "Capacitación",
+            "Sergio Torres",
+            "16/08/2026",
+            "En proceso",
+            "Baja",
+            "Observación 27",
+            "Interno 27"
+          ],
+          [
+            "SOL-1028",
+            "03/08/2026",
+            "Control de Procesos",
+            "Seguimiento",
+            "Lucía Ramos",
+            "16/08/2026",
+            "Cerrada",
+            "Alta",
+            "Observación 28",
+            "Interno 28"
+          ],
+          [
+            "SOL-1029",
+            "04/08/2026",
+            "Calidad",
+            "Ajuste",
+            "Laura Pérez",
+            "17/08/2026",
+            "Cancelada",
+            "Media",
+            "Observación 29",
+            "Interno 29"
+          ],
+          [
+            "SOL-1030",
+            "05/08/2026",
+            "Mantenimiento",
+            "Solicitud de material",
+            "Carlos Ruiz",
+            "19/08/2026",
+            "Pendiente de asignación",
+            "Baja",
+            "Observación 30",
+            "Interno 30"
+          ],
+          [
+            "SOL-1031",
+            "06/08/2026",
+            "Recursos Humanos",
+            "Inspección",
+            "Ana López",
+            "13/08/2026",
+            "Abierta",
+            "Alta",
+            "Observación 31",
+            "Interno 31"
+          ],
+          [
+            "SOL-1032",
+            "07/08/2026",
+            "Producción",
+            "Reparación",
+            "José Silva",
+            "16/08/2026",
+            "En proceso",
+            "Media",
+            "Observación 32",
+            "Interno 32"
+          ],
+          [
+            "SOL-1033",
+            "08/08/2026",
+            "Almacenes",
+            "Capacitación",
+            "María Gómez",
+            "22/08/2026",
+            "Cerrada",
+            "Baja",
+            "Observación 33",
+            "Interno 33"
+          ],
+          [
+            "SOL-1034",
+            "09/08/2026",
+            "Seguridad",
+            "Seguimiento",
+            "Sergio Torres",
+            "11/08/2026",
+            "Cancelada",
+            "Alta",
+            "Observación 34",
+            "Interno 34"
+          ],
+          [
+            "SOL-1035",
+            "10/08/2026",
+            "Control de Procesos",
+            "Ajuste",
+            "Lucía Ramos",
+            "17/08/2026",
+            "Pendiente de asignación",
+            "Media",
+            "Observación 35",
+            "Interno 35"
+          ],
+          [
+            "SOL-1036",
+            "11/08/2026",
+            "Calidad",
+            "Solicitud de material",
+            "Laura Pérez",
+            "23/08/2026",
+            "Abierta",
+            "Baja",
+            "Observación 36",
+            "Interno 36"
+          ],
+          [
+            "SOL-1037",
+            "12/08/2026",
+            "Mantenimiento",
+            "Inspección",
+            "Carlos Ruiz",
+            "26/08/2026",
+            "En proceso",
+            "Alta",
+            "Observación 37",
+            "Interno 37"
+          ],
+          [
+            "SOL-1038",
+            "13/08/2026",
+            "Recursos Humanos",
+            "Reparación",
+            "Ana López",
+            "25/08/2026",
+            "Cerrada",
+            "Media",
+            "Observación 38",
+            "Interno 38"
+          ],
+          [
+            "SOL-1039",
+            "14/08/2026",
+            "Producción",
+            "Capacitación",
+            "José Silva",
+            "19/08/2026",
+            "Cancelada",
+            "Baja",
+            "Observación 39",
+            "Interno 39"
+          ],
+          [
+            "SOL-1040",
+            "15/08/2026",
+            "Almacenes",
+            "Seguimiento",
+            "María Gómez",
+            "26/08/2026",
+            "Pendiente de asignación",
+            "Alta",
+            "Observación 40",
+            "Interno 40"
+          ],
+          [
+            "SOL-1041",
+            "16/08/2026",
+            "Seguridad",
+            "Ajuste",
+            "Sergio Torres",
+            "25/08/2026",
+            "Abierta",
+            "Media",
+            "Observación 41",
+            "Interno 41"
+          ],
+          [
+            "SOL-1042",
+            "17/08/2026",
+            "Control de Procesos",
+            "Solicitud de material",
+            "Lucía Ramos",
+            "25/08/2026",
+            "En proceso",
+            "Baja",
+            "Observación 42",
+            "Interno 42"
+          ],
+          [
+            "SOL-1009",
+            "09/08/2026",
+            "Mantenimiento",
+            "Capacitación",
+            "Carlos Ruiz",
+            "23/08/2026",
+            "Cancelada",
+            "Baja",
+            "Observación 9",
+            "Interno 9"
+          ],
+          [
+            "TEST-001",
+            "01/08/2026",
+            "Calidad",
+            "Prueba",
+            "Usuario prueba",
+            "01/08/2026",
+            "Abierta",
+            "Baja",
+            "Prueba",
+            "No compartir"
+          ],
+          [
+            "Total general",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 45
+      }
+    },
+    "M01_L11_Solicitudes_Periodo_02.xlsx": {
+      "Solicitudes": {
+        "header": [
+          "Folio",
+          "Fecha de registro",
+          "Departamento",
+          "Tipo de solicitud",
+          "Responsable",
+          "Fecha compromiso",
+          "Estatus",
+          "Prioridad",
+          "Observación",
+          "Comentario interno",
+          "Canal"
+        ],
+        "rows": [
+          [
+            "SOL-2001",
+            "01/09/2026",
+            "Calidad",
+            "Inspección",
+            "Laura Pérez",
+            "10/09/2026",
+            "Abierta",
+            "Alta",
+            "Observación 1",
+            "Interno 1",
+            "Correo"
+          ],
+          [
+            " SOL-2002 ",
+            "02/09/2026",
+            "Mantenimiento",
+            "Reparación",
+            "Carlos Ruiz",
+            "17/09/2026",
+            "En proceso",
+            "Media",
+            "Observación 2",
+            "Interno 2",
+            "Portal"
+          ],
+          [
+            "SOL-2003",
+            "03/09/2026",
+            "RH",
+            "Capacitación",
+            "Ana López",
+            "15/09/2026",
+            "Cerrada",
+            "Baja",
+            "Observación 3",
+            "Interno 3",
+            "Teléfono"
+          ],
+          [
+            "SOL-2004",
+            "04/09/2026",
+            "Mantto.",
+            "Seguimiento",
+            "José Silva",
+            "15/09/2026",
+            "Cancelada",
+            "Alta",
+            "Observación 4",
+            "Interno 4",
+            "Correo"
+          ],
+          [
+            "SOL-2005",
+            "05/09/2026",
+            "Almacenes",
+            "Ajuste",
+            "María Gómez",
+            "16/09/2026",
+            "CANCEL.",
+            "Media",
+            "Observación 5",
+            "Interno 5",
+            "Portal"
+          ],
+          [
+            "SOL-2006",
+            "06/09/2026",
+            "Seguridad",
+            "Solicitud de material",
+            "",
+            "12/09/2026",
+            "Abierta",
+            "Baja",
+            "Observación 6",
+            "Interno 6",
+            "Teléfono"
+          ],
+          [
+            "SOL-2007",
+            "07/09/2026",
+            "Control de Procesos",
+            "Inspección",
+            "Lucía Ramos",
+            "Pendiente",
+            "En proceso",
+            "Alta",
+            "Observación 7",
+            "Interno 7",
+            "Correo"
+          ],
+          [
+            "SOL-2008",
+            "08/09/2026",
+            "Área desconocida",
+            "Reparación",
+            "Laura Pérez",
+            "17/09/2026",
+            "Cerrada",
+            "Media",
+            "Observación 8",
+            "Interno 8",
+            "Portal"
+          ],
+          [
+            "SOL-2009",
+            "09/09/2026",
+            "Mantenimiento",
+            "Capacitación",
+            "Carlos Ruiz",
+            "17/09/2026",
+            "Cancelada",
+            "Baja",
+            "Observación 9",
+            "Interno 9",
+            "Teléfono"
+          ],
+          [
+            "SOL-2010",
+            "10/09/2026",
+            "Recursos Humanos",
+            "Seguimiento",
+            "Ana López",
+            "24/09/2026",
+            "Pendiente de asignación",
+            "Alta",
+            "Observación 10",
+            "Interno 10",
+            "Correo"
+          ],
+          [
+            "SOL-2011",
+            "11/09/2026",
+            "Producción",
+            "Ajuste",
+            "José Silva",
+            "23/09/2026",
+            "Abierta",
+            "Media",
+            "Observación 11",
+            "Interno 11",
+            "Portal"
+          ],
+          [
+            "SOL-2012",
+            "12/09/2026",
+            "Almacenes",
+            "Solicitud de material",
+            "María Gómez",
+            "16/09/2026",
+            "En proceso",
+            "Baja",
+            "Observación 12",
+            "Interno 12",
+            "Teléfono"
+          ],
+          [
+            "SOL-2013",
+            "13/09/2026",
+            "Seguridad",
+            "Inspección",
+            "Sergio Torres",
+            "20/09/2026",
+            "Cerrada",
+            "Alta",
+            "Observación 13",
+            "Interno 13",
+            "Correo"
+          ],
+          [
+            "SOL-2014",
+            "14/09/2026",
+            "Control de Procesos",
+            "Reparación",
+            "Lucía Ramos",
+            "19/09/2026",
+            "Cancelada",
+            "Media",
+            "Observación 14",
+            "Interno 14",
+            "Portal"
+          ],
+          [
+            "SOL-2015",
+            "15/09/2026",
+            "Calidad",
+            "Capacitación",
+            "Laura Pérez",
+            "25/09/2026",
+            "Pendiente de asignación",
+            "Baja",
+            "Observación 15",
+            "Interno 15",
+            "Teléfono"
+          ],
+          [
+            "SOL-2016",
+            "16/09/2026",
+            "Mantenimiento",
+            "Seguimiento",
+            "Carlos Ruiz",
+            "25/09/2026",
+            "Abierta",
+            "Alta",
+            "Observación 16",
+            "Interno 16",
+            "Correo"
+          ],
+          [
+            "SOL-2017",
+            "17/09/2026",
+            "Recursos Humanos",
+            "Ajuste",
+            "Ana López",
+            "19/09/2026",
+            "En proceso",
+            "Media",
+            "Observación 17",
+            "Interno 17",
+            "Portal"
+          ],
+          [
+            "SOL-2018",
+            "18/09/2026",
+            "Producción",
+            "Solicitud de material",
+            "José Silva",
+            "26/09/2026",
+            "Cerrada",
+            "Baja",
+            "Observación 18",
+            "Interno 18",
+            "Teléfono"
+          ],
+          [
+            "SOL-2019",
+            "19/09/2026",
+            "Almacenes",
+            "Inspección",
+            "María Gómez",
+            "30/09/2026",
+            "Cancelada",
+            "Alta",
+            "Observación 19",
+            "Interno 19",
+            "Correo"
+          ],
+          [
+            "SOL-2020",
+            "20/09/2026",
+            "Seguridad",
+            "Reparación",
+            "Sergio Torres",
+            "25/09/2026",
+            "Pendiente de asignación",
+            "Media",
+            "Observación 20",
+            "Interno 20",
+            "Portal"
+          ],
+          [
+            "SOL-2021",
+            "21/09/2026",
+            "Control de Procesos",
+            "Capacitación",
+            "Lucía Ramos",
+            "04/10/2026",
+            "Abierta",
+            "Baja",
+            "Observación 21",
+            "Interno 21",
+            "Teléfono"
+          ],
+          [
+            "SOL-2022",
+            "22/09/2026",
+            "Calidad",
+            "Seguimiento",
+            "Laura Pérez",
+            "01/10/2026",
+            "En proceso",
+            "Alta",
+            "Observación 22",
+            "Interno 22",
+            "Correo"
+          ],
+          [
+            "SOL-2023",
+            "23/09/2026",
+            "Mantenimiento",
+            "Ajuste",
+            "Carlos Ruiz",
+            "02/10/2026",
+            "Cerrada",
+            "Media",
+            "Observación 23",
+            "Interno 23",
+            "Portal"
+          ],
+          [
+            "SOL-2024",
+            "24/09/2026",
+            "Recursos Humanos",
+            "Solicitud de material",
+            "Ana López",
+            "30/09/2026",
+            "Cancelada",
+            "Baja",
+            "Observación 24",
+            "Interno 24",
+            "Teléfono"
+          ],
+          [
+            "SOL-2025",
+            "25/09/2026",
+            "Producción",
+            "Inspección",
+            "José Silva",
+            "02/10/2026",
+            "Pendiente de asignación",
+            "Alta",
+            "Observación 25",
+            "Interno 25",
+            "Correo"
+          ],
+          [
+            "SOL-2026",
+            "01/09/2026",
+            "Almacenes",
+            "Reparación",
+            "María Gómez",
+            "06/09/2026",
+            "Abierta",
+            "Media",
+            "Observación 26",
+            "Interno 26",
+            "Portal"
+          ],
+          [
+            "SOL-2027",
+            "02/09/2026",
+            "Seguridad",
+            "Capacitación",
+            "Sergio Torres",
+            "07/09/2026",
+            "En proceso",
+            "Baja",
+            "Observación 27",
+            "Interno 27",
+            "Teléfono"
+          ],
+          [
+            "SOL-2028",
+            "03/09/2026",
+            "Control de Procesos",
+            "Seguimiento",
+            "Lucía Ramos",
+            "16/09/2026",
+            "Cerrada",
+            "Alta",
+            "Observación 28",
+            "Interno 28",
+            "Correo"
+          ],
+          [
+            "SOL-2029",
+            "04/09/2026",
+            "Calidad",
+            "Ajuste",
+            "Laura Pérez",
+            "15/09/2026",
+            "Cancelada",
+            "Media",
+            "Observación 29",
+            "Interno 29",
+            "Portal"
+          ],
+          [
+            "SOL-2030",
+            "05/09/2026",
+            "Mantenimiento",
+            "Solicitud de material",
+            "Carlos Ruiz",
+            "17/09/2026",
+            "Pendiente de asignación",
+            "Baja",
+            "Observación 30",
+            "Interno 30",
+            "Teléfono"
+          ],
+          [
+            "SOL-2031",
+            "06/09/2026",
+            "Recursos Humanos",
+            "Inspección",
+            "Ana López",
+            "19/09/2026",
+            "Abierta",
+            "Alta",
+            "Observación 31",
+            "Interno 31",
+            "Correo"
+          ],
+          [
+            "SOL-2032",
+            "07/09/2026",
+            "Producción",
+            "Reparación",
+            "José Silva",
+            "11/09/2026",
+            "En proceso",
+            "Media",
+            "Observación 32",
+            "Interno 32",
+            "Portal"
+          ],
+          [
+            "SOL-2033",
+            "08/09/2026",
+            "Almacenes",
+            "Capacitación",
+            "María Gómez",
+            "21/09/2026",
+            "Cerrada",
+            "Baja",
+            "Observación 33",
+            "Interno 33",
+            "Teléfono"
+          ],
+          [
+            "SOL-2034",
+            "09/09/2026",
+            "Seguridad",
+            "Seguimiento",
+            "Sergio Torres",
+            "18/09/2026",
+            "Cancelada",
+            "Alta",
+            "Observación 34",
+            "Interno 34",
+            "Correo"
+          ],
+          [
+            "SOL-2035",
+            "10/09/2026",
+            "Control de Procesos",
+            "Ajuste",
+            "Lucía Ramos",
+            "20/09/2026",
+            "Pendiente de asignación",
+            "Media",
+            "Observación 35",
+            "Interno 35",
+            "Portal"
+          ],
+          [
+            "SOL-2036",
+            "11/09/2026",
+            "Calidad",
+            "Solicitud de material",
+            "Laura Pérez",
+            "18/09/2026",
+            "Abierta",
+            "Baja",
+            "Observación 36",
+            "Interno 36",
+            "Teléfono"
+          ],
+          [
+            "SOL-2037",
+            "12/09/2026",
+            "Mantenimiento",
+            "Inspección",
+            "Carlos Ruiz",
+            "20/09/2026",
+            "En proceso",
+            "Alta",
+            "Observación 37",
+            "Interno 37",
+            "Correo"
+          ],
+          [
+            "SOL-2038",
+            "13/09/2026",
+            "Recursos Humanos",
+            "Reparación",
+            "Ana López",
+            "24/09/2026",
+            "Cerrada",
+            "Media",
+            "Observación 38",
+            "Interno 38",
+            "Portal"
+          ],
+          [
+            "SOL-2039",
+            "14/09/2026",
+            "Producción",
+            "Capacitación",
+            "José Silva",
+            "22/09/2026",
+            "Cancelada",
+            "Baja",
+            "Observación 39",
+            "Interno 39",
+            "Teléfono"
+          ],
+          [
+            "SOL-2040",
+            "15/09/2026",
+            "Almacenes",
+            "Seguimiento",
+            "María Gómez",
+            "21/09/2026",
+            "Pendiente de asignación",
+            "Alta",
+            "Observación 40",
+            "Interno 40",
+            "Correo"
+          ],
+          [
+            "SOL-2041",
+            "16/09/2026",
+            "Seguridad",
+            "Ajuste",
+            "Sergio Torres",
+            "18/09/2026",
+            "Abierta",
+            "Media",
+            "Observación 41",
+            "Interno 41",
+            "Portal"
+          ],
+          [
+            "SOL-2042",
+            "17/09/2026",
+            "Control de Procesos",
+            "Solicitud de material",
+            "Lucía Ramos",
+            "20/09/2026",
+            "En proceso",
+            "Baja",
+            "Observación 42",
+            "Interno 42",
+            "Teléfono"
+          ],
+          [
+            "SOL-2043",
+            "18/09/2026",
+            "Calidad",
+            "Inspección",
+            "Laura Pérez",
+            "21/09/2026",
+            "Cerrada",
+            "Alta",
+            "Observación 43",
+            "Interno 43",
+            "Correo"
+          ],
+          [
+            "SOL-2044",
+            "19/09/2026",
+            "Mantenimiento",
+            "Reparación",
+            "Carlos Ruiz",
+            "01/10/2026",
+            "Cancelada",
+            "Media",
+            "Observación 44",
+            "Interno 44",
+            "Portal"
+          ],
+          [
+            "SOL-2045",
+            "20/09/2026",
+            "Recursos Humanos",
+            "Capacitación",
+            "Ana López",
+            "25/09/2026",
+            "Pendiente de asignación",
+            "Baja",
+            "Observación 45",
+            "Interno 45",
+            "Teléfono"
+          ],
+          [
+            "SOL-2046",
+            "21/09/2026",
+            "Producción",
+            "Seguimiento",
+            "José Silva",
+            "27/09/2026",
+            "Abierta",
+            "Alta",
+            "Observación 46",
+            "Interno 46",
+            "Correo"
+          ],
+          [
+            "SOL-2047",
+            "22/09/2026",
+            "Almacenes",
+            "Ajuste",
+            "María Gómez",
+            "30/09/2026",
+            "En proceso",
+            "Media",
+            "Observación 47",
+            "Interno 47",
+            "Portal"
+          ],
+          [
+            "SOL-2048",
+            "23/09/2026",
+            "Seguridad",
+            "Solicitud de material",
+            "Sergio Torres",
+            "05/10/2026",
+            "Cerrada",
+            "Baja",
+            "Observación 48",
+            "Interno 48",
+            "Teléfono"
+          ],
+          [
+            "SOL-2009",
+            "09/09/2026",
+            "Mantenimiento",
+            "Capacitación",
+            "Carlos Ruiz",
+            "17/09/2026",
+            "Cancelada",
+            "Baja",
+            "Observación 9",
+            "Interno 9",
+            "Correo"
+          ],
+          [
+            "TEST-001",
+            "01/09/2026",
+            "Calidad",
+            "Prueba",
+            "Usuario prueba",
+            "01/09/2026",
+            "Abierta",
+            "Baja",
+            "Prueba",
+            "No compartir",
+            "Portal"
+          ],
+          [
+            "Total general",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 51
+      }
+    },
+    "M01_L12_Actividades_Periodo_A.xlsx": {
+      "Actividades": {
+        "header": [
+          "Folio",
+          "Fecha de alta",
+          "Área",
+          "Categoría",
+          "Descripción",
+          "Responsable",
+          "Fecha objetivo",
+          "Estatus",
+          "Avance",
+          "Prioridad",
+          "Observación",
+          "Nota privada"
+        ],
+        "rows": [
+          [
+            "A-0001",
+            "01/10/2026",
+            "Recursos Humanos",
+            "Acción",
+            "Descripción 1",
+            "Ana",
+            "04/10/2026",
+            "Pendiente",
+            0,
+            "Alta",
+            "Obs 1",
+            "Privada 1"
+          ],
+          [
+            " 0001 ",
+            "02/10/2026",
+            "Contabilidad",
+            "Revisión",
+            "Descripción 2",
+            "Luis",
+            "13/10/2026",
+            "En proceso",
+            0.25,
+            "Media",
+            "Obs 2",
+            "Privada 2"
+          ],
+          [
+            "A-0003",
+            "03/10/2026",
+            "RH",
+            "Capacitación",
+            "Descripción 3",
+            "Marta",
+            "17/10/2026",
+            "En validación",
+            0.5,
+            "Baja",
+            "Obs 3",
+            "Privada 3"
+          ],
+          [
+            "A-0004",
+            "04/10/2026",
+            "Mantto.",
+            "Orden",
+            "Descripción 4",
+            "José",
+            "05/10/2026",
+            "Finalizada",
+            0.75,
+            "Alta",
+            "Obs 4",
+            "Privada 4"
+          ],
+          [
+            "A-0005",
+            "05/10/2026",
+            "Producción",
+            "Seguimiento",
+            "Descripción 5",
+            "Ana",
+            "15/10/2026",
+            "CANCEL.",
+            1,
+            "Media",
+            "Obs 5",
+            "Privada 5"
+          ],
+          [
+            "A-0006",
+            "06/10/2026",
+            "Almacenes",
+            "Acción",
+            "Descripción 6",
+            "Luis",
+            "17/10/2026",
+            "Suspendida",
+            "150%",
+            "Baja",
+            "Obs 6",
+            "Privada 6"
+          ],
+          [
+            "A-0007",
+            "07/10/2026",
+            "Seguridad",
+            "Revisión",
+            "Descripción 7",
+            "Marta",
+            "23/10/2026",
+            "Pendiente",
+            "N/A",
+            "Alta",
+            "Obs 7",
+            "Privada 7"
+          ],
+          [
+            "A-0008",
+            "08/10/2026",
+            "Servicios médicos",
+            "Capacitación",
+            "Descripción 8",
+            "José",
+            "Pendiente",
+            "En proceso",
+            0.5,
+            "Media",
+            "Obs 8",
+            "Privada 8"
+          ],
+          [
+            "A-0009",
+            "09/10/2026",
+            "Control de Procesos",
+            "Orden",
+            "Descripción 9",
+            "",
+            "18/10/2026",
+            "En validación",
+            0.75,
+            "Baja",
+            "Obs 9",
+            "Privada 9"
+          ],
+          [
+            "A-0010",
+            "10/10/2026",
+            "Área Nueva",
+            "Seguimiento",
+            "Descripción 10",
+            "Luis",
+            "25/10/2026",
+            "Finalizada",
+            1,
+            "Alta",
+            "Obs 10",
+            "Privada 10"
+          ],
+          [
+            "A-0011",
+            "11/10/2026",
+            "Recursos Humanos",
+            "Acción",
+            "Descripción 11",
+            "Marta",
+            "27/10/2026",
+            "Cancelada",
+            0,
+            "Media",
+            "Obs 11",
+            "Privada 11"
+          ],
+          [
+            "A-0012",
+            "12/10/2026",
+            "Contabilidad",
+            "Revisión",
+            "Descripción 12",
+            "José",
+            "30/10/2026",
+            "Suspendida",
+            0.25,
+            "Baja",
+            "Obs 12",
+            "Privada 12"
+          ],
+          [
+            "A-0013",
+            "13/10/2026",
+            "Calidad",
+            "Capacitación",
+            "Descripción 13",
+            "Ana",
+            "02/11/2026",
+            "Pendiente",
+            0.5,
+            "Alta",
+            "Obs 13",
+            "Privada 13"
+          ],
+          [
+            "A-0014",
+            "14/10/2026",
+            "Mantenimiento",
+            "Orden",
+            "Descripción 14",
+            "Luis",
+            "30/10/2026",
+            "En proceso",
+            0.75,
+            "Media",
+            "Obs 14",
+            "Privada 14"
+          ],
+          [
+            "A-0015",
+            "15/10/2026",
+            "Producción",
+            "Seguimiento",
+            "Descripción 15",
+            "Marta",
+            "20/10/2026",
+            "En validación",
+            1,
+            "Baja",
+            "Obs 15",
+            "Privada 15"
+          ],
+          [
+            "A-0016",
+            "16/10/2026",
+            "Almacenes",
+            "Acción",
+            "Descripción 16",
+            "José",
+            "04/11/2026",
+            "Finalizada",
+            0,
+            "Alta",
+            "Obs 16",
+            "Privada 16"
+          ],
+          [
+            "A-0017",
+            "17/10/2026",
+            "Seguridad",
+            "Revisión",
+            "Descripción 17",
+            "Ana",
+            "02/11/2026",
+            "Cancelada",
+            0.25,
+            "Media",
+            "Obs 17",
+            "Privada 17"
+          ],
+          [
+            "A-0018",
+            "18/10/2026",
+            "Servicios médicos",
+            "Capacitación",
+            "Descripción 18",
+            "Luis",
+            "20/10/2026",
+            "Suspendida",
+            0.5,
+            "Baja",
+            "Obs 18",
+            "Privada 18"
+          ],
+          [
+            "A-0019",
+            "19/10/2026",
+            "Control de Procesos",
+            "Orden",
+            "Descripción 19",
+            "Marta",
+            "06/11/2026",
+            "Pendiente",
+            0.75,
+            "Alta",
+            "Obs 19",
+            "Privada 19"
+          ],
+          [
+            "A-0020",
+            "20/10/2026",
+            "Planeación",
+            "Seguimiento",
+            "Descripción 20",
+            "José",
+            "28/10/2026",
+            "En proceso",
+            1,
+            "Media",
+            "Obs 20",
+            "Privada 20"
+          ],
+          [
+            "A-0021",
+            "21/10/2026",
+            "Recursos Humanos",
+            "Acción",
+            "Descripción 21",
+            "Ana",
+            "28/10/2026",
+            "En validación",
+            0,
+            "Baja",
+            "Obs 21",
+            "Privada 21"
+          ],
+          [
+            "A-0022",
+            "22/10/2026",
+            "Contabilidad",
+            "Revisión",
+            "Descripción 22",
+            "Luis",
+            "29/10/2026",
+            "Finalizada",
+            0.25,
+            "Alta",
+            "Obs 22",
+            "Privada 22"
+          ],
+          [
+            "A-0023",
+            "23/10/2026",
+            "Calidad",
+            "Capacitación",
+            "Descripción 23",
+            "Marta",
+            "24/10/2026",
+            "Cancelada",
+            0.5,
+            "Media",
+            "Obs 23",
+            "Privada 23"
+          ],
+          [
+            "A-0024",
+            "24/10/2026",
+            "Mantenimiento",
+            "Orden",
+            "Descripción 24",
+            "José",
+            "03/11/2026",
+            "Suspendida",
+            0.75,
+            "Baja",
+            "Obs 24",
+            "Privada 24"
+          ],
+          [
+            "A-0025",
+            "25/10/2026",
+            "Producción",
+            "Seguimiento",
+            "Descripción 25",
+            "Ana",
+            "29/10/2026",
+            "Pendiente",
+            1,
+            "Alta",
+            "Obs 25",
+            "Privada 25"
+          ],
+          [
+            "A-0026",
+            "01/10/2026",
+            "Almacenes",
+            "Acción",
+            "Descripción 26",
+            "Luis",
+            "09/10/2026",
+            "En proceso",
+            0,
+            "Media",
+            "Obs 26",
+            "Privada 26"
+          ],
+          [
+            "A-0027",
+            "02/10/2026",
+            "Seguridad",
+            "Revisión",
+            "Descripción 27",
+            "Marta",
+            "20/10/2026",
+            "En validación",
+            0.25,
+            "Baja",
+            "Obs 27",
+            "Privada 27"
+          ],
+          [
+            "A-0028",
+            "03/10/2026",
+            "Servicios médicos",
+            "Capacitación",
+            "Descripción 28",
+            "José",
+            "12/10/2026",
+            "Finalizada",
+            0.5,
+            "Alta",
+            "Obs 28",
+            "Privada 28"
+          ],
+          [
+            "A-0029",
+            "04/10/2026",
+            "Control de Procesos",
+            "Orden",
+            "Descripción 29",
+            "Ana",
+            "10/10/2026",
+            "Cancelada",
+            0.75,
+            "Media",
+            "Obs 29",
+            "Privada 29"
+          ],
+          [
+            "A-0030",
+            "05/10/2026",
+            "Planeación",
+            "Seguimiento",
+            "Descripción 30",
+            "Luis",
+            "21/10/2026",
+            "Suspendida",
+            1,
+            "Baja",
+            "Obs 30",
+            "Privada 30"
+          ],
+          [
+            "A-0031",
+            "06/10/2026",
+            "Recursos Humanos",
+            "Acción",
+            "Descripción 31",
+            "Marta",
+            "07/10/2026",
+            "Pendiente",
+            0,
+            "Alta",
+            "Obs 31",
+            "Privada 31"
+          ],
+          [
+            "A-0032",
+            "07/10/2026",
+            "Contabilidad",
+            "Revisión",
+            "Descripción 32",
+            "José",
+            "26/10/2026",
+            "En proceso",
+            0.25,
+            "Media",
+            "Obs 32",
+            "Privada 32"
+          ],
+          [
+            "A-0033",
+            "08/10/2026",
+            "Calidad",
+            "Capacitación",
+            "Descripción 33",
+            "Ana",
+            "11/10/2026",
+            "En validación",
+            0.5,
+            "Baja",
+            "Obs 33",
+            "Privada 33"
+          ],
+          [
+            "A-0034",
+            "09/10/2026",
+            "Mantenimiento",
+            "Orden",
+            "Descripción 34",
+            "Luis",
+            "23/10/2026",
+            "Finalizada",
+            0.75,
+            "Alta",
+            "Obs 34",
+            "Privada 34"
+          ],
+          [
+            "A-0035",
+            "10/10/2026",
+            "Producción",
+            "Seguimiento",
+            "Descripción 35",
+            "Marta",
+            "27/10/2026",
+            "Cancelada",
+            1,
+            "Media",
+            "Obs 35",
+            "Privada 35"
+          ],
+          [
+            "A-0036",
+            "11/10/2026",
+            "Almacenes",
+            "Acción",
+            "Descripción 36",
+            "José",
+            "29/10/2026",
+            "Suspendida",
+            0,
+            "Baja",
+            "Obs 36",
+            "Privada 36"
+          ],
+          [
+            "A-0037",
+            "12/10/2026",
+            "Seguridad",
+            "Revisión",
+            "Descripción 37",
+            "Ana",
+            "30/10/2026",
+            "Pendiente",
+            0.25,
+            "Alta",
+            "Obs 37",
+            "Privada 37"
+          ],
+          [
+            "A-0038",
+            "13/10/2026",
+            "Servicios médicos",
+            "Capacitación",
+            "Descripción 38",
+            "Luis",
+            "23/10/2026",
+            "En proceso",
+            0.5,
+            "Media",
+            "Obs 38",
+            "Privada 38"
+          ],
+          [
+            "A-0039",
+            "14/10/2026",
+            "Control de Procesos",
+            "Orden",
+            "Descripción 39",
+            "Marta",
+            "30/10/2026",
+            "En validación",
+            0.75,
+            "Baja",
+            "Obs 39",
+            "Privada 39"
+          ],
+          [
+            "A-0040",
+            "15/10/2026",
+            "Planeación",
+            "Seguimiento",
+            "Descripción 40",
+            "José",
+            "19/10/2026",
+            "Finalizada",
+            1,
+            "Alta",
+            "Obs 40",
+            "Privada 40"
+          ],
+          [
+            "A-0041",
+            "16/10/2026",
+            "Recursos Humanos",
+            "Acción",
+            "Descripción 41",
+            "Ana",
+            "04/11/2026",
+            "Cancelada",
+            0,
+            "Media",
+            "Obs 41",
+            "Privada 41"
+          ],
+          [
+            "A-0042",
+            "17/10/2026",
+            "Contabilidad",
+            "Revisión",
+            "Descripción 42",
+            "Luis",
+            "27/10/2026",
+            "Suspendida",
+            0.25,
+            "Baja",
+            "Obs 42",
+            "Privada 42"
+          ],
+          [
+            "A-0043",
+            "18/10/2026",
+            "Calidad",
+            "Capacitación",
+            "Descripción 43",
+            "Marta",
+            "05/11/2026",
+            "Pendiente",
+            0.5,
+            "Alta",
+            "Obs 43",
+            "Privada 43"
+          ],
+          [
+            "A-0044",
+            "19/10/2026",
+            "Mantenimiento",
+            "Orden",
+            "Descripción 44",
+            "José",
+            "31/10/2026",
+            "En proceso",
+            0.75,
+            "Media",
+            "Obs 44",
+            "Privada 44"
+          ],
+          [
+            "A-0045",
+            "20/10/2026",
+            "Producción",
+            "Seguimiento",
+            "Descripción 45",
+            "Ana",
+            "07/11/2026",
+            "En validación",
+            1,
+            "Baja",
+            "Obs 45",
+            "Privada 45"
+          ],
+          [
+            "A-0046",
+            "21/10/2026",
+            "Almacenes",
+            "Acción",
+            "Descripción 46",
+            "Luis",
+            "03/11/2026",
+            "Finalizada",
+            0,
+            "Alta",
+            "Obs 46",
+            "Privada 46"
+          ],
+          [
+            "A-0047",
+            "22/10/2026",
+            "Seguridad",
+            "Revisión",
+            "Descripción 47",
+            "Marta",
+            "29/10/2026",
+            "Cancelada",
+            0.25,
+            "Media",
+            "Obs 47",
+            "Privada 47"
+          ],
+          [
+            "A-0048",
+            "23/10/2026",
+            "Servicios médicos",
+            "Capacitación",
+            "Descripción 48",
+            "José",
+            "24/10/2026",
+            "Suspendida",
+            0.5,
+            "Baja",
+            "Obs 48",
+            "Privada 48"
+          ],
+          [
+            "A-0011",
+            "11/10/2026",
+            "Recursos Humanos",
+            "Acción",
+            "Descripción 11",
+            "Marta",
+            "27/10/2026",
+            "Cancelada",
+            0,
+            "Media",
+            "Obs 11",
+            "Privada 11"
+          ],
+          [
+            "TEST-900",
+            "01/10/2026",
+            "Calidad",
+            "Prueba",
+            "Prueba",
+            "Usuario",
+            "01/10/2026",
+            "Pendiente",
+            0,
+            "Baja",
+            "Prueba",
+            "Privado"
+          ],
+          [
+            "Total general",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 51
+      }
+    },
+    "M01_L12_Actividades_Periodo_B.xlsx": {
+      "Actividades": {
+        "header": [
+          "Folio",
+          "Fecha de alta",
+          "Área",
+          "Categoría",
+          "Descripción",
+          "Responsable",
+          "Fecha objetivo",
+          "Estatus",
+          "Avance",
+          "Prioridad",
+          "Observación",
+          "Nota privada",
+          "Canal"
+        ],
+        "rows": [
+          [
+            "B-0001",
+            "01/11/2026",
+            "Recursos Humanos",
+            "Acción",
+            "Descripción 1",
+            "Ana",
+            "14/11/2026",
+            "Pendiente",
+            0,
+            "Alta",
+            "Obs 1",
+            "Privada 1",
+            "Correo"
+          ],
+          [
+            " 0001 ",
+            "02/11/2026",
+            "Contabilidad",
+            "Revisión",
+            "Descripción 2",
+            "Luis",
+            "18/11/2026",
+            "En proceso",
+            0.25,
+            "Media",
+            "Obs 2",
+            "Privada 2",
+            "Portal"
+          ],
+          [
+            "B-0003",
+            "03/11/2026",
+            "RH",
+            "Capacitación",
+            "Descripción 3",
+            "Marta",
+            "17/11/2026",
+            "En validación",
+            0.5,
+            "Baja",
+            "Obs 3",
+            "Privada 3",
+            "Correo"
+          ],
+          [
+            "B-0004",
+            "04/11/2026",
+            "Mantto.",
+            "Orden",
+            "Descripción 4",
+            "José",
+            "11/11/2026",
+            "Finalizada",
+            0.75,
+            "Alta",
+            "Obs 4",
+            "Privada 4",
+            "Portal"
+          ],
+          [
+            "B-0005",
+            "05/11/2026",
+            "Producción",
+            "Seguimiento",
+            "Descripción 5",
+            "Ana",
+            "12/11/2026",
+            "CANCEL.",
+            1,
+            "Media",
+            "Obs 5",
+            "Privada 5",
+            "Correo"
+          ],
+          [
+            "B-0006",
+            "06/11/2026",
+            "Almacenes",
+            "Acción",
+            "Descripción 6",
+            "Luis",
+            "19/11/2026",
+            "Suspendida",
+            "150%",
+            "Baja",
+            "Obs 6",
+            "Privada 6",
+            "Portal"
+          ],
+          [
+            "B-0007",
+            "07/11/2026",
+            "Seguridad",
+            "Revisión",
+            "Descripción 7",
+            "Marta",
+            "09/11/2026",
+            "Pendiente",
+            "N/A",
+            "Alta",
+            "Obs 7",
+            "Privada 7",
+            "Correo"
+          ],
+          [
+            "B-0008",
+            "08/11/2026",
+            "Servicios médicos",
+            "Capacitación",
+            "Descripción 8",
+            "José",
+            "Pendiente",
+            "En proceso",
+            0.5,
+            "Media",
+            "Obs 8",
+            "Privada 8",
+            "Portal"
+          ],
+          [
+            "B-0009",
+            "09/11/2026",
+            "Control de Procesos",
+            "Orden",
+            "Descripción 9",
+            "",
+            "24/11/2026",
+            "En validación",
+            0.75,
+            "Baja",
+            "Obs 9",
+            "Privada 9",
+            "Correo"
+          ],
+          [
+            "B-0010",
+            "10/11/2026",
+            "Área Nueva",
+            "Seguimiento",
+            "Descripción 10",
+            "Luis",
+            "25/11/2026",
+            "Finalizada",
+            1,
+            "Alta",
+            "Obs 10",
+            "Privada 10",
+            "Portal"
+          ],
+          [
+            "B-0011",
+            "11/11/2026",
+            "Recursos Humanos",
+            "Acción",
+            "Descripción 11",
+            "Marta",
+            "13/11/2026",
+            "Cancelada",
+            0,
+            "Media",
+            "Obs 11",
+            "Privada 11",
+            "Correo"
+          ],
+          [
+            "B-0012",
+            "12/11/2026",
+            "Contabilidad",
+            "Revisión",
+            "Descripción 12",
+            "José",
+            "29/11/2026",
+            "Suspendida",
+            0.25,
+            "Baja",
+            "Obs 12",
+            "Privada 12",
+            "Portal"
+          ],
+          [
+            "B-0013",
+            "13/11/2026",
+            "Calidad",
+            "Capacitación",
+            "Descripción 13",
+            "Ana",
+            "24/11/2026",
+            "Pendiente",
+            0.5,
+            "Alta",
+            "Obs 13",
+            "Privada 13",
+            "Correo"
+          ],
+          [
+            "B-0014",
+            "14/11/2026",
+            "Mantenimiento",
+            "Orden",
+            "Descripción 14",
+            "Luis",
+            "21/11/2026",
+            "En proceso",
+            0.75,
+            "Media",
+            "Obs 14",
+            "Privada 14",
+            "Portal"
+          ],
+          [
+            "B-0015",
+            "15/11/2026",
+            "Producción",
+            "Seguimiento",
+            "Descripción 15",
+            "Marta",
+            "23/11/2026",
+            "En validación",
+            1,
+            "Baja",
+            "Obs 15",
+            "Privada 15",
+            "Correo"
+          ],
+          [
+            "B-0016",
+            "16/11/2026",
+            "Almacenes",
+            "Acción",
+            "Descripción 16",
+            "José",
+            "02/12/2026",
+            "Finalizada",
+            0,
+            "Alta",
+            "Obs 16",
+            "Privada 16",
+            "Portal"
+          ],
+          [
+            "B-0017",
+            "17/11/2026",
+            "Seguridad",
+            "Revisión",
+            "Descripción 17",
+            "Ana",
+            "07/12/2026",
+            "Cancelada",
+            0.25,
+            "Media",
+            "Obs 17",
+            "Privada 17",
+            "Correo"
+          ],
+          [
+            "B-0018",
+            "18/11/2026",
+            "Servicios médicos",
+            "Capacitación",
+            "Descripción 18",
+            "Luis",
+            "05/12/2026",
+            "Suspendida",
+            0.5,
+            "Baja",
+            "Obs 18",
+            "Privada 18",
+            "Portal"
+          ],
+          [
+            "B-0019",
+            "19/11/2026",
+            "Control de Procesos",
+            "Orden",
+            "Descripción 19",
+            "Marta",
+            "26/11/2026",
+            "Pendiente",
+            0.75,
+            "Alta",
+            "Obs 19",
+            "Privada 19",
+            "Correo"
+          ],
+          [
+            "B-0020",
+            "20/11/2026",
+            "Planeación",
+            "Seguimiento",
+            "Descripción 20",
+            "José",
+            "03/12/2026",
+            "En proceso",
+            1,
+            "Media",
+            "Obs 20",
+            "Privada 20",
+            "Portal"
+          ],
+          [
+            "B-0021",
+            "21/11/2026",
+            "Recursos Humanos",
+            "Acción",
+            "Descripción 21",
+            "Ana",
+            "02/12/2026",
+            "En validación",
+            0,
+            "Baja",
+            "Obs 21",
+            "Privada 21",
+            "Correo"
+          ],
+          [
+            "B-0022",
+            "22/11/2026",
+            "Contabilidad",
+            "Revisión",
+            "Descripción 22",
+            "Luis",
+            "08/12/2026",
+            "Finalizada",
+            0.25,
+            "Alta",
+            "Obs 22",
+            "Privada 22",
+            "Portal"
+          ],
+          [
+            "B-0023",
+            "23/11/2026",
+            "Calidad",
+            "Capacitación",
+            "Descripción 23",
+            "Marta",
+            "28/11/2026",
+            "Cancelada",
+            0.5,
+            "Media",
+            "Obs 23",
+            "Privada 23",
+            "Correo"
+          ],
+          [
+            "B-0024",
+            "24/11/2026",
+            "Mantenimiento",
+            "Orden",
+            "Descripción 24",
+            "José",
+            "08/12/2026",
+            "Suspendida",
+            0.75,
+            "Baja",
+            "Obs 24",
+            "Privada 24",
+            "Portal"
+          ],
+          [
+            "B-0025",
+            "25/11/2026",
+            "Producción",
+            "Seguimiento",
+            "Descripción 25",
+            "Ana",
+            "10/12/2026",
+            "Pendiente",
+            1,
+            "Alta",
+            "Obs 25",
+            "Privada 25",
+            "Correo"
+          ],
+          [
+            "B-0026",
+            "01/11/2026",
+            "Almacenes",
+            "Acción",
+            "Descripción 26",
+            "Luis",
+            "03/11/2026",
+            "En proceso",
+            0,
+            "Media",
+            "Obs 26",
+            "Privada 26",
+            "Portal"
+          ],
+          [
+            "B-0027",
+            "02/11/2026",
+            "Seguridad",
+            "Revisión",
+            "Descripción 27",
+            "Marta",
+            "19/11/2026",
+            "En validación",
+            0.25,
+            "Baja",
+            "Obs 27",
+            "Privada 27",
+            "Correo"
+          ],
+          [
+            "B-0028",
+            "03/11/2026",
+            "Servicios médicos",
+            "Capacitación",
+            "Descripción 28",
+            "José",
+            "11/11/2026",
+            "Finalizada",
+            0.5,
+            "Alta",
+            "Obs 28",
+            "Privada 28",
+            "Portal"
+          ],
+          [
+            "B-0029",
+            "04/11/2026",
+            "Control de Procesos",
+            "Orden",
+            "Descripción 29",
+            "Ana",
+            "13/11/2026",
+            "Cancelada",
+            0.75,
+            "Media",
+            "Obs 29",
+            "Privada 29",
+            "Correo"
+          ],
+          [
+            "B-0030",
+            "05/11/2026",
+            "Planeación",
+            "Seguimiento",
+            "Descripción 30",
+            "Luis",
+            "20/11/2026",
+            "Suspendida",
+            1,
+            "Baja",
+            "Obs 30",
+            "Privada 30",
+            "Portal"
+          ],
+          [
+            "B-0031",
+            "06/11/2026",
+            "Recursos Humanos",
+            "Acción",
+            "Descripción 31",
+            "Marta",
+            "22/11/2026",
+            "Pendiente",
+            0,
+            "Alta",
+            "Obs 31",
+            "Privada 31",
+            "Correo"
+          ],
+          [
+            "B-0032",
+            "07/11/2026",
+            "Contabilidad",
+            "Revisión",
+            "Descripción 32",
+            "José",
+            "23/11/2026",
+            "En proceso",
+            0.25,
+            "Media",
+            "Obs 32",
+            "Privada 32",
+            "Portal"
+          ],
+          [
+            "B-0033",
+            "08/11/2026",
+            "Calidad",
+            "Capacitación",
+            "Descripción 33",
+            "Ana",
+            "17/11/2026",
+            "En validación",
+            0.5,
+            "Baja",
+            "Obs 33",
+            "Privada 33",
+            "Correo"
+          ],
+          [
+            "B-0034",
+            "09/11/2026",
+            "Mantenimiento",
+            "Orden",
+            "Descripción 34",
+            "Luis",
+            "11/11/2026",
+            "Finalizada",
+            0.75,
+            "Alta",
+            "Obs 34",
+            "Privada 34",
+            "Portal"
+          ],
+          [
+            "B-0035",
+            "10/11/2026",
+            "Producción",
+            "Seguimiento",
+            "Descripción 35",
+            "Marta",
+            "16/11/2026",
+            "Cancelada",
+            1,
+            "Media",
+            "Obs 35",
+            "Privada 35",
+            "Correo"
+          ],
+          [
+            "B-0036",
+            "11/11/2026",
+            "Almacenes",
+            "Acción",
+            "Descripción 36",
+            "José",
+            "15/11/2026",
+            "Suspendida",
+            0,
+            "Baja",
+            "Obs 36",
+            "Privada 36",
+            "Portal"
+          ],
+          [
+            "B-0037",
+            "12/11/2026",
+            "Seguridad",
+            "Revisión",
+            "Descripción 37",
+            "Ana",
+            "14/11/2026",
+            "Pendiente",
+            0.25,
+            "Alta",
+            "Obs 37",
+            "Privada 37",
+            "Correo"
+          ],
+          [
+            "B-0038",
+            "13/11/2026",
+            "Servicios médicos",
+            "Capacitación",
+            "Descripción 38",
+            "Luis",
+            "26/11/2026",
+            "En proceso",
+            0.5,
+            "Media",
+            "Obs 38",
+            "Privada 38",
+            "Portal"
+          ],
+          [
+            "B-0039",
+            "14/11/2026",
+            "Control de Procesos",
+            "Orden",
+            "Descripción 39",
+            "Marta",
+            "23/11/2026",
+            "En validación",
+            0.75,
+            "Baja",
+            "Obs 39",
+            "Privada 39",
+            "Correo"
+          ],
+          [
+            "B-0040",
+            "15/11/2026",
+            "Planeación",
+            "Seguimiento",
+            "Descripción 40",
+            "José",
+            "16/11/2026",
+            "Finalizada",
+            1,
+            "Alta",
+            "Obs 40",
+            "Privada 40",
+            "Portal"
+          ],
+          [
+            "B-0041",
+            "16/11/2026",
+            "Recursos Humanos",
+            "Acción",
+            "Descripción 41",
+            "Ana",
+            "22/11/2026",
+            "Cancelada",
+            0,
+            "Media",
+            "Obs 41",
+            "Privada 41",
+            "Correo"
+          ],
+          [
+            "B-0042",
+            "17/11/2026",
+            "Contabilidad",
+            "Revisión",
+            "Descripción 42",
+            "Luis",
+            "24/11/2026",
+            "Suspendida",
+            0.25,
+            "Baja",
+            "Obs 42",
+            "Privada 42",
+            "Portal"
+          ],
+          [
+            "B-0043",
+            "18/11/2026",
+            "Calidad",
+            "Capacitación",
+            "Descripción 43",
+            "Marta",
+            "25/11/2026",
+            "Pendiente",
+            0.5,
+            "Alta",
+            "Obs 43",
+            "Privada 43",
+            "Correo"
+          ],
+          [
+            "B-0044",
+            "19/11/2026",
+            "Mantenimiento",
+            "Orden",
+            "Descripción 44",
+            "José",
+            "23/11/2026",
+            "En proceso",
+            0.75,
+            "Media",
+            "Obs 44",
+            "Privada 44",
+            "Portal"
+          ],
+          [
+            "B-0045",
+            "20/11/2026",
+            "Producción",
+            "Seguimiento",
+            "Descripción 45",
+            "Ana",
+            "02/12/2026",
+            "En validación",
+            1,
+            "Baja",
+            "Obs 45",
+            "Privada 45",
+            "Correo"
+          ],
+          [
+            "B-0046",
+            "21/11/2026",
+            "Almacenes",
+            "Acción",
+            "Descripción 46",
+            "Luis",
+            "26/11/2026",
+            "Finalizada",
+            0,
+            "Alta",
+            "Obs 46",
+            "Privada 46",
+            "Portal"
+          ],
+          [
+            "B-0047",
+            "22/11/2026",
+            "Seguridad",
+            "Revisión",
+            "Descripción 47",
+            "Marta",
+            "30/11/2026",
+            "Cancelada",
+            0.25,
+            "Media",
+            "Obs 47",
+            "Privada 47",
+            "Correo"
+          ],
+          [
+            "B-0048",
+            "23/11/2026",
+            "Servicios médicos",
+            "Capacitación",
+            "Descripción 48",
+            "José",
+            "30/11/2026",
+            "Suspendida",
+            0.5,
+            "Baja",
+            "Obs 48",
+            "Privada 48",
+            "Portal"
+          ],
+          [
+            "B-0049",
+            "24/11/2026",
+            "Control de Procesos",
+            "Orden",
+            "Descripción 49",
+            "Ana",
+            "08/12/2026",
+            "Pendiente",
+            0.75,
+            "Alta",
+            "Obs 49",
+            "Privada 49",
+            "Correo"
+          ],
+          [
+            "B-0050",
+            "25/11/2026",
+            "Planeación",
+            "Seguimiento",
+            "Descripción 50",
+            "Luis",
+            "03/12/2026",
+            "En proceso",
+            1,
+            "Media",
+            "Obs 50",
+            "Privada 50",
+            "Portal"
+          ],
+          [
+            "B-0051",
+            "01/11/2026",
+            "Recursos Humanos",
+            "Acción",
+            "Descripción 51",
+            "Marta",
+            "11/11/2026",
+            "En validación",
+            0,
+            "Baja",
+            "Obs 51",
+            "Privada 51",
+            "Correo"
+          ],
+          [
+            "B-0052",
+            "02/11/2026",
+            "Contabilidad",
+            "Revisión",
+            "Descripción 52",
+            "José",
+            "14/11/2026",
+            "Finalizada",
+            0.25,
+            "Alta",
+            "Obs 52",
+            "Privada 52",
+            "Portal"
+          ],
+          [
+            "B-0053",
+            "03/11/2026",
+            "Calidad",
+            "Capacitación",
+            "Descripción 53",
+            "Ana",
+            "10/11/2026",
+            "Cancelada",
+            0.5,
+            "Media",
+            "Obs 53",
+            "Privada 53",
+            "Correo"
+          ],
+          [
+            "B-0054",
+            "04/11/2026",
+            "Mantenimiento",
+            "Orden",
+            "Descripción 54",
+            "Luis",
+            "14/11/2026",
+            "Suspendida",
+            0.75,
+            "Baja",
+            "Obs 54",
+            "Privada 54",
+            "Portal"
+          ],
+          [
+            "B-0055",
+            "05/11/2026",
+            "Producción",
+            "Seguimiento",
+            "Descripción 55",
+            "Marta",
+            "15/11/2026",
+            "Pendiente",
+            1,
+            "Alta",
+            "Obs 55",
+            "Privada 55",
+            "Correo"
+          ],
+          [
+            "B-0011",
+            "11/11/2026",
+            "Recursos Humanos",
+            "Acción",
+            "Descripción 11",
+            "Marta",
+            "13/11/2026",
+            "Cancelada",
+            0,
+            "Media",
+            "Obs 11",
+            "Privada 11",
+            "Portal"
+          ],
+          [
+            "TEST-900",
+            "01/11/2026",
+            "Calidad",
+            "Prueba",
+            "Prueba",
+            "Usuario",
+            "01/11/2026",
+            "Pendiente",
+            0,
+            "Baja",
+            "Prueba",
+            "Privado",
+            "Correo"
+          ],
+          [
+            "Total general",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 58
+      }
+    },
+    "M01_L12_Catalogo_Areas.xlsx": {
+      "Datos": {
+        "header": [
+          "Valor autorizado",
+          "Activo"
+        ],
+        "rows": [
+          [
+            "Recursos Humanos",
+            "Sí"
+          ],
+          [
+            "Contabilidad",
+            "Sí"
+          ],
+          [
+            "Calidad",
+            "Sí"
+          ],
+          [
+            "Mantenimiento",
+            "Sí"
+          ],
+          [
+            "Producción",
+            "Sí"
+          ],
+          [
+            "Almacenes",
+            "Sí"
+          ],
+          [
+            "Seguridad",
+            "Sí"
+          ],
+          [
+            "Servicios médicos",
+            "Sí"
+          ],
+          [
+            "Control de Procesos",
+            "Sí"
+          ],
+          [
+            "Planeación",
+            "Sí"
+          ]
+        ],
+        "total_rows": 10
+      }
+    },
+    "M01_L12_Catalogo_Estatus.xlsx": {
+      "Datos": {
+        "header": [
+          "Valor autorizado",
+          "Activo"
+        ],
+        "rows": [
+          [
+            "Pendiente",
+            "Sí"
+          ],
+          [
+            "En proceso",
+            "Sí"
+          ],
+          [
+            "En validación",
+            "Sí"
+          ],
+          [
+            "Finalizada",
+            "Sí"
+          ],
+          [
+            "Cancelada",
+            "Sí"
+          ],
+          [
+            "Suspendida",
+            "Sí"
+          ]
+        ],
+        "total_rows": 6
+      }
+    }
+  },
+  "instrucciones": {
+    "M01_Indice_Archivos_Practica.xlsx": {
+      "proposito": "Inventario del paquete del Módulo 1.",
+      "actividades": [
+        "1. Utiliza el archivo indicado en cada actividad.",
+        "2. Conserva los originales.",
+        "3. Guarda tus respuestas con un nombre distinto."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M01_L01_Registro_Solicitudes_Internas.xlsx": {
+      "proposito": "Identificar problemas antes de utilizar Power Query.",
+      "actividades": [
+        "1. Localiza al menos ocho problemas.",
+        "2. Clasifica cada problema por completitud, consistencia, validez o unicidad.",
+        "3. Propón un control de validación."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M01_L02_Mi_Primera_Consulta_Conceptual.xlsx": {
+      "proposito": "Diseñar una consulta sin construirla todavía.",
+      "actividades": [
+        "1. Completa cada elemento.",
+        "2. Distingue origen, consulta y destino.",
+        "3. Define al menos tres validaciones."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M01_L03_Mi_Proceso_ETL.xlsx": {
+      "proposito": "Documentar un flujo de extracción, transformación y carga.",
+      "actividades": [
+        "1. Clasifica las actividades.",
+        "2. Diseña un proceso de tu área.",
+        "3. Define granularidad, clave y excepciones."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M01_L04_Registro_Solicitudes_Internas.xlsx": {
+      "proposito": "Seleccionar el objeto correcto y crear una primera consulta.",
+      "actividades": [
+        "1. Conecta la tabla tblSolicitudes.",
+        "2. Nombra la consulta qrySolicitudes.",
+        "3. Carga el resultado y prueba la actualización."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M01_L05_Registro_Solicitudes_Internas.xlsx": {
+      "proposito": "Aplicar transformaciones iniciales y recorrer los pasos.",
+      "actividades": [
+        "1. Revisa tipos.",
+        "2. Quita Comentario interno.",
+        "3. Limpia texto y estandariza Estatus.",
+        "4. Agrega un registro y actualiza."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M01_L06_Registro_Solicitudes_Calidad.xlsx": {
+      "proposito": "Detectar tipos, nulos, errores y problemas regionales.",
+      "actividades": [
+        "1. Protege los folios como texto.",
+        "2. Convierte fechas usando la región correcta.",
+        "3. Activa el perfilado.",
+        "4. Documenta errores sin eliminarlos."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M01_L07_Registro_Solicitudes_Desordenado.xlsx": {
+      "proposito": "Preparar un reporte desordenado.",
+      "actividades": [
+        "1. Quita títulos y promueve encabezados.",
+        "2. Elige columnas autorizadas.",
+        "3. Limpia y homologa.",
+        "4. Analiza duplicados y errores.",
+        "5. Concilia registros."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M01_L08_Consulta_Pasos_Aplicados.xlsx": {
+      "proposito": "Reorganizar y documentar una consulta.",
+      "actividades": [
+        "1. Crea una consulta.",
+        "2. Renombra pasos relevantes.",
+        "3. Inserta una limpieza.",
+        "4. Provoca y corrige una dependencia.",
+        "5. Documenta el diagnóstico."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M01_L09_Datos_Periodo_01.xlsx": {
+      "proposito": "Probar actualización y repetibilidad.",
+      "actividades": [
+        "1. Conecta y actualiza.",
+        "2. Compara registros y categorías.",
+        "3. Documenta cambios."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M01_L09_Datos_Periodo_02.xlsx": {
+      "proposito": "Probar actualización y repetibilidad.",
+      "actividades": [
+        "1. Conecta y actualiza.",
+        "2. Compara registros y categorías.",
+        "3. Documenta cambios."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M01_L09_Matriz_Pruebas.xlsx": {
+      "proposito": "Documentar escenarios de actualización.",
+      "actividades": [
+        "1. Ejecuta al menos seis pruebas.",
+        "2. Registra resultado real y acción.",
+        "3. Documenta una incidencia."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M01_L10_Ficha_Conciliacion.xlsx": {
+      "proposito": "Conciliar y determinar si una consulta puede liberarse.",
+      "actividades": [
+        "1. Completa controles de entrada, proceso y salida.",
+        "2. Registra excepciones.",
+        "3. Emite una decisión de liberación."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M01_L10_Lista_Liberacion.xlsx": {
+      "proposito": "Emitir una decisión formal de liberación.",
+      "actividades": [
+        "1. Completa cada control.",
+        "2. Adjunta evidencia.",
+        "3. Clasifica como Aprobada, Condicionada o Rechazada."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M01_L10_Registro_Excepciones.xlsx": {
+      "proposito": "Conservar evidencia de los registros problemáticos.",
+      "actividades": [
+        "1. Registra cada excepción.",
+        "2. No elimines sin evidencia.",
+        "3. Asigna responsable y estatus."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M01_L11_Catalogo_Departamentos.xlsx": {
+      "proposito": "Valores autorizados para el caso.",
+      "actividades": [
+        "1. Utiliza el catálogo para validar.",
+        "2. No reemplaces valores desconocidos sin autorización."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M01_L11_Catalogo_Estatus.xlsx": {
+      "proposito": "Valores autorizados para el caso.",
+      "actividades": [
+        "1. Utiliza el catálogo para validar.",
+        "2. No reemplaces valores desconocidos sin autorización."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M01_L11_Solicitudes_Periodo_01.xlsx": {
+      "proposito": "Caso integrador del Módulo 1.",
+      "actividades": [
+        "1. Diagnostica antes de transformar.",
+        "2. Genera válidos, canceladas y revisión.",
+        "3. Concilia y documenta."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M01_L11_Solicitudes_Periodo_02.xlsx": {
+      "proposito": "Caso integrador del Módulo 1.",
+      "actividades": [
+        "1. Diagnostica antes de transformar.",
+        "2. Genera válidos, canceladas y revisión.",
+        "3. Concilia y documenta."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M01_L12_Actividades_Periodo_A.xlsx": {
+      "proposito": "Reto final individual.",
+      "actividades": [
+        "1. Diseña tu solución sin secuencia detallada.",
+        "2. Genera salidas y conciliación.",
+        "3. Actualiza con el segundo periodo y documenta el cambio."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M01_L12_Actividades_Periodo_B.xlsx": {
+      "proposito": "Reto final individual.",
+      "actividades": [
+        "1. Diseña tu solución sin secuencia detallada.",
+        "2. Genera salidas y conciliación.",
+        "3. Actualiza con el segundo periodo y documenta el cambio."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M01_L12_Catalogo_Areas.xlsx": {
+      "proposito": "Valores autorizados para la evaluación.",
+      "actividades": [
+        "1. Valida coincidencias.",
+        "2. Envía valores no reconocidos a revisión."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M01_L12_Catalogo_Estatus.xlsx": {
+      "proposito": "Valores autorizados para la evaluación.",
+      "actividades": [
+        "1. Valida coincidencias.",
+        "2. Envía valores no reconocidos a revisión."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    }
+  }
+}

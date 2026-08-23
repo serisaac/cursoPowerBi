@@ -1,0 +1,102 @@
+[
+  {
+    "q": "¿Cuáles son las seis dimensiones de calidad utilizadas en este módulo?",
+    "opts": [
+      "Completitud, exactitud, velocidad, seguridad, unicidad, oportunidad",
+      "Completitud, consistencia, exactitud, validez, unicidad, oportunidad",
+      "Validez, seguridad, consistencia, exactitud, unicidad, precisión",
+      "Completitud, consistencia, exactitud, validez, duplicidad, rapidez"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "Un campo condicional, en materia de completitud, es aquel que:",
+    "opts": [
+      "Nunca puede estar vacío",
+      "Es obligatorio solo cuando se cumple otra condición",
+      "Siempre puede estar vacío",
+      "No forma parte del registro"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué evalúa la dimensión de consistencia?",
+    "opts": [
+      "Si el dato coincide con la realidad",
+      "Si los datos se representan de manera uniforme entre registros, archivos y sistemas",
+      "Si el dato cumple una regla de negocio",
+      "Si el registro está duplicado"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "Un dato bien homologado (consistente):",
+    "opts": [
+      "Siempre es exacto",
+      "Puede ser consistente y aun así no coincidir con la realidad",
+      "Solo aplica a columnas numéricas",
+      "Nunca necesita revisión"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "Un registro completo y consistente puede resultar:",
+    "opts": [
+      "Automáticamente válido",
+      "Inválido, si incumple una regla de negocio",
+      "Imposible de evaluar",
+      "Siempre exacto"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "Para evaluar la unicidad de un conjunto de datos, primero se debe definir:",
+    "opts": [
+      "El color de la celda",
+      "La granularidad, la clave y el alcance",
+      "El tipo de archivo de origen",
+      "La versión de Power Query instalada"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Cuál de las siguientes NO es una fecha típica a separar al evaluar la oportunidad de un dato?",
+    "opts": [
+      "Fecha del evento",
+      "Fecha de captura",
+      "Fecha de publicación del reporte",
+      "Fecha de instalación de Power Query"
+    ],
+    "correct": 3
+  },
+  {
+    "q": "¿Cuál de las siguientes representaciones NO equivale automáticamente a un valor nulo?",
+    "opts": [
+      "null",
+      "Una cadena vacía \"\"",
+      "El número 0",
+      "Ninguna: todas equivalen siempre a nulo"
+    ],
+    "correct": 2
+  },
+  {
+    "q": "Un error, un valor nulo y un valor inválido son:",
+    "opts": [
+      "Exactamente lo mismo",
+      "Condiciones diferentes que requieren tratamientos distintos",
+      "Siempre el mismo tipo de problema técnico",
+      "Irrelevantes para la calidad de datos"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "En la conciliación de un proceso de calidad de datos, la diferencia sin explicar entre los registros recibidos y los clasificados debe ser:",
+    "opts": [
+      "Menor al 10%",
+      "Igual a cero",
+      "Igual al número de excepciones detectadas",
+      "No es necesario calcularla"
+    ],
+    "correct": 1
+  }
+]

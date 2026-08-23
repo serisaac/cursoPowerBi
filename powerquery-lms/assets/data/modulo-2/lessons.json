@@ -1,0 +1,1255 @@
+[
+  {
+    "id": 1,
+    "title": "Experiencia Obtener datos",
+    "duracion": "45 a 60 min",
+    "dificultad": "Inicial",
+    "badgeIcon": "plug",
+    "badgeDesc": "Las 4 fases de toda conexión en Power Query.",
+    "objetivos": [
+      "Explicar qué ocurre en cada fase del proceso de Obtener datos.",
+      "Diferenciar configuración de conexión, autenticación, vista previa y destino.",
+      "Reconocer la ventana Navegador y el cuadro de vista previa de tabla.",
+      "Identificar el límite de 10,000 objetos en Power Query Desktop y su solución alternativa.",
+      "Distinguir la experiencia de Obtener datos en Desktop frente a Online."
+    ],
+    "situacion": "Antes de conectar cualquier origen, conviene entender que Power Query sigue siempre una secuencia estándar de fases, sin importar si el origen es un archivo local, una carpeta, una base de datos o un servicio en la nube. Comprender estas fases evita confusiones al conectarte a un origen nuevo por primera vez.",
+    "secciones": [
+      {
+        "title": "Las 4 fases en Power Query Desktop",
+        "para": "Toda conexión pasa por: 1) Configuración de conexión, 2) Autenticación, 3) Vista previa de datos, 4) Destino de la consulta. No todos los conectores usan las 4 fases completas, pero la secuencia siempre respeta este orden."
+      },
+      {
+        "title": "1. Configuración de conexión",
+        "para": "La mayoría de los conectores requieren al menos un parámetro para iniciar la conexión (por ejemplo, el nombre del servidor en SQL Server, o la ruta del archivo en Excel). Los conectores que no requieren ningún parámetro se llaman conectores singleton (por ejemplo Adobe Analytics)."
+      },
+      {
+        "title": "2. Autenticación",
+        "para": "Todas las conexiones deben autenticarse. Los métodos disponibles son: Anónimo, Clave de API, Básico (usuario/contraseña), Base de datos, Cuenta organizativa o Microsoft (OAuth 2.0), Entidad de servicio y Windows. El método disponible depende del conector."
+      },
+      {
+        "title": "3. Vista previa de datos",
+        "para": "Se muestra mediante la ventana Navegador (panel de objetos a la izquierda + vista previa a la derecha) o mediante un cuadro de diálogo de vista previa de tabla simple, según el conector."
+      },
+      {
+        "title": "Límite de 10,000 objetos en el Navegador",
+        "para": "Power Query Desktop limita el Navegador a 10,000 elementos (Online no tiene este límite). La solución alternativa es hacer clic derecho en el nodo raíz y elegir Transformar datos, lo que abre la tabla de navegación completa en el editor sin ese límite."
+      },
+      {
+        "title": "4. Destino de la consulta",
+        "para": "Última fase: se decide dónde cargar el resultado. La opción siempre disponible es Transformar datos, que abre el editor de Power Query para seguir preparando la información antes de cargarla."
+      }
+    ],
+    "resumen": [
+      "Toda conexión en Power Query Desktop sigue 4 fases: conexión, autenticación, vista previa y destino.",
+      "Power Query Online simplifica esto a 3 fases: conexión+autenticación, vista previa y editor de consultas.",
+      "Los métodos de autenticación disponibles dependen del conector específico.",
+      "El Navegador tiene un límite de 10,000 objetos en Desktop; existe una solución alternativa.",
+      "Transformar datos es la única opción de destino disponible en todos los conectores."
+    ],
+    "quiz": [
+      {
+        "q": "¿Cuáles son las 4 fases de la experiencia Obtener datos en Power Query Desktop?",
+        "opts": [
+          "Filtrar, ordenar, agrupar, cargar",
+          "Configuración de conexión, autenticación, vista previa de datos, destino de consulta",
+          "Origen, transformación, validación, publicación",
+          "Conectar, combinar, anexar, cerrar"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué es un conector singleton?",
+        "opts": [
+          "Un conector que solo admite un usuario",
+          "Un conector que no requiere ningún parámetro para conectarse",
+          "Un conector exclusivo de Power BI",
+          "Un conector que solo lee una fila"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Cuál es el límite de objetos del Navegador en Power Query Desktop?",
+        "opts": [
+          "1,000",
+          "5,000",
+          "10,000",
+          "Sin límite"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "¿Qué opción de destino está disponible en todos los conectores?",
+        "opts": [
+          "Cargar directamente a Power BI Service",
+          "Transformar datos",
+          "Exportar a PDF",
+          "Publicar en SharePoint"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Cuántas fases tiene la experiencia de Obtener datos en Power Query Online?",
+        "opts": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "correct": 1
+      }
+    ],
+    "files": [
+      "M02_L01_Fases_Conexion.xlsx"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Conexión a tablas del libro actual",
+    "duracion": "40 a 55 min",
+    "dificultad": "Inicial",
+    "badgeIcon": "table",
+    "badgeDesc": "Desde tabla o rango, dentro del mismo libro de Excel.",
+    "objetivos": [
+      "Usar la opción Desde tabla o rango dentro del mismo libro de Excel.",
+      "Reconocer la función Excel.CurrentWorkbook en el lenguaje M.",
+      "Diferenciar conectarse al libro actual frente a conectarse a otro archivo de Excel.",
+      "Aplicar buenas prácticas de nombres de tabla antes de conectar."
+    ],
+    "situacion": "El caso más simple de conexión es cuando los datos ya están en el mismo archivo de Excel donde trabajas. Power Query permite convertir un rango o tabla existente del libro actual en una consulta, sin necesidad de indicar ninguna ruta de archivo externa.",
+    "secciones": [
+      {
+        "title": "Desde tabla o rango",
+        "para": "En Excel, la ruta más directa es Datos > Desde tabla o rango, seleccionando primero una celda dentro de los datos. Si el rango aún no es una tabla formal, Excel la convierte automáticamente antes de abrir el Editor de Power Query."
+      },
+      {
+        "title": "La función Excel.CurrentWorkbook",
+        "para": "Cuando conectas una tabla del libro actual, Power Query genera internamente una expresión M que usa la función Excel.CurrentWorkbook(), que hace referencia a los objetos (tablas con nombre) definidos dentro del propio archivo, sin necesitar una ruta externa."
+      },
+      {
+        "title": "Por qué nombrar bien las tablas",
+        "para": "Como la consulta identifica el origen por el nombre de la tabla (por ejemplo tblSolicitudes), renombrar o eliminar esa tabla en la hoja de cálculo rompe la consulta. Usa nombres descriptivos y evita renombrarlas después de crear la consulta."
+      },
+      {
+        "title": "Cuándo conviene esta conexión",
+        "para": "Es ideal para prototipos rápidos, plantillas de un solo archivo o cuando los datos de origen y el resultado conviven en el mismo libro. Para escenarios compartidos entre varios archivos, es mejor usar una conexión a un archivo externo (Lección 3)."
+      }
+    ],
+    "resumen": [
+      "Desde tabla o rango conecta datos que ya están dentro del mismo archivo de Excel.",
+      "La función Excel.CurrentWorkbook() es la que Power Query usa internamente para este tipo de origen.",
+      "El nombre de la tabla de origen debe mantenerse estable; renombrarla puede romper la consulta.",
+      "Esta conexión es ideal para archivos autocontenidos o prototipos rápidos."
+    ],
+    "quiz": [
+      {
+        "q": "¿Qué función M representa la conexión a una tabla del libro actual?",
+        "opts": [
+          "Excel.Workbook",
+          "Excel.CurrentWorkbook",
+          "Table.FromRecords",
+          "File.Contents"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué sucede si renombras la tabla de origen en la hoja después de crear la consulta?",
+        "opts": [
+          "Nada, se actualiza sola",
+          "La consulta puede dejar de encontrar el objeto y fallar",
+          "Power Query la renombra automáticamente en la consulta",
+          "Se crea una copia de la tabla"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Cuál es la ruta típica en Excel para conectar una tabla del libro actual?",
+        "opts": [
+          "Insertar > Tabla dinámica",
+          "Datos > Desde tabla o rango",
+          "Fórmulas > Auditoría",
+          "Vista > Macros"
+        ],
+        "correct": 1
+      }
+    ],
+    "files": [
+      "M02_L02_Ventas_Libro_Actual.xlsx"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Conexión a otros libros de Excel",
+    "duracion": "50 a 70 min",
+    "dificultad": "Inicial",
+    "badgeIcon": "file-spreadsheet",
+    "badgeDesc": "El conector de Excel: requisitos, pasos y limitaciones.",
+    "objetivos": [
+      "Conectarse a un libro de Excel externo desde Power Query Desktop y Online.",
+      "Reconocer los tipos de autenticación admitidos por el conector de Excel.",
+      "Identificar el requisito del proveedor ACE para libros heredados (.xls, .xlsb).",
+      "Distinguir Cargar frente a Transformar datos al conectar un libro externo."
+    ],
+    "situacion": "A diferencia de la Lección 2, aquí el archivo de Excel vive fuera del libro donde trabajas: puede estar en una carpeta compartida, en otro disco o en línea. Power Query usa el conector dedicado de Excel para este escenario.",
+    "secciones": [
+      {
+        "title": "Resumen del conector",
+        "para": "El conector de Excel admite los métodos de autenticación Anónimo, Básico y Cuenta organizativa (en línea). Las funciones M asociadas son Excel.Workbook y Excel.CurrentWorkbook."
+      },
+      {
+        "title": "Requisito para libros heredados (.xls, .xlsb)",
+        "para": "Para conectarte a un libro heredado necesitas el proveedor OLEDB (ACE) del motor de base de datos de Access instalado. Si falta, aparece el error: 'The Microsoft.ACE.OLEDB.12.0 provider is not registered on the local machine.' ACE no puede instalarse en entornos de nube — en Power Query Online se requiere una puerta de enlace que ya lo tenga instalado."
+      },
+      {
+        "title": "Conectar desde Power Query Desktop",
+        "para": "Selecciona Libro de Excel en Obtener datos, busca y selecciona el archivo, y elige Abrir. Si el libro está en línea, se usa el conector Web en su lugar. En el Navegador, elige la hoja o tabla y después Cargar o Transformar datos."
+      },
+      {
+        "title": "Conectar desde Power Query Online",
+        "para": "En el cuadro de diálogo de Excel, proporciona la ruta del libro, selecciona una puerta de enlace de datos local si es necesaria, elige el tipo de autenticación e inicia sesión. Luego, en el Navegador, selecciona Transformar datos."
+      },
+      {
+        "title": "Cargar frente a Transformar datos",
+        "para": "Igual que vimos en el Módulo 1: Cargar envía los datos directamente al destino; Transformar datos abre el Editor de Power Query para aplicar reglas antes de entregar el resultado."
+      }
+    ],
+    "resumen": [
+      "El conector de Excel admite autenticación Anónima, Básica y Cuenta organizativa (en línea).",
+      "Los libros heredados (.xls, .xlsb) requieren el proveedor OLEDB ACE instalado.",
+      "ACE no puede instalarse en la nube; Power Query Online necesita una puerta de enlace con ACE.",
+      "Si el libro está en línea, se usa el conector Web en lugar del conector de Excel.",
+      "Las funciones M relacionadas son Excel.Workbook y Excel.CurrentWorkbook."
+    ],
+    "quiz": [
+      {
+        "q": "¿Qué error aparece si falta el proveedor ACE al abrir un libro .xls heredado?",
+        "opts": [
+          "Formula.Firewall",
+          "The Microsoft.ACE.OLEDB.12.0 provider is not registered",
+          "DataFormat.Error",
+          "Access.Database not found"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué se necesita para usar libros heredados desde Power Query Online?",
+        "opts": [
+          "Nada especial",
+          "Una puerta de enlace de datos con ACE instalado",
+          "Convertir el archivo a CSV",
+          "Una cuenta de administrador"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué tipos de autenticación admite el conector de Excel en línea?",
+        "opts": [
+          "Solo Windows",
+          "Anónimo, Básico y Cuenta organizativa",
+          "Solo Anónimo",
+          "Entidad de servicio únicamente"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "Si el libro de Excel está hospedado en línea, ¿qué conector debe usarse?",
+        "opts": [
+          "El conector de Excel normal",
+          "El conector Web",
+          "El conector de carpeta",
+          "El conector OData"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué función M se usa para leer un libro de Excel externo?",
+        "opts": [
+          "Excel.CurrentWorkbook",
+          "Excel.Workbook",
+          "Folder.Files",
+          "Csv.Document"
+        ],
+        "correct": 1
+      }
+    ],
+    "files": [
+      "M02_L03_Catalogo_Productos.xlsx"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Conexión a archivos CSV y texto",
+    "duracion": "50 a 70 min",
+    "dificultad": "Inicial",
+    "badgeIcon": "file-text",
+    "badgeDesc": "Delimitadores, detección de tipos y texto no estructurado.",
+    "objetivos": [
+      "Conectarse a archivos CSV y de texto desde Power Query Desktop y Online.",
+      "Explicar cómo Power Query detecta delimitadores automáticamente.",
+      "Diferenciar texto estructurado de texto no estructurado.",
+      "Configurar el origen del archivo (codificación de caracteres) y el manejo de saltos de línea."
+    ],
+    "situacion": "Muchos sistemas administrativos exportan reportes como CSV o archivos de texto plano. Power Query trata un CSV como un caso especial de archivo de texto: uno donde el delimitador es una coma.",
+    "secciones": [
+      {
+        "title": "Conectar desde Power Query Desktop",
+        "para": "Selecciona Texto/CSV en Obtener datos. Se abre un explorador de archivos local; al elegir el archivo, Power Query muestra una vista previa donde puedes elegir Cargar o Transformar datos."
+      },
+      {
+        "title": "Detección automática de delimitador",
+        "para": "Si el archivo no es un CSV explícito, Power Query intenta deducir automáticamente si el texto tiene valores separados por delimitadores y cuál es ese delimitador. Los delimitadores disponibles incluyen: dos puntos, coma, igual, punto y coma, espacio, tabulador, uno personalizado o ancho fijo."
+      },
+      {
+        "title": "Texto no estructurado",
+        "para": "Si el archivo no tiene una estructura reconocible, el resultado es una sola columna con una fila por cada línea del archivo original — útil para logs o notas libres, pero requiere transformación manual posterior."
+      },
+      {
+        "title": "Detección de tipos de datos",
+        "para": "Puedes elegir si Power Query detecta los tipos de columna usando las primeras 200 filas o todo el conjunto de datos (más lento), o desactivar la detección automática y tratar todo como texto. Siempre conviene revisar la configuración antes de cargar."
+      },
+      {
+        "title": "Origen del archivo (codificación)",
+        "para": "El único ajuste del cuadro de diálogo inicial es el origen del archivo: el juego de caracteres usado para generarlo. Power Query no infiere automáticamente el conjunto de caracteres salvo que el archivo comience con una marca BOM de UTF-8."
+      },
+      {
+        "title": "Saltos de línea dentro de comillas",
+        "para": "Al editar el paso de origen puedes elegir cómo tratar los saltos de línea que aparecen entre comillas: aplicarlos todos (genera filas adicionales) u omitirlos (el contenido queda en la misma celda, en varias líneas)."
+      }
+    ],
+    "resumen": [
+      "Un CSV es tratado por Power Query como un archivo de texto con delimitador de coma.",
+      "Power Query intenta deducir automáticamente el delimitador de un archivo de texto.",
+      "Un archivo sin estructura reconocible se carga como una sola columna, una fila por línea.",
+      "La detección de tipos puede basarse en 200 filas, en todo el archivo, o desactivarse.",
+      "La codificación de caracteres (origen del archivo) solo se detecta automáticamente si hay una marca BOM UTF-8.",
+      "Los saltos de línea entre comillas pueden aplicarse u omitirse según la configuración del paso de origen."
+    ],
+    "quiz": [
+      {
+        "q": "¿Cómo trata Power Query un archivo CSV internamente?",
+        "opts": [
+          "Como una base de datos",
+          "Como un caso especial de archivo de texto con delimitador de coma",
+          "Como un archivo binario",
+          "Como una tabla dinámica"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué ocurre si un archivo de texto no tiene estructura reconocible?",
+        "opts": [
+          "Power Query rechaza el archivo",
+          "Se carga como una sola columna, una fila por línea",
+          "Se convierte automáticamente a JSON",
+          "Se abre en Excel"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Sobre qué base puede configurarse la detección de tipos de datos?",
+        "opts": [
+          "Solo la primera fila",
+          "Las primeras 200 filas o todo el conjunto de datos",
+          "Únicamente el nombre del archivo",
+          "La fecha de creación del archivo"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Cuándo infiere Power Query automáticamente la codificación UTF-8?",
+        "opts": [
+          "Siempre",
+          "Nunca",
+          "Solo si el archivo comienza con una marca BOM de UTF-8",
+          "Solo en archivos .txt"
+        ],
+        "correct": 2
+      }
+    ],
+    "files": [
+      "M02_L04_Instrucciones.xlsx",
+      "M02_L04_Reporte_Ventas.csv"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Conexión a una carpeta",
+    "duracion": "60 a 80 min",
+    "dificultad": "Inicial-Intermedia",
+    "badgeIcon": "folder-open",
+    "badgeDesc": "Combinar automáticamente todos los archivos de una carpeta.",
+    "objetivos": [
+      "Conectarse a una carpeta completa desde Power Query Desktop y Online.",
+      "Explicar la diferencia entre Combinar y cargar, Combinar y transformar datos, y Transformar datos.",
+      "Reconocer que todos los archivos de la carpeta deben compartir formato y estructura para combinarse correctamente.",
+      "Aplicar la estrategia de filtrar la tabla de archivos antes de combinar cuando algunos archivos deben excluirse."
+    ],
+    "situacion": "Este es uno de los conectores más poderosos para automatizar procesos: en vez de abrir archivo por archivo, Power Query puede leer todos los archivos de una carpeta (y subcarpetas) y combinarlos en una sola tabla con un proceso repetible.",
+    "secciones": [
+      {
+        "title": "Resumen del conector",
+        "para": "El conector de Carpeta admite autenticación Windows. Las funciones M asociadas son Folder.Contents y Folder.Files. Sus capacidades incluyen ruta de carpeta y combinar (con o sin transformación posterior)."
+      },
+      {
+        "title": "Conectar desde Power Query Desktop",
+        "para": "Selecciona Carpeta, escribe o busca la ruta y selecciona Aceptar. Power Query muestra información de todos los archivos de la carpeta y también de las subcarpetas."
+      },
+      {
+        "title": "Tres formas de continuar",
+        "para": "Combinar y transformar datos: combina los archivos y abre el resultado en el Editor para seguir preparando la información. Combinar y cargar: combina y carga directamente a la aplicación. Transformar datos: carga la lista de archivos tal cual (sin combinar aún) al Editor."
+      },
+      {
+        "title": "Cómo determina Power Query el formato",
+        "para": "La combinación se guía por un archivo de ejemplo que tú eliges. Si seleccionas un Excel con una tabla llamada 'Table1', Power Query asume que TODOS los archivos de la carpeta son Excel con una tabla 'Table1' — por eso todos los archivos deben compartir el mismo formato y estructura."
+      },
+      {
+        "title": "Qué hacer si necesitas excluir archivos",
+        "para": "Si algunos archivos de la carpeta no deben combinarse (por ejemplo, un archivo de prueba o de otro formato), selecciona primero Transformar datos en lugar de Combinar, y filtra la tabla de archivos en el Editor antes de aplicar la combinación."
+      }
+    ],
+    "resumen": [
+      "El conector de Carpeta permite leer y combinar todos los archivos de una carpeta (y subcarpetas) automáticamente.",
+      "Existen tres rutas: Combinar y transformar, Combinar y cargar, o Transformar datos (sin combinar).",
+      "La combinación se basa en un archivo de ejemplo; todos los demás deben compartir su estructura.",
+      "Si necesitas excluir archivos, usa Transformar datos y filtra antes de combinar.",
+      "Las funciones M relacionadas son Folder.Contents y Folder.Files."
+    ],
+    "quiz": [
+      {
+        "q": "¿Qué funciones M representan la conexión a una carpeta?",
+        "opts": [
+          "Excel.Workbook y Csv.Document",
+          "Folder.Contents y Folder.Files",
+          "Web.Contents y Json.Document",
+          "Sql.Database y Sql.Databases"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué determina cómo se combinan los archivos de una carpeta?",
+        "opts": [
+          "El orden alfabético",
+          "Un archivo de ejemplo que tú seleccionas",
+          "El tamaño del archivo",
+          "La fecha de creación"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué debes hacer si algunos archivos de la carpeta no deben combinarse?",
+        "opts": [
+          "Eliminarlos manualmente de la carpeta",
+          "Usar Transformar datos y filtrar la tabla de archivos antes de combinar",
+          "Es imposible excluir archivos",
+          "Cambiarles la extensión"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué tipo de autenticación admite el conector de Carpeta?",
+        "opts": [
+          "OAuth únicamente",
+          "Windows",
+          "Solo Anónimo",
+          "Clave de API"
+        ],
+        "correct": 1
+      }
+    ],
+    "files": [
+      "M02_L05_Carpeta_Reportes/Reporte_Enero.csv",
+      "M02_L05_Carpeta_Reportes/Reporte_Febrero.csv",
+      "M02_L05_Carpeta_Reportes/Reporte_Marzo.csv",
+      "M02_L05_Instrucciones.xlsx"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Conexión a archivos PDF",
+    "duracion": "45 a 65 min",
+    "dificultad": "Inicial-Intermedia",
+    "badgeIcon": "file-type",
+    "badgeDesc": "Extraer tablas de PDF y manejar archivos grandes.",
+    "objetivos": [
+      "Conectarse a un archivo PDF desde Power Query Desktop y Online.",
+      "Reconocer las limitaciones del conector PDF con archivos grandes.",
+      "Aplicar estrategias para mejorar el rendimiento con documentos extensos.",
+      "Identificar cómo tratar filas que abarcan varias líneas."
+    ],
+    "situacion": "Reportes gubernamentales, estados de cuenta y muchos documentos administrativos solo existen en PDF. El conector PDF de Power Query puede extraer tablas directamente de estos archivos usando la función Pdf.Tables.",
+    "secciones": [
+      {
+        "title": "Resumen del conector",
+        "para": "El conector PDF admite Anónimo, Básico, Cuenta organizativa y Windows (en línea). La función M asociada es Pdf.Tables. No tiene requisitos previos, pero no se admite en Power BI Premium."
+      },
+      {
+        "title": "Conectar desde Power Query Desktop y Online",
+        "para": "En Desktop: selecciona PDF, busca el archivo y elige Abrir; en el Navegador, elige la información y Cargar o Transformar datos. En Online: proporciona la ruta o URL del archivo (o arrastra el archivo local), selecciona puerta de enlace y tipo de autenticación si aplica."
+      },
+      {
+        "title": "Archivos PDF grandes",
+        "para": "Para mejorar el rendimiento con PDFs extensos, puedes usar las opciones StartPage y EndPage de la función Pdf.Tables para procesar el documento por rangos de páginas en lugar de todo de una vez. Si el documento es una sola tabla enorme, deshabilitar la opción MultiPageTables también puede ayudar."
+      },
+      {
+        "title": "Filas que abarcan varias líneas",
+        "para": "Cuando una fila de una tabla PDF se divide incorrectamente en varias líneas, puede limpiarse con Table.FillDown (para rellenar valores hacia abajo) o Table.Group (para agrupar y combinar filas adyacentes)."
+      }
+    ],
+    "resumen": [
+      "El conector PDF usa la función Pdf.Tables para extraer tablas de archivos PDF.",
+      "No se admite en Power BI Premium y no requiere instalación previa.",
+      "Para PDFs grandes, las opciones StartPage/EndPage y MultiPageTables ayudan a mejorar el rendimiento.",
+      "Las filas multilínea mal identificadas pueden corregirse con Table.FillDown o Table.Group."
+    ],
+    "quiz": [
+      {
+        "q": "¿Qué función M se usa para extraer tablas de un PDF?",
+        "opts": [
+          "Pdf.Tables",
+          "Pdf.Document",
+          "File.Contents",
+          "Table.FromPdf"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "¿Qué opciones ayudan a mejorar el rendimiento con PDFs grandes?",
+        "opts": [
+          "Table.Buffer únicamente",
+          "StartPage, EndPage y MultiPageTables",
+          "Solo convertir a Word primero",
+          "No existe forma de mejorarlo"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿El conector PDF se admite en Power BI Premium?",
+        "opts": [
+          "Sí, sin restricciones",
+          "No, no se admite en Power BI Premium",
+          "Solo en la versión de escritorio",
+          "Solo con una puerta de enlace especial"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué función ayuda a corregir filas multilínea mal identificadas?",
+        "opts": [
+          "Table.FillDown o Table.Group",
+          "Table.Sort",
+          "Table.Distinct",
+          "Table.RowCount"
+        ],
+        "correct": 0
+      }
+    ],
+    "files": [
+      "M02_L06_Instrucciones.xlsx",
+      "M02_L06_Reporte_Mantenimiento.pdf"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Introducción a SharePoint y OneDrive empresarial",
+    "duracion": "55 a 75 min",
+    "dificultad": "Intermedia",
+    "badgeIcon": "cloud",
+    "badgeDesc": "Carpeta y lista de SharePoint, y archivos de OneDrive laboral.",
+    "objetivos": [
+      "Explicar las distintas formas de acceder a archivos en SharePoint y OneDrive empresarial.",
+      "Conectarse a una carpeta de SharePoint y reconocer la vista del sistema de archivos.",
+      "Determinar la URL del sitio necesaria para conectar carpetas y listas.",
+      "Diferenciar el conector de Lista de SharePoint del conector de Carpeta de SharePoint."
+    ],
+    "situacion": "Muchas organizaciones ya no guardan sus archivos operativos en carpetas locales, sino en sitios de SharePoint o en OneDrive para el trabajo. Power Query ofrece varias formas de acceder a ellos, cada una con su propio nivel de detalle.",
+    "secciones": [
+      {
+        "title": "Examinar archivos de OneDrive",
+        "para": "Power Query Online (en PowerApps) ofrece un botón 'Examinar OneDrive' junto al campo de ruta para conectores como Excel, JSON, PDF, XML y TXT/CSV. Requiere permitir cookies de terceros en el navegador."
+      },
+      {
+        "title": "Conector web con URL copiada desde Excel",
+        "para": "Alternativa: en OneDrive, clic derecho en el archivo → Abrir en Excel → Archivo > Información > Copiar ruta de acceso. Luego, en Power Query, usar el conector Web pegando esa URL (quitando el sufijo '?web=1' al final) y eligiendo Windows o Cuenta organizativa como autenticación."
+      },
+      {
+        "title": "Carpeta de SharePoint",
+        "para": "Admite autenticación Anónima, cuenta Microsoft, Windows y Cuenta organizativa. Requiere la URL del sitio (no la de una carpeta específica). Al conectar, se muestra la 'vista del sistema de archivos': una fila por archivo encontrado, con una columna Content en formato binario que puedes seleccionar para que Power Query interprete el archivo automáticamente."
+      },
+      {
+        "title": "Lista de SharePoint",
+        "para": "Distinta de la carpeta: se conecta a una lista de SharePoint (como una tabla de datos dentro del sitio), no a archivos. También requiere la URL del sitio. Admite Anónimo, Windows y cuenta Microsoft. Las funciones M son SharePoint.Contents, SharePoint.Files y SharePoint.Tables."
+      },
+      {
+        "title": "Solo páginas modernas de SharePoint",
+        "para": "Importante: las páginas de SharePoint 'clásicas' no son compatibles — solo se admite la página principal moderna de un sitio."
+      }
+    ],
+    "resumen": [
+      "Existen varias formas de conectar archivos de SharePoint/OneDrive: examinar directamente, vía conector Web, o vía Carpeta de SharePoint.",
+      "La Carpeta de SharePoint muestra una vista del sistema de archivos con una columna Content interpretable.",
+      "La Lista de SharePoint conecta datos tabulares del sitio, no archivos.",
+      "Ambos conectores requieren la URL del sitio (no de una subcarpeta específica).",
+      "Solo se admiten sitios de SharePoint con páginas modernas, no clásicas."
+    ],
+    "quiz": [
+      {
+        "q": "¿Qué diferencia principal hay entre Carpeta de SharePoint y Lista de SharePoint?",
+        "opts": [
+          "Ninguna, son lo mismo",
+          "Carpeta conecta archivos; Lista conecta datos tabulares del sitio",
+          "Lista es más rápida siempre",
+          "Carpeta solo funciona en Power BI"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué columna especial aparece en la vista del sistema de archivos de la Carpeta de SharePoint?",
+        "opts": [
+          "Name únicamente",
+          "Content, en formato binario",
+          "Owner",
+          "Size"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué tipo de páginas de SharePoint son compatibles?",
+        "opts": [
+          "Solo las clásicas",
+          "Solo las modernas",
+          "Ambas por igual",
+          "Ninguna"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué se requiere para conectar tanto Carpeta como Lista de SharePoint?",
+        "opts": [
+          "Solo el nombre del archivo",
+          "La URL del sitio",
+          "Una licencia de Power BI Premium",
+          "Un token de API"
+        ],
+        "correct": 1
+      }
+    ],
+    "files": [
+      "M02_L07_Simulacion_SharePoint.xlsx"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Introducción a bases de datos",
+    "duracion": "60 a 80 min",
+    "dificultad": "Intermedia",
+    "badgeIcon": "database",
+    "badgeDesc": "Conectores de SQL Server y Access como ejemplo del patrón general.",
+    "objetivos": [
+      "Reconocer que Power Query ofrece decenas de conectores de bases de datos con un patrón similar.",
+      "Conectarse a una base de datos SQL Server y a una base de datos Access.",
+      "Diferenciar el modo Importación del modo DirectQuery.",
+      "Reconocer los requisitos previos del proveedor OLEDB para Access."
+    ],
+    "situacion": "Power Query incluye un catálogo extenso de conectores de bases de datos (SQL Server, Access, Oracle, MySQL, PostgreSQL, Azure SQL, entre muchos otros). Todos comparten un patrón de conexión similar: servidor, credenciales y selección de tablas.",
+    "secciones": [
+      {
+        "title": "El patrón común de los conectores de base de datos",
+        "para": "Casi todos requieren: nombre del servidor (y opcionalmente el nombre de la base de datos), un tipo de autenticación, y luego el Navegador para elegir tablas o vistas. Aprender un conector de base de datos te prepara para usar prácticamente cualquier otro."
+      },
+      {
+        "title": "Base de datos SQL Server",
+        "para": "Admite autenticación de Base de datos (usuario/contraseña), Windows, Cuenta organizativa y Entidad de servicio. Ofrece modo Importación o DirectQuery (solo Power BI Desktop). Las funciones M son Sql.Database y Sql.Databases. Si la conexión no está cifrada, Power Query muestra una advertencia antes de continuar."
+      },
+      {
+        "title": "Base de datos Access",
+        "para": "Admite Anónimo, Windows, Básico y Cuenta organizativa. Requiere el proveedor OLEDB del Access Database Engine — en Online, la máquina con la puerta de enlace debe tener la versión de 64 bits; en Power BI Desktop, la versión del proveedor y de la aplicación deben coincidir en arquitectura (32 o 64 bits)."
+      },
+      {
+        "title": "Importación frente a DirectQuery",
+        "para": "Importación trae una copia de los datos a Power Query para transformarla localmente. DirectQuery (disponible solo en algunos productos como Power BI Desktop) consulta la base de datos en tiempo real sin copiar los datos — útil para volúmenes muy grandes, pero con otras limitaciones de transformación."
+      }
+    ],
+    "resumen": [
+      "La mayoría de los conectores de bases de datos comparten el mismo patrón: servidor, autenticación, Navegador.",
+      "SQL Server admite Base de datos, Windows, Cuenta organizativa y Entidad de servicio.",
+      "Access requiere el proveedor OLEDB del Access Database Engine, en la arquitectura correcta (32/64 bits).",
+      "Importación copia los datos; DirectQuery los consulta en tiempo real (solo disponible en ciertos productos)."
+    ],
+    "quiz": [
+      {
+        "q": "¿Qué elementos suele requerir la mayoría de los conectores de base de datos?",
+        "opts": [
+          "Solo un archivo local",
+          "Nombre del servidor, autenticación y selección de tablas",
+          "Una cuenta de correo",
+          "Un navegador específico"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué requiere el conector de Access además de las credenciales?",
+        "opts": [
+          "Nada especial",
+          "El proveedor OLEDB del Access Database Engine",
+          "Una licencia de SQL Server",
+          "Un archivo CSV de respaldo"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Cuál es la diferencia entre Importación y DirectQuery?",
+        "opts": [
+          "Son idénticos",
+          "Importación copia los datos; DirectQuery los consulta en tiempo real",
+          "DirectQuery es más lento siempre",
+          "Importación no permite transformar datos"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué funciones M representan la conexión a SQL Server?",
+        "opts": [
+          "Access.Database",
+          "Sql.Database y Sql.Databases",
+          "Folder.Files",
+          "Pdf.Tables"
+        ],
+        "correct": 1
+      }
+    ],
+    "files": [
+      "M02_L08_Catalogo_Base_Datos.xlsx"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Autenticación y credenciales",
+    "duracion": "55 a 75 min",
+    "dificultad": "Intermedia",
+    "badgeIcon": "key-round",
+    "badgeDesc": "Cómo Power Query recuerda y cambia tus credenciales.",
+    "objetivos": [
+      "Explicar cómo Power Query selecciona y recuerda un método de autenticación.",
+      "Establecer el nivel al que se aplica un método de autenticación en una URL.",
+      "Cambiar el método de autenticación de un origen ya configurado.",
+      "Reconocer un error común al usar Microsoft Entra ID con conectores genéricos (Web, OData)."
+    ],
+    "situacion": "Al conectar un origen nuevo, Power Query pide un método de autenticación solo la primera vez. Después, reutiliza esa configuración automáticamente — hasta que algo cambia y hay que editarla manualmente.",
+    "secciones": [
+      {
+        "title": "Selección inicial del método",
+        "para": "Distintos conectores muestran distintos métodos de autenticación disponibles. Una vez elegido para una configuración de conexión específica, Power Query no vuelve a preguntar mientras esa configuración no cambie."
+      },
+      {
+        "title": "El nivel de la URL",
+        "para": "En conectores basados en URL (como Web u OData), eliges a qué 'nivel' de la dirección se aplica el método de autenticación. Por ejemplo, aplicarlo a https://contoso.com hace que ese método sirva para cualquier subdirección debajo de ese dominio. Esto es útil si distintas subcarpetas de un mismo sitio necesitan credenciales distintas."
+      },
+      {
+        "title": "Cambiar el método de autenticación",
+        "para": "En Excel: pestaña Datos > Obtener datos > Configuración del origen de datos. En Power BI Desktop: Archivo > Opciones y configuración > Configuración del origen de datos. Ahí, en Permisos globales, selecciona el origen, Editar permisos, y en Credenciales elige Editar. También puedes borrar permisos de un origen o de todos."
+      },
+      {
+        "title": "Error frecuente con Microsoft Entra ID",
+        "para": "Al usar los conectores genéricos Web u OData contra un servicio que no admite autenticación Entra ID correctamente configurada, aparece el error 'No se pudo conectar porque este tipo de credencial no se admite para este recurso.' Este mensaje indica que el servicio no admite el tipo de autenticación elegido — normalmente hay que usar Anónimo si el servicio no está protegido."
+      }
+    ],
+    "resumen": [
+      "Power Query solo pide el método de autenticación la primera vez que conecta un origen con esa configuración.",
+      "El nivel de una URL determina a qué subdirecciones se aplica un método de autenticación guardado.",
+      "Las credenciales se editan desde Configuración del origen de datos, en Permisos globales.",
+      "El error 'este tipo de credencial no se admite' suele indicar que el servicio no soporta el método de autenticación elegido."
+    ],
+    "quiz": [
+      {
+        "q": "¿Cuándo vuelve Power Query a pedir el método de autenticación de un origen?",
+        "opts": [
+          "Cada vez que actualizas",
+          "Solo si la configuración de conexión cambia",
+          "Cada hora",
+          "Nunca más, aunque cambie todo"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Para qué sirve elegir el 'nivel' de una URL al autenticar?",
+        "opts": [
+          "Para acelerar la carga",
+          "Para definir a qué subdirecciones se aplica ese método de autenticación",
+          "Para cambiar el idioma",
+          "No tiene ninguna función"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Dónde se edita el método de autenticación de un origen en Excel?",
+        "opts": [
+          "Insertar > Tabla",
+          "Datos > Obtener datos > Configuración del origen de datos",
+          "Revisar > Comentarios",
+          "Vista > Macros"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué indica el error 'este tipo de credencial no se admite para este recurso'?",
+        "opts": [
+          "El archivo está dañado",
+          "El servicio no admite el método de autenticación elegido",
+          "La contraseña es incorrecta",
+          "No hay conexión a internet"
+        ],
+        "correct": 1
+      }
+    ],
+    "files": [
+      "M02_L09_Ficha_Autenticacion.xlsx"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Niveles de privacidad",
+    "duracion": "60 a 80 min",
+    "dificultad": "Intermedia",
+    "badgeIcon": "shield",
+    "badgeDesc": "Público, Organizativo y Privado — y el firewall que los protege.",
+    "objetivos": [
+      "Explicar los tres niveles de privacidad: Público, Organizativo y Privado (y la opción Ninguno).",
+      "Reconocer cómo los niveles de privacidad previenen la fuga de datos entre orígenes.",
+      "Entender qué es el Firewall de privacidad de datos y por qué aparece Formula.Firewall.",
+      "Configurar niveles de privacidad al combinar orígenes en Power Query Online."
+    ],
+    "situacion": "Cuando combinas datos de dos orígenes distintos (por ejemplo, un archivo confidencial de RH y una tabla pública), Power Query necesita saber qué tan sensible es cada uno para evitar que información privada termine expuesta accidentalmente.",
+    "secciones": [
+      {
+        "title": "Los niveles disponibles",
+        "para": "Ninguno: sin configuración de privacidad (usar solo en entornos de desarrollo controlado). Privado: datos sensibles o confidenciales; nunca se pliegan hacia otros orígenes, ni siquiera otros privados. Organizativo: se integra con orígenes privados y de la organización, pero no con públicos. Público: se puede plegar hacia cualquier otro origen; visible para todos."
+      },
+      {
+        "title": "Por qué existen los niveles de privacidad",
+        "para": "Configurarlos correctamente asegura que solo usuarios autorizados vean datos sensibles, y evita que la combinación de orígenes provoque una transferencia de datos no deseada fuera de un entorno de confianza."
+      },
+      {
+        "title": "El Firewall de privacidad de datos",
+        "para": "Aparece como el error 'Formula.Firewall: ... references other queries or steps...' o '...accessing data sources that have privacy levels which cannot be used together.' Su propósito es evitar que Power Query filtre datos entre orígenes sin que el usuario lo sepa."
+      },
+      {
+        "title": "La relación con el plegado de consultas",
+        "para": "El plegado (query folding) es cuando Power Query traduce tus transformaciones al lenguaje nativo del origen (por ejemplo SQL) para ganar rendimiento. A veces, para optimizar, Power Query podría intentar enviar datos de un origen privado a otro origen — el firewall bloquea esa operación si detecta niveles de privacidad incompatibles (por ejemplo, Privado + Organizativo)."
+      },
+      {
+        "title": "Configurar niveles de privacidad",
+        "para": "En Power Query Online, el nivel se elige al final del cuadro de credenciales de conexión de cada origen. También puede configurarse desde el diálogo de Niveles de privacidad que aparece como advertencia al combinar orígenes sin nivel definido."
+      }
+    ],
+    "resumen": [
+      "Los niveles de privacidad son: Ninguno, Privado, Organizativo y Público — de más a menos restrictivo.",
+      "Un origen Privado nunca se pliega hacia otro origen, ni siquiera otro Privado.",
+      "El Firewall de privacidad de datos bloquea combinaciones que podrían filtrar información entre orígenes.",
+      "El error Formula.Firewall suele aparecer relacionado con el plegado de consultas (query folding).",
+      "Los datos altamente sensibles o confidenciales deben configurarse siempre como Privados."
+    ],
+    "quiz": [
+      {
+        "q": "¿Cuál es el nivel de privacidad más restrictivo?",
+        "opts": [
+          "Público",
+          "Organizativo",
+          "Privado",
+          "Ninguno"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "¿Un origen Privado puede combinarse con otro origen Privado sin restricciones?",
+        "opts": [
+          "Sí, siempre",
+          "No, los datos de un origen Privado no se pliegan ni siquiera hacia otro Privado",
+          "Solo si ambos están en la misma carpeta",
+          "Solo en Power BI Premium"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué propósito tiene el Firewall de privacidad de datos?",
+        "opts": [
+          "Acelerar las consultas",
+          "Evitar que Power Query filtre datos involuntariamente entre orígenes",
+          "Bloquear virus",
+          "Cifrar archivos automáticamente"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Con qué otro concepto de Power Query está relacionado el error Formula.Firewall?",
+        "opts": [
+          "El plegado de consultas (query folding)",
+          "El tipo de letra",
+          "El número de columnas",
+          "La versión de Excel"
+        ],
+        "correct": 0
+      }
+    ],
+    "files": [
+      "M02_L10_Ficha_Privacidad.xlsx"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Configuración y cambio de rutas",
+    "duracion": "50 a 70 min",
+    "dificultad": "Intermedia",
+    "badgeIcon": "route",
+    "badgeDesc": "Administrar conexiones, puertas de enlace y ubicaciones.",
+    "objetivos": [
+      "Usar el cuadro de diálogo Administrar conexiones para revisar los orígenes de un proyecto.",
+      "Editar la puerta de enlace, tipo de autenticación y nivel de privacidad de una conexión existente.",
+      "Reconocer la diferencia entre desvincular una conexión y eliminarla por completo.",
+      "Aplicar buenas prácticas de rutas controladas frente a rutas personales (repaso del Módulo 1)."
+    ],
+    "situacion": "Con el tiempo, las rutas de tus orígenes cambian: se mueve un archivo, se actualiza una puerta de enlace, o cambia el responsable de una base de datos. Power Query centraliza la edición de estas conexiones en un solo lugar.",
+    "secciones": [
+      {
+        "title": "El cuadro de diálogo Administrar conexiones",
+        "para": "Disponible en la pestaña Inicio del Editor de Power Query, en el grupo Orígenes de datos. Muestra dos vistas: Proyecto actual (las conexiones usadas en el flujo de datos activo) y Permisos globales (todas las conexiones disponibles del usuario autenticado)."
+      },
+      {
+        "title": "Agregar una conexión",
+        "para": "Si un origen del proyecto todavía no tiene conexión vinculada, se agrega seleccionando el icono '+' junto al conector desvinculado. Esto abre el cuadro de diálogo de conexión correspondiente."
+      },
+      {
+        "title": "Desvincular frente a eliminar",
+        "para": "Desvincular solo quita la referencia de esa conexión del proyecto actual — la definición de la conexión sigue existiendo en el backend, solo deja de usarse en este proyecto en particular. No es lo mismo que eliminarla por completo."
+      },
+      {
+        "title": "Editar una conexión existente",
+        "para": "Desde el icono de edición junto al nombre de la conexión puedes cambiar: la puerta de enlace de datos (si aplica), el tipo de autenticación y las credenciales, y el nivel de privacidad."
+      },
+      {
+        "title": "Repaso: rutas fijas frente a rutas controladas",
+        "para": "Como vimos en el Módulo 1, una ruta escrita directamente en la consulta (fija) rompe fácilmente si el archivo se mueve o si otro usuario la ejecuta desde un equipo distinto. Usar ubicaciones compartidas y documentadas, en vez de rutas del escritorio personal, sigue siendo la mejor práctica también para todos los conectores vistos en este módulo."
+      }
+    ],
+    "resumen": [
+      "Administrar conexiones centraliza la revisión y edición de todos los orígenes de un proyecto.",
+      "Muestra dos vistas: Proyecto actual y Permisos globales.",
+      "Desvincular una conexión no la elimina del backend, solo deja de usarse en ese proyecto.",
+      "Editar una conexión permite cambiar puerta de enlace, autenticación y nivel de privacidad.",
+      "Las rutas controladas y compartidas siguen siendo mejor práctica que las rutas personales."
+    ],
+    "quiz": [
+      {
+        "q": "¿Dónde se encuentra el cuadro de diálogo Administrar conexiones?",
+        "opts": [
+          "Pestaña Vista > Diagramas",
+          "Pestaña Inicio, grupo Orígenes de datos",
+          "Menú Archivo > Imprimir",
+          "Panel de notas"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué diferencia hay entre desvincular y eliminar una conexión?",
+        "opts": [
+          "Son lo mismo",
+          "Desvincular solo quita la referencia del proyecto; la conexión sigue existiendo en el backend",
+          "Eliminar es reversible y desvincular no",
+          "No existe la opción de desvincular"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué se puede cambiar al editar una conexión existente?",
+        "opts": [
+          "Solo el nombre del archivo",
+          "Puerta de enlace, autenticación y nivel de privacidad",
+          "El idioma de Power Query",
+          "El número de filas"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Cuál es la mejor práctica de rutas repasada del Módulo 1?",
+        "opts": [
+          "Usar siempre rutas del escritorio personal",
+          "Usar ubicaciones compartidas y documentadas",
+          "Nunca compartir la ruta con nadie",
+          "Escribir la ruta en un comentario del código"
+        ],
+        "correct": 1
+      }
+    ],
+    "files": [
+      "M02_L11_Registro_Rutas.xlsx"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Errores comunes de conexión",
+    "duracion": "55 a 75 min",
+    "dificultad": "Intermedia",
+    "badgeIcon": "octagon-alert",
+    "badgeDesc": "Diagnóstico de los errores de conexión más frecuentes.",
+    "objetivos": [
+      "Reconocer los mensajes de error de conexión más frecuentes en Power Query.",
+      "Diagnosticar si un error es de credenciales, de ruta, de proveedor o de privacidad.",
+      "Aplicar una secuencia de diagnóstico antes de modificar una consulta a ciegas.",
+      "Diferenciar un error de conexión de un error de datos (visto en el Módulo 1)."
+    ],
+    "situacion": "Cierra el módulo el catálogo de errores que con más frecuencia detienen una actualización: no son errores del dato en sí (eso lo vimos en el Módulo 1), sino errores para siquiera llegar al origen.",
+    "secciones": [
+      {
+        "title": "Proveedor no registrado (archivos Excel heredados)",
+        "para": "'The Microsoft.ACE.OLEDB.12.0 provider is not registered on the local machine.' Ocurre al conectar .xls o .xlsb sin el proveedor ACE instalado. Solución: instalar el proveedor de 32 o 64 bits según corresponda, o usar una puerta de enlace que ya lo tenga."
+      },
+      {
+        "title": "Tipo de credencial no admitido",
+        "para": "'No se pudo conectar porque este tipo de credencial no se admite para este recurso.' Ocurre normalmente con conectores genéricos (Web, OData) contra servicios que no están configurados para ese método — prueba con Anónimo si el servicio no requiere autenticación."
+      },
+      {
+        "title": "Formula.Firewall (privacidad)",
+        "para": "'...references other queries or steps, so it may not directly access a data source' o '...accessing data sources that have privacy levels which cannot be used together.' Indica un conflicto de niveles de privacidad entre orígenes combinados — revisa y ajusta los niveles de privacidad (Lección 10)."
+      },
+      {
+        "title": "Conexión sin cifrar (bases de datos)",
+        "para": "Al conectar SQL Server sin cifrado, Power Query muestra una advertencia antes de continuar. Puedes aceptar la conexión sin cifrar o configurar una conexión cifrada, según las políticas de tu organización."
+      },
+      {
+        "title": "Ruta o puerta de enlace inaccesible",
+        "para": "Como se vio en el Módulo 1, una ruta personal o un archivo movido genera errores de archivo no encontrado. En Power Query Online, además, puede faltar una puerta de enlace de datos local configurada para acceder al recurso."
+      },
+      {
+        "title": "Secuencia de diagnóstico recomendada",
+        "para": "1) Lee el mensaje completo, no solo el título. 2) Identifica la etapa: ¿conexión, autenticación, o privacidad? 3) Verifica si el error es nuevo (algo cambió) o recurrente. 4) Corrige la causa raíz, no solo el síntoma. 5) Vuelve a probar la actualización antes de dar por resuelto."
+      }
+    ],
+    "resumen": [
+      "Los errores de conexión más comunes son: proveedor no registrado, credencial no admitida, Formula.Firewall, conexión sin cifrar y rutas inaccesibles.",
+      "Cada mensaje de error apunta a una causa específica: léelo completo antes de actuar.",
+      "Formula.Firewall casi siempre se relaciona con niveles de privacidad incompatibles.",
+      "La secuencia de diagnóstico recomendada es: leer, identificar la etapa, verificar si es nuevo, corregir la causa raíz, y volver a probar."
+    ],
+    "quiz": [
+      {
+        "q": "¿Qué causa típicamente el error 'Microsoft.ACE.OLEDB.12.0 provider is not registered'?",
+        "opts": [
+          "Contraseña incorrecta",
+          "Falta el proveedor ACE para libros Excel heredados (.xls, .xlsb)",
+          "El archivo CSV está vacío",
+          "La carpeta no existe"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Con qué concepto se relaciona casi siempre el error Formula.Firewall?",
+        "opts": [
+          "Niveles de privacidad incompatibles",
+          "El tamaño del archivo",
+          "La versión de Windows",
+          "El idioma de la interfaz"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "¿Cuál es el primer paso recomendado ante un error de conexión?",
+        "opts": [
+          "Reinstalar Power Query",
+          "Leer el mensaje completo, no solo el título",
+          "Eliminar la consulta y empezar de cero",
+          "Ignorarlo si la vista previa se ve bien"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué distingue a un error de conexión de un error de datos (Módulo 1)?",
+        "opts": [
+          "No hay diferencia",
+          "El error de conexión impide siquiera llegar al origen; el error de datos ocurre ya con datos obtenidos",
+          "Los errores de datos son siempre más graves",
+          "Los errores de conexión no tienen solución"
+        ],
+        "correct": 1
+      }
+    ],
+    "files": [
+      "M02_L12_Diagnostico_Errores.xlsx"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Práctica integradora del Módulo 2",
+    "duracion": "150 a 200 min",
+    "dificultad": "Intermedia",
+    "badgeIcon": "layers",
+    "badgeDesc": "Caso completo: consolidación automática de archivos periódicos.",
+    "objetivos": [
+      "Diseñar una solución que combine varios orígenes vistos en el módulo.",
+      "Conectarse a una carpeta con archivos CSV mensuales y combinarlos automáticamente.",
+      "Aplicar el nivel de privacidad correcto a cada origen combinado.",
+      "Documentar la ruta, la puerta de enlace y las credenciales usadas.",
+      "Probar la actualización agregando un archivo nuevo a la carpeta de origen."
+    ],
+    "situacion": "Caso integrador: Consolidación automática de archivos periódicos. Cada mes, un área entrega un archivo CSV con el mismo formato en una carpeta compartida. El objetivo es construir una consulta que combine automáticamente todos los archivos de la carpeta, sin importar cuántos haya, y que se actualice sola cuando llegue un archivo nuevo.",
+    "secciones": [
+      {
+        "title": "Fase 1. Diagnóstico de los orígenes",
+        "para": "Revisa la carpeta de origen: ¿todos los archivos comparten el mismo formato y encabezados? ¿Hay archivos que deban excluirse (pruebas, versiones antiguas)? Define la ruta compartida donde vivirá la carpeta."
+      },
+      {
+        "title": "Fase 2. Conexión y combinación",
+        "para": "Usa el conector de Carpeta con Combinar y transformar datos. Elige un archivo de ejemplo representativo. Revisa la consulta de función auxiliar que Power Query genera automáticamente para transformar cada archivo."
+      },
+      {
+        "title": "Fase 3. Privacidad y credenciales",
+        "para": "Define el nivel de privacidad de la carpeta (probablemente Organizativo) y documenta qué tipo de autenticación se usó. Si la carpeta está en SharePoint, documenta también la URL del sitio."
+      },
+      {
+        "title": "Fase 4. Prueba de actualización",
+        "para": "Agrega un archivo nuevo con el mismo formato a la carpeta de origen y actualiza la consulta. Confirma que el nuevo archivo se incorpora automáticamente al resultado combinado, sin pasos manuales adicionales."
+      },
+      {
+        "title": "Fase 5. Documentación y entrega",
+        "para": "Documenta: ruta de la carpeta, archivo de ejemplo usado, nivel de privacidad, tipo de autenticación, y una prueba de que la consulta soporta archivos nuevos sin modificarse."
+      }
+    ],
+    "resumen": [
+      "El caso integrador combina carpeta, CSV, autenticación y privacidad en una sola solución.",
+      "La combinación de archivos depende de un archivo de ejemplo representativo.",
+      "El nivel de privacidad debe documentarse junto con la ruta y las credenciales.",
+      "Una consulta bien diseñada incorpora archivos nuevos automáticamente al actualizarse."
+    ],
+    "quiz": [],
+    "files": [
+      "M02_L13_Carpeta_Reportes/Reporte_Abril.csv",
+      "M02_L13_Instrucciones.xlsx"
+    ],
+    "entregableDescripcion": "Esta lección no tiene preguntas de opción múltiple: se aprueba entregando la solución completa del caso integrador.",
+    "entregableChecklist": [
+      "Diagnóstico del archivo (Periodo 1) documentado.",
+      "Consultas de válidas, canceladas y revisión separadas.",
+      "Actualización probada con el Periodo 2.",
+      "Conciliación con diferencia sin explicar = 0."
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Evaluación y reto del Módulo 2",
+    "duracion": "120 a 160 min",
+    "dificultad": "Intermedia",
+    "badgeIcon": "graduation-cap",
+    "badgeDesc": "Reto final: diseña tu propia solución de conexión de datos.",
+    "objetivos": [
+      "Aplicar de forma autónoma los conceptos de conexión de las 12 lecciones anteriores.",
+      "Elegir el conector correcto según el tipo de origen presentado.",
+      "Diagnosticar y corregir errores de conexión sin guía paso a paso.",
+      "Responder la evaluación conceptual integradora del módulo."
+    ],
+    "situacion": "Evaluación final: se te presentará un escenario con múltiples orígenes de datos (una carpeta con archivos de texto, un libro de Excel externo y una base de datos) y deberás decidir tú mismo qué conector, qué autenticación y qué nivel de privacidad aplicar a cada uno — sin instrucciones detalladas paso a paso.",
+    "secciones": [
+      {
+        "title": "Qué se evalúa",
+        "para": "Selección correcta del conector para cada tipo de origen. Configuración apropiada de autenticación. Asignación coherente de niveles de privacidad al combinar orígenes. Diagnóstico correcto ante al menos un error de conexión provocado intencionalmente."
+      },
+      {
+        "title": "Formato del reto",
+        "para": "Recibirás tres orígenes distintos (carpeta, archivo externo y base de datos) sin instrucciones de qué botón presionar — deberás aplicar el criterio desarrollado en las 12 lecciones anteriores."
+      },
+      {
+        "title": "Evaluación conceptual",
+        "para": "Además del reto práctico, se incluye una evaluación de opción múltiple que cubre los conceptos clave de todo el módulo: fases de conexión, conectores específicos, autenticación, privacidad y diagnóstico de errores."
+      }
+    ],
+    "resumen": [
+      "La evaluación final integra selección de conector, autenticación, privacidad y diagnóstico de errores.",
+      "No se ofrece una secuencia detallada de pasos — se evalúa el criterio adquirido en el módulo.",
+      "La evaluación conceptual cubre las 12 lecciones anteriores del módulo."
+    ],
+    "quiz": [
+      {
+        "q": "Necesitas combinar 30 archivos CSV mensuales de una carpeta compartida. ¿Qué conector usarías?",
+        "opts": [
+          "Excel",
+          "Carpeta",
+          "PDF",
+          "Base de datos SQL Server"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "Un libro de Excel .xls antiguo no conecta y muestra un error sobre ACE. ¿Cuál es la causa más probable?",
+        "opts": [
+          "El archivo está protegido con contraseña",
+          "Falta el proveedor OLEDB del Access Database Engine",
+          "El archivo es demasiado pequeño",
+          "Power Query no admite archivos Excel"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "Combinas una tabla de un archivo Privado con una tabla Organizativa y Power Query bloquea la operación. ¿Qué mecanismo actuó?",
+        "opts": [
+          "Antivirus",
+          "El Firewall de privacidad de datos",
+          "Un límite de filas",
+          "Un error de sintaxis M"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué conector usarías para extraer una tabla de un estado de cuenta bancario en PDF?",
+        "opts": [
+          "PDF (Pdf.Tables)",
+          "Carpeta",
+          "SharePoint lista",
+          "Texto/CSV"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Quieres conectar una base de datos con volumen muy grande sin copiar los datos localmente. ¿Qué modo usarías (si el producto lo permite)?",
+        "opts": [
+          "Importación",
+          "DirectQuery",
+          "Modo sin conexión",
+          "Modo de solo lectura"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué necesitas conocer para conectar tanto una Carpeta de SharePoint como una Lista de SharePoint?",
+        "opts": [
+          "La contraseña del administrador global",
+          "La URL del sitio de SharePoint",
+          "El número de serie del servidor",
+          "El nombre del creador del sitio"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "¿Qué acción es correcta si necesitas dejar de usar una conexión en tu proyecto sin borrarla del sistema?",
+        "opts": [
+          "Eliminarla por completo",
+          "Desvincularla desde Administrar conexiones",
+          "Cambiar su contraseña",
+          "Renombrarla"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "Ante un error de conexión nuevo, ¿cuál es el primer paso recomendado?",
+        "opts": [
+          "Reinstalar Power Query",
+          "Leer el mensaje de error completo para identificar la causa",
+          "Eliminar la consulta",
+          "Cambiar todos los tipos de datos a texto"
+        ],
+        "correct": 1
+      }
+    ],
+    "files": [
+      "M02_L14_Instrucciones.xlsx",
+      "M02_L14_Reto_Catalogo_BD.xlsx",
+      "M02_L14_Reto_Excel_Externo.xlsx"
+    ]
+  }
+]

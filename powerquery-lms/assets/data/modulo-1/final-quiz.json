@@ -1,0 +1,92 @@
+[
+  {
+    "q": "¿Qué representa una consulta?",
+    "opts": [
+      "Una copia manual de un archivo.",
+      "Un conjunto de instrucciones para obtener y transformar datos.",
+      "Una tabla dinámica.",
+      "Un gráfico."
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Cuál actividad pertenece a la extracción?",
+    "opts": [
+      "Limpiar espacios.",
+      "Conectarse a un archivo.",
+      "Reemplazar un estatus.",
+      "Agrupar registros."
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué debe determinarse antes de quitar duplicados?",
+    "opts": [
+      "El color del reporte.",
+      "La clave y la granularidad.",
+      "El orden de las hojas.",
+      "El nombre del usuario."
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué significa null?",
+    "opts": [
+      "Cero.",
+      "Texto vacío.",
+      "Ausencia de valor.",
+      "Valor falso."
+    ],
+    "correct": 2
+  },
+  {
+    "q": "Una consulta finaliza sin errores técnicos. Esto significa:",
+    "opts": [
+      "El resultado necesariamente es correcto.",
+      "Debe validarse con reglas del proceso.",
+      "No existen duplicados.",
+      "Todos los campos están completos."
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Cuál es un cambio de estructura?",
+    "opts": [
+      "Agregar una fila.",
+      "Cambiar una cantidad.",
+      "Renombrar una columna.",
+      "Actualizar un estatus."
+    ],
+    "correct": 2
+  },
+  {
+    "q": "¿Qué debe hacerse con un registro problemático?",
+    "opts": [
+      "Eliminarlo inmediatamente.",
+      "Conservarlo y clasificarlo para revisión.",
+      "Convertir todos sus campos a texto.",
+      "Reemplazar sus valores por cero."
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Cuál es la diferencia entre Transformar y Agregar columna?",
+    "opts": [
+      "No existe diferencia.",
+      "Transformar modifica una columna; Agregar columna crea otra.",
+      "Agregar columna elimina registros.",
+      "Transformar solo cambia colores."
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué muestra la vista previa?",
+    "opts": [
+      "Únicamente la salida final.",
+      "El resultado del paso seleccionado.",
+      "Todos los archivos de la carpeta.",
+      "Solo los errores."
+    ],
+    "correct": 1
+  }
+]

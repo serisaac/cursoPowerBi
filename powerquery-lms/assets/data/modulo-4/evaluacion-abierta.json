@@ -1,0 +1,509 @@
+{
+  "2": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Identificación (20% de la evaluación): Clasificar valores como: Mayúsculas. Minúsculas. Formato propio.",
+        "puntos": 20,
+        "respuestaInstructor": "Regla por tipo de campo; preservar siglas y códigos.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Diagnóstico (20% de la evaluación): Identificar inconsistencias en un catálogo.",
+        "puntos": 20,
+        "respuestaInstructor": "Regla por tipo de campo; preservar siglas y códigos.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Práctica (25% de la evaluación): Estandarizar una tabla completa y documentar los cambios.",
+        "puntos": 25,
+        "respuestaInstructor": "Regla por tipo de campo; preservar siglas y códigos.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Reflexión operativa (10% de la evaluación): Explicar: ¿Por qué dos áreas deben utilizar la misma convención de nombres cuando intercambian información?",
+        "puntos": 10,
+        "respuestaInstructor": "Regla por tipo de campo; preservar siglas y códigos.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "3": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Identificación (20% de la evaluación): Clasificar ejemplos de: Reemplazo parcial. Reemplazo total. Homologación.",
+        "puntos": 20,
+        "respuestaInstructor": "Usar catálogo; evitar reemplazo parcial ambiguo.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Diagnóstico (20% de la evaluación): Analizar riesgos de sustitución.",
+        "puntos": 20,
+        "respuestaInstructor": "Usar catálogo; evitar reemplazo parcial ambiguo.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Práctica (25% de la evaluación): Construir una consulta con reemplazos documentados.",
+        "puntos": 25,
+        "respuestaInstructor": "Usar catálogo; evitar reemplazo parcial ambiguo.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Reflexión operativa (10% de la evaluación): Explicar: ¿Por qué una organización debería mantener catálogos estandarizados de equivalencias?",
+        "puntos": 10,
+        "respuestaInstructor": "Usar catálogo; evitar reemplazo parcial ambiguo.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "4": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Identificación (20% de la evaluación): Prefijos, sufijos y posiciones.",
+        "puntos": 20,
+        "respuestaInstructor": "Clasificar patrones antes de extraer.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Diagnóstico (20% de la evaluación): Detectar códigos con estructuras incorrectas.",
+        "puntos": 20,
+        "respuestaInstructor": "Clasificar patrones antes de extraer.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Práctica (25% de la evaluación): Generar nuevas columnas mediante extracción.",
+        "puntos": 25,
+        "respuestaInstructor": "Clasificar patrones antes de extraer.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Reflexión operativa (10% de la evaluación): Explicar: ¿Por qué la extracción de caracteres puede simplificar el análisis de grandes volúmenes de información?",
+        "puntos": 10,
+        "respuestaInstructor": "Clasificar patrones antes de extraer.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "5": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Identificación (20% de la evaluación): Reconocer delimitadores y estructuras.",
+        "puntos": 20,
+        "respuestaInstructor": "Validar número de segmentos y conservar origen.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Diagnóstico (20% de la evaluación): Detectar divisiones incorrectas.",
+        "puntos": 20,
+        "respuestaInstructor": "Validar número de segmentos y conservar origen.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Práctica (25% de la evaluación): Dividir correctamente múltiples estructuras.",
+        "puntos": 25,
+        "respuestaInstructor": "Validar número de segmentos y conservar origen.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Reflexión operativa (10% de la evaluación): Explicar: ¿Por qué la normalización de columnas facilita la transformación y análisis de datos?",
+        "puntos": 10,
+        "respuestaInstructor": "Validar número de segmentos y conservar origen.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "6": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Identificación (20% de la evaluación): Interpretar ejemplos de claves compuestas.",
+        "puntos": 20,
+        "respuestaInstructor": "Definir granularidad; verificar unicidad.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Diagnóstico (20% de la evaluación): Detectar problemas de unicidad.",
+        "puntos": 20,
+        "respuestaInstructor": "Definir granularidad; verificar unicidad.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Práctica (25% de la evaluación): Construir identificadores y documentarlos.",
+        "puntos": 25,
+        "respuestaInstructor": "Definir granularidad; verificar unicidad.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Reflexión operativa (10% de la evaluación): Explicar: ¿Por qué una clave compuesta puede ser más confiable que un campo individual para identificar registros?",
+        "puntos": 10,
+        "respuestaInstructor": "Definir granularidad; verificar unicidad.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "7": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Identificación (20% de la evaluación): Reconocer operaciones apropiadas para distintos escenarios.",
+        "puntos": 20,
+        "respuestaInstructor": "Controlar nulos y cero en denominador.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Diagnóstico (20% de la evaluación): Detectar errores de cálculo y problemas de datos.",
+        "puntos": 20,
+        "respuestaInstructor": "Controlar nulos y cero en denominador.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Práctica (25% de la evaluación): Construir indicadores operativos.",
+        "puntos": 25,
+        "respuestaInstructor": "Controlar nulos y cero en denominador.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Reflexión operativa (10% de la evaluación): Explicar: ¿Por qué una organización debería calcular indicadores dentro del proceso de transformación y no manualmente en cada reporte?",
+        "puntos": 10,
+        "respuestaInstructor": "Controlar nulos y cero en denominador.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "9": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Identificación (20% de la evaluación): Reconocer tipos de indicadores porcentuales.",
+        "puntos": 20,
+        "respuestaInstructor": "Definir base y escala del porcentaje.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Diagnóstico (20% de la evaluación): Detectar errores de cálculo e interpretación.",
+        "puntos": 20,
+        "respuestaInstructor": "Definir base y escala del porcentaje.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Práctica (25% de la evaluación): Construir indicadores de cumplimiento y participación.",
+        "puntos": 25,
+        "respuestaInstructor": "Definir base y escala del porcentaje.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Reflexión operativa (10% de la evaluación): Explicar: ¿Por qué los porcentajes suelen comunicar mejor el desempeño que las cantidades absolutas?",
+        "puntos": 10,
+        "respuestaInstructor": "Definir base y escala del porcentaje.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "10": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Clasificación temporal (15% de la evaluación): El participante clasificará: Fecha. Texto. Hora. Fecha-hora. Fecha-hora con zona. Duración. Fecha inválida. Fecha anómala. Valor sustituto. Nulo.",
+        "puntos": 15,
+        "respuestaInstructor": "Aplicar región y validar periodo.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Transformaciones temporales (20% de la evaluación): Generará: Año. Trimestre. Mes. Número de mes. Año-mes. Semana. Año-semana. Día de la semana. Inicio de mes. Fin de mes.",
+        "puntos": 20,
+        "respuestaInstructor": "Aplicar región y validar periodo.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Diagnóstico y validación (20% de la evaluación): Identificará: Errores regionales. Fechas fuera de rango. Secuencias imposibles. Valores futuros válidos e inválidos. Fechas faltantes. Eventos nocturnos mal clasificados.",
+        "puntos": 20,
+        "respuestaInstructor": "Aplicar región y validar periodo.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Diseño de solución temporal (20% de la evaluación): Diseñará una arquitectura para: Preparar fechas. Validar secuencias. Crear atributos. Clasificar vigencias. Separar excepciones. Generar indicadores. Conciliar resultados.",
+        "puntos": 20,
+        "respuestaInstructor": "Aplicar región y validar periodo.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "11": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Cálculo y unidades (20% de la evaluación): El participante obtendrá: Días totales. Horas totales. Minutos totales. Componentes de duración. Duración bruta. Duración neta.",
+        "puntos": 20,
+        "respuestaInstructor": "Diferenciar componentes y totales; casos abiertos.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Diagnóstico (20% de la evaluación): Identificará: Tipos incompatibles. Duraciones negativas. Casos abiertos. Cruces de medianoche. Valores atípicos. Registros no evaluables.",
+        "puntos": 20,
+        "respuestaInstructor": "Diferenciar componentes y totales; casos abiertos.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Indicadores y clasificación (20% de la evaluación): Construirá: Cumplimiento de objetivo. Cumplimiento de límite. Antigüedad. Duración promedio. Casos abiertos. Excepciones.",
+        "puntos": 20,
+        "respuestaInstructor": "Diferenciar componentes y totales; casos abiertos.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Diseño de solución (15% de la evaluación): Diseñará una arquitectura de consulta que incluya: Preparación. Validación. Duración bruta. Ajustes. Duración neta. Clasificación. Excepciones. Conciliación.",
+        "puntos": 15,
+        "respuestaInstructor": "Diferenciar componentes y totales; casos abiertos.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "12": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Interpretación (20% de la evaluación): El participante analizará: Números. Fechas. Porcentajes. Importes. Nombres de meses. Valores ambiguos.",
+        "puntos": 20,
+        "respuestaInstructor": "Aplicar región del origen; detectar ambigüedad.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Conversión práctica (20% de la evaluación): Aplicará regiones diferentes para convertir: Fechas. Números decimales. Importes. Porcentajes.",
+        "puntos": 20,
+        "respuestaInstructor": "Aplicar región del origen; detectar ambigüedad.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Diagnóstico (20% de la evaluación): Identificará: Errores visibles. Errores silenciosos. Magnitudes anómalas. Fechas fuera de periodo. Regiones mezcladas. Valores no resolubles.",
+        "puntos": 20,
+        "respuestaInstructor": "Aplicar región del origen; detectar ambigüedad.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Diseño de solución (15% de la evaluación): Diseñará una consulta que incluya: Conservación del original. Clasificación regional. Conversión. Validación. Excepciones. Indicadores. Conciliación. Portabilidad.",
+        "puntos": 15,
+        "respuestaInstructor": "Aplicar región del origen; detectar ambigüedad.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "13": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Clasificación (20% de la evaluación): El participante clasificará: Nulos. Errores. Valores sustitutos. Valores con unidades. Errores regionales. Fechas inválidas. Valores técnicamente válidos, pero operativamente incorrectos.",
+        "puntos": 20,
+        "respuestaInstructor": "Conservar error, clasificar y conciliar.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Diagnóstico (20% de la evaluación): Identificará: Error de celda. Error de paso. Primer paso afectado. Motivo. Mensaje. Detalle. Causa probable.",
+        "puntos": 20,
+        "respuestaInstructor": "Conservar error, clasificar y conciliar.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Tratamiento (20% de la evaluación): Aplicará: Conversión controlada. Separación de unidad. Configuración regional. try. Consulta de excepciones. Tratamiento documentado.",
+        "puntos": 20,
+        "respuestaInstructor": "Conservar error, clasificar y conciliar.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Diseño y conciliación (15% de la evaluación): Diseñará una arquitectura que incluya: Origen. Conversión. Clasificación. Registros válidos. Registros corregidos. Excepciones. Indicadores. Conciliación.",
+        "puntos": 15,
+        "respuestaInstructor": "Conservar error, clasificar y conciliar.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "14": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte A. Diagnóstico (15% de la evaluación): Se evaluará: Identificación de problemas. Clasificación por campo. Reconocimiento de riesgos. Propuesta de secuencia.",
+        "puntos": 15,
+        "respuestaInstructor": "Arquitectura completa y 100% de conciliación.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Transformaciones (30% de la evaluación): Se evaluará: Limpieza. Estandarización. Reemplazos. Extracción. División. Combinación. Operaciones numéricas. Redondeo. Porcentajes. Fechas. Duraciones.",
+        "puntos": 30,
+        "respuestaInstructor": "Arquitectura completa y 100% de conciliación.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Conversión y excepciones (20% de la evaluación): Se evaluará: Regiones aplicadas. Tipos definidos. Errores detectados. Registros corregidos. Consulta de revisión.",
+        "puntos": 20,
+        "respuestaInstructor": "Arquitectura completa y 100% de conciliación.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Validación y conciliación (20% de la evaluación): Se evaluará: Conteo de registros. Totales. Unicidad. Secuencias. Indicadores. Conciliación general.",
+        "puntos": 20,
+        "respuestaInstructor": "Arquitectura completa y 100% de conciliación.",
+        "criterio": ""
+      },
+      {
+        "no": 5,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Documentación y actualización (15% de la evaluación): Se evaluará: Nombres de consultas. Nombres de pasos. Reglas documentadas. Prueba de actualización. Presentación de resultados.",
+        "puntos": 15,
+        "respuestaInstructor": "Arquitectura completa y 100% de conciliación.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 100
+  },
+  "15": {
+    "tipo": "rubrica",
+    "items": [
+      {
+        "criterio": "Evaluación conceptual",
+        "puntos": 15,
+        "condicionLogro": "El participante responde correctamente al menos 8 de las 10 preguntas conceptuales y demuestra comprensión de por qué se aplica cada transformación, no solo dónde se ejecuta."
+      },
+      {
+        "criterio": "Diagnóstico",
+        "puntos": 15,
+        "condicionLogro": "La matriz de diagnóstico identifica correctamente granularidad, clave probable, campos obligatorios/opcionales, valores nulos, caracteres no visibles, categorías repetidas, estructuras de código y configuraciones regionales antes de transformar el archivo."
+      },
+      {
+        "criterio": "Desarrollo técnico",
+        "puntos": 35,
+        "condicionLogro": "La solución aplica correctamente limpieza, homologación, extracción, división, combinación, conversión numérica y regional, redondeo, porcentajes, fechas, duraciones y tratamiento de errores, conservando los valores originales y usando nombres descriptivos de pasos."
+      },
+      {
+        "criterio": "Validación y conciliación",
+        "puntos": 20,
+        "condicionLogro": "Las validaciones obligatorias se cumplen, la consulta de excepciones está completa y la conciliación explica el destino del 100% de los registros y de los valores por campo crítico."
+      },
+      {
+        "criterio": "Documentación y actualización",
+        "puntos": 15,
+        "condicionLogro": "La ficha de documentación técnica está completa, la prueba de actualización con el segundo archivo se realizó correctamente y la defensa técnica explica con claridad las decisiones tomadas."
+      }
+    ],
+    "totalPuntos": 100,
+    "condicionesNoAprobacion": [
+      "Eliminar registros sin evidencia.",
+      "Sobrescribir todos los valores originales.",
+      "Reemplazar todos los errores por cero.",
+      "Aplicar una sola región a valores claramente distintos.",
+      "Presentar una conciliación incompleta.",
+      "Confundir duración con antigüedad.",
+      "Utilizar claves no validadas.",
+      "Inventar fechas o cantidades.",
+      "Ocultar registros pendientes.",
+      "Modificar manualmente la tabla final para aparentar un resultado correcto."
+    ]
+  }
+}

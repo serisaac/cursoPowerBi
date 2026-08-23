@@ -1,0 +1,555 @@
+{
+  "1": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Diagnóstico estructural (20% de la evaluación): El participante clasificará: Títulos. Metadatos. Encabezados. Detalle. Subtotales. Totales. Notas. Excepciones.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Diseño de estructura objetivo (20% de la evaluación): Definirá: Granularidad recibida. Granularidad objetivo. Atributos. Medidas. Clave candidata. Metadatos. Estructura analítica.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Práctica estructural (20% de la evaluación): El participante deberá: Identificar la fila de encabezados. Recuperar metadatos. Separar el detalle. Separar subtotales. Conservar el total general. Diseñar la tabla analítica. Identificar excepciones.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación y estabilidad (15% de la evaluación): Deberá entregar: Conteo inicial. Clasificación de filas. Conteo del detalle. Total recalculado. Comparación con el total del origen. Resultado de actualización con un segundo periodo.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "2": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Diseño de reglas (20% de la evaluación): El participante redactará reglas de: Inclusión. Exclusión. Periodo. Calidad. Revisión. Ordenamiento.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Práctica de filtrado (20% de la evaluación): Aplicará filtros de: Texto. Número. Fecha. Nulos. Errores. Condiciones múltiples.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Ordenamiento (15% de la evaluación): Aplicará: Ascendente. Descendente. Multinivel. Personalizado.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación y estabilidad (20% de la evaluación): Entregará: Conteo inicial. Registros incluidos. Registros excluidos. Registros para revisión. Conciliación de cantidades. Resultado con categorías nuevas.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "3": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Diagnóstico posicional (20% de la evaluación): El participante identificará: Inicio del detalle. Final del detalle. Encabezados. Títulos. Totales. Observaciones. Filas vacías. Registros incompletos.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Operaciones sobre filas (20% de la evaluación): Aplicará: Mantener superiores. Mantener inferiores. Mantener intervalo. Quitar superiores. Quitar inferiores. Quitar filas vacías. Trabajar con filas alternas.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Duplicados (20% de la evaluación): Clasificará: Duplicado exacto. Clave repetida con diferencias. Repetición legítima. Clave nula. Registro único. También construirá una consulta de duplicados.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación y estabilidad (15% de la evaluación): Entregará: Conteo inicial. Clasificación de filas. Conteo del detalle. Duplicados. Excepciones. Conciliación de cantidades. Resultado con el segundo periodo.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "4": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Inventario y clasificación (20% de la evaluación): El participante clasificará columnas como: Identificador. Atributo. Medida. Temporal. Trazabilidad. Técnica. Auxiliar. Sensible. Sin uso definido.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Selección práctica (20% de la evaluación): Construirá: Consulta operativa. Consulta ejecutiva. Consulta de auditoría. Consulta de excepciones.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Diagnóstico de esquema (20% de la evaluación): Identificará: Columnas nuevas. Faltantes. Renombradas. Vacías. Constantes. Redundantes. Sensibles. Dependientes.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación y estabilidad (15% de la evaluación): Entregará: Conteo inicial de columnas. Columnas conservadas. Columnas retiradas. Columnas pendientes. Validación de campos obligatorios. Resultado con el archivo actualizado.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "5": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Clasificación funcional (20% de la evaluación): El participante clasificará columnas como: Identificación. Temporal. Atributo. Medida. Control. Trazabilidad. Técnica. Sensible.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Reordenamiento práctico (20% de la evaluación): Aplicará: Antes. Después. Para comenzar. Finalizar. Arrastrar y colocar. Reordenamiento por bloques.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Diagnóstico de dependencias (20% de la evaluación): Identificará: Operaciones dependientes del orden. Pasos redundantes. Columnas nuevas. Columnas faltantes. Columnas renombradas. Campos sensibles.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación y estabilidad (15% de la evaluación): Entregará: Orden inicial. Orden objetivo. Conteo de filas. Conteo de columnas. Comparación de nombres. Resultado con el archivo actualizado. Matriz de orden documentada.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "6": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Diagnóstico estructural (20% de la evaluación): El participante identificará: Omisiones visuales. Ausencias reales. Cadenas vacías. Espacios. Encabezados de bloque. Subtotales. Límites. Registros pendientes.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Relleno práctico (20% de la evaluación): Aplicará: Rellenar hacia abajo. Rellenar hacia arriba. Preparación de vacíos. Relleno de varias columnas. Conservación del valor original.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Validación y excepciones (20% de la evaluación): Construirá: Indicador FueRellenado. Estado del registro. Validación jerárquica. Consulta de pendientes. Consulta de subtotales. Control de combinaciones inválidas.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación y estabilidad (15% de la evaluación): Entregará: Valores originales. Valores rellenados. Valores pendientes. Registros no aplicables. Comparación de cantidades. Resultado con el archivo actualizado.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "7": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Diseño de granularidad (20% de la evaluación): El participante definirá: Granularidad inicial. Granularidad final. Dimensiones. Medidas. Clave del grupo. Campos que dejan de estar visibles.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Agrupación práctica (20% de la evaluación): Aplicará: Agrupación por una columna. Agrupación por varias columnas. Recuento de filas. Recuento distinto. Todas las filas. Varias agregaciones.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Diagnóstico y control (20% de la evaluación): Identificará: Unidades incompatibles. Dimensiones nulas. Errores. Duplicados. Subtotales. Categorías no homologadas. Grupos sin medida válida.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación y estabilidad (15% de la evaluación): Entregará: Conteo de detalle. Cantidad de grupos. Suma de recuentos. Conciliación por unidad. Grupos nuevos. Resultado con el archivo actualizado.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "8": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Clasificación de medidas (20% de la evaluación): El participante clasificará: Medidas aditivas. Parcialmente aditivas. No aditivas. Dimensiones. Controles. Unidades.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Agregación práctica (20% de la evaluación): Calculará: Suma. Conteo de filas. Conteo distinto. Promedio. Mínimo. Máximo. Varias agregaciones.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Interpretación y diagnóstico (20% de la evaluación): Analizará: Promedio simple y ponderado. Nulos. Errores. Duplicados. Unidades. Valores atípicos. Subtotales. Grupos sin medida válida.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación y estabilidad (15% de la evaluación): Entregará: Recuento de detalle. Suma de recuentos agrupados. Suma del detalle. Suma del resumen. Validación del promedio. Grupos nuevos. Resultado con el archivo actualizado.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "9": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Diagnóstico y diseño (20% de la evaluación): El participante identificará: Granularidad de origen. Columnas identificadoras. Columna de atributos. Columna de valores. Intersecciones múltiples. Función de agregación adecuada.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Pivoteo práctico (20% de la evaluación): Aplicará: Pivoteo con agregación. Pivoteo sin agregación (No agregar). Homologación de categorías. Tratamiento de categorías nulas. Control de categorías nuevas.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Diagnóstico y control (20% de la evaluación): Identificará: Intersecciones vacías. Intersecciones múltiples no resueltas. Unidades mezcladas. Nulos frente a ceros. Encabezados no válidos. Columnas identificadoras implícitas.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación y estabilidad (15% de la evaluación): Entregará: Filas antes y después. Suma del detalle. Suma de la matriz. Comparación por categoría. Resultado con el archivo actualizado.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "10": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Diseño estructural (20% de la evaluación): El participante definirá: Granularidad inicial. Granularidad final. Columnas fijas. Columnas variables. Atributo final. Valor final. Clave candidata. Tratamiento de nulos.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Despivoteo práctico (20% de la evaluación): Aplicará: Despivotar columnas seleccionadas. Despivotar otras columnas. Renombrado de atributo y valor. Conversión temporal. División de encabezados compuestos. Asignación de tipos.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Diagnóstico y control (20% de la evaluación): Identificará: Columnas técnicas. Totales. Subtotales. Nulos. Errores. Encabezados fuera de patrón. Medidas incompatibles. Claves duplicadas.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación y estabilidad (15% de la evaluación): Entregará: Filas originales. Columnas variables. Filas potenciales. Celdas no vacías. Registros normalizados. Suma de la matriz. Suma de la tabla larga. Resultado con el archivo actualizado.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "11": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Diagnóstico de orientación (20% de la evaluación): El participante identificará: Entidades. Atributos. Medidas. Metadatos. Orientación recibida. Orientación objetivo. Granularidad inicial. Granularidad final.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Transposición práctica (20% de la evaluación): Aplicará: Uso de encabezados como primera fila. Transposición. Promoción de encabezados. Renombrado. Asignación de tipos. Incorporación de metadatos.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Diagnóstico y control (20% de la evaluación): Identificará: Encabezados duplicados. Atributos nuevos. Entidades nuevas. Filas vacías. Totales. Notas. Valores nulos. Tipos incompatibles.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación y estabilidad (15% de la evaluación): Entregará: Número de atributos iniciales. Número de columnas finales. Número de entidades iniciales. Número de filas finales. Conteo de celdas. Comparación de valores. Resultado con el archivo actualizado.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "12": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Diagnóstico y diseño (20% de la evaluación): El participante deberá: Inventariar la estructura. Definir granularidades. Identificar metadatos. Clasificar filas. Identificar columnas variables. Diseñar la estructura objetivo.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Transformación práctica (25% de la evaluación): Aplicará: Extracción de metadatos. Preparación de encabezados. Relleno. Separación de totales. Despivoteo. División de atributos. Conversión temporal. Tipificación.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Validación y excepciones (20% de la evaluación): Identificará: Nulos. Errores. Duplicados. Columnas desconocidas. Encabezados fuera de patrón. Medidas incompatibles. Subtotales y totales.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación y estabilidad (15% de la evaluación): Entregará: Conciliación de filas. Conciliación de celdas. Conciliación de Programado. Conciliación de Real. Conciliación de subtotales. Resultado con el segundo periodo.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 80
+  },
+  "13": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte A. Diagnóstico y diseño (15% de la evaluación): Se evaluará: Inventario estructural. Definición de granularidad. Estructura objetivo. Mapa de transformación. Identificación de riesgos.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Arquitectura y preparación (20% de la evaluación): Se evaluará: Consulta de origen. Clasificación. Metadatos. Encabezados. Separación de controles. Relleno de categorías.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Normalización (25% de la evaluación): Se evaluará: Columnas variables. Despivoteo. División del atributo. Conversión del periodo. Tipos. Clave final. Tabla analítica.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Resultados y excepciones (15% de la evaluación): Se evaluará: Resumen por línea. Resumen por producto. Resumen por turno. Matriz comparativa. Consulta de excepciones.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 5,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación y estabilidad (15% de la evaluación): Se evaluará: Conciliación de filas. Conciliación de celdas. Conciliación de medidas. Subtotales. Total general. Archivo actualizado.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      },
+      {
+        "no": 6,
+        "tipo": "Abierta",
+        "pregunta": "Parte F. Documentación y presentación (10% de la evaluación): Se evaluará: Nombres de consultas. Descripciones de pasos. Ficha técnica. Limitaciones. Recomendaciones. Exposición del proyecto.",
+        "puntos": 10,
+        "respuestaInstructor": "Criterios de revisión del solucionario: Granularidad declarada antes y después. Consulta de origen conservada. Excepciones separadas y visibles. Conteos y medidas conciliados. Actualización procesada sin reconstruir todo. Decisiones documentadas.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 100
+  },
+  "14": {
+    "tipo": "rubrica",
+    "items": [
+      {
+        "criterio": "Evaluación conceptual",
+        "puntos": 15,
+        "condicionLogro": "El participante responde correctamente al menos 8 de las 10 preguntas conceptuales y explica por qué se aplica cada transformación de reorganización y resumen, no solo dónde se ejecuta."
+      },
+      {
+        "criterio": "Diagnóstico",
+        "puntos": 15,
+        "condicionLogro": "La matriz de diagnóstico entregada clasifica correctamente título, metadatos, encabezados, detalle, subtotales y total general, y declara la granularidad recibida y la granularidad objetivo antes de transformar el archivo."
+      },
+      {
+        "criterio": "Desarrollo técnico",
+        "puntos": 35,
+        "condicionLogro": "La solución recupera los metadatos, construye encabezados únicos, separa subtotales y total general, rellena Línea únicamente dentro del detalle, despivota solo las columnas variables válidas, divide el atributo, valida la clave, y construye los resúmenes por línea, producto y turno junto con la matriz comparativa."
+      },
+      {
+        "criterio": "Validación y conciliación",
+        "puntos": 20,
+        "condicionLogro": "La consulta de excepciones está completa, y la conciliación de filas, celdas, Programado, Real, Rechazo, subtotales y total general demuestra que el 100% de las cantidades del reporte original quedó representado en la solución."
+      },
+      {
+        "criterio": "Documentación y actualización",
+        "puntos": 15,
+        "condicionLogro": "La ficha técnica está completa, el archivo de actualización con la nueva estructura (línea y turno nuevos, encabezados abreviados, columna Comentario y desaparición de Rechazo) se procesó sin reconstruir la solución, y la defensa técnica explica con claridad las decisiones tomadas."
+      }
+    ],
+    "totalPuntos": 100,
+    "condicionesNoAprobacion": [
+      "Eliminar filas o registros sin evidencia ni documentación.",
+      "Sobrescribir manualmente el archivo original.",
+      "Mezclar subtotales o el total general con el detalle analítico.",
+      "Reemplazar valores nulos por cero sin analizarlos.",
+      "Ignorar la desaparición de Rechazo en el archivo actualizado en lugar de documentarla.",
+      "Presentar una conciliación incompleta o que no cierre.",
+      "Utilizar una clave final con duplicados sin resolver.",
+      "Inventar cantidades para completar el total general.",
+      "Ocultar excepciones o registros pendientes de revisión.",
+      "Modificar manualmente la tabla final para aparentar un resultado correcto."
+    ]
+  }
+}

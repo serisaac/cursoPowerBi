@@ -1,0 +1,102 @@
+[
+  {
+    "q": "¿Cuál es la diferencia principal entre Limpiar y Recortar?",
+    "opts": [
+      "Son idénticas",
+      "Recortar elimina espacios al inicio y al final; Limpiar elimina caracteres de control no imprimibles",
+      "Limpiar solo aplica a números",
+      "Recortar elimina espacios internos"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "Antes de aplicar formato propio a un catálogo conviene:",
+    "opts": [
+      "Eliminar los registros",
+      "Limpiar y recortar el texto",
+      "Convertir la columna a número",
+      "Redondear los valores"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Por qué es preferible usar un catálogo de equivalencias antes que decenas de reemplazos individuales?",
+    "opts": [
+      "Porque Power Query no permite reemplazos",
+      "Porque reduce errores y centraliza el mantenimiento de las reglas de homologación",
+      "Porque los catálogos eliminan los valores nulos automáticamente",
+      "Porque un catálogo convierte el texto en número"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "Al extraer segmentos de un código estructurado, lo primero que debe hacerse es:",
+    "opts": [
+      "Eliminar el código original",
+      "Clasificar los distintos patrones de estructura antes de extraer",
+      "Redondear el código",
+      "Convertirlo a fecha"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "Dividir columnas y combinar columnas se diferencian porque:",
+    "opts": [
+      "Son completamente equivalentes",
+      "Dividir segmenta un valor compuesto en varias partes; combinar reorganiza información existente en una nueva columna",
+      "Dividir solo funciona con números",
+      "Combinar siempre agrega información nueva"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "En Power Query, un cálculo numérico se ejecuta:",
+    "opts": [
+      "Continuamente, como una fórmula de Excel",
+      "Una vez durante la actualización de la consulta",
+      "Solo al abrir el archivo",
+      "Nunca de forma automática"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Cuál es la diferencia principal entre truncar y redondear un valor?",
+    "opts": [
+      "Son exactamente lo mismo",
+      "Truncar elimina los decimales sin aplicar una regla de aproximación; redondear ajusta el valor según una regla",
+      "Truncar siempre incrementa el valor",
+      "Redondear elimina la parte entera"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "Todo cálculo porcentual debe validar primero que:",
+    "opts": [
+      "El resultado sea mayor a 100%",
+      "El denominador sea distinto de cero",
+      "El numerador sea negativo",
+      "La columna esté redondeada"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "La configuración regional determina principalmente:",
+    "opts": [
+      "El color de las celdas",
+      "La interpretación de formatos como día, mes, año y separadores numéricos",
+      "El nombre de la consulta",
+      "La cantidad de filas de la tabla"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "Un error de conversión detectado en una columna debe:",
+    "opts": [
+      "Reemplazarse siempre por cero",
+      "Eliminarse inmediatamente sin revisión",
+      "Diagnosticarse y conservarse como evidencia hasta definir su tratamiento",
+      "Convertirse en texto sin revisión"
+    ],
+    "correct": 2
+  }
+]

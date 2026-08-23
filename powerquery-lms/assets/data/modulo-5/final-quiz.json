@@ -1,0 +1,102 @@
+[
+  {
+    "q": "Antes de eliminar duplicados o transformar una tabla, siempre debe definirse primero:",
+    "opts": [
+      "El color de los encabezados",
+      "La granularidad y la clave",
+      "El número de hojas del archivo",
+      "El nombre de la consulta"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "Filtrar una tabla, a diferencia de eliminar filas manualmente:",
+    "opts": [
+      "Modifica el archivo original",
+      "Aplica una regla documentada y repetible",
+      "Elimina columnas",
+      "Cambia el tipo de dato"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "Antes de quitar una fila que parece un total o una nota, conviene:",
+    "opts": [
+      "Eliminarla de inmediato",
+      "Clasificarla y conservar evidencia de la decisión",
+      "Convertirla en encabezado",
+      "Ignorarla"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "Al seleccionar columnas para una tabla analítica, una columna técnica o auxiliar debería:",
+    "opts": [
+      "Eliminarse sin revisión",
+      "Clasificarse antes de decidir si se conserva o se quita",
+      "Convertirse siempre en la clave",
+      "Pivotarse automáticamente"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "El orden de las columnas en una consulta de Power Query:",
+    "opts": [
+      "No tiene ningún efecto práctico",
+      "Puede facilitar o dificultar la validación y el diagnóstico",
+      "Cambia los valores almacenados",
+      "Determina el tipo de dato"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "Rellenar hacia abajo debe aplicarse:",
+    "opts": [
+      "A toda la hoja sin excepción",
+      "Únicamente dentro del rango del detalle, evitando subtotales y totales",
+      "Solo a columnas numéricas",
+      "Después de pivotar la tabla"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "Agrupar por una dimensión produce una tabla donde:",
+    "opts": [
+      "Cada fila representa un registro individual del detalle",
+      "Cada fila representa una combinación única de la dimensión agrupada",
+      "Se eliminan todas las medidas",
+      "Las columnas se convierten en filas"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "Al aplicar Suma como agregación después de agrupar, debe verificarse antes:",
+    "opts": [
+      "Que todos los valores usen la misma unidad",
+      "Que la tabla tenga menos de diez filas",
+      "Que no existan columnas de texto",
+      "Que el archivo esté cerrado"
+    ],
+    "correct": 0
+  },
+  {
+    "q": "Pivotar una columna es apropiado cuando existe un solo valor por intersección o cuando:",
+    "opts": [
+      "Se aplica una función de agregación adecuada para los valores múltiples",
+      "Se elimina la columna de valores",
+      "Se convierte primero en texto",
+      "Se ignoran los identificadores"
+    ],
+    "correct": 0
+  },
+  {
+    "q": "Una matriz pivotada suele ser una salida derivada porque:",
+    "opts": [
+      "Es más conveniente como origen para anexar nuevos periodos",
+      "Es poco conveniente como origen analítico frente a una tabla larga de detalle",
+      "No puede exportarse",
+      "Reemplaza siempre a la tabla original"
+    ],
+    "correct": 1
+  }
+]

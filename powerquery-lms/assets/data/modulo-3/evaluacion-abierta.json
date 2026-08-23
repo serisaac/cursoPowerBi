@@ -1,0 +1,735 @@
+{
+  "1": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Opción múltiple",
+        "pregunta": "Un campo obligatorio vacío afecta principalmente:",
+        "puntos": 4,
+        "respuestaInstructor": "Completitud",
+        "criterio": "Aceptar equivalentes técnicamente justificados"
+      },
+      {
+        "no": 2,
+        "tipo": "Opción múltiple",
+        "pregunta": "Un porcentaje de 150% cuando el máximo es 100% afecta:",
+        "puntos": 4,
+        "respuestaInstructor": "Validez",
+        "criterio": "Aceptar equivalentes técnicamente justificados"
+      },
+      {
+        "no": 3,
+        "tipo": "Opción múltiple",
+        "pregunta": "Un importe con formato correcto pero distinto al documento afecta:",
+        "puntos": 4,
+        "respuestaInstructor": "Exactitud",
+        "criterio": "Aceptar equivalentes técnicamente justificados"
+      },
+      {
+        "no": 4,
+        "tipo": "Opción múltiple",
+        "pregunta": "Un folio repetido debe evaluarse conforme a:",
+        "puntos": 4,
+        "respuestaInstructor": "Granularidad y clave",
+        "criterio": "Aceptar equivalentes técnicamente justificados"
+      },
+      {
+        "no": 5,
+        "tipo": "Opción múltiple",
+        "pregunta": "Un archivo correcto entregado tarde afecta:",
+        "puntos": 4,
+        "respuestaInstructor": "Oportunidad",
+        "criterio": "Aceptar equivalentes técnicamente justificados"
+      },
+      {
+        "no": 6,
+        "tipo": "Respuesta breve",
+        "pregunta": "Explica la diferencia entre exactitud y validez.",
+        "puntos": 8,
+        "respuestaInstructor": "Exactitud pregunta si el dato coincide con la realidad; validez pregunta si cumple una regla.",
+        "criterio": "Aceptar equivalentes técnicamente justificados"
+      },
+      {
+        "no": 7,
+        "tipo": "Respuesta breve",
+        "pregunta": "Explica por qué un mismo registro puede afectar varias dimensiones.",
+        "puntos": 8,
+        "respuestaInstructor": "Un registro puede tener campos vacíos, categorías inconsistentes y valores fuera de rango simultáneamente.",
+        "criterio": "Aceptar equivalentes técnicamente justificados"
+      },
+      {
+        "no": 8,
+        "tipo": "Respuesta breve",
+        "pregunta": "Menciona dos problemas que Power Query no puede resolver sin reglas humanas.",
+        "puntos": 8,
+        "respuestaInstructor": "Ejemplos: confirmar importe real, validar si un tiempo representa el evento, aprobar un catálogo o decidir si una repetición es duplicado.",
+        "criterio": "Aceptar equivalentes técnicamente justificados"
+      },
+      {
+        "no": 9,
+        "tipo": "Caso",
+        "pregunta": "Área capturada como RH y RRHH: dimensión principal y tratamiento.",
+        "puntos": 8,
+        "respuestaInstructor": "Consistencia; homologar mediante catálogo autorizado y conservar la variante original.",
+        "criterio": "Aceptar equivalentes técnicamente justificados"
+      },
+      {
+        "no": 10,
+        "tipo": "Caso",
+        "pregunta": "Orden ausente del archivo: dimensión principal y control.",
+        "puntos": 8,
+        "respuestaInstructor": "Completitud; comparar archivos o registros esperados contra recibidos.",
+        "criterio": "Aceptar equivalentes técnicamente justificados"
+      }
+    ],
+    "totalPuntos": 60
+  },
+  "2": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Opción múltiple",
+        "pregunta": "Un campo condicional es obligatorio cuando se cumple una condición.",
+        "puntos": 6,
+        "respuestaInstructor": "Verdadero",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Opción múltiple",
+        "pregunta": "N/A es un texto que puede representar ausencia.",
+        "puntos": 6,
+        "respuestaInstructor": "Verdadero",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Opción múltiple",
+        "pregunta": "El denominador debe incluir solo registros sujetos a la regla.",
+        "puntos": 6,
+        "respuestaInstructor": "Verdadero",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Opción múltiple",
+        "pregunta": "Rellenar exige comprobar la estructura.",
+        "puntos": 6,
+        "respuestaInstructor": "Verdadero",
+        "criterio": ""
+      },
+      {
+        "no": 5,
+        "tipo": "Opción múltiple",
+        "pregunta": "Los registros incompletos deben conservarse o separarse.",
+        "puntos": 6,
+        "respuestaInstructor": "Verdadero",
+        "criterio": ""
+      },
+      {
+        "no": 6,
+        "tipo": "Respuesta breve",
+        "pregunta": "Explica la diferencia entre faltante, pendiente y no aplica.",
+        "puntos": 14,
+        "respuestaInstructor": "Faltante debía existir; pendiente se espera después; no aplica no corresponde al registro.",
+        "criterio": ""
+      },
+      {
+        "no": 7,
+        "tipo": "Respuesta breve",
+        "pregunta": "Justifica por qué cero no equivale a nulo.",
+        "puntos": 14,
+        "respuestaInstructor": "Cero es un valor numérico válido; null representa ausencia.",
+        "criterio": ""
+      },
+      {
+        "no": 8,
+        "tipo": "Caso",
+        "pregunta": "Actividad En proceso sin responsable: regla y tratamiento.",
+        "puntos": 14,
+        "respuestaInstructor": "Responsable condicional obligatorio; enviar a revisión o completar desde fuente autorizada.",
+        "criterio": ""
+      },
+      {
+        "no": 9,
+        "tipo": "Caso",
+        "pregunta": "Actividad Finalizada sin fecha de cierre: regla y tratamiento.",
+        "puntos": 14,
+        "respuestaInstructor": "Fecha de cierre condicional obligatoria; enviar a revisión.",
+        "criterio": ""
+      },
+      {
+        "no": 10,
+        "tipo": "Diseño",
+        "pregunta": "Propón una arquitectura para separar completos e incompletos.",
+        "puntos": 14,
+        "respuestaInstructor": "Origen, preparación, completos, incompletos y resumen conciliado.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 100
+  },
+  "3": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": "1",
+        "tipo": "Abierta",
+        "pregunta": "Concepto principal",
+        "puntos": 20,
+        "respuestaInstructor": "Debe emplear la terminología de la lección",
+        "criterio": ""
+      },
+      {
+        "no": "2",
+        "tipo": "Abierta",
+        "pregunta": "Aplicación al caso",
+        "puntos": 20,
+        "respuestaInstructor": "Debe conservar trazabilidad",
+        "criterio": ""
+      },
+      {
+        "no": "3",
+        "tipo": "Abierta",
+        "pregunta": "Diagnóstico",
+        "puntos": 20,
+        "respuestaInstructor": "Debe identificar causa y riesgo",
+        "criterio": ""
+      },
+      {
+        "no": "4",
+        "tipo": "Abierta",
+        "pregunta": "Diseño de consulta",
+        "puntos": 20,
+        "respuestaInstructor": "Debe separar salidas y excepciones",
+        "criterio": ""
+      },
+      {
+        "no": "5",
+        "tipo": "Abierta",
+        "pregunta": "Conciliación o evidencia",
+        "puntos": 20,
+        "respuestaInstructor": "Debe conciliar con diferencia cero cuando aplique",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 100
+  },
+  "4": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": "1",
+        "tipo": "Abierta",
+        "pregunta": "Concepto principal",
+        "puntos": 20,
+        "respuestaInstructor": "Debe emplear la terminología de la lección",
+        "criterio": ""
+      },
+      {
+        "no": "2",
+        "tipo": "Abierta",
+        "pregunta": "Aplicación al caso",
+        "puntos": 20,
+        "respuestaInstructor": "Debe conservar trazabilidad",
+        "criterio": ""
+      },
+      {
+        "no": "3",
+        "tipo": "Abierta",
+        "pregunta": "Diagnóstico",
+        "puntos": 20,
+        "respuestaInstructor": "Debe identificar causa y riesgo",
+        "criterio": ""
+      },
+      {
+        "no": "4",
+        "tipo": "Abierta",
+        "pregunta": "Diseño de consulta",
+        "puntos": 20,
+        "respuestaInstructor": "Debe separar salidas y excepciones",
+        "criterio": ""
+      },
+      {
+        "no": "5",
+        "tipo": "Abierta",
+        "pregunta": "Conciliación o evidencia",
+        "puntos": 20,
+        "respuestaInstructor": "Debe conciliar con diferencia cero cuando aplique",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 100
+  },
+  "5": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": "1",
+        "tipo": "Abierta",
+        "pregunta": "Concepto principal",
+        "puntos": 20,
+        "respuestaInstructor": "Debe emplear la terminología de la lección",
+        "criterio": ""
+      },
+      {
+        "no": "2",
+        "tipo": "Abierta",
+        "pregunta": "Aplicación al caso",
+        "puntos": 20,
+        "respuestaInstructor": "Debe conservar trazabilidad",
+        "criterio": ""
+      },
+      {
+        "no": "3",
+        "tipo": "Abierta",
+        "pregunta": "Diagnóstico",
+        "puntos": 20,
+        "respuestaInstructor": "Debe identificar causa y riesgo",
+        "criterio": ""
+      },
+      {
+        "no": "4",
+        "tipo": "Abierta",
+        "pregunta": "Diseño de consulta",
+        "puntos": 20,
+        "respuestaInstructor": "Debe separar salidas y excepciones",
+        "criterio": ""
+      },
+      {
+        "no": "5",
+        "tipo": "Abierta",
+        "pregunta": "Conciliación o evidencia",
+        "puntos": 20,
+        "respuestaInstructor": "Debe conciliar con diferencia cero cuando aplique",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 100
+  },
+  "6": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": "1",
+        "tipo": "Abierta",
+        "pregunta": "Concepto principal",
+        "puntos": 20,
+        "respuestaInstructor": "Debe emplear la terminología de la lección",
+        "criterio": ""
+      },
+      {
+        "no": "2",
+        "tipo": "Abierta",
+        "pregunta": "Aplicación al caso",
+        "puntos": 20,
+        "respuestaInstructor": "Debe conservar trazabilidad",
+        "criterio": ""
+      },
+      {
+        "no": "3",
+        "tipo": "Abierta",
+        "pregunta": "Diagnóstico",
+        "puntos": 20,
+        "respuestaInstructor": "Debe identificar causa y riesgo",
+        "criterio": ""
+      },
+      {
+        "no": "4",
+        "tipo": "Abierta",
+        "pregunta": "Diseño de consulta",
+        "puntos": 20,
+        "respuestaInstructor": "Debe separar salidas y excepciones",
+        "criterio": ""
+      },
+      {
+        "no": "5",
+        "tipo": "Abierta",
+        "pregunta": "Conciliación o evidencia",
+        "puntos": 20,
+        "respuestaInstructor": "Debe conciliar con diferencia cero cuando aplique",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 100
+  },
+  "7": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": "1",
+        "tipo": "Abierta",
+        "pregunta": "Concepto principal",
+        "puntos": 20,
+        "respuestaInstructor": "Debe emplear la terminología de la lección",
+        "criterio": ""
+      },
+      {
+        "no": "2",
+        "tipo": "Abierta",
+        "pregunta": "Aplicación al caso",
+        "puntos": 20,
+        "respuestaInstructor": "Debe conservar trazabilidad",
+        "criterio": ""
+      },
+      {
+        "no": "3",
+        "tipo": "Abierta",
+        "pregunta": "Diagnóstico",
+        "puntos": 20,
+        "respuestaInstructor": "Debe identificar causa y riesgo",
+        "criterio": ""
+      },
+      {
+        "no": "4",
+        "tipo": "Abierta",
+        "pregunta": "Diseño de consulta",
+        "puntos": 20,
+        "respuestaInstructor": "Debe separar salidas y excepciones",
+        "criterio": ""
+      },
+      {
+        "no": "5",
+        "tipo": "Abierta",
+        "pregunta": "Conciliación o evidencia",
+        "puntos": 20,
+        "respuestaInstructor": "Debe conciliar con diferencia cero cuando aplique",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 100
+  },
+  "8": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": "1",
+        "tipo": "Abierta",
+        "pregunta": "Concepto principal",
+        "puntos": 20,
+        "respuestaInstructor": "Debe emplear la terminología de la lección",
+        "criterio": ""
+      },
+      {
+        "no": "2",
+        "tipo": "Abierta",
+        "pregunta": "Aplicación al caso",
+        "puntos": 20,
+        "respuestaInstructor": "Debe conservar trazabilidad",
+        "criterio": ""
+      },
+      {
+        "no": "3",
+        "tipo": "Abierta",
+        "pregunta": "Diagnóstico",
+        "puntos": 20,
+        "respuestaInstructor": "Debe identificar causa y riesgo",
+        "criterio": ""
+      },
+      {
+        "no": "4",
+        "tipo": "Abierta",
+        "pregunta": "Diseño de consulta",
+        "puntos": 20,
+        "respuestaInstructor": "Debe separar salidas y excepciones",
+        "criterio": ""
+      },
+      {
+        "no": "5",
+        "tipo": "Abierta",
+        "pregunta": "Conciliación o evidencia",
+        "puntos": 20,
+        "respuestaInstructor": "Debe conciliar con diferencia cero cuando aplique",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 100
+  },
+  "9": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": "1",
+        "tipo": "Abierta",
+        "pregunta": "Concepto principal",
+        "puntos": 20,
+        "respuestaInstructor": "Debe emplear la terminología de la lección",
+        "criterio": ""
+      },
+      {
+        "no": "2",
+        "tipo": "Abierta",
+        "pregunta": "Aplicación al caso",
+        "puntos": 20,
+        "respuestaInstructor": "Debe conservar trazabilidad",
+        "criterio": ""
+      },
+      {
+        "no": "3",
+        "tipo": "Abierta",
+        "pregunta": "Diagnóstico",
+        "puntos": 20,
+        "respuestaInstructor": "Debe identificar causa y riesgo",
+        "criterio": ""
+      },
+      {
+        "no": "4",
+        "tipo": "Abierta",
+        "pregunta": "Diseño de consulta",
+        "puntos": 20,
+        "respuestaInstructor": "Debe separar salidas y excepciones",
+        "criterio": ""
+      },
+      {
+        "no": "5",
+        "tipo": "Abierta",
+        "pregunta": "Conciliación o evidencia",
+        "puntos": 20,
+        "respuestaInstructor": "Debe conciliar con diferencia cero cuando aplique",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 100
+  },
+  "10": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": "1",
+        "tipo": "Abierta",
+        "pregunta": "Concepto principal",
+        "puntos": 20,
+        "respuestaInstructor": "Debe emplear la terminología de la lección",
+        "criterio": ""
+      },
+      {
+        "no": "2",
+        "tipo": "Abierta",
+        "pregunta": "Aplicación al caso",
+        "puntos": 20,
+        "respuestaInstructor": "Debe conservar trazabilidad",
+        "criterio": ""
+      },
+      {
+        "no": "3",
+        "tipo": "Abierta",
+        "pregunta": "Diagnóstico",
+        "puntos": 20,
+        "respuestaInstructor": "Debe identificar causa y riesgo",
+        "criterio": ""
+      },
+      {
+        "no": "4",
+        "tipo": "Abierta",
+        "pregunta": "Diseño de consulta",
+        "puntos": 20,
+        "respuestaInstructor": "Debe separar salidas y excepciones",
+        "criterio": ""
+      },
+      {
+        "no": "5",
+        "tipo": "Abierta",
+        "pregunta": "Conciliación o evidencia",
+        "puntos": 20,
+        "respuestaInstructor": "Debe conciliar con diferencia cero cuando aplique",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 100
+  },
+  "11": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": "1",
+        "tipo": "Abierta",
+        "pregunta": "Concepto principal",
+        "puntos": 20,
+        "respuestaInstructor": "Debe emplear la terminología de la lección",
+        "criterio": ""
+      },
+      {
+        "no": "2",
+        "tipo": "Abierta",
+        "pregunta": "Aplicación al caso",
+        "puntos": 20,
+        "respuestaInstructor": "Debe conservar trazabilidad",
+        "criterio": ""
+      },
+      {
+        "no": "3",
+        "tipo": "Abierta",
+        "pregunta": "Diagnóstico",
+        "puntos": 20,
+        "respuestaInstructor": "Debe identificar causa y riesgo",
+        "criterio": ""
+      },
+      {
+        "no": "4",
+        "tipo": "Abierta",
+        "pregunta": "Diseño de consulta",
+        "puntos": 20,
+        "respuestaInstructor": "Debe separar salidas y excepciones",
+        "criterio": ""
+      },
+      {
+        "no": "5",
+        "tipo": "Abierta",
+        "pregunta": "Conciliación o evidencia",
+        "puntos": 20,
+        "respuestaInstructor": "Debe conciliar con diferencia cero cuando aplique",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 100
+  },
+  "12": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": "1",
+        "tipo": "Abierta",
+        "pregunta": "Concepto principal",
+        "puntos": 20,
+        "respuestaInstructor": "Debe emplear la terminología de la lección",
+        "criterio": ""
+      },
+      {
+        "no": "2",
+        "tipo": "Abierta",
+        "pregunta": "Aplicación al caso",
+        "puntos": 20,
+        "respuestaInstructor": "Debe conservar trazabilidad",
+        "criterio": ""
+      },
+      {
+        "no": "3",
+        "tipo": "Abierta",
+        "pregunta": "Diagnóstico",
+        "puntos": 20,
+        "respuestaInstructor": "Debe identificar causa y riesgo",
+        "criterio": ""
+      },
+      {
+        "no": "4",
+        "tipo": "Abierta",
+        "pregunta": "Diseño de consulta",
+        "puntos": 20,
+        "respuestaInstructor": "Debe separar salidas y excepciones",
+        "criterio": ""
+      },
+      {
+        "no": "5",
+        "tipo": "Abierta",
+        "pregunta": "Conciliación o evidencia",
+        "puntos": 20,
+        "respuestaInstructor": "Debe conciliar con diferencia cero cuando aplique",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 100
+  },
+  "13": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": "1",
+        "tipo": "Abierta",
+        "pregunta": "Concepto principal",
+        "puntos": 20,
+        "respuestaInstructor": "Debe emplear la terminología de la lección",
+        "criterio": ""
+      },
+      {
+        "no": "2",
+        "tipo": "Abierta",
+        "pregunta": "Aplicación al caso",
+        "puntos": 20,
+        "respuestaInstructor": "Debe conservar trazabilidad",
+        "criterio": ""
+      },
+      {
+        "no": "3",
+        "tipo": "Abierta",
+        "pregunta": "Diagnóstico",
+        "puntos": 20,
+        "respuestaInstructor": "Debe identificar causa y riesgo",
+        "criterio": ""
+      },
+      {
+        "no": "4",
+        "tipo": "Abierta",
+        "pregunta": "Diseño de consulta",
+        "puntos": 20,
+        "respuestaInstructor": "Debe separar salidas y excepciones",
+        "criterio": ""
+      },
+      {
+        "no": "5",
+        "tipo": "Abierta",
+        "pregunta": "Conciliación o evidencia",
+        "puntos": 20,
+        "respuestaInstructor": "Debe conciliar con diferencia cero cuando aplique",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 100
+  },
+  "15": {
+    "tipo": "rubrica",
+    "items": [
+      {
+        "criterio": "Conceptos",
+        "puntos": 15,
+        "condicionLogro": "80% de respuestas correctas"
+      },
+      {
+        "criterio": "Diagnóstico",
+        "puntos": 10,
+        "condicionLogro": "Perfil completo y clave"
+      },
+      {
+        "criterio": "Reglas",
+        "puntos": 15,
+        "condicionLogro": "18 reglas verificables"
+      },
+      {
+        "criterio": "Power Query",
+        "puntos": 25,
+        "condicionLogro": "Solución actualizable"
+      },
+      {
+        "criterio": "Excepciones",
+        "puntos": 10,
+        "condicionLogro": "Modelo largo trazable"
+      },
+      {
+        "criterio": "Actualización",
+        "puntos": 10,
+        "condicionLogro": "Diagnóstico Periodo B"
+      },
+      {
+        "criterio": "Conciliación",
+        "puntos": 10,
+        "condicionLogro": "Diferencia 0"
+      },
+      {
+        "criterio": "Documentación",
+        "puntos": 5,
+        "condicionLogro": "Defensa suficiente"
+      }
+    ],
+    "totalPuntos": 100,
+    "condicionesNoAprobacion": [
+      "Modificar origen",
+      "Eliminar errores sin evidencia",
+      "Quitar duplicados sin clave",
+      "Exponer información confidencial",
+      "No construir excepciones",
+      "No probar Periodo B",
+      "Diferencia distinta de cero"
+    ]
+  }
+}

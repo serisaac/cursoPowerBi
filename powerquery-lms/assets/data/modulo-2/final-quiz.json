@@ -1,0 +1,82 @@
+[
+  {
+    "q": "Necesitas combinar 30 archivos CSV mensuales de una carpeta compartida. ¿Qué conector usarías?",
+    "opts": [
+      "Excel",
+      "Carpeta",
+      "PDF",
+      "Base de datos SQL Server"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "Un libro de Excel .xls antiguo no conecta y muestra un error sobre ACE. ¿Cuál es la causa más probable?",
+    "opts": [
+      "El archivo está protegido con contraseña",
+      "Falta el proveedor OLEDB del Access Database Engine",
+      "El archivo es demasiado pequeño",
+      "Power Query no admite archivos Excel"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "Combinas una tabla de un archivo Privado con una tabla Organizativa y Power Query bloquea la operación. ¿Qué mecanismo actuó?",
+    "opts": [
+      "Antivirus",
+      "El Firewall de privacidad de datos",
+      "Un límite de filas",
+      "Un error de sintaxis M"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué conector usarías para extraer una tabla de un estado de cuenta bancario en PDF?",
+    "opts": [
+      "PDF (Pdf.Tables)",
+      "Carpeta",
+      "SharePoint lista",
+      "Texto/CSV"
+    ],
+    "correct": 0
+  },
+  {
+    "q": "Quieres conectar una base de datos con volumen muy grande sin copiar los datos localmente. ¿Qué modo usarías (si el producto lo permite)?",
+    "opts": [
+      "Importación",
+      "DirectQuery",
+      "Modo sin conexión",
+      "Modo de solo lectura"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué necesitas conocer para conectar tanto una Carpeta de SharePoint como una Lista de SharePoint?",
+    "opts": [
+      "La contraseña del administrador global",
+      "La URL del sitio de SharePoint",
+      "El número de serie del servidor",
+      "El nombre del creador del sitio"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué acción es correcta si necesitas dejar de usar una conexión en tu proyecto sin borrarla del sistema?",
+    "opts": [
+      "Eliminarla por completo",
+      "Desvincularla desde Administrar conexiones",
+      "Cambiar su contraseña",
+      "Renombrarla"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "Ante un error de conexión nuevo, ¿cuál es el primer paso recomendado?",
+    "opts": [
+      "Reinstalar Power Query",
+      "Leer el mensaje de error completo para identificar la causa",
+      "Eliminar la consulta",
+      "Cambiar todos los tipos de datos a texto"
+    ],
+    "correct": 1
+  }
+]

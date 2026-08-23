@@ -1,0 +1,7570 @@
+{
+  "generalFiles": [
+    "Guia_Instructor_Modulo4.xlsx"
+  ],
+  "excelPreview": {
+    "Guia_Instructor_Modulo4.xlsx": {
+      "Inventario": {
+        "header": [
+          "Archivo",
+          "Tipo",
+          "Editable",
+          "Observación",
+          "",
+          ""
+        ],
+        "rows": [
+          [
+            "L01_Limpieza_Recorte.xlsx",
+            "Práctica y datos fuente",
+            "Sí",
+            "Incluye valores intencionalmente problemáticos",
+            "",
+            ""
+          ],
+          [
+            "L02_Capitalizacion.xlsx",
+            "Práctica y datos fuente",
+            "Sí",
+            "Incluye valores intencionalmente problemáticos",
+            "",
+            ""
+          ],
+          [
+            "L03_Reemplazo_Valores.xlsx",
+            "Práctica y datos fuente",
+            "Sí",
+            "Incluye valores intencionalmente problemáticos",
+            "",
+            ""
+          ],
+          [
+            "L04_Extraccion_Caracteres.xlsx",
+            "Práctica y datos fuente",
+            "Sí",
+            "Incluye valores intencionalmente problemáticos",
+            "",
+            ""
+          ],
+          [
+            "L05_Division_Columnas.xlsx",
+            "Práctica y datos fuente",
+            "Sí",
+            "Incluye valores intencionalmente problemáticos",
+            "",
+            ""
+          ],
+          [
+            "L06_Combinacion_Columnas.xlsx",
+            "Práctica y datos fuente",
+            "Sí",
+            "Incluye valores intencionalmente problemáticos",
+            "",
+            ""
+          ],
+          [
+            "L07_Operaciones_Numericas.xlsx",
+            "Práctica y datos fuente",
+            "Sí",
+            "Incluye valores intencionalmente problemáticos",
+            "",
+            ""
+          ],
+          [
+            "L08_Redondeo.xlsx",
+            "Práctica y datos fuente",
+            "Sí",
+            "Incluye valores intencionalmente problemáticos",
+            "",
+            ""
+          ],
+          [
+            "L09_Porcentajes.xlsx",
+            "Práctica y datos fuente",
+            "Sí",
+            "Incluye valores intencionalmente problemáticos",
+            "",
+            ""
+          ],
+          [
+            "L10_Fechas_Horas.xlsx",
+            "Práctica y datos fuente",
+            "Sí",
+            "Incluye valores intencionalmente problemáticos",
+            "",
+            ""
+          ],
+          [
+            "L11_Duraciones.xlsx",
+            "Práctica y datos fuente",
+            "Sí",
+            "Incluye valores intencionalmente problemáticos",
+            "",
+            ""
+          ],
+          [
+            "L12_Configuracion_Regional.xlsx",
+            "Práctica y datos fuente",
+            "Sí",
+            "Incluye valores intencionalmente problemáticos",
+            "",
+            ""
+          ],
+          [
+            "L13_Errores_Conversion.xlsx",
+            "Práctica y datos fuente",
+            "Sí",
+            "Incluye valores intencionalmente problemáticos",
+            "",
+            ""
+          ],
+          [
+            "L14_Practica_Integradora.xlsx",
+            "Práctica y datos fuente",
+            "Sí",
+            "Incluye valores intencionalmente problemáticos",
+            "",
+            ""
+          ],
+          [
+            "L15_Evaluacion_Reto.xlsx",
+            "Práctica y datos fuente",
+            "Sí",
+            "Incluye valores intencionalmente problemáticos",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 15
+      },
+      "Criterios": {
+        "header": [
+          "Lección",
+          "Criterio esencial",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "rows": [
+          [
+            "L1",
+            "Limpiar y Recortar en pasos separados; comparar longitudes.",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "L2",
+            "Regla por tipo de campo; preservar siglas y códigos.",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "L3",
+            "Usar catálogo; evitar reemplazo parcial ambiguo.",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "L4",
+            "Clasificar patrones antes de extraer.",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "L5",
+            "Validar número de segmentos y conservar origen.",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "L6",
+            "Definir granularidad; verificar unicidad.",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "L7",
+            "Controlar nulos y cero en denominador.",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "L8",
+            "Diferenciar cálculo y presentación.",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "L9",
+            "Definir base y escala del porcentaje.",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "L10",
+            "Aplicar región y validar periodo.",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "L11",
+            "Diferenciar componentes y totales; casos abiertos.",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "L12",
+            "Aplicar región del origen; detectar ambigüedad.",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "L13",
+            "Conservar error, clasificar y conciliar.",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "L14",
+            "Arquitectura completa y 100% de conciliación.",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "L15",
+            "Autonomía, actualización y defensa técnica.",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 15
+      }
+    },
+    "L01_Limpieza_Recorte.xlsx": {
+      "Datos_Sucios": {
+        "header": [
+          "ID",
+          "Texto original",
+          "Longitud origen",
+          "Texto limpio",
+          "Longitud final",
+          "Clasificación"
+        ],
+        "rows": [
+          [
+            "TXT-001",
+            " AZUCAR",
+            7,
+            "",
+            "",
+            ""
+          ],
+          [
+            "TXT-002",
+            "AZUCAR ",
+            7,
+            "",
+            "",
+            ""
+          ],
+          [
+            "TXT-003",
+            "AZUCAR\n",
+            7,
+            "",
+            "",
+            ""
+          ],
+          [
+            "TXT-004",
+            "  HARINA  ",
+            10,
+            "",
+            "",
+            ""
+          ],
+          [
+            "TXT-005",
+            "ACEITE\t",
+            7,
+            "",
+            "",
+            ""
+          ],
+          [
+            "TXT-006",
+            "MATERIAL  EMPAQUE",
+            17,
+            "",
+            "",
+            ""
+          ],
+          [
+            "TXT-007",
+            "  PRODUCTO TERMINADO ",
+            21,
+            "",
+            "",
+            ""
+          ],
+          [
+            "TXT-008",
+            "SAL ",
+            4,
+            "",
+            "",
+            ""
+          ],
+          [
+            "TXT-009",
+            "AGUA",
+            4,
+            "",
+            "",
+            ""
+          ],
+          [
+            "TXT-010",
+            " AGUA  ",
+            7,
+            "",
+            "",
+            ""
+          ],
+          [
+            "TXT-011",
+            " AZUCAR",
+            7,
+            "",
+            "",
+            ""
+          ],
+          [
+            "TXT-012",
+            "AZUCAR ",
+            7,
+            "",
+            "",
+            ""
+          ],
+          [
+            "TXT-013",
+            "AZUCAR\n",
+            7,
+            "",
+            "",
+            ""
+          ],
+          [
+            "TXT-014",
+            "  HARINA  ",
+            10,
+            "",
+            "",
+            ""
+          ],
+          [
+            "TXT-015",
+            "ACEITE\t",
+            7,
+            "",
+            "",
+            ""
+          ],
+          [
+            "TXT-016",
+            "MATERIAL  EMPAQUE",
+            17,
+            "",
+            "",
+            ""
+          ],
+          [
+            "TXT-017",
+            "  PRODUCTO TERMINADO ",
+            21,
+            "",
+            "",
+            ""
+          ],
+          [
+            "TXT-018",
+            "SAL ",
+            4,
+            "",
+            "",
+            ""
+          ],
+          [
+            "TXT-019",
+            "AGUA",
+            4,
+            "",
+            "",
+            ""
+          ],
+          [
+            "TXT-020",
+            " AGUA  ",
+            7,
+            "",
+            "",
+            ""
+          ],
+          [
+            "TXT-021",
+            " AZUCAR",
+            7,
+            "",
+            "",
+            ""
+          ],
+          [
+            "TXT-022",
+            "AZUCAR ",
+            7,
+            "",
+            "",
+            ""
+          ],
+          [
+            "TXT-023",
+            "AZUCAR\n",
+            7,
+            "",
+            "",
+            ""
+          ],
+          [
+            "TXT-024",
+            "  HARINA  ",
+            10,
+            "",
+            "",
+            ""
+          ],
+          [
+            "TXT-025",
+            "ACEITE\t",
+            7,
+            "",
+            "",
+            ""
+          ],
+          [
+            "TXT-026",
+            "MATERIAL  EMPAQUE",
+            17,
+            "",
+            "",
+            ""
+          ],
+          [
+            "TXT-027",
+            "  PRODUCTO TERMINADO ",
+            21,
+            "",
+            "",
+            ""
+          ],
+          [
+            "TXT-028",
+            "SAL ",
+            4,
+            "",
+            "",
+            ""
+          ],
+          [
+            "TXT-029",
+            "AGUA",
+            4,
+            "",
+            "",
+            ""
+          ],
+          [
+            "TXT-030",
+            " AGUA  ",
+            7,
+            "",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 30
+      }
+    },
+    "L02_Capitalizacion.xlsx": {
+      "Formatos": {
+        "header": [
+          "ID",
+          "Valor original",
+          "Tipo de campo",
+          "Regla aplicada",
+          "Valor estandarizado",
+          "Requiere revisión"
+        ],
+        "rows": [
+          [
+            "FMT-001",
+            "juan perez",
+            "Nombre",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FMT-002",
+            "JUAN PEREZ",
+            "Nombre",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FMT-003",
+            "mAría lópez",
+            "Nombre",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FMT-004",
+            "ANA GARCIA",
+            "Nombre",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FMT-005",
+            "carlos ruiz",
+            "Nombre",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FMT-006",
+            "PEDRO de la cruz",
+            "Nombre",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FMT-007",
+            "rrhh",
+            "Área",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FMT-008",
+            "control DE procesos",
+            "Área",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FMT-009",
+            "MAT-001",
+            "Código",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FMT-010",
+            "usuario@EMPRESA.COM",
+            "Correo",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FMT-011",
+            "juan perez",
+            "Nombre",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FMT-012",
+            "JUAN PEREZ",
+            "Nombre",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FMT-013",
+            "mAría lópez",
+            "Nombre",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FMT-014",
+            "ANA GARCIA",
+            "Nombre",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FMT-015",
+            "carlos ruiz",
+            "Nombre",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FMT-016",
+            "PEDRO de la cruz",
+            "Nombre",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FMT-017",
+            "rrhh",
+            "Área",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FMT-018",
+            "control DE procesos",
+            "Área",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FMT-019",
+            "MAT-001",
+            "Código",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FMT-020",
+            "usuario@EMPRESA.COM",
+            "Correo",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FMT-021",
+            "juan perez",
+            "Nombre",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FMT-022",
+            "JUAN PEREZ",
+            "Nombre",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FMT-023",
+            "mAría lópez",
+            "Nombre",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FMT-024",
+            "ANA GARCIA",
+            "Nombre",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FMT-025",
+            "carlos ruiz",
+            "Nombre",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FMT-026",
+            "PEDRO de la cruz",
+            "Nombre",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FMT-027",
+            "rrhh",
+            "Área",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FMT-028",
+            "control DE procesos",
+            "Área",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FMT-029",
+            "MAT-001",
+            "Código",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FMT-030",
+            "usuario@EMPRESA.COM",
+            "Correo",
+            "",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 30
+      }
+    },
+    "L03_Reemplazo_Valores.xlsx": {
+      "Valores": {
+        "header": [
+          "ID",
+          "Valor recibido",
+          "Campo",
+          "Valor homologado",
+          "Tipo reemplazo",
+          "Justificación"
+        ],
+        "rows": [
+          [
+            "REP-001",
+            "Prod.",
+            "Área",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-002",
+            "Produccion",
+            "Área",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-003",
+            "PRODUCCIÓN",
+            "Área",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-004",
+            "RRHH",
+            "Área",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-005",
+            "Rec. Humanos",
+            "Área",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-006",
+            "Mantto",
+            "Área",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-007",
+            "MANTENIMIENTO",
+            "Área",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-008",
+            "Almacen",
+            "Área",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-009",
+            "ALMACÉN",
+            "Área",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-010",
+            "En revisión",
+            "Estatus",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-011",
+            "Por revisar",
+            "Estatus",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-012",
+            "Terminada",
+            "Estatus",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-013",
+            "Cerrada",
+            "Estatus",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-014",
+            "Completado",
+            "Estatus",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-015",
+            "Prod.",
+            "Área",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-016",
+            "Produccion",
+            "Área",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-017",
+            "PRODUCCIÓN",
+            "Área",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-018",
+            "RRHH",
+            "Área",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-019",
+            "Rec. Humanos",
+            "Área",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-020",
+            "Mantto",
+            "Área",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-021",
+            "MANTENIMIENTO",
+            "Área",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-022",
+            "Almacen",
+            "Área",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-023",
+            "ALMACÉN",
+            "Área",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-024",
+            "En revisión",
+            "Estatus",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-025",
+            "Por revisar",
+            "Estatus",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-026",
+            "Terminada",
+            "Estatus",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-027",
+            "Cerrada",
+            "Estatus",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-028",
+            "Completado",
+            "Estatus",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-029",
+            "Prod.",
+            "Área",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-030",
+            "Produccion",
+            "Área",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-031",
+            "PRODUCCIÓN",
+            "Área",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-032",
+            "RRHH",
+            "Área",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-033",
+            "Rec. Humanos",
+            "Área",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-034",
+            "Mantto",
+            "Área",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-035",
+            "MANTENIMIENTO",
+            "Área",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REP-036",
+            "Almacen",
+            "Área",
+            "",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 36
+      },
+      "Equivalencias": {
+        "header": [
+          "Valor recibido",
+          "Valor autorizado",
+          "Campo",
+          "Método",
+          "",
+          ""
+        ],
+        "rows": [
+          [
+            "Prod.",
+            "Producción",
+            "Área",
+            "Total",
+            "",
+            ""
+          ],
+          [
+            "Produccion",
+            "Producción",
+            "Área",
+            "Total",
+            "",
+            ""
+          ],
+          [
+            "RRHH",
+            "Recursos Humanos",
+            "Área",
+            "Total",
+            "",
+            ""
+          ],
+          [
+            "Rec. Humanos",
+            "Recursos Humanos",
+            "Área",
+            "Total",
+            "",
+            ""
+          ],
+          [
+            "Mantto",
+            "Mantenimiento",
+            "Área",
+            "Total",
+            "",
+            ""
+          ],
+          [
+            "Almacen",
+            "Almacenes",
+            "Área",
+            "Total",
+            "",
+            ""
+          ],
+          [
+            "Terminada",
+            "Finalizado",
+            "Estatus",
+            "Total",
+            "",
+            ""
+          ],
+          [
+            "Cerrada",
+            "Finalizado",
+            "Estatus",
+            "Total",
+            "",
+            ""
+          ],
+          [
+            "Completado",
+            "Finalizado",
+            "Estatus",
+            "Total",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 9
+      }
+    },
+    "L04_Extraccion_Caracteres.xlsx": {
+      "Codigos": {
+        "header": [
+          "ID",
+          "Código original",
+          "Patrón",
+          "Prefijo",
+          "Segmento",
+          "Consecutivo",
+          "Estado"
+        ],
+        "rows": [
+          [
+            "EXT-001",
+            "MP-000125",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-002",
+            "ME-000458",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-003",
+            "PT-001475",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-004",
+            "LOT-2026-00158",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-005",
+            "EQ-A-258",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-006",
+            "OP-2026-458",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-007",
+            "CC-100-2026",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-008",
+            "EMP-001258",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-009",
+            "INC-MZT-2026-105",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-010",
+            "INVALIDO",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-011",
+            "MP-000125",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-012",
+            "ME-000458",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-013",
+            "PT-001475",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-014",
+            "LOT-2026-00158",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-015",
+            "EQ-A-258",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-016",
+            "OP-2026-458",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-017",
+            "CC-100-2026",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-018",
+            "EMP-001258",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-019",
+            "INC-MZT-2026-105",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-020",
+            "INVALIDO",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-021",
+            "MP-000125",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-022",
+            "ME-000458",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-023",
+            "PT-001475",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-024",
+            "LOT-2026-00158",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-025",
+            "EQ-A-258",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-026",
+            "OP-2026-458",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-027",
+            "CC-100-2026",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-028",
+            "EMP-001258",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-029",
+            "INC-MZT-2026-105",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-030",
+            "INVALIDO",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-031",
+            "MP-000125",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-032",
+            "ME-000458",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-033",
+            "PT-001475",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-034",
+            "LOT-2026-00158",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "EXT-035",
+            "EQ-A-258",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 35
+      }
+    },
+    "L05_Division_Columnas.xlsx": {
+      "Compuestos": {
+        "header": [
+          "ID",
+          "Valor compuesto",
+          "Delimitador",
+          "Parte 1",
+          "Parte 2",
+          "Parte 3",
+          "Validación"
+        ],
+        "rows": [
+          [
+            "DIV-001",
+            "Juan Pérez - Producción",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "DIV-002",
+            "Ana López | Calidad",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "DIV-003",
+            "MP-000125",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "DIV-004",
+            "LOT-2026-001258",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "DIV-005",
+            "BOD-A-05",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "DIV-006",
+            "Producción;Calidad;Almacén",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "DIV-007",
+            "CC-100-2026",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "DIV-008",
+            "EQ-A-258",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "DIV-009",
+            "Sin delimitador",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "DIV-010",
+            "A-B-C-D-E",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "DIV-011",
+            "Juan Pérez - Producción",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "DIV-012",
+            "Ana López | Calidad",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "DIV-013",
+            "MP-000125",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "DIV-014",
+            "LOT-2026-001258",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "DIV-015",
+            "BOD-A-05",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "DIV-016",
+            "Producción;Calidad;Almacén",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "DIV-017",
+            "CC-100-2026",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "DIV-018",
+            "EQ-A-258",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "DIV-019",
+            "Sin delimitador",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "DIV-020",
+            "A-B-C-D-E",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "DIV-021",
+            "Juan Pérez - Producción",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "DIV-022",
+            "Ana López | Calidad",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "DIV-023",
+            "MP-000125",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "DIV-024",
+            "LOT-2026-001258",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "DIV-025",
+            "BOD-A-05",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "DIV-026",
+            "Producción;Calidad;Almacén",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "DIV-027",
+            "CC-100-2026",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "DIV-028",
+            "EQ-A-258",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "DIV-029",
+            "Sin delimitador",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "DIV-030",
+            "A-B-C-D-E",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "DIV-031",
+            "Juan Pérez - Producción",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "DIV-032",
+            "Ana López | Calidad",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 32
+      }
+    },
+    "L06_Combinacion_Columnas.xlsx": {
+      "Claves": {
+        "header": [
+          "ID",
+          "Material",
+          "Lote",
+          "Ubicación",
+          "Fecha",
+          "Clave compuesta",
+          "Descripción",
+          "Es única"
+        ],
+        "rows": [
+          [
+            "COM-001",
+            "MAT-001",
+            "L0001",
+            "A01",
+            "2026-08-01",
+            "",
+            "",
+            ""
+          ],
+          [
+            "COM-002",
+            "MAT-002",
+            "L0002",
+            "A02",
+            "2026-08-02",
+            "",
+            "",
+            ""
+          ],
+          [
+            "COM-003",
+            "MAT-003",
+            "L0003",
+            "A03",
+            "2026-08-03",
+            "",
+            "",
+            ""
+          ],
+          [
+            "COM-004",
+            "MAT-004",
+            "L0004",
+            "A04",
+            "2026-08-04",
+            "",
+            "",
+            ""
+          ],
+          [
+            "COM-005",
+            "MAT-005",
+            "L0005",
+            "A01",
+            "2026-08-05",
+            "",
+            "",
+            ""
+          ],
+          [
+            "COM-006",
+            "MAT-006",
+            "L0001",
+            "A02",
+            "2026-08-06",
+            "",
+            "",
+            ""
+          ],
+          [
+            "COM-007",
+            "MAT-007",
+            "L0002",
+            "A03",
+            "2026-08-07",
+            "",
+            "",
+            ""
+          ],
+          [
+            "COM-008",
+            "MAT-008",
+            "L0003",
+            "A04",
+            "2026-08-08",
+            "",
+            "",
+            ""
+          ],
+          [
+            "COM-009",
+            "MAT-001",
+            "L0004",
+            "A01",
+            "2026-08-09",
+            "",
+            "",
+            ""
+          ],
+          [
+            "COM-010",
+            "MAT-002",
+            "L0005",
+            "A02",
+            "2026-08-10",
+            "",
+            "",
+            ""
+          ],
+          [
+            "COM-011",
+            "MAT-003",
+            "L0001",
+            "A03",
+            "2026-08-11",
+            "",
+            "",
+            ""
+          ],
+          [
+            "COM-012",
+            "MAT-004",
+            "L0002",
+            "A04",
+            "2026-08-12",
+            "",
+            "",
+            ""
+          ],
+          [
+            "COM-013",
+            "MAT-005",
+            "L0003",
+            "A01",
+            "2026-08-13",
+            "",
+            "",
+            ""
+          ],
+          [
+            "COM-014",
+            "MAT-006",
+            "L0004",
+            "A02",
+            "2026-08-14",
+            "",
+            "",
+            ""
+          ],
+          [
+            "COM-015",
+            "MAT-007",
+            "L0005",
+            "A03",
+            "2026-08-15",
+            "",
+            "",
+            ""
+          ],
+          [
+            "COM-016",
+            "MAT-008",
+            "L0001",
+            "A04",
+            "2026-08-16",
+            "",
+            "",
+            ""
+          ],
+          [
+            "COM-017",
+            "MAT-001",
+            "L0002",
+            "A01",
+            "2026-08-17",
+            "",
+            "",
+            ""
+          ],
+          [
+            "COM-018",
+            "MAT-002",
+            "L0003",
+            "A02",
+            "2026-08-18",
+            "",
+            "",
+            ""
+          ],
+          [
+            "COM-019",
+            "MAT-003",
+            "L0004",
+            "A03",
+            "2026-08-19",
+            "",
+            "",
+            ""
+          ],
+          [
+            "COM-020",
+            "MAT-004",
+            "L0005",
+            "A04",
+            "2026-08-20",
+            "",
+            "",
+            ""
+          ],
+          [
+            "COM-021",
+            "MAT-005",
+            "L0001",
+            "A01",
+            "2026-08-21",
+            "",
+            "",
+            ""
+          ],
+          [
+            "COM-022",
+            "MAT-006",
+            "L0002",
+            "A02",
+            "2026-08-22",
+            "",
+            "",
+            ""
+          ],
+          [
+            "COM-023",
+            "MAT-007",
+            "L0003",
+            "A03",
+            "2026-08-23",
+            "",
+            "",
+            ""
+          ],
+          [
+            "COM-024",
+            "MAT-008",
+            "L0004",
+            "A04",
+            "2026-08-24",
+            "",
+            "",
+            ""
+          ],
+          [
+            "COM-025",
+            "MAT-001",
+            "L0005",
+            "A01",
+            "2026-08-25",
+            "",
+            "",
+            ""
+          ],
+          [
+            "COM-026",
+            "MAT-002",
+            "L0001",
+            "A02",
+            "2026-08-26",
+            "",
+            "",
+            ""
+          ],
+          [
+            "COM-027",
+            "MAT-003",
+            "L0002",
+            "A03",
+            "2026-08-27",
+            "",
+            "",
+            ""
+          ],
+          [
+            "COM-028",
+            "MAT-004",
+            "L0003",
+            "A04",
+            "2026-08-28",
+            "",
+            "",
+            ""
+          ],
+          [
+            "COM-029",
+            "MAT-005",
+            "L0004",
+            "A01",
+            "2026-08-01",
+            "",
+            "",
+            ""
+          ],
+          [
+            "COM-030",
+            "MAT-006",
+            "L0005",
+            "A02",
+            "2026-08-02",
+            "",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 30
+      }
+    },
+    "L07_Operaciones_Numericas.xlsx": {
+      "Operaciones": {
+        "header": [
+          "ID",
+          "Recibido",
+          "Utilizado",
+          "Costo unitario",
+          "Programado",
+          "Real",
+          "Existencia",
+          "Importe",
+          "Cumplimiento",
+          "Estado cálculo"
+        ],
+        "rows": [
+          [
+            "NUM-001",
+            500,
+            250,
+            18.5,
+            600,
+            550,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-002",
+            550,
+            280,
+            19.75,
+            700,
+            620,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-003",
+            600,
+            310,
+            21,
+            800,
+            690,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-004",
+            650,
+            340,
+            22.25,
+            900,
+            760,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-005",
+            700,
+            370,
+            23.5,
+            1000,
+            830,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-006",
+            750,
+            400,
+            18.5,
+            1100,
+            900,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-007",
+            800,
+            430,
+            19.75,
+            0,
+            970,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-008",
+            500,
+            460,
+            21,
+            700,
+            1040,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-009",
+            550,
+            490,
+            22.25,
+            800,
+            550,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-010",
+            600,
+            250,
+            23.5,
+            900,
+            620,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-011",
+            650,
+            280,
+            18.5,
+            1000,
+            690,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-012",
+            700,
+            310,
+            19.75,
+            1100,
+            760,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-013",
+            750,
+            340,
+            21,
+            600,
+            830,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-014",
+            800,
+            370,
+            22.25,
+            700,
+            900,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-015",
+            500,
+            400,
+            23.5,
+            800,
+            970,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-016",
+            550,
+            430,
+            18.5,
+            900,
+            1040,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-017",
+            600,
+            460,
+            19.75,
+            1000,
+            550,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-018",
+            650,
+            490,
+            21,
+            1100,
+            620,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-019",
+            700,
+            250,
+            22.25,
+            600,
+            690,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-020",
+            750,
+            280,
+            23.5,
+            0,
+            760,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-021",
+            800,
+            310,
+            18.5,
+            800,
+            830,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-022",
+            500,
+            340,
+            19.75,
+            900,
+            900,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-023",
+            550,
+            370,
+            21,
+            1000,
+            970,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-024",
+            600,
+            400,
+            22.25,
+            1100,
+            1040,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-025",
+            650,
+            430,
+            23.5,
+            600,
+            550,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-026",
+            700,
+            460,
+            18.5,
+            700,
+            620,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-027",
+            750,
+            490,
+            19.75,
+            800,
+            690,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-028",
+            800,
+            250,
+            21,
+            900,
+            760,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-029",
+            500,
+            280,
+            22.25,
+            1000,
+            830,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-030",
+            550,
+            310,
+            23.5,
+            1100,
+            900,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-031",
+            600,
+            340,
+            18.5,
+            600,
+            970,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-032",
+            650,
+            370,
+            19.75,
+            700,
+            1040,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-033",
+            700,
+            400,
+            21,
+            800,
+            550,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-034",
+            750,
+            430,
+            22.25,
+            900,
+            620,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "NUM-035",
+            800,
+            460,
+            23.5,
+            1000,
+            690,
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 35
+      }
+    },
+    "L08_Redondeo.xlsx": {
+      "Redondeo": {
+        "header": [
+          "ID",
+          "Valor original",
+          "Estándar 2 dec",
+          "Hacia arriba",
+          "Hacia abajo",
+          "Truncado",
+          "Diferencia"
+        ],
+        "rows": [
+          [
+            "RND-001",
+            15.678942,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-002",
+            15.673,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-003",
+            15.5,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-004",
+            15.01,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-005",
+            15.99,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-006",
+            -15.5,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-007",
+            12548.7865,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-008",
+            0.0049,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-009",
+            0.0051,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-010",
+            95.678942,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-011",
+            15.678942,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-012",
+            15.673,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-013",
+            15.5,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-014",
+            15.01,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-015",
+            15.99,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-016",
+            -15.5,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-017",
+            12548.7865,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-018",
+            0.0049,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-019",
+            0.0051,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-020",
+            95.678942,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-021",
+            15.678942,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-022",
+            15.673,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-023",
+            15.5,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-024",
+            15.01,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-025",
+            15.99,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-026",
+            -15.5,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-027",
+            12548.7865,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-028",
+            0.0049,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-029",
+            0.0051,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-030",
+            95.678942,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-031",
+            15.678942,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-032",
+            15.673,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-033",
+            15.5,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-034",
+            15.01,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RND-035",
+            15.99,
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 35
+      }
+    },
+    "L09_Porcentajes.xlsx": {
+      "Porcentajes": {
+        "header": [
+          "ID",
+          "Programado",
+          "Real",
+          "Periodo anterior",
+          "Parte",
+          "Total",
+          "Cumplimiento",
+          "Variación %",
+          "Participación %",
+          "Clasificación"
+        ],
+        "rows": [
+          [
+            "PCT-001",
+            800,
+            700,
+            650,
+            150,
+            4000,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-002",
+            900,
+            795,
+            730,
+            190,
+            4500,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-003",
+            1000,
+            890,
+            810,
+            230,
+            5000,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-004",
+            1100,
+            985,
+            890,
+            270,
+            5500,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-005",
+            1200,
+            1080,
+            970,
+            310,
+            6000,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-006",
+            1300,
+            1175,
+            1050,
+            350,
+            4000,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-007",
+            1400,
+            1270,
+            1130,
+            390,
+            4500,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-008",
+            1500,
+            1365,
+            650,
+            430,
+            5000,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-009",
+            0,
+            1460,
+            730,
+            470,
+            5500,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-010",
+            900,
+            1555,
+            810,
+            150,
+            6000,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-011",
+            1000,
+            700,
+            890,
+            190,
+            4000,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-012",
+            1100,
+            795,
+            970,
+            230,
+            4500,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-013",
+            1200,
+            890,
+            1050,
+            270,
+            5000,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-014",
+            1300,
+            985,
+            1130,
+            310,
+            5500,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-015",
+            1400,
+            1080,
+            650,
+            350,
+            6000,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-016",
+            1500,
+            1175,
+            730,
+            390,
+            4000,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-017",
+            800,
+            1270,
+            810,
+            430,
+            4500,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-018",
+            900,
+            1365,
+            890,
+            470,
+            5000,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-019",
+            1000,
+            1460,
+            970,
+            150,
+            5500,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-020",
+            1100,
+            1555,
+            1050,
+            190,
+            6000,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-021",
+            1200,
+            700,
+            1130,
+            230,
+            4000,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-022",
+            1300,
+            795,
+            650,
+            270,
+            4500,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-023",
+            1400,
+            890,
+            730,
+            310,
+            5000,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-024",
+            0,
+            985,
+            810,
+            350,
+            5500,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-025",
+            800,
+            1080,
+            890,
+            390,
+            6000,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-026",
+            900,
+            1175,
+            970,
+            430,
+            4000,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-027",
+            1000,
+            1270,
+            1050,
+            470,
+            4500,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-028",
+            1100,
+            1365,
+            1130,
+            150,
+            5000,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-029",
+            1200,
+            1460,
+            650,
+            190,
+            5500,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-030",
+            1300,
+            1555,
+            730,
+            230,
+            6000,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-031",
+            1400,
+            700,
+            810,
+            270,
+            4000,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-032",
+            1500,
+            795,
+            890,
+            310,
+            4500,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-033",
+            800,
+            890,
+            970,
+            350,
+            5000,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-034",
+            900,
+            985,
+            1050,
+            390,
+            5500,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-035",
+            1000,
+            1080,
+            1130,
+            430,
+            6000,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PCT-036",
+            1100,
+            1175,
+            650,
+            470,
+            4000,
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 36
+      }
+    },
+    "L10_Fechas_Horas.xlsx": {
+      "Fechas": {
+        "header": [
+          "ID",
+          "Valor original",
+          "Patrón/Región",
+          "Fecha convertida",
+          "Año",
+          "Trimestre",
+          "Mes número",
+          "Mes nombre",
+          "Periodo año-mes",
+          "Estado"
+        ],
+        "rows": [
+          [
+            "FEC-001",
+            "20/08/2026",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-002",
+            "08/20/2026",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-003",
+            "2026-08-20",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-004",
+            "31/02/2026",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-005",
+            "25-ago-2026",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-006",
+            "04/05/2026",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-007",
+            "2026-08-21 22:30",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-008",
+            "Pendiente",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-009",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-010",
+            "01/01/1900",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-011",
+            "20/08/2026",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-012",
+            "08/20/2026",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-013",
+            "2026-08-20",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-014",
+            "31/02/2026",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-015",
+            "25-ago-2026",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-016",
+            "04/05/2026",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-017",
+            "2026-08-21 22:30",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-018",
+            "Pendiente",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-019",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-020",
+            "01/01/1900",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-021",
+            "20/08/2026",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-022",
+            "08/20/2026",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-023",
+            "2026-08-20",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-024",
+            "31/02/2026",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-025",
+            "25-ago-2026",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-026",
+            "04/05/2026",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-027",
+            "2026-08-21 22:30",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-028",
+            "Pendiente",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-029",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-030",
+            "01/01/1900",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-031",
+            "20/08/2026",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-032",
+            "08/20/2026",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-033",
+            "2026-08-20",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-034",
+            "31/02/2026",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-035",
+            "25-ago-2026",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-036",
+            "04/05/2026",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-037",
+            "2026-08-21 22:30",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-038",
+            "Pendiente",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-039",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "FEC-040",
+            "01/01/1900",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 40
+      }
+    },
+    "L11_Duraciones.xlsx": {
+      "Duraciones": {
+        "header": [
+          "ID",
+          "Inicio",
+          "Finalización",
+          "Duración",
+          "Horas totales",
+          "Minutos totales",
+          "Estado temporal",
+          "Meta horas",
+          "Cumplimiento"
+        ],
+        "rows": [
+          [
+            "DUR-001",
+            "2026-08-20 08:00:00",
+            "2026-08-20 08:30:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-002",
+            "2026-08-20 11:00:00",
+            "2026-08-20 12:25:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-003",
+            "2026-08-20 14:00:00",
+            "2026-08-20 16:20:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-004",
+            "2026-08-20 17:00:00",
+            "2026-08-20 20:15:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-005",
+            "2026-08-20 20:00:00",
+            "2026-08-21 00:10:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-006",
+            "2026-08-20 23:00:00",
+            "2026-08-22 04:05:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-007",
+            "2026-08-21 02:00:00",
+            "2026-08-21 08:00:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-008",
+            "2026-08-21 05:00:00",
+            "",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-009",
+            "2026-08-21 08:00:00",
+            "2026-08-21 08:30:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-010",
+            "2026-08-21 11:00:00",
+            "2026-08-21 12:25:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-011",
+            "2026-08-21 14:00:00",
+            "2026-08-21 16:20:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-012",
+            "2026-08-21 17:00:00",
+            "2026-08-21 20:15:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-013",
+            "2026-08-21 20:00:00",
+            "2026-08-21 19:30:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-014",
+            "2026-08-21 23:00:00",
+            "2026-08-22 04:05:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-015",
+            "2026-08-22 02:00:00",
+            "2026-08-22 08:00:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-016",
+            "2026-08-22 05:00:00",
+            "2026-08-22 11:55:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-017",
+            "2026-08-22 08:00:00",
+            "2026-08-22 08:30:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-018",
+            "2026-08-22 11:00:00",
+            "2026-08-22 12:25:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-019",
+            "2026-08-22 14:00:00",
+            "2026-08-23 16:20:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-020",
+            "2026-08-22 17:00:00",
+            "2026-08-22 20:15:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-021",
+            "2026-08-22 20:00:00",
+            "",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-022",
+            "2026-08-22 23:00:00",
+            "2026-08-23 04:05:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-023",
+            "2026-08-23 02:00:00",
+            "2026-08-23 08:00:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-024",
+            "2026-08-23 05:00:00",
+            "2026-08-23 11:55:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-025",
+            "2026-08-23 08:00:00",
+            "2026-08-23 08:30:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-026",
+            "2026-08-23 11:00:00",
+            "2026-08-23 12:25:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-027",
+            "2026-08-23 14:00:00",
+            "2026-08-23 16:20:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-028",
+            "2026-08-23 17:00:00",
+            "2026-08-23 20:15:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-029",
+            "2026-08-23 20:00:00",
+            "2026-08-24 00:10:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-030",
+            "2026-08-23 23:00:00",
+            "2026-08-25 04:05:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-031",
+            "2026-08-24 02:00:00",
+            "2026-08-24 08:00:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-032",
+            "2026-08-24 05:00:00",
+            "2026-08-24 11:55:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-033",
+            "2026-08-24 08:00:00",
+            "2026-08-24 08:30:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-034",
+            "2026-08-24 11:00:00",
+            "2026-08-24 12:25:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ],
+          [
+            "DUR-035",
+            "2026-08-24 14:00:00",
+            "2026-08-24 16:20:00",
+            "",
+            "",
+            "",
+            "",
+            8,
+            ""
+          ]
+        ],
+        "total_rows": 35
+      }
+    },
+    "L12_Configuracion_Regional.xlsx": {
+      "Regional": {
+        "header": [
+          "ID",
+          "Número original",
+          "Fecha original",
+          "Región declarada",
+          "Número convertido",
+          "Fecha convertida",
+          "Región aplicada",
+          "Estado número",
+          "Estado fecha"
+        ],
+        "rows": [
+          [
+            "REG-001",
+            "1.250,50",
+            "20/08/2026",
+            "es-MX",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-002",
+            "1,250.50",
+            "08/20/2026",
+            "en-US",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-003",
+            "1250,50",
+            "2026-08-20",
+            "es-ES",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-004",
+            "1250.50",
+            "04/05/2026",
+            "Desconocida",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-005",
+            "1 250,50",
+            "13/05/2026",
+            "es-MX",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-006",
+            "1,250",
+            "05/13/2026",
+            "en-US",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-007",
+            "1.250",
+            "20 agosto 2026",
+            "es-ES",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-008",
+            "$1,250.50",
+            "20 August 2026",
+            "Desconocida",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-009",
+            "€1.250,50",
+            "31/02/2026",
+            "es-MX",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-010",
+            "95,5%",
+            "",
+            "en-US",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-011",
+            "1.250,50",
+            "20/08/2026",
+            "es-ES",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-012",
+            "1,250.50",
+            "08/20/2026",
+            "Desconocida",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-013",
+            "1250,50",
+            "2026-08-20",
+            "es-MX",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-014",
+            "1250.50",
+            "04/05/2026",
+            "en-US",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-015",
+            "1 250,50",
+            "13/05/2026",
+            "es-ES",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-016",
+            "1,250",
+            "05/13/2026",
+            "Desconocida",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-017",
+            "1.250",
+            "20 agosto 2026",
+            "es-MX",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-018",
+            "$1,250.50",
+            "20 August 2026",
+            "en-US",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-019",
+            "€1.250,50",
+            "31/02/2026",
+            "es-ES",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-020",
+            "95,5%",
+            "",
+            "Desconocida",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-021",
+            "1.250,50",
+            "20/08/2026",
+            "es-MX",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-022",
+            "1,250.50",
+            "08/20/2026",
+            "en-US",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-023",
+            "1250,50",
+            "2026-08-20",
+            "es-ES",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-024",
+            "1250.50",
+            "04/05/2026",
+            "Desconocida",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-025",
+            "1 250,50",
+            "13/05/2026",
+            "es-MX",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-026",
+            "1,250",
+            "05/13/2026",
+            "en-US",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-027",
+            "1.250",
+            "20 agosto 2026",
+            "es-ES",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-028",
+            "$1,250.50",
+            "20 August 2026",
+            "Desconocida",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-029",
+            "€1.250,50",
+            "31/02/2026",
+            "es-MX",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-030",
+            "95,5%",
+            "",
+            "en-US",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-031",
+            "1.250,50",
+            "20/08/2026",
+            "es-ES",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-032",
+            "1,250.50",
+            "08/20/2026",
+            "Desconocida",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-033",
+            "1250,50",
+            "2026-08-20",
+            "es-MX",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-034",
+            "1250.50",
+            "04/05/2026",
+            "en-US",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-035",
+            "1 250,50",
+            "13/05/2026",
+            "es-ES",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-036",
+            "1,250",
+            "05/13/2026",
+            "Desconocida",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-037",
+            "1.250",
+            "20 agosto 2026",
+            "es-MX",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-038",
+            "$1,250.50",
+            "20 August 2026",
+            "en-US",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-039",
+            "€1.250,50",
+            "31/02/2026",
+            "es-ES",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "REG-040",
+            "95,5%",
+            "",
+            "Desconocida",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 40
+      }
+    },
+    "L13_Errores_Conversion.xlsx": {
+      "Errores": {
+        "header": [
+          "ID",
+          "Cantidad original",
+          "Fecha original",
+          "Duración original",
+          "Cantidad convertida",
+          "Fecha convertida",
+          "Duración convertida",
+          "Campo con error",
+          "Categoría",
+          "Tratamiento",
+          "Estado"
+        ],
+        "rows": [
+          [
+            "ERR-001",
+            "125",
+            "20/08/2026",
+            "02:30",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-002",
+            "80 KG",
+            "08/20/2026",
+            "1.05:15:00",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-003",
+            "N/A",
+            "31/02/2026",
+            "36:45",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-004",
+            "1.250,50",
+            "Pendiente",
+            "Pendiente",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-005",
+            "$950.75",
+            "2026-08-20",
+            "-01:00",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-006",
+            "Sin dato",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-007",
+            "90.5",
+            "01/01/1900",
+            "00:45",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-008",
+            "1,500",
+            "25-ago-2026",
+            "2 días",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-009",
+            "-500",
+            "04/05/2026",
+            "90 min",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-010",
+            "ABC",
+            "32/01/2026",
+            "ABC",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-011",
+            "125",
+            "20/08/2026",
+            "02:30",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-012",
+            "80 KG",
+            "08/20/2026",
+            "1.05:15:00",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-013",
+            "N/A",
+            "31/02/2026",
+            "36:45",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-014",
+            "1.250,50",
+            "Pendiente",
+            "Pendiente",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-015",
+            "$950.75",
+            "2026-08-20",
+            "-01:00",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-016",
+            "Sin dato",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-017",
+            "90.5",
+            "01/01/1900",
+            "00:45",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-018",
+            "1,500",
+            "25-ago-2026",
+            "2 días",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-019",
+            "-500",
+            "04/05/2026",
+            "90 min",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-020",
+            "ABC",
+            "32/01/2026",
+            "ABC",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-021",
+            "125",
+            "20/08/2026",
+            "02:30",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-022",
+            "80 KG",
+            "08/20/2026",
+            "1.05:15:00",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-023",
+            "N/A",
+            "31/02/2026",
+            "36:45",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-024",
+            "1.250,50",
+            "Pendiente",
+            "Pendiente",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-025",
+            "$950.75",
+            "2026-08-20",
+            "-01:00",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-026",
+            "Sin dato",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-027",
+            "90.5",
+            "01/01/1900",
+            "00:45",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-028",
+            "1,500",
+            "25-ago-2026",
+            "2 días",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-029",
+            "-500",
+            "04/05/2026",
+            "90 min",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-030",
+            "ABC",
+            "32/01/2026",
+            "ABC",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-031",
+            "125",
+            "20/08/2026",
+            "02:30",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-032",
+            "80 KG",
+            "08/20/2026",
+            "1.05:15:00",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-033",
+            "N/A",
+            "31/02/2026",
+            "36:45",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-034",
+            "1.250,50",
+            "Pendiente",
+            "Pendiente",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-035",
+            "$950.75",
+            "2026-08-20",
+            "-01:00",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-036",
+            "Sin dato",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-037",
+            "90.5",
+            "01/01/1900",
+            "00:45",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-038",
+            "1,500",
+            "25-ago-2026",
+            "2 días",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-039",
+            "-500",
+            "04/05/2026",
+            "90 min",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ERR-040",
+            "ABC",
+            "32/01/2026",
+            "ABC",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 40
+      }
+    },
+    "L14_Practica_Integradora.xlsx": {
+      "Registro_Operativo": {
+        "header": [
+          "Folio",
+          "Área",
+          "Código",
+          "Responsable",
+          "Cantidad",
+          "Unidad",
+          "Programado",
+          "Real",
+          "Fecha inicio",
+          "Fecha final",
+          "Estatus"
+        ],
+        "rows": [
+          [
+            "SOL-2026-001",
+            " producción ",
+            "MP-000125",
+            "JUAN perez",
+            "1.250,50",
+            "KG",
+            100,
+            85,
+            "20/08/2026 08:00",
+            "20/08/2026 12:30",
+            "Finalizada"
+          ],
+          [
+            "SOL-2026-002",
+            "CALIDAD",
+            "PT-000875",
+            "ana lópez",
+            "850.75",
+            "PZAS",
+            200,
+            180,
+            "08/20/2026 09:15",
+            "08/20/2026 11:40",
+            "Cerrada"
+          ],
+          [
+            "SOL-2026-003",
+            "Almacen\n",
+            "ME-000458",
+            "CARLOS RUIZ ",
+            "80 KG",
+            "",
+            300,
+            285,
+            "21/08/2026 22:30",
+            "22/08/2026 01:10",
+            "Terminado"
+          ],
+          [
+            "SOL-2026-004",
+            "Mantto.",
+            "EQ-A-014",
+            "Sin asignar",
+            "N/A",
+            "PZAS",
+            400,
+            "",
+            "22/08/2026 10:00",
+            "",
+            "En proceso"
+          ],
+          [
+            "SOL-2026-005",
+            "Seguridad",
+            "INC-2026-105",
+            "laura garcia",
+            "1 EVENTO",
+            "EVENTO",
+            500,
+            525,
+            "31/02/2026",
+            "Pendiente",
+            "Abierta"
+          ],
+          [
+            "SOL-2026-006",
+            "RRHH",
+            "EMP-001258",
+            "PEDRO LOPEZ",
+            "36:45",
+            "HORAS",
+            600,
+            510,
+            "25-ago-2026",
+            "26-ago-2026",
+            "Completado"
+          ],
+          [
+            "SOL-2026-007",
+            "Produccion",
+            "PT-001475",
+            "MARÍA RUIZ",
+            "$1,250.50",
+            "MXN",
+            700,
+            630,
+            "2026-08-27 06:00",
+            "2026-08-27 14:25",
+            "Finalizado"
+          ],
+          [
+            "SOL-2026-008",
+            "Control de procesos",
+            "CTRL-2026-045",
+            "Sergio Moreno",
+            "125",
+            "REG",
+            800,
+            760,
+            "28/08/2026 07:30",
+            "28/08/2026 09:10",
+            "Cerrado"
+          ],
+          [
+            "SOL-2026-009",
+            " producción ",
+            "MP-000125",
+            "JUAN perez",
+            "1.250,50",
+            "KG",
+            100,
+            100,
+            "20/08/2026 08:00",
+            "20/08/2026 12:30",
+            "Finalizada"
+          ],
+          [
+            "SOL-2026-010",
+            "CALIDAD",
+            "PT-000875",
+            "ana lópez",
+            "850.75",
+            "PZAS",
+            200,
+            210,
+            "08/20/2026 09:15",
+            "08/20/2026 11:40",
+            "Cerrada"
+          ],
+          [
+            "SOL-2026-011",
+            "Almacen\n",
+            "ME-000458",
+            "CARLOS RUIZ ",
+            "80 KG",
+            "",
+            300,
+            255,
+            "21/08/2026 22:30",
+            "22/08/2026 01:10",
+            "Terminado"
+          ],
+          [
+            "SOL-2026-012",
+            "Mantto.",
+            "EQ-A-014",
+            "Sin asignar",
+            "N/A",
+            "PZAS",
+            400,
+            "",
+            "22/08/2026 10:00",
+            "",
+            "En proceso"
+          ],
+          [
+            "SOL-2026-013",
+            "Seguridad",
+            "INC-2026-105",
+            "laura garcia",
+            "1 EVENTO",
+            "EVENTO",
+            500,
+            475,
+            "31/02/2026",
+            "Pendiente",
+            "Abierta"
+          ],
+          [
+            "SOL-2026-014",
+            "RRHH",
+            "EMP-001258",
+            "PEDRO LOPEZ",
+            "36:45",
+            "HORAS",
+            0,
+            0,
+            "25-ago-2026",
+            "26-ago-2026",
+            "Completado"
+          ],
+          [
+            "SOL-2026-015",
+            "Produccion",
+            "PT-001475",
+            "MARÍA RUIZ",
+            "$1,250.50",
+            "MXN",
+            700,
+            735,
+            "2026-08-27 06:00",
+            "2026-08-27 14:25",
+            "Finalizado"
+          ],
+          [
+            "SOL-2026-016",
+            "Control de procesos",
+            "CTRL-2026-045",
+            "Sergio Moreno",
+            "125",
+            "REG",
+            800,
+            680,
+            "28/08/2026 07:30",
+            "28/08/2026 09:10",
+            "Cerrado"
+          ],
+          [
+            "SOL-2026-017",
+            " producción ",
+            "MP-000125",
+            "JUAN perez",
+            "1.250,50",
+            "KG",
+            100,
+            90,
+            "20/08/2026 08:00",
+            "20/08/2026 12:30",
+            "Finalizada"
+          ],
+          [
+            "SOL-2026-018",
+            "CALIDAD",
+            "PT-000875",
+            "ana lópez",
+            "850.75",
+            "PZAS",
+            200,
+            190,
+            "08/20/2026 09:15",
+            "08/20/2026 11:40",
+            "Cerrada"
+          ],
+          [
+            "SOL-2026-019",
+            "Almacen\n",
+            "ME-000458",
+            "CARLOS RUIZ ",
+            "80 KG",
+            "",
+            300,
+            300,
+            "21/08/2026 22:30",
+            "22/08/2026 01:10",
+            "Terminado"
+          ],
+          [
+            "SOL-2026-020",
+            "Mantto.",
+            "EQ-A-014",
+            "Sin asignar",
+            "N/A",
+            "PZAS",
+            400,
+            "",
+            "22/08/2026 10:00",
+            "",
+            "En proceso"
+          ],
+          [
+            "SOL-2026-021",
+            "Seguridad",
+            "INC-2026-105",
+            "laura garcia",
+            "1 EVENTO",
+            "EVENTO",
+            500,
+            425,
+            "31/02/2026",
+            "Pendiente",
+            "Abierta"
+          ],
+          [
+            "SOL-2026-022",
+            "RRHH",
+            "EMP-001258",
+            "PEDRO LOPEZ",
+            "36:45",
+            "HORAS",
+            600,
+            540,
+            "25-ago-2026",
+            "26-ago-2026",
+            "Completado"
+          ],
+          [
+            "SOL-2026-023",
+            "Produccion",
+            "PT-001475",
+            "MARÍA RUIZ",
+            "$1,250.50",
+            "MXN",
+            700,
+            665,
+            "2026-08-27 06:00",
+            "2026-08-27 14:25",
+            "Finalizado"
+          ],
+          [
+            "SOL-2026-024",
+            "Control de procesos",
+            "CTRL-2026-045",
+            "Sergio Moreno",
+            "125",
+            "REG",
+            800,
+            800,
+            "28/08/2026 07:30",
+            "28/08/2026 09:10",
+            "Cerrado"
+          ],
+          [
+            "SOL-2026-025",
+            " producción ",
+            "MP-000125",
+            "JUAN perez",
+            "1.250,50",
+            "KG",
+            100,
+            105,
+            "20/08/2026 08:00",
+            "20/08/2026 12:30",
+            "Finalizada"
+          ],
+          [
+            "SOL-2026-026",
+            "CALIDAD",
+            "PT-000875",
+            "ana lópez",
+            "850.75",
+            "PZAS",
+            200,
+            170,
+            "08/20/2026 09:15",
+            "08/20/2026 11:40",
+            "Cerrada"
+          ],
+          [
+            "SOL-2026-027",
+            "Almacen\n",
+            "ME-000458",
+            "CARLOS RUIZ ",
+            "80 KG",
+            "",
+            300,
+            270,
+            "21/08/2026 22:30",
+            "22/08/2026 01:10",
+            "Terminado"
+          ],
+          [
+            "SOL-2026-028",
+            "Mantto.",
+            "EQ-A-014",
+            "Sin asignar",
+            "N/A",
+            "PZAS",
+            400,
+            "",
+            "22/08/2026 10:00",
+            "",
+            "En proceso"
+          ],
+          [
+            "SOL-2026-029",
+            "Seguridad",
+            "INC-2026-105",
+            "laura garcia",
+            "1 EVENTO",
+            "EVENTO",
+            500,
+            500,
+            "31/02/2026",
+            "Pendiente",
+            "Abierta"
+          ],
+          [
+            "SOL-2026-030",
+            "RRHH",
+            "EMP-001258",
+            "PEDRO LOPEZ",
+            "36:45",
+            "HORAS",
+            600,
+            630,
+            "25-ago-2026",
+            "26-ago-2026",
+            "Completado"
+          ],
+          [
+            "SOL-2026-031",
+            "Produccion",
+            "PT-001475",
+            "MARÍA RUIZ",
+            "$1,250.50",
+            "MXN",
+            700,
+            595,
+            "2026-08-27 06:00",
+            "2026-08-27 14:25",
+            "Finalizado"
+          ],
+          [
+            "SOL-2026-032",
+            "Control de procesos",
+            "CTRL-2026-045",
+            "Sergio Moreno",
+            "125",
+            "REG",
+            800,
+            720,
+            "28/08/2026 07:30",
+            "28/08/2026 09:10",
+            "Cerrado"
+          ],
+          [
+            "SOL-2026-033",
+            " producción ",
+            "MP-000125",
+            "JUAN perez",
+            "1.250,50",
+            "KG",
+            100,
+            95,
+            "20/08/2026 08:00",
+            "20/08/2026 12:30",
+            "Finalizada"
+          ],
+          [
+            "SOL-2026-034",
+            "CALIDAD",
+            "PT-000875",
+            "ana lópez",
+            "850.75",
+            "PZAS",
+            200,
+            200,
+            "08/20/2026 09:15",
+            "08/20/2026 11:40",
+            "Cerrada"
+          ],
+          [
+            "SOL-2026-035",
+            "Almacen\n",
+            "ME-000458",
+            "CARLOS RUIZ ",
+            "80 KG",
+            "",
+            300,
+            315,
+            "21/08/2026 22:30",
+            "22/08/2026 01:10",
+            "Terminado"
+          ],
+          [
+            "SOL-2026-036",
+            "Mantto.",
+            "EQ-A-014",
+            "Sin asignar",
+            "N/A",
+            "PZAS",
+            400,
+            "",
+            "22/08/2026 10:00",
+            "",
+            "En proceso"
+          ],
+          [
+            "SOL-2026-037",
+            "Seguridad",
+            "INC-2026-105",
+            "laura garcia",
+            "1 EVENTO",
+            "EVENTO",
+            500,
+            450,
+            "31/02/2026",
+            "Pendiente",
+            "Abierta"
+          ],
+          [
+            "SOL-2026-038",
+            "RRHH",
+            "EMP-001258",
+            "PEDRO LOPEZ",
+            "36:45",
+            "HORAS",
+            600,
+            570,
+            "25-ago-2026",
+            "26-ago-2026",
+            "Completado"
+          ],
+          [
+            "SOL-2026-039",
+            "Produccion",
+            "PT-001475",
+            "MARÍA RUIZ",
+            "$1,250.50",
+            "MXN",
+            700,
+            700,
+            "2026-08-27 06:00",
+            "2026-08-27 14:25",
+            "Finalizado"
+          ],
+          [
+            "SOL-2026-040",
+            "Control de procesos",
+            "CTRL-2026-045",
+            "Sergio Moreno",
+            "125",
+            "REG",
+            800,
+            840,
+            "28/08/2026 07:30",
+            "28/08/2026 09:10",
+            "Cerrado"
+          ],
+          [
+            "SOL-2026-041",
+            " producción ",
+            "MP-000125",
+            "JUAN perez",
+            "1.250,50",
+            "KG",
+            100,
+            85,
+            "20/08/2026 08:00",
+            "20/08/2026 12:30",
+            "Finalizada"
+          ],
+          [
+            "SOL-2026-042",
+            "CALIDAD",
+            "PT-000875",
+            "ana lópez",
+            "850.75",
+            "PZAS",
+            200,
+            180,
+            "08/20/2026 09:15",
+            "08/20/2026 11:40",
+            "Cerrada"
+          ],
+          [
+            "SOL-2026-043",
+            "Almacen\n",
+            "ME-000458",
+            "CARLOS RUIZ ",
+            "80 KG",
+            "",
+            300,
+            285,
+            "21/08/2026 22:30",
+            "22/08/2026 01:10",
+            "Terminado"
+          ],
+          [
+            "SOL-2026-044",
+            "Mantto.",
+            "EQ-A-014",
+            "Sin asignar",
+            "N/A",
+            "PZAS",
+            400,
+            "",
+            "22/08/2026 10:00",
+            "",
+            "En proceso"
+          ],
+          [
+            "SOL-2026-045",
+            "Seguridad",
+            "INC-2026-105",
+            "laura garcia",
+            "1 EVENTO",
+            "EVENTO",
+            500,
+            525,
+            "31/02/2026",
+            "Pendiente",
+            "Abierta"
+          ],
+          [
+            "SOL-2026-046",
+            "RRHH",
+            "EMP-001258",
+            "PEDRO LOPEZ",
+            "36:45",
+            "HORAS",
+            600,
+            510,
+            "25-ago-2026",
+            "26-ago-2026",
+            "Completado"
+          ],
+          [
+            "SOL-2026-047",
+            "Produccion",
+            "PT-001475",
+            "MARÍA RUIZ",
+            "$1,250.50",
+            "MXN",
+            700,
+            630,
+            "2026-08-27 06:00",
+            "2026-08-27 14:25",
+            "Finalizado"
+          ],
+          [
+            "SOL-2026-048",
+            "Control de procesos",
+            "CTRL-2026-045",
+            "Sergio Moreno",
+            "125",
+            "REG",
+            0,
+            0,
+            "28/08/2026 07:30",
+            "28/08/2026 09:10",
+            "Cerrado"
+          ],
+          [
+            "SOL-2026-049",
+            " producción ",
+            "MP-000125",
+            "JUAN perez",
+            "1.250,50",
+            "KG",
+            100,
+            100,
+            "20/08/2026 08:00",
+            "20/08/2026 12:30",
+            "Finalizada"
+          ],
+          [
+            "SOL-2026-050",
+            "CALIDAD",
+            "PT-000875",
+            "ana lópez",
+            "850.75",
+            "PZAS",
+            200,
+            210,
+            "08/20/2026 09:15",
+            "08/20/2026 11:40",
+            "Cerrada"
+          ],
+          [
+            "SOL-2026-051",
+            "Almacen\n",
+            "ME-000458",
+            "CARLOS RUIZ ",
+            "80 KG",
+            "",
+            300,
+            255,
+            "21/08/2026 22:30",
+            "22/08/2026 01:10",
+            "Terminado"
+          ],
+          [
+            "SOL-2026-052",
+            "Mantto.",
+            "EQ-A-014",
+            "Sin asignar",
+            "N/A",
+            "PZAS",
+            400,
+            "",
+            "22/08/2026 10:00",
+            "",
+            "En proceso"
+          ],
+          [
+            "SOL-2026-053",
+            "Seguridad",
+            "INC-2026-105",
+            "laura garcia",
+            "1 EVENTO",
+            "EVENTO",
+            500,
+            475,
+            "31/02/2026",
+            "Pendiente",
+            "Abierta"
+          ],
+          [
+            "SOL-2026-054",
+            "RRHH",
+            "EMP-001258",
+            "PEDRO LOPEZ",
+            "36:45",
+            "HORAS",
+            600,
+            600,
+            "25-ago-2026",
+            "26-ago-2026",
+            "Completado"
+          ],
+          [
+            "SOL-2026-055",
+            "Produccion",
+            "PT-001475",
+            "MARÍA RUIZ",
+            "$1,250.50",
+            "MXN",
+            700,
+            735,
+            "2026-08-27 06:00",
+            "2026-08-27 14:25",
+            "Finalizado"
+          ],
+          [
+            "SOL-2026-056",
+            "Control de procesos",
+            "CTRL-2026-045",
+            "Sergio Moreno",
+            "125",
+            "REG",
+            800,
+            680,
+            "28/08/2026 07:30",
+            "28/08/2026 09:10",
+            "Cerrado"
+          ],
+          [
+            "SOL-2026-057",
+            " producción ",
+            "MP-000125",
+            "JUAN perez",
+            "1.250,50",
+            "KG",
+            100,
+            90,
+            "20/08/2026 08:00",
+            "20/08/2026 12:30",
+            "Finalizada"
+          ],
+          [
+            "SOL-2026-058",
+            "CALIDAD",
+            "PT-000875",
+            "ana lópez",
+            "850.75",
+            "PZAS",
+            200,
+            190,
+            "08/20/2026 09:15",
+            "08/20/2026 11:40",
+            "Cerrada"
+          ],
+          [
+            "SOL-2026-059",
+            "Almacen\n",
+            "ME-000458",
+            "CARLOS RUIZ ",
+            "80 KG",
+            "",
+            300,
+            300,
+            "21/08/2026 22:30",
+            "22/08/2026 01:10",
+            "Terminado"
+          ],
+          [
+            "SOL-2026-060",
+            "Mantto.",
+            "EQ-A-014",
+            "Sin asignar",
+            "N/A",
+            "PZAS",
+            400,
+            "",
+            "22/08/2026 10:00",
+            "",
+            "En proceso"
+          ],
+          [
+            "SOL-2026-061",
+            "Seguridad",
+            "INC-2026-105",
+            "laura garcia",
+            "1 EVENTO",
+            "EVENTO",
+            500,
+            425,
+            "31/02/2026",
+            "Pendiente",
+            "Abierta"
+          ],
+          [
+            "SOL-2026-062",
+            "RRHH",
+            "EMP-001258",
+            "PEDRO LOPEZ",
+            "36:45",
+            "HORAS",
+            600,
+            540,
+            "25-ago-2026",
+            "26-ago-2026",
+            "Completado"
+          ],
+          [
+            "SOL-2026-063",
+            "Produccion",
+            "PT-001475",
+            "MARÍA RUIZ",
+            "$1,250.50",
+            "MXN",
+            700,
+            665,
+            "2026-08-27 06:00",
+            "2026-08-27 14:25",
+            "Finalizado"
+          ],
+          [
+            "SOL-2026-064",
+            "Control de procesos",
+            "CTRL-2026-045",
+            "Sergio Moreno",
+            "125",
+            "REG",
+            800,
+            800,
+            "28/08/2026 07:30",
+            "28/08/2026 09:10",
+            "Cerrado"
+          ]
+        ],
+        "total_rows": 64
+      },
+      "Cat_Areas": {
+        "header": [
+          "Valor recibido",
+          "Área autorizada",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "rows": [
+          [
+            "Produccion",
+            "Producción",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "producción",
+            "Producción",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "CALIDAD",
+            "Calidad",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Almacen",
+            "Almacenes",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Mantto.",
+            "Mantenimiento",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "RRHH",
+            "Recursos Humanos",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Seguridad",
+            "Seguridad",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Control de procesos",
+            "Control de Procesos",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 8
+      },
+      "Cat_Estatus": {
+        "header": [
+          "Valor recibido",
+          "Estatus autorizado",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "rows": [
+          [
+            "Finalizada",
+            "Finalizado",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Cerrada",
+            "Finalizado",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Terminado",
+            "Finalizado",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Completado",
+            "Finalizado",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Cerrado",
+            "Finalizado",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "En proceso",
+            "En proceso",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Abierta",
+            "Abierto",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 7
+      },
+      "Reglas": {
+        "header": [
+          "Regla",
+          "Valor",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "rows": [
+          [
+            "Fecha de corte",
+            "31/08/2026 23:59",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Cumplimiento crítico",
+            "<90%",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Seguimiento",
+            "90% a <100%",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Cumplido",
+            "100%",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Sobre cumplimiento",
+            ">100%",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 5
+      }
+    },
+    "L15_Evaluacion_Reto.xlsx": {
+      "Reto": {
+        "header": [
+          "Folio",
+          "Área",
+          "Código operativo",
+          "Responsable",
+          "Cantidad reportada",
+          "Programado",
+          "Real",
+          "Fecha registro",
+          "Inicio",
+          "Finalización",
+          "Resultado"
+        ],
+        "rows": [
+          [
+            "MOV-001",
+            " producción ",
+            "MP-MZT-000125",
+            "JUAN perez",
+            "1.250,50 KG",
+            200,
+            164,
+            "20/08/2026 08:00",
+            "20/08/2026 08:00",
+            "20/08/2026 12:30",
+            "Finalizada"
+          ],
+          [
+            "MOV-002",
+            "CALIDAD",
+            "PT-GDL-000875",
+            "ana lópez",
+            "850.75 PZAS",
+            300,
+            263.9999999999999,
+            "08/20/2026 09:15",
+            "08/20/2026 09:15",
+            "08/20/2026 11:40",
+            "Cerrada"
+          ],
+          [
+            "MOV-003",
+            "Almacen\n",
+            "ME-MZT-000458",
+            "CARLOS RUIZ ",
+            "80 KG KG",
+            400,
+            376,
+            "21/08/2026 22:30",
+            "21/08/2026 22:30",
+            "22/08/2026 01:10",
+            "Terminado"
+          ],
+          [
+            "MOV-004",
+            "Mantto.",
+            "EQ-L2-000014",
+            "Sin asignar",
+            "N/A PZAS",
+            500,
+            "",
+            "22/08/2026 10:00",
+            "22/08/2026 10:00",
+            "",
+            "En proceso"
+          ],
+          [
+            "MOV-005",
+            "Seguridad",
+            "INC-MZT-2026-105",
+            "laura garcia",
+            "1 EVENTO EVENTO",
+            600,
+            636,
+            "31/02/2026",
+            "31/02/2026",
+            "Pendiente",
+            "Abierta"
+          ],
+          [
+            "MOV-006",
+            "RRHH",
+            "EMP-MZT-001258",
+            "PEDRO LOPEZ",
+            "36:45 HORAS",
+            700,
+            783.9999999999999,
+            "25-ago-2026",
+            "25-ago-2026",
+            "26-ago-2026",
+            "Completado"
+          ],
+          [
+            "MOV-007",
+            "Produccion",
+            "PT-MZT-001475",
+            "MARÍA RUIZ",
+            "$1,250.50 MXN",
+            800,
+            944,
+            "2026-08-27 06:00",
+            "2026-08-27 06:00",
+            "2026-08-27 14:25",
+            "Finalizado"
+          ],
+          [
+            "MOV-008",
+            "Control de procesos",
+            "XXX-INVALIDO",
+            "Sergio Moreno",
+            "125 REG",
+            900,
+            738,
+            "28/08/2026 07:30",
+            "28/08/2026 07:30",
+            "28/08/2026 09:10",
+            "Cerrado"
+          ],
+          [
+            "MOV-009",
+            " producción ",
+            "MP-MZT-000125",
+            "JUAN perez",
+            "1.250,50 KG",
+            1000,
+            879.9999999999999,
+            "20/08/2026 08:00",
+            "20/08/2026 08:00",
+            "20/08/2026 12:30",
+            "Finalizada"
+          ],
+          [
+            "MOV-010",
+            "CALIDAD",
+            "PT-GDL-000875",
+            "ana lópez",
+            "850.75 PZAS",
+            0,
+            0,
+            "08/20/2026 09:15",
+            "08/20/2026 09:15",
+            "08/20/2026 11:40",
+            "Cerrada"
+          ],
+          [
+            "MOV-011",
+            "Almacen\n",
+            "ME-MZT-000458",
+            "CARLOS RUIZ ",
+            "80 KG KG",
+            200,
+            200,
+            "21/08/2026 22:30",
+            "21/08/2026 22:30",
+            "22/08/2026 01:10",
+            "Terminado"
+          ],
+          [
+            "MOV-012",
+            "Mantto.",
+            "EQ-L2-000014",
+            "Sin asignar",
+            "N/A PZAS",
+            300,
+            "",
+            "22/08/2026 10:00",
+            "22/08/2026 10:00",
+            "",
+            "En proceso"
+          ],
+          [
+            "MOV-013",
+            "Seguridad",
+            "INC-MZT-2026-105",
+            "laura garcia",
+            "1 EVENTO EVENTO",
+            400,
+            447.9999999999999,
+            "31/02/2026",
+            "31/02/2026",
+            "Pendiente",
+            "Abierta"
+          ],
+          [
+            "MOV-014",
+            "RRHH",
+            "EMP-MZT-001258",
+            "PEDRO LOPEZ",
+            "36:45 HORAS",
+            500,
+            590,
+            "25-ago-2026",
+            "25-ago-2026",
+            "26-ago-2026",
+            "Completado"
+          ],
+          [
+            "MOV-015",
+            "Produccion",
+            "PT-MZT-001475",
+            "MARÍA RUIZ",
+            "$1,250.50 MXN",
+            600,
+            491.9999999999999,
+            "2026-08-27 06:00",
+            "2026-08-27 06:00",
+            "2026-08-27 14:25",
+            "Finalizado"
+          ],
+          [
+            "MOV-016",
+            "Control de procesos",
+            "XXX-INVALIDO",
+            "Sergio Moreno",
+            "125 REG",
+            700,
+            615.9999999999999,
+            "28/08/2026 07:30",
+            "28/08/2026 07:30",
+            "28/08/2026 09:10",
+            "Cerrado"
+          ],
+          [
+            "MOV-017",
+            " producción ",
+            "MP-MZT-000125",
+            "JUAN perez",
+            "1.250,50 KG",
+            800,
+            752,
+            "20/08/2026 08:00",
+            "20/08/2026 08:00",
+            "20/08/2026 12:30",
+            "Finalizada"
+          ],
+          [
+            "MOV-018",
+            "CALIDAD",
+            "PT-GDL-000875",
+            "ana lópez",
+            "850.75 PZAS",
+            900,
+            900,
+            "08/20/2026 09:15",
+            "08/20/2026 09:15",
+            "08/20/2026 11:40",
+            "Cerrada"
+          ],
+          [
+            "MOV-019",
+            "Almacen\n",
+            "ME-MZT-000458",
+            "CARLOS RUIZ ",
+            "80 KG KG",
+            1000,
+            1060,
+            "21/08/2026 22:30",
+            "21/08/2026 22:30",
+            "22/08/2026 01:10",
+            "Terminado"
+          ],
+          [
+            "MOV-020",
+            "Mantto.",
+            "EQ-L2-000014",
+            "Sin asignar",
+            "N/A PZAS",
+            1100,
+            "",
+            "22/08/2026 10:00",
+            "22/08/2026 10:00",
+            "",
+            "En proceso"
+          ],
+          [
+            "MOV-021",
+            "Seguridad",
+            "INC-MZT-2026-105",
+            "laura garcia",
+            "1 EVENTO EVENTO",
+            200,
+            236,
+            "31/02/2026",
+            "31/02/2026",
+            "Pendiente",
+            "Abierta"
+          ],
+          [
+            "MOV-022",
+            "RRHH",
+            "EMP-MZT-001258",
+            "PEDRO LOPEZ",
+            "36:45 HORAS",
+            300,
+            246,
+            "25-ago-2026",
+            "25-ago-2026",
+            "26-ago-2026",
+            "Completado"
+          ],
+          [
+            "MOV-023",
+            "Produccion",
+            "PT-MZT-001475",
+            "MARÍA RUIZ",
+            "$1,250.50 MXN",
+            400,
+            351.9999999999999,
+            "2026-08-27 06:00",
+            "2026-08-27 06:00",
+            "2026-08-27 14:25",
+            "Finalizado"
+          ],
+          [
+            "MOV-024",
+            "Control de procesos",
+            "XXX-INVALIDO",
+            "Sergio Moreno",
+            "125 REG",
+            500,
+            470,
+            "28/08/2026 07:30",
+            "28/08/2026 07:30",
+            "28/08/2026 09:10",
+            "Cerrado"
+          ],
+          [
+            "MOV-025",
+            " producción ",
+            "MP-MZT-000125",
+            "JUAN perez",
+            "1.250,50 KG",
+            600,
+            600,
+            "20/08/2026 08:00",
+            "20/08/2026 08:00",
+            "20/08/2026 12:30",
+            "Finalizada"
+          ],
+          [
+            "MOV-026",
+            "CALIDAD",
+            "PT-GDL-000875",
+            "ana lópez",
+            "850.75 PZAS",
+            700,
+            742,
+            "08/20/2026 09:15",
+            "08/20/2026 09:15",
+            "08/20/2026 11:40",
+            "Cerrada"
+          ],
+          [
+            "MOV-027",
+            "Almacen\n",
+            "ME-MZT-000458",
+            "CARLOS RUIZ ",
+            "80 KG KG",
+            800,
+            895.9999999999999,
+            "21/08/2026 22:30",
+            "21/08/2026 22:30",
+            "22/08/2026 01:10",
+            "Terminado"
+          ],
+          [
+            "MOV-028",
+            "Mantto.",
+            "EQ-L2-000014",
+            "Sin asignar",
+            "N/A PZAS",
+            900,
+            "",
+            "22/08/2026 10:00",
+            "22/08/2026 10:00",
+            "",
+            "En proceso"
+          ],
+          [
+            "MOV-029",
+            "Seguridad",
+            "INC-MZT-2026-105",
+            "laura garcia",
+            "1 EVENTO EVENTO",
+            1000,
+            820,
+            "31/02/2026",
+            "31/02/2026",
+            "Pendiente",
+            "Abierta"
+          ],
+          [
+            "MOV-030",
+            "RRHH",
+            "EMP-MZT-001258",
+            "PEDRO LOPEZ",
+            "36:45 HORAS",
+            1100,
+            967.9999999999999,
+            "25-ago-2026",
+            "25-ago-2026",
+            "26-ago-2026",
+            "Completado"
+          ],
+          [
+            "MOV-031",
+            "Produccion",
+            "PT-MZT-001475",
+            "MARÍA RUIZ",
+            "$1,250.50 MXN",
+            200,
+            188,
+            "2026-08-27 06:00",
+            "2026-08-27 06:00",
+            "2026-08-27 14:25",
+            "Finalizado"
+          ],
+          [
+            "MOV-032",
+            "Control de procesos",
+            "XXX-INVALIDO",
+            "Sergio Moreno",
+            "125 REG",
+            0,
+            0,
+            "28/08/2026 07:30",
+            "28/08/2026 07:30",
+            "28/08/2026 09:10",
+            "Cerrado"
+          ],
+          [
+            "MOV-033",
+            " producción ",
+            "MP-MZT-000125",
+            "JUAN perez",
+            "1.250,50 KG",
+            400,
+            424,
+            "20/08/2026 08:00",
+            "20/08/2026 08:00",
+            "20/08/2026 12:30",
+            "Finalizada"
+          ],
+          [
+            "MOV-034",
+            "CALIDAD",
+            "PT-GDL-000875",
+            "ana lópez",
+            "850.75 PZAS",
+            500,
+            559.9999999999999,
+            "08/20/2026 09:15",
+            "08/20/2026 09:15",
+            "08/20/2026 11:40",
+            "Cerrada"
+          ],
+          [
+            "MOV-035",
+            "Almacen\n",
+            "ME-MZT-000458",
+            "CARLOS RUIZ ",
+            "80 KG KG",
+            600,
+            708,
+            "21/08/2026 22:30",
+            "21/08/2026 22:30",
+            "22/08/2026 01:10",
+            "Terminado"
+          ],
+          [
+            "MOV-036",
+            "Mantto.",
+            "EQ-L2-000014",
+            "Sin asignar",
+            "N/A PZAS",
+            700,
+            "",
+            "22/08/2026 10:00",
+            "22/08/2026 10:00",
+            "",
+            "En proceso"
+          ],
+          [
+            "MOV-037",
+            "Seguridad",
+            "INC-MZT-2026-105",
+            "laura garcia",
+            "1 EVENTO EVENTO",
+            800,
+            703.9999999999999,
+            "31/02/2026",
+            "31/02/2026",
+            "Pendiente",
+            "Abierta"
+          ],
+          [
+            "MOV-038",
+            "RRHH",
+            "EMP-MZT-001258",
+            "PEDRO LOPEZ",
+            "36:45 HORAS",
+            900,
+            846,
+            "25-ago-2026",
+            "25-ago-2026",
+            "26-ago-2026",
+            "Completado"
+          ],
+          [
+            "MOV-039",
+            "Produccion",
+            "PT-MZT-001475",
+            "MARÍA RUIZ",
+            "$1,250.50 MXN",
+            1000,
+            1000,
+            "2026-08-27 06:00",
+            "2026-08-27 06:00",
+            "2026-08-27 14:25",
+            "Finalizado"
+          ],
+          [
+            "MOV-040",
+            "Control de procesos",
+            "XXX-INVALIDO",
+            "Sergio Moreno",
+            "125 REG",
+            1100,
+            1166,
+            "28/08/2026 07:30",
+            "28/08/2026 07:30",
+            "28/08/2026 09:10",
+            "Cerrado"
+          ],
+          [
+            "MOV-041",
+            " producción ",
+            "MP-MZT-000125",
+            "JUAN perez",
+            "1.250,50 KG",
+            200,
+            224,
+            "20/08/2026 08:00",
+            "20/08/2026 08:00",
+            "20/08/2026 12:30",
+            "Finalizada"
+          ],
+          [
+            "MOV-042",
+            "CALIDAD",
+            "PT-GDL-000875",
+            "ana lópez",
+            "850.75 PZAS",
+            300,
+            354,
+            "08/20/2026 09:15",
+            "08/20/2026 09:15",
+            "08/20/2026 11:40",
+            "Cerrada"
+          ],
+          [
+            "MOV-043",
+            "Almacen\n",
+            "ME-MZT-000458",
+            "CARLOS RUIZ ",
+            "80 KG KG",
+            400,
+            328,
+            "21/08/2026 22:30",
+            "21/08/2026 22:30",
+            "22/08/2026 01:10",
+            "Terminado"
+          ],
+          [
+            "MOV-044",
+            "Mantto.",
+            "EQ-L2-000014",
+            "Sin asignar",
+            "N/A PZAS",
+            500,
+            "",
+            "22/08/2026 10:00",
+            "22/08/2026 10:00",
+            "",
+            "En proceso"
+          ],
+          [
+            "MOV-045",
+            "Seguridad",
+            "INC-MZT-2026-105",
+            "laura garcia",
+            "1 EVENTO EVENTO",
+            600,
+            564,
+            "31/02/2026",
+            "31/02/2026",
+            "Pendiente",
+            "Abierta"
+          ],
+          [
+            "MOV-046",
+            "RRHH",
+            "EMP-MZT-001258",
+            "PEDRO LOPEZ",
+            "36:45 HORAS",
+            700,
+            700,
+            "25-ago-2026",
+            "25-ago-2026",
+            "26-ago-2026",
+            "Completado"
+          ],
+          [
+            "MOV-047",
+            "Produccion",
+            "PT-MZT-001475",
+            "MARÍA RUIZ",
+            "$1,250.50 MXN",
+            800,
+            848,
+            "2026-08-27 06:00",
+            "2026-08-27 06:00",
+            "2026-08-27 14:25",
+            "Finalizado"
+          ],
+          [
+            "MOV-048",
+            "Control de procesos",
+            "XXX-INVALIDO",
+            "Sergio Moreno",
+            "125 REG",
+            900,
+            1008,
+            "28/08/2026 07:30",
+            "28/08/2026 07:30",
+            "28/08/2026 09:10",
+            "Cerrado"
+          ],
+          [
+            "MOV-049",
+            " producción ",
+            "MP-MZT-000125",
+            "JUAN perez",
+            "1.250,50 KG",
+            1000,
+            1180,
+            "20/08/2026 08:00",
+            "20/08/2026 08:00",
+            "20/08/2026 12:30",
+            "Finalizada"
+          ],
+          [
+            "MOV-050",
+            "CALIDAD",
+            "PT-GDL-000875",
+            "ana lópez",
+            "850.75 PZAS",
+            1100,
+            902,
+            "08/20/2026 09:15",
+            "08/20/2026 09:15",
+            "08/20/2026 11:40",
+            "Cerrada"
+          ],
+          [
+            "MOV-051",
+            "Almacen\n",
+            "ME-MZT-000458",
+            "CARLOS RUIZ ",
+            "80 KG KG",
+            200,
+            176,
+            "21/08/2026 22:30",
+            "21/08/2026 22:30",
+            "22/08/2026 01:10",
+            "Terminado"
+          ],
+          [
+            "MOV-052",
+            "Mantto.",
+            "EQ-L2-000014",
+            "Sin asignar",
+            "N/A PZAS",
+            300,
+            "",
+            "22/08/2026 10:00",
+            "22/08/2026 10:00",
+            "",
+            "En proceso"
+          ],
+          [
+            "MOV-053",
+            "Seguridad",
+            "INC-MZT-2026-105",
+            "laura garcia",
+            "1 EVENTO EVENTO",
+            400,
+            400,
+            "31/02/2026",
+            "31/02/2026",
+            "Pendiente",
+            "Abierta"
+          ],
+          [
+            "MOV-054",
+            "RRHH",
+            "EMP-MZT-001258",
+            "PEDRO LOPEZ",
+            "36:45 HORAS",
+            500,
+            530,
+            "25-ago-2026",
+            "25-ago-2026",
+            "26-ago-2026",
+            "Completado"
+          ],
+          [
+            "MOV-055",
+            "Produccion",
+            "PT-MZT-001475",
+            "MARÍA RUIZ",
+            "$1,250.50 MXN",
+            600,
+            671.9999999999999,
+            "2026-08-27 06:00",
+            "2026-08-27 06:00",
+            "2026-08-27 14:25",
+            "Finalizado"
+          ],
+          [
+            "MOV-056",
+            "Control de procesos",
+            "XXX-INVALIDO",
+            "Sergio Moreno",
+            "125 REG",
+            700,
+            826,
+            "28/08/2026 07:30",
+            "28/08/2026 07:30",
+            "28/08/2026 09:10",
+            "Cerrado"
+          ],
+          [
+            "MOV-057",
+            " producción ",
+            "MP-MZT-000125",
+            "JUAN perez",
+            "1.250,50 KG",
+            800,
+            656,
+            "20/08/2026 08:00",
+            "20/08/2026 08:00",
+            "20/08/2026 12:30",
+            "Finalizada"
+          ],
+          [
+            "MOV-058",
+            "CALIDAD",
+            "PT-GDL-000875",
+            "ana lópez",
+            "850.75 PZAS",
+            900,
+            791.9999999999999,
+            "08/20/2026 09:15",
+            "08/20/2026 09:15",
+            "08/20/2026 11:40",
+            "Cerrada"
+          ],
+          [
+            "MOV-059",
+            "Almacen\n",
+            "ME-MZT-000458",
+            "CARLOS RUIZ ",
+            "80 KG KG",
+            1000,
+            940,
+            "21/08/2026 22:30",
+            "21/08/2026 22:30",
+            "22/08/2026 01:10",
+            "Terminado"
+          ],
+          [
+            "MOV-060",
+            "Mantto.",
+            "EQ-L2-000014",
+            "Sin asignar",
+            "N/A PZAS",
+            0,
+            "",
+            "22/08/2026 10:00",
+            "22/08/2026 10:00",
+            "",
+            "En proceso"
+          ],
+          [
+            "MOV-061",
+            "Seguridad",
+            "INC-MZT-2026-105",
+            "laura garcia",
+            "1 EVENTO EVENTO",
+            200,
+            212,
+            "31/02/2026",
+            "31/02/2026",
+            "Pendiente",
+            "Abierta"
+          ],
+          [
+            "MOV-062",
+            "RRHH",
+            "EMP-MZT-001258",
+            "PEDRO LOPEZ",
+            "36:45 HORAS",
+            300,
+            335.9999999999999,
+            "25-ago-2026",
+            "25-ago-2026",
+            "26-ago-2026",
+            "Completado"
+          ],
+          [
+            "MOV-063",
+            "Produccion",
+            "PT-MZT-001475",
+            "MARÍA RUIZ",
+            "$1,250.50 MXN",
+            400,
+            472,
+            "2026-08-27 06:00",
+            "2026-08-27 06:00",
+            "2026-08-27 14:25",
+            "Finalizado"
+          ],
+          [
+            "MOV-064",
+            "Control de procesos",
+            "XXX-INVALIDO",
+            "Sergio Moreno",
+            "125 REG",
+            500,
+            410,
+            "28/08/2026 07:30",
+            "28/08/2026 07:30",
+            "28/08/2026 09:10",
+            "Cerrado"
+          ],
+          [
+            "MOV-065",
+            " producción ",
+            "MP-MZT-000125",
+            "JUAN perez",
+            "1.250,50 KG",
+            600,
+            527.9999999999999,
+            "20/08/2026 08:00",
+            "20/08/2026 08:00",
+            "20/08/2026 12:30",
+            "Finalizada"
+          ],
+          [
+            "MOV-066",
+            "CALIDAD",
+            "PT-GDL-000875",
+            "ana lópez",
+            "850.75 PZAS",
+            700,
+            658,
+            "08/20/2026 09:15",
+            "08/20/2026 09:15",
+            "08/20/2026 11:40",
+            "Cerrada"
+          ],
+          [
+            "MOV-067",
+            "Almacen\n",
+            "ME-MZT-000458",
+            "CARLOS RUIZ ",
+            "80 KG KG",
+            800,
+            800,
+            "21/08/2026 22:30",
+            "21/08/2026 22:30",
+            "22/08/2026 01:10",
+            "Terminado"
+          ],
+          [
+            "MOV-068",
+            "Mantto.",
+            "EQ-L2-000014",
+            "Sin asignar",
+            "N/A PZAS",
+            900,
+            "",
+            "22/08/2026 10:00",
+            "22/08/2026 10:00",
+            "",
+            "En proceso"
+          ],
+          [
+            "MOV-069",
+            "Seguridad",
+            "INC-MZT-2026-105",
+            "laura garcia",
+            "1 EVENTO EVENTO",
+            1000,
+            1120,
+            "31/02/2026",
+            "31/02/2026",
+            "Pendiente",
+            "Abierta"
+          ],
+          [
+            "MOV-070",
+            "RRHH",
+            "EMP-MZT-001258",
+            "PEDRO LOPEZ",
+            "36:45 HORAS",
+            1100,
+            1298,
+            "25-ago-2026",
+            "25-ago-2026",
+            "26-ago-2026",
+            "Completado"
+          ],
+          [
+            "MOV-071",
+            "Produccion",
+            "PT-MZT-001475",
+            "MARÍA RUIZ",
+            "$1,250.50 MXN",
+            200,
+            164,
+            "2026-08-27 06:00",
+            "2026-08-27 06:00",
+            "2026-08-27 14:25",
+            "Finalizado"
+          ],
+          [
+            "MOV-072",
+            "Control de procesos",
+            "XXX-INVALIDO",
+            "Sergio Moreno",
+            "125 REG",
+            300,
+            263.9999999999999,
+            "28/08/2026 07:30",
+            "28/08/2026 07:30",
+            "28/08/2026 09:10",
+            "Cerrado"
+          ]
+        ],
+        "total_rows": 72
+      },
+      "Evaluacion_Conceptual": {
+        "header": [
+          "Núm.",
+          "Pregunta",
+          "Respuesta del participante",
+          "",
+          "",
+          ""
+        ],
+        "rows": [
+          [
+            "1",
+            "¿Por qué se limpia antes de capitalizar?",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "2",
+            "¿Qué representa la granularidad?",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "3",
+            "¿Qué diferencia existe entre extraer y dividir?",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "4",
+            "¿Por qué se valida el denominador?",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "5",
+            "¿Qué es una fecha ambigua?",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "6",
+            "¿Qué diferencia existe entre duración y antigüedad?",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "7",
+            "¿Qué es un error silencioso?",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "8",
+            "¿Por qué conservar el original?",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "9",
+            "¿Qué debe contener una consulta de excepciones?",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "10",
+            "¿Cómo se demuestra la conciliación?",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 10
+      },
+      "Rubrica": {
+        "header": [
+          "Componente",
+          "Puntos",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "rows": [
+          [
+            "Conceptos",
+            15,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Diagnóstico",
+            15,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Desarrollo técnico",
+            35,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Validación y conciliación",
+            20,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Documentación y actualización",
+            15,
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 5
+      }
+    }
+  },
+  "instrucciones": {
+    "Guia_Instructor_Modulo4.xlsx": {
+      "proposito": "Proporcionar respuestas esperadas, criterios de revisión y control del paquete.",
+      "actividades": [
+        "Utilice los archivos por orden de lección.",
+        "No entregue esta guía antes de las prácticas.",
+        "Valide razonamiento, trazabilidad y conciliación, no solo apariencia."
+      ],
+      "importante": ""
+    },
+    "L01_Limpieza_Recorte.xlsx": {
+      "proposito": "Diagnosticar espacios y caracteres no visibles, aplicar Limpiar y Recortar y validar el resultado.",
+      "actividades": [
+        "Conserve la columna Texto original.",
+        "Cargue la tabla en Power Query.",
+        "Aplique Limpiar y Recortar en pasos separados.",
+        "Cree una columna Texto limpio y compare longitudes.",
+        "Separe registros que continúan vacíos o sospechosos."
+      ],
+      "importante": ""
+    },
+    "L02_Capitalizacion.xlsx": {
+      "proposito": "Aplicar reglas de capitalización según el significado de cada campo.",
+      "actividades": [
+        "Defina una regla por tipo de campo.",
+        "Limpie y recorte antes de capitalizar.",
+        "Use formato propio para nombres, mayúsculas para códigos y minúsculas para correos.",
+        "Documente excepciones como siglas y partículas."
+      ],
+      "importante": ""
+    },
+    "L03_Reemplazo_Valores.xlsx": {
+      "proposito": "Homologar categorías mediante equivalencias controladas y diferenciar reemplazo total de parcial.",
+      "actividades": [
+        "Revise las frecuencias antes de reemplazar.",
+        "Utilice el catálogo de equivalencias.",
+        "Evite reemplazos parciales ambiguos.",
+        "Compare categorías distintas antes y después."
+      ],
+      "importante": ""
+    },
+    "L04_Extraccion_Caracteres.xlsx": {
+      "proposito": "Extraer prefijos, sufijos y segmentos por posición conservando el código original.",
+      "actividades": [
+        "Clasifique las estructuras antes de extraer.",
+        "Extraiga prefijo y consecutivo.",
+        "Obtenga año o segmento intermedio cuando aplique.",
+        "Marque estructuras inesperadas."
+      ],
+      "importante": ""
+    },
+    "L05_Division_Columnas.xlsx": {
+      "proposito": "Separar información compuesta por delimitador o posición y validar segmentos faltantes.",
+      "actividades": [
+        "Identifique el delimitador.",
+        "Determine si la salida debe ir a columnas o filas.",
+        "Conserve el valor original.",
+        "Marque estructuras con número inesperado de segmentos."
+      ],
+      "importante": ""
+    },
+    "L06_Combinacion_Columnas.xlsx": {
+      "proposito": "Construir descripciones y claves compuestas, validando granularidad, nulos y unicidad.",
+      "actividades": [
+        "Defina qué representa una fila.",
+        "Combine Material, Lote y Ubicación con separador estable.",
+        "Cree una descripción con fecha normalizada.",
+        "Revise claves duplicadas y valores nulos."
+      ],
+      "importante": ""
+    },
+    "L07_Operaciones_Numericas.xlsx": {
+      "proposito": "Generar diferencias, importes, conversiones e indicadores controlando nulos y divisiones entre cero.",
+      "actividades": [
+        "Valide tipos numéricos.",
+        "Calcule Existencia = Recibido - Utilizado.",
+        "Calcule Importe = Recibido * Costo unitario.",
+        "Calcule Cumplimiento = Real / Programado.",
+        "Separe registros no evaluables."
+      ],
+      "importante": ""
+    },
+    "L08_Redondeo.xlsx": {
+      "proposito": "Comparar redondeo estándar, hacia arriba, hacia abajo y truncamiento, y medir diferencias acumuladas.",
+      "actividades": [
+        "Conserve el valor original.",
+        "Calcule resultados a dos decimales y a entero.",
+        "Compare métodos.",
+        "Calcule la diferencia entre suma original y suma redondeada."
+      ],
+      "importante": ""
+    },
+    "L09_Porcentajes.xlsx": {
+      "proposito": "Construir cumplimiento, variación y participación porcentual con denominadores validados.",
+      "actividades": [
+        "Defina la base de cada porcentaje.",
+        "Controle denominadores nulos o iguales a cero.",
+        "Calcule cumplimiento, variación y participación.",
+        "Clasifique resultados extremos."
+      ],
+      "importante": ""
+    },
+    "L10_Fechas_Horas.xlsx": {
+      "proposito": "Interpretar fechas y horas, crear atributos calendario y separar valores ambiguos o inválidos.",
+      "actividades": [
+        "Conserve el valor original.",
+        "Clasifique el patrón regional.",
+        "Convierta mediante la región adecuada.",
+        "Genere Año, Trimestre, Mes, Periodo, Semana y Día de semana.",
+        "Separe errores y fechas anómalas."
+      ],
+      "importante": ""
+    },
+    "L11_Duraciones.xlsx": {
+      "proposito": "Calcular intervalos, diferenciar componentes y totales, clasificar casos abiertos y detectar secuencias negativas.",
+      "actividades": [
+        "Calcule Finalización - Inicio.",
+        "Obtenga horas y minutos totales.",
+        "Use fecha de corte para casos abiertos.",
+        "Marque duraciones negativas y atípicas.",
+        "Clasifique cumplimiento contra la meta."
+      ],
+      "importante": ""
+    },
+    "L12_Configuracion_Regional.xlsx": {
+      "proposito": "Interpretar números y fechas de varias regiones, detectar errores silenciosos y documentar la región aplicada.",
+      "actividades": [
+        "No elimine separadores antes de clasificar su función.",
+        "Conserve números y fechas originales.",
+        "Convierta con región explícita.",
+        "Valide magnitudes y periodos.",
+        "Separe valores ambiguos."
+      ],
+      "importante": ""
+    },
+    "L13_Errores_Conversion.xlsx": {
+      "proposito": "Diagnosticar errores de celda y de paso, capturar evidencia y diseñar una consulta de excepciones.",
+      "actividades": [
+        "Conserve los valores originales.",
+        "Intente convertir cantidad, fecha y duración.",
+        "Registre campo, motivo y detalle del error.",
+        "Clasifique corregible, ambiguo, no aplicable o pendiente.",
+        "No reemplace indiscriminadamente por cero."
+      ],
+      "importante": ""
+    },
+    "L14_Practica_Integradora.xlsx": {
+      "proposito": "Transformar un registro operativo completo y producir consultas válidas, corregidas, para revisión e indicadores.",
+      "actividades": [
+        "Diagnostique antes de transformar.",
+        "Conserve el origen.",
+        "Cree una arquitectura de consultas.",
+        "Aplique las transformaciones de las lecciones 1 a 13.",
+        "Concilie el 100% de los registros.",
+        "Pruebe la actualización con el segundo archivo."
+      ],
+      "importante": ""
+    },
+    "L15_Evaluacion_Reto.xlsx": {
+      "proposito": "Resolver de manera autónoma un archivo heterogéneo, documentar decisiones y demostrar actualización y conciliación.",
+      "actividades": [
+        "Complete primero la evaluación conceptual.",
+        "Entregue una matriz de diagnóstico.",
+        "Construya la solución sin instrucciones paso a paso.",
+        "Cree una consulta de excepciones.",
+        "Concilie el 100% de los registros.",
+        "Defienda técnicamente sus decisiones."
+      ],
+      "importante": ""
+    }
+  }
+}

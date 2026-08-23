@@ -1,0 +1,1021 @@
+{
+  "generalFiles": [
+    "M02_Indice_Archivos_Practica.xlsx"
+  ],
+  "excelPreview": {
+    "M02_Indice_Archivos_Practica.xlsx": {
+      "Indice": {
+        "header": [
+          "Archivo",
+          "Lección",
+          "Propósito"
+        ],
+        "rows": [
+          [
+            "M02_L01_Fases_Conexion.xlsx",
+            "Lección 01",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M02_L02_Ventas_Libro_Actual.xlsx",
+            "Lección 02",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M02_L03_Catalogo_Productos.xlsx",
+            "Lección 03",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M02_L04_Reporte_Ventas.csv",
+            "Lección 04",
+            "Consultar hoja LEEME de M02_L04_Instrucciones.xlsx"
+          ],
+          [
+            "M02_L04_Instrucciones.xlsx",
+            "Lección 04",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M02_L05_Carpeta_Reportes/Reporte_Enero.csv",
+            "Lección 05",
+            "Colocar los 3 archivos en una misma carpeta"
+          ],
+          [
+            "M02_L05_Carpeta_Reportes/Reporte_Febrero.csv",
+            "Lección 05",
+            "Colocar los 3 archivos en una misma carpeta"
+          ],
+          [
+            "M02_L05_Carpeta_Reportes/Reporte_Marzo.csv",
+            "Lección 05",
+            "Colocar los 3 archivos en una misma carpeta"
+          ],
+          [
+            "M02_L05_Instrucciones.xlsx",
+            "Lección 05",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M02_L06_Reporte_Mantenimiento.pdf",
+            "Lección 06",
+            "Extraer la tabla con el conector PDF"
+          ],
+          [
+            "M02_L06_Instrucciones.xlsx",
+            "Lección 06",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M02_L07_Simulacion_SharePoint.xlsx",
+            "Lección 07",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M02_L08_Catalogo_Base_Datos.xlsx",
+            "Lección 08",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M02_L09_Ficha_Autenticacion.xlsx",
+            "Lección 09",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M02_L10_Ficha_Privacidad.xlsx",
+            "Lección 10",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M02_L11_Registro_Rutas.xlsx",
+            "Lección 11",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M02_L12_Diagnostico_Errores.xlsx",
+            "Lección 12",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M02_L13_Carpeta_Reportes/Reporte_Abril.csv",
+            "Lección 13",
+            "Archivo nuevo para probar la actualización"
+          ],
+          [
+            "M02_L13_Instrucciones.xlsx",
+            "Lección 13",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M02_L14_Reto_Excel_Externo.xlsx",
+            "Lección 14",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M02_L14_Reto_Catalogo_BD.xlsx",
+            "Lección 14",
+            "Consultar hoja LEEME"
+          ],
+          [
+            "M02_L14_Instrucciones.xlsx",
+            "Lección 14",
+            "Consultar hoja LEEME"
+          ]
+        ],
+        "total_rows": 22
+      }
+    },
+    "M02_L01_Fases_Conexion.xlsx": {
+      "Clasificacion": {
+        "header": [
+          "Acción",
+          "Fase (tu respuesta)"
+        ],
+        "rows": [
+          [
+            "Escribir el nombre del servidor SQL Server",
+            ""
+          ],
+          [
+            "Elegir Cuenta organizativa e iniciar sesión",
+            ""
+          ],
+          [
+            "Ver las hojas disponibles en el Navegador",
+            ""
+          ],
+          [
+            "Seleccionar Transformar datos",
+            ""
+          ],
+          [
+            "Escribir la ruta de un archivo CSV",
+            ""
+          ],
+          [
+            "Elegir Anónimo como método de autenticación",
+            ""
+          ],
+          [
+            "Ver la vista previa de una tabla antes de cargar",
+            ""
+          ]
+        ],
+        "total_rows": 7
+      }
+    },
+    "M02_L02_Ventas_Libro_Actual.xlsx": {
+      "Datos": {
+        "header": [
+          "Producto",
+          "Categoría",
+          "Cantidad",
+          "Precio unitario",
+          "Sucursal"
+        ],
+        "rows": [
+          [
+            "Laptop 14''",
+            "Cómputo",
+            5,
+            12500,
+            "Centro"
+          ],
+          [
+            "Mouse inalámbrico",
+            "Accesorios",
+            20,
+            250,
+            "Centro"
+          ],
+          [
+            "Monitor 24''",
+            "Cómputo",
+            8,
+            3200,
+            "Norte"
+          ],
+          [
+            "Teclado mecánico",
+            "Accesorios",
+            12,
+            890,
+            "Norte"
+          ],
+          [
+            "Docking station",
+            "Accesorios",
+            4,
+            1500,
+            "Sur"
+          ]
+        ],
+        "total_rows": 5
+      }
+    },
+    "M02_L03_Catalogo_Productos.xlsx": {
+      "Catalogo": {
+        "header": [
+          "SKU",
+          "Producto",
+          "Categoría",
+          "Precio",
+          "Proveedor",
+          "Activo"
+        ],
+        "rows": [
+          [
+            "SKU-001",
+            "Laptop 14''",
+            "Cómputo",
+            12500,
+            "TecnoSuministros",
+            "Sí"
+          ],
+          [
+            "SKU-002",
+            "Mouse inalámbrico",
+            "accesorios",
+            "250",
+            "TecnoSuministros",
+            "Si"
+          ],
+          [
+            "SKU-003",
+            "Monitor 24''",
+            "Cómputo",
+            3200,
+            "Proveedor Norte",
+            "Sí"
+          ],
+          [
+            " SKU-004 ",
+            "Teclado mecánico",
+            "Accesorios",
+            890,
+            "",
+            "sí"
+          ],
+          [
+            "SKU-005",
+            "Docking station",
+            "Accesorios",
+            "N/D",
+            "Proveedor Norte",
+            "No"
+          ]
+        ],
+        "total_rows": 5
+      }
+    },
+    "M02_L04_Instrucciones.xlsx": {},
+    "M02_L04_Reporte_Ventas.csv": {
+      "CSV": {
+        "header": [
+          "Folio",
+          "Fecha",
+          "Sucursal",
+          "Producto",
+          "Cantidad",
+          "Importe"
+        ],
+        "rows": [
+          [
+            "V-0001",
+            "01/09/2026",
+            "Centro",
+            "Laptop 14''",
+            "2",
+            "25000"
+          ],
+          [
+            "V-0002",
+            "02/09/2026",
+            "Norte",
+            "Monitor 24''",
+            "3",
+            "9600"
+          ],
+          [
+            "V-0003",
+            "2026-09-03",
+            "Sur",
+            "Docking station",
+            "1",
+            "1500"
+          ],
+          [
+            "V-0004",
+            "Pendiente",
+            "Centro",
+            "Mouse inalámbrico",
+            "N/D",
+            "N/D"
+          ],
+          [
+            " V-0005 ",
+            "05/09/2026",
+            "norte",
+            "Teclado mecánico",
+            "4",
+            "3560"
+          ]
+        ],
+        "total_rows": 5
+      }
+    },
+    "M02_L05_Carpeta_Reportes/Reporte_Enero.csv": {
+      "CSV": {
+        "header": [
+          "Folio",
+          "Fecha",
+          "Sucursal",
+          "Producto",
+          "Cantidad",
+          "Importe"
+        ],
+        "rows": [
+          [
+            "R-0101",
+            "05/01/2026",
+            "Centro",
+            "Laptop 14''",
+            "3",
+            "37500"
+          ],
+          [
+            "R-0102",
+            "12/01/2026",
+            "Norte",
+            "Monitor 24''",
+            "2",
+            "6400"
+          ],
+          [
+            "R-0103",
+            "20/01/2026",
+            "Sur",
+            "Mouse inalámbrico",
+            "10",
+            "2500"
+          ]
+        ],
+        "total_rows": 3
+      }
+    },
+    "M02_L05_Carpeta_Reportes/Reporte_Febrero.csv": {
+      "CSV": {
+        "header": [
+          "Folio",
+          "Fecha",
+          "Sucursal",
+          "Producto",
+          "Cantidad",
+          "Importe"
+        ],
+        "rows": [
+          [
+            "R-0201",
+            "03/02/2026",
+            "Centro",
+            "Teclado mecánico",
+            "5",
+            "4450"
+          ],
+          [
+            "R-0202",
+            "15/02/2026",
+            "Norte",
+            "Docking station",
+            "2",
+            "3000"
+          ],
+          [
+            "R-0203",
+            "27/02/2026",
+            "Sur",
+            "Laptop 14''",
+            "1",
+            "12500"
+          ]
+        ],
+        "total_rows": 3
+      }
+    },
+    "M02_L05_Carpeta_Reportes/Reporte_Marzo.csv": {
+      "CSV": {
+        "header": [
+          "Folio",
+          "Fecha",
+          "Sucursal",
+          "Producto",
+          "Cantidad",
+          "Importe"
+        ],
+        "rows": [
+          [
+            "R-0301",
+            "02/03/2026",
+            "Centro",
+            "Monitor 24''",
+            "4",
+            "12800"
+          ],
+          [
+            "R-0302",
+            "18/03/2026",
+            "Norte",
+            "Mouse inalámbrico",
+            "15",
+            "3750"
+          ],
+          [
+            "R-0303",
+            "29/03/2026",
+            "Sur",
+            "Teclado mecánico",
+            "6",
+            "5340"
+          ]
+        ],
+        "total_rows": 3
+      }
+    },
+    "M02_L05_Instrucciones.xlsx": {},
+    "M02_L06_Instrucciones.xlsx": {},
+    "M02_L06_Reporte_Mantenimiento.pdf": {
+      "Tabla extraída (Pdf.Tables)": {
+        "header": [
+          "Orden",
+          "Equipo",
+          "Tipo",
+          "Fecha",
+          "Técnico",
+          "Estatus"
+        ],
+        "rows": [
+          [
+            "OT-3001",
+            "Compresor 01",
+            "Preventivo",
+            "02/09/2026",
+            "L. Ramírez",
+            "Completada"
+          ],
+          [
+            "OT-3002",
+            "Banda transportadora 3",
+            "Preventivo",
+            "05/09/2026",
+            "J. Torres",
+            "Completada"
+          ],
+          [
+            "OT-3003",
+            "Compresor 02",
+            "Correctivo",
+            "09/09/2026",
+            "L. Ramírez",
+            "En proceso"
+          ],
+          [
+            "OT-3004",
+            "Enfriador industrial",
+            "Preventivo",
+            "14/09/2026",
+            "M. Cano",
+            "Completada"
+          ],
+          [
+            "OT-3005",
+            "Banda transportadora 1",
+            "Correctivo",
+            "20/09/2026",
+            "J. Torres",
+            "Pendiente"
+          ],
+          [
+            "OT-3006",
+            "Compresor 01",
+            "Preventivo",
+            "27/09/2026",
+            "L. Ramírez",
+            "Completada"
+          ]
+        ],
+        "total_rows": 6
+      }
+    },
+    "M02_L07_Simulacion_SharePoint.xlsx": {
+      "VistaSistemaArchivos": {
+        "header": [
+          "Name",
+          "Content",
+          "Extension",
+          "Date modified",
+          "Folder Path"
+        ],
+        "rows": [
+          [
+            "Reporte_Enero.csv",
+            "[Binary]",
+            ".csv",
+            "2026-02-01",
+            "/sites/Operaciones/Reportes/"
+          ],
+          [
+            "Reporte_Febrero.csv",
+            "[Binary]",
+            ".csv",
+            "2026-03-01",
+            "/sites/Operaciones/Reportes/"
+          ],
+          [
+            "Notas_reunion.docx",
+            "[Binary]",
+            ".docx",
+            "2026-03-02",
+            "/sites/Operaciones/Reportes/"
+          ],
+          [
+            "Reporte_Marzo.csv",
+            "[Binary]",
+            ".csv",
+            "2026-04-01",
+            "/sites/Operaciones/Reportes/"
+          ]
+        ],
+        "total_rows": 4
+      }
+    },
+    "M02_L08_Catalogo_Base_Datos.xlsx": {
+      "Catalogo_Tablas": {
+        "header": [
+          "Servidor",
+          "Base de datos",
+          "Tabla",
+          "Columnas principales",
+          "Filas aprox."
+        ],
+        "rows": [
+          [
+            "srv-ventas01",
+            "ComercialDB",
+            "dbo.Ventas",
+            "FolioVenta, Fecha, SKU, Cantidad, Importe",
+            158000
+          ],
+          [
+            "srv-ventas01",
+            "ComercialDB",
+            "dbo.Productos",
+            "SKU, Nombre, Categoría, PrecioLista",
+            340
+          ],
+          [
+            "srv-ventas01",
+            "ComercialDB",
+            "dbo.Sucursales",
+            "IdSucursal, Nombre, Region",
+            12
+          ],
+          [
+            "srv-ventas01",
+            "ComercialDB",
+            "dbo.Clientes",
+            "IdCliente, Nombre, RFC, Segmento",
+            8900
+          ]
+        ],
+        "total_rows": 4
+      }
+    },
+    "M02_L09_Ficha_Autenticacion.xlsx": {
+      "Escenarios": {
+        "header": [
+          "Escenario",
+          "Método propuesto",
+          "Justificación"
+        ],
+        "rows": [
+          [
+            "Conectar a una página web pública sin login",
+            "",
+            ""
+          ],
+          [
+            "Conectar a SQL Server interno de la empresa con tu usuario de red",
+            "",
+            ""
+          ],
+          [
+            "Conectar a un sitio de SharePoint de Microsoft 365",
+            "",
+            ""
+          ],
+          [
+            "Conectar a un servicio con una clave de API proporcionada por el proveedor",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 4
+      }
+    },
+    "M02_L10_Ficha_Privacidad.xlsx": {
+      "Origenes": {
+        "header": [
+          "#",
+          "Origen de datos",
+          "Nivel propuesto",
+          "Justificación"
+        ],
+        "rows": [
+          [
+            1,
+            "Archivo de evaluaciones de desempeño de empleados",
+            "",
+            ""
+          ],
+          [
+            2,
+            "Página pública de Wikipedia",
+            "",
+            ""
+          ],
+          [
+            3,
+            "Documento de Word en SharePoint con permisos internos",
+            "",
+            ""
+          ],
+          [
+            4,
+            "Archivo CSV con datos de prueba en un entorno de desarrollo",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 4
+      }
+    },
+    "M02_L11_Registro_Rutas.xlsx": {
+      "Registro": {
+        "header": [
+          "Conexión",
+          "Tipo de origen",
+          "Ruta o URL",
+          "Puerta de enlace",
+          "Nivel de privacidad",
+          "Responsable"
+        ],
+        "rows": [
+          [
+            "qryVentasCarpeta",
+            "Carpeta",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "qryCatalogoProductos",
+            "Excel externo",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 2
+      }
+    },
+    "M02_L12_Diagnostico_Errores.xlsx": {
+      "Diagnostico": {
+        "header": [
+          "Mensaje de error",
+          "Causa probable",
+          "Acción de solución"
+        ],
+        "rows": [
+          [
+            "The Microsoft.ACE.OLEDB.12.0 provider is not registered on the local machine.",
+            "",
+            ""
+          ],
+          [
+            "No se pudo conectar porque este tipo de credencial no se admite para este recurso.",
+            "",
+            ""
+          ],
+          [
+            "Formula.Firewall: Query references other queries or steps...",
+            "",
+            ""
+          ],
+          [
+            "DataFormat.Error: no se pudo convertir a Number.",
+            "",
+            ""
+          ],
+          [
+            "No se pudo encontrar el archivo en la ruta especificada.",
+            "",
+            ""
+          ]
+        ],
+        "total_rows": 5
+      }
+    },
+    "M02_L13_Carpeta_Reportes/Reporte_Abril.csv": {
+      "CSV": {
+        "header": [
+          "Folio",
+          "Fecha",
+          "Sucursal",
+          "Producto",
+          "Cantidad",
+          "Importe"
+        ],
+        "rows": [
+          [
+            "R-0401",
+            "04/04/2026",
+            "Centro",
+            "Laptop 14''",
+            "2",
+            "25000"
+          ],
+          [
+            "R-0402",
+            "14/04/2026",
+            "Sur",
+            "Docking station",
+            "3",
+            "4500"
+          ],
+          [
+            "R-0403",
+            "25/04/2026",
+            "Norte",
+            "Teclado mecánico",
+            "7",
+            "6230"
+          ]
+        ],
+        "total_rows": 3
+      }
+    },
+    "M02_L13_Instrucciones.xlsx": {},
+    "M02_L14_Instrucciones.xlsx": {},
+    "M02_L14_Reto_Catalogo_BD.xlsx": {
+      "Catalogo_Tablas": {
+        "header": [
+          "Servidor",
+          "Base de datos",
+          "Tabla",
+          "Columnas principales"
+        ],
+        "rows": [
+          [
+            "srv-inventario02",
+            "InventarioDB",
+            "dbo.Existencias",
+            "SKU, Almacen, Cantidad, Fecha"
+          ],
+          [
+            "srv-inventario02",
+            "InventarioDB",
+            "dbo.Almacenes",
+            "IdAlmacen, Nombre, Region"
+          ]
+        ],
+        "total_rows": 2
+      }
+    },
+    "M02_L14_Reto_Excel_Externo.xlsx": {
+      "Inventario": {
+        "header": [
+          "SKU",
+          "Almacén",
+          "Existencia",
+          "Última actualización"
+        ],
+        "rows": [
+          [
+            "SKU-001",
+            "Centro",
+            45,
+            "01/09/2026"
+          ],
+          [
+            "SKU-002",
+            "centro",
+            "120",
+            "01/09/2026"
+          ],
+          [
+            "SKU-003",
+            "Norte",
+            -5,
+            "02/09/2026"
+          ],
+          [
+            " SKU-004 ",
+            "Sur",
+            "N/D",
+            "Pendiente"
+          ]
+        ],
+        "total_rows": 4
+      }
+    }
+  },
+  "instrucciones": {
+    "M02_Indice_Archivos_Practica.xlsx": {
+      "proposito": "Inventario del paquete del Módulo 2.",
+      "actividades": [
+        "1. Utiliza el archivo indicado en cada lección.",
+        "2. Conserva los originales.",
+        "3. Guarda tus respuestas con un nombre distinto."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M02_L01_Fases_Conexion.xlsx": {
+      "proposito": "Reconocer las 4 fases de Obtener datos.",
+      "actividades": [
+        "1. Clasifica cada acción en su fase correspondiente.",
+        "2. Explica qué pasaría si el orden se invirtiera.",
+        "3. Identifica qué fase falta si un conector es singleton."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M02_L02_Ventas_Libro_Actual.xlsx": {
+      "proposito": "Conectar una tabla que ya existe en este mismo archivo.",
+      "actividades": [
+        "1. Convierte el rango de la hoja 'Datos' en tabla si no lo está.",
+        "2. Nómbrala tblVentasLocal.",
+        "3. Conéctate con Datos > Desde tabla o rango."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M02_L03_Catalogo_Productos.xlsx": {
+      "proposito": "Conectar un libro externo con el conector de Excel.",
+      "actividades": [
+        "1. Conéctate a este archivo desde OTRO libro de Excel (ábrelo por separado).",
+        "2. Usa el Navegador para elegir la hoja Catalogo.",
+        "3. Identifica al menos tres inconsistencias en los datos."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M02_L04_Instrucciones.xlsx": {
+      "proposito": "Conectar un CSV con delimitador y revisar la detección automática.",
+      "actividades": [
+        "1. Conecta M02_L04_Reporte_Ventas.csv con Texto/CSV.",
+        "2. Verifica qué delimitador detectó Power Query.",
+        "3. Corrige tipos de datos y revisa filas con formato irregular."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M02_L04_Reporte_Ventas.csv": {
+      "proposito": "",
+      "actividades": [],
+      "importante": ""
+    },
+    "M02_L05_Carpeta_Reportes/Reporte_Enero.csv": {
+      "proposito": "",
+      "actividades": [],
+      "importante": ""
+    },
+    "M02_L05_Carpeta_Reportes/Reporte_Febrero.csv": {
+      "proposito": "",
+      "actividades": [],
+      "importante": ""
+    },
+    "M02_L05_Carpeta_Reportes/Reporte_Marzo.csv": {
+      "proposito": "",
+      "actividades": [],
+      "importante": ""
+    },
+    "M02_L05_Instrucciones.xlsx": {
+      "proposito": "Combinar automáticamente varios archivos periódicos de una carpeta.",
+      "actividades": [
+        "1. Coloca los 3 archivos de M02_L05_Carpeta_Reportes en una sola carpeta.",
+        "2. Conéctate con el conector Carpeta y usa Combinar y transformar datos.",
+        "3. Verifica que el resultado combine los 3 meses en una sola tabla."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M02_L06_Instrucciones.xlsx": {
+      "proposito": "Extraer una tabla de un PDF con el conector PDF (Pdf.Tables).",
+      "actividades": [
+        "1. Conéctate a M02_L06_Reporte_Mantenimiento.pdf con el conector PDF.",
+        "2. En el Navegador, selecciona la tabla detectada.",
+        "3. Revisa si alguna fila quedó dividida en varias líneas."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M02_L06_Reporte_Mantenimiento.pdf": {
+      "proposito": "",
+      "actividades": [],
+      "importante": ""
+    },
+    "M02_L07_Simulacion_SharePoint.xlsx": {
+      "proposito": "Practicar cómo se interpreta la vista del sistema de archivos de una Carpeta de SharePoint.",
+      "actividades": [
+        "1. Observa la columna Content: en un caso real sería binaria.",
+        "2. Decide qué harías al seleccionar el valor de esa columna.",
+        "3. Identifica qué archivos NO deberían combinarse (distinto formato)."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M02_L08_Catalogo_Base_Datos.xlsx": {
+      "proposito": "Reconocer cómo el Navegador presenta tablas de una base de datos.",
+      "actividades": [
+        "1. Identifica qué tablas usarías para un reporte de ventas por producto.",
+        "2. Propón la relación (clave) entre Ventas y Productos.",
+        "3. Decide si usarías Importación o DirectQuery para este caso."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M02_L09_Ficha_Autenticacion.xlsx": {
+      "proposito": "Elegir el método de autenticación correcto según el escenario.",
+      "actividades": [
+        "1. Para cada escenario, propone un método de autenticación.",
+        "2. Justifica tu elección en una frase.",
+        "3. Señala cuál escenario usaría Windows y cuál Cuenta organizativa."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M02_L10_Ficha_Privacidad.xlsx": {
+      "proposito": "Asignar el nivel de privacidad correcto a cada origen.",
+      "actividades": [
+        "1. Asigna Público, Organizativo o Privado a cada origen.",
+        "2. Explica qué pasaría si combinas el origen 1 con el origen 4 sin ajustar niveles.",
+        "3. Identifica cuál origen nunca debería combinarse directamente con uno Público."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M02_L11_Registro_Rutas.xlsx": {
+      "proposito": "Documentar rutas, puertas de enlace y credenciales de un proyecto.",
+      "actividades": [
+        "1. Completa la ficha para cada conexión de tu práctica integradora.",
+        "2. Marca cuáles conexiones usan puerta de enlace.",
+        "3. Señala qué harías si el archivo de origen cambia de carpeta."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M02_L12_Diagnostico_Errores.xlsx": {
+      "proposito": "Relacionar cada mensaje de error con su causa y solución.",
+      "actividades": [
+        "1. Relaciona cada mensaje con su causa probable.",
+        "2. Propón una acción de solución para cada uno.",
+        "3. Indica cuál de estos NO es un error de conexión (es de datos)."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M02_L13_Carpeta_Reportes/Reporte_Abril.csv": {
+      "proposito": "",
+      "actividades": [],
+      "importante": ""
+    },
+    "M02_L13_Instrucciones.xlsx": {
+      "proposito": "Caso integrador: Consolidación automática de archivos periódicos.",
+      "actividades": [
+        "1. Repite la conexión de la Lección 5 (carpeta con Enero/Febrero/Marzo).",
+        "2. Agrega M02_L13_Carpeta_Reportes/Reporte_Abril.csv a la misma carpeta.",
+        "3. Actualiza la consulta y confirma que Abril se incorpora solo.",
+        "4. Documenta ruta, privacidad y autenticación usadas."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M02_L14_Instrucciones.xlsx": {
+      "proposito": "Aplicar de forma autónoma lo aprendido en las 12 lecciones.",
+      "actividades": [
+        "1. Analiza los 3 orígenes: carpeta (L05), Excel externo y catálogo de BD.",
+        "2. Diseña la solución sin instrucciones paso a paso.",
+        "3. Provoca y diagnostica al menos un error de conexión.",
+        "4. Responde la evaluación conceptual del módulo."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M02_L14_Reto_Catalogo_BD.xlsx": {
+      "proposito": "Segundo origen del reto final: referencia de base de datos.",
+      "actividades": [
+        "1. Decide qué tablas necesitarías consultar.",
+        "2. Propón el modo de conexión (Importación o DirectQuery).",
+        "3. Define el nivel de privacidad apropiado."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    },
+    "M02_L14_Reto_Excel_Externo.xlsx": {
+      "proposito": "Uno de los tres orígenes del reto final.",
+      "actividades": [
+        "1. Decide qué conector y autenticación usar.",
+        "2. Decide el nivel de privacidad.",
+        "3. Detecta al menos dos inconsistencias en los datos."
+      ],
+      "importante": "Trabaja con datos simulados. No reemplaces los archivos originales. Documenta las reglas y valida cualquier registro excluido."
+    }
+  }
+}
