@@ -1,0 +1,242 @@
+{
+ "1": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Parte B. Clasificación de tablas (20% de la evaluación): El participante clasificará ocho tablas como: Operativa. Maestra. Histórica. Intermedia.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80%. Explique el modelo relacional. Identifique entidades y atributos. Distinga tablas operativas y maestras. Reconozca claves primarias y externas. Clasifique correctamente las cardinalidades. Identifique registros sin coincidencia. Explique la integridad referencial. Reconozca el riesgo de claves duplicadas. Complete un mapa relacional. Defina controles antes de combinar. Mantenga los registros huérfanos como excepciones.",
+    "criterio": ""
+   },
+   {
+    "no": 2,
+    "tipo": "Abierta",
+    "pregunta": "Parte C. Claves y cardinalidad (20% de la evaluación): El participante identificará: Clave primaria. Clave externa. Relación. Cardinalidad. Riesgo.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80%. Explique el modelo relacional. Identifique entidades y atributos. Distinga tablas operativas y maestras. Reconozca claves primarias y externas. Clasifique correctamente las cardinalidades. Identifique registros sin coincidencia. Explique la integridad referencial. Reconozca el riesgo de claves duplicadas. Complete un mapa relacional. Defina controles antes de combinar. Mantenga los registros huérfanos como excepciones.",
+    "criterio": ""
+   },
+   {
+    "no": 3,
+    "tipo": "Abierta",
+    "pregunta": "Parte D. Mapa relacional (20% de la evaluación): El participante elaborará un mapa con: Dos tablas como mínimo. Granularidad. Claves. Cardinalidad. Campos relacionados. Excepciones. Controles.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80%. Explique el modelo relacional. Identifique entidades y atributos. Distinga tablas operativas y maestras. Reconozca claves primarias y externas. Clasifique correctamente las cardinalidades. Identifique registros sin coincidencia. Explique la integridad referencial. Reconozca el riesgo de claves duplicadas. Complete un mapa relacional. Defina controles antes de combinar. Mantenga los registros huérfanos como excepciones.",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 60
+ },
+ "2": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Parte B. Identificación de granularidad (20% de la evaluación): El participante definirá qué representa cada fila en ocho tablas.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80%. Defina correctamente la granularidad. Distinga nivel de detalle y cantidad de filas. Compare dos fuentes. Identifique la cardinalidad esperada. Prediga la multiplicación. Detecte totales inflados. Proponga una clave adecuada. Determine cuándo agrupar. Defina la granularidad de salida. Construya una matriz. Concilie filas y valores. Mantenga toda diferencia explicada.",
+    "criterio": ""
+   },
+   {
+    "no": 2,
+    "tipo": "Abierta",
+    "pregunta": "Parte C. Diagnóstico de multiplicación (20% de la evaluación): El participante calculará: Filas antes. Filas después. Factor de multiplicación. Total correcto. Total inflado. Diferencia.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80%. Defina correctamente la granularidad. Distinga nivel de detalle y cantidad de filas. Compare dos fuentes. Identifique la cardinalidad esperada. Prediga la multiplicación. Detecte totales inflados. Proponga una clave adecuada. Determine cuándo agrupar. Defina la granularidad de salida. Construya una matriz. Concilie filas y valores. Mantenga toda diferencia explicada.",
+    "criterio": ""
+   },
+   {
+    "no": 3,
+    "tipo": "Abierta",
+    "pregunta": "Parte D. Matriz y controles (20% de la evaluación): El participante construirá una matriz de granularidad y propondrá controles de conciliación.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80%. Defina correctamente la granularidad. Distinga nivel de detalle y cantidad de filas. Compare dos fuentes. Identifique la cardinalidad esperada. Prediga la multiplicación. Detecte totales inflados. Proponga una clave adecuada. Determine cuándo agrupar. Defina la granularidad de salida. Construya una matriz. Concilie filas y valores. Mantenga toda diferencia explicada.",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 60
+ },
+ "3": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Parte B. Diagnóstico de claves (20% de la evaluación): El participante clasificará claves como: Válidas. Vacías. Sustitutas. Con formato inválido. No reconocidas. Duplicadas en el maestro.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80%. Explique una clave simple. Distinga clave e índice. Identifique claves naturales y artificiales. Conserve los ceros iniciales. Evalúe la completitud. Evalúe la unicidad según la granularidad. Identifique claves genéricas. Detecte duplicados en el catálogo. Construya un conteo por clave. Separe claves rechazadas. Documente una clave confiable. Proponga indicadores y responsables.",
+    "criterio": ""
+   },
+   {
+    "no": 2,
+    "tipo": "Abierta",
+    "pregunta": "Parte C. Conteo y unicidad (20% de la evaluación): Deberá: Agrupar por clave. Contar apariciones. Interpretar repeticiones. Identificar conflictos.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80%. Explique una clave simple. Distinga clave e índice. Identifique claves naturales y artificiales. Conserve los ceros iniciales. Evalúe la completitud. Evalúe la unicidad según la granularidad. Identifique claves genéricas. Detecte duplicados en el catálogo. Construya un conteo por clave. Separe claves rechazadas. Documente una clave confiable. Proponga indicadores y responsables.",
+    "criterio": ""
+   },
+   {
+    "no": 3,
+    "tipo": "Abierta",
+    "pregunta": "Parte D. Ficha de clave (20% de la evaluación): Documentará una clave de un proceso propio o simulado.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80%. Explique una clave simple. Distinga clave e índice. Identifique claves naturales y artificiales. Conserve los ceros iniciales. Evalúe la completitud. Evalúe la unicidad según la granularidad. Identifique claves genéricas. Detecte duplicados en el catálogo. Construya un conteo por clave. Separe claves rechazadas. Documente una clave confiable. Proponga indicadores y responsables.",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 60
+ },
+ "4": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Parte B. Selección de componentes (20% de la evaluación): El participante propondrá claves para seis granularidades.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80%. Explique la función de una clave compuesta. Seleccione componentes conforme a la granularidad. Distinga claves insuficientes y excesivas. Respete el orden de selección. Compruebe tipos compatibles. Valide componentes nulos. Conserve columnas originales. Evite colisiones de concatenación. Diferencie identificación y relación. Cuente combinaciones. Separe claves inválidas. Construya una matriz documentada. Proponga controles de conciliación.",
+    "criterio": ""
+   },
+   {
+    "no": 2,
+    "tipo": "Abierta",
+    "pregunta": "Parte C. Diagnóstico de claves (20% de la evaluación): Identificará: Claves insuficientes. Claves excesivas. Componentes nulos. Tipos incompatibles. Combinaciones duplicadas.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80%. Explique la función de una clave compuesta. Seleccione componentes conforme a la granularidad. Distinga claves insuficientes y excesivas. Respete el orden de selección. Compruebe tipos compatibles. Valide componentes nulos. Conserve columnas originales. Evite colisiones de concatenación. Diferencie identificación y relación. Cuente combinaciones. Separe claves inválidas. Construya una matriz documentada. Proponga controles de conciliación.",
+    "criterio": ""
+   },
+   {
+    "no": 3,
+    "tipo": "Abierta",
+    "pregunta": "Parte D. Matriz de diseño (20% de la evaluación): Documentará cinco claves compuestas con sus responsables y controles.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80%. Explique la función de una clave compuesta. Seleccione componentes conforme a la granularidad. Distinga claves insuficientes y excesivas. Respete el orden de selección. Compruebe tipos compatibles. Valide componentes nulos. Conserve columnas originales. Evite colisiones de concatenación. Diferencie identificación y relación. Cuente combinaciones. Separe claves inválidas. Construya una matriz documentada. Proponga controles de conciliación.",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 60
+ },
+ "5": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Parte B. Preparación (20% de la evaluación): El participante limpiará y clasificará diez claves.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80%. Conserve la clave original. Cree una clave limpia. Utilice tipos adecuados. Proteja ceros iniciales. Aplique limpieza y recorte correctamente. Distinga normalización y homologación. Utilice equivalencias autorizadas. Controle patrones y vigencias. Separe claves inválidas y no reconocidas. Conserve errores técnicos. Prepare claves compuestas. Calcule indicadores. Concilie todos los registros.",
+    "criterio": ""
+   },
+   {
+    "no": 2,
+    "tipo": "Abierta",
+    "pregunta": "Parte C. Equivalencias y componentes (20% de la evaluación): Diseñará una tabla de equivalencias y preparará una clave compuesta.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80%. Conserve la clave original. Cree una clave limpia. Utilice tipos adecuados. Proteja ceros iniciales. Aplique limpieza y recorte correctamente. Distinga normalización y homologación. Utilice equivalencias autorizadas. Controle patrones y vigencias. Separe claves inválidas y no reconocidas. Conserve errores técnicos. Prepare claves compuestas. Calcule indicadores. Concilie todos los registros.",
+    "criterio": ""
+   },
+   {
+    "no": 3,
+    "tipo": "Abierta",
+    "pregunta": "Parte D. Conciliación (20% de la evaluación): Clasificará todos los registros y obtendrá una diferencia sin explicar igual a cero.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80%. Conserve la clave original. Cree una clave limpia. Utilice tipos adecuados. Proteja ceros iniciales. Aplique limpieza y recorte correctamente. Distinga normalización y homologación. Utilice equivalencias autorizadas. Controle patrones y vigencias. Separe claves inválidas y no reconocidas. Conserve errores técnicos. Prepare claves compuestas. Calcule indicadores. Concilie todos los registros.",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 60
+ },
+ "6": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Parte B. Preparación (20% de la evaluación): El participante documentará tablas, granularidades, claves y tipos.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80%. Distinga combinar y anexar. Seleccione correctamente izquierda y derecha. Utilice consultas y claves preparadas. Verifique tipos. Interprete la estimación. Cree la combinación como nueva. Comprenda la columna anidada. Identifique coincidencias únicas y múltiples. Separe registros sin correspondencia. Calcule la cobertura. Conserve las consultas base. Conciliación completa de las filas. Documente la relación.",
+    "criterio": ""
+   },
+   {
+    "no": 2,
+    "tipo": "Abierta",
+    "pregunta": "Parte C. Primera combinación (20% de la evaluación): Ejecutará la combinación y clasificará coincidencias.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80%. Distinga combinar y anexar. Seleccione correctamente izquierda y derecha. Utilice consultas y claves preparadas. Verifique tipos. Interprete la estimación. Cree la combinación como nueva. Comprenda la columna anidada. Identifique coincidencias únicas y múltiples. Separe registros sin correspondencia. Calcule la cobertura. Conserve las consultas base. Conciliación completa de las filas. Documente la relación.",
+    "criterio": ""
+   },
+   {
+    "no": 3,
+    "tipo": "Abierta",
+    "pregunta": "Parte D. Indicadores y conciliación (20% de la evaluación): Calculará cobertura y explicará todas las filas.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80%. Distinga combinar y anexar. Seleccione correctamente izquierda y derecha. Utilice consultas y claves preparadas. Verifique tipos. Interprete la estimación. Cree la combinación como nueva. Comprenda la columna anidada. Identifique coincidencias únicas y múltiples. Separe registros sin correspondencia. Calcule la cobertura. Conserve las consultas base. Conciliación completa de las filas. Documente la relación.",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 60
+ },
+ "7": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Parte B. Diagnóstico (20% de la evaluación): El participante clasificará las claves por número de coincidencias.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80%. Configure correctamente la unión izquierda. Conserve todos los registros operativos. Valide la unicidad del catálogo. Identifique coincidencias únicas. Separe claves vacías y no reconocidas. Detecte coincidencias múltiples. Distinga nulos originales y generados. Expanda únicamente los campos necesarios. Valide vigencia. Calcule coberturas. Genere consultas de excepciones. Concilie filas y cantidades. Documente la relación.",
+    "criterio": ""
+   },
+   {
+    "no": 2,
+    "tipo": "Abierta",
+    "pregunta": "Parte C. Unión izquierda (20% de la evaluación): Ejecutará la unión y generará las consultas de salida.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80%. Configure correctamente la unión izquierda. Conserve todos los registros operativos. Valide la unicidad del catálogo. Identifique coincidencias únicas. Separe claves vacías y no reconocidas. Detecte coincidencias múltiples. Distinga nulos originales y generados. Expanda únicamente los campos necesarios. Valide vigencia. Calcule coberturas. Genere consultas de excepciones. Concilie filas y cantidades. Documente la relación.",
+    "criterio": ""
+   },
+   {
+    "no": 3,
+    "tipo": "Abierta",
+    "pregunta": "Parte D. Indicadores y conciliación (20% de la evaluación): Calculará cobertura, filas y cantidades antes y después.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80%. Configure correctamente la unión izquierda. Conserve todos los registros operativos. Valide la unicidad del catálogo. Identifique coincidencias únicas. Separe claves vacías y no reconocidas. Detecte coincidencias múltiples. Distinga nulos originales y generados. Expanda únicamente los campos necesarios. Valide vigencia. Calcule coberturas. Genere consultas de excepciones. Concilie filas y cantidades. Documente la relación.",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 60
+ },
+ "8": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Parte B. Comparación de uniones (20% de la evaluación): El participante comparará una unión izquierda y una interna.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80%. Configure correctamente una unión interna. Identifique la población coincidente. Conserve consultas de exclusiones. Separe claves no evaluables. Detecte coincidencias múltiples. Valide la granularidad. Calcule cobertura bilateral. Identifique maestros sin uso. Concilie filas. Concilie valores. Mantenga diferencia sin explicar igual a cero. Documente el alcance del resultado.",
+    "criterio": ""
+   },
+   {
+    "no": 2,
+    "tipo": "Abierta",
+    "pregunta": "Parte C. Ejecución (20% de la evaluación): Creará la consulta de coincidencias y sus salidas paralelas.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80%. Configure correctamente una unión interna. Identifique la población coincidente. Conserve consultas de exclusiones. Separe claves no evaluables. Detecte coincidencias múltiples. Valide la granularidad. Calcule cobertura bilateral. Identifique maestros sin uso. Concilie filas. Concilie valores. Mantenga diferencia sin explicar igual a cero. Documente el alcance del resultado.",
+    "criterio": ""
+   },
+   {
+    "no": 3,
+    "tipo": "Abierta",
+    "pregunta": "Parte D. Conciliación (20% de la evaluación): Conciliará registros, cantidades y cobertura.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80%. Configure correctamente una unión interna. Identifique la población coincidente. Conserve consultas de exclusiones. Separe claves no evaluables. Detecte coincidencias múltiples. Valide la granularidad. Calcule cobertura bilateral. Identifique maestros sin uso. Concilie filas. Concilie valores. Mantenga diferencia sin explicar igual a cero. Documente el alcance del resultado.",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 60
+ }
+}

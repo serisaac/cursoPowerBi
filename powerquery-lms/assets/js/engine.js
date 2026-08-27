@@ -182,7 +182,7 @@ function renderLessonContent(id) {
             <i data-lucide="folder-check" class="w-4 h-4 shrink-0"></i>
             Esta lección no tiene quiz: se aprueba marcando el entregable en la pestaña <button onclick="switchTab('quiz'); renderQuizFor(NO_QUIZ_LESSON_ID)" class="underline font-semibold">Evaluaciones</button>.
         </div>`;
-    } else if (id === TOTAL_LESSONS) {
+    } else if (id === TOTAL_LESSONS && FINAL_QUIZ.length > 0) {
         quizNote = `<div class="p-3 bg-amber-50 border border-amber-200 rounded-lg text-xs text-amber-900 flex items-center gap-2">
             <i data-lucide="crown" class="w-4 h-4 shrink-0"></i>
             Esta lección incluye la <strong>evaluación final integradora</strong> (${FINAL_QUIZ.length} preguntas) en la pestaña <button onclick="switchTab('quiz'); renderQuizFor('final')" class="underline font-semibold">Evaluaciones</button>.
@@ -264,9 +264,11 @@ function renderQuizSelector() {
             ${passed ? '<i data-lucide="check-circle-2" class="w-3 h-3 text-emerald-600"></i>' : ''} L${l.id}
         </button>`;
     }).join('');
-    btns += `<button onclick="renderQuizFor('final')" class="text-[11px] font-bold px-2.5 py-1.5 rounded-md border ${currentQuizContext=='final' ? 'bg-amber-100 text-amber-800 border-amber-300' : 'text-amber-700 border-transparent hover:bg-amber-50'} flex items-center gap-1">
-        <i data-lucide="crown" class="w-3 h-3"></i> Final
-    </button>`;
+    if (FINAL_QUIZ.length > 0) {
+        btns += `<button onclick="renderQuizFor('final')" class="text-[11px] font-bold px-2.5 py-1.5 rounded-md border ${currentQuizContext=='final' ? 'bg-amber-100 text-amber-800 border-amber-300' : 'text-amber-700 border-transparent hover:bg-amber-50'} flex items-center gap-1">
+            <i data-lucide="crown" class="w-3 h-3"></i> Final
+        </button>`;
+    }
     el.innerHTML = btns;
     safeIcons();
 }
@@ -564,7 +566,7 @@ function showSheet(cardId, sheetName) {
 // ---------- BADGES / PROGRESS ----------
 function isLessonComplete(id) {
     if (id === NO_QUIZ_LESSON_ID) return !!moduleState.theoryRead[id] && !!moduleState.entregableIntegrador;
-    if (id === TOTAL_LESSONS) return !!moduleState.theoryRead[id];
+    if (id === TOTAL_LESSONS && FINAL_QUIZ.length > 0) return !!moduleState.theoryRead[id];
     const q = moduleState.quizScores[id];
     const read = !!moduleState.theoryRead[id];
     return read && q != null && q >= 80;
@@ -594,35 +596,38 @@ function renderBadges() {
         </div>`;
     }).join('');
 
-    const finalDone = moduleState.finalQuizScore != null && moduleState.finalQuizScore >= 80 && count === TOTAL_LESSONS;
-    if (finalDone) count++;
-    html += `<div class="border rounded-xl p-5 flex flex-col items-center text-center space-y-3 transition ${finalDone ? 'bg-white border-amber-500/50 shadow-md' : 'bg-slate-50 border-slate-200 opacity-70 grayscale'}">
-        <div class="relative">
-            <div class="w-20 h-20 bg-gradient-to-tr from-amber-500 to-yellow-300 rounded-2xl rotate-45 flex items-center justify-center shadow border border-amber-300/40">
-                <i data-lucide="crown" class="w-9 h-9 text-slate-950 -rotate-45"></i>
+    let finalDone = false;
+    if (FINAL_QUIZ.length > 0) {
+        finalDone = moduleState.finalQuizScore != null && moduleState.finalQuizScore >= 80 && count === TOTAL_LESSONS;
+        if (finalDone) count++;
+        html += `<div class="border rounded-xl p-5 flex flex-col items-center text-center space-y-3 transition ${finalDone ? 'bg-white border-amber-500/50 shadow-md' : 'bg-slate-50 border-slate-200 opacity-70 grayscale'}">
+            <div class="relative">
+                <div class="w-20 h-20 bg-gradient-to-tr from-amber-500 to-yellow-300 rounded-2xl rotate-45 flex items-center justify-center shadow border border-amber-300/40">
+                    <i data-lucide="crown" class="w-9 h-9 text-slate-950 -rotate-45"></i>
+                </div>
+                <span class="absolute -top-2 -right-2 ${finalDone?'bg-amber-600':'bg-slate-700'} text-white rounded-full p-1 border border-white">
+                    <i data-lucide="${finalDone?'check':'lock'}" class="w-3.5 h-3.5"></i>
+                </span>
             </div>
-            <span class="absolute -top-2 -right-2 ${finalDone?'bg-amber-600':'bg-slate-700'} text-white rounded-full p-1 border border-white">
-                <i data-lucide="${finalDone?'check':'lock'}" class="w-3.5 h-3.5"></i>
-            </span>
-        </div>
-        <div>
-            <span class="text-[10px] bg-amber-100 text-amber-900 font-bold px-2 py-0.5 rounded-full">Certificado del Módulo</span>
-            <h3 class="text-xs font-bold text-slate-900 mt-2">Módulo ${MODULE_NUMBER} Completo</h3>
-            <p class="text-[11px] text-slate-500 mt-1">Aprueba las ${TOTAL_LESSONS} lecciones y la evaluación final.</p>
-        </div>
-        <span class="text-[10px] font-semibold ${finalDone?'text-amber-600':'text-slate-400 italic'}">${finalDone?'Obtenida':'Bloqueada'}</span>
-    </div>`;
+            <div>
+                <span class="text-[10px] bg-amber-100 text-amber-900 font-bold px-2 py-0.5 rounded-full">Certificado del Módulo</span>
+                <h3 class="text-xs font-bold text-slate-900 mt-2">Módulo ${MODULE_NUMBER} Completo</h3>
+                <p class="text-[11px] text-slate-500 mt-1">Aprueba las ${TOTAL_LESSONS} lecciones y la evaluación final.</p>
+            </div>
+            <span class="text-[10px] font-semibold ${finalDone?'text-amber-600':'text-slate-400 italic'}">${finalDone?'Obtenida':'Bloqueada'}</span>
+        </div>`;
+    }
 
     grid.innerHTML = html;
-    document.getElementById('badges-unlocked-count').innerText = `${count} / ${TOTAL_LESSONS + 1}`;
+    document.getElementById('badges-unlocked-count').innerText = `${count} / ${TOTAL_LESSONS + (FINAL_QUIZ.length > 0 ? 1 : 0)}`;
     safeIcons();
 }
 
 function updateUI() {
     let completedLessons = 0;
     LESSONS.forEach(l => { if (isLessonComplete(l.id)) completedLessons++; });
-    const finalPassed = moduleState.finalQuizScore != null && moduleState.finalQuizScore >= 80;
-    const totalTasks = TOTAL_LESSONS + 1; // lecciones + evaluación final
+    const finalPassed = FINAL_QUIZ.length > 0 && moduleState.finalQuizScore != null && moduleState.finalQuizScore >= 80;
+    const totalTasks = TOTAL_LESSONS + (FINAL_QUIZ.length > 0 ? 1 : 0); // lecciones + evaluación final (si existe)
     const completedTasks = completedLessons + (finalPassed ? 1 : 0);
     const pct = Math.round((completedTasks / totalTasks) * 100);
 
@@ -634,7 +639,7 @@ function updateUI() {
         if (finalPassed) nextCallout.classList.remove('hidden'); else nextCallout.classList.add('hidden');
     }
 
-    const isApproved = pct === 100;
+    const isApproved = FINAL_QUIZ.length > 0 && pct === 100;
     const badgeBanner = document.getElementById('badge-banner');
     const statusBadge = document.getElementById('module-status-badge');
 

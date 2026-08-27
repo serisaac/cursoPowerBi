@@ -1,0 +1,2122 @@
+[
+ {
+  "id": 1,
+  "title": "Introducción al modelo relacional",
+  "duracion": "90 a 110 min",
+  "dificultad": "Inicial",
+  "badgeIcon": "workflow",
+  "badgeDesc": "Dominaste el modelo relacional",
+  "objetivos": [
+   "Explicar qué es un modelo relacional.",
+   "Reconocer una entidad dentro de un proceso.",
+   "Identificar atributos y registros.",
+   "Diferenciar entre una tabla operativa y una tabla maestra.",
+   "Reconocer la función de un catálogo.",
+   "Distinguir una clave primaria de una clave externa.",
+   "Identificar relaciones uno a uno.",
+   "Identificar relaciones uno a varios.",
+   "Reconocer relaciones varios a varios.",
+   "Explicar el concepto de cardinalidad.",
+   "Comprender la integridad referencial.",
+   "Identificar registros con coincidencia y sin coincidencia.",
+   "Reconocer registros huérfanos.",
+   "Diferenciar una tabla de eventos de una tabla descriptiva.",
+   "Comprender la diferencia entre relacionar y copiar información.",
+   "Representar gráficamente una relación entre tablas.",
+   "Diagnosticar riesgos antes de combinar consultas.",
+   "Preparar un mapa relacional para el proyecto del módulo."
+  ],
+  "situacion": "Una organización usa dos archivos para dar seguimiento a solicitudes internas: un registro operativo con el código de cada área, y un catálogo maestro con el nombre oficial, el responsable y el estado de vigencia de cada área — pero ninguno de los dos contiene toda la información por sí solo.<br><br>Antes de combinarlos hay que resolver varias preguntas: ¿el código es único dentro del catálogo?, ¿qué pasa si un área aparece dos veces?, ¿se conservarán todas las solicitudes? Sin responderlas primero, cualquier combinación en Power Query corre el riesgo de perder o multiplicar información sin que nadie lo note.",
+  "secciones": [
+   {
+    "title": "1. ¿Qué es un modelo relacional?",
+    "para": "Un modelo relacional es una forma de organizar información mediante tablas que pueden relacionarse utilizando campos comunes. Cada tabla representa un concepto específico del proceso. Ejemplos de conceptos: Colaboradores. Departamentos. Solicitudes. Órdenes. Equipos. Materiales. Proveedores. Facturas. Inspecciones. Lotes. Movimientos. Acciones de seguimiento. La información no necesita almacenarse repetidamente en una sola tabla. Puede distribuirse entre varias tablas y recuperarse mediante relaciones. Ejemplo conceptual: Solicitudes ↓ Código de área ↓ Catálogo de áreas La tabla de solicitudes registra los eventos. El catálogo de áreas aporta las descripciones oficiales. 💡 Concepto clave: el modelo relacional organiza la información según su función y conecta las tablas mediante claves.:"
+   },
+   {
+    "title": "2. ¿Por qué separar la información en tablas?",
+    "para": "Imaginemos que cada solicitud contiene: Código del área. Nombre completo del área. Nombre del responsable. Correo del responsable. Ubicación. Estado de vigencia. Si Mantenimiento tiene 5,000 solicitudes, la información descriptiva del área aparecería repetida 5,000 veces. Problemas de repetir información: Mayor tamaño del archivo. Diferencias de escritura. Responsables desactualizados. Correcciones manuales. Variaciones en nombres. Dificultades para mantener el catálogo. Riesgo de modificar solo algunas filas. Falta de control de vigencia. Alternativa relacional: Tabla de solicitudes: Conserva: Folio Fecha Código de área Tipo Estatus Catálogo de áreas: Conserva: Código de área Nombre oficial Responsable Ubicación Activo La información descriptiva se incorpora cuando se necesita mediante una relación."
+   },
+   {
+    "title": "3.1 Definición",
+    "para": "Una entidad es un objeto, persona, concepto o evento sobre el cual se almacena información. Ejemplos de entidades: Recursos Humanos: Colaborador. Curso. Departamento. Movimiento laboral. Contabilidad: Proveedor. Factura. Centro de costo. Pago. Calidad: Lote. Inspección. Producto. Desviación. Mantenimiento: Equipo. Orden. Técnico. Refacción. Producción: Orden de producción. Producto. Línea. Turno. Almacenes: Material. Lote. Ubicación. Movimiento. Seguridad: Evento. Acción. Área. Responsable. Servicios médicos administrativos: Folio anónimo. Cita administrativa. Tipo de atención. Estatus."
+   },
+   {
+    "title": "4.1 Definición",
+    "para": "Un atributo es una característica que describe una entidad. Ejemplo: Entidad: equipo: Sus atributos pueden ser: Código del equipo Nombre Tipo Ubicación Fecha de alta Estado Responsable Entidad: material: Sus atributos pueden ser: Código de material Descripción Unidad Categoría Activo Entidad: solicitud: Sus atributos pueden ser: Folio Fecha Área Tipo Responsable Estatus En una tabla, los atributos normalmente se representan mediante columnas."
+   },
+   {
+    "title": "5.1 Definición",
+    "para": "Un registro representa una aparición concreta de la entidad. En una tabla, generalmente corresponde a una fila. Ejemplo: Tabla de equipos: Cada fila representa un equipo. Pregunta fundamental: Antes de relacionar o combinar tablas debe completarse la frase: Cada fila representa... Ejemplos: Cada fila representa una solicitud. Cada fila representa un equipo. Cada fila representa un movimiento. Cada fila representa una inspección. Cada fila representa una actividad de una orden. Esta definición corresponde a la granularidad, que se desarrollará con mayor profundidad en la Lección 2."
+   },
+   {
+    "title": "6.1 Definición",
+    "para": "Una tabla operativa registra eventos, transacciones o actividades realizadas dentro de un proceso. Características: Crece constantemente. Contiene fechas. Puede tener numerosas filas. Registra eventos repetidos para una misma entidad. Contiene claves relacionadas con catálogos. Puede actualizarse diaria, semanal o mensualmente. Ejemplos: Solicitudes internas. Órdenes de mantenimiento. Movimientos de inventario. Inspecciones. Producción por turno. Facturas. Capacitaciones. Acciones correctivas. Ejemplo: El código AREA-03 puede repetirse porque un área puede generar varias solicitudes."
+   },
+   {
+    "title": "7.1 Definición",
+    "para": "Una tabla maestra contiene los valores oficiales o autorizados de una entidad. Características: Tiene menor cantidad de filas. Sus claves deberían ser únicas. Contiene descripciones oficiales. Puede incluir vigencias. Debe tener un responsable. Se utiliza como referencia. Cambia con menor frecuencia. Ejemplos: Catálogo de áreas. Catálogo de materiales. Catálogo de equipos. Padrón de colaboradores. Catálogo de estatus. Catálogo de proveedores. Catálogo de unidades. Catálogo de centros de costo. Ejemplo:"
+   },
+   {
+    "title": "9. Catálogos maestros",
+    "para": "Un catálogo maestro establece los valores oficiales de un campo o entidad. Ejemplo: Catálogo de estatus: Pendiente En proceso En validación Finalizada Cancelada Suspendida Estructura recomendada: Beneficios: Evita variaciones. Facilita relaciones. Controla vigencias. Permite detectar valores desconocidos. Reduce correcciones manuales. Mejora trazabilidad."
+   },
+   {
+    "title": "10. Tablas históricas",
+    "para": "Una tabla histórica conserva diferentes estados o versiones de una entidad. Ejemplo: En este caso, AREA-07 aparece más de una vez. No necesariamente es un duplicado. Cada fila representa una versión del área dentro de un periodo de vigencia. Clave conceptual: Código de área + Vigente desde Riesgo al combinar: Si se relaciona únicamente por Código de área, un registro operativo podría encontrar dos coincidencias y multiplicarse."
+   },
+   {
+    "title": "11.1 Definición",
+    "para": "Una clave es uno o varios campos utilizados para identificar un registro o relacionarlo con otra tabla. Ejemplos: Número de empleado. Código de área. Código de material. Número de orden. Folio. Código de equipo. Proveedor y factura. Material, lote y ubicación. Funciones de una clave: Identificar. Relacionar. Buscar. Validar. Detectar duplicados. Integrar fuentes. Conservar trazabilidad."
+   },
+   {
+    "title": "12. Clave primaria como concepto de negocio",
+    "para": "Una clave primaria identifica de manera única cada registro dentro de una tabla. Ejemplo: Catálogo de áreas: Código de área Cada código debería aparecer una sola vez dentro del catálogo vigente. Condiciones deseables: No estar vacía. Ser única. Ser estable. Mantener el mismo tipo de dato. No depender de una descripción variable. Poder utilizarse entre sistemas. Aclaración: Power Query no obliga a definir una clave primaria como lo haría una base de datos relacional. Por ello, la unicidad debe comprobarse como parte del diagnóstico."
+   },
+   {
+    "title": "13. Clave externa o de relación",
+    "para": "Una clave externa es un campo de una tabla que hace referencia a la clave de otra tabla. Ejemplo: Tabla operativa: Código de área = AREA-03 `` Catálogo maestro: Código de área = AREA-03 Nombre = Mantenimiento La tabla operativa utiliza el código para obtener información del catálogo. Representación: Solicitudes[Código de área] ↓ Catálogo de áreas[Código de área] Power Query puede combinar tablas mediante una o varias columnas. Los encabezados no necesitan tener el mismo nombre, pero los campos relacionados deben utilizar tipos de datos compatibles para producir coincidencias correctas. [learn.microsoft.com]"
+   },
+   {
+    "title": "15. Relaciones entre tablas",
+    "para": "Una relación describe cómo se conectan los registros de dos tablas. Tipos principales: Uno a uno. Uno a varios. Varios a uno. Varios a varios. Estos tipos describen la cantidad de coincidencias esperada en cada lado."
+   },
+   {
+    "title": "16. Relación uno a uno",
+    "para": "Definición: Cada registro de la primera tabla encuentra como máximo un registro en la segunda, y viceversa. Ejemplo: Tabla de colaboradores: Tabla de contacto institucional: Cada colaborador tiene una sola correspondencia. Riesgo: Si EMP-001 aparece dos veces en la tabla de contacto, la relación deja de ser técnicamente uno a uno."
+   },
+   {
+    "title": "17. Relación uno a varios",
+    "para": "Definición: Un registro de una tabla puede relacionarse con varios registros de otra. Ejemplo: Catálogo de áreas: Solicitudes: Un área tiene varias solicitudes. Representación: Área │ │ ∞ Solicitudes Interpretación: El catálogo tiene una fila por área. La tabla operativa tiene muchas solicitudes. El código puede repetirse en las solicitudes. El código no debería repetirse en el catálogo vigente."
+   },
+   {
+    "title": "18. Relación varios a uno",
+    "para": "Es la misma relación anterior observada desde el lado contrario. Ejemplo: Muchas solicitudes pertenecen a una sola área. Solicitudes ∞ │ │ Área En una combinación típica: La tabla operativa se coloca a la izquierda. El catálogo se coloca a la derecha. Se conserva cada solicitud. Se incorporan los atributos del área. Esta será una aplicación central de la unión izquierda en la Lección 7."
+   },
+   {
+    "title": "19. Relación varios a varios",
+    "para": "Definición: Varios registros de una tabla pueden relacionarse con varios registros de otra. Ejemplo: Colaboradores: Un colaborador puede asistir a varios cursos. Cursos: Un curso puede recibir a varios colaboradores. La relación no se controla adecuadamente relacionando directamente las dos tablas mediante un nombre. Se utiliza una tabla intermedia: Colaboradores ↓ Inscripciones ↓ Cursos Tabla de inscripciones: Beneficio: La tabla intermedia convierte la relación varios a varios en dos relaciones uno a varios."
+   },
+   {
+    "title": "20.1 Definición",
+    "para": "La cardinalidad describe cuántas coincidencias puede tener una clave entre dos tablas. Ejemplos: Uno a uno Uno a varios Varios a uno Varios a varios Preguntas para determinarla: ¿La clave es única en la primera tabla? ¿La clave es única en la segunda? ¿Puede repetirse en la tabla operativa? ¿Puede tener versiones históricas? ¿Existen varias descripciones para el mismo código? ¿Cuál es la granularidad de cada tabla? ¿Qué resultado se espera después de combinar?"
+   },
+   {
+    "title": "21. Matriz de cardinalidad",
+    "para": "Uso: Antes de combinar, se debe registrar: Conteo de filas. Claves distintas. Claves únicas. Claves repetidas. Claves vacías. Cardinalidad esperada."
+   },
+   {
+    "title": "22.1 Definición",
+    "para": "La integridad referencial significa que los valores utilizados para relacionar una tabla deben existir en la tabla maestra correspondiente. Ejemplo válido: Solicitud: AREA-03 Catálogo: AREA-03 Ejemplo sin integridad referencial: Solicitud: AREA-99 Catálogo: no existe AREA-99 Posibles causas: Error de captura. Catálogo desactualizado. Código nuevo no aprobado. Código histórico. Espacios. Diferencia de tipo. Ceros iniciales. Fuente equivocada. Tratamiento: Conservar el registro. Marcar la falta de coincidencia. Enviar a revisión. Confirmar el catálogo. Corregir el origen. Actualizar la relación."
+   },
+   {
+    "title": "23. Registros con coincidencia",
+    "para": "Un registro con coincidencia encuentra una clave equivalente en la tabla relacionada. Ejemplo: SOL-0001 Código de área = AREA-03 El catálogo contiene: AREA-03 = Mantenimiento Después de combinar y expandir:"
+   },
+   {
+    "title": "24. Registros sin coincidencia",
+    "para": "Un registro sin coincidencia no encuentra la clave correspondiente. Ejemplo: SOL-0004 Código de área = AREA-99 El catálogo no contiene AREA-99. Resultado conceptual: Este null no significa necesariamente que el área estuviera vacía en el origen. Significa: No se encontró una coincidencia en la tabla relacionada. Tratamiento recomendado: Crear columnas como: Encontró coincidencia Estado de relación Motivo de no coincidencia Requiere revisión"
+   },
+   {
+    "title": "25. Registros huérfanos",
+    "para": "Un registro huérfano contiene una clave externa sin una correspondencia válida en la tabla maestra. Ejemplo: Movimiento de material = MAT-999 Catálogo de materiales = MAT-999 no existe Riesgos: Descripciones vacías. Clasificaciones incompletas. Agrupaciones incorrectas. Registros no contabilizados. Relaciones fallidas. Información fuera de vigencia. Indicador: Registros huérfanos / registros evaluados"
+   },
+   {
+    "title": "26. Elementos maestros sin movimiento",
+    "para": "También puede ocurrir el caso contrario. El catálogo contiene: AREA-08 = Planeación pero no aparece ningún registro operativo asociado. Esto puede significar: El área no tuvo actividad. Falta un archivo. El periodo está incompleto. La clave cambió. El área está inactiva. Existe un problema de extracción. Esta condición se analizará posteriormente mediante la unión derecha y la antiderecha."
+   },
+   {
+    "title": "27. Relacionar frente a copiar información",
+    "para": "Copiar información: Consiste en introducir manualmente las descripciones en cada registro. Ejemplo: AREA-03 → Mantenimiento repetido en miles de filas. Relacionar información: Consiste en conservar el código y recuperar la descripción desde el catálogo. Ventajas de relacionar: Fuente única de definición. Menos captura manual. Mayor consistencia. Actualización controlada. Identificación de valores no reconocidos. Menos columnas en el origen. Reutilización del catálogo. Mejor trazabilidad. Precaución: Si el catálogo cambia, debe analizarse si el nuevo valor aplica: A todos los periodos. Solo al periodo actual. A partir de una fecha. Únicamente a registros nuevos."
+   },
+   {
+    "title": "28. Combinar en Power Query",
+    "para": "La operación Combinar consultas relaciona dos tablas mediante valores coincidentes de una o varias columnas. Power Query distingue entre tabla izquierda y tabla derecha, y la posición es importante al seleccionar el tipo de unión. [learn.microsoft.com]: Elementos del cuadro de combinación: Tabla izquierda. Tabla derecha. Columnas seleccionadas. Orden de columnas. Tipo de unión. Estimación de coincidencias. Coincidencia aproximada, cuando corresponda. Resultado inicial: Power Query crea una columna que contiene tablas relacionadas. Posteriormente, esa columna se expande para incorporar los atributos deseados."
+   },
+   {
+    "title": "29. Combinar no modifica el origen",
+    "para": "La combinación se registra como un paso dentro de la consulta. Se conserva: Tabla izquierda. Tabla derecha. Claves originales. Paso de combinación. Columna anidada. Columnas expandidas. Registros sin coincidencia. Buena práctica: Mantener consultas separadas para: Origen operativo Catálogo maestro Resultado combinado Registros sin coincidencia"
+   },
+   {
+    "title": "30. Riesgos de combinar sin diagnóstico",
+    "para": "Riesgo 1. Claves con tipos diferentes: 00125 como texto 125 como número Pueden no coincidir correctamente. Riesgo 2. Espacios: \"AREA-03\" \" AREA-03 \" Riesgo 3. Claves duplicadas en el catálogo: Una solicitud puede encontrar varias coincidencias. Riesgo 4. Diferente granularidad: Una orden puede relacionarse con varias actividades y multiplicarse. Riesgo 5. Claves vacías: Los registros no pueden relacionarse de forma confiable. Riesgo 6. Catálogo histórico: Una clave puede tener varias vigencias. Riesgo 7. Expandir demasiadas columnas: Se incorpora información innecesaria o confidencial. Riesgo 8. No conciliar: No se detecta la multiplicación o pérdida de registros."
+   },
+   {
+    "title": "31. Diagnóstico antes de combinar",
+    "para": "Tabla izquierda: Debe revisarse: Registros. Granularidad. Clave. Claves vacías. Claves distintas. Claves repetidas. Tipo de dato. Periodo. Tabla derecha: Debe revisarse: Registros. Granularidad. Clave. Unicidad. Vigencia. Duplicados. Tipo. Propietario. Relación: Debe documentarse: Columna izquierda. Columna derecha. Cardinalidad esperada. Tipo de unión futuro. Columnas que se incorporarán. Registros sin coincidencia. Control de filas."
+   },
+   {
+    "title": "32. Mapa relacional",
+    "para": "Un mapa relacional representa las tablas y sus conexiones. Ejemplo del proyecto: Catálogo de áreas Código de área │ │ ∞ Solicitudes operativas Código de área Arquitectura ampliada: Catálogo de áreas │ │ Código de área │ Catálogo de estatus ─ Solicitudes operativas ─ Catálogo de responsables │ │ Código de categoría │ Catálogo de categorías Elementos que debe mostrar: Nombre de cada tabla. Qué representa una fila. Clave. Campo de relación. Cardinalidad. Fuente. Responsable. Frecuencia. Riesgos."
+   },
+   {
+    "title": "33. Diagrama conceptual del proyecto",
+    "para": "Tabla principal: Registros operativos Cada fila representa: Una solicitud dentro de un periodo. Catálogo maestro: Catálogo de áreas Cada fila representa: Un área autorizada y vigente. Clave: Código de área Cardinalidad esperada: Muchas solicitudes pertenecen a una sola área. Objetivo de la relación: Incorporar: Nombre del área. Responsable. Vigencia. Clasificación. Excepciones esperadas: Código vacío. Código no reconocido. Código no vigente. Clave duplicada en el catálogo. Variantes de formato. Multiplicación de registros."
+   },
+   {
+    "title": "34. Aplicaciones departamentales",
+    "para": "👥 Recursos Humanos: Tabla operativa: Registro de capacitaciones Tabla maestra: Padrón de colaboradores Clave: Número de empleado Relación: Muchos registros de capacitación pertenecen a un colaborador. 💰 Contabilidad: Tabla operativa: Facturas Tabla maestra: Catálogo de proveedores Clave: Código de proveedor Riesgo: Un proveedor duplicado puede multiplicar las facturas. Los ejercicios deben utilizar información ficticia. 🔬 Calidad: Tabla operativa: Inspecciones Tabla maestra: Catálogo de productos Clave: Código de producto Resultado esperado: Incorporar descripción, categoría y especificación. 🔧 Mantenimiento: Tabla operativa: Órdenes Tabla maestra: Catálogo de equipos Clave: Código de equipo Cardinalidad: Muchos servicios para un equipo. 🏭 Producción: Tabla operativa: Producción por turno Tabla maestra: Catálogo de productos Clave: Código de producto Riesgo: Productos no vigentes o códigos sin catálogo. 📦 Almacenes: Tabla operativa: Movimientos Tabla maestra: Catálogo de materiales Clave: Código de material Resultado esperado: Incorporar descripción, unidad y categoría. 🦺 Seguridad: Tabla operativa: Acciones correctivas Tabla maestra: Catálogo de áreas Clave: Código de área Riesgo: Áreas históricas o no reconocidas. 🩺 Servicios médicos administrativos: Tabla operativa: Registro administrativo de citas Tabla maestra: Catálogo de tipos administrativos Clave: Código de tipo Los datos deben ser sintéticos o anonimizados."
+   },
+   {
+    "title": "35. Responsabilidades",
+    "para": "Responsable de la tabla operativa: Define qué representa una fila. Mantiene la clave externa. Corrige registros sin clave. Confirma el periodo. Informa cambios de estructura. Responsable del catálogo: Garantiza la unicidad. Mantiene descripciones oficiales. Controla vigencias. Autoriza nuevos valores. Corrige duplicados. Responsable de Power Query: Prepara las claves. Documenta la cardinalidad. Selecciona la unión. Conserva registros sin coincidencia. Controla conteos. Evita expandir información innecesaria. Responsable del proceso: Aprueba la relación. Define el tratamiento de excepciones. Confirma la granularidad. Autoriza la liberación. Usuario del resultado: Conoce el periodo. Revisa valores no reconocidos. No modifica manualmente la salida. Informa diferencias."
+   }
+  ],
+  "resumen": [
+   "Un modelo relacional organiza información mediante tablas conectadas.",
+   "Una entidad representa un objeto, concepto o evento.",
+   "Un atributo describe una entidad.",
+   "Un registro representa una aparición concreta.",
+   "Las tablas operativas registran eventos.",
+   "Las tablas maestras contienen valores oficiales.",
+   "Los catálogos reducen variaciones y centralizan definiciones.",
+   "Las tablas históricas pueden contener varias versiones.",
+   "Una clave identifica o relaciona registros.",
+   "La clave primaria debe ser única dentro de su alcance.",
+   "La clave externa puede repetirse.",
+   "Existen relaciones uno a uno, uno a varios y varios a varios.",
+   "La cardinalidad describe la cantidad de coincidencias.",
+   "La integridad referencial exige que las claves relacionadas existan.",
+   "Un registro huérfano no encuentra correspondencia.",
+   "Una falta de coincidencia debe conservarse y revisarse.",
+   "Relacionar información es preferible a copiarla manualmente.",
+   "Power Query combina tablas mediante una o varias columnas.",
+   "Los tipos de datos deben ser compatibles.",
+   "El diagnóstico previo evita pérdidas y multiplicaciones.",
+   "El mapa relacional documenta tablas, claves y cardinalidades.",
+   "Los conteos antes y después son controles obligatorios."
+  ],
+  "quiz": [
+   {
+    "q": "Una tabla maestra se utiliza principalmente para",
+    "opts": [
+     "Registrar eventos diarios",
+     "Mantener valores oficiales de una entidad",
+     "Crear gráficos",
+     "Sustituir las claves"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "En un catálogo vigente, su clave principal debería",
+    "opts": [
+     "Repetirse en todas las filas",
+     "Ser única dentro del alcance definido",
+     "Contener siempre la descripción",
+     "Ser numérica obligatoriamente"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Si muchas solicitudes pertenecen a una sola área, la relación desde solicitudes hacia áreas es",
+    "opts": [
+     "Uno a uno",
+     "Varios a uno",
+     "Varios a varios",
+     "Sin relación"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Un registro huérfano es aquel que",
+    "opts": [
+     "Tiene demasiadas columnas",
+     "No encuentra correspondencia en la tabla relacionada",
+     "Aparece una sola vez",
+     "Tiene una fecha futura"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Antes de combinar consultas debe validarse",
+    "opts": [
+     "Únicamente el color de las tablas",
+     "Granularidad, claves, tipos y cardinalidad",
+     "Solo el nombre de las hojas",
+     "Únicamente el número de columnas"
+    ],
+    "correct": 1
+   }
+  ],
+  "files": []
+ },
+ {
+  "id": 2,
+  "title": "Granularidad antes de combinar",
+  "duracion": "100 a 120 min",
+  "dificultad": "Inicial a intermedia",
+  "badgeIcon": "layers",
+  "badgeDesc": "Dominaste la granularidad antes de combinar",
+  "objetivos": [
+   "Explicar qué significa granularidad.",
+   "Definir qué representa una fila.",
+   "Identificar el nivel de detalle de una tabla.",
+   "Diferenciar granularidad operativa, maestra, histórica y resumida.",
+   "Comparar la granularidad de dos fuentes.",
+   "Reconocer tablas compatibles e incompatibles para una combinación.",
+   "Identificar relaciones uno a uno, uno a varios y varios a varios.",
+   "Predecir la cantidad de coincidencias esperadas.",
+   "Detectar riesgos de multiplicación de registros.",
+   "Explicar por qué una combinación puede inflar totales.",
+   "Identificar claves insuficientes.",
+   "Reconocer cuándo debe agregarse una columna a la clave.",
+   "Determinar cuándo debe agruparse una tabla antes de combinar.",
+   "Diferenciar nivel de detalle y número de filas.",
+   "Diseñar una matriz de granularidad.",
+   "Registrar conteos antes y después de una combinación.",
+   "Conciliar registros y valores.",
+   "Documentar la decisión de combinación."
+  ],
+  "situacion": "Una organización combina una tabla de órdenes de mantenimiento (una fila por orden) con una tabla de actividades realizadas (varias filas por orden). Al combinarlas y expandir las actividades, el costo autorizado de cada orden se repite tantas veces como actividades tenga.<br><br>El resultado es técnicamente correcto — pero al sumar la columna de costo después de expandir, el total sale casi el doble del real (24,800 en vez de 11,300). La combinación no alteró ningún valor individual; lo que cambió fue la granularidad del resultado, y eso basta para inflar cualquier suma.",
+  "secciones": [
+   {
+    "title": "1. ¿Qué significa granularidad?",
+    "para": "La granularidad indica el nivel de detalle representado por cada fila de una tabla. Para definirla se utiliza la frase: Cada fila representa... Ejemplos: Cada fila representa un colaborador. Cada fila representa una solicitud. Cada fila representa una actividad. Cada fila representa un material y lote. Cada fila representa una orden por turno. Cada fila representa una inspección de un lote. Importancia: La granularidad permite determinar: Qué columnas identifican una fila. Qué valores pueden repetirse. Qué relaciones son válidas. Qué tipo de combinación puede utilizarse. Cuántas filas se esperan. Qué cálculos pueden realizarse. Qué totales podrían duplicarse. 💡 Concepto clave: conocer las columnas no es suficiente. Debe comprenderse qué representa cada fila.:"
+   },
+   {
+    "title": "2. Nivel de detalle",
+    "para": "El nivel de detalle describe cuánta información contiene cada registro. Nivel resumido: Una fila por mes y departamento. Nivel intermedio: Una fila por día y departamento. Nivel detallado: Una fila por solicitud. Nivel más detallado: Una fila por solicitud y actividad. Las cuatro tablas pueden tratar el mismo proceso, pero no tienen la misma granularidad."
+   },
+   {
+    "title": "3. Granularidad y cantidad de filas",
+    "para": "La granularidad no es simplemente el número de filas. Tabla A: 1,000 filas Una fila por solicitud Tabla B: 50 filas Una fila por área y mes Tabla C: 3,500 filas Una fila por actividad de solicitud El número de filas indica volumen. La granularidad indica significado. Comparación:"
+   },
+   {
+    "title": "4. Granularidad de una tabla operativa",
+    "para": "Una tabla operativa puede registrar: Un evento. Una transacción. Una actividad. Un movimiento. Una captura. Una inspección. Una orden. Una etapa. Un seguimiento. Ejemplos: Solicitudes: Una fila por solicitud Actividades: Una fila por solicitud y actividad Inventario: Una fila por material, lote y ubicación Producción: Una fila por orden, turno y etapa Capacitación: Una fila por colaborador, curso y fecha"
+   },
+   {
+    "title": "5. Granularidad de una tabla maestra",
+    "para": "Una tabla maestra debería representar una entidad autorizada. Ejemplos: Catálogo de áreas: Una fila por área vigente Catálogo de materiales: Una fila por código de material Catálogo de equipos: Una fila por código de equipo Catálogo de proveedores: Una fila por código de proveedor Riesgo: Si el catálogo contiene varias filas por código sin una justificación histórica, la combinación puede multiplicar los registros operativos."
+   },
+   {
+    "title": "6. Granularidad histórica",
+    "para": "Una tabla histórica conserva diferentes versiones de una entidad. Ejemplo: Cada fila representa: Una versión del responsable de un equipo dentro de un periodo de vigencia. La clave no es solamente: Código de equipo Conceptualmente también requiere: Código de equipo + periodo de vigencia Riesgo: Si se combina por código sin considerar la fecha: Una orden puede encontrar varias coincidencias. Las filas pueden multiplicarse. Puede asignarse el responsable equivocado. El historial puede interpretarse como duplicado."
+   },
+   {
+    "title": "7. Granularidad resumida",
+    "para": "Una tabla resumida contiene agregaciones. Ejemplo: Cada fila representa: Un área dentro de un mes. No representa solicitudes individuales. Riesgo: Si se combina con una tabla de solicitudes por Área, el total mensual se repetirá en cada solicitud del área."
+   },
+   {
+    "title": "8. Granularidad de una tabla de detalle",
+    "para": "Una tabla de detalle contiene varias filas relacionadas con una entidad principal. Ejemplo: Orden principal: Una fila por orden Refacciones: Una fila por orden y refacción Actividades: Una fila por orden y actividad Técnicos: Una fila por orden y técnico Estas tablas pueden ser válidas por separado, pero combinarlas todas directamente por Orden puede producir relaciones varios a varios."
+   },
+   {
+    "title": "9. Granularidad compatible",
+    "para": "Dos tablas tienen granularidad compatible cuando su relación y el resultado esperado están claramente definidos. Ejemplo compatible: Solicitudes: Una fila por solicitud Catálogo de áreas: Una fila por área Relación: Muchas solicitudes pertenecen a un área. Resultado: Una fila por solicitud La tabla maestra aporta columnas sin cambiar el nivel de detalle."
+   },
+   {
+    "title": "10. Granularidad incompatible",
+    "para": "La incompatibilidad aparece cuando la combinación genera un nivel de detalle distinto del esperado. Ejemplo: Órdenes: Una fila por orden Actividades: Una fila por orden y actividad Si el resultado deseado es: Una fila por orden expandir las actividades directamente cambia la granularidad a: Una fila por orden y actividad Consecuencia: Se repiten columnas de la orden. Se inflan totales. Se duplican importes. Cambian los conteos. El reporte deja de representar una fila por orden."
+   },
+   {
+    "title": "11. La combinación no siempre conserva la granularidad",
+    "para": "Una combinación puede: Conservar el número de filas. Reducirlo. Aumentarlo. Cambiar el significado de cada fila. Caso 1. Tabla derecha única: Muchos registros → un valor maestro Resultado: La granularidad se conserva. Caso 2. Tabla derecha repetida: Un registro → varias coincidencias Resultado: La granularidad aumenta al nivel de la coincidencia. Caso 3. Unión interna: Los registros sin coincidencia se excluyen. Resultado: La cantidad de filas puede disminuir. La operación Combinar utiliza los valores coincidentes de una o varias columnas. La posición de las tablas, el tipo de unión elegido, los tipos de los campos y el orden de selección de las claves influyen en el resultado. [learn.microsoft.com]"
+   },
+   {
+    "title": "12. Cardinalidad y granularidad",
+    "para": "La cardinalidad describe las coincidencias. La granularidad describe el significado de cada fila. Ambos conceptos deben analizarse juntos. Ejemplo 1: Tabla izquierda: Una fila por solicitud Tabla derecha: Una fila por área Cardinalidad: Varios a uno Resultado: Una fila por solicitud Ejemplo 2: Tabla izquierda: Una fila por orden Tabla derecha: Una fila por orden y actividad Cardinalidad: Uno a varios Resultado después de expandir: Una fila por orden y actividad Ejemplo 3: Tabla izquierda: Una fila por orden y material Tabla derecha: Una fila por orden y actividad Clave seleccionada: Orden Cardinalidad: Varios a varios Riesgo: Cada material puede relacionarse con cada actividad de la orden."
+   },
+   {
+    "title": "13. Multiplicación de registros",
+    "para": "La multiplicación ocurre cuando una fila de la tabla izquierda encuentra varias coincidencias en la tabla derecha. Ejemplo: Órdenes: Actividades: Después de expandir: Diferencia: Filas antes: 1 Filas después: 3 Factor de multiplicación: 3"
+   },
+   {
+    "title": "14. Factor de multiplicación",
+    "para": "Fórmula conceptual: Factor de multiplicación = Filas después de expandir / Filas antes de expandir Ejemplo: Filas antes = 1,000 Filas después = 1,250 Factor = 1,250 / 1,000 = 1.25 Interpretación: Por cada fila original existen, en promedio: 1.25 filas en el resultado Esto puede ser esperado o puede representar un problema."
+   },
+   {
+    "title": "15. Totales inflados",
+    "para": "Un total se infla cuando un valor de nivel superior se repite en filas de detalle y posteriormente se suma. Ejemplo: Después de expandir: Costo expandido = 5,000 × 3 + 3,500 × 2 = 22,000 Costo correcto: 5,000 + 3,500 = 8,500 Columnas vulnerables: Importe de factura. Costo autorizado. Cantidad total. Horas presupuestadas. Inventario inicial. Producción total. Peso total. Meta mensual."
+   },
+   {
+    "title": "16. Conteos inflados",
+    "para": "También pueden inflarse los conteos. Ejemplo: Antes: Órdenes = 3 Después de combinar actividades: Filas = 6 Si se cuenta cada fila como orden: Órdenes reportadas = 6 Soluciones posibles: Contar órdenes distintas. Mantener una tabla separada de órdenes. Agrupar antes de combinar. Utilizar la clave correcta. Diseñar el reporte conforme a la nueva granularidad."
+   },
+   {
+    "title": "17. Clave insuficiente",
+    "para": "Una clave es insuficiente cuando no identifica el nivel de detalle requerido. Ejemplo: Tabla de producción: Orden + Turno + Etapa Si se combina únicamente por: Orden pueden relacionarse: Todos los turnos. Todas las etapas. Todos los registros de la orden. Resultado: Una relación varios a varios no intencional. Diagnóstico: Preguntar: ¿La clave identifica una fila? ¿Se repite dentro de la tabla? ¿Qué columna diferencia los registros? ¿La misma combinación existe en ambas tablas? ¿Cuál es la granularidad deseada?"
+   },
+   {
+    "title": "18. Agregar columnas a la clave",
+    "para": "Cuando una columna no es suficiente, puede utilizarse una combinación. Ejemplos: Producción: Orden + Turno Inventario: Material + Lote + Ubicación Calidad: Lote + Tipo de inspección Capacitación: Empleado + Curso + Fecha Contabilidad: Proveedor + Factura + Periodo En Power Query pueden seleccionarse varias columnas para combinar. El orden de selección debe ser equivalente en ambas tablas y los tipos de datos deben ser compatibles. [learn.microsoft.com]"
+   },
+   {
+    "title": "19. Riesgo de utilizar demasiadas columnas",
+    "para": "Una clave también puede ser excesivamente detallada. Ejemplo: Orden + Fecha + Responsable + Estatus + Observación Si la observación cambia, la fila parece diferente aunque represente la misma orden. Consecuencias: No se encuentran coincidencias. Se crean falsos valores únicos. Se pierde estabilidad. La clave cambia con las actualizaciones. Se dificulta el mantenimiento. Recomendación: Utilizar la cantidad mínima de columnas necesarias para representar la granularidad."
+   },
+   {
+    "title": "20. Agrupar antes de combinar",
+    "para": "Cuando una tabla se encuentra a un nivel más detallado del requerido, puede agruparse. Ejemplo: Actividades originales: Agrupación por orden: Resultado: La nueva granularidad es: Una fila por orden. Ahora puede combinarse con la tabla de órdenes sin multiplicar filas. Power Query permite transformar y agrupar información como parte de la preparación de datos antes de combinarla. [learn.microsoft.com]"
+   },
+   {
+    "title": "21. Qué puede resumirse antes de combinar",
+    "para": "Operaciones posibles: Suma. Conteo. Promedio. Mínimo. Máximo. Primera fecha. Última fecha. Número de valores distintos. Cantidad de actividades. Lista de elementos, cuando sea necesario. Ejemplo de resumen: Orden Cantidad de actividades Tiempo total Primera actividad Última actividad Precaución: No todos los campos pueden resumirse sin una regla. Por ejemplo: Responsable Estatus Observación pueden contener varios valores y necesitan un criterio explícito."
+   },
+   {
+    "title": "22. Combinar sin expandir todos los detalles",
+    "para": "Otra opción es conservar la tabla anidada y calcular información resumida. Ejemplo conceptual: La combinación produce: Orden | Tabla de actividades En lugar de expandir todas las filas, puede analizarse: Si encontró coincidencias. Cuántas actividades existen. Si la tabla está vacía. Qué campos se requieren. Beneficio: Evita multiplicar inmediatamente. Permite diagnosticar la relación. Conserva la granularidad de la tabla izquierda. Facilita contar coincidencias."
+   },
+   {
+    "title": "23. Resultado deseado antes de decidir la combinación",
+    "para": "Antes de combinar debe definirse la granularidad de salida. Opción A: Una fila por orden Opción B: Una fila por orden y actividad Opción C: Una fila por orden con resumen de actividades Opción D: Una fila por orden, técnico y actividad Cada salida requiere una preparación diferente. 💡 Concepto clave: no existe una granularidad universalmente correcta. Existe una granularidad adecuada para el propósito del resultado.:"
+   },
+   {
+    "title": "24. Tabla principal y tabla de detalle",
+    "para": "Tabla principal: Contiene el objeto o evento principal. Una fila por orden Tabla de detalle: Contiene componentes relacionados. Una fila por orden y actividad Posibles estrategias: Estrategia 1. Mantener separadas: Utilizar cada tabla para un análisis diferente. Estrategia 2. Agrupar detalle: Convertir el detalle en un resumen por orden. Estrategia 3. Expandir detalle: Aceptar una nueva granularidad. Estrategia 4. Crear dos salidas: Resumen por orden. Detalle por actividad. Esta última estrategia suele conservar mayor flexibilidad."
+   },
+   {
+    "title": "25. Varias tablas de detalle",
+    "para": "Ejemplo: Una orden puede tener: Varias actividades. Varios técnicos. Varias refacciones. Si se combinan las tres tablas por Orden: 3 actividades × 2 técnicos × 4 refacciones = 24 combinaciones La orden original puede convertirse en 24 filas. Interpretación: La multiplicación no significa necesariamente que Power Query falló. Significa que se generaron todas las combinaciones compatibles con las claves seleccionadas. Prevención: Definir claves más específicas. No combinar detalles independientes directamente. Agrupar antes. Mantener salidas separadas. Utilizar una tabla intermedia. Revisar la cardinalidad."
+   },
+   {
+    "title": "26. Conciliación antes de combinar",
+    "para": "Antes de combinar deben registrarse: Propósito: Establecer una línea base para comprobar el resultado."
+   },
+   {
+    "title": "27. Conciliación después de combinar",
+    "para": "Después de combinar y expandir deben registrarse: Condición: Toda diferencia debe explicarse mediante: Tipo de unión. Cambio de granularidad. Registro sin coincidencia. Relación uno a varios. Relación varios a varios. Agrupación. Filtro. Exclusión documentada."
+   },
+   {
+    "title": "28. Conciliación por clave",
+    "para": "El conteo general puede ocultar problemas. Ejemplo: Si se utiliza una unión izquierda, OT-004 puede conservarse con una tabla relacionada vacía o con columnas expandidas en null. Indicadores: Coincidencias por clave Factor de multiplicación por clave Claves sin coincidencia Claves con múltiples coincidencias"
+   },
+   {
+    "title": "29. Matriz de granularidad",
+    "para": "Campos adicionales: Periodo. Fuente. Responsable. Cardinalidad esperada. Uso previsto. Tratamiento necesario. Riesgo."
+   },
+   {
+    "title": "31. Granularidad y tipos de unión",
+    "para": "La granularidad debe analizarse con cualquier tipo de unión. Unión izquierda: Puede conservar todas las filas de la izquierda, pero multiplicarlas durante la expansión si la derecha tiene varias coincidencias. Unión interna: Conserva únicamente filas coincidentes, por lo que puede reducir registros y multiplicar las coincidencias restantes. La combinación interna incluye solamente las filas coincidentes de las dos tablas. [learn.microsoft.com] Unión completa: Puede incorporar registros de ambas tablas, incluidos los presentes únicamente en un lado. Esto puede producir filas con valores null en las columnas del lado sin correspondencia. [learn.microsoft.com] Antiuniones: Conservan los registros sin coincidencia, pero continúan dependiendo de claves y niveles de detalle correctamente definidos."
+   },
+   {
+    "title": "32. Granularidad y anexado",
+    "para": "Aunque esta lección se concentra en combinar, la granularidad también es importante al anexar. Las tablas anexadas deben representar el mismo tipo de fila. Ejemplo compatible: Producción de enero Producción de febrero Ambas: Una fila por orden, turno y producto. Ejemplo incompatible: Producción diaria con: Resumen mensual Anexarlas crearía una tabla donde algunas filas representan eventos y otras resúmenes. Power Query anexa tablas agregando filas según los nombres de sus columnas. Si las estructuras no comparten los mismos encabezados, el resultado reúne todas las columnas y utiliza null donde una fuente no tiene determinado campo. Esto no corrige automáticamente una diferencia de granularidad. [learn.microsoft.com]"
+   },
+   {
+    "title": "33. Criterios de compatibilidad",
+    "para": "Antes de combinar dos tablas debe comprobarse: Compatibilidad conceptual: ¿Las entidades están relacionadas? Compatibilidad de granularidad: ¿La relación produce el nivel de detalle esperado? Compatibilidad de claves: ¿Las claves identifican correctamente las filas? Compatibilidad técnica: ¿Los tipos de datos son compatibles? Compatibilidad temporal: ¿Las tablas corresponden al mismo periodo o vigencia? Compatibilidad de unidades: ¿Los valores pueden compararse o sumarse? Compatibilidad de propósito: ¿El resultado responde a la necesidad del usuario?"
+   },
+   {
+    "title": "34. Procedimiento recomendado antes de combinar",
+    "para": "Paso 1. Identificar las tablas: Anotar: Nombre. Fuente. Propietario. Frecuencia. Paso 2. Definir cada fila: Completar: Cada fila representa... Paso 3. Identificar la clave: Definir: Clave simple. Clave compuesta. Campos dependientes. Paso 4. Evaluar unicidad: Contar la clave en ambas tablas. Paso 5. Determinar cardinalidad: Identificar: Uno a uno. Varios a uno. Uno a varios. Varios a varios. Paso 6. Definir la granularidad de salida: Establecer el nivel esperado. Paso 7. Preparar la tabla: Agrupar. Filtrar. Seleccionar periodo. Validar vigencia. Limpiar claves. Paso 8. Establecer controles: Registrar conteos y totales. Paso 9. Combinar: Seleccionar las claves y el tipo de unión. Paso 10. Validar: Comparar antes y después."
+   },
+   {
+    "title": "35. Limitaciones de Power Query",
+    "para": "Power Query puede: Combinar tablas. Seleccionar varias claves. Agrupar detalles. Contar coincidencias. Expandir tablas relacionadas. Conservar registros sin correspondencia. Crear indicadores. Power Query no puede decidir por sí solo: Qué debe representar una fila. Qué granularidad necesita el usuario. Si una repetición es válida. Qué valor debe sumarse después de expandir. Qué tabla tiene autoridad. Si debe conservarse el detalle o el resumen. Qué diferencia es aceptable. Qué relación representa correctamente el proceso. Estas decisiones corresponden al responsable del proceso y deben documentarse."
+   },
+   {
+    "title": "36. Aplicaciones departamentales",
+    "para": "👥 Recursos Humanos: Tabla principal: Una fila por colaborador Tabla de detalle: Una fila por colaborador y capacitación Riesgo: Al expandir capacitaciones, los datos del colaborador se repiten. Control: Contar colaboradores distintos, no filas expandidas. 💰 Contabilidad: Tabla principal: Una fila por factura Tabla de pagos: Una fila por factura y pago Riesgo: El importe total de la factura se repite cuando existen pagos parciales. Control: Separar importe facturado e importe pagado. Los ejercicios deben utilizar datos ficticios. 🔬 Calidad: Tabla principal: Una fila por lote Tabla de inspecciones: Una fila por lote y tipo de inspección Riesgo: La cantidad del lote se repite por inspección. Control: Definir si la salida será por lote o por inspección. 🔧 Mantenimiento: Tabla principal: Una fila por orden Tabla de actividades: Una fila por orden y actividad Riesgo: Costos y tiempos autorizados se repiten. Control: Agrupar actividades o mantener dos salidas. 🏭 Producción: Tabla principal: Una fila por orden Tabla de producción: Una fila por orden, turno y etapa Riesgo: La cantidad programada se repite por turno y etapa. Control: Comparar a la misma granularidad. 📦 Almacenes: Tabla principal: Una fila por material Inventario: Una fila por material, lote y ubicación Riesgo: La descripción es repetición válida, pero un costo total del material podría inflarse. Control: Separar atributos maestros de medidas. 🦺 Seguridad: Tabla principal: Una fila por evento Acciones: Una fila por evento y acción Riesgo: Contar acciones como eventos. Control: Utilizar conteos distintos por folio de evento. 🩺 Servicios médicos administrativos: Tabla principal: Una fila por cita administrativa Seguimientos: Una fila por cita y seguimiento Riesgo: Los tiempos o estados de la cita se repiten al expandir. Control: Utilizar datos sintéticos y definir la salida requerida."
+   },
+   {
+    "title": "37. Responsabilidades",
+    "para": "Responsable del proceso: Define qué representa una fila. Determina el nivel de detalle requerido. Aprueba la clave. Explica las repeticiones. Define las medidas que pueden sumarse. Responsable de la tabla principal: Mantiene la granularidad. Conserva la clave. Documenta el periodo. Informa cambios. Responsable de la tabla relacionada: Garantiza su nivel de detalle. Controla claves repetidas. Documenta versiones. Mantiene vigencias. Responsable de Power Query: Registra los conteos. Evalúa cardinalidad. Prepara las tablas. Evita expansiones innecesarias. Identifica multiplicaciones. Concilia antes y después. Usuario del resultado: Conoce la granularidad final. Utiliza las medidas adecuadas. Evita sumar columnas repetidas. Reporta totales inesperados."
+   }
+  ],
+  "resumen": [
+   "La granularidad indica qué representa cada fila.",
+   "El número de filas no define la granularidad.",
+   "Las tablas pueden ser operativas, maestras, históricas o resumidas.",
+   "Una combinación puede cambiar el nivel de detalle.",
+   "La cardinalidad y la granularidad deben analizarse juntas.",
+   "Una relación uno a varios puede multiplicar filas.",
+   "La multiplicación puede ser esperada y aun así causar totales incorrectos.",
+   "Las medidas del nivel principal se repiten al expandir detalles.",
+   "Una clave insuficiente produce coincidencias adicionales.",
+   "Una clave excesiva evita coincidencias válidas.",
+   "La granularidad de salida debe definirse antes de combinar.",
+   "Agrupar permite llevar una tabla detallada a un nivel resumido.",
+   "Varias tablas de detalle pueden producir relaciones varios a varios.",
+   "Los conteos deben registrarse antes y después.",
+   "También deben conciliarse importes y cantidades.",
+   "Las combinaciones internas pueden reducir y multiplicar filas.",
+   "Las uniones completas pueden introducir registros de ambos lados.",
+   "Anexar tampoco corrige diferencias de granularidad.",
+   "La matriz de granularidad documenta la relación.",
+   "Toda diferencia debe quedar explicada."
+  ],
+  "quiz": [
+   {
+    "q": "La granularidad indica",
+    "opts": [
+     "El color de las columnas",
+     "Qué representa cada fila",
+     "La ubicación del archivo",
+     "El número de consultas"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Si una orden tiene tres actividades y se expanden, la granularidad cambia de",
+    "opts": [
+     "Una fila por orden a una fila por orden y actividad",
+     "Una fila por área a una fila por catálogo",
+     "Una fila por mes a una fila por año",
+     "Una fila por actividad a una fila por orden"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Un total puede inflarse después de combinar porque",
+    "opts": [
+     "Power Query cambia los valores originales",
+     "Los valores de la tabla principal se repiten por cada coincidencia",
+     "Los encabezados desaparecen",
+     "Todas las columnas se convierten a texto"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Agrupar antes de combinar es apropiado cuando",
+    "opts": [
+     "La tabla de detalle debe llevarse al nivel de la tabla principal",
+     "Se desea perder el origen",
+     "Las claves están vacías",
+     "Se quiere cambiar el nombre del archivo"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Antes de combinar debe definirse",
+    "opts": [
+     "Únicamente el tipo de unión",
+     "La granularidad de ambas tablas y la salida esperada",
+     "Solo el nombre de las consultas",
+     "Únicamente el número de columnas"
+    ],
+    "correct": 1
+   }
+  ],
+  "files": []
+ },
+ {
+  "id": 3,
+  "title": "Claves simples",
+  "duracion": "100 a 120 min",
+  "dificultad": "Inicial a intermedia",
+  "badgeIcon": "key-round",
+  "badgeDesc": "Dominaste las claves simples",
+  "objetivos": [
+   "Explicar qué es una clave simple.",
+   "Diferenciar clave, identificador e índice.",
+   "Reconocer claves naturales y artificiales.",
+   "Identificar claves utilizadas para relacionar tablas.",
+   "Evaluar la completitud de una clave.",
+   "Evaluar su unicidad.",
+   "Analizar su estabilidad.",
+   "Reconocer claves con ceros iniciales.",
+   "Identificar diferencias de tipo de datos.",
+   "Detectar espacios y caracteres no visibles.",
+   "Identificar claves genéricas o sustitutas.",
+   "Reconocer claves duplicadas.",
+   "Diferenciar repetición válida y duplicidad.",
+   "Contar registros por clave.",
+   "Detectar claves presentes en una sola fuente.",
+   "Diseñar indicadores de calidad de claves.",
+   "Preparar una consulta de claves rechazadas.",
+   "Documentar la selección de una clave.",
+   "Establecer controles antes de combinar."
+  ],
+  "situacion": "Una organización necesita integrar sus movimientos de materiales con el catálogo maestro correspondiente, pero antes de combinarlos aparecen varias condiciones que ponen a prueba la columna elegida como clave: el código MAT-00125 existe en ambas tablas, pero en una aparece con un espacio final; en otra fuente el mismo material perdió su formato y quedó como 125; un movimiento no tiene código registrado; y 0000 parece funcionar como clave sustituta para varios registros distintos.<br><br>La clave se repite en la tabla de movimientos, lo cual puede ser perfectamente válido, pero no debería repetirse dentro del catálogo vigente — y MAT-00999 aparece en los movimientos sin existir en el catálogo. Antes de combinar estas tablas en Power Query hay que resolver una pregunta central: ¿qué condiciones debe cumplir una columna para poder utilizarse como clave confiable entre dos tablas?",
+  "secciones": [
+   {
+    "title": "1. ¿Qué es una clave simple?",
+    "para": "Una clave simple utiliza una sola columna para identificar un registro o relacionarlo con otra tabla. Ejemplos: Número de empleado. Código de material. Código de equipo. Número de orden. Folio de solicitud. Código de proveedor. Código de área. Ejemplo relacional: Movimientos[Código de material] ↓ Catálogo[ Código de material ] La clave permite recuperar: Descripción. Unidad. Categoría. Estado. Responsable. Vigencia. 💡 Concepto clave: una clave simple no se define porque una columna “parece importante”, sino porque identifica correctamente la entidad dentro de una granularidad y alcance determinados."
+   },
+   {
+    "title": "2. Funciones de una clave",
+    "para": "Una clave puede cumplir varias funciones. Identificar: Permite distinguir un registro de otro. Código de equipo = EQ-001 Relacionar: Permite conectar dos tablas. Órdenes[Código de equipo] ↓ Equipos[Código de equipo] Validar: Permite comprobar si un código existe en una fuente autorizada. Detectar duplicados: Permite encontrar claves repetidas dentro de una tabla donde deberían ser únicas. Conservar trazabilidad: Permite seguir un registro desde el origen hasta la salida."
+   },
+   {
+    "title": "3. Clave frente a identificador",
+    "para": "Un identificador es un valor utilizado para reconocer un elemento. Una clave es un identificador que además cumple una función dentro de la estructura de datos. Ejemplo: Nombre del equipo = Compresor principal Código del equipo = EQ-001 El nombre identifica descriptivamente al equipo, pero puede cambiar. El código suele ser una clave más estable."
+   },
+   {
+    "title": "4. Clave natural",
+    "para": "Una clave natural proviene del proceso o de la entidad que se administra. Ejemplos: Número de empleado. Folio de factura. Código de material. Número de orden. Código de equipo. Folio de solicitud. Ventajas: Tiene significado operativo. Ya existe en el proceso. Puede utilizarse entre fuentes. Facilita investigaciones. Es reconocible por los responsables. Riesgos: Puede cambiar. Puede capturarse incorrectamente. Puede reutilizarse. Puede no ser única. Puede contener información sensible. Puede variar entre sistemas."
+   },
+   {
+    "title": "5. Clave artificial",
+    "para": "Una clave artificial se crea específicamente para identificar un registro. Ejemplos: ID-000001 ID-000002 ID-000003 También puede ser: Un consecutivo. Un identificador generado por el sistema. Una combinación codificada. Un identificador sin significado operativo. Ventajas: Puede ser estable. No depende de una descripción. Puede garantizar unicidad. Facilita relaciones técnicas. Riesgos: Puede no existir en otras fuentes. Puede cambiar al reconstruir la tabla. El usuario puede no reconocerla. Puede ocultar duplicados de negocio."
+   },
+   {
+    "title": "6. Clave frente a índice",
+    "para": "Power Query permite agregar una columna de índice. Ejemplo: La columna Índice es única: 1, 2, 3 Pero el folio SOL-0001 continúa repetido. Interpretación: El índice identifica técnicamente cada fila. No demuestra que cada registro sea único conforme al proceso. ⚠️ Atención: agregar un índice hace que las filas sean técnicamente diferentes, pero no elimina ni resuelve duplicados de negocio. Usos apropiados del índice: Conservar el orden. Rastrear una fila sin clave. Crear un identificador técnico. Numerar excepciones. Identificar la fila original. Usos inapropiados: Sustituir una clave de negocio sin análisis. Declarar que no existen duplicados. Relacionar fuentes independientes que generan índices distintos. Corregir claves incompletas."
+   },
+   {
+    "title": "7. Propiedades de una clave confiable",
+    "para": "Una clave adecuada debería cumplir, según el proceso, las siguientes propiedades: Completitud. Unicidad. Consistencia. Estabilidad. Persistencia. Compatibilidad. Trazabilidad. Validez. Precisión estructural. Protección adecuada."
+   },
+   {
+    "title": "8. Completitud de la clave",
+    "para": "Una clave requerida debe estar presente. Riesgos: No puede relacionarse. No puede validarse. Puede confundirse con otros registros. No puede investigarse fácilmente. Puede quedar fuera de una unión interna. Indicador: Completitud de clave = Claves presentes / Registros evaluados Ejemplo: Registros = 1,000 Claves presentes = 985 Completitud = 98.5%"
+   },
+   {
+    "title": "9. Unicidad de la clave",
+    "para": "La unicidad determina si la clave aparece una sola vez dentro del alcance donde debe ser única. Catálogo maestro: En un catálogo vigente: Código de material debería aparecer una vez. Tabla operativa: En movimientos: Código de material puede aparecer muchas veces porque un material puede tener múltiples movimientos. Regla: Repetición en la tabla operativa: Puede ser válida. Repetición en el catálogo vigente: Requiere revisión."
+   },
+   {
+    "title": "10. Repetición válida frente a duplicidad",
+    "para": "Repetición válida: Los movimientos son diferentes. El material puede repetirse. Posible duplicado: Si el catálogo debe tener una fila por material vigente, esta repetición requiere investigación. Pregunta de control: ¿La clave se repite porque la granularidad lo permite o porque existe un registro duplicado?"
+   },
+   {
+    "title": "11. Alcance de la unicidad",
+    "para": "Una clave puede ser única dentro de diferentes alcances. Global: Número de empleado No se repite en todo el padrón. Por periodo: Folio + mes El folio puede reutilizarse entre periodos, si el proceso lo permite. Por área: Consecutivo dentro de cada área Por sistema: El mismo valor puede existir en dos sistemas con significados diferentes. Por vigencia: Una clave puede tener varias versiones históricas, pero solo una vigente."
+   },
+   {
+    "title": "12. Estabilidad",
+    "para": "Una clave estable mantiene su significado a través del tiempo. Ejemplo estable: Código de material = MAT-00125 Aunque cambie la descripción: Empaque primario A por: Bolsa primaria A el código permanece. Ejemplo inestable: Utilizar como clave: Descripción del material Si cambia la redacción, la relación puede romperse. Preguntas: ¿La clave cambia cuando cambia la descripción? ¿Puede reasignarse? ¿Puede reutilizarse? ¿Se conserva entre sistemas? ¿Se conserva entre periodos?"
+   },
+   {
+    "title": "13. Persistencia",
+    "para": "La persistencia indica si la clave continúa disponible a través de: Archivos. Periodos. Sistemas. Actualizaciones. Cambios de responsable. Cambios de descripción. Migraciones. Problema: Si un archivo utiliza: MAT-00125 y otro: 125 la entidad puede ser la misma, pero la clave no es persistente entre fuentes. Tratamiento: Definir formato oficial. Conservar el valor original. Crear una clave normalizada. Utilizar una tabla de equivalencias. Validar la correspondencia."
+   },
+   {
+    "title": "14. Ceros iniciales",
+    "para": "Los ceros iniciales forman parte de muchas claves. Ejemplo: 00125 Si se convierte a número: 125 se pierde la longitud original. Riesgo: El catálogo puede contener: 00125 mientras el archivo operativo contiene: 125 Aunque conceptualmente representen la misma entidad, técnicamente son diferentes. Recomendación: Las claves que no se utilizan para realizar cálculos deben almacenarse generalmente como texto. Ejemplos: Número de empleado. Código de material. Código postal. Folio. Número de orden."
+   },
+   {
+    "title": "15. Claves alfanuméricas",
+    "para": "Una clave alfanumérica contiene letras y números. Ejemplos: MAT-00125 EMP-00035 OT-2026-0100 AREA-05 SOL-0025 Ventajas: Puede indicar el tipo de entidad. Reduce confusión entre catálogos. Conserva una estructura autorizada. Evita conversiones numéricas accidentales. Precaución: El prefijo debe formar parte de una regla estable y no utilizarse para inferir información no autorizada."
+   },
+   {
+    "title": "16. Tipo de dato de la clave",
+    "para": "Las columnas utilizadas para combinar deben tener tipos compatibles, aunque sus encabezados no necesiten ser iguales. Power Query también permite seleccionar una o varias columnas como criterio de combinación. [learn.microsoft.com] Ejemplo incompatible: Tabla operativa: Código = 125 Tipo = número Catálogo: Código = \"00125\" Tipo = texto Prevención: Definir ambos como texto. Conservar ceros iniciales. Normalizar el formato. Revisar errores. Validar coincidencias."
+   },
+   {
+    "title": "17. Espacios iniciales y finales",
+    "para": "Los siguientes valores pueden parecer iguales: \"MAT-00125\" \" MAT-00125\" \"MAT-00125 \" Técnicamente contienen diferencias. Tratamiento: Conservar la clave original. Crear una copia de trabajo. Aplicar Recortar. Aplicar Limpiar cuando sea necesario. Comparar la clave antes y después. Registrar la transformación. Resultado: Clave original = \" MAT-00125 \" Clave limpia = \"MAT-00125\""
+   },
+   {
+    "title": "18. Mayúsculas y minúsculas",
+    "para": "Valores: mat-00125 MAT-00125 Mat-00125 Pueden representar el mismo código. Tratamiento posible: Convertir a mayúsculas Precaución: La regla debe aplicarse únicamente si el proceso confirma que: La capitalización no cambia el significado. El catálogo utiliza un formato oficial. No existen códigos sensibles a mayúsculas y minúsculas."
+   },
+   {
+    "title": "19. Separadores",
+    "para": "Una clave puede variar por el uso de: Guiones. Espacios. Diagonales. Puntos. Guion bajo. Ejemplo: MAT-00125 MAT00125 MAT 00125 MAT_00125 No deben considerarse equivalentes automáticamente. Procedimiento: Definir el patrón oficial. Identificar variantes autorizadas. Conservar el original. Aplicar una equivalencia controlada. Separar valores ambiguos. Validar el resultado."
+   },
+   {
+    "title": "20. Claves genéricas",
+    "para": "Una clave genérica se utiliza para representar múltiples registros. Ejemplos: 0000 9999 GENERAL SIN-CODIGO N/A PENDIENTE Riesgos: Varias entidades diferentes parecen iguales. Se generan duplicados artificiales. Se obtienen coincidencias incorrectas. Se pierde la posibilidad de identificar el registro. Se altera la unicidad. Regla recomendada: Una clave genérica no debe utilizarse para relacionar registros sin una política explícita. Tratamiento: Estado de clave = Sustituta Resultado de relación = No evaluable Acción = Solicitar clave real"
+   },
+   {
+    "title": "21. Claves nulas",
+    "para": "Una clave nula no puede producir una relación confiable. Clasificaciones posibles: Faltante. Pendiente. No aplica. No disponible. No encontrado. Error técnico. Regla: Si la clave es obligatoria: Clave = null → Registro no evaluable para combinación Precaución: No debe reemplazarse automáticamente por: 0 0000 SIN-CODIGO porque varios registros distintos recibirían la misma clave."
+   },
+   {
+    "title": "22. Claves con error",
+    "para": "Una clave puede producir error por: Conversión. Fórmula. Tipo incompatible. Valor de Excel. Operación de texto. Campo inexistente. Estructura inesperada. Tratamiento: Conservar el valor original. Identificar la razón. Separar el registro. Corregir la transformación. Revisar el origen. No combinar hasta resolver o clasificar."
+   },
+   {
+    "title": "23. Claves duplicadas en el catálogo",
+    "para": "Posibles causas: Duplicado exacto. Actualización no controlada. Historial sin vigencias. Error de captura. Dos entidades con el mismo código. Cambio de descripción. Riesgo al combinar: Cada movimiento con MAT-00125 encontrará dos coincidencias. Al expandir, cada fila puede duplicarse. Acción: Separar claves repetidas. Confirmar la granularidad. Revisar vigencias. Determinar la fila autorizada. Corregir el catálogo. Conservar evidencia."
+   },
+   {
+    "title": "24. Claves duplicadas en la tabla operativa",
+    "para": "No siempre representan un problema. Ejemplo: Cada fila representa un movimiento diferente. La clave que identifica la fila es: Movimiento El código de material funciona como clave de relación. Concepto clave: Una columna puede ser: Única para identificar registros. Repetida para relacionarlos con un catálogo."
+   },
+   {
+    "title": "25. Claves maestras no utilizadas",
+    "para": "El catálogo puede contener claves sin registros operativos. Ejemplo: MAT-00127 existe en el catálogo, pero no aparece en los movimientos. Esto puede significar: No hubo movimiento. El material es nuevo. El material está inactivo. Falta una fuente. El periodo está incompleto. La clave cambió. Esta condición se investigará posteriormente mediante uniones derecha y antiderecha."
+   },
+   {
+    "title": "26. Claves operativas no reconocidas",
+    "para": "Ejemplo: MAT-00999 aparece en Movimientos, pero no en el catálogo. Posibles causas: Código nuevo. Captura incorrecta. Catálogo atrasado. Espacios. Formato diferente. Clave histórica. Fuente incorrecta. Acción: Conservar el movimiento. Clasificarlo como no reconocido. Revisar el catálogo. Corregir el origen. No asignar la descripción más parecida automáticamente."
+   },
+   {
+    "title": "27. Conteo por clave",
+    "para": "El conteo por clave permite conocer cuántas veces aparece cada valor. Interpretación: En Movimientos, la repetición puede ser normal. En el catálogo vigente: Conteo = 1 debería ser la condición esperada. Power Query: La operación Agrupar por permite agrupar registros mediante una o varias columnas y calcular conteos, sumas u otras agregaciones."
+   },
+   {
+    "title": "28. Perfil de una clave",
+    "para": "Una ficha de análisis puede incluir: Interpretación: Los indicadores no deben leerse fuera de contexto. Por ejemplo: 175 claves repetidas puede ser correcto en una tabla de movimientos."
+   },
+   {
+    "title": "29. Indicadores de calidad de la clave",
+    "para": "Completitud: Claves presentes / registros evaluados Validez de formato: Claves que cumplen el patrón / claves evaluables Reconocimiento: Claves que existen en el catálogo / claves evaluables Unicidad maestra: Claves maestras con una sola aparición / claves maestras evaluadas Errores: Claves con error / registros evaluados Claves sustitutas: Claves genéricas / registros evaluados"
+   },
+   {
+    "title": "30. Consulta de claves rechazadas",
+    "para": "Una arquitectura inicial puede incluir: 01_Origen 02_ClavesPreparadas 03_ClavesValidas 04_ClavesVacias 05_ClavesSustitutas 06_ClavesConError 07_ClavesNoReconocidas 08_ClavesDuplicadasMaestro 09_ResumenClaves Campos sugeridos: ID del registro Clave original Clave limpia Tipo original Cumple longitud Cumple patrón Es sustituta Está vacía Tiene error Existe en catálogo Conteo en maestro Estado de clave Motivo Responsable"
+   },
+   {
+    "title": "31. Estado de la clave",
+    "para": "Valores sugeridos: Válida Vacía Sustituta Formato inválido Error técnico No reconocida Duplicada en maestro Histórica No evaluable Resultado de relación: Preparada para combinar Requiere revisión No debe combinarse Excepción autorizada"
+   },
+   {
+    "title": "32. Selección de una clave simple",
+    "para": "Para seleccionar una clave deben responderse estas preguntas: ¿Qué representa una fila? ¿Qué entidad se desea identificar? ¿La columna está presente? ¿Tiene un formato estable? ¿Conserva ceros iniciales? ¿Es única donde debe serlo? ¿Puede repetirse legítimamente? ¿Existe en ambas tablas? ¿Tiene tipos compatibles? ¿Cambia entre periodos? ¿Puede ser genérica? ¿Tiene valores nulos? ¿Contiene información sensible? ¿Existe otra clave más confiable?"
+   },
+   {
+    "title": "34. Prueba de relación",
+    "para": "Antes de utilizar una combinación definitiva puede hacerse una prueba controlada. Procedimiento: Seleccionar una muestra. Conservar la clave original. Crear la clave limpia. Verificar el tipo. Contar la clave en ambas tablas. Identificar claves vacías. Identificar claves no reconocidas. Identificar múltiples coincidencias. Calcular cobertura. Comparar filas antes y después. Resultado esperado: La clave está preparada o La clave requiere tratamiento"
+   },
+   {
+    "title": "35. Documentación de la clave",
+    "para": "La ficha debe registrar:"
+   },
+   {
+    "title": "36. Aplicaciones departamentales",
+    "para": "👥 Recursos Humanos: Clave: Número de empleado Tabla operativa: Capacitaciones. Tabla maestra: Padrón de colaboradores. Riesgos: Ceros omitidos. Colaborador no vigente. Número genérico. Duplicado en el padrón. 💰 Contabilidad: Clave: Código de proveedor Riesgos: Diferencias entre claves fiscales y códigos internos. Proveedor duplicado. Código inactivo. Valor no reconocido. Las prácticas deben utilizar datos ficticios. 🔬 Calidad: Clave: Código de producto Riesgos: Producto histórico. Código incompleto. Descripción utilizada como clave. Producto fuera del catálogo. 🔧 Mantenimiento: Clave: Código de equipo Riesgos: Equipo renombrado. Código duplicado. Equipo inactivo. Ubicación utilizada como identificador. 🏭 Producción: Clave: Código de producto Riesgos: Códigos con o sin prefijo. Productos equivalentes. Ceros iniciales. Código nuevo sin alta. 📦 Almacenes: Clave: Código de material Riesgos: Conversión a número. Pérdida de ceros. Material sin catálogo. Clave sustituta. 🦺 Seguridad: Clave: Código de área Riesgos: Áreas abreviadas. Catálogo no vigente. Reorganización. Claves históricas. 🩺 Servicios médicos administrativos: Clave: Código de tipo administrativo Riesgos: Código vacío. Valor no reconocido. Categoría histórica. Información no minimizada. Los datos deberán ser sintéticos o anonimizados."
+   },
+   {
+    "title": "37. Responsabilidades",
+    "para": "Responsable del catálogo: Garantiza la unicidad. Mantiene el formato. Controla vigencias. Autoriza nuevos códigos. Corrige duplicados. Responsable de captura: Utiliza la clave autorizada. No crea sustitutos. Evita espacios. Corrige registros incompletos. Responsable de Power Query: Conserva la clave original. Define el tipo. Aplica limpieza controlada. Cuenta claves. Separa excepciones. Valida la cobertura. Responsable del proceso: Confirma el significado. Aprueba el patrón. Determina el alcance de unicidad. Resuelve valores no reconocidos. Usuario del resultado: Revisa excepciones. No modifica claves manualmente. Reporta códigos faltantes. Conoce el alcance del catálogo."
+   }
+  ],
+  "resumen": [
+   "Una clave simple utiliza una sola columna.",
+   "Puede identificar o relacionar registros.",
+   "Una clave no es lo mismo que una descripción.",
+   "Las claves pueden ser naturales o artificiales.",
+   "Un índice identifica filas, pero no resuelve duplicados de negocio.",
+   "Una buena clave debe ser completa, estable y compatible.",
+   "La unicidad depende del alcance y la granularidad.",
+   "La repetición puede ser válida en una tabla operativa.",
+   "La clave de un catálogo vigente debería ser única.",
+   "Los ceros iniciales deben conservarse.",
+   "Las claves suelen tratarse como texto.",
+   "Los espacios pueden impedir coincidencias.",
+   "Las variantes necesitan una regla autorizada.",
+   "Las claves genéricas no identifican entidades.",
+   "Las claves nulas deben separarse.",
+   "Los errores de clave requieren diagnóstico.",
+   "Los duplicados maestros pueden multiplicar filas.",
+   "El conteo por clave permite evaluar la estructura.",
+   "Las claves rechazadas deben conservarse.",
+   "La clave original y la limpia deben permanecer separadas.",
+   "Los indicadores permiten medir completitud y reconocimiento.",
+   "La selección de la clave debe documentarse."
+  ],
+  "quiz": [
+   {
+    "q": "Una clave simple utiliza",
+    "opts": [
+     "Una sola columna",
+     "Dos tablas completas",
+     "Todas las columnas",
+     "Únicamente un índice"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Una columna de índice",
+    "opts": [
+     "Elimina duplicados de negocio",
+     "Identifica filas, pero no necesariamente entidades",
+     "Siempre debe usarse para combinar",
+     "Sustituye cualquier clave"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Los ceros iniciales",
+    "opts": [
+     "No tienen importancia",
+     "Pueden formar parte de la estructura de la clave",
+     "Siempre deben eliminarse",
+     "Solo se usan en cantidades"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Una clave repetida en una tabla operativa",
+    "opts": [
+     "Siempre es un error",
+     "Puede ser válida según la granularidad",
+     "Debe eliminarse",
+     "Debe convertirse a índice"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Una clave duplicada en un catálogo vigente puede",
+    "opts": [
+     "Multiplicar filas durante una combinación",
+     "Reducir automáticamente los registros",
+     "Corregir el formato",
+     "Eliminar los valores nulos"
+    ],
+    "correct": 0
+   }
+  ],
+  "files": []
+ },
+ {
+  "id": 4,
+  "title": "Claves compuestas",
+  "duracion": "110 a 130 min",
+  "dificultad": "Intermedia",
+  "badgeIcon": "list-tree",
+  "badgeDesc": "Dominaste las claves compuestas",
+  "objetivos": [
+   "Explicar qué es una clave compuesta.",
+   "Reconocer cuándo una clave simple es insuficiente.",
+   "Relacionar la clave con la granularidad.",
+   "Seleccionar las columnas necesarias para formar una clave.",
+   "Diferenciar clave compuesta y clave concatenada.",
+   "Identificar el orden correcto de selección.",
+   "Utilizar varias columnas en Combinar consultas.",
+   "Reconocer la importancia de los tipos compatibles.",
+   "Incorporar el periodo cuando forme parte de la identidad.",
+   "Evaluar si una fecha debe pertenecer a la clave.",
+   "Detectar valores nulos en los componentes.",
+   "Comprobar la unicidad de una combinación.",
+   "Diferenciar claves mínimas y claves excesivas.",
+   "Evitar campos variables dentro de una clave.",
+   "Crear una representación concatenada para diagnóstico.",
+   "Conservar los componentes originales.",
+   "Identificar colisiones de concatenación.",
+   "Diseñar una consulta de claves compuestas inválidas.",
+   "Documentar una clave compuesta.",
+   "Preparar las claves para combinaciones posteriores."
+  ],
+  "situacion": "Una organización registra su inventario por material y lote: cada fila de la tabla operativa representa una existencia de material, lote y ubicación, mientras que una segunda tabla de control de calidad registra, con una fila por material y lote, el estatus de liberación correspondiente. El objetivo es incorporar a cada registro de inventario el estatus de calidad y la fecha de liberación de su lote.<br><br>Un primer intento combina ambas tablas usando únicamente el número de lote, y el resultado es incorrecto: el lote L001 existe tanto en MAT-001 como en MAT-002, así que la combinación puede relacionar el lote de un material con el registro de otro material completamente distinto. Un segundo intento agrega el material a la clave — Material + Lote — y esa combinación sí representa correctamente la identidad del lote, sin necesidad de incluir la ubicación, porque el estatus de calidad es el mismo para todas las ubicaciones de un lote. La pregunta central de la lección queda planteada: ¿cómo determinamos la combinación mínima de columnas necesaria para identificar un registro y relacionarlo correctamente con otra tabla?",
+  "secciones": [
+   {
+    "title": "1. ¿Qué es una clave compuesta?",
+    "para": "Una clave compuesta utiliza dos o más columnas para identificar un registro o establecer una relación. Ejemplo: Material + Lote Otros ejemplos: Empleado + Curso Orden + Actividad Proveedor + Factura Material + Lote + Ubicación Orden + Turno + Etapa Área + Periodo Producto + Fecha + Turno Cada componente aporta una parte de la identidad. 💡 Concepto clave: una clave compuesta es necesaria cuando ninguna de sus columnas, por sí sola, identifica correctamente el registro dentro de la granularidad definida."
+   },
+   {
+    "title": "2. Cuándo una clave simple es insuficiente",
+    "para": "Una clave simple es insuficiente cuando: Se repite dentro de la tabla. Identifica una entidad más general que la fila. Produce varias coincidencias no deseadas. Tiene significado solo dentro de otro contexto. Se reutiliza entre periodos. Se repite entre áreas, plantas o ubicaciones. No distingue versiones. No representa la granularidad completa. Ejemplo: En una tabla que contiene: Una fila por empleado y curso el número de empleado no identifica la fila porque un colaborador puede tomar varios cursos. El código de curso tampoco la identifica porque varias personas pueden tomar el mismo curso. La combinación adecuada puede ser: Número de empleado + Código de curso"
+   },
+   {
+    "title": "3. Relación entre granularidad y clave compuesta",
+    "para": "La granularidad indica qué representa la fila. La clave compuesta debe identificar esa representación. Ejemplo 1: Granularidad: Una fila por material, lote y ubicación. Clave: Material + Lote + Ubicación Ejemplo 2: Granularidad: Una fila por orden, turno y etapa. Clave: Orden + Turno + Etapa Ejemplo 3: Granularidad: Una fila por colaborador, curso y fecha. Clave: Empleado + Curso + Fecha Regla conceptual: Granularidad definida ↓ Componentes necesarios ↓ Clave compuesta"
+   },
+   {
+    "title": "4. Clave compuesta de negocio",
+    "para": "Una clave compuesta de negocio está formada por campos reales del proceso. Ejemplo: Proveedor + Factura Cada componente tiene significado operativo. Ventajas: Puede investigarse. Está relacionada con el proceso. Puede utilizarse entre fuentes. Permite identificar la causa de una diferencia. Facilita la validación. Riesgos: Algún componente puede cambiar. Puede contener valores nulos. Puede tener formatos diferentes. Puede ser extensa. Puede incluir campos sensibles. Puede no ser estable entre sistemas."
+   },
+   {
+    "title": "5. Clave concatenada",
+    "para": "Una clave concatenada reúne varios campos en una sola columna de texto. Componentes: Material = MAT-001 Lote = L001 Ubicación = ALM-A Resultado: MAT-001|L001|ALM-A Posibles usos: Diagnóstico. Conteo. Identificación visual. Comparación. Control de duplicados. Registro de excepciones. Aclaración importante: No siempre es necesario concatenar para combinar en Power Query. Power Query permite seleccionar directamente varias columnas como criterios de relación. Estas deben seleccionarse en el mismo orden en ambas tablas y utilizar tipos compatibles. [learn.microsoft.com]"
+   },
+   {
+    "title": "6. Clave compuesta frente a clave concatenada",
+    "para": "✅ Buena práctica: conservar los componentes individuales y utilizar la concatenación solamente cuando aporte valor diagnóstico o técnico."
+   },
+   {
+    "title": "7. Orden de los componentes",
+    "para": "El orden no modifica necesariamente la unicidad conceptual, pero sí afecta la correspondencia técnica cuando se seleccionan varias columnas. Tabla izquierda: Se seleccionan: 1. Material 2. Lote Tabla derecha: Debe seleccionarse: 1. Material 2. Lote No debe seleccionarse: 1. Lote 2. Material Power Query muestra números pequeños junto a los encabezados para indicar el orden en que se seleccionaron las columnas. El orden de selección debe ser equivalente en ambas consultas. [learn.microsoft.com]"
+   },
+   {
+    "title": "8. Nombres diferentes, significado equivalente",
+    "para": "Los encabezados no tienen que llamarse igual. Tabla operativa: CodMaterial LoteOperativo Tabla relacionada: Código de material Número de lote Pueden relacionarse si: Representan el mismo concepto. Utilizan tipos compatibles. Tienen formatos equivalentes. Se seleccionan en el mismo orden. Su granularidad es compatible. Los nombres coincidentes no son un requisito para Combinar consultas, pero sí lo son la compatibilidad semántica y técnica de los campos elegidos. [learn.microsoft.com]"
+   },
+   {
+    "title": "9. Tipos compatibles",
+    "para": "Cada par de columnas debe utilizar tipos compatibles. Riesgos: Coincidencias faltantes. Pérdida de ceros. Errores. Comparaciones inconsistentes. Falsa reducción de cobertura. Recomendación: Normalizar cada componente antes de combinar."
+   },
+   {
+    "title": "10. Selección mínima de componentes",
+    "para": "Una clave compuesta debe utilizar la menor cantidad de columnas necesarias para identificar correctamente la fila. Ejemplo: Granularidad: Una fila por material, lote y ubicación. Clave mínima de la tabla de inventario: Material + Lote + Ubicación Si se utiliza solo: Material + Lote pueden existir varias ubicaciones. Si se agrega: Descripción + Unidad + Responsable la clave se vuelve innecesariamente extensa y variable."
+   },
+   {
+    "title": "11. Clave insuficiente",
+    "para": "Una clave es insuficiente cuando aún permite varias filas para la misma combinación. Ejemplo: Clave propuesta: Orden + Turno Resultado: OP-001 + Turno 1 aparece dos veces. Tratamiento: Agregar: Etapa Clave resultante: Orden + Turno + Etapa"
+   },
+   {
+    "title": "12. Clave excesiva",
+    "para": "Una clave es excesiva cuando contiene columnas que no son necesarias o que cambian con el tiempo. Ejemplo: Orden + Turno + Etapa + Responsable + Estatus + Observación Problemas: El responsable puede cambiar. El estatus cambia durante el proceso. La observación puede editarse. La clave deja de ser estable. Las actualizaciones parecen registros nuevos. Las coincidencias disminuyen. Prevención: Clasificar cada columna como: Identificadora. Descriptiva. Medida. Estado. Observación. Temporal. Solo las columnas necesarias para identificar la granularidad deben formar parte de la clave."
+   },
+   {
+    "title": "13. Campos variables que no deben utilizarse",
+    "para": "Generalmente no deberían incluirse: Descripción. Observación. Responsable, salvo que defina la granularidad. Estatus. Comentario. Importe. Cantidad. Fecha de actualización. Nombre descriptivo. Resultado calculado. Excepción: Un campo variable puede formar parte de la clave si el proceso define explícitamente una fila por ese campo. Ejemplo: Una fila por orden y responsable asignado. En ese caso, el responsable sí participa en el nivel de detalle."
+   },
+   {
+    "title": "14. Periodo como parte de la clave",
+    "para": "El periodo puede ser necesario cuando un identificador se reutiliza. Ejemplo: Si el folio reinicia cada mes, la clave correcta puede ser: Periodo + Folio Riesgo: Combinar únicamente por folio puede relacionar registros de diferentes periodos. Preguntas de control: ¿El consecutivo se reinicia? ¿El folio es global o periódico? ¿Existe una fecha operativa? ¿El origen conserva el periodo? ¿La relación debe respetar el historial?"
+   },
+   {
+    "title": "15. Área como parte de la clave",
+    "para": "Algunos consecutivos son únicos únicamente dentro de un área. Ejemplo: Calidad: SOL-001 Mantenimiento: SOL-001 Producción: SOL-001 La clave puede ser: Área + Folio Riesgo: Relacionar únicamente por folio puede mezclar solicitudes de distintas áreas. Mejor alternativa: Cuando sea posible, utilizar un folio global único. Si no existe, documentar la clave compuesta y sus limitaciones."
+   },
+   {
+    "title": "16. Ubicación como parte de la clave",
+    "para": "La ubicación es necesaria cuando la misma entidad puede presentarse simultáneamente en varios lugares. Ejemplo: Clave de inventario: Material + Lote + Ubicación Clave de calidad por lote: Material + Lote Aprendizaje: La clave depende de la tabla. La misma entidad puede utilizar claves diferentes según la granularidad evaluada."
+   },
+   {
+    "title": "17. Fecha como parte de la clave",
+    "para": "Una fecha puede ser necesaria cuando distingue eventos repetidos. Ejemplo: Empleado + Curso + Fecha Un colaborador puede tomar el mismo curso en años diferentes. Riesgos de utilizar fecha: Formatos regionales. Hora incluida en una tabla y omitida en otra. Fecha del evento frente a fecha de captura. Zona horaria. Fechas corregidas. Diferencias entre fecha calendario y operativa. Recomendación: Definir exactamente: Qué fecha se utiliza. Su tipo. Su zona. Su precisión. Su función dentro de la granularidad."
+   },
+   {
+    "title": "18. Hora como parte de la clave",
+    "para": "La hora puede diferenciar eventos ocurridos el mismo día. Ejemplo: Equipo + Fecha + Hora de lectura Riesgos: Segundos omitidos. Diferentes precisiones. Redondeos. Zonas horarias. Registro manual. Cambios de formato. Alternativa: Utilizar un identificador de evento si existe."
+   },
+   {
+    "title": "19. Valores nulos en los componentes",
+    "para": "Una clave compuesta puede quedar incompleta si uno de sus componentes es nulo. Ejemplo: Material = MAT-001 Lote = null Ubicación = ALM-A Estado: Clave compuesta incompleta Riesgos: No puede representar la granularidad. Puede coincidir incorrectamente con otro registro incompleto. No puede validarse. Puede quedar fuera de la combinación. Regla: Todos los componentes obligatorios deben estar presentes."
+   },
+   {
+    "title": "20. Componentes no aplicables",
+    "para": "No todos los componentes son obligatorios para todos los registros. Ejemplo: Algunos materiales no requieren lote. Posible diseño: Material con trazabilidad por lote: Material + Lote + Ubicación Material sin trazabilidad por lote: Material + Ubicación Riesgo: Una sola regla de clave puede no funcionar para categorías con estructuras distintas. Alternativas: Separar categorías. Crear una regla condicional. Utilizar un identificador maestro. Documentar el valor No aplica. Mantener consultas específicas."
+   },
+   {
+    "title": "21. Concatenación con separador",
+    "para": "Cuando se crea una columna concatenada, debe utilizarse un separador que reduzca ambigüedades. Ejemplo: Sin separador: AB + 12 = AB12 A + B12 = AB12 Dos combinaciones diferentes producen el mismo resultado. Con separador: AB|12 A|B12 Los resultados se distinguen. Separadores posibles: | ~ :: __ Precaución: El separador no debe aparecer normalmente dentro de los componentes o debe aplicarse una estrategia de escape."
+   },
+   {
+    "title": "22. Colisiones de concatenación",
+    "para": "Una colisión ocurre cuando dos combinaciones diferentes generan la misma clave concatenada. Ejemplo: Material = AB Lote = 12 Resultado sin separador: AB12 Otro registro: Material = A Lote = B12 Resultado: AB12 Prevención: Usar separadores. Incluir longitud de componentes. Conservar las columnas originales. Preferir selección múltiple en Combinar. Validar unicidad después de concatenar."
+   },
+   {
+    "title": "23. Normalización de componentes",
+    "para": "Cada componente debe prepararse individualmente. Material: Tipo texto. Mayúsculas. Recorte. Patrón. Lote: Tipo texto. Conservación de ceros. Limpieza. Separadores. Ubicación: Catálogo. Vigencia. Homologación. Periodo: Formato uniforme. Tipo fecha o texto controlado. Regla de corte. Secuencia recomendada: Componentes originales ↓ Limpieza individual ↓ Validación individual ↓ Construcción de la clave ↓ Prueba de unicidad"
+   },
+   {
+    "title": "24. Conservación de componentes originales",
+    "para": "No deben sobrescribirse inmediatamente. Estructura sugerida: Material original Material limpio Lote original Lote limpio Ubicación original Ubicación homologada Clave compuesta de control Beneficios: Trazabilidad. Diagnóstico. Comparación. Corrección del origen. Identificación del componente que falló. Reversibilidad."
+   },
+   {
+    "title": "25. Validación individual y conjunta",
+    "para": "Una clave compuesta debe validarse en dos niveles. Nivel 1. Componentes: Material válido. Lote válido. Ubicación válida. Periodo válido. Nivel 2. Combinación: Combinación completa. Combinación única. Combinación reconocida. Combinación vigente. Combinación existente en ambas tablas. Ejemplo: Todos los componentes pueden ser válidos individualmente, pero la combinación puede no existir. Material válido = MAT-001 Lote válido = L999 Combinación MAT-001 + L999 = No reconocida"
+   },
+   {
+    "title": "26. Unicidad de la combinación",
+    "para": "La unicidad se evalúa agrupando por todos los componentes. Ejemplo: Material + Lote + Ubicación Resultados: La tercera combinación está repetida. Diagnóstico: ¿Es duplicado exacto? ¿Existen dos movimientos distintos? ¿Falta fecha o secuencia en la clave? ¿La granularidad está bien definida? ¿Debe conservarse historial?"
+   },
+   {
+    "title": "27. Clave compuesta en tabla operativa y maestra",
+    "para": "La misma relación puede utilizar diferentes niveles. Tabla operativa: Material + Lote + Ubicación Tabla de calidad: Material + Lote Relación: La tabla operativa puede combinarse con Calidad usando: Material + Lote Aunque la clave completa del inventario incluya Ubicación. Aprendizaje: La clave que identifica una fila no siempre es idéntica a la clave utilizada para relacionarla con otra tabla."
+   },
+   {
+    "title": "28. Clave de identificación frente a clave de relación",
+    "para": "Clave de identificación: Identifica la fila dentro de su tabla. Material + Lote + Ubicación Clave de relación: Conecta con otra entidad. Material + Lote Ejemplo: Inventario: Clave de identificación: Material + Lote + Ubicación Calidad: Clave de identificación: Material + Lote Relación: Material + Lote"
+   },
+   {
+    "title": "29. Selección múltiple en Power Query",
+    "para": "Para combinar mediante varias columnas: Seleccionar la tabla izquierda. Abrir Combinar consultas. Seleccionar la tabla derecha. Seleccionar el primer componente en la tabla izquierda. Mantener presionada la tecla Ctrl. Seleccionar los demás componentes. Repetir la selección en la tabla derecha. Respetar el mismo orden. Revisar los números de selección. Confirmar los tipos. Revisar la estimación de coincidencias. Seleccionar el tipo de unión. Power Query permite combinar mediante una o varias columnas. En selecciones múltiples, los números mostrados junto a los encabezados indican el orden de los campos. [learn.microsoft.com]"
+   },
+   {
+    "title": "30. Diagnóstico de coincidencias",
+    "para": "Antes de aceptar debe revisarse el mensaje estimado de coincidencias. Posibles resultados: Alta coincidencia. Coincidencia parcial. Ninguna coincidencia. Coincidencias inesperadamente altas. Múltiples coincidencias por clave. Si la coincidencia es baja: Revisar: Orden de columnas. Tipos. Espacios. Ceros. Formatos. Periodos. Granularidad. Componentes faltantes. Si las filas se multiplican: Revisar: Unicidad de la tabla derecha. Clave insuficiente. Historial. Relación varios a varios. Duplicados."
+   },
+   {
+    "title": "31. Comparar componentes antes de combinar",
+    "para": "Una tabla de diagnóstico puede mostrar: Regla: La compatibilidad debe comprobarse por cada par, no únicamente por la clave concatenada completa."
+   },
+   {
+    "title": "32. Claves compuestas históricas",
+    "para": "Una tabla histórica puede necesitar: Código + Vigente desde Sin embargo, para relacionar un evento histórico puede necesitar una condición adicional: Fecha del evento entre Vigente desde y Vigente hasta Esto no se resuelve únicamente mediante igualdad simple de columnas. Alternativas conceptuales: Preparar el catálogo para el periodo. Filtrar la versión vigente. Crear una tabla por periodo. Determinar previamente la versión aplicable. Utilizar lógica avanzada en módulos posteriores. ⚠️ Atención: agregar la fecha del evento a la clave no garantiza que coincida con la fecha de inicio de vigencia."
+   },
+   {
+    "title": "33. Claves con medidas",
+    "para": "No deben utilizarse cantidades o importes como componentes salvo que el proceso lo defina expresamente. Ejemplo riesgoso: Proveedor + Factura + Importe El importe puede cambiar por: Corrección. Impuesto. Redondeo. Moneda. Nota de crédito. Mejor opción: Proveedor + Factura El importe se utiliza como dato para validar exactitud, no necesariamente como parte de la identidad."
+   },
+   {
+    "title": "34. Claves con descripciones",
+    "para": "Ejemplo riesgoso: Material + Descripción La descripción puede cambiar sin que cambie la entidad. Consecuencia: Un mismo material puede parecer una combinación distinta: MAT-001 + Bolsa primaria MAT-001 + Empaque primario Recomendación: Utilizar códigos y conservar las descripciones como atributos."
+   },
+   {
+    "title": "35. Consulta de claves compuestas inválidas",
+    "para": "Una arquitectura inicial puede incluir: 01_Origen 02_ComponentesPreparados 03_ClaveCompuesta 04_ClavesCompletas 05_ClavesIncompletas 06_ClavesDuplicadas 07_ClavesNoReconocidas 08_ClavesValidas 09_ResumenClaves Columnas sugeridas: ID del registro Componente 1 original Componente 1 limpio Componente 2 original Componente 2 limpio Componente 3 original Componente 3 limpio Clave concatenada de control Componentes completos Cumple formato Conteo de combinación Existe en referencia Estado Motivo Responsable"
+   },
+   {
+    "title": "36. Estado de la clave compuesta",
+    "para": "Valores sugeridos: Válida Incompleta Componente inválido Duplicada No reconocida Histórica Clave insuficiente Clave excesiva Error técnico No evaluable Resultado: Preparada para combinar Requiere corrección Requiere revisión No debe utilizarse Excepción autorizada"
+   },
+   {
+    "title": "37. Indicadores",
+    "para": "Completitud: Claves con todos sus componentes / registros evaluados Unicidad: Combinaciones con una sola aparición / combinaciones evaluadas Reconocimiento: Claves encontradas en la tabla relacionada / claves evaluables Duplicidad: Combinaciones repetidas no justificadas / combinaciones evaluadas Error de componente: Registros con al menos un componente inválido / registros evaluados"
+   },
+   {
+    "title": "39. Procedimiento recomendado",
+    "para": "Paso 1. Definir la granularidad: Cada fila representa... Paso 2. Proponer la clave simple: Comprobar si identifica la fila. Paso 3. Contar la propuesta: Identificar repeticiones. Paso 4. Agregar el segundo componente: Comprobar nuevamente. Paso 5. Agregar un tercer componente si es necesario: Evitar componentes innecesarios. Paso 6. Validar individualmente: Revisar tipos, formatos y nulos. Paso 7. Validar conjuntamente: Revisar completitud y unicidad. Paso 8. Comparar ambas tablas: Confirmar equivalencia semántica. Paso 9. Probar la combinación: Seleccionar columnas en el mismo orden. Paso 10. Conciliar: Comparar coincidencias, filas y excepciones."
+   },
+   {
+    "title": "40. Aplicaciones departamentales",
+    "para": "👥 Recursos Humanos: Granularidad: Una fila por colaborador, curso y fecha. Clave: Número de empleado + Código de curso + Fecha Riesgo: El mismo colaborador puede repetir un curso. 💰 Contabilidad: Granularidad: Una fila por proveedor, factura y periodo. Clave: Proveedor + Factura + Periodo Riesgo: El mismo folio puede existir en proveedores diferentes. Las prácticas deben utilizar información ficticia. 🔬 Calidad: Granularidad: Una fila por lote y tipo de inspección. Clave: Producto + Lote + Tipo de inspección Riesgo: Un número de lote puede repetirse entre productos. 🔧 Mantenimiento: Granularidad: Una fila por orden y actividad. Clave: Orden + Secuencia de actividad Riesgo: Los nombres de actividad pueden repetirse. 🏭 Producción: Granularidad: Una fila por orden, turno y etapa. Clave: Orden + Turno + Etapa Riesgo: Combinar solo por orden multiplica turnos y etapas. 📦 Almacenes: Granularidad: Una fila por material, lote y ubicación. Clave: Material + Lote + Ubicación Riesgo: Lotes iguales en materiales distintos. 🦺 Seguridad: Granularidad: Una fila por evento y acción. Clave: Folio de evento + Número de acción Riesgo: Varias acciones válidas para un evento. 🩺 Servicios médicos administrativos: Granularidad: Una fila por folio anónimo, fecha y tipo administrativo. Clave: Folio anónimo + Fecha + Tipo Precaución: Los datos deben ser simulados, anonimizados y minimizados."
+   },
+   {
+    "title": "41. Responsabilidades",
+    "para": "Responsable del proceso: Define la granularidad. Confirma los componentes. Aprueba el alcance. Determina las repeticiones válidas. Responsable del catálogo: Mantiene los componentes maestros. Garantiza unicidad. Controla vigencias. Resuelve combinaciones no reconocidas. Responsable de Power Query: Conserva los componentes originales. Prepara cada columna. Verifica tipos. Valida el orden. Cuenta combinaciones. Separa claves inválidas. Responsable de captura: Registra todos los componentes. Utiliza formatos autorizados. Corrige los valores incompletos. Evita claves genéricas. Usuario del resultado: Conoce el nivel de detalle. No modifica claves manualmente. Revisa excepciones. Reporta relaciones incorrectas."
+   }
+  ],
+  "resumen": [
+   "Una clave compuesta utiliza dos o más columnas.",
+   "Se necesita cuando una clave simple no identifica la granularidad.",
+   "La clave debe ser mínima y estable.",
+   "Una clave insuficiente todavía produce repeticiones.",
+   "Una clave excesiva contiene campos variables o innecesarios.",
+   "La clave compuesta conserva los componentes separados.",
+   "La clave concatenada reúne los componentes en un texto.",
+   "Power Query puede combinar directamente mediante varias columnas.",
+   "El orden de selección debe coincidir.",
+   "Los nombres pueden ser diferentes.",
+   "Los tipos deben ser compatibles.",
+   "El periodo puede formar parte de la identidad.",
+   "La fecha debe utilizarse con una definición clara.",
+   "Los componentes nulos producen claves incompletas.",
+   "Una clave condicional puede requerir separar categorías.",
+   "La concatenación sin separador puede generar colisiones.",
+   "Los componentes deben normalizarse individualmente.",
+   "La combinación completa debe evaluarse por unicidad.",
+   "La clave de identificación puede diferir de la clave de relación.",
+   "Los registros inválidos deben conservarse para revisión.",
+   "La granularidad y la cardinalidad determinan el diseño.",
+   "Toda clave compuesta debe documentarse."
+  ],
+  "quiz": [
+   {
+    "q": "Una clave compuesta utiliza",
+    "opts": [
+     "Dos o más columnas",
+     "Una sola descripción",
+     "Únicamente una columna de índice",
+     "Todas las columnas de la tabla"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Si una tabla representa una fila por orden, turno y etapa, una clave apropiada puede ser",
+    "opts": [
+     "Orden",
+     "Orden + turno",
+     "Orden + turno + etapa",
+     "Observación"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Al combinar mediante varias columnas, el orden",
+    "opts": [
+     "No importa",
+     "Debe ser equivalente en las dos tablas",
+     "Debe invertirse",
+     "Solo importa en columnas numéricas"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Una clave excesiva",
+    "opts": [
+     "Utiliza únicamente los componentes necesarios",
+     "Incluye campos variables o innecesarios",
+     "Siempre mejora las coincidencias",
+     "Es obligatoria en Power Query"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "La clave de identificación",
+    "opts": [
+     "Siempre es idéntica a la clave de relación",
+     "Puede incluir más componentes que la clave usada para relacionar otra tabla",
+     "Debe eliminarse después de combinar",
+     "Solo puede ser numérica"
+    ],
+    "correct": 1
+   }
+  ],
+  "files": []
+ },
+ {
+  "id": 5,
+  "title": "Preparación de claves",
+  "duracion": "110 a 130 min",
+  "dificultad": "Intermedia",
+  "badgeIcon": "wand-2",
+  "badgeDesc": "Dominaste la preparación de claves",
+  "objetivos": [
+   "Explicar por qué una clave debe prepararse antes de combinar.",
+   "Conservar la clave original.",
+   "Crear una clave de trabajo.",
+   "Asignar el tipo de dato correcto.",
+   "Proteger los ceros iniciales.",
+   "Limpiar caracteres no imprimibles.",
+   "Recortar espacios exteriores.",
+   "Normalizar mayúsculas y minúsculas.",
+   "Controlar espacios internos.",
+   "Validar guiones y separadores.",
+   "Revisar la longitud de una clave.",
+   "Comprobar prefijos y sufijos.",
+   "Identificar claves con formato inválido.",
+   "Preparar fechas utilizadas como parte de una clave.",
+   "Considerar la configuración regional.",
+   "Aplicar tablas de equivalencias autorizadas.",
+   "Diferenciar normalización técnica y homologación de negocio.",
+   "Detectar claves incompletas.",
+   "Identificar claves no reconocidas.",
+   "Separar claves válidas, rechazadas y no evaluables.",
+   "Calcular indicadores de preparación.",
+   "Conciliar los registros antes y después.",
+   "Documentar cada transformación aplicada."
+  ],
+  "situacion": "Una organización necesita combinar sus movimientos de materiales con el catálogo maestro, pero antes de relacionarlas las claves llegan en condiciones muy distintas. Algunas solo requieren una transformación técnica, como \" mat-00126 \" que debe convertirse en \"MAT-00126\"; otras necesitan una equivalencia autorizada, como \"00128\" que corresponde a \"MAT-00128\" según una tabla aprobada por el responsable del catálogo.<br><br>Hay casos más delicados: \"MAT-00131\" tiene un formato perfectamente válido, pero no existe en el catálogo, así que no puede completarse por suposición; y valores como 0000 o null no representan ningún material real y deben rechazarse en lugar de forzarse a coincidir. Antes de combinar estas tablas en Power Query surge la pregunta central de la lección: ¿cómo convertir claves técnicamente diferentes en valores comparables sin inventar equivalencias ni perder trazabilidad?",
+  "secciones": [
+   {
+    "title": "1. ¿Qué significa preparar una clave?",
+    "para": "Preparar una clave significa aplicar transformaciones controladas para que pueda compararse de manera confiable con la clave de otra tabla. La preparación puede incluir: Asignación de tipo. Limpieza de caracteres. Recorte de espacios. Normalización de capitalización. Validación de longitud. Revisión de prefijo. Estandarización de separadores. Conversión regional. Aplicación de equivalencias. Clasificación de excepciones. Propósito: La preparación busca producir una columna: Clave preparada que pueda utilizarse en una combinación sin sobrescribir: Clave original 💡 Concepto clave: preparar una clave no significa corregirla arbitrariamente. Significa convertirla en un valor comparable mediante reglas documentadas."
+   },
+   {
+    "title": "2. Arquitectura básica de preparación",
+    "para": "Una estructura recomendable es: Clave original ↓ Clave técnica ↓ Clave homologada ↓ Clave validada ↓ Estado de clave Clave original: Valor recibido desde la fuente. Clave técnica: Resultado después de limpiar espacios, caracteres y formato. Clave homologada: Resultado después de aplicar una equivalencia autorizada. Clave validada: Clave que cumple el patrón y existe en la referencia correcta. Estado de clave: Clasificación final: Válida Incompleta No reconocida Sustituta Error técnico No evaluable"
+   },
+   {
+    "title": "3. Conservar la clave original",
+    "para": "La clave recibida no debe sobrescribirse inmediatamente. Estructura recomendada: Beneficios: Permite revisar qué se recibió. Facilita investigar una homologación. Permite corregir el origen. Conserva evidencia. Ayuda a revertir reglas incorrectas. Permite medir la frecuencia de transformaciones."
+   },
+   {
+    "title": "4. Duplicar la columna antes de transformar",
+    "para": "Una estrategia práctica consiste en duplicar la columna original. Ejemplo: Código recibido Código preparado Las transformaciones se aplican a: Código preparado El original permanece sin cambios. Nomenclatura sugerida: Clave_Original Clave_Limpia Clave_Homologada Clave_Validada Evitar: Columna1 Copia Copia de copia Código final nuevo Los nombres deben mostrar claramente la etapa de procesamiento."
+   },
+   {
+    "title": "5. Tipo de dato",
+    "para": "El tipo determina cómo Power Query interpreta y transforma los valores. Los tipos de datos se definen en el nivel de columna y determinan las transformaciones disponibles en la interfaz. Una columna de texto puede contener letras, números o fechas representadas como caracteres, mientras que una columna numérica aplica reglas diferentes. [learn.microsoft.com] Para claves suele utilizarse: Texto especialmente si contienen: Ceros iniciales. Letras. Guiones. Prefijos. Longitud fija. Identificadores sin función matemática. Ejemplos: 00125 EMP-00035 MAT-00125 AREA-05"
+   },
+   {
+    "title": "6. Por qué no conviene tratar una clave como número",
+    "para": "Una clave no representa una cantidad. Ejemplo: Código = 00125 Si se convierte a número: 125 Consecuencias: Pérdida de ceros iniciales. Longitud diferente. Falta de coincidencia. Alteración del patrón. Posible confusión con otra entidad. Regla: Si el valor se utiliza para identificar y no para calcular: Tipo sugerido = Texto"
+   },
+   {
+    "title": "7. Conversión controlada a texto",
+    "para": "Antes de convertir debe verificarse: Tipo original. Valores con error. Fechas interpretadas incorrectamente. Números con formato científico. Decimales. Ceros ya perdidos. Importante: Convertir: 125 → \"125\" no recupera automáticamente: \"00125\" Una vez perdidos los ceros, se necesita una regla adicional para reconstruir el formato."
+   },
+   {
+    "title": "8. Protección de ceros iniciales",
+    "para": "Ejemplo: Formato esperado: 00000 Valor recibido: 125 Valor formateado: 00125 Antes de completar ceros debe comprobarse: Longitud oficial. Tipo de clave. Si todos los códigos comparten la misma estructura. Si el valor 125 realmente corresponde a 00125. Si existe un prefijo. Si la regla aplica a todo el periodo. Riesgo: Completar ceros sin control puede convertir: 125 en una clave aparentemente válida pero incorrecta."
+   },
+   {
+    "title": "9. Limpiar caracteres",
+    "para": "La transformación Limpiar ayuda a retirar determinados caracteres de control que pueden estar ocultos dentro del texto. Ejemplos: Saltos de línea. Retornos de carro. Tabulaciones. Caracteres no imprimibles. Marcas procedentes de exportaciones. Ejemplo: \"MAT-00129\" + salto de línea Después de limpiar: \"MAT-00129\" Importancia: Dos claves visualmente iguales pueden no coincidir si una contiene caracteres ocultos."
+   },
+   {
+    "title": "10. Recortar espacios",
+    "para": "La transformación Recortar retira espacios situados al principio o al final. Ejemplo: \" MAT-00126 \" Después de recortar: \"MAT-00126\" No modifica necesariamente: \"MAT - 00126\" porque contiene espacios internos. Diferencia:"
+   },
+   {
+    "title": "11. Espacios internos",
+    "para": "Los espacios internos requieren mayor cuidado. Ejemplo: \"MAT - 00130\" Puede representar: \"MAT-00130\" pero la equivalencia debe confirmarse. No todos los espacios internos son errores: \"AREA MEDICA\" podría ser un código autorizado si el sistema lo define así. Tratamiento: Definir patrón oficial. Identificar variantes. Utilizar reemplazos específicos. Conservar el valor original. Validar el resultado contra el catálogo."
+   },
+   {
+    "title": "12. Mayúsculas y minúsculas",
+    "para": "Valores recibidos: mat-00125 Mat-00125 MAT-00125 Normalización posible: MAT-00125 Beneficio: Reduce variantes de capitalización. Limitación: No corrige: Prefijos incorrectos. Dígitos faltantes. Separadores. Claves desconocidas. Valores sustitutos. Errores ortográficos. ⚠️ Atención: convertir a mayúsculas normaliza la presentación, pero no valida el significado."
+   },
+   {
+    "title": "13. Guiones y separadores",
+    "para": "Una clave puede utilizar: MAT-00125 MAT00125 MAT 00125 MAT_00125 Pregunta: ¿Son equivalentes? La respuesta depende de la regla oficial. Opciones: Conservar el guion: Si forma parte del patrón autorizado. Retirar el guion: Solo si el identificador oficial no lo utiliza. Insertar el guion: Solo mediante una regla estructural confiable. Aplicar equivalencia: Si las variantes están autorizadas."
+   },
+   {
+    "title": "14. Reemplazar valores",
+    "para": "Power Query permite reemplazar el contenido completo de una celda o instancias de una cadena de texto. En columnas de texto, la operación puede sustituir partes del valor, por lo que debe revisarse si la intención es reemplazar una coincidencia parcial o el contenido completo. [learn.microsoft.com] Ejemplo controlado: \"MAT 00125\" → \"MAT-00125\" Ejemplo riesgoso: Reemplazar: \"MAT\" → \"\" podría modificar todas las claves y eliminar un prefijo necesario. Buen control: Antes y después del reemplazo, registrar: Número de filas afectadas. Valor original. Valor resultante. Regla. Responsable. Excepciones."
+   },
+   {
+    "title": "15. Reemplazo completo frente a parcial",
+    "para": "Reemplazo completo: Valor completo: \"00128\" → \"MAT-00128\" Reemplazo parcial: Fragmento: \"_\" → \"-\" Riesgo del reemplazo parcial: Puede cambiar claves que no debían modificarse. Recomendación: Para equivalencias de negocio, utilizar preferentemente: Tabla de equivalencias. Combinación con catálogo. Sustitución completa. Regla específica."
+   },
+   {
+    "title": "16. Longitud esperada",
+    "para": "Una clave puede tener una longitud autorizada. Ejemplo: MAT-00125 Longitud: 9 caracteres Valores problemáticos: MAT-125 MAT-000125 MAT00125 Control: Crear una columna: Longitud de clave Resultado: Cumple longitud No cumple longitud Precaución: Una longitud correcta no garantiza una clave válida. XXX-99999 puede tener nueve caracteres y no existir en el catálogo."
+   },
+   {
+    "title": "17. Prefijos",
+    "para": "El prefijo ayuda a identificar la familia del código. Ejemplos: MAT- EMP- AREA- OT- SOL- Control: La clave debe comenzar con \"MAT-\" Problemas: 00125 MT-00125 MATERIAL-00125 Tratamiento: Confirmar la entidad. Aplicar una equivalencia autorizada. No agregar el prefijo únicamente porque “parece corresponder”. Validar contra el catálogo."
+   },
+   {
+    "title": "18. Sufijos",
+    "para": "Algunas claves incluyen un sufijo. Ejemplo: EQ-001-A donde el sufijo puede representar: Versión. Ubicación. Subcomponente. Presentación. Categoría. Riesgo: Eliminar el sufijo puede relacionar entidades diferentes. Regla: Antes de retirarlo debe determinarse: Si forma parte de la identidad. Si representa una característica descriptiva. Si existe una tabla de equivalencias. Si la granularidad depende de él."
+   },
+   {
+    "title": "19. Patrones",
+    "para": "Un patrón define la estructura esperada. Ejemplo conceptual: MAT-00000 Interpretación: Prefijo MAT-. Cinco dígitos. Longitud fija. Sin espacios. Sin caracteres adicionales. Otros ejemplos: EMP-00000 OT-2026-0001 SOL-0001 AREA-00 El patrón puede evaluar: Longitud. Prefijo. Posición del guion. Cantidad de dígitos. Caracteres permitidos. Ausencia de espacios."
+   },
+   {
+    "title": "20. Validación frente a corrección",
+    "para": "Validar: Determinar si la clave cumple. MAT-00125 → Cumple patrón Corregir: Transformar conforme a una regla autorizada. MAT00125 → MAT-00125 Riesgo: Si la corrección se aplica antes de diagnosticar, puede ocultarse la frecuencia de errores del origen. Secuencia recomendable: Diagnosticar ↓ Clasificar ↓ Aplicar regla ↓ Validar resultado"
+   },
+   {
+    "title": "21. Configuración regional",
+    "para": "La configuración regional afecta especialmente componentes como: Fechas. Números. Separadores. Nombres de meses. Decimales. Power Query utiliza el tipo de datos y la configuración regional para interpretar valores. Una cadena de texto puede representar una fecha o número diferente según la región seleccionada. [learn.microsoft.com] Ejemplo: 08/10/2026 Puede interpretarse como: 8 de octubre. 10 de agosto. Si una fecha forma parte de la clave, una interpretación incorrecta puede romper la relación."
+   },
+   {
+    "title": "22. Fechas utilizadas como clave",
+    "para": "Ejemplo: Empleado + Curso + Fecha Preparación necesaria: Definir el tipo fecha. Confirmar la región. Eliminar horas si no forman parte de la granularidad. Conservar la fecha original. Validar fechas inválidas. Definir fecha calendario u operativa. Controlar la zona horaria cuando corresponda. Ejemplo problemático: Tabla A: 15/08/2026 Tabla B: 2026-08-15 08:30 Si la relación requiere únicamente el día, primero debe homologarse el nivel temporal."
+   },
+   {
+    "title": "23. Hora y precisión temporal",
+    "para": "Las siguientes marcas pueden representar el mismo evento: 08:30 08:30:00 08:30:00.250 Riesgo: Si la clave incluye hora: Una tabla puede almacenar segundos. Otra puede almacenar minutos. Una puede redondear. Otra puede utilizar zona horaria. Tratamiento: Definir la precisión requerida. Redondear solo con una regla. Conservar el valor original. Documentar la zona. Validar tolerancias."
+   },
+   {
+    "title": "24. Normalización técnica",
+    "para": "La normalización técnica modifica la representación sin cambiar el significado autorizado. Ejemplos: \" MAT-00125 \" → \"MAT-00125\" \"mat-00125\" → \"MAT-00125\" Características: No asigna una entidad distinta. Corrige formato. Reduce diferencias técnicas. Puede automatizarse con reglas claras. Operaciones: Tipo de dato. Limpiar. Recortar. Capitalización. Normalización de separadores. Formato de fecha."
+   },
+   {
+    "title": "25. Homologación de negocio",
+    "para": "La homologación de negocio asigna una variante a un valor autorizado. Ejemplo: \"00128\" → \"MAT-00128\" Requisitos: Equivalencia documentada. Responsable. Vigencia. Ausencia de ambigüedad. Catálogo autorizado. Conservación del original. Diferencia:"
+   },
+   {
+    "title": "26. Tabla de equivalencias",
+    "para": "Estructura recomendada: Ejemplo: Regla: Las equivalencias pendientes no deben incorporarse automáticamente al resultado aprobado."
+   },
+   {
+    "title": "27. Coincidencia con tabla de equivalencias",
+    "para": "La clave técnica puede combinarse con la tabla de equivalencias. Secuencia: Clave original ↓ Clave limpia ↓ Búsqueda en equivalencias ↓ Clave homologada Resultado: Coincidencia directa con catálogo. Coincidencia mediante equivalencia. Sin coincidencia. Equivalencia no vigente. Equivalencia pendiente."
+   },
+   {
+    "title": "28. Claves incompletas",
+    "para": "Una clave está incompleta cuando: Está vacía. Falta un componente. Tiene longitud insuficiente. Carece de prefijo obligatorio. Perdió parte del código. Contiene solo una sección. Ejemplos: MAT- 00125 MAT-00 null Tratamiento: No completar mediante suposición. Utilizar una equivalencia si existe. Consultar una fuente autorizada. Enviar a revisión. Mantenerla como no evaluable."
+   },
+   {
+    "title": "29. Claves sustitutas",
+    "para": "Ejemplos: 0000 9999 SIN-CODIGO N/A PENDIENTE Clasificación: Clave sustituta Tratamiento: Conservar el valor. No relacionar automáticamente. Solicitar la clave real. Medir su frecuencia. Asignar responsable. Definir plazo de corrección."
+   },
+   {
+    "title": "30. Claves no reconocidas",
+    "para": "Una clave puede cumplir el formato y aun así no existir en el catálogo. Ejemplo: MAT-00131 Cumple: Prefijo. Longitud. Tipo. Separador. Pero no aparece en la referencia. Resultado: Formato válido Catálogo no reconocido Posibles causas: Código nuevo. Catálogo desactualizado. Error de captura. Código histórico. Fuente equivocada. Alta pendiente."
+   },
+   {
+    "title": "31. Claves con error técnico",
+    "para": "Puede producirse un error al: Convertir el tipo. Acceder a una columna inexistente. Aplicar una función. Interpretar una fecha. Procesar un valor de Excel con error. Ejecutar una transformación sobre null. Power Query distingue errores a nivel de celda y de paso. Para diagnosticarlos deben revisarse la razón, el mensaje y el detalle antes de reemplazar o eliminar el error. [learn.microsoft.com] Tratamiento: Conservar el valor original. Registrar la causa. Separar el registro. Corregir la transformación. Volver a evaluar. No reemplazar automáticamente por una clave genérica."
+   },
+   {
+    "title": "32. Orden recomendado de preparación",
+    "para": "Paso 1. Conservar el origen: Duplicar o referenciar la columna. Paso 2. Definir tipo: Generalmente texto. Paso 3. Limpiar: Retirar caracteres de control. Paso 4. Recortar: Retirar espacios exteriores. Paso 5. Normalizar capitalización: Cuando esté autorizado. Paso 6. Validar vacío o sustituto: Separar las claves no utilizables. Paso 7. Validar estructura: Longitud, prefijo y separador. Paso 8. Aplicar equivalencias: Solo las autorizadas. Paso 9. Comparar con catálogo: Identificar reconocimiento y vigencia. Paso 10. Clasificar: Válida, homologada, rechazada o no evaluable."
+   },
+   {
+    "title": "33. Por qué importa el orden",
+    "para": "Ejemplo: Valor original: \" mat-00125 \" Si se valida el patrón primero: No cumple Después de limpiar, recortar y convertir a mayúsculas: MAT-00125 Resultado: Cumple Aprendizaje: Las reglas de formato deben ejecutarse después de la limpieza técnica y antes de la homologación de negocio."
+   },
+   {
+    "title": "34. Preparación de claves compuestas",
+    "para": "Cada componente debe prepararse individualmente. Ejemplo: Material + Lote + Ubicación Consulta de trabajo: Material original Material limpio Lote original Lote limpio Ubicación original Ubicación homologada Clave compuesta válida Regla: La clave compuesta estará preparada únicamente si: Todos los componentes obligatorios están presentes. Cada componente cumple su formato. Los tipos son compatibles. La combinación es válida. No existe un error técnico."
+   },
+   {
+    "title": "35. Resultado por componente",
+    "para": "Estado de clave compuesta: No evaluable para combinación Motivo: Ubicación no reconocida Esto permite identificar exactamente qué componente debe corregirse."
+   },
+   {
+    "title": "36. Prueba de reconocimiento",
+    "para": "Después de preparar la clave debe compararse con la tabla maestra. Resultados posibles: Coincidencia directa Coincidencia por equivalencia No reconocida Coincidencia múltiple Catálogo no vigente Clave incompleta Error técnico Importancia: Una clave técnicamente limpia no está necesariamente autorizada."
+   },
+   {
+    "title": "37. Consulta de claves rechazadas",
+    "para": "Una arquitectura sugerida es: 01_Origen 02_ClavesOriginales 03_ClavesLimpias 04_ClavesHomologadas 05_ClavesValidas 06_ClavesIncompletas 07_ClavesSustitutas 08_ClavesNoReconocidas 09_ClavesConError 10_ResumenPreparacion Consultas útiles: 05_ClavesValidas: Lista preparada para combinar. 06_ClavesIncompletas: Registros sin estructura suficiente. 07_ClavesSustitutas: Valores genéricos. 08_ClavesNoReconocidas: Formato válido sin catálogo. 09_ClavesConError: Problemas técnicos."
+   },
+   {
+    "title": "38. Columnas de control sugeridas",
+    "para": "Clave original Clave limpia Clave homologada Tipo original Longitud Cumple prefijo Cumple patrón Era vacía Era sustituta Usó equivalencia Equivalencia vigente Existe en catálogo Conteo de coincidencias Estado de preparación Motivo Responsable"
+   },
+   {
+    "title": "39. Estado de preparación",
+    "para": "Valores sugeridos: Válida directa Válida homologada Incompleta Sustituta Formato inválido No reconocida Equivalencia pendiente Equivalencia vencida Coincidencia múltiple Error técnico No evaluable Resultado general: Preparada para combinar Requiere revisión No debe combinarse"
+   },
+   {
+    "title": "40. Indicadores de preparación",
+    "para": "Preparación técnica: Claves que cumplen limpieza y formato / registros evaluados Reconocimiento: Claves reconocidas en catálogo / claves técnicamente válidas Homologación: Claves resueltas mediante equivalencia / claves evaluadas Rechazo: Claves rechazadas / registros evaluados Claves sustitutas: Claves genéricas / registros evaluados Error técnico: Claves con error / registros evaluados"
+   },
+   {
+    "title": "41. Conciliación",
+    "para": "Todas las claves deben quedar clasificadas. Registros evaluados = Válidas directas + Válidas homologadas + Incompletas + Sustitutas + No reconocidas + Coincidencias múltiples + Errores técnicos + No evaluables Ejemplo: Registros evaluados: 1,000 Válidas directas: 850 Válidas homologadas: 80 Incompletas: 20 Sustitutas: 10 No reconocidas: 25 Coincidencias múltiples: 5 Errores técnicos: 5 No evaluables: 5 Comprobación: 850 + 80 + 20 + 10 + 25 + 5 + 5 + 5 = 1,000"
+   },
+   {
+    "title": "42. Comparación antes y después",
+    "para": "Preguntas: ¿La limpieza redujo variantes? ¿Se conservaron todas las filas? ¿Cuántas claves fueron homologadas? ¿Cuántas continúan sin resolverse? ¿La preparación creó duplicados? ¿La diferencia está explicada?"
+   },
+   {
+    "title": "43. Aplicaciones departamentales",
+    "para": "👥 Recursos Humanos: Clave: Número de empleado Preparación: Texto. Ceros iniciales. Recorte. Longitud. Validación contra padrón. 💰 Contabilidad: Clave: Código de proveedor Preparación: Tipo texto. Prefijo. Limpieza. Equivalencias. Vigencia. Las prácticas deben utilizar información ficticia. 🔬 Calidad: Clave: Producto + lote Preparación: Normalizar producto. Conservar lote como texto. Revisar separadores. Validar combinación. 🔧 Mantenimiento: Clave: Código de equipo Preparación: Recortar. Convertir a mayúsculas. Validar prefijo. Controlar equipos inactivos. 🏭 Producción: Clave: Orden + turno + etapa Preparación: Texto de orden. Catálogo de turnos. Homologación de etapas. Validación de componentes. 📦 Almacenes: Clave: Material + lote + ubicación Preparación: Proteger ceros. Homologar ubicación. Separar lotes no reconocidos. Validar granularidad. 🦺 Seguridad: Clave: Folio de evento + acción Preparación: Patrón de folio. Número de acción. Periodo. Control de versiones. 🩺 Servicios médicos administrativos: Clave: Folio anónimo + fecha + tipo administrativo Preparación: Conservación del anonimato. Tipos temporales. Catálogo de tipos. Minimización de datos."
+   },
+   {
+    "title": "44. Responsabilidades",
+    "para": "Responsable del origen: Captura claves autorizadas. Evita sustitutos. Corrige formatos. Informa cambios. Responsable del catálogo: Mantiene valores maestros. Controla equivalencias. Garantiza vigencias. Resuelve claves desconocidas. Responsable de Power Query: Conserva originales. Aplica transformaciones técnicas. Separa homologaciones. Genera indicadores. Mantiene conciliación. Responsable del proceso: Aprueba patrones. Autoriza equivalencias. Define tratamientos. Revisa excepciones. Usuario del resultado: Revisa el estado de preparación. No modifica claves en la salida. Reporta relaciones incorrectas. Conoce las limitaciones."
+   }
+  ],
+  "resumen": [
+   "Las claves deben prepararse antes de combinar.",
+   "La clave original debe conservarse.",
+   "La clave limpia se utiliza para transformaciones técnicas.",
+   "Las claves suelen tratarse como texto.",
+   "Los ceros iniciales forman parte de la identidad.",
+   "Limpiar y Recortar resuelven problemas distintos.",
+   "Las mayúsculas normalizan, pero no validan.",
+   "Los separadores necesitan una regla oficial.",
+   "Los reemplazos parciales pueden modificar claves válidas.",
+   "La longitud ayuda a comprobar el patrón.",
+   "Prefijos y sufijos pueden formar parte de la identidad.",
+   "La configuración regional afecta fechas.",
+   "Las fechas requieren tipo y precisión compatibles.",
+   "La normalización técnica no equivale a homologación de negocio.",
+   "Las equivalencias necesitan autorización y vigencia.",
+   "Una clave limpia puede continuar siendo no reconocida.",
+   "Las claves sustitutas no deben utilizarse automáticamente.",
+   "Los errores técnicos deben conservarse.",
+   "Las claves compuestas se preparan por componente.",
+   "Todas las claves deben quedar clasificadas y conciliadas."
+  ],
+  "quiz": [
+   {
+    "q": "La clave original debe",
+    "opts": [
+     "Eliminarse al terminar la limpieza",
+     "Conservarse para mantener trazabilidad",
+     "Reemplazarse por un índice",
+     "Convertirse siempre a número"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Una clave con ceros iniciales debería tratarse normalmente como",
+    "opts": [
+     "Número decimal",
+     "Texto",
+     "Porcentaje",
+     "Duración"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Convertir una clave a mayúsculas",
+    "opts": [
+     "Garantiza su existencia en el catálogo",
+     "Normaliza la capitalización, pero no valida el código",
+     "Corrige cualquier error",
+     "Completa los prefijos faltantes"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Una equivalencia de negocio debe",
+    "opts": [
+     "Aplicarse por similitud visual",
+     "Estar autorizada y documentada",
+     "Eliminar la clave original",
+     "Omitir la vigencia"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Una clave técnicamente limpia que no aparece en el catálogo se clasifica como",
+    "opts": [
+     "Automáticamente válida",
+     "No reconocida",
+     "Duplicada",
+     "Igual a cero"
+    ],
+    "correct": 1
+   }
+  ],
+  "files": []
+ },
+ {
+  "id": 6,
+  "title": "Combinar consultas",
+  "duracion": "110 a 130 min",
+  "dificultad": "Intermedia",
+  "badgeIcon": "refresh-cw",
+  "badgeDesc": "Dominaste la combinación de consultas",
+  "objetivos": [
+   "Explicar qué significa combinar consultas.",
+   "Diferenciar integración horizontal y vertical.",
+   "Identificar la tabla izquierda y la tabla derecha.",
+   "Utilizar Combinar consultas.",
+   "Utilizar Combinar consultas como nuevas.",
+   "Seleccionar una clave simple.",
+   "Seleccionar varias columnas como clave.",
+   "Respetar el orden de selección.",
+   "Verificar tipos compatibles.",
+   "Interpretar la estimación de coincidencias.",
+   "Seleccionar un tipo de unión inicial.",
+   "Reconocer la columna de tabla anidada.",
+   "Examinar las tablas relacionadas antes de expandir.",
+   "Detectar filas sin coincidencia.",
+   "Identificar coincidencias múltiples.",
+   "Calcular la cobertura de relación.",
+   "Registrar conteos antes y después.",
+   "Conservar las consultas originales.",
+   "Diseñar una arquitectura básica de combinación.",
+   "Documentar el paso y sus resultados."
+  ],
+  "situacion": "El registro de solicitudes internas de la organización solo contiene el código del área que la originó — no el nombre oficial, ni el responsable, ni si esa área sigue vigente. Esa información existe en un catálogo maestro de áreas, y ambas tablas comparten la misma clave: el código de área. Se espera que cada solicitud pertenezca a una sola área, aunque un mismo código pueda repetirse en varias solicitudes distintas.<br><br>Pero el archivo real no es tan ordenado: el código AREA-99 aparece en una solicitud sin existir en el catálogo, una solicitud tiene el código vacío, dos áreas del catálogo (AREA-01 y AREA-04) no tienen ninguna solicitud asociada, y AREA-03 se repite dos veces entre las solicitudes por corresponder a folios diferentes — una repetición válida, no un error. ¿Cómo podemos relacionar la tabla operativa con el catálogo maestro, conservar todos los registros necesarios y diagnosticar las claves que no encuentran correspondencia?",
+  "secciones": [
+   {
+    "title": "1. ¿Qué significa combinar consultas?",
+    "para": "Combinar consultas es una operación que relaciona dos tablas mediante valores coincidentes en una o varias columnas. Ejemplo: Solicitudes + Catálogo de áreas = Solicitudes con información oficial del área La operación no coloca simplemente una tabla debajo de otra. Busca correspondencias entre claves y agrega una columna que contiene los registros relacionados. Power Query permite realizar una combinación mediante una o varias columnas y elegir diferentes tipos de unión de acuerdo con las filas que deben conservarse. [learn.microsoft.com] 💡 Concepto clave: combinar consultas significa integrar columnas provenientes de otra tabla mediante una relación."
+   },
+   {
+    "title": "2. Integración horizontal",
+    "para": "Combinar es una operación de integración horizontal. Antes: Solicitudes Catálogo Después: La tabla resultante incorpora columnas relacionadas. Representación: Columnas de Solicitudes + Columnas del catálogo = Integración horizontal"
+   },
+   {
+    "title": "3. Combinar frente a anexar",
+    "para": "Aunque el anexado se estudiará más adelante, es necesario distinguirlo desde ahora. Combinar: Agrega columnas mediante claves Anexar: Agrega filas de tablas con estructura compatible Ejemplos: Combinar: Movimientos + Catálogo de materiales Anexar: Movimientos de enero + Movimientos de febrero"
+   },
+   {
+    "title": "4. Tabla izquierda",
+    "para": "La tabla izquierda es la primera tabla de la operación. En el proyecto: Tabla izquierda = Solicitudes Importancia: Su posición influye en: Qué filas se conservan. Cómo se interpreta el tipo de unión. Qué registros se consideran no relacionados. Qué columnas forman la estructura principal. Cómo se realiza la conciliación. Power Query muestra la consulta seleccionada como tabla izquierda cuando se utiliza Combinar consultas. La posición de las tablas es importante para elegir correctamente el tipo de unión. [learn.microsoft.com]"
+   },
+   {
+    "title": "5. Tabla derecha",
+    "para": "La tabla derecha aporta la información relacionada. En el proyecto: Tabla derecha = Catálogo de áreas Propósito: Aportar: Nombre oficial. Responsable. Estado. Vigencia. Clasificación. Requisito crítico: La clave de la tabla derecha debería ser única dentro del alcance utilizado. Riesgo: Si AREA-03 aparece dos veces en el catálogo: SOL-0001 puede encontrar dos coincidencias Al expandir, la solicitud puede convertirse en dos filas."
+   },
+   {
+    "title": "6. Selección de tablas",
+    "para": "Antes de abrir el cuadro de combinación se debe documentar:"
+   },
+   {
+    "title": "7. Combinar consultas",
+    "para": "Ubicación general: En el Editor de Power Query: Inicio → Combinar → Combinar consultas Resultado: La operación se agrega como un paso a la consulta seleccionada. Uso recomendado: Cuando se desea que la tabla principal incorpore directamente la combinación. Ejemplo: Consulta Solicitudes ↓ Nuevo paso: Consultas combinadas La consulta del catálogo no cambia."
+   },
+   {
+    "title": "8. Combinar consultas como nuevas",
+    "para": "La opción Combinar consultas como nuevas crea una consulta independiente sin modificar los pasos de las consultas originales. Power Query ofrece ambas opciones desde el grupo Combinar: una agrega la operación a la consulta actual y la otra crea una consulta nueva con las tablas seleccionadas. [learn.microsoft.com] Arquitectura: Solicitudes Catálogo de áreas ↓ Solicitudes_Areas_Combinadas Ventajas: Conserva consultas base. Facilita pruebas. Separa ingesta e integración. Reduce el riesgo de modificar la consulta original. Mejora la trazabilidad. Facilita comparar antes y después. Recomendación para el curso: En las primeras prácticas se utilizará preferentemente: Combinar consultas como nuevas"
+   },
+   {
+    "title": "9. Selección de claves",
+    "para": "Después de elegir las tablas deben seleccionarse las columnas que establecen la relación. Ejemplo: Tabla izquierda: Código de área Tabla derecha: Código de área Los encabezados: No necesitan llamarse exactamente igual. Los valores: Sí deben representar la misma entidad. Los tipos: Deben ser compatibles. Los encabezados no necesitan coincidir, pero las columnas seleccionadas deben tener tipos compatibles para producir resultados correctos. [learn.microsoft.com]"
+   },
+   {
+    "title": "10. Selección de claves compuestas",
+    "para": "También pueden seleccionarse varias columnas. Ejemplo: Material + Lote Procedimiento general: Seleccionar el primer campo. Mantener presionada la tecla Ctrl. Seleccionar el segundo campo. Repetir la selección en la otra tabla. Verificar la numeración. Confirmar el mismo orden. Power Query muestra números junto a las columnas seleccionadas para indicar el orden de los componentes de la relación. [learn.microsoft.com]"
+   },
+   {
+    "title": "11. Verificación de tipos",
+    "para": "Ejemplo compatible: Ejemplo incompatible: Posibles problemas: Ceros iniciales perdidos. Fechas interpretadas de forma diferente. Números almacenados como texto. Errores de conversión. Coincidencias inferiores a las esperadas. Control: Antes de combinar: Clave izquierda = Texto Clave derecha = Texto"
+   },
+   {
+    "title": "12. Preparación previa obligatoria",
+    "para": "La combinación no debe utilizarse para intentar corregir claves. Antes deben haberse completado: Limpieza. Recorte. Tipo. Mayúsculas. Validación de patrón. Equivalencias. Control de nulos. Unicidad de la tabla maestra. Granularidad. Vigencia. Flujo: Origen ↓ Preparación de claves ↓ Validación ↓ Combinación"
+   },
+   {
+    "title": "13. Cuadro de diálogo Combinar",
+    "para": "El cuadro de diálogo contiene: Tabla izquierda. Tabla derecha. Vista previa de ambas. Columnas seleccionadas. Tipo de unión. Estimación de coincidencias. Opción de coincidencia aproximada, cuando está disponible. Controles antes de aceptar: Tabla correcta. Clave correcta. Orden correcto. Tipo de unión. Porcentaje de coincidencia. Número estimado de filas coincidentes."
+   },
+   {
+    "title": "14. Estimación de coincidencias",
+    "para": "El mensaje inferior del cuadro de combinación presenta una estimación de las filas coincidentes. Microsoft destaca que este mensaje es fundamental para anticipar el resultado de la unión y comprender cuántas filas de las tablas tienen correspondencia. [learn.microsoft.com] Ejemplo: La selección coincide con 4 de 6 filas de la primera tabla Interpretación: Cuatro solicitudes encuentran un área. Dos no encuentran coincidencia. Deben revisarse las claves no relacionadas. Todavía no se confirma la unicidad del catálogo."
+   },
+   {
+    "title": "15. Cobertura de coincidencia",
+    "para": "Fórmula: Cobertura = Registros con coincidencia / Registros evaluables Ejemplo: Solicitudes evaluables = 5 Solicitudes reconocidas = 4 Cobertura = 4 / 5 = 80% La solicitud con clave vacía puede clasificarse como no evaluable y excluirse del denominador técnico, si la regla así lo establece. Indicadores separados: Cobertura sobre total Cobertura sobre evaluables Claves vacías Claves no reconocidas"
+   },
+   {
+    "title": "16. Tipo de unión",
+    "para": "El tipo de unión determina qué filas se conservan. Opciones principales: Externa izquierda. Interna. Externa derecha. Externa completa. Antiizquierda. Antiderecha. En esta lección: Se utilizará la unión externa izquierda como primera aproximación porque el objetivo es conservar las solicitudes e incorporar la información del área. Cada tipo será estudiado individualmente en las lecciones siguientes."
+   },
+   {
+    "title": "17. Primera unión recomendada",
+    "para": "Tabla izquierda: Solicitudes Tabla derecha: Catálogo de áreas Tipo: Externa izquierda Propósito: Conservar todas las solicitudes e incorporar las coincidencias del catálogo Resultado esperado: 6 solicitudes antes 6 solicitudes después de combinar Si el catálogo tiene claves únicas, la expansión debería conservar las seis filas."
+   },
+   {
+    "title": "18. Columna de tabla anidada",
+    "para": "Después de combinar, Power Query crea una columna cuyos valores contienen tablas. Ejemplo conceptual: La columna no contiene todavía la descripción directamente. Contiene los registros encontrados en la tabla derecha."
+   },
+   {
+    "title": "19. ¿Qué es una tabla anidada?",
+    "para": "Una tabla anidada es una tabla almacenada dentro de una celda lógica de otra tabla. Puede contener: Una fila relacionada. Varias filas relacionadas. Ninguna fila. Interpretación: Una fila: Coincidencia única Varias filas: Coincidencia múltiple Tabla vacía: Sin coincidencia"
+   },
+   {
+    "title": "20. Examinar antes de expandir",
+    "para": "No conviene expandir inmediatamente sin revisar la relación. Antes de expandir se debe comprobar: Si las tablas anidadas están vacías. Si contienen una fila. Si contienen varias filas. Si el catálogo tiene duplicados. Qué columnas serán necesarias. Qué información es confidencial. Cuántas filas se esperan después. Ventaja: Permite diagnosticar la relación antes de cambiar la granularidad."
+   },
+   {
+    "title": "21. Conteo de coincidencias por fila",
+    "para": "Puede agregarse conceptualmente una columna: Número de coincidencias Estados: 0 = Sin coincidencia 1 = Coincidencia única >1 = Coincidencia múltiple Ejemplo"
+   },
+   {
+    "title": "22. Clasificación de la relación",
+    "para": "Valores sugeridos: Coincidencia única Sin coincidencia Coincidencia múltiple Clave vacía Clave inválida Error técnico No evaluable Resultado operativo: Preparada para expandir Requiere revisión No debe expandirse"
+   },
+   {
+    "title": "23. Registros sin coincidencia",
+    "para": "Un registro sin coincidencia conserva su clave operativa, pero no encuentra una fila relacionada. Ejemplo: AREA-99 Posibles causas: Código nuevo. Catálogo desactualizado. Captura incorrecta. Formato diferente. Clave histórica. Registro fuera de vigencia. Fuente equivocada. Tratamiento: Conservar el registro. Marcar la falta de correspondencia. Crear una consulta de excepciones. Asignar responsable. Corregir el origen o catálogo. Repetir la combinación."
+   },
+   {
+    "title": "24. Claves vacías",
+    "para": "Una clave vacía no debe confundirse con una clave no reconocida. Clave vacía: No existe valor para comparar Clave no reconocida: Existe valor, pero no aparece en el catálogo Clasificación"
+   },
+   {
+    "title": "25. Coincidencias múltiples",
+    "para": "Una coincidencia múltiple ocurre cuando una fila izquierda encuentra más de una fila derecha. Ejemplo: Catálogo Solicitud: SOL-0001 → AREA-03 Coincidencias: 2 Riesgo: Al expandir, la solicitud puede convertirse en dos filas. Acción: No expandir todavía. Revisar el catálogo. Determinar vigencia. Confirmar la granularidad. Separar la clave repetida. Corregir la fuente maestra."
+   },
+   {
+    "title": "26. Multiplicación de filas",
+    "para": "Antes: Solicitudes = 6 Coincidencias: Cinco solicitudes tienen una coincidencia Una solicitud tiene dos coincidencias Después de expandir: Filas = 7 Diferencia: 7 - 6 = 1 fila adicional Causa: Una clave del catálogo tiene más de una fila relacionada."
+   },
+   {
+    "title": "27. Conteo antes y después",
+    "para": "Controles mínimos Regla: Toda diferencia debe explicarse."
+   },
+   {
+    "title": "28. Conciliación de la combinación",
+    "para": "Relación general: Registros evaluados = Coincidencias únicas + Sin coincidencia + Coincidencias múltiples + Claves vacías + Errores técnicos Ejemplo: Solicitudes: 6 Coincidencia única: 4 Sin coincidencia: 1 Clave vacía: 1 Coincidencia múltiple: 0 Comprobación: 4 + 1 + 1 + 0 = 6"
+   },
+   {
+    "title": "29. Separación de consultas",
+    "para": "Una arquitectura inicial puede incluir: 01_SolicitudesOrigen 02_CatalogoAreas 03_SolicitudesPreparadas 04_AreasPreparadas 05_SolicitudesAreasCombinadas 06_CoincidenciasUnicas 07_SinCoincidencia 08_CoincidenciasMultiples 09_ClavesNoEvaluables 10_ResumenCombinacion Beneficio: Mantiene consultas originales. Facilita investigar. Permite validar coberturas. Conserva excepciones. Mejora la actualización."
+   },
+   {
+    "title": "30. Combinar como nueva en el proyecto",
+    "para": "Consultas base: SolicitudesPreparadas CatalogoAreasPreparado Consulta nueva: Solicitudes_Areas_Relacion Después: Crear referencias: SolicitudesIntegradas SolicitudesSinArea CoincidenciasMultiplesArea ClavesAreaNoEvaluables"
+   },
+   {
+    "title": "31. Qué columnas incorporar",
+    "para": "No es necesario expandir todo el catálogo. Columnas necesarias: Nombre del área. Responsable. Estado de vigencia. Columnas posiblemente innecesarias: Comentarios internos. Fecha de modificación técnica. Usuario que capturó el catálogo. Información confidencial. Campos no utilizados por el reporte. Principio: Expandir solamente lo necesario"
+   },
+   {
+    "title": "32. Minimización de información",
+    "para": "Antes de expandir debe evaluarse: Propósito del reporte. Usuario de la salida. Privacidad. Información personal. Campos sensibles. Necesidad operativa. Vigencia. Ejemplo: Puede ser necesario incorporar: Área homologada pero no: Correo personal del responsable"
+   },
+   {
+    "title": "33. Prefijo de columnas expandidas",
+    "para": "Power Query puede agregar el nombre de la consulta como prefijo. Ejemplo: CatalogoAreas.Nombre del área CatalogoAreas.Responsable CatalogoAreas.Activo Ventaja: Identifica el origen. Desventaja: Puede generar nombres extensos. Recomendación: Renombrar después de expandir: Área homologada Responsable de área Área activa No estudiar aún la expansión en profundidad. Esto se desarrollará en la Lección 12."
+   },
+   {
+    "title": "34. Coincidencia exacta",
+    "para": "La combinación estándar compara las claves seleccionadas conforme a sus valores preparados. Ejemplo: AREA-03 = AREA-03 No coincide: AREA-03 ≠ AREA-3 si no existe una normalización o equivalencia previa. Recomendación: Preparar las claves antes de combinar en lugar de depender de correcciones posteriores."
+   },
+   {
+    "title": "35. Coincidencia aproximada",
+    "para": "Power Query dispone de coincidencia aproximada para columnas de texto y permite aplicar algoritmos de similitud, umbrales y tablas de transformación. [learn.microsoft.com] Posible uso: Identificar candidatos como: Mantenimiento Mantenimento Mantto. Riesgo: Puede relacionar valores diferentes. Alcance de esta lección: Se presenta únicamente como concepto. Regla: Coincidencia aproximada no equivale a coincidencia confirmada Debe utilizarse para sugerir candidatos y conservar revisión humana."
+   },
+   {
+    "title": "36. Combinar no corrige la fuente",
+    "para": "La combinación puede revelar: Claves no reconocidas. Claves vacías. Catálogos duplicados. Tipos incompatibles. Relaciones incorrectas. Pero no corrige automáticamente: Captura. Catálogo. Vigencia. Duplicidad. Granularidad. Flujo correcto: Detectar ↓ Clasificar ↓ Corregir origen o catálogo ↓ Actualizar ↓ Validar nuevamente"
+   },
+   {
+    "title": "37. Registro de la combinación",
+    "para": "Debe documentarse:"
+   },
+   {
+    "title": "38. Indicadores de combinación",
+    "para": "Cobertura total: Registros con coincidencia / registros totales Cobertura evaluable: Registros con coincidencia / registros con clave válida No reconocidos: Claves sin coincidencia / claves evaluables Coincidencias múltiples: Registros con más de una coincidencia / registros evaluados No evaluables: Registros sin clave utilizable / registros totales"
+   },
+   {
+    "title": "39. Ejemplo de indicadores",
+    "para": "Registros totales: 1,000 Claves evaluables: 980 Coincidencias únicas: 940 Sin coincidencia: 30 Coincidencias múltiples: 10 No evaluables: 20 Cobertura total: 940 / 1,000 = 94% Cobertura evaluable: 940 / 980 = 95.9% No reconocidos: 30 / 980 = 3.1% Coincidencias múltiples: 10 / 1,000 = 1%"
+   },
+   {
+    "title": "40. Primera práctica guiada",
+    "para": "Consultas: SolicitudesPreparadas CatalogoAreasPreparado Procedimiento: Abrir SolicitudesPreparadas. Seleccionar Inicio. Seleccionar Combinar consultas como nuevas. Seleccionar SolicitudesPreparadas como izquierda. Seleccionar CatalogoAreasPreparado como derecha. Seleccionar Código de área en ambas. Confirmar tipo texto. Seleccionar Externa izquierda. Revisar la estimación. Aceptar. Renombrar la consulta. Revisar la columna anidada. Contar coincidencias. Clasificar resultados. No expandir todavía todas las columnas. Conciliar."
+   },
+   {
+    "title": "41. Aplicaciones departamentales",
+    "para": "👥 Recursos Humanos: Capacitaciones + Padrón de colaboradores Clave: Número de empleado Resultado: Nombre autorizado. Departamento. Puesto. Estado activo. 💰 Contabilidad: Facturas + Catálogo de proveedores Clave: Código de proveedor Riesgo: Proveedor duplicado. Código inactivo. Factura sin proveedor. Los ejercicios deben utilizar datos ficticios. 🔬 Calidad: Inspecciones + Catálogo de productos Clave: Código de producto Resultado: Descripción. Familia. Especificación. Estado. 🔧 Mantenimiento: Órdenes + Catálogo de equipos Clave: Código de equipo Resultado: Nombre. Ubicación. Responsable. Criticidad. 🏭 Producción: Producción + Catálogo de productos Clave: Código de producto Riesgo: Producto no vigente. Código con formato diferente. Maestro duplicado. 📦 Almacenes: Movimientos + Catálogo de materiales Clave: Código de material Resultado: Descripción. Unidad oficial. Categoría. Requisitos de trazabilidad. 🦺 Seguridad: Acciones + Catálogo de áreas Clave: Código de área Resultado: Área homologada. Responsable. Estado. 🩺 Servicios médicos administrativos: Registros administrativos + Catálogo de tipos Clave: Código de tipo Los datos deben ser sintéticos, anonimizados y minimizados."
+   },
+   {
+    "title": "42. Responsabilidades",
+    "para": "Responsable de la tabla izquierda: Confirma la granularidad. Mantiene la clave. Corrige registros operativos. Explica valores no evaluables. Responsable de la tabla derecha: Garantiza unicidad. Mantiene vigencias. Corrige duplicados. Autoriza nuevos valores. Responsable de Power Query: Selecciona las tablas. Verifica tipos. Define el tipo de unión. Revisa coincidencias. Conserva excepciones. Controla conteos. Responsable del proceso: Aprueba la relación. Define campos por incorporar. Resuelve coincidencias múltiples. Aprueba la liberación. Usuario del resultado: Conoce la cobertura. Revisa registros sin coincidencia. No modifica manualmente la salida. Utiliza las columnas homologadas."
+   }
+  ],
+  "resumen": [
+   "Combinar integra tablas horizontalmente.",
+   "La relación utiliza una o varias claves.",
+   "La tabla izquierda define la estructura principal.",
+   "La tabla derecha aporta información relacionada.",
+   "La posición de ambas tablas es importante.",
+   "Power Query permite combinar dentro de la consulta actual o como nueva.",
+   "Los encabezados pueden ser diferentes.",
+   "Los tipos de las claves deben ser compatibles.",
+   "Las claves compuestas deben seleccionarse en el mismo orden.",
+   "La estimación permite anticipar la cobertura.",
+   "El tipo de unión determina qué filas se conservan.",
+   "La primera combinación utiliza una unión izquierda.",
+   "El resultado inicial contiene una columna de tablas anidadas.",
+   "Una tabla anidada puede contener cero, una o varias filas.",
+   "Conviene diagnosticar antes de expandir.",
+   "Las claves vacías y no reconocidas son diferentes.",
+   "Una coincidencia múltiple puede multiplicar filas.",
+   "Las consultas base deben conservarse.",
+   "Solo deben incorporarse las columnas necesarias.",
+   "La combinación debe conciliarse antes y después."
+  ],
+  "quiz": [
+   {
+    "q": "Combinar consultas permite",
+    "opts": [
+     "Agregar filas sin utilizar claves",
+     "Relacionar tablas mediante columnas coincidentes",
+     "Eliminar todas las tablas originales",
+     "Crear únicamente gráficos"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "La tabla izquierda",
+    "opts": [
+     "No influye en el resultado",
+     "Es fundamental para interpretar el tipo de unión",
+     "Siempre debe ser el catálogo",
+     "Debe tener menos filas"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Una tabla anidada con cero filas significa",
+    "opts": [
+     "Coincidencia múltiple",
+     "Sin coincidencia",
+     "Clave duplicada",
+     "Expansión completa"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Una coincidencia múltiple puede",
+    "opts": [
+     "Multiplicar las filas durante la expansión",
+     "Eliminar automáticamente el registro",
+     "Corregir el catálogo",
+     "Cambiar el tipo de dato"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Durante el diseño inicial conviene",
+    "opts": [
+     "Modificar ambas fuentes",
+     "Combinar como nueva y conservar las consultas base",
+     "Expandir todas las columnas",
+     "Ignorar la estimación"
+    ],
+    "correct": 1
+   }
+  ],
+  "files": []
+ },
+ {
+  "id": 7,
+  "title": "Unión izquierda",
+  "duracion": "110 a 130 min",
+  "dificultad": "Intermedia",
+  "badgeIcon": "route",
+  "badgeDesc": "Dominaste la unión izquierda",
+  "objetivos": [
+   "Explicar el funcionamiento de una unión izquierda.",
+   "Identificar correctamente la tabla izquierda.",
+   "Identificar la tabla derecha.",
+   "Conservar todas las filas de la tabla principal.",
+   "Incorporar atributos de un catálogo.",
+   "Reconocer el efecto de una clave sin coincidencia.",
+   "Diferenciar un nulo original de uno generado por la combinación.",
+   "Identificar claves vacías antes de combinar.",
+   "Detectar claves no reconocidas.",
+   "Identificar coincidencias múltiples.",
+   "Validar la unicidad de la tabla derecha.",
+   "Evitar multiplicaciones no deseadas.",
+   "Calcular cobertura total y cobertura evaluable.",
+   "Crear una consulta de registros sin catálogo.",
+   "Crear una consulta de coincidencias múltiples.",
+   "Expandir únicamente los campos necesarios.",
+   "Comparar filas antes y después.",
+   "Conciliar todas las clasificaciones.",
+   "Documentar el tratamiento de las excepciones.",
+   "Aplicar la unión izquierda al proyecto del módulo."
+  ],
+  "situacion": "Una organización desea incorporar la información oficial de los materiales —descripción, unidad, categoría y estado— a su tabla de movimientos de almacén. Movimientos ocupará la posición de tabla izquierda, porque cada fila representa un movimiento y todos deben conservarse; el catálogo maestro de materiales ocupará la posición de tabla derecha, porque cada fila representa un material autorizado.<br><br>Antes de combinar aparecen varias excepciones que no deben ocultarse: MAT-00999 no existe en el catálogo, MOV-0005 no tiene una clave utilizable, MAT-00125 se repite varias veces en Movimientos —una repetición válida, porque cada fila es un movimiento distinto— y MAT-00128 existe en el catálogo sin haber tenido movimiento alguno. La pregunta central de la lección es: ¿cómo podemos conservar todos los registros operativos e incorporar únicamente la información coincidente del catálogo, sin ocultar las claves vacías o no reconocidas?",
+  "secciones": [
+   {
+    "title": "1. ¿Qué es una unión izquierda?",
+    "para": "La unión externa izquierda conserva todas las filas de la tabla izquierda y agrega los registros coincidentes de la tabla derecha. Cuando una fila izquierda no encuentra una coincidencia, permanece en el resultado, pero las columnas incorporadas desde la derecha muestran valores null. [learn.microsoft.com] Representación conceptual: Tabla izquierda ┌───────────────┐ │ ┌───────┼───────┐ │ │ Coincidencias │ │ └───────┼───────┘ └───────────────┘ Tabla derecha Resultado: Todas las filas de la izquierda + Columnas coincidentes de la derecha 💡 Concepto clave: una unión izquierda se utiliza cuando la prioridad es conservar la tabla principal y enriquecerla con información relacionada."
+   },
+   {
+    "title": "2. ¿Por qué se llama izquierda?",
+    "para": "En el cuadro de diálogo Combinar, la primera tabla se presenta como la tabla izquierda y la segunda como la tabla derecha. La posición es importante porque los diferentes tipos de unión conservan conjuntos distintos de filas. [learn.microsoft.com] Ejemplo del proyecto: Izquierda: Movimientos Derecha: Catálogo de materiales Resultado esperado: Todos los movimientos incluso aquellos que: No tienen código. No encuentran material. Tienen catálogo inactivo. Requieren revisión."
+   },
+   {
+    "title": "3. Propósito de la unión izquierda",
+    "para": "La unión izquierda suele utilizarse para enriquecer una tabla operativa. Tabla operativa: Contiene: Eventos. Movimientos. Solicitudes. Órdenes. Facturas. Inspecciones. Actividades. Acciones. Tabla maestra: Aporta: Descripciones. Categorías. Responsables. Unidades oficiales. Clasificaciones. Vigencias. Estados. Ejemplo: Movimientos + Catálogo de materiales = Movimientos con descripción y unidad oficial"
+   },
+   {
+    "title": "4. Resultado esperado",
+    "para": "Antes de combinar: Movimientos Catálogo Después de la unión izquierda: MOV-0004 permanece porque pertenece a la tabla izquierda. El null indica que no existió una coincidencia en la tabla derecha. Este es el comportamiento documentado para las filas izquierdas sin correspondencia. [learn.microsoft.com]"
+   },
+   {
+    "title": "5. Conservación de la tabla principal",
+    "para": "La unión izquierda es adecuada cuando el objetivo es: Mantener todos los registros operativos. Evitar pérdidas silenciosas. Identificar códigos desconocidos. Conservar claves vacías. Enviar excepciones a revisión. Calcular la cobertura del catálogo. Corregir posteriormente el origen. Regla: Cantidad de filas después de combinar = Cantidad de filas antes Esta condición se espera antes de expandir y, después de expandir, solamente se conserva si cada fila encuentra como máximo una coincidencia en la tabla derecha."
+   },
+   {
+    "title": "6. Granularidad esperada",
+    "para": "Tabla izquierda: Una fila por movimiento Tabla derecha: Una fila por material maestro Granularidad de salida: Una fila por movimiento Condición necesaria: Código de material debe ser único en el catálogo utilizado Si el catálogo tiene claves duplicadas, el resultado puede cambiar a: Una fila por movimiento y coincidencia de catálogo"
+   },
+   {
+    "title": "7. Cardinalidad esperada",
+    "para": "Relación: Muchos movimientos → un material Cardinalidad: Varios a uno Tabla izquierda: La clave puede repetirse: MAT-00125 MAT-00125 MAT-00125 porque cada fila representa un movimiento diferente. Tabla derecha: La clave debería aparecer una sola vez: MAT-00125 → Material A"
+   },
+   {
+    "title": "8. Unicidad de la tabla derecha",
+    "para": "Antes de combinar debe verificarse que la clave maestra sea única. Ejemplo correcto: Ejemplo problemático: Posibles causas: Duplicado exacto. Registro histórico. Dos versiones vigentes. Descripciones contradictorias. Error de captura. Catálogo consolidado incorrectamente."
+   },
+   {
+    "title": "9. Coincidencia única",
+    "para": "Una coincidencia única ocurre cuando una fila izquierda encuentra exactamente una fila derecha. Ejemplo: MOV-0001 Material = MAT-00125 Coincidencias = 1 Resultado: Estado de relación = Coincidencia única El registro está preparado para expandir las columnas autorizadas."
+   },
+   {
+    "title": "10. Sin coincidencia",
+    "para": "Una fila tiene cero coincidencias cuando la clave no aparece en la tabla derecha. Ejemplo: MOV-0004 Material = MAT-00999 Resultado: Coincidencias = 0 Estado = No reconocida Posibles causas: Material nuevo. Catálogo atrasado. Error de captura. Código histórico. Código de otro sistema. Equivalencia no aplicada. Formato incompatible."
+   },
+   {
+    "title": "11. Clave vacía",
+    "para": "Una clave vacía tampoco encuentra coincidencia, pero su causa es distinta. Ejemplo: MOV-0005 Material = null Clasificación: Estado = No evaluable Motivo = Clave obligatoria ausente Diferencia:"
+   },
+   {
+    "title": "12. Coincidencia múltiple",
+    "para": "Una coincidencia múltiple ocurre cuando una fila izquierda encuentra más de una fila derecha. Catálogo problemático: Movimiento: MOV-0001 → MAT-00125 Resultado: Número de coincidencias = 2 Riesgo: Al expandir: MOV-0001 se convierte en dos filas."
+   },
+   {
+    "title": "13. Multiplicación por catálogo duplicado",
+    "para": "Movimientos antes: Catálogo: MAT-00125 aparece dos veces Filas expandidas: MOV-0001 × 2 = 2 filas MOV-0006 × 2 = 2 filas Resultado: 2 movimientos originales → 4 filas expandidas Diferencia: 4 - 2 = 2 filas adicionales"
+   },
+   {
+    "title": "14. Nulos generados por la combinación",
+    "para": "Después de expandir una unión izquierda, pueden aparecer valores null en las columnas procedentes de la tabla derecha. Ejemplo: Significado: El nulo fue generado por: Falta de coincidencia No significa necesariamente: Descripción faltante en el registro operativo Control sugerido: Origen del nulo = Combinación sin coincidencia"
+   },
+   {
+    "title": "15. Nulo original frente a nulo generado",
+    "para": "Nulo original: Ya estaba presente en la fuente. Código de material = null Nulo generado: Aparece en una columna incorporada al no encontrar correspondencia. Descripción oficial = null Importancia: Los dos casos requieren responsables y tratamientos diferentes."
+   },
+   {
+    "title": "16. Enriquecimiento de registros",
+    "para": "La unión izquierda puede incorporar información descriptiva. Ejemplo: Beneficios: Reduce captura repetitiva. Centraliza definiciones. Mejora consistencia. Facilita análisis. Permite validar datos operativos."
+   },
+   {
+    "title": "17. Selección de columnas para expandir",
+    "para": "No deben expandirse todas las columnas sin analizar la necesidad. Para el proyecto pueden incorporarse: Descripción oficial Unidad oficial Categoría Activo Deben evitarse si no son necesarias: Comentario interno Usuario modificador Fecha técnica de carga Correo personal Campos confidenciales Información no vigente Principio: Incorporar únicamente los atributos necesarios para el propósito del resultado."
+   },
+   {
+    "title": "18. Validación entre dato capturado y dato maestro",
+    "para": "La unión izquierda permite comparar valores. Ejemplo: Resultado de validación: Coincide No coincide No evaluable Aplicación: La combinación no solamente enriquece. También puede validar consistencia y exactitud."
+   },
+   {
+    "title": "19. Material activo e inactivo",
+    "para": "La coincidencia con el catálogo no garantiza que el registro sea válido. Ejemplo: MAT-00128 existe, pero Activo = No Posibles estados: Reconocido y activo Reconocido e inactivo No reconocido No evaluable Regla: Coincidencia técnica ≠ Aprobación de negocio Debe revisarse la vigencia respecto de la fecha del movimiento."
+   },
+   {
+    "title": "20. Catálogo histórico",
+    "para": "Un material puede tener varias versiones. Ejemplo: Riesgo: Combinar solamente por material puede producir dos coincidencias. Tratamientos posibles: Filtrar previamente el catálogo vigente. Seleccionar la versión aplicable al periodo. Preparar un catálogo por fecha de corte. Separar conflictos de vigencia. No eliminar versiones históricas sin evidencia."
+   },
+   {
+    "title": "21. Cobertura total",
+    "para": "Fórmula: Cobertura total = Registros con coincidencia única / registros totales Ejemplo: Registros totales = 1,000 Coincidencias únicas = 920 Cobertura total = 92% Limitación: Incluye en el denominador registros sin clave utilizable."
+   },
+   {
+    "title": "22. Cobertura evaluable",
+    "para": "Fórmula: Cobertura evaluable = Registros con coincidencia única / registros con clave válida Ejemplo: Registros totales = 1,000 Claves vacías o inválidas = 20 Registros evaluables = 980 Coincidencias únicas = 920 Cobertura evaluable = 920 / 980 = 93.88% Importancia: Distingue: Problemas de captura. Problemas de reconocimiento. Problemas de catálogo."
+   },
+   {
+    "title": "23. Porcentaje de no reconocidos",
+    "para": "Fórmula: No reconocidos = Claves válidas sin coincidencia / registros evaluables Ejemplo: Claves válidas sin coincidencia = 45 Registros evaluables = 980 45 / 980 = 4.59%"
+   },
+   {
+    "title": "24. Porcentaje de coincidencias múltiples",
+    "para": "Fórmula: Coincidencias múltiples = Registros con más de una coincidencia / registros evaluados Interpretación: Una proporción distinta de cero indica que deben revisarse: La unicidad del catálogo. La vigencia. La granularidad. La suficiencia de la clave. Las versiones históricas."
+   },
+   {
+    "title": "25. Consulta de coincidencias únicas",
+    "para": "Debe contener registros con: Número de coincidencias = 1 Salida: Movimientos integrados Columnas sugeridas: Movimiento. Fecha. Material original. Material preparado. Descripción. Unidad oficial. Categoría. Activo. Resultado de relación."
+   },
+   {
+    "title": "26. Consulta de claves no reconocidas",
+    "para": "Debe contener: Clave válida + Número de coincidencias = 0 Columnas sugeridas: Movimiento Fecha Clave original Clave preparada Archivo de origen Motivo Responsable Estado Nombre sugerido: Movimientos_Sin_Catalogo"
+   },
+   {
+    "title": "27. Consulta de claves no evaluables",
+    "para": "Debe contener: Claves vacías. Claves sustitutas. Claves con formato inválido. Errores técnicos. Componentes incompletos. Nombre sugerido: Movimientos_Clave_No_Evaluable Diferencia: No deben mezclarse con las claves válidas no reconocidas."
+   },
+   {
+    "title": "28. Consulta de coincidencias múltiples",
+    "para": "Debe incluir: Número de coincidencias > 1 Nombre sugerido: Movimientos_Coincidencia_Multiple Propósito: Identificar duplicados maestros. Revisar vigencias. Evaluar granularidad. Evitar expansión prematura. Corregir el catálogo."
+   },
+   {
+    "title": "29. Consulta de catálogo sin movimiento",
+    "para": "La unión izquierda desde Movimientos no muestra directamente los materiales que no tuvieron actividad. Ejemplo: MAT-00128 existe en el catálogo pero no aparece en Movimientos. Esta condición puede investigarse con: Unión derecha. Antiderecha. Inversión de las tablas. Comparación separada. Se desarrollará en las lecciones 9 y 11."
+   },
+   {
+    "title": "30. Arquitectura recomendada",
+    "para": "01_MovimientosOrigen 02_CatalogoMateriales 03_MovimientosPreparados 04_CatalogoPreparado 05_MovimientosMaterialesRelacion 06_CoincidenciasUnicas 07_SinCatalogo 08_ClavesNoEvaluables 09_CoincidenciasMultiples 10_MaterialesInactivos 11_ResumenUnionIzquierda 12_Conciliacion"
+   },
+   {
+    "title": "31. Procedimiento guiado",
+    "para": "Paso 1. Abrir la tabla izquierda: MovimientosPreparados Paso 2. Seleccionar: Inicio → Combinar consultas como nuevas Paso 3. Seleccionar la tabla derecha: CatalogoMaterialesPreparado Paso 4. Seleccionar las claves: Código de material preparado Código autorizado Paso 5. Confirmar tipos: Texto en ambas Paso 6. Seleccionar el tipo: Externa izquierda Paso 7. Revisar la estimación: Comparar coincidencias esperadas y mostradas. Paso 8. Aceptar: Renombrar la consulta. Paso 9. Diagnosticar la tabla anidada: Contar coincidencias antes de expandir. Paso 10. Crear referencias: Separar las clasificaciones. Paso 11. Expandir coincidencias únicas: Incorporar únicamente los campos necesarios. Paso 12. Conciliar: Comparar registros antes y después."
+   },
+   {
+    "title": "34. Conciliación de registros",
+    "para": "Movimientos evaluados = Coincidencias únicas + Sin coincidencia + Claves no evaluables + Coincidencias múltiples + Errores técnicos Ejemplo: Movimientos: 1,000 Coincidencias únicas: 920 Sin coincidencia: 45 Claves no evaluables: 20 Coincidencias múltiples: 10 Errores técnicos: 5 Comprobación: 920 + 45 + 20 + 10 + 5 = 1,000"
+   },
+   {
+    "title": "35. Conciliación después de expandir",
+    "para": "Condición esperada: Si el catálogo es único: Filas antes de expandir = Filas después de expandir Si existe multiplicación: Diferencia = Filas expandidas - Filas originales La diferencia debe relacionarse con coincidencias múltiples. Control adicional: Folios o movimientos distintos antes y después"
+   },
+   {
+    "title": "36. Conciliación de cantidades",
+    "para": "Aunque la cantidad se repita visualmente después de una combinación, no debería duplicarse si la tabla derecha tiene una sola coincidencia por clave. Control: Cantidad total antes = Cantidad total después Si el total aumenta: Revisar: Claves maestras duplicadas. Catálogo histórico. Clave de relación insuficiente. Expansión de varias filas. Relación varios a varios."
+   },
+   {
+    "title": "37. Unión izquierda frente a antiizquierda",
+    "para": "Unión izquierda: Conserva: Todas las filas izquierdas y agrega coincidencias. Antiizquierda: Conserva únicamente: Filas izquierdas sin coincidencia La antiizquierda es particularmente útil para construir directamente la consulta de claves no reconocidas. Microsoft la define como la unión que aporta solo las filas de la tabla izquierda sin correspondencia en la derecha. [learn.microsoft.com] Uso complementario: Unión izquierda → Resultado integrado Antiizquierda → Excepciones sin catálogo"
+   },
+   {
+    "title": "38. Unión izquierda frente a unión completa",
+    "para": "Unión izquierda: Conserva todas las filas de la izquierda. Unión completa: Conserva todas las filas de ambas tablas, incluidas aquellas que aparecen únicamente en la derecha. [learn.microsoft.com] En el proyecto: Unión izquierda: Responde: ¿Qué información del catálogo corresponde a cada movimiento? Unión completa: Responde: ¿Qué registros existen en cada tabla y cuáles aparecen únicamente en una de ellas?"
+   },
+   {
+    "title": "39. Coincidencia aproximada",
+    "para": "La coincidencia aproximada puede utilizarse en combinaciones de columnas de texto para sugerir relaciones basadas en similitud. Power Query permite configurar opciones como el umbral y una tabla de transformación. [learn.microsoft.com] Ejemplo: Material de empaque Material empaque Mat. empaque Riesgo: Una combinación aproximada podría relacionar: MAT-00125 MAT-00152 si se utiliza sobre representaciones inadecuadas. Regla del módulo: Para códigos y claves estructuradas: Preferir coincidencia exacta La coincidencia aproximada se reservará para escenarios controlados de texto descriptivo."
+   },
+   {
+    "title": "40. Tratamiento de excepciones",
+    "para": "Sin coincidencia: Revisar clave. Revisar catálogo. Conservar el registro. Asignar responsable. Clave vacía: Solicitar corrección. Clasificar como no evaluable. No inventar código. Coincidencia múltiple: Bloquear expansión definitiva. Revisar unicidad. Resolver vigencia. Material inactivo: Revisar fecha del movimiento. Validar si era vigente. Generar advertencia o incumplimiento. Error técnico: Conservar razón, mensaje y detalle. Corregir el paso. Actualizar nuevamente."
+   },
+   {
+    "title": "41. Indicadores recomendados",
+    "para": "Cobertura total Cobertura evaluable Claves no reconocidas Claves no evaluables Coincidencias múltiples Materiales inactivos utilizados Cantidad conciliada Filas adicionales por expansión Semáforo introductorio: Verde: Cobertura conforme a la meta. Sin coincidencias múltiples. Filas conciliadas. Sin materiales inactivos no autorizados. Amarillo: Claves no reconocidas documentadas. Materiales inactivos en revisión. Cobertura inferior a la meta sin impacto crítico. Rojo: Coincidencias múltiples. Diferencia de filas sin explicar. Cantidades infladas. Catálogo incorrecto. Claves críticas no evaluables."
+   },
+   {
+    "title": "42. Aplicaciones departamentales",
+    "para": "👥 Recursos Humanos: Unión izquierda: Capacitaciones ← Padrón de colaboradores Se conservan: Todas las capacitaciones. Excepciones: Número de empleado vacío. Colaborador no reconocido. Colaborador inactivo. Colaborador duplicado en el padrón. 💰 Contabilidad: Unión izquierda: Facturas ← Catálogo de proveedores Se incorporan: Nombre oficial. Clasificación. Estado. Centro de pago. Las prácticas deben utilizar datos ficticios. 🔬 Calidad: Unión izquierda: Inspecciones ← Catálogo de productos Excepciones: Producto no reconocido. Producto inactivo. Clave duplicada. Unidad capturada diferente. 🔧 Mantenimiento: Unión izquierda: Órdenes ← Catálogo de equipos Se incorporan: Descripción. Ubicación. Criticidad. Responsable. 🏭 Producción: Unión izquierda: Registros de producción ← Catálogo de productos Control: Todas las órdenes deben conservarse, incluso si el producto no está reconocido. 📦 Almacenes: Unión izquierda: Movimientos ← Catálogo de materiales Control: Comparar unidad capturada y unidad oficial. 🦺 Seguridad: Unión izquierda: Acciones ← Catálogo de áreas Control: Conservar las acciones con área desconocida para corregirlas. 🩺 Servicios médicos administrativos: Unión izquierda: Registros administrativos ← Catálogo de tipos Se utilizarán únicamente datos simulados, anonimizados y minimizados."
+   },
+   {
+    "title": "43. Responsabilidades",
+    "para": "Responsable de la tabla operativa: Mantiene los registros. Corrige claves vacías. Explica el periodo. Atiende datos no evaluables. Responsable del catálogo: Garantiza claves únicas. Mantiene descripciones. Controla vigencias. Resuelve códigos no reconocidos. Responsable de Power Query: Configura la unión. Diagnostica coincidencias. Conserva excepciones. Evita multiplicaciones. Calcula indicadores. Conciliación completa. Responsable del proceso: Define el tratamiento. Determina si un valor inactivo puede aceptarse. Aprueba las reglas. Valida la salida. Usuario del resultado: Conoce el nivel de cobertura. Revisa las excepciones. No corrige manualmente la salida. Utiliza los atributos homologados."
+   }
+  ],
+  "resumen": [
+   "La unión izquierda conserva todas las filas de la izquierda.",
+   "La tabla derecha aporta información coincidente.",
+   "Es apropiada para enriquecer registros operativos.",
+   "La granularidad se conserva si la clave derecha es única.",
+   "Una clave repetida en la derecha puede multiplicar filas.",
+   "Una coincidencia única está preparada para expandirse.",
+   "Una clave válida sin correspondencia es no reconocida.",
+   "Una clave vacía es no evaluable.",
+   "Una coincidencia múltiple requiere revisión.",
+   "Los nulos de las columnas expandidas pueden ser generados por la combinación.",
+   "Un nulo generado no equivale a falta de captura original.",
+   "Solo deben expandirse los campos necesarios.",
+   "Una coincidencia técnica no garantiza vigencia.",
+   "La unión izquierda no muestra directamente maestros sin actividad.",
+   "La cobertura debe medirse sobre total y evaluables.",
+   "Las excepciones deben permanecer separadas.",
+   "La antiizquierda complementa el diagnóstico.",
+   "Las filas deben conciliarse.",
+   "Las cantidades también deben conciliarse.",
+   "Toda diferencia debe quedar explicada."
+  ],
+  "quiz": [
+   {
+    "q": "La unión izquierda conserva",
+    "opts": [
+     "Solo las coincidencias",
+     "Todas las filas de la tabla izquierda",
+     "Únicamente la tabla derecha",
+     "Solo las claves duplicadas"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Cuando no existe una coincidencia, las columnas de la tabla derecha muestran",
+    "opts": [
+     "Cero automáticamente",
+     "Valores null",
+     "La clave más parecida",
+     "Un índice"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Una coincidencia múltiple puede",
+    "opts": [
+     "Multiplicar filas al expandir",
+     "Eliminar el catálogo",
+     "Completar claves vacías",
+     "Cambiar una unión izquierda a interna"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "La cobertura evaluable utiliza como denominador",
+    "opts": [
+     "Todos los registros sin distinción",
+     "Los registros con una clave utilizable",
+     "Solo los registros sin coincidencia",
+     "El número de columnas"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Una coincidencia técnica con un material inactivo",
+    "opts": [
+     "Garantiza que el movimiento sea válido",
+     "Requiere revisar vigencia y reglas del proceso",
+     "Debe eliminarse automáticamente",
+     "Debe cambiarse a coincidencia aproximada"
+    ],
+    "correct": 1
+   }
+  ],
+  "files": []
+ },
+ {
+  "id": 8,
+  "title": "Unión interna",
+  "duracion": "110 a 130 min",
+  "dificultad": "Intermedia a avanzada",
+  "badgeIcon": "target",
+  "badgeDesc": "Dominaste la unión interna",
+  "objetivos": [
+   "Explicar qué es una unión interna.",
+   "Identificar las filas que conserva.",
+   "Diferenciar unión interna y unión izquierda.",
+   "Seleccionar correctamente las tablas y claves.",
+   "Interpretar la estimación de coincidencias.",
+   "Conservar únicamente registros relacionados.",
+   "Identificar las filas excluidas de la tabla izquierda.",
+   "Identificar elementos de la tabla derecha sin utilización.",
+   "Reconocer el riesgo de pérdida silenciosa.",
+   "Evaluar la cobertura de la relación.",
+   "Detectar coincidencias múltiples.",
+   "Comprender que la unión interna no garantiza unicidad.",
+   "Verificar si la granularidad cambia.",
+   "Crear consultas paralelas de coincidencias y no coincidencias.",
+   "Comparar registros entre sistemas.",
+   "Construir una población comparable.",
+   "Conciliar conteos y valores numéricos.",
+   "Documentar las exclusiones.",
+   "Definir situaciones apropiadas e inapropiadas para esta unión.",
+   "Aplicar la unión interna al proyecto del módulo."
+  ],
+  "situacion": "Una organización necesita comparar las cantidades reportadas en sus movimientos operativos contra el catálogo de materiales autorizado, y decide combinar ambas tablas con una unión interna: la tabla izquierda registra cada movimiento operativo, y la tabla derecha contiene cada material reconocido en el catálogo. Al aplicar la unión, el movimiento MOV-0004 desaparece porque su código MAT-00999 no existe en el catálogo, MOV-0005 desaparece porque su clave llegó vacía, y el material MAT-00128 tampoco aparece porque existe en el catálogo pero no registró ningún movimiento en el periodo.<br><br>Ninguno de esos casos es un error de Power Query: son exactamente el comportamiento esperado de una unión interna, que solo conserva la intersección entre las dos tablas. El riesgo aparece si alguien toma esa tabla reducida y la presenta como si fuera el total de movimientos del periodo, sin saber que dos registros y un material completo quedaron fuera. Antes de aceptar el resultado hay que resolver la pregunta central: ¿cómo podemos conservar únicamente los registros coincidentes sin perder la evidencia de las filas excluidas ni interpretar una tabla parcial como si representara toda la información?",
+  "secciones": [
+   {
+    "title": "1. ¿Qué es una unión interna?",
+    "para": "La unión interna conserva únicamente las filas que encuentran correspondencia entre las tablas izquierda y derecha, según las claves seleccionadas. Las filas que existen solo en uno de los lados no aparecen en el resultado principal. [learn.microsoft.com] Representación conceptual: Tabla izquierda Tabla derecha ┌───────────┐ ┌───────────┐ │ │ │ │ │ ┌──────┼─┼──────┐ │ │ │ Coincidencias │ │ │ └──────┼─┼──────┘ │ │ │ │ │ └───────────┘ └───────────┘ Resultado: Solo la intersección 💡 Concepto clave: la unión interna crea una población coincidente, no una vista completa de las dos fuentes."
+   },
+   {
+    "title": "2. Funcionamiento básico",
+    "para": "Tabla izquierda: A B C D Tabla derecha: B C E Unión interna: B C Excluidos de la izquierda: A D Sin utilización en la derecha: E La unión interna no conserva automáticamente las claves que aparecen solamente en una de las fuentes. [learn.microsoft.com]"
+   },
+   {
+    "title": "3. Unión interna frente a unión izquierda",
+    "para": "La unión izquierda conserva todas las filas de la tabla principal y agrega coincidencias; la interna conserva únicamente las filas relacionadas en ambos lados. [learn.microsoft.com], [learn.microsoft.com]"
+   },
+   {
+    "title": "4. Efecto sobre los registros",
+    "para": "Antes: Movimientos operativos = 6 Coincidencias: MOV-0001 MOV-0002 MOV-0003 MOV-0006 Después de la unión interna: Registros = 4 Registros excluidos: MOV-0004 MOV-0005 Diferencia: 6 - 4 = 2 registros La diferencia no debe interpretarse como un error si los dos registros están identificados y conservados en consultas de excepción."
+   },
+   {
+    "title": "5. Pérdida lógica frente a eliminación física",
+    "para": "Los registros excluidos por una unión interna: No se eliminan del archivo de origen. No se borran de la consulta original. No se incluyen en el resultado de la unión. Pueden recuperarse desde la consulta base. Deben investigarse mediante una consulta paralela. Riesgo: Si el usuario solo carga la tabla interna, puede pensar que los cuatro registros representan el total original. Prevención: Mantener: Movimientos_Origen Movimientos_Coincidentes Movimientos_No_Coincidentes Movimientos_Clave_No_Evaluable"
+   },
+   {
+    "title": "6. Uso principal: población comparable",
+    "para": "La unión interna es útil cuando se necesita una tabla formada únicamente por registros que pueden compararse. Ejemplos: Movimientos con materiales reconocidos. Facturas con proveedores autorizados. Capacitaciones con colaboradores encontrados. Órdenes con equipos maestros. Inspecciones con productos reconocidos. Registros presentes en dos sistemas. Operaciones con una referencia autorizada. Folios coincidentes entre dos periodos. Propósito: Analizar únicamente la intersección validada"
+   },
+   {
+    "title": "7. Uso para validar exactitud",
+    "para": "Tabla operativa Fuente autorizada Unión interna Permite comparar: Importante: La comparación cubre solamente los registros relacionados. Debe calcularse también: Cobertura de comparación"
+   },
+   {
+    "title": "8. Cobertura de comparación",
+    "para": "Fórmula: Cobertura = Registros coincidentes / registros evaluables de la tabla principal Ejemplo: Registros evaluables = 980 Registros coincidentes = 920 Cobertura = 920 / 980 = 93.88% Interpretación: El análisis de exactitud cubre: 93.88% de los registros evaluables No cubre automáticamente toda la fuente."
+   },
+   {
+    "title": "9. Cobertura bilateral",
+    "para": "También puede medirse la cobertura desde ambos lados. Cobertura de la tabla izquierda: Filas izquierdas con coincidencia / filas izquierdas evaluables Cobertura de la tabla derecha: Filas derechas utilizadas / filas derechas evaluables Ejemplo: Movimientos evaluables: 980 Movimientos coincidentes: 920 Materiales maestros: 300 Materiales utilizados: 175 Cobertura izquierda: 920 / 980 = 93.88% Utilización del catálogo: 175 / 300 = 58.33%"
+   },
+   {
+    "title": "10. Registros de la izquierda excluidos",
+    "para": "Una fila izquierda queda fuera cuando: La clave no existe en la tabla derecha. La clave está vacía. El formato es diferente. El tipo es incompatible. Falta un componente. La vigencia no corresponde. La tabla derecha está incompleta. La clave contiene error. Se seleccionaron columnas incorrectas. Regla: No toda exclusión significa que el registro operativo sea incorrecto. Puede existir un problema en el catálogo o en la preparación de la relación."
+   },
+   {
+    "title": "11. Registros de la derecha sin utilización",
+    "para": "La unión interna tampoco conserva filas derechas que no tengan correspondencia. Ejemplo: MAT-00128 existe en el catálogo, pero no tiene movimientos. Posibles interpretaciones: No hubo actividad. El material es nuevo. El material está inactivo. El periodo está incompleto. Falta una fuente. El código utilizado en operación es diferente. Diagnóstico: Para revisar estos valores se puede utilizar: Antiderecha. Unión derecha. Unión completa. Comparación separada."
+   },
+   {
+    "title": "12. Unión interna no garantiza unicidad",
+    "para": "La unión interna conserva coincidencias, pero no obliga a que exista una sola coincidencia por clave. Ejemplo: Tabla izquierda Tabla derecha Resultado al expandir La fila sigue siendo coincidente, pero aparece dos veces."
+   },
+   {
+    "title": "13. Multiplicación de filas",
+    "para": "Registros antes: 100 movimientos Coincidentes: 80 movimientos Filas después de expandir: 85 filas Interpretación: 80 registros encontraron coincidencia. Algunos encontraron más de una. Se generaron cinco filas adicionales. La tabla derecha puede tener claves repetidas. La clave puede ser insuficiente. Control: Movimientos distintos después = 80 Filas resultantes = 85"
+   },
+   {
+    "title": "14. Diferenciar filas y claves",
+    "para": "Filas coincidentes: Cantidad de registros de la tabla izquierda que encontraron al menos una correspondencia. Filas resultantes: Cantidad de filas después de expandir. Claves coincidentes: Cantidad de valores distintos relacionados. Ejemplo: Movimientos coincidentes = 80 Filas resultantes = 85 Claves coincidentes = 40 Los tres indicadores describen aspectos diferentes."
+   },
+   {
+    "title": "15. Granularidad del resultado",
+    "para": "Si la tabla derecha es única: La granularidad puede conservarse: Una fila por movimiento Si la tabla derecha tiene varias coincidencias: La granularidad cambia a: Una fila por movimiento y coincidencia Control: Antes de expandir debe documentarse: Granularidad izquierda. Granularidad derecha. Cardinalidad. Granularidad esperada. Filas esperadas."
+   },
+   {
+    "title": "16. Estimación de coincidencias",
+    "para": "El cuadro de diálogo Combinar muestra un mensaje sobre las filas coincidentes. Microsoft recomienda revisar este resultado para comprender la población que producirá la unión interna. [learn.microsoft.com], [learn.microsoft.com] Ejemplo: La selección coincide con 4 de 6 filas de la primera tabla Preguntas: ¿Se esperaban cuatro coincidencias? ¿Qué dos registros quedarán fuera? ¿Se debe modificar la clave? ¿El catálogo está completo? ¿La tabla interna representa suficiente cobertura?"
+   },
+   {
+    "title": "17. Procedimiento para crear una unión interna",
+    "para": "Paso 1. Seleccionar la consulta izquierda: MovimientosPreparados Paso 2. Seleccionar: Inicio → Combinar consultas como nuevas Paso 3. Elegir la tabla derecha: CatalogoMaterialesPreparado Paso 4. Seleccionar las claves: Código de material preparado Código autorizado Paso 5. Confirmar los tipos: Texto Paso 6. Seleccionar: Tipo de combinación: Interna Paso 7. Revisar coincidencias: Comparar el mensaje con la expectativa. Paso 8. Aceptar: Renombrar la consulta: Movimientos_Coincidentes Paso 9. Revisar la columna anidada: Confirmar coincidencias. Paso 10. Expandir campos seleccionados: Incorporar solo lo necesario."
+   },
+   {
+    "title": "18. Consultas paralelas obligatorias",
+    "para": "La unión interna no debe utilizarse de forma aislada cuando se necesita trazabilidad completa. Arquitectura mínima: 01_MovimientosOrigen 02_CatalogoOrigen 03_MovimientosPreparados 04_CatalogoPreparado 05_MovimientosCoincidentes 06_MovimientosSinCoincidencia 07_MovimientosClaveNoEvaluable 08_MaterialesSinMovimiento 09_CoincidenciasMultiples 10_ResumenUnionInterna 11_Conciliacion"
+   },
+   {
+    "title": "19. Consulta de no coincidencias izquierdas",
+    "para": "Debe contener los registros evaluables de la tabla izquierda que no encontraron correspondencia. Ejemplo: MAT-00999 Nombre sugerido: Movimientos_Sin_Catalogo Método: Puede construirse con: Antiizquierda. Unión izquierda más filtro. Comparación de claves. Referencia de la tabla preparada."
+   },
+   {
+    "title": "20. Consulta de claves no evaluables",
+    "para": "Debe conservar: Claves vacías. Valores sustitutos. Tipos con error. Claves incompletas. Componentes inválidos. Equivalencias pendientes. Nombre sugerido: Movimientos_Clave_No_Evaluable Importancia: No deben mezclarse con las claves válidas sin correspondencia."
+   },
+   {
+    "title": "21. Consulta de valores derechos sin uso",
+    "para": "Debe identificar valores del catálogo que no aparecen en la tabla operativa. Nombre sugerido: Materiales_Sin_Movimiento Posibles usos: Detectar maestros sin actividad. Revisar valores obsoletos. Verificar cobertura operativa. Identificar archivos faltantes. Evaluar utilización del catálogo."
+   },
+   {
+    "title": "22. Comparación con la unión izquierda",
+    "para": "Unión izquierda: Resultado: Todos los movimientos Clasificación mediante columnas: Coincide. No coincide. No evaluable. Unión interna: Resultado: Solo los movimientos coincidentes Estrategia recomendada: Durante el diagnóstico: Utilizar unión izquierda para observar todo. Separar excepciones. Crear unión interna para la población comparable. Conciliar ambas salidas."
+   },
+   {
+    "title": "23. Riesgo de pérdida silenciosa",
+    "para": "La pérdida silenciosa ocurre cuando una consulta excluye registros y el usuario no conoce esa reducción. Ejemplo: Origen = 10,000 registros Unión interna = 8,400 registros Si solo se entrega el resultado interno, pueden ignorarse: 1,600 registros Posibles impactos: Totales incompletos. Facturas omitidas. Producción no considerada. Movimientos sin analizar. Indicadores sobre una población parcial. Decisiones incorrectas."
+   },
+   {
+    "title": "24. Diferencia sin explicar",
+    "para": "Fórmula: Diferencia sin explicar = Registros evaluables - Coincidentes - No coincidentes Resultado esperado: 0 Los registros no evaluables deben conciliarse aparte. Conciliación completa: Registros originales = Coincidentes + No coincidentes + No evaluables + Errores técnicos + Exclusiones justificadas"
+   },
+   {
+    "title": "25. Conciliación de registros",
+    "para": "Ejemplo: Registros originales: 1,000 Coincidentes: 900 Sin coincidencia: 60 No evaluables: 25 Errores técnicos: 10 Exclusiones justificadas: 5 Comprobación: 900 + 60 + 25 + 10 + 5 = 1,000 Condición: Diferencia sin explicar = 0"
+   },
+   {
+    "title": "26. Conciliación de cantidades",
+    "para": "Además del número de filas, deben compararse las medidas. Ejemplo: Cantidad total original: 50,000 Cantidad de coincidentes: 46,000 Cantidad sin coincidencia: 2,500 Cantidad no evaluable: 1,000 Cantidad con error: 500 Comprobación: 46,000 + 2,500 + 1,000 + 500 = 50,000 Importancia: Una unión interna con menos filas debe producir un total menor, pero la diferencia debe estar explicada."
+   },
+   {
+    "title": "27. Cobertura numérica",
+    "para": "La cobertura de registros no siempre coincide con la cobertura de cantidades. Fórmula: Cobertura numérica = Cantidad coincidente / cantidad original cuantificable Ejemplo: Registros coincidentes = 90% Cantidad coincidente = 98% Esto indica que los registros excluidos representan poca cantidad. También puede ocurrir lo contrario."
+   },
+   {
+    "title": "28. Unión interna y valores nulos",
+    "para": "En el resultado interno normalmente no aparecen filas sin coincidencia. Sin embargo, todavía pueden existir valores null en: Campos propios de la tabla izquierda. Atributos vacíos de la tabla derecha. Columnas opcionales. Datos maestros incompletos. Campos derivados. Aprendizaje: La ausencia de null por falta de relación no significa que la información esté completa."
+   },
+   {
+    "title": "29. Unión interna y vigencia",
+    "para": "Una clave puede coincidir técnicamente, pero no corresponder al periodo. Ejemplo: Material existe en catálogo, pero estaba inactivo en la fecha del movimiento. Resultado técnico: Coincide Resultado de negocio: No cumple vigencia Regla: La unión interna filtra por coincidencia de la clave, no valida automáticamente las reglas temporales."
+   },
+   {
+    "title": "30. Unión interna y duplicados",
+    "para": "La unión interna puede ayudar a localizar registros presentes en ambas tablas, pero no es una herramienta automática para eliminar duplicados. Ejemplo: Dos tablas contienen: Folio SOL-0001 La coincidencia confirma que el folio aparece en ambas. No determina: Cuál es correcto. Si es duplicado. Si son versiones. Si deben consolidarse. Si pertenecen al mismo periodo."
+   },
+   {
+    "title": "31. Unión interna entre sistemas",
+    "para": "Sistema A: Movimientos operativos Sistema B: Movimientos contabilizados Clave: Folio de movimiento Unión interna: Produce: Movimientos presentes en ambos sistemas Después pueden compararse: Cantidad. Fecha. Estatus. Área. Unidad. Responsable. Periodo."
+   },
+   {
+    "title": "32. Población comparable",
+    "para": "Una población comparable está formada por registros que: Existen en ambas fuentes. Utilizan una clave válida. Tienen granularidad compatible. Comparten periodo. Utilizan unidades comparables. Pueden evaluarse con las mismas reglas. Precaución: La unión interna solo resuelve el requisito de coincidencia de claves. Los demás criterios deben validarse por separado."
+   },
+   {
+    "title": "33. Unión interna con claves compuestas",
+    "para": "Ejemplo: Material + Lote La unión interna conserva solo combinaciones presentes en las dos tablas. Requisitos: Mismos componentes. Mismo orden. Tipos compatibles. Limpieza individual. Granularidad documentada. Valores nulos controlados. Power Query permite seleccionar varias columnas como criterios de relación y exige conservar el mismo orden de selección entre las tablas. [learn.microsoft.com]"
+   },
+   {
+    "title": "34. Clave insuficiente",
+    "para": "Ejemplo: Tabla izquierda: Material + Lote + Ubicación Tabla derecha: Material + Lote + Ubicación Si se combina solamente por: Material pueden aparecer varias coincidencias. Resultado: La unión interna conserva únicamente coincidencias, pero estas pueden pertenecer a lotes o ubicaciones incorrectas. Regla: Coincidencia ≠ Relación correcta"
+   },
+   {
+    "title": "37. Indicadores recomendados",
+    "para": "Cobertura izquierda: Registros coincidentes / registros izquierdos evaluables Utilización derecha: Claves derechas utilizadas / claves derechas evaluables Exclusión izquierda: Registros sin coincidencia / registros izquierdos evaluables Multiplicación: Filas después de expandir / registros izquierdos coincidentes Cobertura numérica: Valor coincidente / valor original cuantificable"
+   },
+   {
+    "title": "38. Semáforo introductorio",
+    "para": "Verde: Cobertura conforme a meta. Sin coincidencias múltiples. Exclusiones documentadas. Diferencia sin explicar igual a cero. Totales conciliados. Amarillo: Cobertura inferior a meta. Claves nuevas documentadas. Exclusiones pendientes sin impacto crítico. Catálogo parcialmente actualizado. Rojo: Registros excluidos sin explicación. Coincidencias múltiples. Granularidad incompatible. Totales no conciliados. Población interna presentada como total general."
+   },
+   {
+    "title": "39. Situaciones recomendadas",
+    "para": "La unión interna es apropiada cuando se requiere: Comparar registros presentes en dos sistemas. Obtener una población comparable. Analizar únicamente claves reconocidas. Validar valores relacionados. Obtener intersecciones. Construir una salida específica de coincidencias. Comparar dos periodos. Identificar operaciones contabilizadas. Integrar datos después de conservar las excepciones aparte."
+   },
+   {
+    "title": "40. Situaciones no recomendadas",
+    "para": "No conviene como única salida cuando: Deben conservarse todos los registros operativos. Se desconoce la cobertura. Existen claves vacías. El catálogo puede estar incompleto. Se necesita encontrar valores sin correspondencia. La tabla se utiliza para totales generales. No existen consultas paralelas. La clave derecha no es única. La granularidad no está definida."
+   },
+   {
+    "title": "41. Arquitectura recomendada",
+    "para": "01_OrigenOperativo 02_OrigenAutorizado 03_OperativoPreparado 04_AutorizadoPreparado 05_CoincidenciasInternas 06_SinCoincidenciaIzquierda 07_ClaveNoEvaluable 08_SinUtilizacionDerecha 09_CoincidenciasMultiples 10_ComparacionValores 11_IndicadoresCobertura 12_Conciliacion"
+   },
+   {
+    "title": "42. Aplicaciones departamentales",
+    "para": "👥 Recursos Humanos: Capacitaciones ∩ Padrón de colaboradores Resultado: Capacitaciones asociadas con colaboradores reconocidos. Exclusiones: Número de empleado faltante. Colaborador no encontrado. Registro histórico no vigente. 💰 Contabilidad: Facturas recibidas ∩ Facturas contabilizadas Resultado: Facturas presentes en ambas fuentes. Las prácticas deben utilizar datos ficticios. 🔬 Calidad: Inspecciones operativas ∩ Lotes autorizados Resultado: Inspecciones con una referencia válida de lote. 🔧 Mantenimiento: Órdenes ejecutadas ∩ Catálogo de equipos Resultado: Órdenes correspondientes a equipos reconocidos. 🏭 Producción: Producción reportada ∩ Programa autorizado Resultado: Órdenes presentes en ambas fuentes. 📦 Almacenes: Movimientos físicos ∩ Movimientos del sistema Resultado: Movimientos comparables entre ambos registros. 🦺 Seguridad: Acciones reportadas ∩ Acciones del seguimiento maestro Resultado: Acciones presentes en ambos sistemas. 🩺 Servicios médicos administrativos: Citas programadas ∩ Registros administrativos atendidos Los datos deberán ser simulados, anonimizados y minimizados."
+   },
+   {
+    "title": "43. Responsabilidades",
+    "para": "Responsable de la tabla izquierda: Confirma el universo original. Explica las claves sin coincidencia. Corrige datos operativos. Valida los valores excluidos. Responsable de la tabla derecha: Mantiene la fuente autorizada. Garantiza unicidad. Controla vigencia. Investiga claves faltantes. Responsable de Power Query: Configura la unión. Conserva consultas base. Genera salidas paralelas. Calcula cobertura. Detecta multiplicaciones. Concilia filas y valores. Responsable del proceso: Define la cobertura mínima. Aprueba exclusiones. Interpreta discrepancias. Determina el uso de la población comparable. Usuario del resultado: Conoce que la salida es parcial. Revisa la cobertura. Consulta las exclusiones. No utiliza el resultado interno como total sin validación."
+   }
+  ],
+  "resumen": [
+   "La unión interna conserva únicamente coincidencias.",
+   "Las filas presentes en un solo lado quedan fuera.",
+   "La salida interna representa una población parcial.",
+   "Las exclusiones no se eliminan del origen.",
+   "Deben conservarse consultas paralelas.",
+   "La unión interna es útil para poblaciones comparables.",
+   "Puede utilizarse para validar exactitud.",
+   "La cobertura debe medirse.",
+   "También debe medirse la utilización de la tabla derecha.",
+   "Una unión interna no garantiza unicidad.",
+   "Las coincidencias múltiples pueden multiplicar filas.",
+   "La granularidad debe validarse.",
+   "Los registros sin coincidencia deben conservarse.",
+   "Las claves no evaluables deben separarse.",
+   "Los maestros sin uso requieren otra consulta.",
+   "La vigencia no se valida automáticamente.",
+   "Coincidencia no equivale a exactitud.",
+   "Los conteos deben conciliarse.",
+   "Las cantidades también deben conciliarse.",
+   "La diferencia sin explicar debe ser cero."
+  ],
+  "quiz": [
+   {
+    "q": "La unión interna conserva",
+    "opts": [
+     "Todas las filas de la izquierda",
+     "Únicamente las filas coincidentes",
+     "Todas las filas de ambas tablas",
+     "Solo las filas sin coincidencia"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Los registros izquierdos sin coincidencia",
+    "opts": [
+     "Aparecen con valores null en el resultado interno",
+     "No aparecen en el resultado interno",
+     "Se corrigen automáticamente",
+     "Se anexan al catálogo"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Una unión interna",
+    "opts": [
+     "Garantiza que cada clave tenga una sola coincidencia",
+     "Puede multiplicar filas si la tabla derecha repite claves",
+     "Elimina físicamente el origen",
+     "Corrige las granularidades"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "La cobertura indica",
+    "opts": [
+     "Qué proporción de registros evaluables encontró coincidencia",
+     "Cuántas columnas fueron expandidas",
+     "La longitud de la clave",
+     "El número de pasos"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "La diferencia sin explicar debe ser",
+    "opts": [
+     "Igual a las filas derechas",
+     "Cero",
+     "Mayor que la cobertura",
+     "Igual al número de columnas"
+    ],
+    "correct": 1
+   }
+  ],
+  "files": []
+ }
+]
