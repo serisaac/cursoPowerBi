@@ -1,1 +1,102 @@
-[]
+[
+ {
+  "q": "En un modelo relacional, una clave externa (foránea) es:",
+  "opts": [
+   "Un campo que identifica de forma única cada registro de su propia tabla",
+   "Un campo de una tabla que hace referencia a la clave de otra tabla",
+   "Cualquier columna de texto",
+   "Una columna que nunca debe repetirse"
+  ],
+  "correct": 1
+ },
+ {
+  "q": "Al combinar una tabla de una fila por orden con una tabla de varias filas por actividad, y expandir, el total de una columna de costo puede salir inflado porque:",
+  "opts": [
+   "Power Query duplica automáticamente los valores por error",
+   "La expansión cambia la granularidad del resultado, repitiendo el costo por cada actividad",
+   "La combinación siempre suma mal",
+   "Faltó ordenar la tabla antes de combinar"
+  ],
+  "correct": 1
+ },
+ {
+  "q": "Para que una columna sirva como clave confiable entre dos tablas, debe:",
+  "opts": [
+   "Contener solo números",
+   "Tener el mismo formato, estar limpia y no tener valores vacíos o inconsistentes",
+   "Estar ordenada alfabéticamente",
+   "Tener el mismo nombre en ambas tablas"
+  ],
+  "correct": 1
+ },
+ {
+  "q": "Cuando el mismo valor de una columna (por ejemplo un número de lote) existe en más de una entidad distinta, la clave correcta para combinar es:",
+  "opts": [
+   "Esa sola columna, siempre",
+   "La combinación de esa columna con otra que la haga única (clave compuesta)",
+   "Cualquier columna numérica disponible",
+   "No es posible combinar en ese caso"
+  ],
+  "correct": 1
+ },
+ {
+  "q": "Antes de combinar dos tablas, un código como \"00128\" que en realidad corresponde a \"MAT-00128\" debe resolverse:",
+  "opts": [
+   "Adivinando la equivalencia directamente en la consulta",
+   "Mediante una tabla de equivalencias autorizada, no por suposición",
+   "Ignorando el registro",
+   "Cambiando el catálogo para que coincida"
+  ],
+  "correct": 1
+ },
+ {
+  "q": "Una unión izquierda que conserva todos los movimientos operativos, tengan o no coincidencia en el catálogo, corresponde al caso de:",
+  "opts": [
+   "Perder movimientos sin catálogo",
+   "Conservar todos los registros operativos e incorporar solo la información coincidente del catálogo",
+   "Eliminar los registros sin coincidencia",
+   "Duplicar los registros con coincidencia"
+  ],
+  "correct": 1
+ },
+ {
+  "q": "Una unión interna conserva:",
+  "opts": [
+   "Todas las filas de ambas tablas",
+   "Únicamente las filas cuya clave coincide en ambas tablas",
+   "Solo las filas de la tabla izquierda",
+   "Solo las filas sin coincidencia"
+  ],
+  "correct": 1
+ },
+ {
+  "q": "Para reunir en una sola tabla los movimientos de tres almacenes con la misma estructura de fila, la operación correcta es:",
+  "opts": [
+   "Combinar (merge) los tres archivos con una clave común",
+   "Anexar (append) las tres tablas verticalmente",
+   "Expandir cada archivo por separado",
+   "Transponer cada archivo"
+  ],
+  "correct": 1
+ },
+ {
+  "q": "Anexar tres tablas cuyos encabezados no están homologados (por ejemplo \"Folio\" en una y \"Movimiento\" en otra) produce:",
+  "opts": [
+   "Un resultado idéntico a si estuvieran homologadas",
+   "Una tabla fragmentada, con una columna por cada variante de nombre y valores null",
+   "Un error que impide anexar",
+   "Una tabla más pequeña de lo esperado"
+  ],
+  "correct": 1
+ },
+ {
+  "q": "Cuando se necesita reunir movimientos de varios almacenes y además agregarles información de un catálogo maestro, el orden correcto es:",
+  "opts": [
+   "Combinar primero con el catálogo y anexar después",
+   "Anexar primero los almacenes entre sí y combinar el resultado con el catálogo",
+   "Da igual el orden, el resultado es siempre el mismo",
+   "Solo puede hacerse una de las dos operaciones, nunca ambas"
+  ],
+  "correct": 1
+ }
+]

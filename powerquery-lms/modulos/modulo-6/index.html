@@ -15,7 +15,7 @@
         </div>
         <div>
             <h1 class="text-sm font-bold text-slate-100 tracking-wide">Módulo 6: Combinar y anexar consultas</h1>
-            <p class="text-xs text-slate-400">Power Query LMS &bull; Nivel Intermedio &bull; 8 lecciones</p>
+            <p class="text-xs text-slate-400">Power Query LMS &bull; Nivel Intermedio &bull; 18 lecciones</p>
         </div>
     </div>
     <div class="flex items-center space-x-6">
@@ -105,7 +105,7 @@
             <div class="border-b border-slate-200 pb-4 flex justify-between items-start gap-4">
                 <div>
                     <h2 class="text-xl font-bold text-slate-900 mb-1">Manual del Módulo 6</h2>
-                    <p class="text-xs text-slate-600 leading-relaxed">Combinar y anexar consultas — 8 lecciones disponibles (módulo en construcción), del modelo relacional y las claves hasta la unión interna en Power Query.</p>
+                    <p class="text-xs text-slate-600 leading-relaxed">Combinar y anexar consultas — 18 lecciones completas, del modelo relacional y las claves hasta la evaluación y reto final del módulo.</p>
                 </div>
                 <button onclick="exportTheoryToPDF()" class="no-print bg-slate-900 hover:bg-slate-800 text-white text-xs px-3.5 py-2 rounded-lg font-medium transition shadow flex items-center gap-1.5 shrink-0">
                     <i data-lucide="file-down" class="w-4 h-4 text-emerald-400"></i> Descargar Lección (PDF)
@@ -138,7 +138,7 @@
         <div id="tab-practice" class="hidden space-y-4 no-print">
             <div class="border-b border-slate-100 pb-3">
                 <h2 class="text-base font-bold text-slate-900">Archivos y Datos de Práctica</h2>
-                <p class="text-xs text-slate-500">Previsualiza los datos reales de la lección seleccionada o descárgalos para trabajar en Power Query. Los archivos de este módulo estarán disponibles próximamente.</p>
+                <p class="text-xs text-slate-500">Previsualiza los datos reales de la lección seleccionada o descárgalos para trabajar en Power Query.</p>
             </div>
             <div id="practice-lesson-selector" class="flex flex-wrap gap-1.5 p-2 bg-slate-100/80 border border-slate-200 rounded-lg"></div>
             <div id="practice-files-container" class="space-y-5"></div>
@@ -148,6 +148,21 @@
         <div id="tab-quiz" class="hidden space-y-6 no-print">
             <div id="quiz-lesson-selector" class="flex flex-wrap gap-1.5 p-2 bg-slate-100/80 border border-slate-200 rounded-lg"></div>
             <div id="quiz-body"></div>
+
+            <div id="next-module-callout" class="hidden p-5 bg-gradient-to-r from-emerald-950 via-slate-900 to-slate-900 border border-emerald-500/40 rounded-xl text-white flex flex-col sm:flex-row items-center justify-between gap-4 mt-6 shadow-lg">
+                <div class="flex items-center gap-3 text-center sm:text-left">
+                    <div class="p-2.5 bg-emerald-500/20 rounded-xl text-emerald-400 shrink-0 border border-emerald-500/30">
+                        <i data-lucide="check-circle-2" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-bold text-emerald-400 uppercase tracking-wider">¡Has Aprobado el Módulo 6!</h4>
+                        <p class="text-sm font-semibold text-slate-100">Módulo 7 se desbloqueará próximamente.</p>
+                    </div>
+                </div>
+                <button onclick="goToNextModule()" class="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs px-5 py-2.5 rounded-xl transition flex items-center justify-center gap-2 shrink-0 shadow-md">
+                    <span>Iniciar Módulo 7</span><i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </button>
+            </div>
         </div>
 
         <!-- FORO -->
@@ -192,12 +207,12 @@
                     <h2 class="text-lg font-extrabold flex items-center justify-center md:justify-start gap-2 text-amber-400">
                         <i data-lucide="award" class="w-5 h-5"></i> Insignias del Módulo 6
                     </h2>
-                    <p class="text-xs text-slate-300">Una insignia por cada una de las 8 lecciones disponibles completadas.</p>
+                    <p class="text-xs text-slate-300">Una insignia por lección completada, más la insignia final del módulo.</p>
                 </div>
                 <div class="flex items-center gap-4 bg-slate-950/60 px-4 py-2.5 rounded-xl border border-slate-800">
                     <div class="text-center">
                         <span class="block text-[10px] text-slate-400 uppercase font-bold">Desbloqueadas</span>
-                        <span id="badges-unlocked-count" class="text-sm font-extrabold text-amber-400">0 / 8</span>
+                        <span id="badges-unlocked-count" class="text-sm font-extrabold text-amber-400">0 / 19</span>
                     </div>
                 </div>
             </div>

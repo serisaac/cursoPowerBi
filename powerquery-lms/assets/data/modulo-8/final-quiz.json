@@ -1,0 +1,102 @@
+[
+  {
+    "q": "¿Qué representa la palabra clave \"in\" dentro de una expresión let...in de Power Query M?",
+    "opts": [
+      "Un comentario",
+      "Un separador de listas",
+      "El paso que se evalúa y se devuelve como resultado final de la expresión",
+      "Una función de importación"
+    ],
+    "correct": 2
+  },
+  {
+    "q": "En Power Query M, ¿qué distingue conceptualmente a un identificador citado (escrito entre comillas, con #\"...\")?",
+    "opts": [
+      "Solo puede usarse en definiciones de funciones",
+      "Permite usar nombres de pasos con espacios o caracteres especiales",
+      "Convierte automáticamente el paso en una variable global",
+      "Es obligatorio para todos los pasos de la consulta"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Cuál es la diferencia clave entre un error de sintaxis y un error de evaluación en M?",
+    "opts": [
+      "No existe diferencia real entre ambos",
+      "El error de evaluación siempre ocurre antes que el de sintaxis",
+      "El error de sintaxis impide que el código se interprete; el de evaluación ocurre al ejecutar una expresión sintácticamente válida",
+      "Solo los errores de sintaxis pueden corregirse"
+    ],
+    "correct": 2
+  },
+  {
+    "q": "¿Qué permite hacer la función each dentro de una transformación aplicada a una tabla?",
+    "opts": [
+      "Eliminar la tabla completa antes de transformarla",
+      "Ordenar las columnas alfabéticamente de forma automática",
+      "Combinar dos tablas sin necesidad de una clave",
+      "Definir una función abreviada que se evalúa en el contexto de cada fila"
+    ],
+    "correct": 3
+  },
+  {
+    "q": "Al manejar valores null en M, ¿por qué no conviene sustituir automáticamente todo null por cero o texto vacío sin analizar el contexto?",
+    "opts": [
+      "Porque M no permite trabajar con valores null",
+      "Porque un null puede tener significados distintos (ausencia, error, no aplica) que requieren tratamiento diferenciado",
+      "Porque siempre genera un error de sintaxis",
+      "Porque los valores null solo pueden aparecer en columnas numéricas"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué ventaja aporta declarar una función personalizada reutilizable en lugar de repetir la misma lógica en cada consulta?",
+    "opts": [
+      "Ninguna: el rendimiento y el mantenimiento son idénticos",
+      "Impide que la función reciba parámetros",
+      "Centraliza la lógica en un solo lugar, facilitando su mantenimiento, prueba y documentación",
+      "Elimina por completo la necesidad de manejar errores"
+    ],
+    "correct": 2
+  },
+  {
+    "q": "¿Para qué sirven los parámetros de configuración (por ejemplo Ambiente o FechaInicial) en una solución de Power Query?",
+    "opts": [
+      "Para decorar visualmente el resultado final",
+      "Para permitir que el comportamiento de las consultas cambie sin modificar directamente el código M",
+      "Para reemplazar por completo la necesidad de datos de origen",
+      "Solo tienen efecto en Power BI, nunca en Power Query"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué caracteriza a una función de orden superior en Power Query M?",
+    "opts": [
+      "Una función que solo puede invocarse una vez en toda la consulta",
+      "Una función limitada exclusivamente a operaciones aritméticas",
+      "Una función que recibe otra función como argumento o devuelve una función",
+      "Una función que no puede documentarse con metadatos"
+    ],
+    "correct": 2
+  },
+  {
+    "q": "¿Qué ventaja aporta usar try...otherwise en lugar de dejar que un error detenga toda la consulta?",
+    "opts": [
+      "Oculta los errores de forma permanente sin registrarlos en ningún lado",
+      "Convierte automáticamente el error en un valor null, sin posibilidad de diagnóstico",
+      "Solo funciona con funciones personalizadas, nunca con pasos nativos",
+      "Permite capturar el error, decidir un valor o acción alternativa y continuar procesando el resto de las filas"
+    ],
+    "correct": 3
+  },
+  {
+    "q": "¿Por qué debe medirse el efecto de Table.Buffer antes de aplicarlo como práctica automática de optimización?",
+    "opts": [
+      "Porque siempre mejora el rendimiento sin excepción alguna",
+      "Porque almacenar en búfer consume memoria y puede no mejorar, o incluso empeorar, el rendimiento según el caso",
+      "Porque Table.Buffer elimina automáticamente los valores nulos",
+      "Porque solo puede usarse en la última consulta de toda la solución"
+    ],
+    "correct": 1
+  }
+]

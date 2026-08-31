@@ -1,0 +1,8 @@
+﻿CodigoMaterial,DescripcionMaterial,UnidadBase,Familia,FactorConversion,MaterialActivo
+00125,Material A,PZA,FAM-A,1,SI
+00126,Material B,KG,FAM-B,1.5,SI
+00127,Material C,LT,FAM-C,1,SI
+00128,Material D,PZA,FAM-D,2,SI
+00128,Material D duplicado,PZA,FAM-D,2,SI
+00129,Material E,PZA,FAM-E,1,NO
+00130,Material F,PZA,FAM-F,1,SI

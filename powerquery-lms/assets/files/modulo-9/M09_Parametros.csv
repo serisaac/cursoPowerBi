@@ -1,0 +1,8 @@
+﻿Parametro,Valor,Tipo,Descripcion
+Cultura,es-MX,text,Cultura de conversión
+FechaInicial,01/01/2026,date,Inicio del periodo
+FechaFinal,31/12/2026,date,Fin del periodo
+FechaReferencia,30/08/2026,date,Referencia fija
+CantidadMinima,0,number,Límite inferior
+CantidadMaxima,1000000,number,Límite superior
+Tolerancia,0.001,number,Tolerancia numérica

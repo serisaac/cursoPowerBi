@@ -1,0 +1,760 @@
+{
+  "1": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Lectura de código (20% de la evaluación): El participante deberá identificar en una consulta: El bloque let. los pasos. las funciones. los argumentos. las referencias. el resultado después de in. los comentarios.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Explique qué es M. Relacione interfaz y código. utilice la barra de fórmulas. revise el Editor avanzado. diferencie expresión y valor. identifique funciones y argumentos. respete mayúsculas y minúsculas. utilice comentarios. reconozca identificadores citados. modifique una expresión. corrija errores básicos. construya una consulta sencilla. concilie las filas. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Modificación (20% de la evaluación): El participante deberá: Modificar un filtro. renombrar dos pasos. agregar un comentario. corregir un error de sintaxis. comprobar el resultado.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Explique qué es M. Relacione interfaz y código. utilice la barra de fórmulas. revise el Editor avanzado. diferencie expresión y valor. identifique funciones y argumentos. respete mayúsculas y minúsculas. utilice comentarios. reconozca identificadores citados. modifique una expresión. corrija errores básicos. construya una consulta sencilla. concilie las filas. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Construcción manual (15% de la evaluación): El participante deberá construir: Power Query let Valor1 = 100, Valor2 = 25, Resultado = Valor1 - Valor2 in Resultado Resultado esperado:",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Explique qué es M. Relacione interfaz y código. utilice la barra de fórmulas. revise el Editor avanzado. diferencie expresión y valor. identifique funciones y argumentos. respete mayúsculas y minúsculas. utilice comentarios. reconozca identificadores citados. modifique una expresión. corrija errores básicos. construya una consulta sencilla. concilie las filas. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación (15% de la evaluación): Deberá demostrar: Filas recibidas = Filas conservadas + Filas excluidas + Filas con error Resultado obligatorio: Diferencia sin explicar = 0",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Explique qué es M. Relacione interfaz y código. utilice la barra de fórmulas. revise el Editor avanzado. diferencie expresión y valor. identifique funciones y argumentos. respete mayúsculas y minúsculas. utilice comentarios. reconozca identificadores citados. modifique una expresión. corrija errores básicos. construya una consulta sencilla. concilie las filas. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 70
+  },
+  "2": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Lectura de dependencias (20% de la evaluación): El participante deberá identificar: Variables. expresiones. dependencias directas. dependencias indirectas. pasos no utilizados. resultado final.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Explique la función de let e in. Construya expresiones intermedias. Utilice correctamente las comas. Identifique dependencias. Construya una ramificación. reconozca pasos no utilizados. comprenda el ámbito. evite identificadores duplicados. detecte referencias circulares. cambie temporalmente el resultado. devuelva un registro de control. documente la consulta. concilie las filas. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Construcción manual (20% de la evaluación): El participante deberá construir una consulta que: Reciba tblMovimientos. aplique tipos. limpie dos columnas. clasifique cantidades. calcule conteos. devuelva las filas válidas.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Explique la función de let e in. Construya expresiones intermedias. Utilice correctamente las comas. Identifique dependencias. Construya una ramificación. reconozca pasos no utilizados. comprenda el ámbito. evite identificadores duplicados. detecte referencias circulares. cambie temporalmente el resultado. devuelva un registro de control. documente la consulta. concilie las filas. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Diagnóstico (15% de la evaluación): El participante deberá corregir: Coma faltante. coma antes de in. referencia inexistente. nombre duplicado. variable fuera de ámbito. referencia circular.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Explique la función de let e in. Construya expresiones intermedias. Utilice correctamente las comas. Identifique dependencias. Construya una ramificación. reconozca pasos no utilizados. comprenda el ámbito. evite identificadores duplicados. detecte referencias circulares. cambie temporalmente el resultado. devuelva un registro de control. documente la consulta. concilie las filas. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación (15% de la evaluación): Deberá demostrar: Filas recibidas = Filas positivas + Filas cero + Filas negativas + Filas no evaluables Resultado obligatorio: Diferencia sin explicar = 0",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Explique la función de let e in. Construya expresiones intermedias. Utilice correctamente las comas. Identifique dependencias. Construya una ramificación. reconozca pasos no utilizados. comprenda el ámbito. evite identificadores duplicados. detecte referencias circulares. cambie temporalmente el resultado. devuelva un registro de control. documente la consulta. concilie las filas. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 70
+  },
+  "3": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Construcción de valores (20% de la evaluación): El participante deberá construir: Un número. texto. valor lógico. null. fecha. hora. fecha y hora. duración. lista. registro.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Distinga valores y literales. Reconozca los principales tipos de valores. Construya fechas y duraciones. aplique operadores aritméticos. utilice comparaciones. concatene texto correctamente. aplique operadores lógicos. controle la precedencia. utilice el operador ?? de manera segura. compruebe compatibilidad de tipos. corrija operaciones incompatibles. conserve valores originales. clasifique valores no evaluables. concilie las filas. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Operadores (20% de la evaluación): El participante deberá utilizar: Suma. resta. multiplicación. división. comparaciones. concatenación. and. or. not. ??.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Distinga valores y literales. Reconozca los principales tipos de valores. Construya fechas y duraciones. aplique operadores aritméticos. utilice comparaciones. concatene texto correctamente. aplique operadores lógicos. controle la precedencia. utilice el operador ?? de manera segura. compruebe compatibilidad de tipos. corrija operaciones incompatibles. conserve valores originales. clasifique valores no evaluables. concilie las filas. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Consulta práctica (15% de la evaluación): El participante deberá crear una consulta que: Clasifique cantidades. valide el periodo. convierta cantidades. construya una descripción. preserve los valores originales. controle valores nulos.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Distinga valores y literales. Reconozca los principales tipos de valores. Construya fechas y duraciones. aplique operadores aritméticos. utilice comparaciones. concatene texto correctamente. aplique operadores lógicos. controle la precedencia. utilice el operador ?? de manera segura. compruebe compatibilidad de tipos. corrija operaciones incompatibles. conserve valores originales. clasifique valores no evaluables. concilie las filas. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación (15% de la evaluación): Deberá demostrar: Filas recibidas = Cantidades positivas + Cantidades cero + Cantidades negativas + Cantidades ausentes + Cantidades no evaluables Resultado obligatorio: Diferencia sin explicar = 0",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Distinga valores y literales. Reconozca los principales tipos de valores. Construya fechas y duraciones. aplique operadores aritméticos. utilice comparaciones. concatene texto correctamente. aplique operadores lógicos. controle la precedencia. utilice el operador ?? de manera segura. compruebe compatibilidad de tipos. corrija operaciones incompatibles. conserve valores originales. clasifique valores no evaluables. concilie las filas. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 70
+  },
+  "4": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Inspección de tipos (20% de la evaluación): El participante deberá utilizar: Power Query Value.Type Value.Is is as y documentar sus diferencias.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Identifique tipos primitivos. diferencie valor y tipo. comprenda any y anynonnull. utilice tipos anulables. inspeccione valores con Value.Type. valide con Value.Is. diferencie is, as y conversión. construya tipos de listas y registros. declare un tipo de tabla. cree una función tipada. preserve los valores originales. clasifique conversiones. construya un contrato de tipos. concilie todos los valores. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Tipos estructurados (20% de la evaluación): El participante deberá construir: Un tipo de lista. un tipo de registro. un registro con campo opcional. un tipo de tabla. una tabla vacía tipada. una función con parámetros tipados.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Identifique tipos primitivos. diferencie valor y tipo. comprenda any y anynonnull. utilice tipos anulables. inspeccione valores con Value.Type. valide con Value.Is. diferencie is, as y conversión. construya tipos de listas y registros. declare un tipo de tabla. cree una función tipada. preserve los valores originales. clasifique conversiones. construya un contrato de tipos. concilie todos los valores. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Preparación controlada (15% de la evaluación): El participante deberá conservar: ValorOriginal ValorPreparado EstadoConversion MensajeError para cantidades y fechas.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Identifique tipos primitivos. diferencie valor y tipo. comprenda any y anynonnull. utilice tipos anulables. inspeccione valores con Value.Type. valide con Value.Is. diferencie is, as y conversión. construya tipos de listas y registros. declare un tipo de tabla. cree una función tipada. preserve los valores originales. clasifique conversiones. construya un contrato de tipos. concilie todos los valores. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación (15% de la evaluación): Deberá demostrar: Valores recibidos = Compatibles + Convertidos + Nulos autorizados + Nulos no autorizados + No evaluables + Errores Resultado obligatorio: Diferencia sin explicar = 0",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Identifique tipos primitivos. diferencie valor y tipo. comprenda any y anynonnull. utilice tipos anulables. inspeccione valores con Value.Type. valide con Value.Is. diferencie is, as y conversión. construya tipos de listas y registros. declare un tipo de tabla. cree una función tipada. preserve los valores originales. clasifique conversiones. construya un contrato de tipos. concilie todos los valores. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 70
+  },
+  "5": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Operaciones básicas (20% de la evaluación): El participante deberá: Crear listas. contar elementos. acceder por posición. detectar listas vacías. eliminar nulos. obtener valores distintos.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya listas de diferentes tipos. comprenda la posición de base cero. transforme y seleccione elementos. elimine nulos de forma controlada. detecte duplicados. compare listas. valide pertenencia. genere periodos. acumule valores. convierta listas en tablas. utilice listas para controlar columnas. conserve la lista original. concilie todos los elementos. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Selección y transformación (20% de la evaluación): Deberá utilizar: Power Query List.Select List.Transform List.Contains List.Difference List.Intersect List.Combine",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya listas de diferentes tipos. comprenda la posición de base cero. transforme y seleccione elementos. elimine nulos de forma controlada. detecte duplicados. compare listas. valide pertenencia. genere periodos. acumule valores. convierta listas en tablas. utilice listas para controlar columnas. conserve la lista original. concilie todos los elementos. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Generación y acumulación (15% de la evaluación): Deberá: Crear un calendario mensual. utilizar List.Generate. obtener una suma con List.Accumulate. construir una secuencia acumulada.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya listas de diferentes tipos. comprenda la posición de base cero. transforme y seleccione elementos. elimine nulos de forma controlada. detecte duplicados. compare listas. valide pertenencia. genere periodos. acumule valores. convierta listas en tablas. utilice listas para controlar columnas. conserve la lista original. concilie todos los elementos. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación (15% de la evaluación): Deberá demostrar: Elementos recibidos = Elementos seleccionados + Elementos excluidos + Valores nulos + Errores Resultado obligatorio: Diferencia sin explicar = 0",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya listas de diferentes tipos. comprenda la posición de base cero. transforme y seleccione elementos. elimine nulos de forma controlada. detecte duplicados. compare listas. valide pertenencia. genere periodos. acumule valores. convierta listas en tablas. utilice listas para controlar columnas. conserve la lista original. concilie todos los elementos. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 70
+  },
+  "6": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Acceso y validación (20% de la evaluación): El participante deberá utilizar: Power Query Record.Field Record.FieldOrDefault Record.HasFields Record.FieldNames Record.FieldValues Record.FieldCount",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya registros simples y anidados. acceda a campos de forma segura. distinga campo ausente y campo nulo. valide campos obligatorios. agregue y elimine campos. renombre y transforme campos. combine registros de manera controlada. construya configuraciones. utilice registros como parámetros. produzca registros de resultados. convierta registros y tablas. diagnostique filas mediante registros. concilie todos los estados. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Transformación de registros (20% de la evaluación): Deberá: Agregar campos. eliminar campos. seleccionar campos. renombrar campos. reordenar campos. transformar valores. combinar registros. detectar conflictos.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya registros simples y anidados. acceda a campos de forma segura. distinga campo ausente y campo nulo. valide campos obligatorios. agregue y elimine campos. renombre y transforme campos. combine registros de manera controlada. construya configuraciones. utilice registros como parámetros. produzca registros de resultados. convierta registros y tablas. diagnostique filas mediante registros. concilie todos los estados. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Configuración y conversión (15% de la evaluación): El participante deberá: Crear un registro de parámetros. construir un registro de diagnóstico. convertir un registro en tabla. convertir una lista de registros en tabla. convertir una tabla en registros.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya registros simples y anidados. acceda a campos de forma segura. distinga campo ausente y campo nulo. valide campos obligatorios. agregue y elimine campos. renombre y transforme campos. combine registros de manera controlada. construya configuraciones. utilice registros como parámetros. produzca registros de resultados. convierta registros y tablas. diagnostique filas mediante registros. concilie todos los estados. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación (15% de la evaluación): Deberá demostrar: Registros recibidos = Registros válidos + Registros con campos faltantes + Registros con valores ausentes + Registros no evaluables + Registros no autorizados + Registros fuera del periodo Resultado obligatorio: Diferencia sin explicar = 0",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya registros simples y anidados. acceda a campos de forma segura. distinga campo ausente y campo nulo. valide campos obligatorios. agregue y elimine campos. renombre y transforme campos. combine registros de manera controlada. construya configuraciones. utilice registros como parámetros. produzca registros de resultados. convierta registros y tablas. diagnostique filas mediante registros. concilie todos los estados. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 70
+  },
+  "7": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Construcción e inspección (20% de la evaluación): El participante deberá utilizar: Power Query #table Table.FromRows Table.FromRecords Table.FromColumns Table.RowCount Table.ColumnCount Table.ColumnNames Table.Schema",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya tablas mediante varios métodos. cree una tabla vacía tipada. inspeccione filas, columnas y esquema. extraiga filas y columnas. agregue y transforme columnas. conserve valores originales. cree estructuras anidadas. expanda listas, registros y tablas. controle conflictos de nombres. documente cambios de granularidad. combine únicamente tablas compatibles. construya un contrato de tabla. concilie filas y columnas. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Transformación (20% de la evaluación): Deberá: Seleccionar filas. seleccionar columnas. agregar columnas. transformar columnas. conservar valores originales. clasificar registros.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya tablas mediante varios métodos. cree una tabla vacía tipada. inspeccione filas, columnas y esquema. extraiga filas y columnas. agregue y transforme columnas. conserve valores originales. cree estructuras anidadas. expanda listas, registros y tablas. controle conflictos de nombres. documente cambios de granularidad. combine únicamente tablas compatibles. construya un contrato de tabla. concilie filas y columnas. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Estructuras anidadas (15% de la evaluación): Deberá: Crear una columna de listas. expandir listas. crear una columna de registros. expandir registros. agrupar con tabla de detalle. expandir tablas anidadas.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya tablas mediante varios métodos. cree una tabla vacía tipada. inspeccione filas, columnas y esquema. extraiga filas y columnas. agregue y transforme columnas. conserve valores originales. cree estructuras anidadas. expanda listas, registros y tablas. controle conflictos de nombres. documente cambios de granularidad. combine únicamente tablas compatibles. construya un contrato de tabla. concilie filas y columnas. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación (15% de la evaluación): Deberá demostrar: Filas recibidas = Filas válidas + Filas con advertencia + Filas no evaluables + Filas excluidas También deberá identificar: Columnas faltantes Columnas adicionales Tipos incompatibles Resultado obligatorio: Diferencia sin explicar = 0",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya tablas mediante varios métodos. cree una tabla vacía tipada. inspeccione filas, columnas y esquema. extraiga filas y columnas. agregue y transforme columnas. conserve valores originales. cree estructuras anidadas. expanda listas, registros y tablas. controle conflictos de nombres. documente cambios de granularidad. combine únicamente tablas compatibles. construya un contrato de tabla. concilie filas y columnas. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 70
+  },
+  "8": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Navegación (20% de la evaluación): El participante deberá realizar rutas: Tabla → fila → campo Tabla → columna → elemento Lista → registro → campo Registro → tabla → fila → campo",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Identifique correctamente el tipo de cada estructura. navegue mediante posiciones y nombres. utilice acceso opcional de forma controlada. seleccione objetos sin depender del primer elemento. convierta tablas en listas y registros. reconstruya tablas con contratos explícitos. convierta registros en tablas y viceversa. navegue en estructuras anidadas. expanda listas, registros y tablas. documente cambios de granularidad. conserve valores y excepciones. concilie las conversiones. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Conversión (20% de la evaluación): Deberá utilizar: Power Query Table.ToRecords Table.ToRows Table.ToColumns Table.FromRecords Table.FromRows Table.FromColumns Record.ToTable Record.FromTable",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Identifique correctamente el tipo de cada estructura. navegue mediante posiciones y nombres. utilice acceso opcional de forma controlada. seleccione objetos sin depender del primer elemento. convierta tablas en listas y registros. reconstruya tablas con contratos explícitos. convierta registros en tablas y viceversa. navegue en estructuras anidadas. expanda listas, registros y tablas. documente cambios de granularidad. conserve valores y excepciones. concilie las conversiones. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Expansión y granularidad (15% de la evaluación): Deberá: Expandir una lista. expandir un registro. expandir una tabla. calcular las filas esperadas. documentar el cambio de granularidad. conservar excepciones vacías.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Identifique correctamente el tipo de cada estructura. navegue mediante posiciones y nombres. utilice acceso opcional de forma controlada. seleccione objetos sin depender del primer elemento. convierta tablas en listas y registros. reconstruya tablas con contratos explícitos. convierta registros en tablas y viceversa. navegue en estructuras anidadas. expanda listas, registros y tablas. documente cambios de granularidad. conserve valores y excepciones. concilie las conversiones. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación (15% de la evaluación): Deberá demostrar: Filas originales = Elementos convertidos = Filas reconstruidas También: Filas recibidas = Filas válidas + Filas para revisión Resultado obligatorio: Diferencia sin explicar = 0",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Identifique correctamente el tipo de cada estructura. navegue mediante posiciones y nombres. utilice acceso opcional de forma controlada. seleccione objetos sin depender del primer elemento. convierta tablas en listas y registros. reconstruya tablas con contratos explícitos. convierta registros en tablas y viceversa. navegue en estructuras anidadas. expanda listas, registros y tablas. documente cambios de granularidad. conserve valores y excepciones. concilie las conversiones. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 70
+  },
+  "9": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Condiciones y operadores (20% de la evaluación): El participante deberá utilizar: Power Query if then else and or not También deberá aplicar paréntesis y comprobaciones de null.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya expresiones condicionales válidas. utilice condiciones lógicas. controle valores nulos. establezca prioridad. construya categorías mutuamente excluyentes. utilice operadores lógicos. pruebe límites. valide listas autorizadas. utilice una configuración. construya un estado principal. conserve alertas secundarias. cree un semáforo. sustituya condiciones repetidas por tablas adecuadas. clasifique antes de filtrar. concilie todos los estados. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Clasificación avanzada (20% de la evaluación): Deberá construir: Estado de cantidad. estado temporal. estado de autorización. estado principal. lista de alertas. semáforo. prioridad.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya expresiones condicionales válidas. utilice condiciones lógicas. controle valores nulos. establezca prioridad. construya categorías mutuamente excluyentes. utilice operadores lógicos. pruebe límites. valide listas autorizadas. utilice una configuración. construya un estado principal. conserve alertas secundarias. cree un semáforo. sustituya condiciones repetidas por tablas adecuadas. clasifique antes de filtrar. concilie todos los estados. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Configuración (15% de la evaluación): El participante deberá utilizar: Una lista de almacenes. una lista de tipos autorizados. un registro de parámetros. una tabla de equivalencias. una tabla de decisión por rangos.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya expresiones condicionales válidas. utilice condiciones lógicas. controle valores nulos. establezca prioridad. construya categorías mutuamente excluyentes. utilice operadores lógicos. pruebe límites. valide listas autorizadas. utilice una configuración. construya un estado principal. conserve alertas secundarias. cree un semáforo. sustituya condiciones repetidas por tablas adecuadas. clasifique antes de filtrar. concilie todos los estados. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación (15% de la evaluación): Deberá demostrar: Filas recibidas = Suma de todos los estados principales Resultado obligatorio: Diferencia sin explicar = 0 Las alertas secundarias deberán analizarse en un control independiente.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya expresiones condicionales válidas. utilice condiciones lógicas. controle valores nulos. establezca prioridad. construya categorías mutuamente excluyentes. utilice operadores lógicos. pruebe límites. valide listas autorizadas. utilice una configuración. construya un estado principal. conserve alertas secundarias. cree un semáforo. sustituya condiciones repetidas por tablas adecuadas. clasifique antes de filtrar. concilie todos los estados. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 70
+  },
+  "10": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Equivalencias (20% de la evaluación): El participante deberá convertir: Power Query each _ + 1 en: Power Query (Numero) => Numero + 1 Y: Power Query each [Cantidad] > 0 en: Power Query (Fila) => Fila[Cantidad] > 0",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Explique each y _. convierta funciones abreviadas en explícitas. identifique el contexto de evaluación. diferencie fila, celda, elemento y grupo. utilice parámetros descriptivos. controle funciones anidadas. utilice variables locales. construya una función tipada. cree diagnósticos por fila. conserve valores originales. clasifique antes de filtrar. ejecute pruebas unitarias. concilie filas y elementos. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Contextos (20% de la evaluación): Deberá identificar el argumento recibido en: Power Query List.Transform List.Select Table.AddColumn Table.SelectRows Table.TransformColumns Table.Group List.Accumulate List.Generate",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Explique each y _. convierta funciones abreviadas en explícitas. identifique el contexto de evaluación. diferencie fila, celda, elemento y grupo. utilice parámetros descriptivos. controle funciones anidadas. utilice variables locales. construya una función tipada. cree diagnósticos por fila. conserve valores originales. clasifique antes de filtrar. ejecute pruebas unitarias. concilie filas y elementos. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Consulta práctica (15% de la evaluación): Deberá crear: stg_EachContextoFila con: Funciones abreviadas. funciones explícitas. variables locales. diagnóstico por fila. alertas. estado principal. separación de resultados.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Explique each y _. convierta funciones abreviadas en explícitas. identifique el contexto de evaluación. diferencie fila, celda, elemento y grupo. utilice parámetros descriptivos. controle funciones anidadas. utilice variables locales. construya una función tipada. cree diagnósticos por fila. conserve valores originales. clasifique antes de filtrar. ejecute pruebas unitarias. concilie filas y elementos. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación (15% de la evaluación): Deberá demostrar: Filas recibidas = Filas válidas + Filas para revisión Y para listas: Elementos recibidos = Elementos seleccionados + Elementos excluidos Resultado obligatorio: Diferencia sin explicar = 0",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Explique each y _. convierta funciones abreviadas en explícitas. identifique el contexto de evaluación. diferencie fila, celda, elemento y grupo. utilice parámetros descriptivos. controle funciones anidadas. utilice variables locales. construya una función tipada. cree diagnósticos por fila. conserve valores originales. clasifique antes de filtrar. ejecute pruebas unitarias. concilie filas y elementos. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 70
+  },
+  "11": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Variables y configuración (20% de la evaluación): El participante deberá crear: Variables escalares Listas reutilizables Registro de configuraci",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Cree variables de distintos tipos. centralice reglas. elimine valores mágicos. reutilice expresiones. construya un registro de configuración. utilice variables locales y exteriores. evite sombreado ambiguo. elimine variables innecesarias. separe configuración y transformación. construya funciones locales. conserve valores originales. preserve la configuración aplicada. ejecute pruebas de configuración. ejecute regresión. concilie los resultados. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Reutilización (20% de la evaluación): Deberá: Eliminar números mágicos. eliminar textos mágicos. reutilizar una expresión de preparación. reutilizar un resultado de conversión. reutilizar una tabla filtrada. crear una función local.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Cree variables de distintos tipos. centralice reglas. elimine valores mágicos. reutilice expresiones. construya un registro de configuración. utilice variables locales y exteriores. evite sombreado ambiguo. elimine variables innecesarias. separe configuración y transformación. construya funciones locales. conserve valores originales. preserve la configuración aplicada. ejecute pruebas de configuración. ejecute regresión. concilie los resultados. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Ámbito y mantenimiento (15% de la evaluación): Deberá: Utilizar una variable exterior. crear una variable local. demostrar sombreado. corregir nombres ambiguos. identificar variables no utilizadas. documentar dependencias.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Cree variables de distintos tipos. centralice reglas. elimine valores mágicos. reutilice expresiones. construya un registro de configuración. utilice variables locales y exteriores. evite sombreado ambiguo. elimine variables innecesarias. separe configuración y transformación. construya funciones locales. conserve valores originales. preserve la configuración aplicada. ejecute pruebas de configuración. ejecute regresión. concilie los resultados. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Regresión y conciliación (15% de la evaluación): Deberá demostrar: Resultado anterior = Resultado mediante: Filas Claves Estados Cantidades Columnas Resultado obligatorio: Diferencia sin explicar = 0",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Cree variables de distintos tipos. centralice reglas. elimine valores mágicos. reutilice expresiones. construya un registro de configuración. utilice variables locales y exteriores. evite sombreado ambiguo. elimine variables innecesarias. separe configuración y transformación. construya funciones locales. conserve valores originales. preserve la configuración aplicada. ejecute pruebas de configuración. ejecute regresión. concilie los resultados. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 70
+  },
+  "12": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Clasificación (20% de la evaluación): El participante deberá distinguir: Null Cero Texto vacío Espacios Campo faltante Error No evaluable No aplicable",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Distinga los principales estados de ausencia. identifique campos faltantes. utilice tipos anulables. separe nulabilidad y obligatoriedad. aplique ?? de manera segura. documente valores predeterminados. conserve valores originales. diferencie ausencia y no evaluabilidad. identifique nulos generados por estructura o combinación. construya funciones tolerantes. calcule indicadores de completitud. clasifique antes de filtrar. concilie todos los estados. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Preparación controlada (20% de la evaluación): Deberá construir: ValorOriginal ValorPreparado EstadoConversion TieneCampo EsNulo EsVacio EsEvaluable",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Distinga los principales estados de ausencia. identifique campos faltantes. utilice tipos anulables. separe nulabilidad y obligatoriedad. aplique ?? de manera segura. documente valores predeterminados. conserve valores originales. diferencie ausencia y no evaluabilidad. identifique nulos generados por estructura o combinación. construya funciones tolerantes. calcule indicadores de completitud. clasifique antes de filtrar. concilie todos los estados. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Funciones y estructura (15% de la evaluación): Deberá utilizar: Power Query Record.HasFields Record.FieldOrDefault List.NonNullCount List.RemoveNulls MissingField.UseNull También deberá identificar nulos generados por una combinación.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Distinga los principales estados de ausencia. identifique campos faltantes. utilice tipos anulables. separe nulabilidad y obligatoriedad. aplique ?? de manera segura. documente valores predeterminados. conserve valores originales. diferencie ausencia y no evaluabilidad. identifique nulos generados por estructura o combinación. construya funciones tolerantes. calcule indicadores de completitud. clasifique antes de filtrar. concilie todos los estados. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación (15% de la evaluación): Deberá demostrar: Registros aplicables = Valores informados + Valores ausentes + Valores no evaluables Y: Filas recibidas = Suma de los estados principales Resultado obligatorio: Diferencia sin explicar = 0",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Distinga los principales estados de ausencia. identifique campos faltantes. utilice tipos anulables. separe nulabilidad y obligatoriedad. aplique ?? de manera segura. documente valores predeterminados. conserve valores originales. diferencie ausencia y no evaluabilidad. identifique nulos generados por estructura o combinación. construya funciones tolerantes. calcule indicadores de completitud. clasifique antes de filtrar. concilie todos los estados. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 70
+  },
+  "13": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Construcción (20% de la evaluación): El participante deberá construir: Función sin parámetros Función con un parámetro Función con varios parámetros Función con parámetro opcional Función con retorno tipado",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya funciones con distintas firmas. declare tipos de entrada y salida. utilice parámetros opcionales y anulables. defina valores predeterminados. utilice bloques locales. produzca salidas escalares y estructuradas. aplique funciones a listas y tablas. conserve los valores originales. capture errores iniciales. documente contratos. ejecute pruebas unitarias. concilie invocaciones y resultados. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Salidas estructuradas (20% de la evaluación): Deberá crear funciones que devuelvan: Texto Número Valor lógico Lista Registro Tabla",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya funciones con distintas firmas. declare tipos de entrada y salida. utilice parámetros opcionales y anulables. defina valores predeterminados. utilice bloques locales. produzca salidas escalares y estructuradas. aplique funciones a listas y tablas. conserve los valores originales. capture errores iniciales. documente contratos. ejecute pruebas unitarias. concilie invocaciones y resultados. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Aplicación (15% de la evaluación): Deberá: Invocar funciones manualmente. aplicarlas a una lista. aplicarlas por fila. expandir registros. validar columnas. perfilar una tabla.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya funciones con distintas firmas. declare tipos de entrada y salida. utilice parámetros opcionales y anulables. defina valores predeterminados. utilice bloques locales. produzca salidas escalares y estructuradas. aplique funciones a listas y tablas. conserve los valores originales. capture errores iniciales. documente contratos. ejecute pruebas unitarias. concilie invocaciones y resultados. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Pruebas y conciliación (15% de la evaluación): Deberá demostrar: Casos definidos = Casos aprobados + Casos fallidos + Casos no ejecutados Y: Invocaciones = Resultados válidos + Resultados ausentes + Resultados no evaluables + Errores Resultado obligatorio: Diferencia sin explicar = 0",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya funciones con distintas firmas. declare tipos de entrada y salida. utilice parámetros opcionales y anulables. defina valores predeterminados. utilice bloques locales. produzca salidas escalares y estructuradas. aplique funciones a listas y tablas. conserve los valores originales. capture errores iniciales. documente contratos. ejecute pruebas unitarias. concilie invocaciones y resultados. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 70
+  },
+  "14": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Funciones textuales (20% de la evaluación): El participante deberá construir: fx_LimpiarTextoValor fx_LimpiarTextoDiagnostico fx_NormalizarClave",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diseñe funciones con una sola responsabilidad. diferencie limpieza y homologación. conserve claves textuales. utilice culturas explícitas. construya funciones diagnósticas. administre equivalencias mediante tablas. detecte coincidencias múltiples. conserve valores originales. aplique funciones a tablas. documente contratos. versione las funciones. ejecute pruebas unitarias y regresión. concilie todos los resultados. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Conversión y homologación (20% de la evaluación): Deberá construir: fx_ConvertirNumero fx_ConvertirFecha fx_HomologarCategoria",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diseñe funciones con una sola responsabilidad. diferencie limpieza y homologación. conserve claves textuales. utilice culturas explícitas. construya funciones diagnósticas. administre equivalencias mediante tablas. detecte coincidencias múltiples. conserve valores originales. aplique funciones a tablas. documente contratos. versione las funciones. ejecute pruebas unitarias y regresión. concilie todos los resultados. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Biblioteca y aplicación (15% de la evaluación): Deberá: Documentar contratos. asignar versiones. aplicar funciones por columna. aplicar funciones por fila. expandir resultados. conservar originales.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diseñe funciones con una sola responsabilidad. diferencie limpieza y homologación. conserve claves textuales. utilice culturas explícitas. construya funciones diagnósticas. administre equivalencias mediante tablas. detecte coincidencias múltiples. conserve valores originales. aplique funciones a tablas. documente contratos. versione las funciones. ejecute pruebas unitarias y regresión. concilie todos los resultados. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Pruebas y conciliación (15% de la evaluación): Deberá demostrar: Casos ejecutados = Casos aprobados + Casos fallidos Y: Filas recibidas = Filas válidas + Filas para revisión Resultado obligatorio: Diferencia sin explicar = 0",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diseñe funciones con una sola responsabilidad. diferencie limpieza y homologación. conserve claves textuales. utilice culturas explícitas. construya funciones diagnósticas. administre equivalencias mediante tablas. detecte coincidencias múltiples. conserve valores originales. aplique funciones a tablas. documente contratos. versione las funciones. ejecute pruebas unitarias y regresión. concilie todos los resultados. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 70
+  },
+  "15": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Creación de parámetros (20% de la evaluación): El participante deberá crear: pAmbiente pRutaEntrada pNombreObjeto pFechaInicial pFechaFinal pCantidadMinima pCultura pFormatoFecha pPermitirInactivos",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Distinga variables y parámetros. cree parámetros de distintos tipos. proporcione descripciones claras. configure valores sugeridos. valide valores permitidos. valide rangos y periodos. parametrice rutas y objetos. construya configuraciones por ambiente. resuelva prioridades. convierta tablas de configuración en registros. valide antes de acceder al origen. utilice funciones parametrizadas. preserve la configuración aplicada. evite almacenar secretos. ejecute pruebas de escenarios. concilie ejecuciones y filas. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Configuración dinámica (20% de la evaluación): Deberá construir: Configuración predeterminada. configuración por ambiente. configuración de ejecución. configuración final. validación de campos. validación de valores.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Distinga variables y parámetros. cree parámetros de distintos tipos. proporcione descripciones claras. configure valores sugeridos. valide valores permitidos. valide rangos y periodos. parametrice rutas y objetos. construya configuraciones por ambiente. resuelva prioridades. convierta tablas de configuración en registros. valide antes de acceder al origen. utilice funciones parametrizadas. preserve la configuración aplicada. evite almacenar secretos. ejecute pruebas de escenarios. concilie ejecuciones y filas. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Aplicación (15% de la evaluación): Deberá: Parametrizar un origen. parametrizar un periodo. parametrizar una conversión. invocar funciones. construir una configuración aplicada. crear un identificador de ejecución.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Distinga variables y parámetros. cree parámetros de distintos tipos. proporcione descripciones claras. configure valores sugeridos. valide valores permitidos. valide rangos y periodos. parametrice rutas y objetos. construya configuraciones por ambiente. resuelva prioridades. convierta tablas de configuración en registros. valide antes de acceder al origen. utilice funciones parametrizadas. preserve la configuración aplicada. evite almacenar secretos. ejecute pruebas de escenarios. concilie ejecuciones y filas. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Pruebas y conciliación (15% de la evaluación): Deberá demostrar: Escenarios definidos = Escenarios aprobados + Escenarios rechazados esperados + Escenarios fallidos inesperados + Escenarios no ejecutados Y: Filas recibidas = Filas válidas + Filas para revisión Resultado obligatorio: Diferencia sin explicar = 0",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Distinga variables y parámetros. cree parámetros de distintos tipos. proporcione descripciones claras. configure valores sugeridos. valide valores permitidos. valide rangos y periodos. parametrice rutas y objetos. construya configuraciones por ambiente. resuelva prioridades. convierta tablas de configuración en registros. valide antes de acceder al origen. utilice funciones parametrizadas. preserve la configuración aplicada. evite almacenar secretos. ejecute pruebas de escenarios. concilie ejecuciones y filas. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 70
+  },
+  "16": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Funciones como valores (20% de la evaluación): El participante deberá: Almacenar funciones en variables. almacenarlas en listas. almacenarlas en registros. almacenarlas en tablas. validar sus tipos. invocarlas dinámicamente.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Trate funciones como valores. construya funciones de orden superior. almacene funciones en estructuras. utilice Function.Invoke. valide funciones y argumentos. construya funciones configuradas. componga operaciones. implemente una canalización. utilice List.Accumulate. controle el orden. construya un catálogo autorizado. aplique operaciones por columna. conserve originales y resultados intermedios. controle errores y omisiones. ejecute pruebas unitarias. concilie operaciones y filas. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Orden superior y composición (20% de la evaluación): Deberá construir: fx_AplicarTransformacion fx_CrearMultiplicador fx_Componer2 fx_AplicarCanalizacion",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Trate funciones como valores. construya funciones de orden superior. almacene funciones en estructuras. utilice Function.Invoke. valide funciones y argumentos. construya funciones configuradas. componga operaciones. implemente una canalización. utilice List.Accumulate. controle el orden. construya un catálogo autorizado. aplique operaciones por columna. conserve originales y resultados intermedios. controle errores y omisiones. ejecute pruebas unitarias. concilie operaciones y filas. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Motor configurable (15% de la evaluación): Deberá crear: Catálogo autorizado. tabla de operaciones. resolución de funciones. validación de orden. adaptación de funciones. aplicación por columna. trazabilidad.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Trate funciones como valores. construya funciones de orden superior. almacene funciones en estructuras. utilice Function.Invoke. valide funciones y argumentos. construya funciones configuradas. componga operaciones. implemente una canalización. utilice List.Accumulate. controle el orden. construya un catálogo autorizado. aplique operaciones por columna. conserve originales y resultados intermedios. controle errores y omisiones. ejecute pruebas unitarias. concilie operaciones y filas. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Pruebas y conciliación (15% de la evaluación): Deberá demostrar: Operaciones solicitadas = Operaciones ejecutadas + Operaciones fallidas + Operaciones desconocidas + Operaciones omitidas Y: Filas recibidas = Filas válidas + Filas para revisión Resultado obligatorio: Diferencia sin explicar = 0",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Trate funciones como valores. construya funciones de orden superior. almacene funciones en estructuras. utilice Function.Invoke. valide funciones y argumentos. construya funciones configuradas. componga operaciones. implemente una canalización. utilice List.Accumulate. controle el orden. construya un catálogo autorizado. aplique operaciones por columna. conserve originales y resultados intermedios. controle errores y omisiones. ejecute pruebas unitarias. concilie operaciones y filas. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 70
+  },
+  "17": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Captura (20% de la evaluación): El participante deberá utilizar: Power Query try otherwise catch error Error.Record También deberá recuperar: HasError Value Error Reason Message Detail ErrorCode",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Distinga errores y valores nulos. capture errores mediante try. utilice alternativas de forma controlada. construya errores estructurados. conserve la información del error. implemente funciones estrictas y tolerantes. capture errores por fila. genere una tabla de excepciones. asigne códigos y severidades. controle propagación y reintentos. ejecute pruebas negativas. concilie filas, operaciones y errores. mantenga la diferencia sin explicar en cero. mantenga los errores no controlados en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Funciones (20% de la evaluación): Deberá construir: fx_ConvertirNumeroSeguro fx_ConvertirFechaSegura fx_ValidarCantidadEstricta fx_ValidarCantidadTolerante fx_EjecutarSeguro",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Distinga errores y valores nulos. capture errores mediante try. utilice alternativas de forma controlada. construya errores estructurados. conserve la información del error. implemente funciones estrictas y tolerantes. capture errores por fila. genere una tabla de excepciones. asigne códigos y severidades. controle propagación y reintentos. ejecute pruebas negativas. concilie filas, operaciones y errores. mantenga la diferencia sin explicar en cero. mantenga los errores no controlados en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Excepciones (15% de la evaluación): Deberá: Capturar errores por fila. crear una lista de errores. expandir la lista. construir una tabla de excepciones. asignar código. asignar severidad. identificar errores bloqueantes.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Distinga errores y valores nulos. capture errores mediante try. utilice alternativas de forma controlada. construya errores estructurados. conserve la información del error. implemente funciones estrictas y tolerantes. capture errores por fila. genere una tabla de excepciones. asigne códigos y severidades. controle propagación y reintentos. ejecute pruebas negativas. concilie filas, operaciones y errores. mantenga la diferencia sin explicar en cero. mantenga los errores no controlados en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Pruebas y conciliación (15% de la evaluación): Deberá demostrar: Operaciones intentadas = Operaciones correctas + Errores controlados + Errores no controlados Y: Filas recibidas = Filas válidas + Filas para revisión Resultado obligatorio: Diferencia sin explicar = 0 Errores no controlados = 0",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Distinga errores y valores nulos. capture errores mediante try. utilice alternativas de forma controlada. construya errores estructurados. conserve la información del error. implemente funciones estrictas y tolerantes. capture errores por fila. genere una tabla de excepciones. asigne códigos y severidades. controle propagación y reintentos. ejecute pruebas negativas. concilie filas, operaciones y errores. mantenga la diferencia sin explicar en cero. mantenga los errores no controlados en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 70
+  },
+  "18": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Metadatos (20% de la evaluación): El participante deberá utilizar: Power Query meta Value.Metadata Value.ReplaceMetadata Value.RemoveMetadata",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. agregue y consulte metadatos. actualice metadatos sin perder información. comprenda sus limitaciones de persistencia. documente funciones completas. construya contratos de entrada y salida. catalogue parámetros y errores. versione las funciones. administre estados de liberación. documente dependencias. marque correctamente funciones obsoletas. valide contratos. ejecute auditorías automáticas. complete pruebas de regresión. concilie funciones, estados y contratos. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Contratos (20% de la evaluación): Deberá documentar: Parámetros Tipos Obligatoriedad Nulabilidad Valores predeterminados Salida Estados Errores Ejemplos",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. agregue y consulte metadatos. actualice metadatos sin perder información. comprenda sus limitaciones de persistencia. documente funciones completas. construya contratos de entrada y salida. catalogue parámetros y errores. versione las funciones. administre estados de liberación. documente dependencias. marque correctamente funciones obsoletas. valide contratos. ejecute auditorías automáticas. complete pruebas de regresión. concilie funciones, estados y contratos. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Gobierno (15% de la evaluación): Deberá construir: Catálogo de funciones Catálogo de parámetros Contrato de salidas Catálogo de errores Matriz de dependencias",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. agregue y consulte metadatos. actualice metadatos sin perder información. comprenda sus limitaciones de persistencia. documente funciones completas. construya contratos de entrada y salida. catalogue parámetros y errores. versione las funciones. administre estados de liberación. documente dependencias. marque correctamente funciones obsoletas. valide contratos. ejecute auditorías automáticas. complete pruebas de regresión. concilie funciones, estados y contratos. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Auditoría y conciliación (15% de la evaluación): Deberá demostrar: Funciones registradas = Funciones documentadas + Funciones incompletas Y: Funciones registradas = Borrador + En pruebas + Liberadas + Obsoletas + Retiradas + Estado desconocido Resultado obligatorio: Diferencia sin explicar = 0 Funciones liberadas sin pruebas = 0 Funciones liberadas sin contrato = 0",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. agregue y consulte metadatos. actualice metadatos sin perder información. comprenda sus limitaciones de persistencia. documente funciones completas. construya contratos de entrada y salida. catalogue parámetros y errores. versione las funciones. administre estados de liberación. documente dependencias. marque correctamente funciones obsoletas. valide contratos. ejecute auditorías automáticas. complete pruebas de regresión. concilie funciones, estados y contratos. mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 70
+  },
+  "19": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Evaluación y plegado (20% de la evaluación): El participante deberá: Construir un mapa de dependencias. identificar una expresión no utilizada. analizar plegado. identificar el primer paso no plegable. comparar archivo y base de datos.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. explique la evaluación diferida. identifique dependencias. analice el plegado. aplique filtros y selecciones tempranas. reduzca operaciones costosas. utilice listas y catálogos reutilizables. pruebe List.Buffer y Table.Buffer. comprenda que el búfer puede empeorar el rendimiento. diferencie almacenamiento y detención de plegado. utilice diagnósticos. establezca una línea base. ejecute múltiples mediciones. documente hipótesis. realice regresión funcional. concilie pruebas y resultados. mantenga las diferencias no autorizadas en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Búfer (20% de la evaluación): Deberá utilizar y comparar: Power Query List.Buffer Table.Buffer Table.StopFolding También deberá documentar: Ubicación. volumen. plegado. memoria. tiempo. resultado.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. explique la evaluación diferida. identifique dependencias. analice el plegado. aplique filtros y selecciones tempranas. reduzca operaciones costosas. utilice listas y catálogos reutilizables. pruebe List.Buffer y Table.Buffer. comprenda que el búfer puede empeorar el rendimiento. diferencie almacenamiento y detención de plegado. utilice diagnósticos. establezca una línea base. ejecute múltiples mediciones. documente hipótesis. realice regresión funcional. concilie pruebas y resultados. mantenga las diferencias no autorizadas en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Optimización (15% de la evaluación): Deberá: Filtrar temprano. seleccionar columnas. retrasar operaciones costosas. eliminar un ordenamiento innecesario. preparar un catálogo. sustituir una búsqueda por una combinación.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. explique la evaluación diferida. identifique dependencias. analice el plegado. aplique filtros y selecciones tempranas. reduzca operaciones costosas. utilice listas y catálogos reutilizables. pruebe List.Buffer y Table.Buffer. comprenda que el búfer puede empeorar el rendimiento. diferencie almacenamiento y detención de plegado. utilice diagnósticos. establezca una línea base. ejecute múltiples mediciones. documente hipótesis. realice regresión funcional. concilie pruebas y resultados. mantenga las diferencias no autorizadas en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Medición y conciliación (15% de la evaluación): Deberá demostrar: Pruebas planeadas = Pruebas ejecutadas + Pruebas no ejecutadas Y: Filas originales = Filas optimizadas + Diferencias explicadas Resultado obligatorio: Diferencia sin explicar = 0 Diferencias funcionales no autorizadas = 0",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. explique la evaluación diferida. identifique dependencias. analice el plegado. aplique filtros y selecciones tempranas. reduzca operaciones costosas. utilice listas y catálogos reutilizables. pruebe List.Buffer y Table.Buffer. comprenda que el búfer puede empeorar el rendimiento. diferencie almacenamiento y detención de plegado. utilice diagnósticos. establezca una línea base. ejecute múltiples mediciones. documente hipótesis. realice regresión funcional. concilie pruebas y resultados. mantenga las diferencias no autorizadas en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 70
+  },
+  "20": {
+    "tipo": "rubrica",
+    "items": [
+      {
+        "criterio": "Arquitectura y configuración",
+        "puntos": 15,
+        "condicionLogro": "Se evaluará: Arquitectura por capas. convenciones. parámetros. configuración. ambientes. validación previa."
+      },
+      {
+        "criterio": "Funciones y preparación",
+        "puntos": 20,
+        "condicionLogro": "Se evaluará: Funciones reutilizables. tipos. nulabilidad. limpieza. conversión. homologación. conservación de originales."
+      },
+      {
+        "criterio": "Validación y errores",
+        "puntos": 20,
+        "condicionLogro": "Se evaluará: Controles lógicos. estado principal. alertas. errores estructurados. códigos. severidades. tabla de excepciones."
+      },
+      {
+        "criterio": "Documentación y gobierno",
+        "puntos": 15,
+        "condicionLogro": "Se evaluará: Metadatos. contratos. versiones. propietarios. dependencias. auditoría. estado de liberación."
+      },
+      {
+        "criterio": "Optimización",
+        "puntos": 10,
+        "condicionLogro": "Se evaluará: Línea base. hipótesis. plegado. reducción temprana. uso justificado del búfer. mediciones."
+      },
+      {
+        "criterio": "Pruebas y conciliación",
+        "puntos": 20,
+        "condicionLogro": "Se evaluará: Pruebas unitarias. pruebas negativas. integración. regresión. conciliación. errores no controlados."
+      }
+    ],
+    "totalPuntos": 100
+  }
+}

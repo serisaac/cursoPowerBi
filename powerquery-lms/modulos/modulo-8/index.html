@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Power Query LMS - Módulo 8 Completo</title>
+<link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body class="bg-slate-100 text-slate-800 h-screen flex flex-col overflow-hidden">
+
+<header class="bg-slate-900 text-white h-16 flex items-center justify-between px-6 z-20 shadow-md shrink-0 border-b border-slate-800 no-print">
+    <div class="flex items-center space-x-4">
+        <div class="p-2 bg-emerald-500/10 rounded-lg border border-emerald-500/20">
+            <i data-lucide="database" class="text-emerald-400 w-5 h-5"></i>
+        </div>
+        <div>
+            <h1 class="text-sm font-bold text-slate-100 tracking-wide">Módulo 8: El lenguaje M y funciones personalizadas</h1>
+            <p class="text-xs text-slate-400">Power Query LMS &bull; Nivel Intermedio-Avanzado &bull; 20 lecciones</p>
+        </div>
+    </div>
+    <div class="flex items-center space-x-6">
+        <div class="flex items-center space-x-3 bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700">
+            <span class="text-xs text-slate-400">Estado:</span>
+            <span id="module-status-badge" class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">En Progreso</span>
+        </div>
+        <div class="flex items-center space-x-2">
+            <span class="text-xs text-slate-400">Progreso:</span>
+            <div class="w-28 bg-slate-800 h-2 rounded-full overflow-hidden border border-slate-700">
+                <div id="module-progress-bar" class="bg-emerald-500 h-full w-0 transition-all duration-300"></div>
+            </div>
+            <span id="module-progress-pct" class="text-xs font-bold text-emerald-400">0%</span>
+        </div>
+        <a href="../modulo-7/index.html" title="Volver al Módulo 7" class="p-2 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition flex items-center gap-1.5 text-xs">
+            <i data-lucide="chevron-left" class="w-4 h-4"></i><span class="hidden sm:inline">Módulo 7</span>
+        </a>
+        <button onclick="resetModuleProgress()" title="Reiniciar Progresos" class="p-2 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition border-l border-slate-800 pl-4">
+            <i data-lucide="rotate-ccw" class="w-4 h-4"></i>
+        </button>
+        <div class="flex items-center gap-2 border-l border-slate-800 pl-4">
+            <span id="auth-user-name" class="text-xs text-slate-400"></span>
+            <button onclick="logout()" class="text-xs text-slate-400 hover:text-white transition">Cerrar sesión</button>
+        </div>
+    </div>
+</header>
+
+<div class="flex flex-1 overflow-hidden">
+<main class="flex-1 bg-slate-50 overflow-y-auto p-6 custom-scrollbar flex flex-col space-y-6">
+
+    <section id="badge-banner" class="hidden relative bg-gradient-to-br from-slate-900 via-slate-900 to-emerald-950 border border-emerald-500/40 rounded-2xl shadow-xl overflow-hidden p-5 text-white no-print">
+        <button onclick="dismissBadgeBanner()" class="absolute top-3 right-3 text-slate-400 hover:text-white p-1 rounded-lg bg-slate-800/50 hover:bg-slate-800 transition z-20" title="Cerrar notificación">
+            <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+        <div class="absolute -right-10 -bottom-10 w-60 h-60 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6 pr-6">
+            <div class="flex flex-col items-center shrink-0 bg-slate-800/80 border border-slate-700/80 p-4 rounded-xl shadow-inner text-center w-full md:w-48">
+                <div class="w-16 h-16 bg-gradient-to-tr from-emerald-600 to-teal-400 rounded-2xl rotate-45 flex items-center justify-center shadow-lg shadow-emerald-900/50 border border-emerald-300/40 mb-2">
+                    <i data-lucide="trophy" class="w-8 h-8 text-slate-950 -rotate-45"></i>
+                </div>
+                <span class="text-xs font-bold text-slate-200 mt-1">Insignia Módulo 8</span>
+                <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full mt-1 font-semibold">Nivel Intermedio</span>
+            </div>
+            <div class="flex-1 space-y-2 text-center md:text-left">
+                <div class="inline-flex items-center gap-1.5 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold px-3 py-1 rounded-full">
+                    <i data-lucide="award" class="w-3.5 h-3.5"></i> ¡Insignia de Módulo Desbloqueada!
+                </div>
+                <h2 class="text-lg font-extrabold text-white">Módulo 8 Completado al 100%</h2>
+                <p class="text-xs text-slate-300 bg-slate-800/40 border-l-2 border-emerald-500 pl-3 py-1 italic leading-relaxed">
+                    "Excelente trabajo. Completaste las lecciones y evaluaciones disponibles de este módulo."
+                </p>
+            </div>
+            <div class="flex flex-col sm:flex-row md:flex-col lg:flex-row gap-2 shrink-0 w-full md:w-auto">
+                <button onclick="goToBadgesRepository()" class="bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs px-4 py-2.5 rounded-xl transition border border-slate-700 flex items-center justify-center gap-2">
+                    <i data-lucide="trophy" class="w-4 h-4 text-amber-400"></i><span>Ver Insignias</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden flex flex-col flex-1">
+        <div id="tab-btn-container" class="flex border-b border-slate-200 bg-slate-100/70 p-1.5 gap-1 no-print overflow-x-auto">
+            <button onclick="switchTab('theory')" id="tab-btn-theory" class="flex-1 py-2.5 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-2 transition bg-white text-emerald-700 shadow-sm border border-slate-200 whitespace-nowrap">
+                <i data-lucide="book-open" class="w-4 h-4"></i> Contenido Teórico
+            </button>
+            <button onclick="switchTab('video')" id="tab-btn-video" class="flex-1 py-2.5 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-2 transition text-slate-600 hover:text-slate-900 whitespace-nowrap">
+                <i data-lucide="video" class="w-4 h-4"></i> Video de Tutoría
+            </button>
+            <button onclick="switchTab('practice')" id="tab-btn-practice" class="flex-1 py-2.5 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-2 transition text-slate-600 hover:text-slate-900 whitespace-nowrap">
+                <i data-lucide="table" class="w-4 h-4"></i> Práctica (Datos)
+            </button>
+            <button onclick="switchTab('quiz')" id="tab-btn-quiz" class="flex-1 py-2.5 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-2 transition text-slate-600 hover:text-slate-900 whitespace-nowrap">
+                <i data-lucide="check-square" class="w-4 h-4"></i> Evaluaciones
+            </button>
+            <button onclick="switchTab('forum')" id="tab-btn-forum" class="flex-1 py-2.5 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-2 transition text-slate-600 hover:text-slate-900 whitespace-nowrap">
+                <i data-lucide="messages-square" class="w-4 h-4"></i> Foro de Soporte
+            </button>
+            <button onclick="switchTab('badges')" id="tab-btn-badges" class="flex-1 py-2.5 px-3 rounded-lg text-xs font-bold flex items-center justify-center gap-2 transition text-amber-700 bg-amber-50 hover:bg-amber-100 border border-amber-200/80 whitespace-nowrap">
+                <i data-lucide="trophy" class="w-4 h-4 text-amber-600"></i> Mis Insignias
+            </button>
+        </div>
+
+        <div class="p-6 flex-1 overflow-y-auto custom-scrollbar">
+
+        <!-- TEORÍA -->
+        <div id="tab-theory" class="space-y-4">
+            <div class="border-b border-slate-200 pb-4 flex justify-between items-start gap-4">
+                <div>
+                    <h2 class="text-xl font-bold text-slate-900 mb-1">Manual del Módulo 8</h2>
+                    <p class="text-xs text-slate-600 leading-relaxed">El lenguaje M y las funciones personalizadas — 20 lecciones completas, desde la sintaxis básica de M y let...in hasta las funciones de orden superior, el manejo avanzado de errores y el proyecto integrador.</p>
+                </div>
+                <button onclick="exportTheoryToPDF()" class="no-print bg-slate-900 hover:bg-slate-800 text-white text-xs px-3.5 py-2 rounded-lg font-medium transition shadow flex items-center gap-1.5 shrink-0">
+                    <i data-lucide="file-down" class="w-4 h-4 text-emerald-400"></i> Descargar Lección (PDF)
+                </button>
+            </div>
+
+            <div id="lesson-nav" class="flex flex-wrap gap-1.5 p-2 bg-slate-100/80 border border-slate-200 rounded-lg no-print"></div>
+
+            <div id="lesson-content" class="space-y-5"></div>
+        </div>
+
+        <!-- VIDEO -->
+        <div id="tab-video" class="hidden space-y-4 no-print">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+                <div>
+                    <h2 id="video-lesson-title" class="text-base font-bold text-slate-900">Clase Grabada</h2>
+                    <p class="text-xs text-slate-500">Explicación práctica de la lección seleccionada.</p>
+                </div>
+                <span class="text-xs bg-slate-100 text-slate-600 px-2.5 py-1 rounded font-mono">Placeholder</span>
+            </div>
+            <div class="aspect-video bg-black rounded-xl overflow-hidden shadow-inner border border-slate-800 flex items-center justify-center">
+                <div class="text-center text-slate-500 text-xs p-6">
+                    <i data-lucide="video-off" class="w-10 h-10 mx-auto mb-3 text-slate-700"></i>
+                    Video pendiente de grabación para esta lección.<br>Selecciona otra lección en la pestaña Teoría para ver su video (cuando esté disponible).
+                </div>
+            </div>
+        </div>
+
+        <!-- PRÁCTICA -->
+        <div id="tab-practice" class="hidden space-y-4 no-print">
+            <div class="border-b border-slate-100 pb-3">
+                <h2 class="text-base font-bold text-slate-900">Archivos y Datos de Práctica</h2>
+                <p class="text-xs text-slate-500">Previsualiza los datos reales de la lección seleccionada o descárgalos para trabajar en Power Query.</p>
+            </div>
+            <div id="practice-lesson-selector" class="flex flex-wrap gap-1.5 p-2 bg-slate-100/80 border border-slate-200 rounded-lg"></div>
+            <div id="practice-files-container" class="space-y-5"></div>
+        </div>
+
+        <!-- QUIZ -->
+        <div id="tab-quiz" class="hidden space-y-6 no-print">
+            <div id="quiz-lesson-selector" class="flex flex-wrap gap-1.5 p-2 bg-slate-100/80 border border-slate-200 rounded-lg"></div>
+            <div id="quiz-body"></div>
+
+            <div id="next-module-callout" class="hidden p-5 bg-gradient-to-r from-emerald-950 via-slate-900 to-slate-900 border border-emerald-500/40 rounded-xl text-white flex flex-col sm:flex-row items-center justify-between gap-4 mt-6 shadow-lg">
+                <div class="flex items-center gap-3 text-center sm:text-left">
+                    <div class="p-2.5 bg-emerald-500/20 rounded-xl text-emerald-400 shrink-0 border border-emerald-500/30">
+                        <i data-lucide="check-circle-2" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-bold text-emerald-400 uppercase tracking-wider">¡Has Aprobado el Módulo 8!</h4>
+                        <p class="text-sm font-semibold text-slate-100">Módulo 9 se desbloqueará próximamente.</p>
+                    </div>
+                </div>
+                <button onclick="goToNextModule()" class="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs px-5 py-2.5 rounded-xl transition flex items-center justify-center gap-2 shrink-0 shadow-md">
+                    <span>Iniciar Módulo 9</span><i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- FORO -->
+        <div id="tab-forum" class="hidden space-y-4 no-print">
+            <div class="border-b border-slate-100 pb-3 flex items-center justify-between">
+                <div>
+                    <h2 class="text-base font-bold text-slate-900">Foro de Dudas: Módulo 8</h2>
+                    <p class="text-xs text-slate-500">Pregunta tus inquietudes sobre la sintaxis del lenguaje M, listas, registros, tablas, funciones personalizadas, manejo de nulos y errores, y optimización de consultas.</p>
+                </div>
+                <span class="text-xs bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded font-medium">Tutor En Línea</span>
+            </div>
+            <div class="space-y-3">
+                <textarea id="forum-input" rows="3" placeholder="Escribe tu consulta para el Módulo 8..." class="w-full text-xs p-3 border border-slate-200 rounded-lg focus:outline-none focus:border-emerald-500 text-slate-700 bg-slate-50/50 leading-relaxed"></textarea>
+                <button onclick="postForumQuestion()" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs px-4 py-2 rounded-lg font-medium transition shadow-sm">Publicar en el Foro</button>
+            </div>
+            <div class="border-t border-slate-100 pt-4 space-y-3" id="forum-posts">
+                <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-1">
+                    <div class="flex justify-between items-center text-[11px]">
+                        <span class="font-bold text-slate-800">Camila V. (Estudiante)</span><span class="text-slate-400">Hace 2 horas</span>
+                    </div>
+                    <p class="text-xs text-slate-600">Escribí un paso con el nombre "Filas Válidas" (con espacio) y el Editor avanzado me lo cambió a #"Filas Válidas". ¿Hice algo mal?</p>
+                    <div class="mt-2 p-2 bg-emerald-50 border border-emerald-200 rounded text-xs text-slate-700">
+                        <strong class="text-emerald-800">Tutor PQ:</strong> No hiciste nada mal. #"Filas Válidas" es un identificador citado: M lo exige cuando el nombre del paso contiene espacios o caracteres especiales. Puedes seguir usando nombres descriptivos con espacios sin problema, solo recuerda que cada referencia posterior a ese paso también deberá escribirse entre comillas con #.
+                    </div>
+                </div>
+                <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-1">
+                    <div class="flex justify-between items-center text-[11px]">
+                        <span class="font-bold text-slate-800">Rodrigo M. (Estudiante)</span><span class="text-slate-400">Hace 1 día</span>
+                    </div>
+                    <p class="text-xs text-slate-600">Mi función personalizada se detiene por completo cuando un valor no se puede convertir a número. ¿Cómo evito que se rompa toda la consulta?</p>
+                    <div class="mt-2 p-2 bg-emerald-50 border border-emerald-200 rounded text-xs text-slate-700">
+                        <strong class="text-emerald-800">Tutor PQ:</strong> Envuelve la conversión con try...otherwise, por ejemplo: try Number.FromText([Cantidad]) otherwise null. Así cada fila se evalúa por separado: las que fallan quedan registradas como error o null según decidas, y las demás continúan procesándose con normalidad. Evita usar try sin revisar después qué filas fallaron.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BADGES -->
+        <div id="tab-badges" class="hidden space-y-6 no-print">
+            <div class="bg-gradient-to-r from-slate-900 to-slate-800 rounded-xl p-5 text-white flex flex-col md:flex-row justify-between items-center gap-4 border border-slate-700">
+                <div class="space-y-1 text-center md:text-left">
+                    <h2 class="text-lg font-extrabold flex items-center justify-center md:justify-start gap-2 text-amber-400">
+                        <i data-lucide="award" class="w-5 h-5"></i> Insignias del Módulo 8
+                    </h2>
+                    <p class="text-xs text-slate-300">Una insignia por lección completada, más la insignia final del módulo.</p>
+                </div>
+                <div class="flex items-center gap-4 bg-slate-950/60 px-4 py-2.5 rounded-xl border border-slate-800">
+                    <div class="text-center">
+                        <span class="block text-[10px] text-slate-400 uppercase font-bold">Desbloqueadas</span>
+                        <span id="badges-unlocked-count" class="text-sm font-extrabold text-amber-400">0 / 21</span>
+                    </div>
+                </div>
+            </div>
+            <div id="badges-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5"></div>
+        </div>
+
+        </div>
+    </div>
+</main>
+
+<aside class="w-80 bg-white border-l border-slate-200 p-5 flex flex-col justify-between shrink-0 overflow-y-auto custom-scrollbar no-print">
+    <div class="space-y-6">
+        <div class="space-y-3">
+            <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
+                <i data-lucide="list-checks" class="w-3.5 h-3.5 text-emerald-600"></i> Módulos del Curso
+            </h3>
+            <div id="sidebar-course-modules" class="space-y-1"></div>
+        </div>
+
+        <div class="space-y-2">
+            <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
+                <i data-lucide="sticky-note" class="w-3.5 h-3.5 text-emerald-600"></i> Bloc de Notas del Módulo 8
+            </h3>
+            <textarea id="student-notes" placeholder="Escribe aquí tus apuntes personales..." rows="6" class="w-full text-xs p-3 border border-slate-200 rounded-lg focus:outline-none focus:border-emerald-500 text-slate-700 bg-slate-50/50 leading-relaxed custom-scrollbar"></textarea>
+            <span id="notes-status" class="text-[10px] text-slate-400 block text-right">Guardado automático por módulo</span>
+        </div>
+
+        <div class="p-3.5 bg-emerald-50/60 border border-emerald-200/80 rounded-lg space-y-2">
+            <div class="flex items-center space-x-2 text-emerald-800 font-bold text-xs">
+                <i data-lucide="help-circle" class="w-4 h-4"></i><span>¿Dudas con esta lección?</span>
+            </div>
+            <p class="text-[11px] text-slate-600 leading-normal">Publica tu pregunta en el foro comunitario o consulta con el tutor de guardia.</p>
+            <button onclick="redirectToForum()" class="w-full bg-white hover:bg-emerald-100 text-emerald-700 border border-emerald-300 font-semibold py-1.5 rounded text-xs transition">Ir al Foro de Soporte</button>
+        </div>
+    </div>
+    <div class="pt-4 border-t border-slate-100 text-[11px] text-slate-400 text-center">Power Query LMS &bull; 2026</div>
+</aside>
+</div>
+
+<script src="../../assets/js/auth.js"></script>
+<script>
+requireAuth();
+const authUser = getCurrentUser();
+const authUserNameEl = document.getElementById('auth-user-name');
+if (authUserNameEl && authUser) authUserNameEl.textContent = authUser.name;
+</script>
+<script src="../../assets/js/icons.js"></script>
+<script src="../../assets/js/course-modules.js"></script>
+<script>
+const CURRENT_MODULE_ID = "modulo_8";
+</script>
+<script src="../../assets/js/engine.js"></script>
+</body>
+</html>

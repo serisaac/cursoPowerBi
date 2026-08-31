@@ -9,7 +9,10 @@ const COURSE_MODULES = [
   { id: 3, path: "modulo-3/index.html", title: "Calidad, estructura y validación de datos", level: "Nivel Intermedio", lessons: 15, built: true },
   { id: 4, path: "modulo-4/index.html", title: "Transformación de texto, números y fechas", level: "Nivel Intermedio", lessons: 15, built: true },
   { id: 5, path: "modulo-5/index.html", title: "Reorganización y resumen de datos", level: "Nivel Intermedio", lessons: 14, built: true },
-  { id: 6, path: "modulo-6/index.html", title: "Combinar y anexar consultas", level: "Nivel Intermedio", lessons: 8, built: true },
+  { id: 6, path: "modulo-6/index.html", title: "Combinar y anexar consultas", level: "Nivel Intermedio", lessons: 18, built: true },
+  { id: 7, path: "modulo-7/index.html", title: "Consolidación automática de archivos", level: "Nivel Intermedio-Avanzado", lessons: 20, built: true },
+  { id: 8, path: "modulo-8/index.html", title: "El lenguaje M y funciones personalizadas", level: "Nivel Intermedio-Avanzado", lessons: 20, built: true },
+  { id: 9, path: "modulo-9/index.html", title: "Estructuras y funciones de M", level: "Nivel Avanzado", lessons: 18, built: true },
 ];
 // NOTA: `built` se actualiza a true conforme se migra cada módulo a la nueva
 // arquitectura (assets/data/modulo-N + modulos/modulo-N/index.html). Controla

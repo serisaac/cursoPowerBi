@@ -1,0 +1,102 @@
+[
+  {
+    "q": "¿Qué representa cada fila de la vista inicial que entrega el conector de carpeta de Power Query, antes de expandir el contenido de los archivos?",
+    "opts": [
+      "Un registro de negocio ya transformado",
+      "Un archivo individual encontrado en la ruta seleccionada",
+      "Una columna del archivo original",
+      "Un resumen agregado de todos los archivos"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué diferencia conceptual existe entre Folder.Files y Folder.Contents al conectarse a una carpeta?",
+    "opts": [
+      "Folder.Files nunca puede incluir subcarpetas y Folder.Contents siempre las incluye",
+      "Ambas funciones son idénticas y solo cambia el nombre",
+      "Folder.Files puede enumerar archivos de subcarpetas, mientras que Folder.Contents muestra el contenido del nivel consultado",
+      "Folder.Contents solo funciona con archivos CSV"
+    ],
+    "correct": 2
+  },
+  {
+    "q": "¿Por qué conviene filtrar y excluir archivos temporales, respaldos y salidas antes de combinar una carpeta heterogénea?",
+    "opts": [
+      "Porque Power Query los elimina automáticamente",
+      "Porque esos archivos nunca tienen extensión válida",
+      "Porque no es necesario, ya que se filtran después de cargar",
+      "Porque de lo contrario podrían incorporarse al universo combinado y distorsionar los resultados"
+    ],
+    "correct": 3
+  },
+  {
+    "q": "En el patrón de \"Combinar archivos\" de Power Query, ¿qué se genera automáticamente a partir de la consulta de transformación construida sobre el archivo de ejemplo?",
+    "opts": [
+      "Una consulta duplicada del archivo de ejemplo",
+      "Un parámetro de texto fijo",
+      "Una función invocable que aplica los mismos pasos a cada archivo de la carpeta",
+      "Una tabla dinámica"
+    ],
+    "correct": 2
+  },
+  {
+    "q": "¿Para qué sirve conservar y renombrar columnas como Name o Source.Name al combinar archivos de una carpeta?",
+    "opts": [
+      "Para acelerar la consulta",
+      "Para mantener la trazabilidad del archivo de origen de cada registro",
+      "Para eliminar duplicados automáticamente",
+      "Para cambiar el tipo de dato de las columnas"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Por qué no conviene usar únicamente la fecha de modificación del archivo como el periodo de negocio?",
+    "opts": [
+      "Porque Power Query no puede leer esa columna",
+      "Porque siempre coincide exactamente con el periodo de negocio",
+      "Porque la fecha de modificación es un metadato técnico que puede no coincidir con el periodo real declarado en el archivo",
+      "Porque solo existe en archivos CSV"
+    ],
+    "correct": 2
+  },
+  {
+    "q": "¿Qué permite hacer Table.SelectColumns con la opción MissingField.UseNull cuando un archivo no contiene una columna obligatoria?",
+    "opts": [
+      "Detiene la consulta con un error crítico",
+      "Elimina el archivo completo de la combinación",
+      "Convierte automáticamente la columna faltante en texto",
+      "Selecciona las columnas esperadas y agrega como nula la que falta, en lugar de fallar"
+    ],
+    "correct": 3
+  },
+  {
+    "q": "¿Qué ventaja aporta usar try al invocar una función de transformación sobre cada archivo de una carpeta?",
+    "opts": [
+      "Hace que la consulta ignore todos los archivos con errores sin registrarlos",
+      "Permite capturar el resultado o el error de cada archivo por separado, sin detener toda la consulta",
+      "Convierte automáticamente los errores en ceros",
+      "Solo funciona con archivos Excel, no con CSV"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "En un proceso de conciliación de archivos y registros, ¿qué debería indicar una \"diferencia sin explicar\" igual a cero?",
+    "opts": [
+      "Que no se procesó ningún archivo",
+      "Que todos los archivos tienen el mismo tamaño",
+      "Que el universo inicial de archivos y registros quedó completamente clasificado entre participantes, excluidos, errores y revisión",
+      "Que no existen archivos duplicados en la carpeta"
+    ],
+    "correct": 2
+  },
+  {
+    "q": "Antes de liberar una solución de consolidación automática de archivos, ¿qué debe demostrar una prueba de regresión?",
+    "opts": [
+      "Que la solución es más rápida que la versión anterior únicamente",
+      "Que los resultados históricos ya conciliados no cambian al incorporar archivos nuevos",
+      "Que se eliminaron todas las consultas auxiliares",
+      "Que el archivo de ejemplo ya no es necesario"
+    ],
+    "correct": 1
+  }
+]

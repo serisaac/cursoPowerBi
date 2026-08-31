@@ -1,0 +1,102 @@
+[
+  {
+    "q": "En el lenguaje M, ¿qué es una expresión?",
+    "opts": [
+      "Un comentario dentro del código",
+      "Una fórmula que se evalúa para producir un valor",
+      "Un nombre de columna en una tabla",
+      "Un archivo de origen de datos"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué función permite inspeccionar el tipo intrínseco de un valor en M?",
+    "opts": [
+      "Type.Value",
+      "Value.Type",
+      "Value.Check",
+      "Type.Is"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Cuál de los siguientes es un valor estructurado en M?",
+    "opts": [
+      "Un número entero",
+      "Un valor lógico",
+      "Una lista",
+      "Un texto simple"
+    ],
+    "correct": 2
+  },
+  {
+    "q": "¿Qué diferencia principal existe entre el operador is y el operador as en M?",
+    "opts": [
+      "is compara dos valores numéricos y as los suma",
+      "is comprueba el tipo de un valor y as fuerza la conversión o afirmación de tipo",
+      "No existe diferencia, son sinónimos",
+      "as solo funciona con texto e is solo con números"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué produce el operador de fusión nula ?? en M?",
+    "opts": [
+      "Elimina todas las filas con valores nulos",
+      "Devuelve el primer valor no nulo entre dos expresiones",
+      "Convierte un valor nulo en texto vacío",
+      "Genera un error si encuentra un valor nulo"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "Dentro de un registro en M, ¿cómo se accede de forma segura a un campo que podría no existir?",
+    "opts": [
+      "Con el operador de acceso opcional ?",
+      "Con la función Table.Column",
+      "Con corchetes dobles [[campo]]",
+      "No es posible acceder de forma segura a un campo"
+    ],
+    "correct": 0
+  },
+  {
+    "q": "¿Qué hace la expresión each dentro de una transformación de M?",
+    "opts": [
+      "Declara una variable global",
+      "Define una función anónima que recibe un valor de contexto implícito (_)",
+      "Repite una consulta un número fijo de veces",
+      "Importa un archivo externo"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "En una estructura if...then...else de M, ¿qué característica es obligatoria?",
+    "opts": [
+      "Debe incluir siempre una cláusula else",
+      "Solo puede evaluar valores de texto",
+      "No admite condiciones anidadas",
+      "El resultado siempre debe ser numérico"
+    ],
+    "correct": 0
+  },
+  {
+    "q": "Al construir una función personalizada reutilizable en M, ¿qué elemento define sus entradas?",
+    "opts": [
+      "La cláusula in final",
+      "Los parámetros declarados entre paréntesis antes de la flecha =>",
+      "El nombre del paso anterior en la consulta",
+      "El tipo de la tabla de salida"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "En una práctica de conciliación de datos como las trabajadas en el módulo, ¿qué representa una 'diferencia sin explicar' distinta de cero?",
+    "opts": [
+      "Un indicador de que el proceso terminó correctamente",
+      "Una discrepancia entre lo esperado y lo obtenido que aún no ha sido justificada",
+      "Un tipo de dato no soportado por M",
+      "Una función que no existe en la biblioteca estándar"
+    ],
+    "correct": 1
+  }
+]

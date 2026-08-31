@@ -1,0 +1,11 @@
+﻿Movimiento,FechaMovimiento,CodigoMaterial,TipoMovimiento,Cantidad,Unidad,Almacen,Activo,Responsable,Observacion,FactorConversion,CapacidadEmpaque
+MOV-001,20/08/2026,00125,ENT,25.5,PZA,A01,SI,R-001,Entrada normal,1,12
+ mov-002 ,30/08/2026,00126,SALIDA,0,kg,a02,TRUE,R-002,Cantidad cero,1.5,10
+,15/08/2026,00127,TRA,-5,LT,A03,ACTIVO,R-003,Movimiento ausente,1,8
+MOV-004,31/02/2026,00125,ENTRADA,PENDIENTE,PZA,A01,NO,R-004,Fecha y cantidad inválidas,1,12
+MOV-005,31/12/2025,00999,SAL,1000000.001,PZA,A99,SI,,Fuera de periodo y sin catálogo,1,20
+MOV-006,31/08/2026,00128,TRANSFERENCIA,100,CJ,A02,1,R-006,Fecha futura,2,25
+MOV-007,,00125,ENTRADA,,PZA,A01,INACTIVO,R-007,Ausencias,1,12
+MOV-008,10/07/2026,00129,XYZ,50,   ,A03,PENDIENTE,R-008,Tipo y activo no reconocidos,1,10
+MOV-009,12/06/2026,00130,ENT,17,PZA,A01,SI,R-009,Empaque con sobrante,1,5
+MOV-010,01/01/2026,00125,ENTRADA,10,PZA,A01,SI,R-010,Caso límite inicial,1,12

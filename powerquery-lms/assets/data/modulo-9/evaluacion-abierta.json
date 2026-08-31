@@ -1,0 +1,827 @@
+{
+  "1": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte A. Conceptos (25% de la evaluación): 1. Explique la diferencia entre expresión y valor. 2. Defina qué es un literal. 3. Indique tres valores primitivos y tres estructurados. 4. Explique por qué una función se considera un valor. 5. Diferencie any, anynonnull y none.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz formativo. Diferencie expresión, valor, literal y tipo. Reconozca valores primitivos y estructurados. Utilice Value.Type y Value.Is. Diferencie is y as. Aplique operadores correctamente. Complete la actividad práctica. Resuelva el reto. Ejecute todos los casos de prueba. Mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Tipos (20% de la evaluación): Determine el resultado: Value.Type(25) Value.Type(\"25\") Value.Is(null, type nullable text) 25 is number \"25\" is number",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz formativo. Diferencie expresión, valor, literal y tipo. Reconozca valores primitivos y estructurados. Utilice Value.Type y Value.Is. Diferencie is y as. Aplique operadores correctamente. Complete la actividad práctica. Resuelva el reto. Ejecute todos los casos de prueba. Mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Operadores (20% de la evaluación): Calcule o describa el resultado: 25 + 5 * 2 (25 + 5) * 2 \"MOV-\" & Text.From(25) null ?? \"Sin dato\" 25 > 0 and 25 <= 100",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz formativo. Diferencie expresión, valor, literal y tipo. Reconozca valores primitivos y estructurados. Utilice Value.Type y Value.Is. Diferencie is y as. Aplique operadores correctamente. Complete la actividad práctica. Resuelva el reto. Ejecute todos los casos de prueba. Mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Aplicación práctica (25% de la evaluación): Construir una consulta que clasifique una lista heterogénea en: Número Texto Lógico Nulo Temporal Lista Registro Función Otro La consulta deberá conservar: ValorOriginal Tipo Clasificacion",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz formativo. Diferencie expresión, valor, literal y tipo. Reconozca valores primitivos y estructurados. Utilice Value.Type y Value.Is. Diferencie is y as. Aplique operadores correctamente. Complete la actividad práctica. Resuelva el reto. Ejecute todos los casos de prueba. Mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 5,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Pruebas y conciliación (10% de la evaluación): Demostrar: Casos definidos = Casos clasificados + Casos no clasificados Y: Filas recibidas = Filas válidas + Filas para revisión",
+        "puntos": 10,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz formativo. Diferencie expresión, valor, literal y tipo. Reconozca valores primitivos y estructurados. Utilice Value.Type y Value.Is. Diferencie is y as. Aplique operadores correctamente. Complete la actividad práctica. Resuelva el reto. Ejecute todos los casos de prueba. Mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 100
+  },
+  "2": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte A. Conceptos (25% de la evaluación): Explique la diferencia entre null, \"\" y \" \". Explique por qué \"00125\" debe conservarse como texto. Diferencie conversión y formato. Explique cuándo utilizar &. Explique cuándo utilizar Text.Combine.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Diferencie texto de otros tipos. represente correctamente caracteres especiales. diferencie null, vacío y espacios. utilice Text.From. utilice Text.ToList. concatene y combine correctamente. declare una cultura. conserve claves y ceros iniciales. aplique comparaciones adecuadas. conserve valores originales. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Campos no evaluados = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Literales y representación (15% de la evaluación): Construya expresiones para representar: Material \"A01\" Dos líneas de texto Una tabulación Texto vacío Texto formado por tres espacios",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Diferencie texto de otros tipos. represente correctamente caracteres especiales. diferencie null, vacío y espacios. utilice Text.From. utilice Text.ToList. concatene y combine correctamente. declare una cultura. conserve claves y ceros iniciales. aplique comparaciones adecuadas. conserve valores originales. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Campos no evaluados = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Conversión y comparación (20% de la evaluación): Determine o explique el resultado de: Text.From(25) Text.From(null) \"A01\" = \"a01\" Text.ToList(\"A01\") Text.Combine( {\"MOV\", null, \"001\"}, \"-\" )",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Diferencie texto de otros tipos. represente correctamente caracteres especiales. diferencie null, vacío y espacios. utilice Text.From. utilice Text.ToList. concatene y combine correctamente. declare una cultura. conserve claves y ceros iniciales. aplique comparaciones adecuadas. conserve valores originales. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Campos no evaluados = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Aplicación práctica (30% de la evaluación): Construya una consulta que: Conserve siete campos textuales originales. prepare claves en mayúsculas. no aplique mayúsculas a observaciones. clasifique null, vacío y espacios. registre longitudes. identifique modificaciones. produzca datos válidos y revisión.",
+        "puntos": 30,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Diferencie texto de otros tipos. represente correctamente caracteres especiales. diferencie null, vacío y espacios. utilice Text.From. utilice Text.ToList. concatene y combine correctamente. declare una cultura. conserve claves y ceros iniciales. aplique comparaciones adecuadas. conserve valores originales. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Campos no evaluados = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 5,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación (10% de la evaluación): Demuestre: Filas recibidas = Filas válidas + Filas para revisión Y: Campos textuales esperados = Campos evaluados + Campos no evaluados",
+        "puntos": 10,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Diferencie texto de otros tipos. represente correctamente caracteres especiales. diferencie null, vacío y espacios. utilice Text.From. utilice Text.ToList. concatene y combine correctamente. declare una cultura. conserve claves y ceros iniciales. aplique comparaciones adecuadas. conserve valores originales. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Campos no evaluados = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 100
+  },
+  "3": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte A. Conceptos (25% de la evaluación): Explique la diferencia entre número y texto numérico. Explique por qué \"00125\" puede no ser una cantidad. Diferencie conversión, redondeo y formato. Explique la función de la cultura. Diferencie null, Number.NaN y error.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Diferencie números y textos numéricos. conserve identificadores. utilice cultura explícita. controle conversiones. aplique operaciones aritméticas correctamente. controle divisiones. utilice signo y valor absoluto. aplique un modo de redondeo. diferencie redondeo y formato. utilice tolerancia. construya un diagnóstico numérico. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Conversiones (20% de la evaluación): Convierta y documente: \"25\" \"1,250.50\" \"1.250,50\" \"12.3%\" \"Pendiente\" null Registre: Función Cultura Resultado Estado",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Diferencie números y textos numéricos. conserve identificadores. utilice cultura explícita. controle conversiones. aplique operaciones aritméticas correctamente. controle divisiones. utilice signo y valor absoluto. aplique un modo de redondeo. diferencie redondeo y formato. utilice tolerancia. construya un diagnóstico numérico. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Operaciones (20% de la evaluación): Calcule o clasifique: 25 + 5 * 2 (25 + 5) * 2 Number.Sign(-25) Number.Abs(-25) Number.Mod(17, 5) Number.IntegerDivide(17, 5)",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Diferencie números y textos numéricos. conserve identificadores. utilice cultura explícita. controle conversiones. aplique operaciones aritméticas correctamente. controle divisiones. utilice signo y valor absoluto. aplique un modo de redondeo. diferencie redondeo y formato. utilice tolerancia. construya un diagnóstico numérico. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Aplicación práctica (25% de la evaluación): Construya una consulta que: Conserve los valores originales. convierta cantidades con cultura. clasifique positivos, negativos, cero y ausentes. controle división entre cero. aplique redondeo. mida la diferencia de redondeo. utilice una tolerancia. produzca válidos y revisión.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Diferencie números y textos numéricos. conserve identificadores. utilice cultura explícita. controle conversiones. aplique operaciones aritméticas correctamente. controle divisiones. utilice signo y valor absoluto. aplique un modo de redondeo. diferencie redondeo y formato. utilice tolerancia. construya un diagnóstico numérico. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 5,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Pruebas y conciliación (10% de la evaluación): Demuestre: Filas recibidas = Filas válidas + Filas para revisión Y: Conversiones intentadas = Conversiones correctas + Errores controlados + Valores ausentes + Valores no convertibles por contrato",
+        "puntos": 10,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Diferencie números y textos numéricos. conserve identificadores. utilice cultura explícita. controle conversiones. aplique operaciones aritméticas correctamente. controle divisiones. utilice signo y valor absoluto. aplique un modo de redondeo. diferencie redondeo y formato. utilice tolerancia. construya un diagnóstico numérico. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 100
+  },
+  "4": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte A. Conceptos (25% de la evaluación): Diferencie date, time, datetime, datetimezone y duration. Explique por qué una fecha textual no es aún una fecha. Diferencie hora y duración. Explique la función del desplazamiento horario. Diferencie Duration.Hours y Duration.TotalHours.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. diferencie los cinco tipos temporales. construya literales válidos. aplique formato y cultura. identifique fechas ambiguas e imposibles. convierta fechas, horas y marcas con zona. calcule duraciones. diferencie componentes y totales. conserve zonas cuando corresponda. utilice una fecha de ejecución reproducible. conserve los valores originales. construya un diagnóstico temporal. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Literales y conversiones (20% de la evaluación): Construya y convierta: 30/08/2026 14:30:00 30/08/2026 14:30:00 2026-08-30T14:30:00-07:00 Una duración de 1 día y 3 horas Registre: Valor original Literal o función Tipo resultante Formato Cultura Estado",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. diferencie los cinco tipos temporales. construya literales válidos. aplique formato y cultura. identifique fechas ambiguas e imposibles. convierta fechas, horas y marcas con zona. calcule duraciones. diferencie componentes y totales. conserve zonas cuando corresponda. utilice una fecha de ejecución reproducible. conserve los valores originales. construya un diagnóstico temporal. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Operaciones (20% de la evaluación): Calcule: Cinco días después de una fecha Un mes antes de una fecha Inicio del mes Fin del trimestre Días entre dos fechas Horas totales de una duración Fecha de vencimiento Conversión de una marca temporal a UTC",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. diferencie los cinco tipos temporales. construya literales válidos. aplique formato y cultura. identifique fechas ambiguas e imposibles. convierta fechas, horas y marcas con zona. calcule duraciones. diferencie componentes y totales. conserve zonas cuando corresponda. utilice una fecha de ejecución reproducible. conserve los valores originales. construya un diagnóstico temporal. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Aplicación práctica (25% de la evaluación): Construya una consulta que: Conserve valores originales. convierta fechas y horas. extraiga componentes. calcule vencimientos. calcule días transcurridos. identifique fechas futuras. clasifique fechas imposibles. separe válidos y revisión.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. diferencie los cinco tipos temporales. construya literales válidos. aplique formato y cultura. identifique fechas ambiguas e imposibles. convierta fechas, horas y marcas con zona. calcule duraciones. diferencie componentes y totales. conserve zonas cuando corresponda. utilice una fecha de ejecución reproducible. conserve los valores originales. construya un diagnóstico temporal. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 5,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Pruebas y conciliación (10% de la evaluación): Demuestre: Filas recibidas = Filas válidas + Filas para revisión Y: Conversiones temporales intentadas = Conversiones correctas + Valores ausentes + Textos vacíos + Errores controlados + Valores no convertibles por contrato",
+        "puntos": 10,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. diferencie los cinco tipos temporales. construya literales válidos. aplique formato y cultura. identifique fechas ambiguas e imposibles. convierta fechas, horas y marcas con zona. calcule duraciones. diferencie componentes y totales. conserve zonas cuando corresponda. utilice una fecha de ejecución reproducible. conserve los valores originales. construya un diagnóstico temporal. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 100
+  },
+  "5": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte A. Conceptos (25% de la evaluación): Explique la diferencia entre true y \"true\". Explique la diferencia entre false y null. Diferencie and, or y not. Explique el cortocircuito lógico. Explique la diferencia entre control individual y estado principal.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. diferencie valores lógicos y textos. diferencie false y null. utilice comparaciones correctamente. utilice and, or y not. aplique paréntesis. explique el cortocircuito. construya controles individuales. convierta representaciones autorizadas. conserve valores no reconocidos como no evaluables. construya un resumen de controles. genere una lista de incumplimientos. asigne un estado principal. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Operadores y precedencia (20% de la evaluación): Determine el resultado de: true and false true or false not false false and true or true false and (true or true)",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. diferencie valores lógicos y textos. diferencie false y null. utilice comparaciones correctamente. utilice and, or y not. aplique paréntesis. explique el cortocircuito. construya controles individuales. convierta representaciones autorizadas. conserve valores no reconocidos como no evaluables. construya un resumen de controles. genere una lista de incumplimientos. asigne un estado principal. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Construcción de controles (20% de la evaluación): Construya expresiones para determinar: Cantidad informada Cantidad numérica Cantidad positiva Fecha dentro del periodo Almacén autorizado Registro activo Todos los controles cumplidos",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. diferencie valores lógicos y textos. diferencie false y null. utilice comparaciones correctamente. utilice and, or y not. aplique paréntesis. explique el cortocircuito. construya controles individuales. convierta representaciones autorizadas. conserve valores no reconocidos como no evaluables. construya un resumen de controles. genere una lista de incumplimientos. asigne un estado principal. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Aplicación práctica (25% de la evaluación): Construya una consulta que: Convierta valores lógicos autorizados. conserve el valor original. produzca al menos ocho controles. diferencie false y null. genere una lista de incumplimientos. asigne un estado principal. produzca un indicador de participación. separe válidos y revisión.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. diferencie valores lógicos y textos. diferencie false y null. utilice comparaciones correctamente. utilice and, or y not. aplique paréntesis. explique el cortocircuito. construya controles individuales. convierta representaciones autorizadas. conserve valores no reconocidos como no evaluables. construya un resumen de controles. genere una lista de incumplimientos. asigne un estado principal. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 5,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Pruebas y conciliación (10% de la evaluación): Demuestre: Filas recibidas = Filas participantes + Filas no participantes Y: Controles esperados = Controles cumplidos + Controles incumplidos + Controles no evaluables",
+        "puntos": 10,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. diferencie valores lógicos y textos. diferencie false y null. utilice comparaciones correctamente. utilice and, or y not. aplique paréntesis. explique el cortocircuito. construya controles individuales. convierta representaciones autorizadas. conserve valores no reconocidos como no evaluables. construya un resumen de controles. genere una lista de incumplimientos. asigne un estado principal. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 100
+  },
+  "6": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte A. Conceptos (25% de la evaluación): Explique qué representa null. Diferencie null, \"\" y \" \". Diferencie null, cero y false. Diferencie valor nulo y error. Diferencie campo nulo y campo inexistente.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. diferencie las formas de ausencia. utilice tipos anulables. aplique ?? correctamente. conserve el valor original. conserve la causa de la ausencia. diferencie cero y false. diferencie campo nulo y campo inexistente. utilice listas con valores nulos. aplique Table.FillDown solo cuando corresponda. mida completitud técnica y funcional. construya una función diagnóstica. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Campos no evaluados = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Nulabilidad y operadores (20% de la evaluación): Determine o explique el resultado de: Value.Is( null, type nullable number ) Value.Is( null, type number ) null ?? \"Sin dato\" 0 ?? 25 false ?? true",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. diferencie las formas de ausencia. utilice tipos anulables. aplique ?? correctamente. conserve el valor original. conserve la causa de la ausencia. diferencie cero y false. diferencie campo nulo y campo inexistente. utilice listas con valores nulos. aplique Table.FillDown solo cuando corresponda. mida completitud técnica y funcional. construya una función diagnóstica. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Campos no evaluados = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Estructuras (20% de la evaluación): Construya ejemplos que: Eliminen nulos de una lista. cuenten nulos. identifiquen un campo inexistente. diferencien campo nulo y campo ausente. rellenen hacia abajo una columna autorizada.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. diferencie las formas de ausencia. utilice tipos anulables. aplique ?? correctamente. conserve el valor original. conserve la causa de la ausencia. diferencie cero y false. diferencie campo nulo y campo inexistente. utilice listas con valores nulos. aplique Table.FillDown solo cuando corresponda. mida completitud técnica y funcional. construya una función diagnóstica. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Campos no evaluados = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Aplicación práctica (25% de la evaluación): Construya una consulta que: Conserve los valores originales. normalice textos sin contenido. administre marcadores de ausencia. diferencie cero y false. clasifique campos obligatorios y opcionales. genere listas de ausencias. asigne un estado principal. separe válidos y revisión. produzca una tabla de completitud.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. diferencie las formas de ausencia. utilice tipos anulables. aplique ?? correctamente. conserve el valor original. conserve la causa de la ausencia. diferencie cero y false. diferencie campo nulo y campo inexistente. utilice listas con valores nulos. aplique Table.FillDown solo cuando corresponda. mida completitud técnica y funcional. construya una función diagnóstica. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Campos no evaluados = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 5,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Pruebas y conciliación (10% de la evaluación): Demuestre: Filas recibidas = Filas válidas + Filas para revisión También: Celdas evaluadas = Valores informados + Valores nulos + Textos sin contenido + Marcadores + Campos inexistentes",
+        "puntos": 10,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. diferencie las formas de ausencia. utilice tipos anulables. aplique ?? correctamente. conserve el valor original. conserve la causa de la ausencia. diferencie cero y false. diferencie campo nulo y campo inexistente. utilice listas con valores nulos. aplique Table.FillDown solo cuando corresponda. mida completitud técnica y funcional. construya una función diagnóstica. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Campos no evaluados = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 100
+  },
+  "7": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte A. Conceptos (25% de la evaluación): Explique qué es una lista. Explique qué significa que los índices sean de base cero. Diferencie una lista vacía y una lista con un elemento null. Diferencie selección y transformación. Explique cuándo el orden de una lista es significativo.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. construya listas simples y anidadas. acceda correctamente por posición. utilice funciones de selección y transformación. identifique nulos y duplicados. evalúe pertenencia. compare catálogos. construya listas de controles y alertas. utilice una agregación. utilice List.Accumulate. utilice List.Generate. convierta una lista en tabla. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Acceso y selección (20% de la evaluación): Construya expresiones para: Obtener el primer elemento. obtener el último elemento. acceder opcionalmente a una posición. seleccionar números positivos. seleccionar textos no vacíos. obtener tres elementos desde la segunda posición.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. construya listas simples y anidadas. acceda correctamente por posición. utilice funciones de selección y transformación. identifique nulos y duplicados. evalúe pertenencia. compare catálogos. construya listas de controles y alertas. utilice una agregación. utilice List.Accumulate. utilice List.Generate. convierta una lista en tabla. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Transformación y agregación (20% de la evaluación): Construya expresiones para: Convertir textos a mayúsculas. eliminar nulos. identificar duplicados. sumar cantidades. calcular el promedio. comprobar que todos los controles son verdaderos.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. construya listas simples y anidadas. acceda correctamente por posición. utilice funciones de selección y transformación. identifique nulos y duplicados. evalúe pertenencia. compare catálogos. construya listas de controles y alertas. utilice una agregación. utilice List.Accumulate. utilice List.Generate. convierta una lista en tabla. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Aplicación práctica (25% de la evaluación): Construya una consulta que: Administre catálogos mediante listas. valide pertenencia. compare columnas esperadas y encontradas. produzca controles por fila. genere listas de alertas. asigne un estado principal. separe válidos y revisión. convierta una lista de resultados en tabla.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. construya listas simples y anidadas. acceda correctamente por posición. utilice funciones de selección y transformación. identifique nulos y duplicados. evalúe pertenencia. compare catálogos. construya listas de controles y alertas. utilice una agregación. utilice List.Accumulate. utilice List.Generate. convierta una lista en tabla. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 5,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación (10% de la evaluación): Demuestre: Filas recibidas = Filas válidas + Filas para revisión También: Elementos encontrados únicos = Elementos coincidentes + Elementos adicionales",
+        "puntos": 10,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. construya listas simples y anidadas. acceda correctamente por posición. utilice funciones de selección y transformación. identifique nulos y duplicados. evalúe pertenencia. compare catálogos. construya listas de controles y alertas. utilice una agregación. utilice List.Accumulate. utilice List.Generate. convierta una lista en tabla. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 100
+  },
+  "8": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte A. Conceptos (25% de la evaluación): Explique qué es un registro. Diferencie lista y registro. Diferencie campo nulo y campo inexistente. Explique la utilidad del acceso opcional. Explique por qué una fila puede tratarse como registro.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. construya registros simples y anidados. acceda a campos de forma segura. diferencie campos nulos e inexistentes. utilice funciones de información y transformación. combine registros con prioridad documentada. valide contratos. valide tipos. convierta registros y tablas. construya diagnósticos por fila. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Campos obligatorios sin evaluar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Acceso e inspección (20% de la evaluación): Construya expresiones para: Obtener un campo directamente. obtenerlo mediante nombre dinámico. proporcionar una alternativa. comprobar varios campos. obtener nombres y valores. contar campos.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. construya registros simples y anidados. acceda a campos de forma segura. diferencie campos nulos e inexistentes. utilice funciones de información y transformación. combine registros con prioridad documentada. valide contratos. valide tipos. convierta registros y tablas. construya diagnósticos por fila. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Campos obligatorios sin evaluar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Transformación (20% de la evaluación): Construya operaciones para: Agregar un campo. eliminar un campo. seleccionar campos. renombrar campos. transformar cantidad. combinar configuraciones.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. construya registros simples y anidados. acceda a campos de forma segura. diferencie campos nulos e inexistentes. utilice funciones de información y transformación. combine registros con prioridad documentada. valide contratos. valide tipos. convierta registros y tablas. construya diagnósticos por fila. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Campos obligatorios sin evaluar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Aplicación práctica (25% de la evaluación): Construya una consulta que: Convierta una tabla en registros. valide campos obligatorios y opcionales. conserve originales. prepare textos y cantidades. devuelva diagnósticos. reconstruya una tabla. clasifique registros. separe válidos y revisión.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. construya registros simples y anidados. acceda a campos de forma segura. diferencie campos nulos e inexistentes. utilice funciones de información y transformación. combine registros con prioridad documentada. valide contratos. valide tipos. convierta registros y tablas. construya diagnósticos por fila. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Campos obligatorios sin evaluar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 5,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Pruebas y conciliación (10% de la evaluación): Demuestre: Registros recibidos = Registros compatibles + Registros incompatibles + Valores que no son registros También: Campos encontrados = Campos coincidentes + Campos adicionales",
+        "puntos": 10,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. construya registros simples y anidados. acceda a campos de forma segura. diferencie campos nulos e inexistentes. utilice funciones de información y transformación. combine registros con prioridad documentada. valide contratos. valide tipos. convierta registros y tablas. construya diagnósticos por fila. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Campos obligatorios sin evaluar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 100
+  },
+  "9": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte A. Conceptos (25% de la evaluación): Explique qué es una tabla en M. Diferencie tabla de M y hoja de Excel. Explique por qué una fila puede tratarse como registro. Explique por qué una columna puede tratarse como lista. Diferencie esquema, contenido y contrato. Explique qué significa granularidad.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. explique la estructura tabular. construya tablas mediante diferentes métodos. cree una tabla vacía tipada. convierta tablas en listas y registros. examine filas y columnas. obtenga y analice el esquema. compare esquema y contrato. defina una granularidad. identifique una clave. detecte claves duplicadas. conserve trazabilidad. construya una función de validación. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia de filas = 0 Diferencia de columnas = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Construcción y conversión (20% de la evaluación): Construya la misma tabla mediante: #table Table.FromRecords Table.FromRows Table.FromColumns Después conviértala mediante: Table.ToRecords Table.ToRows Table.ToColumns",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. explique la estructura tabular. construya tablas mediante diferentes métodos. cree una tabla vacía tipada. convierta tablas en listas y registros. examine filas y columnas. obtenga y analice el esquema. compare esquema y contrato. defina una granularidad. identifique una clave. detecte claves duplicadas. conserve trazabilidad. construya una función de validación. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia de filas = 0 Diferencia de columnas = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Esquema y tipos (20% de la evaluación): Construya una consulta que: Obtenga el esquema. cuente filas y columnas. identifique tipos y nulabilidad. detecte columnas faltantes. detecte columnas adicionales. compare los tipos encontrados con los esperados.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. explique la estructura tabular. construya tablas mediante diferentes métodos. cree una tabla vacía tipada. convierta tablas en listas y registros. examine filas y columnas. obtenga y analice el esquema. compare esquema y contrato. defina una granularidad. identifique una clave. detecte claves duplicadas. conserve trazabilidad. construya una función de validación. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia de filas = 0 Diferencia de columnas = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Aplicación práctica (25% de la evaluación): Construya una consulta que: Valide el origen. conserve los valores originales. agregue FilaOrigen. aplique tipos. defina la granularidad. detecte claves duplicadas. clasifique filas. separe válidos y revisión. genere un control tabular.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. explique la estructura tabular. construya tablas mediante diferentes métodos. cree una tabla vacía tipada. convierta tablas en listas y registros. examine filas y columnas. obtenga y analice el esquema. compare esquema y contrato. defina una granularidad. identifique una clave. detecte claves duplicadas. conserve trazabilidad. construya una función de validación. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia de filas = 0 Diferencia de columnas = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 5,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Pruebas y conciliación (10% de la evaluación): Demuestre: Filas recibidas = Filas válidas + Filas para revisión También: Columnas encontradas = Columnas coincidentes + Columnas adicionales Y: Columnas obligatorias = Columnas obligatorias encontradas + Columnas faltantes",
+        "puntos": 10,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. explique la estructura tabular. construya tablas mediante diferentes métodos. cree una tabla vacía tipada. convierta tablas en listas y registros. examine filas y columnas. obtenga y analice el esquema. compare esquema y contrato. defina una granularidad. identifique una clave. detecte claves duplicadas. conserve trazabilidad. construya una función de validación. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia de filas = 0 Diferencia de columnas = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 100
+  },
+  "10": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte A. Conceptos (25% de la evaluación): Diferencie acceso y selección. Explique la función de {}. Explique la función de []. Diferencie campo inexistente y campo nulo. Diferencie posición inexistente y elemento nulo. Explique por qué una posición no debe utilizarse como identidad.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. utilice correctamente {} y []. distinga acceso, selección y navegación. valide posiciones, campos y columnas. diferencie null de ausencia estructural. utilice accesos dinámicos. identifique cero, una y varias coincidencias. navegue por objetos de Excel. valide el campo de contenido. valide el tipo del contenido. conserve los criterios utilizados. construya una función de navegación segura. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Acceso estructural (20% de la evaluación): Construya expresiones para: Obtener un elemento de lista. obtener una fila de tabla. obtener un campo de registro. obtener una columna de tabla. realizar cada acceso de forma opcional o validada.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. utilice correctamente {} y []. distinga acceso, selección y navegación. valide posiciones, campos y columnas. diferencie null de ausencia estructural. utilice accesos dinámicos. identifique cero, una y varias coincidencias. navegue por objetos de Excel. valide el campo de contenido. valide el tipo del contenido. conserve los criterios utilizados. construya una función de navegación segura. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Selección y navegación (20% de la evaluación): Construya soluciones para: Cero coincidencias. una coincidencia. varias coincidencias. tabla de Excel encontrada. hoja con el mismo nombre. campo Data ausente. contenido no tabular.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. utilice correctamente {} y []. distinga acceso, selección y navegación. valide posiciones, campos y columnas. diferencie null de ausencia estructural. utilice accesos dinámicos. identifique cero, una y varias coincidencias. navegue por objetos de Excel. valide el campo de contenido. valide el tipo del contenido. conserve los criterios utilizados. construya una función de navegación segura. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Aplicación práctica (25% de la evaluación): Construya una consulta que: Navegue hasta tblMovimientos. utilice criterios configurables. conserve coincidencias. compruebe unicidad. valide Content. valide el tipo table. valide las columnas obligatorias. agregue trazabilidad. devuelva datos y control.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. utilice correctamente {} y []. distinga acceso, selección y navegación. valide posiciones, campos y columnas. diferencie null de ausencia estructural. utilice accesos dinámicos. identifique cero, una y varias coincidencias. navegue por objetos de Excel. valide el campo de contenido. valide el tipo del contenido. conserve los criterios utilizados. construya una función de navegación segura. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 5,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Pruebas y conciliación (10% de la evaluación): Demuestre: Objetos evaluados = Objetos recuperados + Objetos no encontrados + Objetos no únicos + Objetos con contenido inválido También: Casos definidos = Casos aprobados + Casos rechazados + Casos con error controlado",
+        "puntos": 10,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. utilice correctamente {} y []. distinga acceso, selección y navegación. valide posiciones, campos y columnas. diferencie null de ausencia estructural. utilice accesos dinámicos. identifique cero, una y varias coincidencias. navegue por objetos de Excel. valide el campo de contenido. valide el tipo del contenido. conserve los criterios utilizados. construya una función de navegación segura. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 100
+  },
+  "11": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte A. Conceptos (25% de la evaluación): Diferencie limpieza, normalización y homologación. Explique la diferencia entre Text.Clean y Text.Trim. Explique cuándo utilizar comparación ordinal. Diferencie extracción por posición y delimitador. Explique por qué los códigos deben conservarse como texto.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. seleccione correctamente funciones textuales. diferencie limpieza y homologación. aplique comparadores. extraiga y divida textos. valide caracteres. conserve códigos y ceros iniciales. diseñe funciones distintas para códigos y descripciones. conserve valores originales. genere diagnósticos y alertas. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Selección de funciones (20% de la evaluación): Seleccione la función adecuada para: Eliminar espacios exteriores. quitar caracteres de control. comprobar un prefijo. obtener el consecutivo final. dividir una ubicación. conservar solo dígitos. completar ceros iniciales.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. seleccione correctamente funciones textuales. diferencie limpieza y homologación. aplique comparadores. extraiga y divida textos. valide caracteres. conserve códigos y ceros iniciales. diseñe funciones distintas para códigos y descripciones. conserve valores originales. genere diagnósticos y alertas. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Transformación (20% de la evaluación): Prepare: \" mov/001 \" \" a01 \" \" ent \" \"125\" \"Entrada#(lf)normal\" \"A01/P01-N03\" Conserve el valor original y documente cada función aplicada.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. seleccione correctamente funciones textuales. diferencie limpieza y homologación. aplique comparadores. extraiga y divida textos. valide caracteres. conserve códigos y ceros iniciales. diseñe funciones distintas para códigos y descripciones. conserve valores originales. genere diagnósticos y alertas. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Aplicación práctica (25% de la evaluación): Construya una consulta que: Prepare cinco campos textuales. aplique reglas diferentes por campo. valide longitudes. valide caracteres. homologue categorías. conserve modificaciones. genere alertas. separe válidos y revisión.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. seleccione correctamente funciones textuales. diferencie limpieza y homologación. aplique comparadores. extraiga y divida textos. valide caracteres. conserve códigos y ceros iniciales. diseñe funciones distintas para códigos y descripciones. conserve valores originales. genere diagnósticos y alertas. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 5,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación (10% de la evaluación): Demuestre: Filas recibidas = Filas válidas + Filas para revisión Además: Valores evaluados = Valores sin cambios + Valores modificados + Valores ausentes + Errores controlados",
+        "puntos": 10,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. seleccione correctamente funciones textuales. diferencie limpieza y homologación. aplique comparadores. extraiga y divida textos. valide caracteres. conserve códigos y ceros iniciales. diseñe funciones distintas para códigos y descripciones. conserve valores originales. genere diagnósticos y alertas. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 100
+  },
+  "12": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte A. Conceptos (25% de la evaluación): Diferencie conversión, redondeo y formato. Explique RoundingMode.ToEven. Diferencie signo y valor absoluto. Diferencie división entera y residuo. Diferencie null, NaN, infinito y error. Explique por qué una tolerancia debe estar documentada.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. seleccione correctamente funciones numéricas. declare cultura y precisión. conserve el valor sin redondear. aplique un modo explícito. controle divisiones. utilice tolerancias. identifique números especiales. calcule agregaciones. construya diagnósticos y alertas. conserve valores originales. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia de filas = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Selección de funciones (20% de la evaluación): Seleccione la función adecuada para: Convertir texto. obtener la magnitud. clasificar el signo. calcular cajas completas. calcular sobrantes. redondear hacia arriba. comprobar paridad. calcular una raíz. detectar NaN.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. seleccione correctamente funciones numéricas. declare cultura y precisión. conserve el valor sin redondear. aplique un modo explícito. controle divisiones. utilice tolerancias. identifique números especiales. calcule agregaciones. construya diagnósticos y alertas. conserve valores originales. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia de filas = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Cálculos (20% de la evaluación): Para una cantidad de 127 y capacidad de 12, calcular: Empaques completos Unidades sobrantes Empaques requeridos Después evaluar: Signo Valor absoluto Paridad Cuadrado Raíz cuadrada cuando corresponda",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. seleccione correctamente funciones numéricas. declare cultura y precisión. conserve el valor sin redondear. aplique un modo explícito. controle divisiones. utilice tolerancias. identifique números especiales. calcule agregaciones. construya diagnósticos y alertas. conserve valores originales. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia de filas = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Aplicación práctica (25% de la evaluación): Construya una consulta que: Conserve originales. convierta tres campos numéricos. aplique redondeo explícito. calcule empaques. controle divisores. aplique límites. utilice tolerancia. detecte números especiales. genere alertas. separe válidos y revisión.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. seleccione correctamente funciones numéricas. declare cultura y precisión. conserve el valor sin redondear. aplique un modo explícito. controle divisiones. utilice tolerancias. identifique números especiales. calcule agregaciones. construya diagnósticos y alertas. conserve valores originales. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia de filas = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 5,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación (10% de la evaluación): Demuestre: Filas recibidas = Filas válidas + Filas para revisión También: Total preparado = Total sin redondear + Diferencia total de redondeo",
+        "puntos": 10,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. seleccione correctamente funciones numéricas. declare cultura y precisión. conserve el valor sin redondear. aplique un modo explícito. controle divisiones. utilice tolerancias. identifique números especiales. calcule agregaciones. construya diagnósticos y alertas. conserve valores originales. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia de filas = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 100
+  },
+  "13": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte A. Conceptos (25% de la evaluación): Diferencie date, time, datetime, datetimezone y duration. Diferencie agregar 30 días y agregar un mes. Diferencie componentes y totales de duración. Explique por qué debe declararse el primer día de la semana. Diferencie días naturales y laborales. Explique por qué conviene utilizar una fecha de referencia parametrizada.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. convierta valores con formato y cultura. extraiga componentes correctamente. calcule periodos y vencimientos. diferencie días naturales y laborales. calcule y analice duraciones. diferencie componentes y totales. normalice marcas a UTC. conserve valores originales. construya funciones temporales reutilizables. genere diagnósticos y alertas. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia de filas = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Selección de funciones (20% de la evaluación): Seleccione la función adecuada para: Convertir una fecha textual. obtener el trimestre. obtener el último día del mes. agregar un año. calcular días transcurridos. obtener horas totales. convertir una marca a UTC. calcular días laborales.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. convierta valores con formato y cultura. extraiga componentes correctamente. calcule periodos y vencimientos. diferencie días naturales y laborales. calcule y analice duraciones. diferencie componentes y totales. normalice marcas a UTC. conserve valores originales. construya funciones temporales reutilizables. genere diagnósticos y alertas. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia de filas = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Cálculos (20% de la evaluación): A partir de una fecha de movimiento, calcule: Año Mes Trimestre Semana Nombre del día Inicio del mes Fin del mes Fecha de vencimiento Días transcurridos Días para vencer Estado de vencimiento",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. convierta valores con formato y cultura. extraiga componentes correctamente. calcule periodos y vencimientos. diferencie días naturales y laborales. calcule y analice duraciones. diferencie componentes y totales. normalice marcas a UTC. conserve valores originales. construya funciones temporales reutilizables. genere diagnósticos y alertas. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia de filas = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Aplicación práctica (25% de la evaluación): Construya una consulta que: Conserve valores originales. convierta fechas y horas. declare formato y cultura. extraiga componentes. calcule duración y vencimiento. identifique fechas futuras. identifique fechas fuera de periodo. genere alertas. separe válidos y revisión.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. convierta valores con formato y cultura. extraiga componentes correctamente. calcule periodos y vencimientos. diferencie días naturales y laborales. calcule y analice duraciones. diferencie componentes y totales. normalice marcas a UTC. conserve valores originales. construya funciones temporales reutilizables. genere diagnósticos y alertas. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia de filas = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 5,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Pruebas y conciliación (10% de la evaluación): Demuestre: Filas recibidas = Filas válidas + Filas para revisión También: Conversiones temporales intentadas = Conversiones correctas + Valores ausentes + Textos vacíos + Errores controlados + Valores rechazados",
+        "puntos": 10,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. convierta valores con formato y cultura. extraiga componentes correctamente. calcule periodos y vencimientos. diferencie días naturales y laborales. calcule y analice duraciones. diferencie componentes y totales. normalice marcas a UTC. conserve valores originales. construya funciones temporales reutilizables. genere diagnósticos y alertas. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia de filas = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 100
+  },
+  "14": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte A. Conceptos (25% de la evaluación): Diferencie selección, transformación y agrupación. Diferencie agregar y transformar una columna. Explique por qué eliminar duplicados no constituye por sí solo una solución. Diferencie anexar y combinar. Explique qué significa cardinalidad. Explique cómo una expansión puede cambiar la granularidad.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. seleccione correctamente funciones de tabla. conserve la trazabilidad. diferencie agregar y transformar. diagnostique duplicados. agrupe sin perder la conciliación. combine tablas mediante claves validadas. diagnostique cardinalidad. expanda estructuras de forma controlada. documente cambios de granularidad. conserve valores originales. construya funciones tabulares reutilizables. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia de filas = 0 Diferencia de cantidades = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Operaciones tabulares (20% de la evaluación): Construya expresiones para: Seleccionar cantidades positivas. agregar una columna de importe. transformar una columna textual. ordenar por almacén y fecha. detectar duplicados. agrupar cantidades. anexar periodos. combinar con un catálogo.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. seleccione correctamente funciones de tabla. conserve la trazabilidad. diferencie agregar y transformar. diagnostique duplicados. agrupe sin perder la conciliación. combine tablas mediante claves validadas. diagnostique cardinalidad. expanda estructuras de forma controlada. documente cambios de granularidad. conserve valores originales. construya funciones tabulares reutilizables. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia de filas = 0 Diferencia de cantidades = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Cardinalidad y expansión (20% de la evaluación): Construya una combinación que diferencie: Cero coincidencias Una coincidencia Varias coincidencias Después expanda únicamente los resultados autorizados.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. seleccione correctamente funciones de tabla. conserve la trazabilidad. diferencie agregar y transformar. diagnostique duplicados. agrupe sin perder la conciliación. combine tablas mediante claves validadas. diagnostique cardinalidad. expanda estructuras de forma controlada. documente cambios de granularidad. conserve valores originales. construya funciones tabulares reutilizables. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia de filas = 0 Diferencia de cantidades = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Aplicación práctica (25% de la evaluación): Construya una consulta que: Valide el esquema. conserve originales. agregue trazabilidad. prepare texto, fechas y cantidades. combine con un catálogo. clasifique coincidencias. genere válidos y revisión. agrupe los válidos. conserve el detalle. produzca controles.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. seleccione correctamente funciones de tabla. conserve la trazabilidad. diferencie agregar y transformar. diagnostique duplicados. agrupe sin perder la conciliación. combine tablas mediante claves validadas. diagnostique cardinalidad. expanda estructuras de forma controlada. documente cambios de granularidad. conserve valores originales. construya funciones tabulares reutilizables. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia de filas = 0 Diferencia de cantidades = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 5,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación (10% de la evaluación): Demuestre: Filas recibidas = Filas válidas + Filas para revisión También: Cantidad recibida = Cantidad válida + Cantidad para revisión Y: Filas válidas de detalle = Suma de movimientos del resumen",
+        "puntos": 10,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. seleccione correctamente funciones de tabla. conserve la trazabilidad. diferencie agregar y transformar. diagnostique duplicados. agrupe sin perder la conciliación. combine tablas mediante claves validadas. diagnostique cardinalidad. expanda estructuras de forma controlada. documente cambios de granularidad. conserve valores originales. construya funciones tabulares reutilizables. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia de filas = 0 Diferencia de cantidades = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 100
+  },
+  "15": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte A. Conceptos (25% de la evaluación): Explique la sintaxis de if...then...else. Explique por qué la condición debe ser lógica. Explique la evaluación selectiva de las ramas. Diferencie false, null y error. Explique cómo el orden representa prioridad. Diferencie estado principal y lista de alertas.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. construya condiciones sintácticamente completas. proteja operaciones dependientes. diferencie false, null y error. utilice condiciones compuestas. aplique prioridades. clasifique valores de frontera. conserve controles simultáneos. asigne un estado principal. use contratos coherentes en las ramas. construya una tabla de decisión. mida la cobertura. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia de filas = 0 Filas sin clasificación = 0 Ramas sin prueba = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Protección de operaciones (20% de la evaluación): Construya condiciones seguras para: División. conversión numérica. conversión de fecha. raíz cuadrada. acceso a un campo. acceso a una posición. selección de una coincidencia única.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. construya condiciones sintácticamente completas. proteja operaciones dependientes. diferencie false, null y error. utilice condiciones compuestas. aplique prioridades. clasifique valores de frontera. conserve controles simultáneos. asigne un estado principal. use contratos coherentes en las ramas. construya una tabla de decisión. mida la cobertura. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia de filas = 0 Filas sin clasificación = 0 Ramas sin prueba = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Clasificación (20% de la evaluación): Clasifique: Cantidad Fecha Estado lógico Número de coincidencias Código textual Cada clasificación deberá diferenciar ausencia, error, incumplimiento y resultado válido.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. construya condiciones sintácticamente completas. proteja operaciones dependientes. diferencie false, null y error. utilice condiciones compuestas. aplique prioridades. clasifique valores de frontera. conserve controles simultáneos. asigne un estado principal. use contratos coherentes en las ramas. construya una tabla de decisión. mida la cobertura. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia de filas = 0 Filas sin clasificación = 0 Ramas sin prueba = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Aplicación práctica (25% de la evaluación): Construya una consulta que: Conserve valores originales. convierta fechas y cantidades. produzca controles individuales. construya alertas simultáneas. asigne un estado principal. asigne una prioridad. genere PuedeParticipar. separe válidos y revisión. produzca un resumen por estado.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. construya condiciones sintácticamente completas. proteja operaciones dependientes. diferencie false, null y error. utilice condiciones compuestas. aplique prioridades. clasifique valores de frontera. conserve controles simultáneos. asigne un estado principal. use contratos coherentes en las ramas. construya una tabla de decisión. mida la cobertura. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia de filas = 0 Filas sin clasificación = 0 Ramas sin prueba = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 5,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Pruebas y conciliación (10% de la evaluación): Demuestre: Filas recibidas = Filas válidas + Filas para revisión También: Filas recibidas = Suma de filas por estado principal Y: Ramas definidas = Ramas probadas + Ramas no probadas",
+        "puntos": 10,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. construya condiciones sintácticamente completas. proteja operaciones dependientes. diferencie false, null y error. utilice condiciones compuestas. aplique prioridades. clasifique valores de frontera. conserve controles simultáneos. asigne un estado principal. use contratos coherentes en las ramas. construya una tabla de decisión. mida la cobertura. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia de filas = 0 Filas sin clasificación = 0 Ramas sin prueba = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 100
+  },
+  "16": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte A. Conceptos (25% de la evaluación): Explique qué es una función anónima. Explique el operador =>. Explique qué representa _. Diferencie el contexto de fila y celda. Explique cuándo debe sustituirse each. Explique la captura de variables externas.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. construya funciones anónimas. convierta expresiones each en funciones explícitas. identifique correctamente el contexto de _. diferencie fila, celda y elemento. construya funciones de varios parámetros. utilice funciones que devuelvan registros. capture configuraciones. evite ambigüedad en funciones anidadas. capture errores por elemento. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia de filas = 0 Transformaciones sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Reescritura (20% de la evaluación): Convierta las siguientes expresiones en funciones explícitas: each _ + 1 each Text.Trim(_) each [Cantidad] > 0 each [Cantidad] * [Factor]",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. construya funciones anónimas. convierta expresiones each en funciones explícitas. identifique correctamente el contexto de _. diferencie fila, celda y elemento. construya funciones de varios parámetros. utilice funciones que devuelvan registros. capture configuraciones. evite ambigüedad en funciones anidadas. capture errores por elemento. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia de filas = 0 Transformaciones sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Aplicación (20% de la evaluación): Utilice funciones anónimas para: Transformar números. limpiar textos. seleccionar fechas. agregar una columna. filtrar filas. transformar una celda. evaluar todos los controles. acumular un resumen.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. construya funciones anónimas. convierta expresiones each en funciones explícitas. identifique correctamente el contexto de _. diferencie fila, celda y elemento. construya funciones de varios parámetros. utilice funciones que devuelvan registros. capture configuraciones. evite ambigüedad en funciones anidadas. capture errores por elemento. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia de filas = 0 Transformaciones sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Aplicación práctica (25% de la evaluación): Construya una consulta que: Conserve valores originales. prepare textos y cantidades. utilice funciones explícitas. capture configuración. evalúe cada fila. devuelva registros diagnósticos. expanda los resultados. genere válidos y revisión.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. construya funciones anónimas. convierta expresiones each en funciones explícitas. identifique correctamente el contexto de _. diferencie fila, celda y elemento. construya funciones de varios parámetros. utilice funciones que devuelvan registros. capture configuraciones. evite ambigüedad en funciones anidadas. capture errores por elemento. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia de filas = 0 Transformaciones sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 5,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Pruebas y conciliación (10% de la evaluación): Demuestre: Elementos recibidos = Elementos transformados correctamente + Elementos con error + Elementos no aplicables También: Filas recibidas = Filas válidas + Filas para revisión",
+        "puntos": 10,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. construya funciones anónimas. convierta expresiones each en funciones explícitas. identifique correctamente el contexto de _. diferencie fila, celda y elemento. construya funciones de varios parámetros. utilice funciones que devuelvan registros. capture configuraciones. evite ambigüedad en funciones anidadas. capture errores por elemento. complete las actividades. resuelva el reto. ejecute todos los casos de prueba. mantenga: Diferencia de filas = 0 Transformaciones sin explicar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 100
+  },
+  "17": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte A. Arquitectura (15% de la evaluación): El participante deberá: Definir las capas. documentar las granularidades. establecer las tablas de entrada. crear la configuración.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: obtenga al menos 80 %; apruebe el quiz; construya la arquitectura solicitada; conserve los valores originales; utilice listas, registros y tablas; construya funciones reutilizables; aplique expresiones condicionales; utilice funciones anónimas; valide el catálogo; diagnostique la cardinalidad; conserve todos los incumplimientos; asigne un estado principal; produzca todas las salidas; ejecute los casos de prueba; documente la granularidad; mantenga: Diferencia de filas = 0 Diferencia de cantidades = 0 Diferencia del resumen = 0 Filas sin clasificación = 0 Casos fallidos = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Funciones (25% de la evaluación): Construir y probar: fx_PrepararTexto fx_ConvertirNumero fx_ConvertirFecha fx_EvaluarMovimiento",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: obtenga al menos 80 %; apruebe el quiz; construya la arquitectura solicitada; conserve los valores originales; utilice listas, registros y tablas; construya funciones reutilizables; aplique expresiones condicionales; utilice funciones anónimas; valide el catálogo; diagnostique la cardinalidad; conserve todos los incumplimientos; asigne un estado principal; produzca todas las salidas; ejecute los casos de prueba; documente la granularidad; mantenga: Diferencia de filas = 0 Diferencia de cantidades = 0 Diferencia del resumen = 0 Filas sin clasificación = 0 Casos fallidos = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Integración (25% de la evaluación): Construir una consulta que: prepare movimientos; prepare materiales; combine las tablas; valide cardinalidad; expanda coincidencias únicas; agregue controles y alertas; clasifique las filas.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: obtenga al menos 80 %; apruebe el quiz; construya la arquitectura solicitada; conserve los valores originales; utilice listas, registros y tablas; construya funciones reutilizables; aplique expresiones condicionales; utilice funciones anónimas; valide el catálogo; diagnostique la cardinalidad; conserve todos los incumplimientos; asigne un estado principal; produzca todas las salidas; ejecute los casos de prueba; documente la granularidad; mantenga: Diferencia de filas = 0 Diferencia de cantidades = 0 Diferencia del resumen = 0 Filas sin clasificación = 0 Casos fallidos = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Salidas (20% de la evaluación): Producir: Datos clasificados Datos válidos Datos para revisión Alertas expandidas Resumen Catálogo duplicado",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: obtenga al menos 80 %; apruebe el quiz; construya la arquitectura solicitada; conserve los valores originales; utilice listas, registros y tablas; construya funciones reutilizables; aplique expresiones condicionales; utilice funciones anónimas; valide el catálogo; diagnostique la cardinalidad; conserve todos los incumplimientos; asigne un estado principal; produzca todas las salidas; ejecute los casos de prueba; documente la granularidad; mantenga: Diferencia de filas = 0 Diferencia de cantidades = 0 Diferencia del resumen = 0 Filas sin clasificación = 0 Casos fallidos = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      },
+      {
+        "no": 5,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Pruebas y conciliación (15% de la evaluación): Demostrar: Diferencia de filas = 0 Diferencia de cantidades = 0 Diferencia del resumen = 0 Filas sin clasificación = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: obtenga al menos 80 %; apruebe el quiz; construya la arquitectura solicitada; conserve los valores originales; utilice listas, registros y tablas; construya funciones reutilizables; aplique expresiones condicionales; utilice funciones anónimas; valide el catálogo; diagnostique la cardinalidad; conserve todos los incumplimientos; asigne un estado principal; produzca todas las salidas; ejecute los casos de prueba; documente la granularidad; mantenga: Diferencia de filas = 0 Diferencia de cantidades = 0 Diferencia del resumen = 0 Filas sin clasificación = 0 Casos fallidos = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 100
+  },
+  "18": {
+    "tipo": "rubrica",
+    "items": [
+      {
+        "criterio": "A. Evaluación teórica",
+        "puntos": 15,
+        "condicionLogro": "El participante responde correctamente las 20 preguntas teóricas de opción múltiple que cubren valores, tipos, estructuras, funciones, control de flujo y diseño de la solución trabajados en el Módulo 9."
+      },
+      {
+        "criterio": "B. Lectura y análisis de código",
+        "puntos": 10,
+        "condicionLogro": "El participante identifica correctamente el contexto, el error de prioridad, el riesgo de combinación y la pérdida de trazabilidad, y evalúa una agrupación en los cinco ejercicios de lectura de código propuestos, proponiendo la corrección adecuada en cada caso."
+      },
+      {
+        "criterio": "C. Construcción de funciones",
+        "puntos": 20,
+        "condicionLogro": "El participante construye las cuatro funciones solicitadas (fx_PrepararCodigo, fx_ConvertirCantidad, fx_ConvertirFecha, fx_EvaluarMovimiento) respetando las entradas, salidas y reglas de negocio especificadas para cada una."
+      },
+      {
+        "criterio": "D. Reto práctico",
+        "puntos": 35,
+        "condicionLogro": "El participante entrega una solución completa que aplica las reglas estructurales, de preparación textual, numéricas, temporales y lógicas sobre las tablas de movimientos, materiales y parámetros; produce las ocho salidas obligatorias (out_MovimientosClasificados, out_MovimientosValidos, out_MovimientosRevision, out_AlertasExpandidas, out_ResumenMovimientos, out_CatalogoDuplicado, ctl_Conciliacion, tst_CasosPrueba) y asigna correctamente el estado principal y las alertas de cada movimiento."
+      },
+      {
+        "criterio": "E. Pruebas y conciliación",
+        "puntos": 15,
+        "condicionLogro": "El participante ejecuta los casos mínimos obligatorios, las pruebas de frontera numérica y temporal, las pruebas de cardinalidad y la matriz de cobertura, y concilia filas, estados, cantidades, el resumen, la combinación y las pruebas sin diferencias sin explicar."
+      },
+      {
+        "criterio": "F. Documentación",
+        "puntos": 5,
+        "condicionLogro": "El participante documenta el propósito, las entradas, las salidas, la granularidad, las reglas de negocio, las funciones personalizadas, el manejo de errores, las combinaciones, las pruebas y la conciliación de su solución, y responde con claridad las preguntas de defensa técnica."
+      }
+    ],
+    "totalPuntos": 100,
+    "condicionesNoAprobacion": [
+      "Diferencia de filas distinta de cero.",
+      "Diferencia de cantidades distinta de cero.",
+      "Filas sin clasificación.",
+      "Casos de prueba no ejecutados.",
+      "Errores no controlados."
+    ]
+  }
+}

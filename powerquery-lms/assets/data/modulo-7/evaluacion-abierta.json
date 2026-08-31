@@ -1,0 +1,755 @@
+{
+  "1": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Interpretación de metadatos (20% de la evaluación): El participante deberá explicar: Content. Name. Extension. Date modified. Attributes. Folder Path.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Configure correctamente el conector de carpeta. Interprete la vista del sistema de archivos. Explique la columna Content. Identifique el alcance de las subcarpetas. Documente la ruta. Identifique archivos inesperados. Diferencie entrada, salida, control y respaldo. Conserve el inventario inicial. Registre los conteos. Justifique el uso de Transformar datos. No combine todavía una lista de archivos no controlada.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Análisis del alcance (25% de la evaluación): El participante deberá: Conectarse a una carpeta. Identificar subcarpetas. Contar archivos. Clasificar extensiones. Identificar temporales, respaldos y salidas. Proponer una ruta controlada. Documentar riesgos.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Configure correctamente el conector de carpeta. Interprete la vista del sistema de archivos. Explique la columna Content. Identifique el alcance de las subcarpetas. Documente la ruta. Identifique archivos inesperados. Diferencie entrada, salida, control y respaldo. Conserve el inventario inicial. Registre los conteos. Justifique el uso de Transformar datos. No combine todavía una lista de archivos no controlada.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Inventario inicial (15% de la evaluación): El participante creará: ctl_InventarioInicial con: Nombre. Extensión. Ruta. Fechas. Atributos. Clasificación inicial.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Configure correctamente el conector de carpeta. Interprete la vista del sistema de archivos. Explique la columna Content. Identifique el alcance de las subcarpetas. Documente la ruta. Identifique archivos inesperados. Diferencie entrada, salida, control y respaldo. Conserve el inventario inicial. Registre los conteos. Justifique el uso de Transformar datos. No combine todavía una lista de archivos no controlada.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Justificación técnica (10% de la evaluación): El participante explicará: Por qué eligió esa ruta. Qué subcarpetas forman parte del alcance. Por qué seleccionó Transformar datos. Qué archivos no deben combinarse. Qué riesgos deberá controlar en la siguiente lección.",
+        "puntos": 10,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Configure correctamente el conector de carpeta. Interprete la vista del sistema de archivos. Explique la columna Content. Identifique el alcance de las subcarpetas. Documente la ruta. Identifique archivos inesperados. Diferencie entrada, salida, control y respaldo. Conserve el inventario inicial. Registre los conteos. Justifique el uso de Transformar datos. No combine todavía una lista de archivos no controlada.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 70
+  },
+  "2": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Expansión de atributos (15% de la evaluación): El participante deberá: Expandir Attributes. Seleccionar campos útiles. Renombrarlos. Definir sus tipos. Identificar valores nulos. Explicar sus limitaciones.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Mantenga una fila por archivo. Interprete correctamente los metadatos. Expanda los atributos relevantes. Cree un identificador técnico. Valide el patrón de nombres. Extraiga el periodo declarado. Clasifique las rutas. Identifique tamaños sospechosos. Detecte duplicados potenciales. No elimine archivos sin evidencia. Construya el manifiesto. Asigne estados y motivos. Calcule los indicadores. Concilie completamente el inventario. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Construcción del manifiesto (30% de la evaluación): El participante deberá crear: ctl_ManifiestoArchivos con: Identificador. Nombre. Extensión. Ruta. Tamaño. Fechas. Atributos. Periodo declarado. Validaciones. Estado. Motivo.",
+        "puntos": 30,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Mantenga una fila por archivo. Interprete correctamente los metadatos. Expanda los atributos relevantes. Cree un identificador técnico. Valide el patrón de nombres. Extraiga el periodo declarado. Clasifique las rutas. Identifique tamaños sospechosos. Detecte duplicados potenciales. No elimine archivos sin evidencia. Construya el manifiesto. Asigne estados y motivos. Calcule los indicadores. Concilie completamente el inventario. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Duplicados potenciales (15% de la evaluación): El participante deberá identificar: Nombres repetidos. Periodos repetidos. Copias. Respaldos. Tamaños iguales. Archivos alojados en rutas diferentes. No deberá eliminar ningún archivo.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Mantenga una fila por archivo. Interprete correctamente los metadatos. Expanda los atributos relevantes. Cree un identificador técnico. Valide el patrón de nombres. Extraiga el periodo declarado. Clasifique las rutas. Identifique tamaños sospechosos. Detecte duplicados potenciales. No elimine archivos sin evidencia. Construya el manifiesto. Asigne estados y motivos. Calcule los indicadores. Concilie completamente el inventario. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación (15% de la evaluación): El participante deberá demostrar: Archivos encontrados = Candidatos + Excluidos + Revisión + Errores Resultado obligatorio: Diferencia sin explicar = 0",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Mantenga una fila por archivo. Interprete correctamente los metadatos. Expanda los atributos relevantes. Cree un identificador técnico. Valide el patrón de nombres. Extraiga el periodo declarado. Clasifique las rutas. Identifique tamaños sospechosos. Detecte duplicados potenciales. No elimine archivos sin evidencia. Construya el manifiesto. Asigne estados y motivos. Calcule los indicadores. Concilie completamente el inventario. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "3": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Diseño de reglas (20% de la evaluación): El participante deberá definir: Ruta autorizada. Subcarpetas permitidas. Extensiones. Prefijo. Patrón. Periodo. Sufijos prohibidos. Prioridad de clasificación.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Conserve el inventario completo. Diseñe reglas inclusivas y exclusivas. Controle la ruta y las subcarpetas. Normalice las extensiones. Separe formatos incompatibles. Valide el patrón del nombre. Controle el periodo declarado. Evite filtros fijos innecesarios. Registre estados y motivos. Cree consultas de candidatos, revisión y exclusión. Pruebe nuevos archivos. Concilie el universo. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Implementación (25% de la evaluación): El participante deberá crear: val_ArchivosCandidatos err_ArchivosRevision exc_ArchivosExcluidos y demostrar que las tres consultas parten del mismo inventario.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Conserve el inventario completo. Diseñe reglas inclusivas y exclusivas. Controle la ruta y las subcarpetas. Normalice las extensiones. Separe formatos incompatibles. Valide el patrón del nombre. Controle el periodo declarado. Evite filtros fijos innecesarios. Registre estados y motivos. Cree consultas de candidatos, revisión y exclusión. Pruebe nuevos archivos. Concilie el universo. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Prueba de actualización (15% de la evaluación): Se agregarán cuatro archivos nuevos y el participante deberá comprobar la clasificación automática de cada uno.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Conserve el inventario completo. Diseñe reglas inclusivas y exclusivas. Controle la ruta y las subcarpetas. Normalice las extensiones. Separe formatos incompatibles. Valide el patrón del nombre. Controle el periodo declarado. Evite filtros fijos innecesarios. Registre estados y motivos. Cree consultas de candidatos, revisión y exclusión. Pruebe nuevos archivos. Concilie el universo. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación (15% de la evaluación): El participante deberá demostrar: Archivos encontrados = Candidatos + Excluidos + Revisión + Errores Resultado requerido: Diferencia sin explicar = 0",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Conserve el inventario completo. Diseñe reglas inclusivas y exclusivas. Controle la ruta y las subcarpetas. Normalice las extensiones. Separe formatos incompatibles. Valide el patrón del nombre. Controle el periodo declarado. Evite filtros fijos innecesarios. Registre estados y motivos. Cree consultas de candidatos, revisión y exclusión. Pruebe nuevos archivos. Concilie el universo. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "4": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Identificación y clasificación (20% de la evaluación): El participante clasificará archivos como: Candidato. Temporal. Oculto. Respaldo. Copia potencial. Borrador. Prueba. Salida. Archivo parcial. Revisión.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Identifique temporales de Excel. Excluya el prefijo ~$. Revise archivos ocultos. Detecte respaldos. Clasifique copias como potenciales duplicados. Identifique borradores y pruebas. Excluya archivos de salida. Detecte archivos parcialmente escritos. Defina la prioridad de las reglas. Conserve alertas secundarias. Registre el motivo de exclusión. Cree candidatos, revisión y exclusiones. Ejecute pruebas de actualización. Concilie todas las poblaciones. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Construcción de reglas (20% de la evaluación): El participante deberá crear: Indicadores booleanos. Prioridad de reglas. Estado principal. Alertas secundarias. Motivo de exclusión. Acción requerida.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Identifique temporales de Excel. Excluya el prefijo ~$. Revise archivos ocultos. Detecte respaldos. Clasifique copias como potenciales duplicados. Identifique borradores y pruebas. Excluya archivos de salida. Detecte archivos parcialmente escritos. Defina la prioridad de las reglas. Conserve alertas secundarias. Registre el motivo de exclusión. Cree candidatos, revisión y exclusiones. Ejecute pruebas de actualización. Concilie todas las poblaciones. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Consultas de salida (20% de la evaluación): El participante deberá construir: val_ArchivosCandidatosDepurados err_ArchivosRevisionTecnica exc_ArchivosTecnicos Las consultas deberán conservar identificador, nombre, ruta y motivo.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Identifique temporales de Excel. Excluya el prefijo ~$. Revise archivos ocultos. Detecte respaldos. Clasifique copias como potenciales duplicados. Identifique borradores y pruebas. Excluya archivos de salida. Detecte archivos parcialmente escritos. Defina la prioridad de las reglas. Conserve alertas secundarias. Registre el motivo de exclusión. Cree candidatos, revisión y exclusiones. Ejecute pruebas de actualización. Concilie todas las poblaciones. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Pruebas y conciliación (15% de la evaluación): El participante deberá: Probar un temporal. Probar una salida. Probar una copia. Actualizar. Conciliar el inventario. Mantener diferencia sin explicar igual a cero.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Identifique temporales de Excel. Excluya el prefijo ~$. Revise archivos ocultos. Detecte respaldos. Clasifique copias como potenciales duplicados. Identifique borradores y pruebas. Excluya archivos de salida. Detecte archivos parcialmente escritos. Defina la prioridad de las reglas. Conserve alertas secundarias. Registre el motivo de exclusión. Cree candidatos, revisión y exclusiones. Ejecute pruebas de actualización. Concilie todas las poblaciones. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "5": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Inventario de objetos (20% de la evaluación): El participante deberá: Aplicar Excel.Workbook. Expandir los metadatos del objeto. Conservar Data. Identificar tablas, hojas y rangos. Identificar objetos ocultos. Mantener el archivo de procedencia.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diferencie archivo y objeto. Distinga tablas, hojas y rangos. Utilice Excel.Workbook. Construya un inventario de objetos. Defina el objeto esperado. Seleccione por nombre exacto y tipo. Evite índices de posición. Identifique objetos ocultos. Separe objetos faltantes. Separe objetos renombrados. Separe objetos ambiguos. Mantenga el archivo de procedencia. Separe los flujos de Excel y CSV. Concilie todos los archivos. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Validación del objeto esperado (25% de la evaluación): El participante deberá: Definir el objeto oficial. Contar coincidencias por archivo. Seleccionar mediante Item y Kind. Identificar objetos faltantes. Identificar objetos renombrados. Identificar objetos ambiguos.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diferencie archivo y objeto. Distinga tablas, hojas y rangos. Utilice Excel.Workbook. Construya un inventario de objetos. Defina el objeto esperado. Seleccione por nombre exacto y tipo. Evite índices de posición. Identifique objetos ocultos. Separe objetos faltantes. Separe objetos renombrados. Separe objetos ambiguos. Mantenga el archivo de procedencia. Separe los flujos de Excel y CSV. Concilie todos los archivos. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Prueba de cambio (15% de la evaluación): Se incorporarán: Un archivo con una hoja nueva. Un archivo con tabla renombrada. Un archivo sin tabla. Un archivo con dos tablas candidatas. El participante deberá comprobar que la lógica no selecciona objetos por posición.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diferencie archivo y objeto. Distinga tablas, hojas y rangos. Utilice Excel.Workbook. Construya un inventario de objetos. Defina el objeto esperado. Seleccione por nombre exacto y tipo. Evite índices de posición. Identifique objetos ocultos. Separe objetos faltantes. Separe objetos renombrados. Separe objetos ambiguos. Mantenga el archivo de procedencia. Separe los flujos de Excel y CSV. Concilie todos los archivos. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación (15% de la evaluación): El participante deberá demostrar: Archivos candidatos = Objeto válido + Objeto faltante + Objeto renombrado + Objeto ambiguo + Error de interpretación + Otras excepciones Resultado requerido: Diferencia sin explicar = 0",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diferencie archivo y objeto. Distinga tablas, hojas y rangos. Utilice Excel.Workbook. Construya un inventario de objetos. Defina el objeto esperado. Seleccione por nombre exacto y tipo. Evite índices de posición. Identifique objetos ocultos. Separe objetos faltantes. Separe objetos renombrados. Separe objetos ambiguos. Mantenga el archivo de procedencia. Separe los flujos de Excel y CSV. Concilie todos los archivos. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "6": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Matriz de selección (20% de la evaluación): El participante deberá evaluar al menos cinco candidatos y justificar: Archivo seleccionado. Archivos rechazados. Criterios eliminatorios. Criterios preferentes. Limitaciones.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Explique la función del archivo de ejemplo. No acepte automáticamente el primer archivo. Aplique criterios técnicos y estructurales. Seleccione el objeto interno autorizado. Evite archivos vacíos o atípicos sin justificación. Revise los tipos automáticos. Identifique las consultas auxiliares. Pruebe la transformación contra otros archivos. Documente la dependencia. Controle la sustitución del ejemplo. Mantenga la trazabilidad del origen.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Generación de la combinación (20% de la evaluación): El participante deberá: Abrir Combinar archivos. Cambiar la selección predeterminada. Seleccionar el objeto correcto. Elegir Transformar datos. Identificar las consultas auxiliares. Documentar sus dependencias.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Explique la función del archivo de ejemplo. No acepte automáticamente el primer archivo. Aplique criterios técnicos y estructurales. Seleccione el objeto interno autorizado. Evite archivos vacíos o atípicos sin justificación. Revise los tipos automáticos. Identifique las consultas auxiliares. Pruebe la transformación contra otros archivos. Documente la dependencia. Controle la sustitución del ejemplo. Mantenga la trazabilidad del origen.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Pruebas (20% de la evaluación): La transformación deberá probarse contra: Archivo normal. Archivo vacío. Columna opcional faltante. Columna nueva. Archivo de otro periodo.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Explique la función del archivo de ejemplo. No acepte automáticamente el primer archivo. Aplique criterios técnicos y estructurales. Seleccione el objeto interno autorizado. Evite archivos vacíos o atípicos sin justificación. Revise los tipos automáticos. Identifique las consultas auxiliares. Pruebe la transformación contra otros archivos. Documente la dependencia. Controle la sustitución del ejemplo. Mantenga la trazabilidad del origen.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Documentación (15% de la evaluación): El participante deberá crear: ctl_ArchivoEjemplo y registrar: Selección. versión. objeto. justificación. limitaciones. pruebas. responsable. estado.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Explique la función del archivo de ejemplo. No acepte automáticamente el primer archivo. Aplique criterios técnicos y estructurales. Seleccione el objeto interno autorizado. Evite archivos vacíos o atípicos sin justificación. Revise los tipos automáticos. Identifique las consultas auxiliares. Pruebe la transformación contra otros archivos. Documente la dependencia. Controle la sustitución del ejemplo. Mantenga la trazabilidad del origen.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "7": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Diseño de la transformación (25% de la evaluación): El participante deberá: Navegar al objeto. Promover encabezados cuando corresponda. Limpiar nombres. Renombrar columnas. Seleccionar columnas. Definir tipos. Conservar valores originales.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diferencie archivo de ejemplo y transformación. Navegue al objeto correcto. Evite pasos dependientes de posiciones variables. Promueva encabezados correctamente. Homologue los nombres. Defina tipos explícitos. Preserve identificadores y valores originales. Clasifique filas no operativas. Conserve errores y excepciones. Mantenga la granularidad. Pruebe la transformación con otros archivos. Concilie todas las filas. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Reglas de calidad (20% de la evaluación): El participante deberá clasificar: Filas vacías. Totales. Subtotales. Notas. Claves no evaluables. Cantidades no evaluables. Categorías desconocidas. Registros operativos.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diferencie archivo de ejemplo y transformación. Navegue al objeto correcto. Evite pasos dependientes de posiciones variables. Promueva encabezados correctamente. Homologue los nombres. Defina tipos explícitos. Preserve identificadores y valores originales. Clasifique filas no operativas. Conserve errores y excepciones. Mantenga la granularidad. Pruebe la transformación con otros archivos. Concilie todas las filas. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Pruebas (15% de la evaluación): La transformación deberá evaluarse contra al menos cinco archivos con variaciones estructurales y de datos.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diferencie archivo de ejemplo y transformación. Navegue al objeto correcto. Evite pasos dependientes de posiciones variables. Promueva encabezados correctamente. Homologue los nombres. Defina tipos explícitos. Preserve identificadores y valores originales. Clasifique filas no operativas. Conserve errores y excepciones. Mantenga la granularidad. Pruebe la transformación con otros archivos. Concilie todas las filas. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación (15% de la evaluación): El participante deberá demostrar: Filas del objeto = Registros operativos + Filas no operativas + Filas para revisión + Errores Resultado requerido: Diferencia sin explicar = 0",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diferencie archivo de ejemplo y transformación. Navegue al objeto correcto. Evite pasos dependientes de posiciones variables. Promueva encabezados correctamente. Homologue los nombres. Defina tipos explícitos. Preserve identificadores y valores originales. Clasifique filas no operativas. Conserve errores y excepciones. Mantenga la granularidad. Pruebe la transformación con otros archivos. Concilie todas las filas. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "8": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Arquitectura automática (20% de la evaluación): El participante deberá identificar y explicar: Archivo de ejemplo. Parámetro. Transformación. Función. Consulta principal. Dependencias.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Explique la sintaxis de una función. Identifique el parámetro binario. Distinga función y consulta. Localice las consultas auxiliares. Invoque la función correctamente. Conserve los metadatos. Pruebe diferentes archivos. Utilice try. Separe éxitos y errores. Diferencie archivo vacío y error. Documente la función. Concilie todos los archivos. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Invocación (20% de la evaluación): El participante deberá: Invocar la función manualmente. Agregar una columna de invocación. Conservar metadatos. Revisar tablas producidas. Contar filas por archivo.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Explique la sintaxis de una función. Identifique el parámetro binario. Distinga función y consulta. Localice las consultas auxiliares. Invoque la función correctamente. Conserve los metadatos. Pruebe diferentes archivos. Utilice try. Separe éxitos y errores. Diferencie archivo vacío y error. Documente la función. Concilie todos los archivos. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Manejo inicial de errores (20% de la evaluación): El participante deberá: Utilizar try. Identificar HasError. Separar éxitos. Separar errores. Conservar mensajes. Clasificar archivos vacíos.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Explique la sintaxis de una función. Identifique el parámetro binario. Distinga función y consulta. Localice las consultas auxiliares. Invoque la función correctamente. Conserve los metadatos. Pruebe diferentes archivos. Utilice try. Separe éxitos y errores. Diferencie archivo vacío y error. Documente la función. Concilie todos los archivos. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Documentación y conciliación (15% de la evaluación): El participante deberá documentar el contrato de la función y demostrar: Archivos invocados = Archivos transformados + Archivos con error Resultado requerido: Diferencia sin explicar = 0",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Explique la sintaxis de una función. Identifique el parámetro binario. Distinga función y consulta. Localice las consultas auxiliares. Invoque la función correctamente. Conserve los metadatos. Pruebe diferentes archivos. Utilice try. Separe éxitos y errores. Diferencie archivo vacío y error. Documente la función. Concilie todos los archivos. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "9": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Invocación y control previo (20% de la evaluación): El participante deberá: Invocar la función. Utilizar try. Separar éxitos y errores. Calcular filas. Calcular columnas. Identificar archivos vacíos.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diferencie invocación, expansión y consolidación. Separe errores antes de expandir. Identifique archivos con cero filas. Valide el esquema por archivo. Expanda columnas explícitas. Conserve el archivo y periodo de origen. Aplique tipos finales. Mantenga una fila por registro de negocio. Detecte duplicados potenciales. Identifique archivos acumulados. Concilie por archivo. Concilie cantidades por unidad. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Expansión y consolidación (25% de la evaluación): El participante deberá: Expandir las columnas autorizadas. Mantener metadatos. Resolver nombres. Aplicar tipos. Construir la consulta histórica. Documentar la granularidad.",
+        "puntos": 25,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diferencie invocación, expansión y consolidación. Separe errores antes de expandir. Identifique archivos con cero filas. Valide el esquema por archivo. Expanda columnas explícitas. Conserve el archivo y periodo de origen. Aplique tipos finales. Mantenga una fila por registro de negocio. Detecte duplicados potenciales. Identifique archivos acumulados. Concilie por archivo. Concilie cantidades por unidad. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Calidad y duplicados (15% de la evaluación): El participante deberá: Detectar duplicados internos. Detectar duplicados entre archivos. Identificar periodos superpuestos. Construir una clave de carga. Conservar todas las filas para revisión.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diferencie invocación, expansión y consolidación. Separe errores antes de expandir. Identifique archivos con cero filas. Valide el esquema por archivo. Expanda columnas explícitas. Conserve el archivo y periodo de origen. Aplique tipos finales. Mantenga una fila por registro de negocio. Detecte duplicados potenciales. Identifique archivos acumulados. Concilie por archivo. Concilie cantidades por unidad. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación (15% de la evaluación): El participante deberá demostrar: Suma de filas transformadas por archivo = Filas consolidadas y: Archivos invocados = Archivos transformados + Archivos con error Resultado obligatorio: Diferencia sin explicar = 0",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diferencie invocación, expansión y consolidación. Separe errores antes de expandir. Identifique archivos con cero filas. Valide el esquema por archivo. Expanda columnas explícitas. Conserve el archivo y periodo de origen. Aplique tipos finales. Mantenga una fila por registro de negocio. Detecte duplicados potenciales. Identifique archivos acumulados. Concilie por archivo. Concilie cantidades por unidad. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "10": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Conservación de metadatos (20% de la evaluación): El participante deberá conservar: Archivo. Ruta. Extensión. Periodo. Fecha de modificación. Versión. Identificador del archivo.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Conserve el nombre y la ruta. Construya un identificador técnico. Conserve periodo, versión y fecha de modificación. Diferencie las clases de claves. Mantenga los metadatos durante la expansión. Relacione el manifiesto con el detalle. Detecte registros huérfanos. Compare el origen declarado con el interno. Proteja rutas sensibles. Concilie los registros por archivo. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Identificadores y linaje (20% de la evaluación): Deberá crear y explicar: IdArchivo IdCarga IdRegistroArchivo Además, deberá diferenciar estas claves de la clave de negocio.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Conserve el nombre y la ruta. Construya un identificador técnico. Conserve periodo, versión y fecha de modificación. Diferencie las clases de claves. Mantenga los metadatos durante la expansión. Relacione el manifiesto con el detalle. Detecte registros huérfanos. Compare el origen declarado con el interno. Proteja rutas sensibles. Concilie los registros por archivo. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Validación del origen (20% de la evaluación): Deberá comparar: Origen en el nombre. Origen en la ruta. Origen en los registros. Periodo del archivo. Versión. Estado de trazabilidad.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Conserve el nombre y la ruta. Construya un identificador técnico. Conserve periodo, versión y fecha de modificación. Diferencie las clases de claves. Mantenga los metadatos durante la expansión. Relacione el manifiesto con el detalle. Detecte registros huérfanos. Compare el origen declarado con el interno. Proteja rutas sensibles. Concilie los registros por archivo. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación (15% de la evaluación): Deberá demostrar: Registros consolidados = Registros con trazabilidad completa + Registros con trazabilidad incompleta También deberá comprobar: Registros huérfanos = 0 y: Diferencia sin explicar = 0",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Conserve el nombre y la ruta. Construya un identificador técnico. Conserve periodo, versión y fecha de modificación. Diferencie las clases de claves. Mantenga los metadatos durante la expansión. Relacione el manifiesto con el detalle. Detecte registros huérfanos. Compare el origen declarado con el interno. Proteja rutas sensibles. Concilie los registros por archivo. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "11": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Derivación temporal (20% de la evaluación): El participante deberá crear: PeriodoNombre PeriodoRuta PeriodoRegistro FechaMinima FechaMaxima PeriodosInternosDistintos",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Defina la fecha principal del periodo. Compare nombre, ruta y contenido. Calcule fechas mínima y máxima. Detecte archivos multimensuales. Identifique acumulados. Separe registros fuera del periodo. Conserve fechas no evaluables. Diferencie periodos vacíos y faltantes. Detecte periodos duplicados. Construya un calendario esperado. Controle periodos futuros y cerrados. Concilie registros y cantidades. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Diagnóstico temporal (20% de la evaluación): El participante deberá identificar: Registros anteriores. Registros posteriores. Fechas no evaluables. Archivos acumulados. Periodos duplicados. Periodos futuros. Cambios posteriores al cierre.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Defina la fecha principal del periodo. Compare nombre, ruta y contenido. Calcule fechas mínima y máxima. Detecte archivos multimensuales. Identifique acumulados. Separe registros fuera del periodo. Conserve fechas no evaluables. Diferencie periodos vacíos y faltantes. Detecte periodos duplicados. Construya un calendario esperado. Controle periodos futuros y cerrados. Concilie registros y cantidades. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Calendario y cobertura (15% de la evaluación): El participante deberá construir un calendario esperado e identificar: Periodos recibidos. Periodos vacíos. Periodos faltantes. Periodos duplicados. Periodos con error.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Defina la fecha principal del periodo. Compare nombre, ruta y contenido. Calcule fechas mínima y máxima. Detecte archivos multimensuales. Identifique acumulados. Separe registros fuera del periodo. Conserve fechas no evaluables. Diferencie periodos vacíos y faltantes. Detecte periodos duplicados. Construya un calendario esperado. Controle periodos futuros y cerrados. Concilie registros y cantidades. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación (20% de la evaluación): El participante deberá demostrar por archivo: Registros totales = Dentro del periodo + Anteriores + Posteriores + Fechas no evaluables + Exclusiones justificadas Resultado obligatorio: Diferencia sin explicar = 0",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Defina la fecha principal del periodo. Compare nombre, ruta y contenido. Calcule fechas mínima y máxima. Detecte archivos multimensuales. Identifique acumulados. Separe registros fuera del periodo. Conserve fechas no evaluables. Diferencie periodos vacíos y faltantes. Detecte periodos duplicados. Construya un calendario esperado. Controle periodos futuros y cerrados. Concilie registros y cantidades. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "12": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Contrato estructural (20% de la evaluación): El participante deberá construir: cfg_ContratoColumnas con: Nombre. Tipo. Clasificación. Obligatoriedad. Admisión de nulos. Orden. Fuente. Versión. Tratamiento.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya un contrato de columnas. Diferencie ausencia y nulidad. Identifique columnas obligatorias faltantes. Identifique columnas opcionales faltantes. Homologue encabezados autorizados. Detecte encabezados duplicados. Complete opcionales de manera controlada. No oculte obligatorias faltantes. Aplique tipos correctos. Registre columnas vacías. Clasifique los archivos. Cree consultas de compatibilidad. Concilié todos los documentos. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Diagnóstico por archivo (20% de la evaluación): El participante deberá calcular: ColumnasEncontradas ObligatoriasFaltantes OpcionalesFaltantes EncabezadosDuplicados TiposIncompatibles EstadoCompatibilidad",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya un contrato de columnas. Diferencie ausencia y nulidad. Identifique columnas obligatorias faltantes. Identifique columnas opcionales faltantes. Homologue encabezados autorizados. Detecte encabezados duplicados. Complete opcionales de manera controlada. No oculte obligatorias faltantes. Aplique tipos correctos. Registre columnas vacías. Clasifique los archivos. Cree consultas de compatibilidad. Concilié todos los documentos. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Tratamiento de faltantes (20% de la evaluación): El participante deberá: Completar opcionales con null. Asignar tipos. Rechazar obligatorias faltantes. Conservar errores descriptivos. Diferenciar columna ausente y columna vacía. Probar los tres comportamientos de MissingField.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya un contrato de columnas. Diferencie ausencia y nulidad. Identifique columnas obligatorias faltantes. Identifique columnas opcionales faltantes. Homologue encabezados autorizados. Detecte encabezados duplicados. Complete opcionales de manera controlada. No oculte obligatorias faltantes. Aplique tipos correctos. Registre columnas vacías. Clasifique los archivos. Cree consultas de compatibilidad. Concilié todos los documentos. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación (15% de la evaluación): El participante deberá demostrar: Archivos evaluados = Compatibles + Condicionados + Incompatibles + Errores + Pendientes Resultado obligatorio: Diferencia sin explicar = 0",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya un contrato de columnas. Diferencie ausencia y nulidad. Identifique columnas obligatorias faltantes. Identifique columnas opcionales faltantes. Homologue encabezados autorizados. Detecte encabezados duplicados. Complete opcionales de manera controlada. No oculte obligatorias faltantes. Aplique tipos correctos. Registre columnas vacías. Clasifique los archivos. Cree consultas de compatibilidad. Concilié todos los documentos. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "13": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Detección estructural (20% de la evaluación): El participante deberá calcular: ColumnasEncontradas ColumnasAdicionales NumeroColumnasAdicionales PrimerPeriodoAparicion",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Detecte columnas adicionales. Mantenga expansión explícita. Conserve evidencia del cambio. Identifique posibles sustituciones. Detecte campos confidenciales. Analice tipo y completitud. Evalúe el impacto sobre la granularidad. Versione el contrato. Defina la vigencia. Pruebe compatibilidad histórica. Clasifique archivos por impacto. Concilie archivos y versiones. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Clasificación de columnas (20% de la evaluación): Deberá clasificar campos como: Autorizados. Opcionales. Técnicos. Auxiliares. Experimentales. Confidenciales. Posibles sustituciones. Cambios de granularidad.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Detecte columnas adicionales. Mantenga expansión explícita. Conserve evidencia del cambio. Identifique posibles sustituciones. Detecte campos confidenciales. Analice tipo y completitud. Evalúe el impacto sobre la granularidad. Versione el contrato. Defina la vigencia. Pruebe compatibilidad histórica. Clasifique archivos por impacto. Concilie archivos y versiones. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Versionado y compatibilidad (20% de la evaluación): El participante deberá: Proponer un contrato 1.1. Establecer la vigencia. Probar archivos 1.0. Probar archivos 1.1. Documentar compatibilidad. Mantener una salida estable.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Detecte columnas adicionales. Mantenga expansión explícita. Conserve evidencia del cambio. Identifique posibles sustituciones. Detecte campos confidenciales. Analice tipo y completitud. Evalúe el impacto sobre la granularidad. Versione el contrato. Defina la vigencia. Pruebe compatibilidad histórica. Clasifique archivos por impacto. Concilie archivos y versiones. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación (15% de la evaluación): Deberá demostrar: Archivos evaluados = Sin cambios + Extensión compatible + Revisión + Cambio crítico + Errores Resultado obligatorio: Diferencia sin explicar = 0",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Detecte columnas adicionales. Mantenga expansión explícita. Conserve evidencia del cambio. Identifique posibles sustituciones. Detecte campos confidenciales. Analice tipo y completitud. Evalúe el impacto sobre la granularidad. Versione el contrato. Defina la vigencia. Pruebe compatibilidad histórica. Clasifique archivos por impacto. Concilie archivos y versiones. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "14": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Diagnóstico de versiones (20% de la evaluación): El participante deberá identificar: Versión declarada. Versión detectada. Objeto. columnas. tipos. vigencia. granularidad. estado.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Defina contratos por versión. Identifique cambios menores y críticos. Detecte cambios de objeto, tipo, unidad y granularidad. Compare versión declarada y detectada. Seleccione la función adecuada. Separe versiones desconocidas. Homologue la salida sin perder significado. Mantenga las funciones históricas. Ejecute pruebas de regresión. Concilie archivos, registros y cantidades. Justifique la liberación. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Funciones por versión (20% de la evaluación): El participante deberá construir o documentar: fx_TransformarMovimientosV1 fx_TransformarMovimientosV1_1 fx_TransformarMovimientosV2 fx_TransformarPorVersion",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Defina contratos por versión. Identifique cambios menores y críticos. Detecte cambios de objeto, tipo, unidad y granularidad. Compare versión declarada y detectada. Seleccione la función adecuada. Separe versiones desconocidas. Homologue la salida sin perder significado. Mantenga las funciones históricas. Ejecute pruebas de regresión. Concilie archivos, registros y cantidades. Justifique la liberación. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Compatibilidad y regresión (20% de la evaluación): Deberá probar: Archivos históricos. Versión actual. Versión futura simulada. Columna opcional nueva. Cambio de objeto. Cambio de tipo. Cambio de granularidad. Versión desconocida.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Defina contratos por versión. Identifique cambios menores y críticos. Detecte cambios de objeto, tipo, unidad y granularidad. Compare versión declarada y detectada. Seleccione la función adecuada. Separe versiones desconocidas. Homologue la salida sin perder significado. Mantenga las funciones históricas. Ejecute pruebas de regresión. Concilie archivos, registros y cantidades. Justifique la liberación. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación y liberación (15% de la evaluación): Deberá demostrar: Archivos evaluados = Versiones reconocidas + Versiones desconocidas + Errores También: Filas transformadas = Filas consolidadas + Excepciones Resultado obligatorio: Diferencia sin explicar = 0",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Defina contratos por versión. Identifique cambios menores y críticos. Detecte cambios de objeto, tipo, unidad y granularidad. Compare versión declarada y detectada. Seleccione la función adecuada. Separe versiones desconocidas. Homologue la salida sin perder significado. Mantenga las funciones históricas. Ejecute pruebas de regresión. Concilie archivos, registros y cantidades. Justifique la liberación. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "15": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Captura de errores (20% de la evaluación): El participante deberá: Invocar la función con try. Expandir el resultado. separar éxitos y errores. extraer razón, mensaje, detalle y código. conservar los metadatos del archivo.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diferencie error, null y tabla vacía. Capture errores mediante try. Conserve razón, mensaje y detalle. Cree errores personalizados. Separe archivos exitosos y fallidos. Identifique archivos parcialmente procesados. Registre las incidencias. Clasifique su prioridad. Defina reglas de reintento. Construya una cuarentena lógica. Determine el estado de la carga. Conserve el historial de correcciones. Concilie archivos y registros. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Clasificación y registro (20% de la evaluación): El participante deberá construir: cfg_CatalogoErrores ctl_RegistroErroresArchivos y clasificar: Categoría. prioridad. etapa. recuperabilidad. responsable. acción.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diferencie error, null y tabla vacía. Capture errores mediante try. Conserve razón, mensaje y detalle. Cree errores personalizados. Separe archivos exitosos y fallidos. Identifique archivos parcialmente procesados. Registre las incidencias. Clasifique su prioridad. Defina reglas de reintento. Construya una cuarentena lógica. Determine el estado de la carga. Conserve el historial de correcciones. Concilie archivos y registros. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Reintento y continuidad (20% de la evaluación): El participante deberá determinar: Qué errores pueden reintentarse. Qué errores necesitan corrección. Qué archivos deben ir a cuarentena. Si la carga puede continuar. Qué estado general debe publicarse.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diferencie error, null y tabla vacía. Capture errores mediante try. Conserve razón, mensaje y detalle. Cree errores personalizados. Separe archivos exitosos y fallidos. Identifique archivos parcialmente procesados. Registre las incidencias. Clasifique su prioridad. Defina reglas de reintento. Construya una cuarentena lógica. Determine el estado de la carga. Conserve el historial de correcciones. Concilie archivos y registros. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación (15% de la evaluación): El participante deberá demostrar: Archivos invocados = Archivos transformados + Archivos no transformados y: Filas producidas = Filas válidas + Filas con advertencia + Filas con error + Filas no operativas Resultado obligatorio: Diferencia sin explicar = 0",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diferencie error, null y tabla vacía. Capture errores mediante try. Conserve razón, mensaje y detalle. Cree errores personalizados. Separe archivos exitosos y fallidos. Identifique archivos parcialmente procesados. Registre las incidencias. Clasifique su prioridad. Defina reglas de reintento. Construya una cuarentena lógica. Determine el estado de la carga. Conserve el historial de correcciones. Concilie archivos y registros. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "16": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Diagnóstico de archivos (20% de la evaluación): El participante deberá calcular: NumeroRegistros NumeroClavesDistintas FechaMinima FechaMaxima PeriodosInternos NombreRepetido PeriodoRepetido EstadoDuplicidad",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Defina una clave compatible con la granularidad. Distinga duplicados exactos y potenciales. Compare originales y corregidos. Identifique archivos acumulados. Detecte periodos superpuestos. No elimine duplicados sin evidencia. Defina una versión vigente. Conserve los archivos sustituidos. Construya una salida vigente. Mantenga el histórico de recepciones. Concilie archivos, registros y cantidades. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Comparación de registros (20% de la evaluación): El participante deberá separar: Registros únicos. Duplicados exactos. Misma clave con valores diferentes. Registros exclusivos del original. Registros exclusivos del corregido. Superposiciones parciales.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Defina una clave compatible con la granularidad. Distinga duplicados exactos y potenciales. Compare originales y corregidos. Identifique archivos acumulados. Detecte periodos superpuestos. No elimine duplicados sin evidencia. Defina una versión vigente. Conserve los archivos sustituidos. Construya una salida vigente. Mantenga el histórico de recepciones. Concilie archivos, registros y cantidades. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Vigencia y participación (20% de la evaluación): El participante deberá construir: cfg_VigenciaArchivos val_ArchivosParticipantes exc_ArchivosPorDuplicidad err_ArchivosRevisionDuplicidad",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Defina una clave compatible con la granularidad. Distinga duplicados exactos y potenciales. Compare originales y corregidos. Identifique archivos acumulados. Detecte periodos superpuestos. No elimine duplicados sin evidencia. Defina una versión vigente. Conserve los archivos sustituidos. Construya una salida vigente. Mantenga el histórico de recepciones. Concilie archivos, registros y cantidades. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Conciliación (15% de la evaluación): Deberá demostrar: Archivos evaluados = Participantes + Excluidos + Revisión + Errores y: Filas originales = Filas participantes + Duplicados excluidos + Filas sustituidas + Filas en revisión Resultado obligatorio: Diferencia sin explicar = 0",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Defina una clave compatible con la granularidad. Distinga duplicados exactos y potenciales. Compare originales y corregidos. Identifique archivos acumulados. Detecte periodos superpuestos. No elimine duplicados sin evidencia. Defina una versión vigente. Conserve los archivos sustituidos. Construya una salida vigente. Mantenga el histórico de recepciones. Concilie archivos, registros y cantidades. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "17": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Conciliación de archivos (20% de la evaluación): El participante deberá demostrar: Archivos encontrados = Participantes + Excluidos + Revisión + Errores + Otros estados justificados",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya conciliaciones por archivo y registro. Mantenga categorías principales excluyentes. Detecte diferencias compensadas. Concilie cantidades por unidad. Identifique archivos y registros huérfanos. Construya controles por periodo, origen y versión. Calcule indicadores de cobertura. Calcule trazabilidad. Determine el estado general de la carga. Emita un dictamen justificado. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Conciliación de registros (20% de la evaluación): Deberá demostrar: Filas transformadas = Válidas + Advertencias + Errores + No operativas + Duplicadas + Sustituidas + Fuera del periodo",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya conciliaciones por archivo y registro. Mantenga categorías principales excluyentes. Detecte diferencias compensadas. Concilie cantidades por unidad. Identifique archivos y registros huérfanos. Construya controles por periodo, origen y versión. Calcule indicadores de cobertura. Calcule trazabilidad. Determine el estado general de la carga. Emita un dictamen justificado. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Cobertura y trazabilidad (20% de la evaluación): Deberá calcular: Cobertura de archivos. cobertura de periodos. cobertura por origen. trazabilidad. archivos huérfanos. registros huérfanos. versiones reconocidas.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya conciliaciones por archivo y registro. Mantenga categorías principales excluyentes. Detecte diferencias compensadas. Concilie cantidades por unidad. Identifique archivos y registros huérfanos. Construya controles por periodo, origen y versión. Calcule indicadores de cobertura. Calcule trazabilidad. Determine el estado general de la carga. Emita un dictamen justificado. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Liberación (15% de la evaluación): El participante deberá emitir uno de los siguientes dictámenes: Liberar Liberar con observaciones No liberar La decisión deberá estar respaldada por indicadores y diferencias.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya conciliaciones por archivo y registro. Mantenga categorías principales excluyentes. Detecte diferencias compensadas. Concilie cantidades por unidad. Identifique archivos y registros huérfanos. Construya controles por periodo, origen y versión. Calcule indicadores de cobertura. Calcule trazabilidad. Determine el estado general de la carga. Emita un dictamen justificado. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "18": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Pruebas de archivos (20% de la evaluación): El participante deberá ejecutar: Archivo válido. archivo vacío. temporal. objeto faltante. columna obligatoria faltante. columna opcional faltante. columna adicional. versión desconocida.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Incorpore un archivo nuevo sin editar la consulta. Ejecute todos los escenarios críticos. Distinga actualización e incrementalidad. Registre una línea base. Compare resultados esperados y reales. Detecte cambios estructurales. Aísle archivos inválidos. Detecte duplicados y acumulados. Ejecute regresión por versión. Conserve trazabilidad completa. Concilie archivos, filas y cantidades. Emita un dictamen documentado. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Pruebas temporales y de duplicidad (20% de la evaluación): El participante deberá probar: Duplicado exacto. archivo corregido. periodo superpuesto. archivo acumulado. archivo eliminado. archivo histórico modificado.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Incorpore un archivo nuevo sin editar la consulta. Ejecute todos los escenarios críticos. Distinga actualización e incrementalidad. Registre una línea base. Compare resultados esperados y reales. Detecte cambios estructurales. Aísle archivos inválidos. Detecte duplicados y acumulados. Ejecute regresión por versión. Conserve trazabilidad completa. Concilie archivos, filas y cantidades. Emita un dictamen documentado. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Regresión y comparación (20% de la evaluación): Deberá comparar: Archivos antes y después. registros. claves. periodos. cantidades por unidad. errores. versiones. trazabilidad.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Incorpore un archivo nuevo sin editar la consulta. Ejecute todos los escenarios críticos. Distinga actualización e incrementalidad. Registre una línea base. Compare resultados esperados y reales. Detecte cambios estructurales. Aísle archivos inválidos. Detecte duplicados y acumulados. Ejecute regresión por versión. Conserve trazabilidad completa. Concilie archivos, filas y cantidades. Emita un dictamen documentado. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Dictamen (15% de la evaluación): El participante deberá emitir: Aprobada Aprobada con observaciones No aprobada El dictamen deberá estar respaldado por: Matriz de pruebas. línea base. variaciones. conciliación. evidencia. riesgos pendientes.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Incorpore un archivo nuevo sin editar la consulta. Ejecute todos los escenarios críticos. Distinga actualización e incrementalidad. Registre una línea base. Compare resultados esperados y reales. Detecte cambios estructurales. Aísle archivos inválidos. Detecte duplicados y acumulados. Ejecute regresión por versión. Conserve trazabilidad completa. Concilie archivos, filas y cantidades. Emita un dictamen documentado. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "19": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "Parte B. Diagnóstico de rendimiento (20% de la evaluación): El participante deberá medir: Archivos encontrados Archivos invocados Tamaño total Registros Tiempo Errores Consultas cargadas Tiempo por archivo Tiempo por volumen",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya una línea base de rendimiento. Reduzca el universo antes de invocar. Identifique evaluaciones redundantes. Controle la carga de consultas auxiliares. Centralice parámetros y configuraciones. Documente dependencias. Ejecute pruebas de volumen. Utilice herramientas de diagnóstico cuando estén disponibles. Construya indicadores de monitoreo. Defina alertas. Elabore un plan de mantenimiento. Prepare manuales operativo y técnico. Ejecute pruebas de regresión. Demuestre la transferencia. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "Parte C. Optimización (20% de la evaluación): El participante deberá: Filtrar antes de invocar. reducir columnas. identificar evaluaciones repetidas. utilizar referencias. eliminar pasos redundantes. revisar ordenaciones. controlar consultas auxiliares. parametrizar rutas.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya una línea base de rendimiento. Reduzca el universo antes de invocar. Identifique evaluaciones redundantes. Controle la carga de consultas auxiliares. Centralice parámetros y configuraciones. Documente dependencias. Ejecute pruebas de volumen. Utilice herramientas de diagnóstico cuando estén disponibles. Construya indicadores de monitoreo. Defina alertas. Elabore un plan de mantenimiento. Prepare manuales operativo y técnico. Ejecute pruebas de regresión. Demuestre la transferencia. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "Parte D. Monitoreo y mantenimiento (20% de la evaluación): El participante deberá construir: ctl_BitacoraActualizaciones ctl_MapaDependencias ctl_ListaMantenimiento ctl_HistorialSolucion También deberá establecer alertas y responsables.",
+        "puntos": 20,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya una línea base de rendimiento. Reduzca el universo antes de invocar. Identifique evaluaciones redundantes. Controle la carga de consultas auxiliares. Centralice parámetros y configuraciones. Documente dependencias. Ejecute pruebas de volumen. Utilice herramientas de diagnóstico cuando estén disponibles. Construya indicadores de monitoreo. Defina alertas. Elabore un plan de mantenimiento. Prepare manuales operativo y técnico. Ejecute pruebas de regresión. Demuestre la transferencia. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "Parte E. Regresión y transferencia (15% de la evaluación): El participante deberá: Comparar antes y después. ejecutar casos críticos. validar archivos, filas y cantidades. preparar un plan de reversión. documentar la operación. realizar una transferencia de prueba.",
+        "puntos": 15,
+        "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Construya una línea base de rendimiento. Reduzca el universo antes de invocar. Identifique evaluaciones redundantes. Controle la carga de consultas auxiliares. Centralice parámetros y configuraciones. Documente dependencias. Ejecute pruebas de volumen. Utilice herramientas de diagnóstico cuando estén disponibles. Construya indicadores de monitoreo. Defina alertas. Elabore un plan de mantenimiento. Prepare manuales operativo y técnico. Ejecute pruebas de regresión. Demuestre la transferencia. Mantenga la diferencia sin explicar en cero.",
+        "criterio": ""
+      }
+    ],
+    "totalPuntos": 75
+  },
+  "20": {
+    "tipo": "rubrica",
+    "items": [
+      {
+        "criterio": "Solución funcional",
+        "puntos": 30,
+        "condicionLogro": "El participante deberá entregar una consolidación que: Incorpore archivos válidos. excluya temporales y respaldos. maneje versiones. registre errores. conserve trazabilidad. produzca un histórico vigente."
+      },
+      {
+        "criterio": "Calidad y control",
+        "puntos": 20,
+        "condicionLogro": "Deberá demostrar: Validación de periodos. columnas. tipos. versiones. errores. duplicados. acumulados."
+      },
+      {
+        "criterio": "Conciliación",
+        "puntos": 20,
+        "condicionLogro": "Deberá demostrar: DiferenciaArchivos = 0 DiferenciaRegistros = 0 DiferenciaCantidades = 0 RegistrosHuerfanos = 0"
+      },
+      {
+        "criterio": "Pruebas",
+        "puntos": 15,
+        "condicionLogro": "Deberá ejecutar: Unitarias. integración. regresión. actualización. volumen."
+      },
+      {
+        "criterio": "Documentación y defensa",
+        "puntos": 15,
+        "condicionLogro": "Deberá entregar: Manual técnico. manual operativo. evidencia. bitácora. plan de mantenimiento. plan de reversión. presentación."
+      }
+    ],
+    "totalPuntos": 100
+  }
+}

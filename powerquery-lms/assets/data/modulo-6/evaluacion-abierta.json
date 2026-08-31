@@ -238,5 +238,436 @@
    }
   ],
   "totalPuntos": 60
+ },
+ "9": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Parte B. Interpretación (20% de la evaluación): El participante deberá identificar: Tabla izquierda. Tabla derecha. Universo preservado. Coincidencias. Elementos exclusivos de la derecha. Registros exclusivos de la izquierda. Claves no evaluables. Granularidad posterior.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Configure correctamente una unión derecha. Identifique el universo derecho preservado. Prepare correctamente las claves. Interprete los valores null. Identifique los elementos maestros sin actividad. Conserve los movimientos sin catálogo. Separe las claves no evaluables. Detecte coincidencias múltiples. Verifique la granularidad posterior. Calcule la utilización del catálogo. Calcule la cobertura operativa. Concilie ambos lados. Concilie las cantidades. Mantenga las diferencias sin explicar en cero. Documente el alcance y las limitaciones del resultado.",
+    "criterio": ""
+   },
+   {
+    "no": 2,
+    "tipo": "Abierta",
+    "pregunta": "Parte C. Ejecución (25% de la evaluación): El participante deberá: Preparar ambas tablas. Validar tipos. Revisar la unicidad. Configurar una unión derecha. Expandir las columnas necesarias. Clasificar elementos utilizados. Identificar maestros sin movimiento. Conservar movimientos sin catálogo. Separar claves no evaluables.",
+    "puntos": 25,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Configure correctamente una unión derecha. Identifique el universo derecho preservado. Prepare correctamente las claves. Interprete los valores null. Identifique los elementos maestros sin actividad. Conserve los movimientos sin catálogo. Separe las claves no evaluables. Detecte coincidencias múltiples. Verifique la granularidad posterior. Calcule la utilización del catálogo. Calcule la cobertura operativa. Concilie ambos lados. Concilie las cantidades. Mantenga las diferencias sin explicar en cero. Documente el alcance y las limitaciones del resultado.",
+    "criterio": ""
+   },
+   {
+    "no": 3,
+    "tipo": "Abierta",
+    "pregunta": "Parte D. Indicadores y conciliación (25% de la evaluación): El participante deberá calcular: Claves derechas evaluables. Claves utilizadas. Maestros sin movimiento. Utilización del catálogo. Registros izquierdos evaluables. Registros coincidentes. Cobertura operativa. Cantidad coincidente. Cantidad sin catálogo. Diferencia derecha sin explicar. Diferencia izquierda sin explicar. Diferencia numérica sin explicar.",
+    "puntos": 25,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Configure correctamente una unión derecha. Identifique el universo derecho preservado. Prepare correctamente las claves. Interprete los valores null. Identifique los elementos maestros sin actividad. Conserve los movimientos sin catálogo. Separe las claves no evaluables. Detecte coincidencias múltiples. Verifique la granularidad posterior. Calcule la utilización del catálogo. Calcule la cobertura operativa. Concilie ambos lados. Concilie las cantidades. Mantenga las diferencias sin explicar en cero. Documente el alcance y las limitaciones del resultado.",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 70
+ },
+ "10": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Parte B. Clasificación (20% de la evaluación): El participante clasificará registros como: Coincide. Solo izquierda. Solo derecha. Clave no evaluable. Coincidencia múltiple.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: revisar contra el resumen y las buenas prácticas de la lección.",
+    "criterio": ""
+   },
+   {
+    "no": 2,
+    "tipo": "Abierta",
+    "pregunta": "Parte C. Ejecución (25% de la evaluación): El participante deberá construir una unión completa, expandir ambas claves, crear indicadores de presencia y calcular diferencias.",
+    "puntos": 25,
+    "respuestaInstructor": "Criterios de aprobación de la lección: revisar contra el resumen y las buenas prácticas de la lección.",
+    "criterio": ""
+   },
+   {
+    "no": 3,
+    "tipo": "Abierta",
+    "pregunta": "Parte D. Conciliación (25% de la evaluación): El participante conciliará: Registros izquierdos. Registros derechos. Cantidades izquierdas. Cantidades derechas. Coincidencias. Exclusividades. Diferencias sin explicar.",
+    "puntos": 25,
+    "respuestaInstructor": "Criterios de aprobación de la lección: revisar contra el resumen y las buenas prácticas de la lección.",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 70
+ },
+ "11": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Parte B. Clasificación (20% de la evaluación): El participante clasificará registros como: Coincidente. Sin coincidencia izquierda. Sin coincidencia derecha. Clave no evaluable. Posible falso no coincidente. Requiere análisis de cardinalidad.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diferencie las dos uniones anti. Mantenga correctamente la posición de las tablas. Prepare las claves. Separe claves no evaluables. Configure una antiizquierda. Configure una antiderecha. Identifique falsos no coincidentes. Clasifique las causas. Conserve las excepciones. Calcule indicadores. Concilie ambos universos. Concilie cantidades. Mantenga las diferencias sin explicar en cero. Documente acciones, responsables y estados.",
+    "criterio": ""
+   },
+   {
+    "no": 2,
+    "tipo": "Abierta",
+    "pregunta": "Parte C. Ejecución (25% de la evaluación): El participante deberá: Preparar las claves. Separar claves no evaluables. Crear una antiizquierda. Crear una antiderecha. Nombrar las consultas. Clasificar las causas. Documentar acciones y responsables.",
+    "puntos": 25,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diferencie las dos uniones anti. Mantenga correctamente la posición de las tablas. Prepare las claves. Separe claves no evaluables. Configure una antiizquierda. Configure una antiderecha. Identifique falsos no coincidentes. Clasifique las causas. Conserve las excepciones. Calcule indicadores. Concilie ambos universos. Concilie cantidades. Mantenga las diferencias sin explicar en cero. Documente acciones, responsables y estados.",
+    "criterio": ""
+   },
+   {
+    "no": 3,
+    "tipo": "Abierta",
+    "pregunta": "Parte D. Conciliación (25% de la evaluación): El participante deberá conciliar: Registros originales de la izquierda. Coincidencias. Registros antiizquierda. Claves izquierdas no evaluables. Registros originales de la derecha. Claves derechas utilizadas. Registros antiderecha. Claves derechas no evaluables. Cantidades asociadas. Diferencias sin explicar.",
+    "puntos": 25,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diferencie las dos uniones anti. Mantenga correctamente la posición de las tablas. Prepare las claves. Separe claves no evaluables. Configure una antiizquierda. Configure una antiderecha. Identifique falsos no coincidentes. Clasifique las causas. Conserve las excepciones. Calcule indicadores. Concilie ambos universos. Concilie cantidades. Mantenga las diferencias sin explicar en cero. Documente acciones, responsables y estados.",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 70
+ },
+ "12": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Parte B. Predicción de filas (15% de la evaluación): El participante recibirá una distribución de coincidencias y deberá calcular: Filas esperadas. Filas adicionales. Factor de expansión. Claves principales distintas. Coincidencias múltiples.",
+    "puntos": 15,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Explique la diferencia entre combinar y expandir. Interprete una tabla anidada. Identifique coincidencias múltiples. Prediga el número de filas. Seleccione únicamente columnas necesarias. Administre correctamente los nombres. Conserve las claves necesarias. Valide tipos después de expandir. Documente la granularidad final. Evite sumar medidas principales repetidas. Construya una salida detallada. Construya una salida resumida. Concilie filas, claves y valores. Mantenga la diferencia sin explicar en cero.",
+    "criterio": ""
+   },
+   {
+    "no": 2,
+    "tipo": "Abierta",
+    "pregunta": "Parte C. Expansión controlada (30% de la evaluación): El participante deberá: Combinar dos consultas. Examinar la tabla anidada. Seleccionar columnas. Administrar prefijos. Renombrar campos. Expandir. Asignar tipos. Validar el resultado.",
+    "puntos": 30,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Explique la diferencia entre combinar y expandir. Interprete una tabla anidada. Identifique coincidencias múltiples. Prediga el número de filas. Seleccione únicamente columnas necesarias. Administre correctamente los nombres. Conserve las claves necesarias. Valide tipos después de expandir. Documente la granularidad final. Evite sumar medidas principales repetidas. Construya una salida detallada. Construya una salida resumida. Concilie filas, claves y valores. Mantenga la diferencia sin explicar en cero.",
+    "criterio": ""
+   },
+   {
+    "no": 3,
+    "tipo": "Abierta",
+    "pregunta": "Parte D. Detalle y resumen (15% de la evaluación): El participante construirá: Una salida detallada. Una salida resumida. Una comparación de granularidad. Una explicación del uso apropiado de cada salida.",
+    "puntos": 15,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Explique la diferencia entre combinar y expandir. Interprete una tabla anidada. Identifique coincidencias múltiples. Prediga el número de filas. Seleccione únicamente columnas necesarias. Administre correctamente los nombres. Conserve las claves necesarias. Valide tipos después de expandir. Documente la granularidad final. Evite sumar medidas principales repetidas. Construya una salida detallada. Construya una salida resumida. Concilie filas, claves y valores. Mantenga la diferencia sin explicar en cero.",
+    "criterio": ""
+   },
+   {
+    "no": 4,
+    "tipo": "Abierta",
+    "pregunta": "Parte E. Conciliación (15% de la evaluación): El participante deberá conciliar: Filas principales. Coincidencias. Filas resultantes. Claves distintas. Filas sin correspondencia. Valores de la tabla relacionada. Medidas repetidas de la tabla principal. Diferencias sin explicar.",
+    "puntos": 15,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Explique la diferencia entre combinar y expandir. Interprete una tabla anidada. Identifique coincidencias múltiples. Prediga el número de filas. Seleccione únicamente columnas necesarias. Administre correctamente los nombres. Conserve las claves necesarias. Valide tipos después de expandir. Documente la granularidad final. Evite sumar medidas principales repetidas. Construya una salida detallada. Construya una salida resumida. Concilie filas, claves y valores. Mantenga la diferencia sin explicar en cero.",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 75
+ },
+ "13": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Parte B. Diagnóstico estructural (20% de la evaluación): El participante comparará dos tablas y documentará: Granularidad. Columnas comunes. Columnas adicionales. Columnas faltantes. Nombres equivalentes. Tipos. Unidades. Riesgos.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diferencie combinar y anexar. Confirme que las tablas representan la misma entidad. Documente la granularidad. Homologue los nombres. Valide los tipos. Valide unidades y escalas. Controle columnas adicionales y faltantes. Agregue metadatos de origen. Utilice una consulta nueva para la anexación. Identifique duplicados potenciales. Detecte periodos superpuestos. Concilie registros. Concilie cantidades. Mantenga la diferencia sin explicar en cero.",
+    "criterio": ""
+   },
+   {
+    "no": 2,
+    "tipo": "Abierta",
+    "pregunta": "Parte C. Preparación y anexación (30% de la evaluación): El participante deberá: Preparar dos consultas. Homologar encabezados. Homologar tipos. Agregar columnas de origen. Anexar como una consulta nueva. Revisar la estructura. Asignar tipos finales. Ordenar el resultado.",
+    "puntos": 30,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diferencie combinar y anexar. Confirme que las tablas representan la misma entidad. Documente la granularidad. Homologue los nombres. Valide los tipos. Valide unidades y escalas. Controle columnas adicionales y faltantes. Agregue metadatos de origen. Utilice una consulta nueva para la anexación. Identifique duplicados potenciales. Detecte periodos superpuestos. Concilie registros. Concilie cantidades. Mantenga la diferencia sin explicar en cero.",
+    "criterio": ""
+   },
+   {
+    "no": 3,
+    "tipo": "Abierta",
+    "pregunta": "Parte D. Diagnóstico de duplicados (10% de la evaluación): El participante analizará registros repetidos y determinará si son: Duplicados reales. Actualizaciones. Repeticiones válidas. Registros de periodos superpuestos. Errores de carga.",
+    "puntos": 10,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diferencie combinar y anexar. Confirme que las tablas representan la misma entidad. Documente la granularidad. Homologue los nombres. Valide los tipos. Valide unidades y escalas. Controle columnas adicionales y faltantes. Agregue metadatos de origen. Utilice una consulta nueva para la anexación. Identifique duplicados potenciales. Detecte periodos superpuestos. Concilie registros. Concilie cantidades. Mantenga la diferencia sin explicar en cero.",
+    "criterio": ""
+   },
+   {
+    "no": 4,
+    "tipo": "Abierta",
+    "pregunta": "Parte E. Conciliación (15% de la evaluación): El participante deberá validar: Filas originales. Filas preparadas. Filas anexadas. Cantidades por origen. Cantidad consolidada. Duplicados potenciales. Diferencia sin explicar.",
+    "puntos": 15,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diferencie combinar y anexar. Confirme que las tablas representan la misma entidad. Documente la granularidad. Homologue los nombres. Valide los tipos. Valide unidades y escalas. Controle columnas adicionales y faltantes. Agregue metadatos de origen. Utilice una consulta nueva para la anexación. Identifique duplicados potenciales. Detecte periodos superpuestos. Concilie registros. Concilie cantidades. Mantenga la diferencia sin explicar en cero.",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 75
+ },
+ "14": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Parte B. Contrato y preparación (20% de la evaluación): El participante deberá: Comparar tres estructuras. Definir columnas finales. Asignar tipos. Definir campos obligatorios. Homologar unidades. Agregar metadatos. Identificar incompatibilidades.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Confirme la entidad y granularidad comunes. Defina el contrato de estructura. Prepare las consultas individualmente. Homologue nombres, tipos y unidades. Agregue los metadatos necesarios. Configure una anexación de tres o más tablas. Conserve las consultas de entrada. Identifique una consulta repetida. Detecte periodos superpuestos. Incorpore correctamente una nueva tabla. Concilie registros por origen. Concilie cantidades. Documente las incidencias. Mantenga la diferencia sin explicar en cero.",
+    "criterio": ""
+   },
+   {
+    "no": 2,
+    "tipo": "Abierta",
+    "pregunta": "Parte C. Anexación multifuente (25% de la evaluación): El participante deberá: Preparar tres consultas. Seleccionar Tres o más tablas. Crear una consulta nueva. Revisar el orden. Definir tipos finales. Ordenar explícitamente. Validar el resultado.",
+    "puntos": 25,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Confirme la entidad y granularidad comunes. Defina el contrato de estructura. Prepare las consultas individualmente. Homologue nombres, tipos y unidades. Agregue los metadatos necesarios. Configure una anexación de tres o más tablas. Conserve las consultas de entrada. Identifique una consulta repetida. Detecte periodos superpuestos. Incorpore correctamente una nueva tabla. Concilie registros por origen. Concilie cantidades. Documente las incidencias. Mantenga la diferencia sin explicar en cero.",
+    "criterio": ""
+   },
+   {
+    "no": 3,
+    "tipo": "Abierta",
+    "pregunta": "Parte D. Incorporación de una nueva tabla (15% de la evaluación): El participante incorporará un cuarto origen con: Una columna adicional. Un encabezado distinto. Un tipo incompatible. Un periodo superpuesto. Un registro repetido.",
+    "puntos": 15,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Confirme la entidad y granularidad comunes. Defina el contrato de estructura. Prepare las consultas individualmente. Homologue nombres, tipos y unidades. Agregue los metadatos necesarios. Configure una anexación de tres o más tablas. Conserve las consultas de entrada. Identifique una consulta repetida. Detecte periodos superpuestos. Incorpore correctamente una nueva tabla. Concilie registros por origen. Concilie cantidades. Documente las incidencias. Mantenga la diferencia sin explicar en cero.",
+    "criterio": ""
+   },
+   {
+    "no": 4,
+    "tipo": "Abierta",
+    "pregunta": "Parte E. Conciliación (20% de la evaluación): El participante deberá conciliar: Registros originales por origen. Registros preparados. Registros consolidados. Cantidades por origen. Cantidad consolidada. Duplicados potenciales. Periodos superpuestos. Diferencias sin explicar.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Confirme la entidad y granularidad comunes. Defina el contrato de estructura. Prepare las consultas individualmente. Homologue nombres, tipos y unidades. Agregue los metadatos necesarios. Configure una anexación de tres o más tablas. Conserve las consultas de entrada. Identifique una consulta repetida. Detecte periodos superpuestos. Incorpore correctamente una nueva tabla. Concilie registros por origen. Concilie cantidades. Documente las incidencias. Mantenga la diferencia sin explicar en cero.",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 80
+ },
+ "15": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Parte B. Clasificación de escenarios (20% de la evaluación): El participante clasificará 15 situaciones como: Combinar. Anexar. Ambas. Ninguna directamente. Cada respuesta deberá incluir una justificación basada en: Entidad. Granularidad. Clave. Estructura. Resultado esperado.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diferencie combinar y anexar. Identifique la entidad y granularidad. Seleccione correctamente la operación. Justifique la decisión. Prepare claves al combinar. Homologue estructuras al anexar. Interprete correctamente los valores null. Distinga multiplicación y duplicación. Construya una arquitectura híbrida. Conserve la trazabilidad. Separe las excepciones. Concilie cada etapa. Concilie cantidades. Mantenga las diferencias sin explicar en cero.",
+    "criterio": ""
+   },
+   {
+    "no": 2,
+    "tipo": "Abierta",
+    "pregunta": "Parte C. Corrección de diseño (15% de la evaluación): El participante recibirá dos consultas incorrectas: Un catálogo anexado debajo de movimientos. Dos periodos combinados por folio. Deberá: Identificar el error. Explicar la consecuencia. Seleccionar la operación correcta. Reconstruir la solución. Validar el resultado.",
+    "puntos": 15,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diferencie combinar y anexar. Identifique la entidad y granularidad. Seleccione correctamente la operación. Justifique la decisión. Prepare claves al combinar. Homologue estructuras al anexar. Interprete correctamente los valores null. Distinga multiplicación y duplicación. Construya una arquitectura híbrida. Conserve la trazabilidad. Separe las excepciones. Concilie cada etapa. Concilie cantidades. Mantenga las diferencias sin explicar en cero.",
+    "criterio": ""
+   },
+   {
+    "no": 3,
+    "tipo": "Abierta",
+    "pregunta": "Parte D. Arquitectura híbrida (25% de la evaluación): El participante deberá: Preparar tres tablas operativas. Anexarlas. Preparar un catálogo. Combinarlo con el consolidado. Expandir campos autorizados. Separar excepciones. Documentar la granularidad. Conservar la trazabilidad.",
+    "puntos": 25,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diferencie combinar y anexar. Identifique la entidad y granularidad. Seleccione correctamente la operación. Justifique la decisión. Prepare claves al combinar. Homologue estructuras al anexar. Interprete correctamente los valores null. Distinga multiplicación y duplicación. Construya una arquitectura híbrida. Conserve la trazabilidad. Separe las excepciones. Concilie cada etapa. Concilie cantidades. Mantenga las diferencias sin explicar en cero.",
+    "criterio": ""
+   },
+   {
+    "no": 4,
+    "tipo": "Abierta",
+    "pregunta": "Parte E. Conciliación (15% de la evaluación): El participante deberá conciliar: Registros por origen. Registros anexados. Coincidencias. Registros sin catálogo. Claves no evaluables. Coincidencias múltiples. Cantidades. Diferencias sin explicar.",
+    "puntos": 15,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diferencie combinar y anexar. Identifique la entidad y granularidad. Seleccione correctamente la operación. Justifique la decisión. Prepare claves al combinar. Homologue estructuras al anexar. Interprete correctamente los valores null. Distinga multiplicación y duplicación. Construya una arquitectura híbrida. Conserve la trazabilidad. Separe las excepciones. Concilie cada etapa. Concilie cantidades. Mantenga las diferencias sin explicar en cero.",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 75
+ },
+ "16": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Parte B. Diagnóstico de claves (20% de la evaluación): El participante deberá: Identificar claves evaluables. Separar claves no evaluables. Preparar formatos. Detectar falsos no coincidentes. Validar claves compuestas. Conservar valores originales.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Clasifique correctamente las poblaciones. Separe claves no evaluables. Identifique falsos no coincidentes. Detecte coincidencias múltiples. Valide cardinalidad y granularidad. Calcule cobertura bilateral. Compare valores relacionados. Valide unidades y vigencia. Concilie filas, claves y cantidades. Mantenga diferencias sin explicar en cero. Documente incidencias y responsables. Emita una decisión de liberación justificada.",
+    "criterio": ""
+   },
+   {
+    "no": 2,
+    "tipo": "Abierta",
+    "pregunta": "Parte C. Cardinalidad y multiplicación (20% de la evaluación): Se evaluará: Coincidencias por fila. Cardinalidad esperada. Cardinalidad observada. Coincidencias múltiples. Filas después de expandir. Granularidad final. Corrección propuesta.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Clasifique correctamente las poblaciones. Separe claves no evaluables. Identifique falsos no coincidentes. Detecte coincidencias múltiples. Valide cardinalidad y granularidad. Calcule cobertura bilateral. Compare valores relacionados. Valide unidades y vigencia. Concilie filas, claves y cantidades. Mantenga diferencias sin explicar en cero. Documente incidencias y responsables. Emita una decisión de liberación justificada.",
+    "criterio": ""
+   },
+   {
+    "no": 3,
+    "tipo": "Abierta",
+    "pregunta": "Parte D. Indicadores y comparación (20% de la evaluación): El participante calculará: Cobertura izquierda. Utilización derecha. Tasa de no coincidencia. Tasa de no evaluables. Tasa de coincidencias múltiples. Concordancia de cantidades. Cobertura numérica.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Clasifique correctamente las poblaciones. Separe claves no evaluables. Identifique falsos no coincidentes. Detecte coincidencias múltiples. Valide cardinalidad y granularidad. Calcule cobertura bilateral. Compare valores relacionados. Valide unidades y vigencia. Concilie filas, claves y cantidades. Mantenga diferencias sin explicar en cero. Documente incidencias y responsables. Emita una decisión de liberación justificada.",
+    "criterio": ""
+   },
+   {
+    "no": 4,
+    "tipo": "Abierta",
+    "pregunta": "Parte E. Conciliación y liberación (20% de la evaluación): El participante deberá: Conciliar filas. Conciliar claves. Conciliar cantidades. Registrar incidencias. Aplicar un semáforo. Determinar si la combinación está aprobada, condicionada o rechazada.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Clasifique correctamente las poblaciones. Separe claves no evaluables. Identifique falsos no coincidentes. Detecte coincidencias múltiples. Valide cardinalidad y granularidad. Calcule cobertura bilateral. Compare valores relacionados. Valide unidades y vigencia. Concilie filas, claves y cantidades. Mantenga diferencias sin explicar en cero. Documente incidencias y responsables. Emita una decisión de liberación justificada.",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 80
+ },
+ "17": {
+  "tipo": "rubrica",
+  "items": [
+   {
+    "criterio": "Diagnóstico inicial",
+    "puntos": 7,
+    "condicionLogro": "El diagnóstico entregado identifica correctamente la entidad y la granularidad de cada uno de los tres archivos de movimientos y del catálogo, propone una clave candidata para cada uno, y documenta los riesgos detectados antes de transformar cualquier archivo."
+   },
+   {
+    "criterio": "Diseño de arquitectura",
+    "puntos": 7,
+    "condicionLogro": "La plantilla de arquitectura entregada identifica las consultas de origen, preparación, anexación, combinación y excepciones necesarias, junto con sus salidas y controles, antes de empezar a construir la solución."
+   },
+   {
+    "criterio": "Preparación de los orígenes",
+    "puntos": 10,
+    "condicionLogro": "Cada uno de los tres archivos de movimientos se conserva como consulta de origen sin modificarse destructivamente, y se prepara en una consulta separada aplicando únicamente las transformaciones mínimas definidas (tipos, limpieza, metadatos)."
+   },
+   {
+    "criterio": "Homologación de estructura",
+    "puntos": 8,
+    "condicionLogro": "Los encabezados, el orden de columnas y los tipos de dato de los tres almacenes quedan homologados a un contrato de estructura común antes de anexarse, sin perder ninguna columna con información relevante."
+   },
+   {
+    "criterio": "Preparación de claves",
+    "puntos": 7,
+    "condicionLogro": "Las claves de movimiento y de catálogo se preparan (formato, mayúsculas, espacios) conservando siempre la clave original sin modificarla directamente, y sin inventar equivalencias no autorizadas."
+   },
+   {
+    "criterio": "Homologación de unidades",
+    "puntos": 6,
+    "condicionLogro": "Las unidades capturadas se comparan contra la unidad oficial del catálogo y se homologan únicamente cuando existe una regla o tabla de equivalencias autorizada; las diferencias no resueltas quedan documentadas como excepción."
+   },
+   {
+    "criterio": "Anexación de consultas",
+    "puntos": 8,
+    "condicionLogro": "Los tres almacenes ya preparados se anexan en una sola consulta con metadatos de procedencia (almacén, archivo, periodo) agregados antes de anexar, sin duplicar ninguna consulta ni mezclar periodos superpuestos sin documentarlo."
+   },
+   {
+    "criterio": "Diagnóstico de duplicados",
+    "puntos": 6,
+    "condicionLogro": "Los movimientos anexados se revisan por duplicados definiendo primero la clave que los identifica, sin eliminar ningún registro automáticamente antes de esa definición."
+   },
+   {
+    "criterio": "Preparación del catálogo",
+    "puntos": 6,
+    "condicionLogro": "El catálogo maestro se prepara y se revisa por claves duplicadas o inválidas antes de combinarse con los movimientos, dejando documentado cualquier caso encontrado."
+   },
+   {
+    "criterio": "Combinación y tipo de unión",
+    "puntos": 8,
+    "condicionLogro": "La combinación entre movimientos y catálogo utiliza una unión izquierda que conserva todos los movimientos, con la estimación de coincidencias revisada antes de aceptar el resultado."
+   },
+   {
+    "criterio": "Expansión controlada",
+    "puntos": 6,
+    "condicionLogro": "La tabla anidada resultante de la combinación se expande seleccionando explícitamente solo los campos autorizados, con nombres claros, sin incorporar información confidencial ni columnas innecesarias."
+   },
+   {
+    "criterio": "Diagnóstico de coincidencias",
+    "puntos": 7,
+    "condicionLogro": "El resultado combinado se clasifica en movimientos con coincidencia única, sin coincidencia, con coincidencia múltiple y con clave no evaluable, cada uno en su propia consulta de diagnóstico."
+   },
+   {
+    "criterio": "Consultas de excepciones",
+    "puntos": 6,
+    "condicionLogro": "Existe un registro general de excepciones con estructura común que reúne todos los casos separados durante el proceso (claves no evaluables, sin coincidencia, coincidencias múltiples, materiales inactivos o fuera de vigencia), sin descartar ninguno en silencio."
+   },
+   {
+    "criterio": "Indicadores",
+    "puntos": 4,
+    "condicionLogro": "Se calculan los indicadores mínimos definidos (cobertura operativa, utilización del catálogo, tasa de no coincidencia, tasa de claves no evaluables, tasa de coincidencias múltiples, concordancia de unidades y cobertura de cantidad) a partir de la tabla ya validada."
+   },
+   {
+    "criterio": "Conciliación",
+    "puntos": 7,
+    "condicionLogro": "La conciliación de registros (por origen, después de anexar, después de clasificar y después de combinar) y la conciliación de cantidades (por origen y por clasificación) cierran con una diferencia sin explicar igual a cero."
+   },
+   {
+    "criterio": "Actualización con A04",
+    "puntos": 5,
+    "condicionLogro": "La solución incorpora el archivo de prueba A04 sin reconstruirse, procesando correctamente los registros nuevos, columnas nuevas y demás escenarios de la matriz de pruebas."
+   },
+   {
+    "criterio": "Documentación y liberación",
+    "puntos": 2,
+    "condicionLogro": "La ficha técnica documenta orígenes, reglas, dependencias y limitaciones, y la lista de liberación queda completa como respaldo de la decisión final de aprobar o no la entrega."
+   }
+  ],
+  "totalPuntos": 110,
+  "condicionesNoAprobacion": [
+   "Modificar destructivamente un archivo fuente.",
+   "Anexar tablas con granularidades incompatibles sin documentarlo.",
+   "Perder la procedencia de los registros.",
+   "Eliminar una clave original.",
+   "Reemplazar claves desconocidas sin una regla.",
+   "Eliminar duplicados sin definir la clave.",
+   "Ignorar periodos superpuestos.",
+   "Excluir movimientos sin catálogo sin conservar evidencia.",
+   "Mezclar claves no evaluables con claves sin coincidencia.",
+   "No detectar coincidencias múltiples.",
+   "Sumar cantidades duplicadas por expansión.",
+   "Aprobar un material inactivo sin revisar la regla.",
+   "Incluir información confidencial en una salida compartida.",
+   "Entregar la conciliación con una diferencia sin explicar distinta de cero.",
+   "Entregar una solución que no puede incorporar A04.",
+   "No entregar documentación del proceso."
+  ]
+ },
+ "18": {
+  "tipo": "rubrica",
+  "items": [
+   {
+    "criterio": "Evaluación conceptual",
+    "puntos": 15,
+    "condicionLogro": "El participante responde correctamente al menos 8 de las 10 preguntas conceptuales y explica por qué se clasifica cada excepción (clave no evaluable, sin coincidencia, diferencia de unidad, material inactivo), no solo cuál es la respuesta correcta."
+   },
+   {
+    "criterio": "Diagnóstico",
+    "puntos": 15,
+    "condicionLogro": "El diagnóstico entregado identifica correctamente la entidad, la granularidad y la clave del caso de evaluación antes de transformar el archivo, y reconoce sin ayuda que el caso ya llega consolidado (no requiere anexar)."
+   },
+   {
+    "criterio": "Desarrollo técnico",
+    "puntos": 35,
+    "condicionLogro": "La solución prepara correctamente las claves con formato inconsistente, aplica una unión izquierda contra el catálogo, expande solo los campos autorizados, y clasifica los 10 movimientos en coincide, sin coincidencia y clave no evaluable conforme al resultado esperado del solucionario."
+   },
+   {
+    "criterio": "Validación y conciliación",
+    "puntos": 20,
+    "condicionLogro": "La consulta de excepciones está completa y documentada, la diferencia de unidad y el material inactivo quedan tratados explícitamente (no ignorados), y la conciliación de registros y cantidades cierra con una diferencia sin explicar igual a cero."
+   },
+   {
+    "criterio": "Documentación",
+    "puntos": 15,
+    "condicionLogro": "La justificación técnica explica con claridad la operación elegida, la definición de la clave, las excepciones encontradas y la forma en que se conciliaron los resultados, de manera que un tercero podría revisar la solución sin necesidad de preguntar al participante."
+   }
+  ],
+  "totalPuntos": 100,
+  "condicionesNoAprobacion": [
+   "Eliminar movimientos sin evidencia ni documentación.",
+   "Sobrescribir manualmente el archivo original.",
+   "Aprobar el código MAT-00999 inventándole una coincidencia.",
+   "Tratar la clave vacía de EV-0005 como si fuera un movimiento sin coincidencia.",
+   "Ignorar la diferencia de unidad entre gramos y kilogramos en EV-0010.",
+   "Aprobar el material inactivo MAT-00130 sin ninguna revisión.",
+   "Entregar una conciliación incompleta o que no cierre en cero.",
+   "Presentar el resultado sin justificación técnica de las decisiones tomadas.",
+   "Modificar manualmente el resultado final para forzar que la conciliación cierre."
+  ]
  }
 }
