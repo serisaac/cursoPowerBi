@@ -1,0 +1,4 @@
+﻿Movimiento,FechaMovimiento,CodigoMaterial,Cantidad,Unidad,Almacen,Responsable,Observacion
+MOV-001,2026-01-05,MAT-1001,125.5,PZA,A01,Ana,Entrada ordinaria
+MOV-002,2026-01-06,MAT-1002,250,KG,A02,Luis,Transferencia
+MOV-007,2026-01-11,MAT-1007,1000000,PZA,A01,Elena,Límite superior

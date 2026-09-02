@@ -29,7 +29,7 @@ let GENERAL_FILES = [];
 let EXCEL_DATA = {};
 let LEEME_DATA = {};
 let TOTAL_LESSONS = 0;
-let NO_QUIZ_LESSON_ID = null;
+let NO_QUIZ_LESSON_IDS = [];
 
 let currentLessonId = 1;
 let currentQuizContext = 1; // lesson id o 'final'
@@ -56,16 +56,23 @@ async function initModule() {
     EXCEL_DATA = archivos.excelPreview || {};
     LEEME_DATA = archivos.instrucciones || {};
     TOTAL_LESSONS = LESSONS.length;
-    const noQuizLesson = LESSONS.find(l => l.quiz.length === 0 && l.id !== TOTAL_LESSONS);
-    NO_QUIZ_LESSON_ID = noQuizLesson ? noQuizLesson.id : null;
+    NO_QUIZ_LESSON_IDS = LESSONS.filter(l => l.quiz.length === 0 && l.id !== TOTAL_LESSONS).map(l => l.id);
 
     moduleState = JSON.parse(localStorage.getItem(`pq_${CURRENT_MODULE_ID}_state_v2`)) || {
         theoryRead: {},      // {1: true, ...}
         quizScores: {},      // {1: 90, ...}
-        entregableIntegrador: false,
+        entregablesByLesson: {}, // {13: true, ...}
         finalQuizScore: null,
         bannerDismissed: false
     };
+    if (!moduleState.entregablesByLesson) moduleState.entregablesByLesson = {};
+    // Migración desde el esquema anterior (un solo booleano global) hacia el nuevo esquema por lección.
+    if (moduleState.entregableIntegrador !== undefined) {
+        if (NO_QUIZ_LESSON_IDS.length > 0 && moduleState.entregablesByLesson[NO_QUIZ_LESSON_IDS[0]] === undefined) {
+            moduleState.entregablesByLesson[NO_QUIZ_LESSON_IDS[0]] = moduleState.entregableIntegrador;
+        }
+        delete moduleState.entregableIntegrador;
+    }
 
     safeIcons();
     loadModuleNotes();
@@ -177,10 +184,10 @@ function renderLessonContent(id) {
             <i data-lucide="check-square" class="w-4 h-4 shrink-0"></i>
             Esta lección tiene una evaluación de ${l.quiz.length} preguntas en la pestaña <button onclick="switchTab('quiz'); renderQuizFor(${id})" class="underline font-semibold">Evaluaciones</button>.
         </div>`;
-    } else if (id === NO_QUIZ_LESSON_ID) {
+    } else if (NO_QUIZ_LESSON_IDS.includes(id)) {
         quizNote = `<div class="p-3 bg-sky-50 border border-sky-200 rounded-lg text-xs text-sky-900 flex items-center gap-2">
             <i data-lucide="folder-check" class="w-4 h-4 shrink-0"></i>
-            Esta lección no tiene quiz: se aprueba marcando el entregable en la pestaña <button onclick="switchTab('quiz'); renderQuizFor(NO_QUIZ_LESSON_ID)" class="underline font-semibold">Evaluaciones</button>.
+            Esta lección no tiene quiz: se aprueba marcando el entregable en la pestaña <button onclick="switchTab('quiz'); renderQuizFor(${id})" class="underline font-semibold">Evaluaciones</button>.
         </div>`;
     } else if (id === TOTAL_LESSONS && FINAL_QUIZ.length > 0) {
         quizNote = `<div class="p-3 bg-amber-50 border border-amber-200 rounded-lg text-xs text-amber-900 flex items-center gap-2">
@@ -258,8 +265,8 @@ function toggleTheoryRead(id) {
 // ---------- QUIZ ----------
 function renderQuizSelector() {
     const el = document.getElementById('quiz-lesson-selector');
-    let btns = LESSONS.filter(l => l.quiz.length > 0 || l.id === NO_QUIZ_LESSON_ID).map(l => {
-        const passed = l.id === NO_QUIZ_LESSON_ID ? moduleState.entregableIntegrador : (moduleState.quizScores[l.id] >= 80);
+    let btns = LESSONS.filter(l => l.quiz.length > 0 || NO_QUIZ_LESSON_IDS.includes(l.id)).map(l => {
+        const passed = NO_QUIZ_LESSON_IDS.includes(l.id) ? !!moduleState.entregablesByLesson[l.id] : (moduleState.quizScores[l.id] >= 80);
         return `<button onclick="renderQuizFor(${l.id})" class="text-[11px] font-semibold px-2.5 py-1.5 rounded-md border ${currentQuizContext==l.id ? 'bg-white text-emerald-700 border-slate-200 shadow-sm' : 'text-slate-600 border-transparent hover:bg-white'} flex items-center gap-1">
             ${passed ? '<i data-lucide="check-circle-2" class="w-3 h-3 text-emerald-600"></i>' : ''} L${l.id}
         </button>`;
@@ -278,13 +285,14 @@ function renderQuizFor(ctx) {
     renderQuizSelector();
     const body = document.getElementById('quiz-body');
 
-    if (Number(ctx) === NO_QUIZ_LESSON_ID) {
-        const l = getLesson(NO_QUIZ_LESSON_ID);
-        const done = moduleState.entregableIntegrador;
+    if (NO_QUIZ_LESSON_IDS.includes(Number(ctx))) {
+        const lessonId = Number(ctx);
+        const l = getLesson(lessonId);
+        const done = !!moduleState.entregablesByLesson[lessonId];
         const checklist = (l.entregableChecklist || []).map(item => `<li>${item}</li>`).join('');
         body.innerHTML = `
         <div class="border-b border-slate-100 pb-3 mb-4">
-            <h2 class="text-base font-bold text-slate-900">Lección ${NO_QUIZ_LESSON_ID} · Entregable de la práctica integradora</h2>
+            <h2 class="text-base font-bold text-slate-900">Lección ${lessonId} · Entregable de la práctica integradora</h2>
             <p class="text-xs text-slate-500">${l.entregableDescripcion || 'Esta lección no tiene preguntas de opción múltiple: se aprueba entregando la solución completa del caso integrador.'}</p>
         </div>
         <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2 text-xs text-slate-700">
@@ -293,8 +301,9 @@ function renderQuizFor(ctx) {
         </div>
         <div class="mt-4 p-4 bg-white border border-slate-200 rounded-lg flex items-center justify-between">
             <span class="text-xs font-semibold text-slate-700">Marcar entregable como completado</span>
-            <button onclick="toggleEntregableIntegrador()" class="${done?'bg-emerald-700':'bg-emerald-600 hover:bg-emerald-700'} text-white text-xs px-4 py-2 rounded-lg font-medium transition shadow-sm">${done?'Completado ✓':'Marcar como completado'}</button>
+            <button onclick="toggleEntregableIntegrador(${lessonId})" class="${done?'bg-emerald-700':'bg-emerald-600 hover:bg-emerald-700'} text-white text-xs px-4 py-2 rounded-lg font-medium transition shadow-sm">${done?'Completado ✓':'Marcar como completado'}</button>
         </div>`;
+        renderEvaluacionAbierta(lessonId);
         safeIcons();
         return;
     }
@@ -444,10 +453,10 @@ function submitQuiz(ctx) {
     }
 }
 
-function toggleEntregableIntegrador() {
-    moduleState.entregableIntegrador = !moduleState.entregableIntegrador;
+function toggleEntregableIntegrador(lessonId) {
+    moduleState.entregablesByLesson[lessonId] = !moduleState.entregablesByLesson[lessonId];
     saveState();
-    renderQuizFor(NO_QUIZ_LESSON_ID);
+    renderQuizFor(lessonId);
     renderLessonNav();
     renderBadges();
 }
@@ -565,7 +574,7 @@ function showSheet(cardId, sheetName) {
 
 // ---------- BADGES / PROGRESS ----------
 function isLessonComplete(id) {
-    if (id === NO_QUIZ_LESSON_ID) return !!moduleState.theoryRead[id] && !!moduleState.entregableIntegrador;
+    if (NO_QUIZ_LESSON_IDS.includes(id)) return !!moduleState.theoryRead[id] && !!moduleState.entregablesByLesson[id];
     if (id === TOTAL_LESSONS && FINAL_QUIZ.length > 0) return !!moduleState.theoryRead[id];
     const q = moduleState.quizScores[id];
     const read = !!moduleState.theoryRead[id];

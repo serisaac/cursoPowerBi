@@ -1,92 +1,102 @@
 [
   {
-    "q": "¿Qué representa una consulta?",
+    "q": "¿Qué condición distingue a una base rectangular?",
     "opts": [
-      "Una copia manual de un archivo.",
-      "Un conjunto de instrucciones para obtener y transformar datos.",
-      "Una tabla dinámica.",
-      "Un gráfico."
+      "Una fila por registro y una columna por variable.",
+      "Una hoja por celda.",
+      "Varias tablas superpuestas.",
+      "Totales intercalados."
     ],
-    "correct": 1
+    "correct": 0
   },
   {
-    "q": "¿Cuál actividad pertenece a la extracción?",
+    "q": "¿Por qué debe conservarse el archivo original?",
     "opts": [
-      "Limpiar espacios.",
-      "Conectarse a un archivo.",
-      "Reemplazar un estatus.",
-      "Agrupar registros."
+      "Para mantener evidencia del estado recibido.",
+      "Para duplicar errores.",
+      "Para aumentar el tamaño.",
+      "Para cambiar la extensión."
     ],
-    "correct": 1
+    "correct": 0
   },
   {
-    "q": "¿Qué debe determinarse antes de quitar duplicados?",
+    "q": "¿Qué indica una constante dentro de una columna calculada?",
     "opts": [
-      "El color del reporte.",
-      "La clave y la granularidad.",
-      "El orden de las hojas.",
-      "El nombre del usuario."
+      "Puede representar una fórmula sustituida.",
+      "Siempre es correcta.",
+      "Es un gráfico.",
+      "Es una hoja oculta."
     ],
-    "correct": 1
+    "correct": 0
   },
   {
-    "q": "¿Qué significa null?",
+    "q": "¿Cuál debe ser la diferencia entre el detalle y el resumen?",
     "opts": [
-      "Cero.",
-      "Texto vacío.",
-      "Ausencia de valor.",
-      "Valor falso."
+      "Cero, salvo tolerancia autorizada.",
+      "Cualquier importe.",
+      "Diez por ciento.",
+      "No debe calcularse."
     ],
-    "correct": 2
+    "correct": 0
   },
   {
-    "q": "Una consulta finaliza sin errores técnicos. Esto significa:",
+    "q": "¿Qué debe incluir un gráfico accesible?",
     "opts": [
-      "El resultado necesariamente es correcto.",
-      "Debe validarse con reglas del proceso.",
-      "No existen duplicados.",
-      "Todos los campos están completos."
+      "Título y texto alternativo.",
+      "Solo colores.",
+      "Celdas combinadas.",
+      "Una contraseña."
     ],
-    "correct": 1
+    "correct": 0
   },
   {
-    "q": "¿Cuál es un cambio de estructura?",
+    "q": "¿Qué protección impide agregar o eliminar hojas?",
     "opts": [
-      "Agregar una fila.",
-      "Cambiar una cantidad.",
-      "Renombrar una columna.",
-      "Actualizar un estatus."
+      "Protección de estructura.",
+      "Formato condicional.",
+      "Bloqueo de una celda.",
+      "Área de impresión."
     ],
-    "correct": 2
+    "correct": 0
   },
   {
-    "q": "¿Qué debe hacerse con un registro problemático?",
+    "q": "¿Qué sucede con una celda bloqueada si la hoja no está protegida?",
     "opts": [
-      "Eliminarlo inmediatamente.",
-      "Conservarlo y clasificarlo para revisión.",
-      "Convertir todos sus campos a texto.",
-      "Reemplazar sus valores por cero."
+      "Sigue siendo editable.",
+      "El archivo se cierra.",
+      "Se convierte en imagen.",
+      "Se elimina."
     ],
-    "correct": 1
+    "correct": 0
   },
   {
-    "q": "¿Cuál es la diferencia entre Transformar y Agregar columna?",
+    "q": "¿Qué debe hacerse después de corregir una fórmula?",
     "opts": [
-      "No existe diferencia.",
-      "Transformar modifica una columna; Agregar columna crea otra.",
-      "Agregar columna elimina registros.",
-      "Transformar solo cambia colores."
+      "Ejecutar pruebas de regresión.",
+      "Eliminar la bitácora.",
+      "Romper los vínculos.",
+      "Ocultar los resultados."
     ],
-    "correct": 1
+    "correct": 0
   },
   {
-    "q": "¿Qué muestra la vista previa?",
+    "q": "¿Qué debe comprobarse después de generar el PDF?",
     "opts": [
-      "Únicamente la salida final.",
-      "El resultado del paso seleccionado.",
-      "Todos los archivos de la carpeta.",
-      "Solo los errores."
+      "Todas sus páginas y el contenido autorizado.",
+      "Solo el nombre.",
+      "Únicamente la primera página.",
+      "Solo la extensión."
     ],
-    "correct": 1
+    "correct": 0
+  },
+  {
+    "q": "¿Cuándo debe rechazarse el libro?",
+    "opts": [
+      "Cuando existan errores críticos o resultados sin conciliar.",
+      "Cuando tenga más de una hoja.",
+      "Cuando utilice fórmulas.",
+      "Cuando incluya un resumen."
+    ],
+    "correct": 0
   }
 ]

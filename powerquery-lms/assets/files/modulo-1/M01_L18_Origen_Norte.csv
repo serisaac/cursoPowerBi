@@ -1,0 +1,51 @@
+﻿Folio,Fecha,Region,SKU,Producto,Cantidad,Precio,Descuento,Estatus,Observaciones
+V-2026-0001,2026-08-01,Norte,0001,Monitor,19,3500,0.05,En revision,Registro 1
+V-2026-0002,2026-08-02,Norte,0002,Teclado,16,850,0.1,Aprobado,Registro 2
+V-2026-0003,2026-08-03,Norte,0003,Mouse,5,450,0.15,Pendiente,Registro 3
+V-2026-0004,2026-08-04,Norte,0004,Laptop,1,15500,0,En revision,Registro 4
+V-2026-0005,2026-08-05,Norte,0001,Monitor,15,3500,0.05,Aprobado,Registro 5
+V-2026-0006,2026-08-06,Norte,0002,Teclado,18,850,0.1,Pendiente,Registro 6
+V-2026-0006,2026-08-07,Norte,0003,Mouse,9,450,0.15,En revision,Registro 7
+V-2026-0008,2026-08-08,Norte,0004,Laptop,11,15500,0,Aprobado,Registro 8
+V-2026-0009,2026-08-09,Norte,0001,Monitor,11,3500,0.05,Pendiente,Registro 9
+V-2026-0010,2026-08-10,Norte,0002,Teclado,17,850,0.1,En revision,Registro 10
+V-2026-0011,15/08/26 texto,Norte,0003,Mouse,20,450,0.15,Aprobado,Registro 11
+V-2026-0012,2026-08-12,Norte,0004,Laptop,6,15500,0,Pendiente,Registro 12
+V-2026-0013,2026-08-13,Norte,0001,Monitor,5,3500,0.05,En revision,Registro 13
+V-2026-0014,2026-08-14,Norte,0002,Teclado,2,850,0.1,Aprobado,Registro 14
+V-2026-0015,2026-08-15,Norte,0003,Mouse,13,450,0.15,Pte.,Registro 15
+V-2026-0016,2026-08-16,Norte,0004,Laptop,17,15500,0,En revision,Registro 16
+V-2026-0017,2026-08-17,Norte,0001,Monitor,11,3500,0.05,Aprobado,Registro 17
+V-2026-0018,2026-08-18,Norte,0002,Teclado,9,850,0.1,Pendiente,Registro 18
+V-2026-0019,2026-08-19,Norte,0003,Mouse,14,450,0.15,En revision,Registro 19
+V-2026-0020,2026-08-20,Norte,0004,Laptop,15,15500,0,Aprobado,Registro 20
+V-2026-0021,2026-08-21,Norte,0001,Monitor,16,3500,0.05,Pendiente,Registro 21
+V-2026-0022,2026-08-22,Norte,0002,Teclado,17,850,0.1,En revision,Registro 22
+V-2026-0023,2026-08-23,Norte,0003,Mouse,2,450,0.15,Aprobado,Registro 23
+V-2026-0024,2026-08-24,Norte,0004,Laptop,8,15500,0,Pendiente,Registro 24
+V-2026-0025,2026-08-25,Norte,0001,Monitor,13,3500,0.05,En revision,Registro 25
+V-2026-0026,2026-08-26,Norte,0002,Teclado,7,850,0.1,Aprobado,Registro 26
+V-2026-0027,2026-08-27,Norte,0003,Mouse,6,450,0.15,Pendiente,Registro 27
+V-2026-0028,2026-08-28,Norte,0004,Laptop,5,15500,0,En revision,Registro 28
+V-2026-0029,2026-08-01,Norte,0001,Monitor,4,3500,0.05,Aprobado,Registro 29
+V-2026-0030,2026-08-02,Norte,0002,Teclado,7,850,0.1,Pendiente,Registro 30
+V-2026-0031,2026-08-03,Norte,0003,Mouse,7,450,0.15,En revision,Registro 31
+V-2026-0032,2026-08-04,Norte,0004,Laptop,6,15500,0,Aprobado,Registro 32
+V-2026-0033,2026-08-05,Norte,0001,Monitor,3,3500,0.05,Pendiente,Registro 33
+V-2026-0034,2026-08-06,Norte,0002,Teclado,12,850,0.1,En revision,Registro 34
+V-2026-0035,2026-08-07,Norte,0003,Mouse,9,450,0.15,Aprobado,Registro 35
+V-2026-0036,2026-08-08,Norte,0004,Laptop,3,15500,0,Pendiente,Registro 36
+V-2026-0037,2026-08-09,Norte,0001,Monitor,2,3500,0.05,En revision,Registro 37
+V-2026-0038,2026-08-10,Norte,0002,Teclado,19,850,0.1,Aprobado,Registro 38
+V-2026-0039,2026-08-11,Norte,0003,Mouse,7,450,0.15,Pendiente,Registro 39
+V-2026-0040,2026-08-12,Norte,0004,Laptop,5,15500,0,En revision,Registro 40
+V-2026-0041,2026-08-13,Norte,0001,Monitor,11,3500,0.05,Aprobado,Registro 41
+V-2026-0042,2026-08-14,Norte,0002,Teclado,20,850,0.1,Pendiente,Registro 42
+V-2026-0043,2026-08-15,Norte,0003,Mouse,5,450,0.15,En revision,Registro 43
+V-2026-0044,2026-08-16,Norte,0004,Laptop,9,15500,0,Aprobado,Registro 44
+V-2026-0045,2026-08-17,Norte,0001,Monitor,15,3500,0.05,Pendiente,Registro 45
+V-2026-0046,2026-08-18,Norte,0002,Teclado,15,850,0.1,En revision,Registro 46
+V-2026-0047,2026-08-19,Norte,0003,Mouse,10,450,0.15,Aprobado,Registro 47
+V-2026-0048,2026-08-20,Norte,0004,Laptop,19,15500,0,Pendiente,Registro 48
+V-2026-0049,2026-08-21,Norte,0001,Monitor,18,3500,0.05,En revision,Registro 49
+V-2026-0050,2026-08-22,Norte,0002,Teclado,11,850,0.1,Aprobado,Registro 50

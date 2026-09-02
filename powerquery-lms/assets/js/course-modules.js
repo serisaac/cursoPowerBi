@@ -4,7 +4,7 @@
 // `path` es relativo a la carpeta modulos/ (ej. "modulo-1/index.html"): el sidebar de
 // cada módulo le antepone "../" y la portada le antepone "modulos/".
 const COURSE_MODULES = [
-  { id: 1, path: "modulo-1/index.html", title: "Introducción a Power Query y al proceso ETL", level: "Nivel Básico", lessons: 12, built: true },
+  { id: 1, path: "modulo-1/index.html", title: "Introducción al Ecosistema Excel", level: "Nivel Básico", lessons: 18, built: true },
   { id: 2, path: "modulo-2/index.html", title: "Obtención y conexión a datos", level: "Nivel Básico-Intermedio", lessons: 14, built: true },
   { id: 3, path: "modulo-3/index.html", title: "Calidad, estructura y validación de datos", level: "Nivel Intermedio", lessons: 15, built: true },
   { id: 4, path: "modulo-4/index.html", title: "Transformación de texto, números y fechas", level: "Nivel Intermedio", lessons: 15, built: true },
@@ -13,6 +13,7 @@ const COURSE_MODULES = [
   { id: 7, path: "modulo-7/index.html", title: "Consolidación automática de archivos", level: "Nivel Intermedio-Avanzado", lessons: 20, built: true },
   { id: 8, path: "modulo-8/index.html", title: "El lenguaje M y funciones personalizadas", level: "Nivel Intermedio-Avanzado", lessons: 20, built: true },
   { id: 9, path: "modulo-9/index.html", title: "Estructuras y funciones de M", level: "Nivel Avanzado", lessons: 18, built: true },
+  { id: 10, path: "modulo-10/index.html", title: "Parámetros, funciones y manejo de errores", level: "Nivel Avanzado", lessons: 17, built: true },
 ];
 // NOTA: `built` se actualiza a true conforme se migra cada módulo a la nueva
 // arquitectura (assets/data/modulo-N + modulos/modulo-N/index.html). Controla

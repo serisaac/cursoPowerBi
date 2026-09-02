@@ -1,0 +1,10847 @@
+{
+ "generalFiles": [
+  "M10_Proyecto_Integrador_Maestro.xlsx",
+  "M10_Movimientos_Validos.csv",
+  "M10_Movimientos_Errores.csv",
+  "M10_Movimientos_Esquema_Historico.csv",
+  "M10_Movimientos_Nombres_Historicos.csv",
+  "M10_Movimientos_Columna_Faltante.csv",
+  "M10_Movimientos_Columnas_Adicionales.csv",
+  "M10_Movimientos_Archivo_Vacio.csv",
+  "M10_Archivo_Danado.csv"
+ ],
+ "excelPreview": {
+  "M10_L01_Libro_Trabajo.xlsx": {
+   "Instrucciones": {
+    "header": [
+     "Elemento",
+     "Descripción"
+    ],
+    "rows": [
+     [
+      "Programa",
+      "Power Query para la Automatización y Preparación de Datos"
+     ],
+     [
+      "Autor e instructor",
+      "Sergio Moreno Banda"
+     ],
+     [
+      "Lección",
+      "1. Parámetros en Power Query"
+     ],
+     [
+      "Objetivo",
+      "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles."
+     ],
+     [
+      "Modo de uso",
+      "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion."
+     ],
+     [
+      "Criterio de aprobación",
+      "80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+     ],
+     [
+      "Resultados esperados",
+      null
+     ],
+     [
+      "Contrato explícito",
+      null
+     ],
+     [
+      "Trazabilidad de entradas y salidas",
+      null
+     ],
+     [
+      "Pruebas positivas, negativas y de frontera",
+      null
+     ],
+     [
+      "Conciliación completa",
+      null
+     ],
+     [
+      "Documentación de decisiones",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Datos_Practica": {
+    "header": [
+     "Movimiento",
+     "FechaMovimiento",
+     "CodigoMaterial",
+     "Cantidad",
+     "Unidad",
+     "Almacen",
+     "Responsable",
+     "Observacion"
+    ],
+    "rows": [
+     [
+      "MOV-001",
+      "2026-01-05",
+      "MAT-1001",
+      "125.5",
+      "PZA",
+      "A01",
+      "Ana",
+      "Entrada ordinaria"
+     ],
+     [
+      "MOV-002",
+      "2026-01-06",
+      "MAT-1002",
+      "250",
+      "KG",
+      "A02",
+      "Luis",
+      "Transferencia"
+     ],
+     [
+      "MOV-003",
+      "2026-01-07",
+      "MAT-1003",
+      "0",
+      "PZA",
+      "A01",
+      "Marta",
+      "Cantidad límite"
+     ],
+     [
+      "MOV-004",
+      "31/02/2026",
+      "MAT-1004",
+      "PENDIENTE",
+      "L",
+      "A03",
+      "Carlos",
+      "Datos inválidos"
+     ],
+     [
+      "  mov-005  ",
+      "2026-01-09",
+      " mat-1005 ",
+      "-25",
+      "PZA",
+      "A99",
+      "Rosa",
+      "Revisión funcional"
+     ],
+     [
+      "MOV-006",
+      null,
+      "MAT-1006",
+      null,
+      "KG",
+      "A02",
+      "Pedro",
+      null
+     ],
+     [
+      "MOV-007",
+      "2026-01-11",
+      "MAT-1007",
+      "1000000",
+      "PZA",
+      "A01",
+      "Elena",
+      "Límite superior"
+     ],
+     [
+      "MOV-008",
+      "2026-01-12",
+      "MAT-1008",
+      "1000000.001",
+      "PZA",
+      "A01",
+      "Jorge",
+      "Fuera de rango"
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Actividades": {
+    "header": [
+     "Id",
+     "Actividad",
+     "Evidencia requerida",
+     "Estado",
+     "Puntuación máxima",
+     "Puntuación obtenida",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "A01",
+      "Identificar entradas, parámetros y dependencias",
+      "Matriz completada",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A02",
+      "Construir o adaptar la consulta M principal",
+      "Consulta funcional",
+      "Pendiente",
+      20,
+      null,
+      null
+     ],
+     [
+      "A03",
+      "Aplicar contratos de entrada y salida",
+      "Contrato documentado",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A04",
+      "Ejecutar caso válido",
+      "Resultado esperado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A05",
+      "Ejecutar caso nulo o vacío",
+      "Diagnóstico correcto",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A06",
+      "Ejecutar caso incompatible",
+      "Error controlado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A07",
+      "Construir controles de conciliación",
+      "Diferencias en cero",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A08",
+      "Documentar versión y decisiones",
+      "Ficha técnica",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      "Total",
+      null,
+      null,
+      "Aprobado si obtiene 80 o más"
+     ]
+    ],
+    "total_rows": 9
+   },
+   "Casos_Prueba": {
+    "header": [
+     "IdCaso",
+     "Tipo",
+     "Escenario",
+     "Entrada",
+     "Resultado esperado",
+     "Resultado obtenido",
+     "Cumple",
+     "Regla cubierta",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "T01",
+      "POSITIVA",
+      "Entrada válida",
+      "25",
+      "Resultado correcto",
+      null,
+      null,
+      "Ruta principal",
+      null
+     ],
+     [
+      "T02",
+      "NEGATIVA",
+      "Valor ausente",
+      "null",
+      "Ausencia clasificada",
+      null,
+      null,
+      "Nulabilidad",
+      null
+     ],
+     [
+      "T03",
+      "NEGATIVA",
+      "Tipo incompatible",
+      "PENDIENTE",
+      "Error controlado",
+      null,
+      null,
+      "Conversión",
+      null
+     ],
+     [
+      "T04",
+      "FRONTERA",
+      "Límite inferior",
+      "0",
+      "Según regla",
+      null,
+      null,
+      "Límite inferior",
+      null
+     ],
+     [
+      "T05",
+      "FRONTERA",
+      "Límite superior",
+      "1000000",
+      "Según regla",
+      null,
+      null,
+      "Límite superior",
+      null
+     ],
+     [
+      "T06",
+      "CONTRATO",
+      "Campo o columna ausente",
+      "Esquema incompleto",
+      "Rechazo o cuarentena",
+      null,
+      null,
+      "Contrato",
+      null
+     ],
+     [
+      "T07",
+      "REGRESION",
+      "Versión aprobada",
+      "1.0.0",
+      "Mismo contrato",
+      null,
+      null,
+      "Versionado",
+      null
+     ],
+     [
+      "T08",
+      "CONCILIACION",
+      "Poblaciones completas",
+      "Totales",
+      "Diferencia 0",
+      null,
+      null,
+      "Conciliación",
+      null
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Conciliacion": {
+    "header": [
+     "Control",
+     "Total base",
+     "Componente 1",
+     "Componente 2",
+     "Componente 3",
+     "Diferencia",
+     "Resultado"
+    ],
+    "rows": [
+     [
+      "Archivos",
+      12,
+      8,
+      2,
+      2,
+      null,
+      null
+     ],
+     [
+      "Filas",
+      100,
+      80,
+      15,
+      5,
+      null,
+      null
+     ],
+     [
+      "Errores",
+      20,
+      12,
+      5,
+      3,
+      null,
+      null
+     ],
+     [
+      "Pruebas",
+      10,
+      8,
+      1,
+      1,
+      null,
+      null
+     ],
+     [
+      "Funciones",
+      6,
+      5,
+      1,
+      0,
+      null,
+      null
+     ]
+    ],
+    "total_rows": 5
+   },
+   "Evaluacion": {
+    "header": [
+     "Pregunta",
+     "Competencia",
+     "Respuesta del participante",
+     "Respuesta correcta",
+     "Puntos",
+     "Puntos obtenidos"
+    ],
+    "rows": [
+     [
+      "1",
+      "Definir el concepto central de la lección",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "2",
+      "Identificar un contrato correcto",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "3",
+      "Diferenciar error y valor nulo",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "4",
+      "Seleccionar la técnica M adecuada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "5",
+      "Interpretar una salida estructurada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "6",
+      "Aplicar una política de continuidad",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "7",
+      "Reconocer una variación de esquema",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "8",
+      "Validar una prueba negativa",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "9",
+      "Interpretar una conciliación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "10",
+      "Determinar criterios de liberación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Total",
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Estado",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Plantilla_Documentacion": {
+    "header": [
+     "Campo",
+     "Descripción del participante"
+    ],
+    "rows": [
+     [
+      "Nombre del objeto",
+      null
+     ],
+     [
+      "Tipo de objeto",
+      null
+     ],
+     [
+      "Propósito",
+      null
+     ],
+     [
+      "Entradas",
+      null
+     ],
+     [
+      "Tipos de entrada",
+      null
+     ],
+     [
+      "Parámetros opcionales",
+      null
+     ],
+     [
+      "Valores predeterminados",
+      null
+     ],
+     [
+      "Salida",
+      null
+     ],
+     [
+      "Granularidad",
+      null
+     ],
+     [
+      "Errores esperados",
+      null
+     ],
+     [
+      "Dependencias",
+      null
+     ],
+     [
+      "Versión",
+      null
+     ],
+     [
+      "Casos de prueba",
+      null
+     ],
+     [
+      "Responsable",
+      null
+     ]
+    ],
+    "total_rows": 14
+   }
+  },
+  "M10_L02_Libro_Trabajo.xlsx": {
+   "Instrucciones": {
+    "header": [
+     "Elemento",
+     "Descripción"
+    ],
+    "rows": [
+     [
+      "Programa",
+      "Power Query para la Automatización y Preparación de Datos"
+     ],
+     [
+      "Autor e instructor",
+      "Sergio Moreno Banda"
+     ],
+     [
+      "Lección",
+      "2. Configuración por ambiente"
+     ],
+     [
+      "Objetivo",
+      "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles."
+     ],
+     [
+      "Modo de uso",
+      "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion."
+     ],
+     [
+      "Criterio de aprobación",
+      "80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+     ],
+     [
+      "Resultados esperados",
+      null
+     ],
+     [
+      "Contrato explícito",
+      null
+     ],
+     [
+      "Trazabilidad de entradas y salidas",
+      null
+     ],
+     [
+      "Pruebas positivas, negativas y de frontera",
+      null
+     ],
+     [
+      "Conciliación completa",
+      null
+     ],
+     [
+      "Documentación de decisiones",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Datos_Practica": {
+    "header": [
+     "Movimiento",
+     "FechaMovimiento",
+     "CodigoMaterial",
+     "Cantidad",
+     "Unidad",
+     "Almacen",
+     "Responsable",
+     "Observacion"
+    ],
+    "rows": [
+     [
+      "MOV-001",
+      "2026-01-05",
+      "MAT-1001",
+      "125.5",
+      "PZA",
+      "A01",
+      "Ana",
+      "Entrada ordinaria"
+     ],
+     [
+      "MOV-002",
+      "2026-01-06",
+      "MAT-1002",
+      "250",
+      "KG",
+      "A02",
+      "Luis",
+      "Transferencia"
+     ],
+     [
+      "MOV-003",
+      "2026-01-07",
+      "MAT-1003",
+      "0",
+      "PZA",
+      "A01",
+      "Marta",
+      "Cantidad límite"
+     ],
+     [
+      "MOV-004",
+      "31/02/2026",
+      "MAT-1004",
+      "PENDIENTE",
+      "L",
+      "A03",
+      "Carlos",
+      "Datos inválidos"
+     ],
+     [
+      "  mov-005  ",
+      "2026-01-09",
+      " mat-1005 ",
+      "-25",
+      "PZA",
+      "A99",
+      "Rosa",
+      "Revisión funcional"
+     ],
+     [
+      "MOV-006",
+      null,
+      "MAT-1006",
+      null,
+      "KG",
+      "A02",
+      "Pedro",
+      null
+     ],
+     [
+      "MOV-007",
+      "2026-01-11",
+      "MAT-1007",
+      "1000000",
+      "PZA",
+      "A01",
+      "Elena",
+      "Límite superior"
+     ],
+     [
+      "MOV-008",
+      "2026-01-12",
+      "MAT-1008",
+      "1000000.001",
+      "PZA",
+      "A01",
+      "Jorge",
+      "Fuera de rango"
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Actividades": {
+    "header": [
+     "Id",
+     "Actividad",
+     "Evidencia requerida",
+     "Estado",
+     "Puntuación máxima",
+     "Puntuación obtenida",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "A01",
+      "Identificar entradas, parámetros y dependencias",
+      "Matriz completada",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A02",
+      "Construir o adaptar la consulta M principal",
+      "Consulta funcional",
+      "Pendiente",
+      20,
+      null,
+      null
+     ],
+     [
+      "A03",
+      "Aplicar contratos de entrada y salida",
+      "Contrato documentado",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A04",
+      "Ejecutar caso válido",
+      "Resultado esperado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A05",
+      "Ejecutar caso nulo o vacío",
+      "Diagnóstico correcto",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A06",
+      "Ejecutar caso incompatible",
+      "Error controlado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A07",
+      "Construir controles de conciliación",
+      "Diferencias en cero",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A08",
+      "Documentar versión y decisiones",
+      "Ficha técnica",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      "Total",
+      null,
+      null,
+      "Aprobado si obtiene 80 o más"
+     ]
+    ],
+    "total_rows": 9
+   },
+   "Casos_Prueba": {
+    "header": [
+     "IdCaso",
+     "Tipo",
+     "Escenario",
+     "Entrada",
+     "Resultado esperado",
+     "Resultado obtenido",
+     "Cumple",
+     "Regla cubierta",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "T01",
+      "POSITIVA",
+      "Entrada válida",
+      "25",
+      "Resultado correcto",
+      null,
+      null,
+      "Ruta principal",
+      null
+     ],
+     [
+      "T02",
+      "NEGATIVA",
+      "Valor ausente",
+      "null",
+      "Ausencia clasificada",
+      null,
+      null,
+      "Nulabilidad",
+      null
+     ],
+     [
+      "T03",
+      "NEGATIVA",
+      "Tipo incompatible",
+      "PENDIENTE",
+      "Error controlado",
+      null,
+      null,
+      "Conversión",
+      null
+     ],
+     [
+      "T04",
+      "FRONTERA",
+      "Límite inferior",
+      "0",
+      "Según regla",
+      null,
+      null,
+      "Límite inferior",
+      null
+     ],
+     [
+      "T05",
+      "FRONTERA",
+      "Límite superior",
+      "1000000",
+      "Según regla",
+      null,
+      null,
+      "Límite superior",
+      null
+     ],
+     [
+      "T06",
+      "CONTRATO",
+      "Campo o columna ausente",
+      "Esquema incompleto",
+      "Rechazo o cuarentena",
+      null,
+      null,
+      "Contrato",
+      null
+     ],
+     [
+      "T07",
+      "REGRESION",
+      "Versión aprobada",
+      "1.0.0",
+      "Mismo contrato",
+      null,
+      null,
+      "Versionado",
+      null
+     ],
+     [
+      "T08",
+      "CONCILIACION",
+      "Poblaciones completas",
+      "Totales",
+      "Diferencia 0",
+      null,
+      null,
+      "Conciliación",
+      null
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Conciliacion": {
+    "header": [
+     "Control",
+     "Total base",
+     "Componente 1",
+     "Componente 2",
+     "Componente 3",
+     "Diferencia",
+     "Resultado"
+    ],
+    "rows": [
+     [
+      "Archivos",
+      12,
+      8,
+      2,
+      2,
+      null,
+      null
+     ],
+     [
+      "Filas",
+      100,
+      80,
+      15,
+      5,
+      null,
+      null
+     ],
+     [
+      "Errores",
+      20,
+      12,
+      5,
+      3,
+      null,
+      null
+     ],
+     [
+      "Pruebas",
+      10,
+      8,
+      1,
+      1,
+      null,
+      null
+     ],
+     [
+      "Funciones",
+      6,
+      5,
+      1,
+      0,
+      null,
+      null
+     ]
+    ],
+    "total_rows": 5
+   },
+   "Evaluacion": {
+    "header": [
+     "Pregunta",
+     "Competencia",
+     "Respuesta del participante",
+     "Respuesta correcta",
+     "Puntos",
+     "Puntos obtenidos"
+    ],
+    "rows": [
+     [
+      "1",
+      "Definir el concepto central de la lección",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "2",
+      "Identificar un contrato correcto",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "3",
+      "Diferenciar error y valor nulo",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "4",
+      "Seleccionar la técnica M adecuada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "5",
+      "Interpretar una salida estructurada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "6",
+      "Aplicar una política de continuidad",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "7",
+      "Reconocer una variación de esquema",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "8",
+      "Validar una prueba negativa",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "9",
+      "Interpretar una conciliación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "10",
+      "Determinar criterios de liberación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Total",
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Estado",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Plantilla_Documentacion": {
+    "header": [
+     "Campo",
+     "Descripción del participante"
+    ],
+    "rows": [
+     [
+      "Nombre del objeto",
+      null
+     ],
+     [
+      "Tipo de objeto",
+      null
+     ],
+     [
+      "Propósito",
+      null
+     ],
+     [
+      "Entradas",
+      null
+     ],
+     [
+      "Tipos de entrada",
+      null
+     ],
+     [
+      "Parámetros opcionales",
+      null
+     ],
+     [
+      "Valores predeterminados",
+      null
+     ],
+     [
+      "Salida",
+      null
+     ],
+     [
+      "Granularidad",
+      null
+     ],
+     [
+      "Errores esperados",
+      null
+     ],
+     [
+      "Dependencias",
+      null
+     ],
+     [
+      "Versión",
+      null
+     ],
+     [
+      "Casos de prueba",
+      null
+     ],
+     [
+      "Responsable",
+      null
+     ]
+    ],
+    "total_rows": 14
+   }
+  },
+  "M10_L03_Libro_Trabajo.xlsx": {
+   "Instrucciones": {
+    "header": [
+     "Elemento",
+     "Descripción"
+    ],
+    "rows": [
+     [
+      "Programa",
+      "Power Query para la Automatización y Preparación de Datos"
+     ],
+     [
+      "Autor e instructor",
+      "Sergio Moreno Banda"
+     ],
+     [
+      "Lección",
+      "3. Rutas y orígenes dinámicos"
+     ],
+     [
+      "Objetivo",
+      "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles."
+     ],
+     [
+      "Modo de uso",
+      "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion."
+     ],
+     [
+      "Criterio de aprobación",
+      "80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+     ],
+     [
+      "Resultados esperados",
+      null
+     ],
+     [
+      "Contrato explícito",
+      null
+     ],
+     [
+      "Trazabilidad de entradas y salidas",
+      null
+     ],
+     [
+      "Pruebas positivas, negativas y de frontera",
+      null
+     ],
+     [
+      "Conciliación completa",
+      null
+     ],
+     [
+      "Documentación de decisiones",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Datos_Practica": {
+    "header": [
+     "Movimiento",
+     "FechaMovimiento",
+     "CodigoMaterial",
+     "Cantidad",
+     "Unidad",
+     "Almacen",
+     "Responsable",
+     "Observacion"
+    ],
+    "rows": [
+     [
+      "MOV-001",
+      "2026-01-05",
+      "MAT-1001",
+      "125.5",
+      "PZA",
+      "A01",
+      "Ana",
+      "Entrada ordinaria"
+     ],
+     [
+      "MOV-002",
+      "2026-01-06",
+      "MAT-1002",
+      "250",
+      "KG",
+      "A02",
+      "Luis",
+      "Transferencia"
+     ],
+     [
+      "MOV-003",
+      "2026-01-07",
+      "MAT-1003",
+      "0",
+      "PZA",
+      "A01",
+      "Marta",
+      "Cantidad límite"
+     ],
+     [
+      "MOV-004",
+      "31/02/2026",
+      "MAT-1004",
+      "PENDIENTE",
+      "L",
+      "A03",
+      "Carlos",
+      "Datos inválidos"
+     ],
+     [
+      "  mov-005  ",
+      "2026-01-09",
+      " mat-1005 ",
+      "-25",
+      "PZA",
+      "A99",
+      "Rosa",
+      "Revisión funcional"
+     ],
+     [
+      "MOV-006",
+      null,
+      "MAT-1006",
+      null,
+      "KG",
+      "A02",
+      "Pedro",
+      null
+     ],
+     [
+      "MOV-007",
+      "2026-01-11",
+      "MAT-1007",
+      "1000000",
+      "PZA",
+      "A01",
+      "Elena",
+      "Límite superior"
+     ],
+     [
+      "MOV-008",
+      "2026-01-12",
+      "MAT-1008",
+      "1000000.001",
+      "PZA",
+      "A01",
+      "Jorge",
+      "Fuera de rango"
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Actividades": {
+    "header": [
+     "Id",
+     "Actividad",
+     "Evidencia requerida",
+     "Estado",
+     "Puntuación máxima",
+     "Puntuación obtenida",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "A01",
+      "Identificar entradas, parámetros y dependencias",
+      "Matriz completada",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A02",
+      "Construir o adaptar la consulta M principal",
+      "Consulta funcional",
+      "Pendiente",
+      20,
+      null,
+      null
+     ],
+     [
+      "A03",
+      "Aplicar contratos de entrada y salida",
+      "Contrato documentado",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A04",
+      "Ejecutar caso válido",
+      "Resultado esperado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A05",
+      "Ejecutar caso nulo o vacío",
+      "Diagnóstico correcto",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A06",
+      "Ejecutar caso incompatible",
+      "Error controlado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A07",
+      "Construir controles de conciliación",
+      "Diferencias en cero",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A08",
+      "Documentar versión y decisiones",
+      "Ficha técnica",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      "Total",
+      null,
+      null,
+      "Aprobado si obtiene 80 o más"
+     ]
+    ],
+    "total_rows": 9
+   },
+   "Casos_Prueba": {
+    "header": [
+     "IdCaso",
+     "Tipo",
+     "Escenario",
+     "Entrada",
+     "Resultado esperado",
+     "Resultado obtenido",
+     "Cumple",
+     "Regla cubierta",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "T01",
+      "POSITIVA",
+      "Entrada válida",
+      "25",
+      "Resultado correcto",
+      null,
+      null,
+      "Ruta principal",
+      null
+     ],
+     [
+      "T02",
+      "NEGATIVA",
+      "Valor ausente",
+      "null",
+      "Ausencia clasificada",
+      null,
+      null,
+      "Nulabilidad",
+      null
+     ],
+     [
+      "T03",
+      "NEGATIVA",
+      "Tipo incompatible",
+      "PENDIENTE",
+      "Error controlado",
+      null,
+      null,
+      "Conversión",
+      null
+     ],
+     [
+      "T04",
+      "FRONTERA",
+      "Límite inferior",
+      "0",
+      "Según regla",
+      null,
+      null,
+      "Límite inferior",
+      null
+     ],
+     [
+      "T05",
+      "FRONTERA",
+      "Límite superior",
+      "1000000",
+      "Según regla",
+      null,
+      null,
+      "Límite superior",
+      null
+     ],
+     [
+      "T06",
+      "CONTRATO",
+      "Campo o columna ausente",
+      "Esquema incompleto",
+      "Rechazo o cuarentena",
+      null,
+      null,
+      "Contrato",
+      null
+     ],
+     [
+      "T07",
+      "REGRESION",
+      "Versión aprobada",
+      "1.0.0",
+      "Mismo contrato",
+      null,
+      null,
+      "Versionado",
+      null
+     ],
+     [
+      "T08",
+      "CONCILIACION",
+      "Poblaciones completas",
+      "Totales",
+      "Diferencia 0",
+      null,
+      null,
+      "Conciliación",
+      null
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Conciliacion": {
+    "header": [
+     "Control",
+     "Total base",
+     "Componente 1",
+     "Componente 2",
+     "Componente 3",
+     "Diferencia",
+     "Resultado"
+    ],
+    "rows": [
+     [
+      "Archivos",
+      12,
+      8,
+      2,
+      2,
+      null,
+      null
+     ],
+     [
+      "Filas",
+      100,
+      80,
+      15,
+      5,
+      null,
+      null
+     ],
+     [
+      "Errores",
+      20,
+      12,
+      5,
+      3,
+      null,
+      null
+     ],
+     [
+      "Pruebas",
+      10,
+      8,
+      1,
+      1,
+      null,
+      null
+     ],
+     [
+      "Funciones",
+      6,
+      5,
+      1,
+      0,
+      null,
+      null
+     ]
+    ],
+    "total_rows": 5
+   },
+   "Evaluacion": {
+    "header": [
+     "Pregunta",
+     "Competencia",
+     "Respuesta del participante",
+     "Respuesta correcta",
+     "Puntos",
+     "Puntos obtenidos"
+    ],
+    "rows": [
+     [
+      "1",
+      "Definir el concepto central de la lección",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "2",
+      "Identificar un contrato correcto",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "3",
+      "Diferenciar error y valor nulo",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "4",
+      "Seleccionar la técnica M adecuada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "5",
+      "Interpretar una salida estructurada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "6",
+      "Aplicar una política de continuidad",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "7",
+      "Reconocer una variación de esquema",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "8",
+      "Validar una prueba negativa",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "9",
+      "Interpretar una conciliación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "10",
+      "Determinar criterios de liberación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Total",
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Estado",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Plantilla_Documentacion": {
+    "header": [
+     "Campo",
+     "Descripción del participante"
+    ],
+    "rows": [
+     [
+      "Nombre del objeto",
+      null
+     ],
+     [
+      "Tipo de objeto",
+      null
+     ],
+     [
+      "Propósito",
+      null
+     ],
+     [
+      "Entradas",
+      null
+     ],
+     [
+      "Tipos de entrada",
+      null
+     ],
+     [
+      "Parámetros opcionales",
+      null
+     ],
+     [
+      "Valores predeterminados",
+      null
+     ],
+     [
+      "Salida",
+      null
+     ],
+     [
+      "Granularidad",
+      null
+     ],
+     [
+      "Errores esperados",
+      null
+     ],
+     [
+      "Dependencias",
+      null
+     ],
+     [
+      "Versión",
+      null
+     ],
+     [
+      "Casos de prueba",
+      null
+     ],
+     [
+      "Responsable",
+      null
+     ]
+    ],
+    "total_rows": 14
+   }
+  },
+  "M10_L04_Libro_Trabajo.xlsx": {
+   "Instrucciones": {
+    "header": [
+     "Elemento",
+     "Descripción"
+    ],
+    "rows": [
+     [
+      "Programa",
+      "Power Query para la Automatización y Preparación de Datos"
+     ],
+     [
+      "Autor e instructor",
+      "Sergio Moreno Banda"
+     ],
+     [
+      "Lección",
+      "4. Parámetros funcionales y de control"
+     ],
+     [
+      "Objetivo",
+      "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles."
+     ],
+     [
+      "Modo de uso",
+      "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion."
+     ],
+     [
+      "Criterio de aprobación",
+      "80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+     ],
+     [
+      "Resultados esperados",
+      null
+     ],
+     [
+      "Contrato explícito",
+      null
+     ],
+     [
+      "Trazabilidad de entradas y salidas",
+      null
+     ],
+     [
+      "Pruebas positivas, negativas y de frontera",
+      null
+     ],
+     [
+      "Conciliación completa",
+      null
+     ],
+     [
+      "Documentación de decisiones",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Datos_Practica": {
+    "header": [
+     "Movimiento",
+     "FechaMovimiento",
+     "CodigoMaterial",
+     "Cantidad",
+     "Unidad",
+     "Almacen",
+     "Responsable",
+     "Observacion"
+    ],
+    "rows": [
+     [
+      "MOV-001",
+      "2026-01-05",
+      "MAT-1001",
+      "125.5",
+      "PZA",
+      "A01",
+      "Ana",
+      "Entrada ordinaria"
+     ],
+     [
+      "MOV-002",
+      "2026-01-06",
+      "MAT-1002",
+      "250",
+      "KG",
+      "A02",
+      "Luis",
+      "Transferencia"
+     ],
+     [
+      "MOV-003",
+      "2026-01-07",
+      "MAT-1003",
+      "0",
+      "PZA",
+      "A01",
+      "Marta",
+      "Cantidad límite"
+     ],
+     [
+      "MOV-004",
+      "31/02/2026",
+      "MAT-1004",
+      "PENDIENTE",
+      "L",
+      "A03",
+      "Carlos",
+      "Datos inválidos"
+     ],
+     [
+      "  mov-005  ",
+      "2026-01-09",
+      " mat-1005 ",
+      "-25",
+      "PZA",
+      "A99",
+      "Rosa",
+      "Revisión funcional"
+     ],
+     [
+      "MOV-006",
+      null,
+      "MAT-1006",
+      null,
+      "KG",
+      "A02",
+      "Pedro",
+      null
+     ],
+     [
+      "MOV-007",
+      "2026-01-11",
+      "MAT-1007",
+      "1000000",
+      "PZA",
+      "A01",
+      "Elena",
+      "Límite superior"
+     ],
+     [
+      "MOV-008",
+      "2026-01-12",
+      "MAT-1008",
+      "1000000.001",
+      "PZA",
+      "A01",
+      "Jorge",
+      "Fuera de rango"
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Actividades": {
+    "header": [
+     "Id",
+     "Actividad",
+     "Evidencia requerida",
+     "Estado",
+     "Puntuación máxima",
+     "Puntuación obtenida",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "A01",
+      "Identificar entradas, parámetros y dependencias",
+      "Matriz completada",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A02",
+      "Construir o adaptar la consulta M principal",
+      "Consulta funcional",
+      "Pendiente",
+      20,
+      null,
+      null
+     ],
+     [
+      "A03",
+      "Aplicar contratos de entrada y salida",
+      "Contrato documentado",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A04",
+      "Ejecutar caso válido",
+      "Resultado esperado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A05",
+      "Ejecutar caso nulo o vacío",
+      "Diagnóstico correcto",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A06",
+      "Ejecutar caso incompatible",
+      "Error controlado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A07",
+      "Construir controles de conciliación",
+      "Diferencias en cero",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A08",
+      "Documentar versión y decisiones",
+      "Ficha técnica",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      "Total",
+      null,
+      null,
+      "Aprobado si obtiene 80 o más"
+     ]
+    ],
+    "total_rows": 9
+   },
+   "Casos_Prueba": {
+    "header": [
+     "IdCaso",
+     "Tipo",
+     "Escenario",
+     "Entrada",
+     "Resultado esperado",
+     "Resultado obtenido",
+     "Cumple",
+     "Regla cubierta",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "T01",
+      "POSITIVA",
+      "Entrada válida",
+      "25",
+      "Resultado correcto",
+      null,
+      null,
+      "Ruta principal",
+      null
+     ],
+     [
+      "T02",
+      "NEGATIVA",
+      "Valor ausente",
+      "null",
+      "Ausencia clasificada",
+      null,
+      null,
+      "Nulabilidad",
+      null
+     ],
+     [
+      "T03",
+      "NEGATIVA",
+      "Tipo incompatible",
+      "PENDIENTE",
+      "Error controlado",
+      null,
+      null,
+      "Conversión",
+      null
+     ],
+     [
+      "T04",
+      "FRONTERA",
+      "Límite inferior",
+      "0",
+      "Según regla",
+      null,
+      null,
+      "Límite inferior",
+      null
+     ],
+     [
+      "T05",
+      "FRONTERA",
+      "Límite superior",
+      "1000000",
+      "Según regla",
+      null,
+      null,
+      "Límite superior",
+      null
+     ],
+     [
+      "T06",
+      "CONTRATO",
+      "Campo o columna ausente",
+      "Esquema incompleto",
+      "Rechazo o cuarentena",
+      null,
+      null,
+      "Contrato",
+      null
+     ],
+     [
+      "T07",
+      "REGRESION",
+      "Versión aprobada",
+      "1.0.0",
+      "Mismo contrato",
+      null,
+      null,
+      "Versionado",
+      null
+     ],
+     [
+      "T08",
+      "CONCILIACION",
+      "Poblaciones completas",
+      "Totales",
+      "Diferencia 0",
+      null,
+      null,
+      "Conciliación",
+      null
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Conciliacion": {
+    "header": [
+     "Control",
+     "Total base",
+     "Componente 1",
+     "Componente 2",
+     "Componente 3",
+     "Diferencia",
+     "Resultado"
+    ],
+    "rows": [
+     [
+      "Archivos",
+      12,
+      8,
+      2,
+      2,
+      null,
+      null
+     ],
+     [
+      "Filas",
+      100,
+      80,
+      15,
+      5,
+      null,
+      null
+     ],
+     [
+      "Errores",
+      20,
+      12,
+      5,
+      3,
+      null,
+      null
+     ],
+     [
+      "Pruebas",
+      10,
+      8,
+      1,
+      1,
+      null,
+      null
+     ],
+     [
+      "Funciones",
+      6,
+      5,
+      1,
+      0,
+      null,
+      null
+     ]
+    ],
+    "total_rows": 5
+   },
+   "Evaluacion": {
+    "header": [
+     "Pregunta",
+     "Competencia",
+     "Respuesta del participante",
+     "Respuesta correcta",
+     "Puntos",
+     "Puntos obtenidos"
+    ],
+    "rows": [
+     [
+      "1",
+      "Definir el concepto central de la lección",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "2",
+      "Identificar un contrato correcto",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "3",
+      "Diferenciar error y valor nulo",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "4",
+      "Seleccionar la técnica M adecuada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "5",
+      "Interpretar una salida estructurada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "6",
+      "Aplicar una política de continuidad",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "7",
+      "Reconocer una variación de esquema",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "8",
+      "Validar una prueba negativa",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "9",
+      "Interpretar una conciliación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "10",
+      "Determinar criterios de liberación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Total",
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Estado",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Plantilla_Documentacion": {
+    "header": [
+     "Campo",
+     "Descripción del participante"
+    ],
+    "rows": [
+     [
+      "Nombre del objeto",
+      null
+     ],
+     [
+      "Tipo de objeto",
+      null
+     ],
+     [
+      "Propósito",
+      null
+     ],
+     [
+      "Entradas",
+      null
+     ],
+     [
+      "Tipos de entrada",
+      null
+     ],
+     [
+      "Parámetros opcionales",
+      null
+     ],
+     [
+      "Valores predeterminados",
+      null
+     ],
+     [
+      "Salida",
+      null
+     ],
+     [
+      "Granularidad",
+      null
+     ],
+     [
+      "Errores esperados",
+      null
+     ],
+     [
+      "Dependencias",
+      null
+     ],
+     [
+      "Versión",
+      null
+     ],
+     [
+      "Casos de prueba",
+      null
+     ],
+     [
+      "Responsable",
+      null
+     ]
+    ],
+    "total_rows": 14
+   }
+  },
+  "M10_L05_Libro_Trabajo.xlsx": {
+   "Instrucciones": {
+    "header": [
+     "Elemento",
+     "Descripción"
+    ],
+    "rows": [
+     [
+      "Programa",
+      "Power Query para la Automatización y Preparación de Datos"
+     ],
+     [
+      "Autor e instructor",
+      "Sergio Moreno Banda"
+     ],
+     [
+      "Lección",
+      "5. Validación de parámetros"
+     ],
+     [
+      "Objetivo",
+      "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles."
+     ],
+     [
+      "Modo de uso",
+      "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion."
+     ],
+     [
+      "Criterio de aprobación",
+      "80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+     ],
+     [
+      "Resultados esperados",
+      null
+     ],
+     [
+      "Contrato explícito",
+      null
+     ],
+     [
+      "Trazabilidad de entradas y salidas",
+      null
+     ],
+     [
+      "Pruebas positivas, negativas y de frontera",
+      null
+     ],
+     [
+      "Conciliación completa",
+      null
+     ],
+     [
+      "Documentación de decisiones",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Datos_Practica": {
+    "header": [
+     "Movimiento",
+     "FechaMovimiento",
+     "CodigoMaterial",
+     "Cantidad",
+     "Unidad",
+     "Almacen",
+     "Responsable",
+     "Observacion"
+    ],
+    "rows": [
+     [
+      "MOV-001",
+      "2026-01-05",
+      "MAT-1001",
+      "125.5",
+      "PZA",
+      "A01",
+      "Ana",
+      "Entrada ordinaria"
+     ],
+     [
+      "MOV-002",
+      "2026-01-06",
+      "MAT-1002",
+      "250",
+      "KG",
+      "A02",
+      "Luis",
+      "Transferencia"
+     ],
+     [
+      "MOV-003",
+      "2026-01-07",
+      "MAT-1003",
+      "0",
+      "PZA",
+      "A01",
+      "Marta",
+      "Cantidad límite"
+     ],
+     [
+      "MOV-004",
+      "31/02/2026",
+      "MAT-1004",
+      "PENDIENTE",
+      "L",
+      "A03",
+      "Carlos",
+      "Datos inválidos"
+     ],
+     [
+      "  mov-005  ",
+      "2026-01-09",
+      " mat-1005 ",
+      "-25",
+      "PZA",
+      "A99",
+      "Rosa",
+      "Revisión funcional"
+     ],
+     [
+      "MOV-006",
+      null,
+      "MAT-1006",
+      null,
+      "KG",
+      "A02",
+      "Pedro",
+      null
+     ],
+     [
+      "MOV-007",
+      "2026-01-11",
+      "MAT-1007",
+      "1000000",
+      "PZA",
+      "A01",
+      "Elena",
+      "Límite superior"
+     ],
+     [
+      "MOV-008",
+      "2026-01-12",
+      "MAT-1008",
+      "1000000.001",
+      "PZA",
+      "A01",
+      "Jorge",
+      "Fuera de rango"
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Actividades": {
+    "header": [
+     "Id",
+     "Actividad",
+     "Evidencia requerida",
+     "Estado",
+     "Puntuación máxima",
+     "Puntuación obtenida",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "A01",
+      "Identificar entradas, parámetros y dependencias",
+      "Matriz completada",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A02",
+      "Construir o adaptar la consulta M principal",
+      "Consulta funcional",
+      "Pendiente",
+      20,
+      null,
+      null
+     ],
+     [
+      "A03",
+      "Aplicar contratos de entrada y salida",
+      "Contrato documentado",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A04",
+      "Ejecutar caso válido",
+      "Resultado esperado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A05",
+      "Ejecutar caso nulo o vacío",
+      "Diagnóstico correcto",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A06",
+      "Ejecutar caso incompatible",
+      "Error controlado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A07",
+      "Construir controles de conciliación",
+      "Diferencias en cero",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A08",
+      "Documentar versión y decisiones",
+      "Ficha técnica",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      "Total",
+      null,
+      null,
+      "Aprobado si obtiene 80 o más"
+     ]
+    ],
+    "total_rows": 9
+   },
+   "Casos_Prueba": {
+    "header": [
+     "IdCaso",
+     "Tipo",
+     "Escenario",
+     "Entrada",
+     "Resultado esperado",
+     "Resultado obtenido",
+     "Cumple",
+     "Regla cubierta",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "T01",
+      "POSITIVA",
+      "Entrada válida",
+      "25",
+      "Resultado correcto",
+      null,
+      null,
+      "Ruta principal",
+      null
+     ],
+     [
+      "T02",
+      "NEGATIVA",
+      "Valor ausente",
+      "null",
+      "Ausencia clasificada",
+      null,
+      null,
+      "Nulabilidad",
+      null
+     ],
+     [
+      "T03",
+      "NEGATIVA",
+      "Tipo incompatible",
+      "PENDIENTE",
+      "Error controlado",
+      null,
+      null,
+      "Conversión",
+      null
+     ],
+     [
+      "T04",
+      "FRONTERA",
+      "Límite inferior",
+      "0",
+      "Según regla",
+      null,
+      null,
+      "Límite inferior",
+      null
+     ],
+     [
+      "T05",
+      "FRONTERA",
+      "Límite superior",
+      "1000000",
+      "Según regla",
+      null,
+      null,
+      "Límite superior",
+      null
+     ],
+     [
+      "T06",
+      "CONTRATO",
+      "Campo o columna ausente",
+      "Esquema incompleto",
+      "Rechazo o cuarentena",
+      null,
+      null,
+      "Contrato",
+      null
+     ],
+     [
+      "T07",
+      "REGRESION",
+      "Versión aprobada",
+      "1.0.0",
+      "Mismo contrato",
+      null,
+      null,
+      "Versionado",
+      null
+     ],
+     [
+      "T08",
+      "CONCILIACION",
+      "Poblaciones completas",
+      "Totales",
+      "Diferencia 0",
+      null,
+      null,
+      "Conciliación",
+      null
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Conciliacion": {
+    "header": [
+     "Control",
+     "Total base",
+     "Componente 1",
+     "Componente 2",
+     "Componente 3",
+     "Diferencia",
+     "Resultado"
+    ],
+    "rows": [
+     [
+      "Archivos",
+      12,
+      8,
+      2,
+      2,
+      null,
+      null
+     ],
+     [
+      "Filas",
+      100,
+      80,
+      15,
+      5,
+      null,
+      null
+     ],
+     [
+      "Errores",
+      20,
+      12,
+      5,
+      3,
+      null,
+      null
+     ],
+     [
+      "Pruebas",
+      10,
+      8,
+      1,
+      1,
+      null,
+      null
+     ],
+     [
+      "Funciones",
+      6,
+      5,
+      1,
+      0,
+      null,
+      null
+     ]
+    ],
+    "total_rows": 5
+   },
+   "Evaluacion": {
+    "header": [
+     "Pregunta",
+     "Competencia",
+     "Respuesta del participante",
+     "Respuesta correcta",
+     "Puntos",
+     "Puntos obtenidos"
+    ],
+    "rows": [
+     [
+      "1",
+      "Definir el concepto central de la lección",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "2",
+      "Identificar un contrato correcto",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "3",
+      "Diferenciar error y valor nulo",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "4",
+      "Seleccionar la técnica M adecuada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "5",
+      "Interpretar una salida estructurada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "6",
+      "Aplicar una política de continuidad",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "7",
+      "Reconocer una variación de esquema",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "8",
+      "Validar una prueba negativa",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "9",
+      "Interpretar una conciliación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "10",
+      "Determinar criterios de liberación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Total",
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Estado",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Plantilla_Documentacion": {
+    "header": [
+     "Campo",
+     "Descripción del participante"
+    ],
+    "rows": [
+     [
+      "Nombre del objeto",
+      null
+     ],
+     [
+      "Tipo de objeto",
+      null
+     ],
+     [
+      "Propósito",
+      null
+     ],
+     [
+      "Entradas",
+      null
+     ],
+     [
+      "Tipos de entrada",
+      null
+     ],
+     [
+      "Parámetros opcionales",
+      null
+     ],
+     [
+      "Valores predeterminados",
+      null
+     ],
+     [
+      "Salida",
+      null
+     ],
+     [
+      "Granularidad",
+      null
+     ],
+     [
+      "Errores esperados",
+      null
+     ],
+     [
+      "Dependencias",
+      null
+     ],
+     [
+      "Versión",
+      null
+     ],
+     [
+      "Casos de prueba",
+      null
+     ],
+     [
+      "Responsable",
+      null
+     ]
+    ],
+    "total_rows": 14
+   }
+  },
+  "M10_L06_Libro_Trabajo.xlsx": {
+   "Instrucciones": {
+    "header": [
+     "Elemento",
+     "Descripción"
+    ],
+    "rows": [
+     [
+      "Programa",
+      "Power Query para la Automatización y Preparación de Datos"
+     ],
+     [
+      "Autor e instructor",
+      "Sergio Moreno Banda"
+     ],
+     [
+      "Lección",
+      "6. Consultas dinámicas controladas"
+     ],
+     [
+      "Objetivo",
+      "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles."
+     ],
+     [
+      "Modo de uso",
+      "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion."
+     ],
+     [
+      "Criterio de aprobación",
+      "80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+     ],
+     [
+      "Resultados esperados",
+      null
+     ],
+     [
+      "Contrato explícito",
+      null
+     ],
+     [
+      "Trazabilidad de entradas y salidas",
+      null
+     ],
+     [
+      "Pruebas positivas, negativas y de frontera",
+      null
+     ],
+     [
+      "Conciliación completa",
+      null
+     ],
+     [
+      "Documentación de decisiones",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Datos_Practica": {
+    "header": [
+     "Movimiento",
+     "FechaMovimiento",
+     "CodigoMaterial",
+     "Cantidad",
+     "Unidad",
+     "Almacen",
+     "Responsable",
+     "Observacion"
+    ],
+    "rows": [
+     [
+      "MOV-001",
+      "2026-01-05",
+      "MAT-1001",
+      "125.5",
+      "PZA",
+      "A01",
+      "Ana",
+      "Entrada ordinaria"
+     ],
+     [
+      "MOV-002",
+      "2026-01-06",
+      "MAT-1002",
+      "250",
+      "KG",
+      "A02",
+      "Luis",
+      "Transferencia"
+     ],
+     [
+      "MOV-003",
+      "2026-01-07",
+      "MAT-1003",
+      "0",
+      "PZA",
+      "A01",
+      "Marta",
+      "Cantidad límite"
+     ],
+     [
+      "MOV-004",
+      "31/02/2026",
+      "MAT-1004",
+      "PENDIENTE",
+      "L",
+      "A03",
+      "Carlos",
+      "Datos inválidos"
+     ],
+     [
+      "  mov-005  ",
+      "2026-01-09",
+      " mat-1005 ",
+      "-25",
+      "PZA",
+      "A99",
+      "Rosa",
+      "Revisión funcional"
+     ],
+     [
+      "MOV-006",
+      null,
+      "MAT-1006",
+      null,
+      "KG",
+      "A02",
+      "Pedro",
+      null
+     ],
+     [
+      "MOV-007",
+      "2026-01-11",
+      "MAT-1007",
+      "1000000",
+      "PZA",
+      "A01",
+      "Elena",
+      "Límite superior"
+     ],
+     [
+      "MOV-008",
+      "2026-01-12",
+      "MAT-1008",
+      "1000000.001",
+      "PZA",
+      "A01",
+      "Jorge",
+      "Fuera de rango"
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Actividades": {
+    "header": [
+     "Id",
+     "Actividad",
+     "Evidencia requerida",
+     "Estado",
+     "Puntuación máxima",
+     "Puntuación obtenida",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "A01",
+      "Identificar entradas, parámetros y dependencias",
+      "Matriz completada",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A02",
+      "Construir o adaptar la consulta M principal",
+      "Consulta funcional",
+      "Pendiente",
+      20,
+      null,
+      null
+     ],
+     [
+      "A03",
+      "Aplicar contratos de entrada y salida",
+      "Contrato documentado",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A04",
+      "Ejecutar caso válido",
+      "Resultado esperado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A05",
+      "Ejecutar caso nulo o vacío",
+      "Diagnóstico correcto",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A06",
+      "Ejecutar caso incompatible",
+      "Error controlado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A07",
+      "Construir controles de conciliación",
+      "Diferencias en cero",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A08",
+      "Documentar versión y decisiones",
+      "Ficha técnica",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      "Total",
+      null,
+      null,
+      "Aprobado si obtiene 80 o más"
+     ]
+    ],
+    "total_rows": 9
+   },
+   "Casos_Prueba": {
+    "header": [
+     "IdCaso",
+     "Tipo",
+     "Escenario",
+     "Entrada",
+     "Resultado esperado",
+     "Resultado obtenido",
+     "Cumple",
+     "Regla cubierta",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "T01",
+      "POSITIVA",
+      "Entrada válida",
+      "25",
+      "Resultado correcto",
+      null,
+      null,
+      "Ruta principal",
+      null
+     ],
+     [
+      "T02",
+      "NEGATIVA",
+      "Valor ausente",
+      "null",
+      "Ausencia clasificada",
+      null,
+      null,
+      "Nulabilidad",
+      null
+     ],
+     [
+      "T03",
+      "NEGATIVA",
+      "Tipo incompatible",
+      "PENDIENTE",
+      "Error controlado",
+      null,
+      null,
+      "Conversión",
+      null
+     ],
+     [
+      "T04",
+      "FRONTERA",
+      "Límite inferior",
+      "0",
+      "Según regla",
+      null,
+      null,
+      "Límite inferior",
+      null
+     ],
+     [
+      "T05",
+      "FRONTERA",
+      "Límite superior",
+      "1000000",
+      "Según regla",
+      null,
+      null,
+      "Límite superior",
+      null
+     ],
+     [
+      "T06",
+      "CONTRATO",
+      "Campo o columna ausente",
+      "Esquema incompleto",
+      "Rechazo o cuarentena",
+      null,
+      null,
+      "Contrato",
+      null
+     ],
+     [
+      "T07",
+      "REGRESION",
+      "Versión aprobada",
+      "1.0.0",
+      "Mismo contrato",
+      null,
+      null,
+      "Versionado",
+      null
+     ],
+     [
+      "T08",
+      "CONCILIACION",
+      "Poblaciones completas",
+      "Totales",
+      "Diferencia 0",
+      null,
+      null,
+      "Conciliación",
+      null
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Conciliacion": {
+    "header": [
+     "Control",
+     "Total base",
+     "Componente 1",
+     "Componente 2",
+     "Componente 3",
+     "Diferencia",
+     "Resultado"
+    ],
+    "rows": [
+     [
+      "Archivos",
+      12,
+      8,
+      2,
+      2,
+      null,
+      null
+     ],
+     [
+      "Filas",
+      100,
+      80,
+      15,
+      5,
+      null,
+      null
+     ],
+     [
+      "Errores",
+      20,
+      12,
+      5,
+      3,
+      null,
+      null
+     ],
+     [
+      "Pruebas",
+      10,
+      8,
+      1,
+      1,
+      null,
+      null
+     ],
+     [
+      "Funciones",
+      6,
+      5,
+      1,
+      0,
+      null,
+      null
+     ]
+    ],
+    "total_rows": 5
+   },
+   "Evaluacion": {
+    "header": [
+     "Pregunta",
+     "Competencia",
+     "Respuesta del participante",
+     "Respuesta correcta",
+     "Puntos",
+     "Puntos obtenidos"
+    ],
+    "rows": [
+     [
+      "1",
+      "Definir el concepto central de la lección",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "2",
+      "Identificar un contrato correcto",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "3",
+      "Diferenciar error y valor nulo",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "4",
+      "Seleccionar la técnica M adecuada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "5",
+      "Interpretar una salida estructurada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "6",
+      "Aplicar una política de continuidad",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "7",
+      "Reconocer una variación de esquema",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "8",
+      "Validar una prueba negativa",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "9",
+      "Interpretar una conciliación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "10",
+      "Determinar criterios de liberación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Total",
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Estado",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Plantilla_Documentacion": {
+    "header": [
+     "Campo",
+     "Descripción del participante"
+    ],
+    "rows": [
+     [
+      "Nombre del objeto",
+      null
+     ],
+     [
+      "Tipo de objeto",
+      null
+     ],
+     [
+      "Propósito",
+      null
+     ],
+     [
+      "Entradas",
+      null
+     ],
+     [
+      "Tipos de entrada",
+      null
+     ],
+     [
+      "Parámetros opcionales",
+      null
+     ],
+     [
+      "Valores predeterminados",
+      null
+     ],
+     [
+      "Salida",
+      null
+     ],
+     [
+      "Granularidad",
+      null
+     ],
+     [
+      "Errores esperados",
+      null
+     ],
+     [
+      "Dependencias",
+      null
+     ],
+     [
+      "Versión",
+      null
+     ],
+     [
+      "Casos de prueba",
+      null
+     ],
+     [
+      "Responsable",
+      null
+     ]
+    ],
+    "total_rows": 14
+   }
+  },
+  "M10_L07_Libro_Trabajo.xlsx": {
+   "Instrucciones": {
+    "header": [
+     "Elemento",
+     "Descripción"
+    ],
+    "rows": [
+     [
+      "Programa",
+      "Power Query para la Automatización y Preparación de Datos"
+     ],
+     [
+      "Autor e instructor",
+      "Sergio Moreno Banda"
+     ],
+     [
+      "Lección",
+      "7. Introducción a funciones personalizadas"
+     ],
+     [
+      "Objetivo",
+      "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles."
+     ],
+     [
+      "Modo de uso",
+      "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion."
+     ],
+     [
+      "Criterio de aprobación",
+      "80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+     ],
+     [
+      "Resultados esperados",
+      null
+     ],
+     [
+      "Contrato explícito",
+      null
+     ],
+     [
+      "Trazabilidad de entradas y salidas",
+      null
+     ],
+     [
+      "Pruebas positivas, negativas y de frontera",
+      null
+     ],
+     [
+      "Conciliación completa",
+      null
+     ],
+     [
+      "Documentación de decisiones",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Datos_Practica": {
+    "header": [
+     "Movimiento",
+     "FechaMovimiento",
+     "CodigoMaterial",
+     "Cantidad",
+     "Unidad",
+     "Almacen",
+     "Responsable",
+     "Observacion"
+    ],
+    "rows": [
+     [
+      "MOV-001",
+      "2026-01-05",
+      "MAT-1001",
+      "125.5",
+      "PZA",
+      "A01",
+      "Ana",
+      "Entrada ordinaria"
+     ],
+     [
+      "MOV-002",
+      "2026-01-06",
+      "MAT-1002",
+      "250",
+      "KG",
+      "A02",
+      "Luis",
+      "Transferencia"
+     ],
+     [
+      "MOV-003",
+      "2026-01-07",
+      "MAT-1003",
+      "0",
+      "PZA",
+      "A01",
+      "Marta",
+      "Cantidad límite"
+     ],
+     [
+      "MOV-004",
+      "31/02/2026",
+      "MAT-1004",
+      "PENDIENTE",
+      "L",
+      "A03",
+      "Carlos",
+      "Datos inválidos"
+     ],
+     [
+      "  mov-005  ",
+      "2026-01-09",
+      " mat-1005 ",
+      "-25",
+      "PZA",
+      "A99",
+      "Rosa",
+      "Revisión funcional"
+     ],
+     [
+      "MOV-006",
+      null,
+      "MAT-1006",
+      null,
+      "KG",
+      "A02",
+      "Pedro",
+      null
+     ],
+     [
+      "MOV-007",
+      "2026-01-11",
+      "MAT-1007",
+      "1000000",
+      "PZA",
+      "A01",
+      "Elena",
+      "Límite superior"
+     ],
+     [
+      "MOV-008",
+      "2026-01-12",
+      "MAT-1008",
+      "1000000.001",
+      "PZA",
+      "A01",
+      "Jorge",
+      "Fuera de rango"
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Actividades": {
+    "header": [
+     "Id",
+     "Actividad",
+     "Evidencia requerida",
+     "Estado",
+     "Puntuación máxima",
+     "Puntuación obtenida",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "A01",
+      "Identificar entradas, parámetros y dependencias",
+      "Matriz completada",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A02",
+      "Construir o adaptar la consulta M principal",
+      "Consulta funcional",
+      "Pendiente",
+      20,
+      null,
+      null
+     ],
+     [
+      "A03",
+      "Aplicar contratos de entrada y salida",
+      "Contrato documentado",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A04",
+      "Ejecutar caso válido",
+      "Resultado esperado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A05",
+      "Ejecutar caso nulo o vacío",
+      "Diagnóstico correcto",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A06",
+      "Ejecutar caso incompatible",
+      "Error controlado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A07",
+      "Construir controles de conciliación",
+      "Diferencias en cero",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A08",
+      "Documentar versión y decisiones",
+      "Ficha técnica",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      "Total",
+      null,
+      null,
+      "Aprobado si obtiene 80 o más"
+     ]
+    ],
+    "total_rows": 9
+   },
+   "Casos_Prueba": {
+    "header": [
+     "IdCaso",
+     "Tipo",
+     "Escenario",
+     "Entrada",
+     "Resultado esperado",
+     "Resultado obtenido",
+     "Cumple",
+     "Regla cubierta",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "T01",
+      "POSITIVA",
+      "Entrada válida",
+      "25",
+      "Resultado correcto",
+      null,
+      null,
+      "Ruta principal",
+      null
+     ],
+     [
+      "T02",
+      "NEGATIVA",
+      "Valor ausente",
+      "null",
+      "Ausencia clasificada",
+      null,
+      null,
+      "Nulabilidad",
+      null
+     ],
+     [
+      "T03",
+      "NEGATIVA",
+      "Tipo incompatible",
+      "PENDIENTE",
+      "Error controlado",
+      null,
+      null,
+      "Conversión",
+      null
+     ],
+     [
+      "T04",
+      "FRONTERA",
+      "Límite inferior",
+      "0",
+      "Según regla",
+      null,
+      null,
+      "Límite inferior",
+      null
+     ],
+     [
+      "T05",
+      "FRONTERA",
+      "Límite superior",
+      "1000000",
+      "Según regla",
+      null,
+      null,
+      "Límite superior",
+      null
+     ],
+     [
+      "T06",
+      "CONTRATO",
+      "Campo o columna ausente",
+      "Esquema incompleto",
+      "Rechazo o cuarentena",
+      null,
+      null,
+      "Contrato",
+      null
+     ],
+     [
+      "T07",
+      "REGRESION",
+      "Versión aprobada",
+      "1.0.0",
+      "Mismo contrato",
+      null,
+      null,
+      "Versionado",
+      null
+     ],
+     [
+      "T08",
+      "CONCILIACION",
+      "Poblaciones completas",
+      "Totales",
+      "Diferencia 0",
+      null,
+      null,
+      "Conciliación",
+      null
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Conciliacion": {
+    "header": [
+     "Control",
+     "Total base",
+     "Componente 1",
+     "Componente 2",
+     "Componente 3",
+     "Diferencia",
+     "Resultado"
+    ],
+    "rows": [
+     [
+      "Archivos",
+      12,
+      8,
+      2,
+      2,
+      null,
+      null
+     ],
+     [
+      "Filas",
+      100,
+      80,
+      15,
+      5,
+      null,
+      null
+     ],
+     [
+      "Errores",
+      20,
+      12,
+      5,
+      3,
+      null,
+      null
+     ],
+     [
+      "Pruebas",
+      10,
+      8,
+      1,
+      1,
+      null,
+      null
+     ],
+     [
+      "Funciones",
+      6,
+      5,
+      1,
+      0,
+      null,
+      null
+     ]
+    ],
+    "total_rows": 5
+   },
+   "Evaluacion": {
+    "header": [
+     "Pregunta",
+     "Competencia",
+     "Respuesta del participante",
+     "Respuesta correcta",
+     "Puntos",
+     "Puntos obtenidos"
+    ],
+    "rows": [
+     [
+      "1",
+      "Definir el concepto central de la lección",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "2",
+      "Identificar un contrato correcto",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "3",
+      "Diferenciar error y valor nulo",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "4",
+      "Seleccionar la técnica M adecuada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "5",
+      "Interpretar una salida estructurada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "6",
+      "Aplicar una política de continuidad",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "7",
+      "Reconocer una variación de esquema",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "8",
+      "Validar una prueba negativa",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "9",
+      "Interpretar una conciliación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "10",
+      "Determinar criterios de liberación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Total",
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Estado",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Plantilla_Documentacion": {
+    "header": [
+     "Campo",
+     "Descripción del participante"
+    ],
+    "rows": [
+     [
+      "Nombre del objeto",
+      null
+     ],
+     [
+      "Tipo de objeto",
+      null
+     ],
+     [
+      "Propósito",
+      null
+     ],
+     [
+      "Entradas",
+      null
+     ],
+     [
+      "Tipos de entrada",
+      null
+     ],
+     [
+      "Parámetros opcionales",
+      null
+     ],
+     [
+      "Valores predeterminados",
+      null
+     ],
+     [
+      "Salida",
+      null
+     ],
+     [
+      "Granularidad",
+      null
+     ],
+     [
+      "Errores esperados",
+      null
+     ],
+     [
+      "Dependencias",
+      null
+     ],
+     [
+      "Versión",
+      null
+     ],
+     [
+      "Casos de prueba",
+      null
+     ],
+     [
+      "Responsable",
+      null
+     ]
+    ],
+    "total_rows": 14
+   }
+  },
+  "M10_L08_Libro_Trabajo.xlsx": {
+   "Instrucciones": {
+    "header": [
+     "Elemento",
+     "Descripción"
+    ],
+    "rows": [
+     [
+      "Programa",
+      "Power Query para la Automatización y Preparación de Datos"
+     ],
+     [
+      "Autor e instructor",
+      "Sergio Moreno Banda"
+     ],
+     [
+      "Lección",
+      "8. Contratos de entrada y parámetros de funciones"
+     ],
+     [
+      "Objetivo",
+      "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles."
+     ],
+     [
+      "Modo de uso",
+      "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion."
+     ],
+     [
+      "Criterio de aprobación",
+      "80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+     ],
+     [
+      "Resultados esperados",
+      null
+     ],
+     [
+      "Contrato explícito",
+      null
+     ],
+     [
+      "Trazabilidad de entradas y salidas",
+      null
+     ],
+     [
+      "Pruebas positivas, negativas y de frontera",
+      null
+     ],
+     [
+      "Conciliación completa",
+      null
+     ],
+     [
+      "Documentación de decisiones",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Datos_Practica": {
+    "header": [
+     "Movimiento",
+     "FechaMovimiento",
+     "CodigoMaterial",
+     "Cantidad",
+     "Unidad",
+     "Almacen",
+     "Responsable",
+     "Observacion"
+    ],
+    "rows": [
+     [
+      "MOV-001",
+      "2026-01-05",
+      "MAT-1001",
+      "125.5",
+      "PZA",
+      "A01",
+      "Ana",
+      "Entrada ordinaria"
+     ],
+     [
+      "MOV-002",
+      "2026-01-06",
+      "MAT-1002",
+      "250",
+      "KG",
+      "A02",
+      "Luis",
+      "Transferencia"
+     ],
+     [
+      "MOV-003",
+      "2026-01-07",
+      "MAT-1003",
+      "0",
+      "PZA",
+      "A01",
+      "Marta",
+      "Cantidad límite"
+     ],
+     [
+      "MOV-004",
+      "31/02/2026",
+      "MAT-1004",
+      "PENDIENTE",
+      "L",
+      "A03",
+      "Carlos",
+      "Datos inválidos"
+     ],
+     [
+      "  mov-005  ",
+      "2026-01-09",
+      " mat-1005 ",
+      "-25",
+      "PZA",
+      "A99",
+      "Rosa",
+      "Revisión funcional"
+     ],
+     [
+      "MOV-006",
+      null,
+      "MAT-1006",
+      null,
+      "KG",
+      "A02",
+      "Pedro",
+      null
+     ],
+     [
+      "MOV-007",
+      "2026-01-11",
+      "MAT-1007",
+      "1000000",
+      "PZA",
+      "A01",
+      "Elena",
+      "Límite superior"
+     ],
+     [
+      "MOV-008",
+      "2026-01-12",
+      "MAT-1008",
+      "1000000.001",
+      "PZA",
+      "A01",
+      "Jorge",
+      "Fuera de rango"
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Actividades": {
+    "header": [
+     "Id",
+     "Actividad",
+     "Evidencia requerida",
+     "Estado",
+     "Puntuación máxima",
+     "Puntuación obtenida",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "A01",
+      "Identificar entradas, parámetros y dependencias",
+      "Matriz completada",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A02",
+      "Construir o adaptar la consulta M principal",
+      "Consulta funcional",
+      "Pendiente",
+      20,
+      null,
+      null
+     ],
+     [
+      "A03",
+      "Aplicar contratos de entrada y salida",
+      "Contrato documentado",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A04",
+      "Ejecutar caso válido",
+      "Resultado esperado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A05",
+      "Ejecutar caso nulo o vacío",
+      "Diagnóstico correcto",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A06",
+      "Ejecutar caso incompatible",
+      "Error controlado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A07",
+      "Construir controles de conciliación",
+      "Diferencias en cero",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A08",
+      "Documentar versión y decisiones",
+      "Ficha técnica",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      "Total",
+      null,
+      null,
+      "Aprobado si obtiene 80 o más"
+     ]
+    ],
+    "total_rows": 9
+   },
+   "Casos_Prueba": {
+    "header": [
+     "IdCaso",
+     "Tipo",
+     "Escenario",
+     "Entrada",
+     "Resultado esperado",
+     "Resultado obtenido",
+     "Cumple",
+     "Regla cubierta",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "T01",
+      "POSITIVA",
+      "Entrada válida",
+      "25",
+      "Resultado correcto",
+      null,
+      null,
+      "Ruta principal",
+      null
+     ],
+     [
+      "T02",
+      "NEGATIVA",
+      "Valor ausente",
+      "null",
+      "Ausencia clasificada",
+      null,
+      null,
+      "Nulabilidad",
+      null
+     ],
+     [
+      "T03",
+      "NEGATIVA",
+      "Tipo incompatible",
+      "PENDIENTE",
+      "Error controlado",
+      null,
+      null,
+      "Conversión",
+      null
+     ],
+     [
+      "T04",
+      "FRONTERA",
+      "Límite inferior",
+      "0",
+      "Según regla",
+      null,
+      null,
+      "Límite inferior",
+      null
+     ],
+     [
+      "T05",
+      "FRONTERA",
+      "Límite superior",
+      "1000000",
+      "Según regla",
+      null,
+      null,
+      "Límite superior",
+      null
+     ],
+     [
+      "T06",
+      "CONTRATO",
+      "Campo o columna ausente",
+      "Esquema incompleto",
+      "Rechazo o cuarentena",
+      null,
+      null,
+      "Contrato",
+      null
+     ],
+     [
+      "T07",
+      "REGRESION",
+      "Versión aprobada",
+      "1.0.0",
+      "Mismo contrato",
+      null,
+      null,
+      "Versionado",
+      null
+     ],
+     [
+      "T08",
+      "CONCILIACION",
+      "Poblaciones completas",
+      "Totales",
+      "Diferencia 0",
+      null,
+      null,
+      "Conciliación",
+      null
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Conciliacion": {
+    "header": [
+     "Control",
+     "Total base",
+     "Componente 1",
+     "Componente 2",
+     "Componente 3",
+     "Diferencia",
+     "Resultado"
+    ],
+    "rows": [
+     [
+      "Archivos",
+      12,
+      8,
+      2,
+      2,
+      null,
+      null
+     ],
+     [
+      "Filas",
+      100,
+      80,
+      15,
+      5,
+      null,
+      null
+     ],
+     [
+      "Errores",
+      20,
+      12,
+      5,
+      3,
+      null,
+      null
+     ],
+     [
+      "Pruebas",
+      10,
+      8,
+      1,
+      1,
+      null,
+      null
+     ],
+     [
+      "Funciones",
+      6,
+      5,
+      1,
+      0,
+      null,
+      null
+     ]
+    ],
+    "total_rows": 5
+   },
+   "Evaluacion": {
+    "header": [
+     "Pregunta",
+     "Competencia",
+     "Respuesta del participante",
+     "Respuesta correcta",
+     "Puntos",
+     "Puntos obtenidos"
+    ],
+    "rows": [
+     [
+      "1",
+      "Definir el concepto central de la lección",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "2",
+      "Identificar un contrato correcto",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "3",
+      "Diferenciar error y valor nulo",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "4",
+      "Seleccionar la técnica M adecuada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "5",
+      "Interpretar una salida estructurada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "6",
+      "Aplicar una política de continuidad",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "7",
+      "Reconocer una variación de esquema",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "8",
+      "Validar una prueba negativa",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "9",
+      "Interpretar una conciliación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "10",
+      "Determinar criterios de liberación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Total",
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Estado",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Plantilla_Documentacion": {
+    "header": [
+     "Campo",
+     "Descripción del participante"
+    ],
+    "rows": [
+     [
+      "Nombre del objeto",
+      null
+     ],
+     [
+      "Tipo de objeto",
+      null
+     ],
+     [
+      "Propósito",
+      null
+     ],
+     [
+      "Entradas",
+      null
+     ],
+     [
+      "Tipos de entrada",
+      null
+     ],
+     [
+      "Parámetros opcionales",
+      null
+     ],
+     [
+      "Valores predeterminados",
+      null
+     ],
+     [
+      "Salida",
+      null
+     ],
+     [
+      "Granularidad",
+      null
+     ],
+     [
+      "Errores esperados",
+      null
+     ],
+     [
+      "Dependencias",
+      null
+     ],
+     [
+      "Versión",
+      null
+     ],
+     [
+      "Casos de prueba",
+      null
+     ],
+     [
+      "Responsable",
+      null
+     ]
+    ],
+    "total_rows": 14
+   }
+  },
+  "M10_L09_Libro_Trabajo.xlsx": {
+   "Instrucciones": {
+    "header": [
+     "Elemento",
+     "Descripción"
+    ],
+    "rows": [
+     [
+      "Programa",
+      "Power Query para la Automatización y Preparación de Datos"
+     ],
+     [
+      "Autor e instructor",
+      "Sergio Moreno Banda"
+     ],
+     [
+      "Lección",
+      "9. Contratos y valores de salida"
+     ],
+     [
+      "Objetivo",
+      "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles."
+     ],
+     [
+      "Modo de uso",
+      "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion."
+     ],
+     [
+      "Criterio de aprobación",
+      "80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+     ],
+     [
+      "Resultados esperados",
+      null
+     ],
+     [
+      "Contrato explícito",
+      null
+     ],
+     [
+      "Trazabilidad de entradas y salidas",
+      null
+     ],
+     [
+      "Pruebas positivas, negativas y de frontera",
+      null
+     ],
+     [
+      "Conciliación completa",
+      null
+     ],
+     [
+      "Documentación de decisiones",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Datos_Practica": {
+    "header": [
+     "Movimiento",
+     "FechaMovimiento",
+     "CodigoMaterial",
+     "Cantidad",
+     "Unidad",
+     "Almacen",
+     "Responsable",
+     "Observacion"
+    ],
+    "rows": [
+     [
+      "MOV-001",
+      "2026-01-05",
+      "MAT-1001",
+      "125.5",
+      "PZA",
+      "A01",
+      "Ana",
+      "Entrada ordinaria"
+     ],
+     [
+      "MOV-002",
+      "2026-01-06",
+      "MAT-1002",
+      "250",
+      "KG",
+      "A02",
+      "Luis",
+      "Transferencia"
+     ],
+     [
+      "MOV-003",
+      "2026-01-07",
+      "MAT-1003",
+      "0",
+      "PZA",
+      "A01",
+      "Marta",
+      "Cantidad límite"
+     ],
+     [
+      "MOV-004",
+      "31/02/2026",
+      "MAT-1004",
+      "PENDIENTE",
+      "L",
+      "A03",
+      "Carlos",
+      "Datos inválidos"
+     ],
+     [
+      "  mov-005  ",
+      "2026-01-09",
+      " mat-1005 ",
+      "-25",
+      "PZA",
+      "A99",
+      "Rosa",
+      "Revisión funcional"
+     ],
+     [
+      "MOV-006",
+      null,
+      "MAT-1006",
+      null,
+      "KG",
+      "A02",
+      "Pedro",
+      null
+     ],
+     [
+      "MOV-007",
+      "2026-01-11",
+      "MAT-1007",
+      "1000000",
+      "PZA",
+      "A01",
+      "Elena",
+      "Límite superior"
+     ],
+     [
+      "MOV-008",
+      "2026-01-12",
+      "MAT-1008",
+      "1000000.001",
+      "PZA",
+      "A01",
+      "Jorge",
+      "Fuera de rango"
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Actividades": {
+    "header": [
+     "Id",
+     "Actividad",
+     "Evidencia requerida",
+     "Estado",
+     "Puntuación máxima",
+     "Puntuación obtenida",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "A01",
+      "Identificar entradas, parámetros y dependencias",
+      "Matriz completada",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A02",
+      "Construir o adaptar la consulta M principal",
+      "Consulta funcional",
+      "Pendiente",
+      20,
+      null,
+      null
+     ],
+     [
+      "A03",
+      "Aplicar contratos de entrada y salida",
+      "Contrato documentado",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A04",
+      "Ejecutar caso válido",
+      "Resultado esperado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A05",
+      "Ejecutar caso nulo o vacío",
+      "Diagnóstico correcto",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A06",
+      "Ejecutar caso incompatible",
+      "Error controlado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A07",
+      "Construir controles de conciliación",
+      "Diferencias en cero",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A08",
+      "Documentar versión y decisiones",
+      "Ficha técnica",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      "Total",
+      null,
+      null,
+      "Aprobado si obtiene 80 o más"
+     ]
+    ],
+    "total_rows": 9
+   },
+   "Casos_Prueba": {
+    "header": [
+     "IdCaso",
+     "Tipo",
+     "Escenario",
+     "Entrada",
+     "Resultado esperado",
+     "Resultado obtenido",
+     "Cumple",
+     "Regla cubierta",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "T01",
+      "POSITIVA",
+      "Entrada válida",
+      "25",
+      "Resultado correcto",
+      null,
+      null,
+      "Ruta principal",
+      null
+     ],
+     [
+      "T02",
+      "NEGATIVA",
+      "Valor ausente",
+      "null",
+      "Ausencia clasificada",
+      null,
+      null,
+      "Nulabilidad",
+      null
+     ],
+     [
+      "T03",
+      "NEGATIVA",
+      "Tipo incompatible",
+      "PENDIENTE",
+      "Error controlado",
+      null,
+      null,
+      "Conversión",
+      null
+     ],
+     [
+      "T04",
+      "FRONTERA",
+      "Límite inferior",
+      "0",
+      "Según regla",
+      null,
+      null,
+      "Límite inferior",
+      null
+     ],
+     [
+      "T05",
+      "FRONTERA",
+      "Límite superior",
+      "1000000",
+      "Según regla",
+      null,
+      null,
+      "Límite superior",
+      null
+     ],
+     [
+      "T06",
+      "CONTRATO",
+      "Campo o columna ausente",
+      "Esquema incompleto",
+      "Rechazo o cuarentena",
+      null,
+      null,
+      "Contrato",
+      null
+     ],
+     [
+      "T07",
+      "REGRESION",
+      "Versión aprobada",
+      "1.0.0",
+      "Mismo contrato",
+      null,
+      null,
+      "Versionado",
+      null
+     ],
+     [
+      "T08",
+      "CONCILIACION",
+      "Poblaciones completas",
+      "Totales",
+      "Diferencia 0",
+      null,
+      null,
+      "Conciliación",
+      null
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Conciliacion": {
+    "header": [
+     "Control",
+     "Total base",
+     "Componente 1",
+     "Componente 2",
+     "Componente 3",
+     "Diferencia",
+     "Resultado"
+    ],
+    "rows": [
+     [
+      "Archivos",
+      12,
+      8,
+      2,
+      2,
+      null,
+      null
+     ],
+     [
+      "Filas",
+      100,
+      80,
+      15,
+      5,
+      null,
+      null
+     ],
+     [
+      "Errores",
+      20,
+      12,
+      5,
+      3,
+      null,
+      null
+     ],
+     [
+      "Pruebas",
+      10,
+      8,
+      1,
+      1,
+      null,
+      null
+     ],
+     [
+      "Funciones",
+      6,
+      5,
+      1,
+      0,
+      null,
+      null
+     ]
+    ],
+    "total_rows": 5
+   },
+   "Evaluacion": {
+    "header": [
+     "Pregunta",
+     "Competencia",
+     "Respuesta del participante",
+     "Respuesta correcta",
+     "Puntos",
+     "Puntos obtenidos"
+    ],
+    "rows": [
+     [
+      "1",
+      "Definir el concepto central de la lección",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "2",
+      "Identificar un contrato correcto",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "3",
+      "Diferenciar error y valor nulo",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "4",
+      "Seleccionar la técnica M adecuada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "5",
+      "Interpretar una salida estructurada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "6",
+      "Aplicar una política de continuidad",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "7",
+      "Reconocer una variación de esquema",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "8",
+      "Validar una prueba negativa",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "9",
+      "Interpretar una conciliación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "10",
+      "Determinar criterios de liberación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Total",
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Estado",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Plantilla_Documentacion": {
+    "header": [
+     "Campo",
+     "Descripción del participante"
+    ],
+    "rows": [
+     [
+      "Nombre del objeto",
+      null
+     ],
+     [
+      "Tipo de objeto",
+      null
+     ],
+     [
+      "Propósito",
+      null
+     ],
+     [
+      "Entradas",
+      null
+     ],
+     [
+      "Tipos de entrada",
+      null
+     ],
+     [
+      "Parámetros opcionales",
+      null
+     ],
+     [
+      "Valores predeterminados",
+      null
+     ],
+     [
+      "Salida",
+      null
+     ],
+     [
+      "Granularidad",
+      null
+     ],
+     [
+      "Errores esperados",
+      null
+     ],
+     [
+      "Dependencias",
+      null
+     ],
+     [
+      "Versión",
+      null
+     ],
+     [
+      "Casos de prueba",
+      null
+     ],
+     [
+      "Responsable",
+      null
+     ]
+    ],
+    "total_rows": 14
+   }
+  },
+  "M10_L10_Libro_Trabajo.xlsx": {
+   "Instrucciones": {
+    "header": [
+     "Elemento",
+     "Descripción"
+    ],
+    "rows": [
+     [
+      "Programa",
+      "Power Query para la Automatización y Preparación de Datos"
+     ],
+     [
+      "Autor e instructor",
+      "Sergio Moreno Banda"
+     ],
+     [
+      "Lección",
+      "10. Conversión de una consulta en función"
+     ],
+     [
+      "Objetivo",
+      "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles."
+     ],
+     [
+      "Modo de uso",
+      "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion."
+     ],
+     [
+      "Criterio de aprobación",
+      "80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+     ],
+     [
+      "Resultados esperados",
+      null
+     ],
+     [
+      "Contrato explícito",
+      null
+     ],
+     [
+      "Trazabilidad de entradas y salidas",
+      null
+     ],
+     [
+      "Pruebas positivas, negativas y de frontera",
+      null
+     ],
+     [
+      "Conciliación completa",
+      null
+     ],
+     [
+      "Documentación de decisiones",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Datos_Practica": {
+    "header": [
+     "Movimiento",
+     "FechaMovimiento",
+     "CodigoMaterial",
+     "Cantidad",
+     "Unidad",
+     "Almacen",
+     "Responsable",
+     "Observacion"
+    ],
+    "rows": [
+     [
+      "MOV-001",
+      "2026-01-05",
+      "MAT-1001",
+      "125.5",
+      "PZA",
+      "A01",
+      "Ana",
+      "Entrada ordinaria"
+     ],
+     [
+      "MOV-002",
+      "2026-01-06",
+      "MAT-1002",
+      "250",
+      "KG",
+      "A02",
+      "Luis",
+      "Transferencia"
+     ],
+     [
+      "MOV-003",
+      "2026-01-07",
+      "MAT-1003",
+      "0",
+      "PZA",
+      "A01",
+      "Marta",
+      "Cantidad límite"
+     ],
+     [
+      "MOV-004",
+      "31/02/2026",
+      "MAT-1004",
+      "PENDIENTE",
+      "L",
+      "A03",
+      "Carlos",
+      "Datos inválidos"
+     ],
+     [
+      "  mov-005  ",
+      "2026-01-09",
+      " mat-1005 ",
+      "-25",
+      "PZA",
+      "A99",
+      "Rosa",
+      "Revisión funcional"
+     ],
+     [
+      "MOV-006",
+      null,
+      "MAT-1006",
+      null,
+      "KG",
+      "A02",
+      "Pedro",
+      null
+     ],
+     [
+      "MOV-007",
+      "2026-01-11",
+      "MAT-1007",
+      "1000000",
+      "PZA",
+      "A01",
+      "Elena",
+      "Límite superior"
+     ],
+     [
+      "MOV-008",
+      "2026-01-12",
+      "MAT-1008",
+      "1000000.001",
+      "PZA",
+      "A01",
+      "Jorge",
+      "Fuera de rango"
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Actividades": {
+    "header": [
+     "Id",
+     "Actividad",
+     "Evidencia requerida",
+     "Estado",
+     "Puntuación máxima",
+     "Puntuación obtenida",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "A01",
+      "Identificar entradas, parámetros y dependencias",
+      "Matriz completada",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A02",
+      "Construir o adaptar la consulta M principal",
+      "Consulta funcional",
+      "Pendiente",
+      20,
+      null,
+      null
+     ],
+     [
+      "A03",
+      "Aplicar contratos de entrada y salida",
+      "Contrato documentado",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A04",
+      "Ejecutar caso válido",
+      "Resultado esperado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A05",
+      "Ejecutar caso nulo o vacío",
+      "Diagnóstico correcto",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A06",
+      "Ejecutar caso incompatible",
+      "Error controlado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A07",
+      "Construir controles de conciliación",
+      "Diferencias en cero",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A08",
+      "Documentar versión y decisiones",
+      "Ficha técnica",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      "Total",
+      null,
+      null,
+      "Aprobado si obtiene 80 o más"
+     ]
+    ],
+    "total_rows": 9
+   },
+   "Casos_Prueba": {
+    "header": [
+     "IdCaso",
+     "Tipo",
+     "Escenario",
+     "Entrada",
+     "Resultado esperado",
+     "Resultado obtenido",
+     "Cumple",
+     "Regla cubierta",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "T01",
+      "POSITIVA",
+      "Entrada válida",
+      "25",
+      "Resultado correcto",
+      null,
+      null,
+      "Ruta principal",
+      null
+     ],
+     [
+      "T02",
+      "NEGATIVA",
+      "Valor ausente",
+      "null",
+      "Ausencia clasificada",
+      null,
+      null,
+      "Nulabilidad",
+      null
+     ],
+     [
+      "T03",
+      "NEGATIVA",
+      "Tipo incompatible",
+      "PENDIENTE",
+      "Error controlado",
+      null,
+      null,
+      "Conversión",
+      null
+     ],
+     [
+      "T04",
+      "FRONTERA",
+      "Límite inferior",
+      "0",
+      "Según regla",
+      null,
+      null,
+      "Límite inferior",
+      null
+     ],
+     [
+      "T05",
+      "FRONTERA",
+      "Límite superior",
+      "1000000",
+      "Según regla",
+      null,
+      null,
+      "Límite superior",
+      null
+     ],
+     [
+      "T06",
+      "CONTRATO",
+      "Campo o columna ausente",
+      "Esquema incompleto",
+      "Rechazo o cuarentena",
+      null,
+      null,
+      "Contrato",
+      null
+     ],
+     [
+      "T07",
+      "REGRESION",
+      "Versión aprobada",
+      "1.0.0",
+      "Mismo contrato",
+      null,
+      null,
+      "Versionado",
+      null
+     ],
+     [
+      "T08",
+      "CONCILIACION",
+      "Poblaciones completas",
+      "Totales",
+      "Diferencia 0",
+      null,
+      null,
+      "Conciliación",
+      null
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Conciliacion": {
+    "header": [
+     "Control",
+     "Total base",
+     "Componente 1",
+     "Componente 2",
+     "Componente 3",
+     "Diferencia",
+     "Resultado"
+    ],
+    "rows": [
+     [
+      "Archivos",
+      12,
+      8,
+      2,
+      2,
+      null,
+      null
+     ],
+     [
+      "Filas",
+      100,
+      80,
+      15,
+      5,
+      null,
+      null
+     ],
+     [
+      "Errores",
+      20,
+      12,
+      5,
+      3,
+      null,
+      null
+     ],
+     [
+      "Pruebas",
+      10,
+      8,
+      1,
+      1,
+      null,
+      null
+     ],
+     [
+      "Funciones",
+      6,
+      5,
+      1,
+      0,
+      null,
+      null
+     ]
+    ],
+    "total_rows": 5
+   },
+   "Evaluacion": {
+    "header": [
+     "Pregunta",
+     "Competencia",
+     "Respuesta del participante",
+     "Respuesta correcta",
+     "Puntos",
+     "Puntos obtenidos"
+    ],
+    "rows": [
+     [
+      "1",
+      "Definir el concepto central de la lección",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "2",
+      "Identificar un contrato correcto",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "3",
+      "Diferenciar error y valor nulo",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "4",
+      "Seleccionar la técnica M adecuada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "5",
+      "Interpretar una salida estructurada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "6",
+      "Aplicar una política de continuidad",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "7",
+      "Reconocer una variación de esquema",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "8",
+      "Validar una prueba negativa",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "9",
+      "Interpretar una conciliación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "10",
+      "Determinar criterios de liberación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Total",
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Estado",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Plantilla_Documentacion": {
+    "header": [
+     "Campo",
+     "Descripción del participante"
+    ],
+    "rows": [
+     [
+      "Nombre del objeto",
+      null
+     ],
+     [
+      "Tipo de objeto",
+      null
+     ],
+     [
+      "Propósito",
+      null
+     ],
+     [
+      "Entradas",
+      null
+     ],
+     [
+      "Tipos de entrada",
+      null
+     ],
+     [
+      "Parámetros opcionales",
+      null
+     ],
+     [
+      "Valores predeterminados",
+      null
+     ],
+     [
+      "Salida",
+      null
+     ],
+     [
+      "Granularidad",
+      null
+     ],
+     [
+      "Errores esperados",
+      null
+     ],
+     [
+      "Dependencias",
+      null
+     ],
+     [
+      "Versión",
+      null
+     ],
+     [
+      "Casos de prueba",
+      null
+     ],
+     [
+      "Responsable",
+      null
+     ]
+    ],
+    "total_rows": 14
+   }
+  },
+  "M10_L11_Libro_Trabajo.xlsx": {
+   "Instrucciones": {
+    "header": [
+     "Elemento",
+     "Descripción"
+    ],
+    "rows": [
+     [
+      "Programa",
+      "Power Query para la Automatización y Preparación de Datos"
+     ],
+     [
+      "Autor e instructor",
+      "Sergio Moreno Banda"
+     ],
+     [
+      "Lección",
+      "11. Invocación, pruebas unitarias y documentación"
+     ],
+     [
+      "Objetivo",
+      "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles."
+     ],
+     [
+      "Modo de uso",
+      "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion."
+     ],
+     [
+      "Criterio de aprobación",
+      "80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+     ],
+     [
+      "Resultados esperados",
+      null
+     ],
+     [
+      "Contrato explícito",
+      null
+     ],
+     [
+      "Trazabilidad de entradas y salidas",
+      null
+     ],
+     [
+      "Pruebas positivas, negativas y de frontera",
+      null
+     ],
+     [
+      "Conciliación completa",
+      null
+     ],
+     [
+      "Documentación de decisiones",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Datos_Practica": {
+    "header": [
+     "Movimiento",
+     "FechaMovimiento",
+     "CodigoMaterial",
+     "Cantidad",
+     "Unidad",
+     "Almacen",
+     "Responsable",
+     "Observacion"
+    ],
+    "rows": [
+     [
+      "MOV-001",
+      "2026-01-05",
+      "MAT-1001",
+      "125.5",
+      "PZA",
+      "A01",
+      "Ana",
+      "Entrada ordinaria"
+     ],
+     [
+      "MOV-002",
+      "2026-01-06",
+      "MAT-1002",
+      "250",
+      "KG",
+      "A02",
+      "Luis",
+      "Transferencia"
+     ],
+     [
+      "MOV-003",
+      "2026-01-07",
+      "MAT-1003",
+      "0",
+      "PZA",
+      "A01",
+      "Marta",
+      "Cantidad límite"
+     ],
+     [
+      "MOV-004",
+      "31/02/2026",
+      "MAT-1004",
+      "PENDIENTE",
+      "L",
+      "A03",
+      "Carlos",
+      "Datos inválidos"
+     ],
+     [
+      "  mov-005  ",
+      "2026-01-09",
+      " mat-1005 ",
+      "-25",
+      "PZA",
+      "A99",
+      "Rosa",
+      "Revisión funcional"
+     ],
+     [
+      "MOV-006",
+      null,
+      "MAT-1006",
+      null,
+      "KG",
+      "A02",
+      "Pedro",
+      null
+     ],
+     [
+      "MOV-007",
+      "2026-01-11",
+      "MAT-1007",
+      "1000000",
+      "PZA",
+      "A01",
+      "Elena",
+      "Límite superior"
+     ],
+     [
+      "MOV-008",
+      "2026-01-12",
+      "MAT-1008",
+      "1000000.001",
+      "PZA",
+      "A01",
+      "Jorge",
+      "Fuera de rango"
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Actividades": {
+    "header": [
+     "Id",
+     "Actividad",
+     "Evidencia requerida",
+     "Estado",
+     "Puntuación máxima",
+     "Puntuación obtenida",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "A01",
+      "Identificar entradas, parámetros y dependencias",
+      "Matriz completada",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A02",
+      "Construir o adaptar la consulta M principal",
+      "Consulta funcional",
+      "Pendiente",
+      20,
+      null,
+      null
+     ],
+     [
+      "A03",
+      "Aplicar contratos de entrada y salida",
+      "Contrato documentado",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A04",
+      "Ejecutar caso válido",
+      "Resultado esperado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A05",
+      "Ejecutar caso nulo o vacío",
+      "Diagnóstico correcto",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A06",
+      "Ejecutar caso incompatible",
+      "Error controlado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A07",
+      "Construir controles de conciliación",
+      "Diferencias en cero",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A08",
+      "Documentar versión y decisiones",
+      "Ficha técnica",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      "Total",
+      null,
+      null,
+      "Aprobado si obtiene 80 o más"
+     ]
+    ],
+    "total_rows": 9
+   },
+   "Casos_Prueba": {
+    "header": [
+     "IdCaso",
+     "Tipo",
+     "Escenario",
+     "Entrada",
+     "Resultado esperado",
+     "Resultado obtenido",
+     "Cumple",
+     "Regla cubierta",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "T01",
+      "POSITIVA",
+      "Entrada válida",
+      "25",
+      "Resultado correcto",
+      null,
+      null,
+      "Ruta principal",
+      null
+     ],
+     [
+      "T02",
+      "NEGATIVA",
+      "Valor ausente",
+      "null",
+      "Ausencia clasificada",
+      null,
+      null,
+      "Nulabilidad",
+      null
+     ],
+     [
+      "T03",
+      "NEGATIVA",
+      "Tipo incompatible",
+      "PENDIENTE",
+      "Error controlado",
+      null,
+      null,
+      "Conversión",
+      null
+     ],
+     [
+      "T04",
+      "FRONTERA",
+      "Límite inferior",
+      "0",
+      "Según regla",
+      null,
+      null,
+      "Límite inferior",
+      null
+     ],
+     [
+      "T05",
+      "FRONTERA",
+      "Límite superior",
+      "1000000",
+      "Según regla",
+      null,
+      null,
+      "Límite superior",
+      null
+     ],
+     [
+      "T06",
+      "CONTRATO",
+      "Campo o columna ausente",
+      "Esquema incompleto",
+      "Rechazo o cuarentena",
+      null,
+      null,
+      "Contrato",
+      null
+     ],
+     [
+      "T07",
+      "REGRESION",
+      "Versión aprobada",
+      "1.0.0",
+      "Mismo contrato",
+      null,
+      null,
+      "Versionado",
+      null
+     ],
+     [
+      "T08",
+      "CONCILIACION",
+      "Poblaciones completas",
+      "Totales",
+      "Diferencia 0",
+      null,
+      null,
+      "Conciliación",
+      null
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Conciliacion": {
+    "header": [
+     "Control",
+     "Total base",
+     "Componente 1",
+     "Componente 2",
+     "Componente 3",
+     "Diferencia",
+     "Resultado"
+    ],
+    "rows": [
+     [
+      "Archivos",
+      12,
+      8,
+      2,
+      2,
+      null,
+      null
+     ],
+     [
+      "Filas",
+      100,
+      80,
+      15,
+      5,
+      null,
+      null
+     ],
+     [
+      "Errores",
+      20,
+      12,
+      5,
+      3,
+      null,
+      null
+     ],
+     [
+      "Pruebas",
+      10,
+      8,
+      1,
+      1,
+      null,
+      null
+     ],
+     [
+      "Funciones",
+      6,
+      5,
+      1,
+      0,
+      null,
+      null
+     ]
+    ],
+    "total_rows": 5
+   },
+   "Evaluacion": {
+    "header": [
+     "Pregunta",
+     "Competencia",
+     "Respuesta del participante",
+     "Respuesta correcta",
+     "Puntos",
+     "Puntos obtenidos"
+    ],
+    "rows": [
+     [
+      "1",
+      "Definir el concepto central de la lección",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "2",
+      "Identificar un contrato correcto",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "3",
+      "Diferenciar error y valor nulo",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "4",
+      "Seleccionar la técnica M adecuada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "5",
+      "Interpretar una salida estructurada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "6",
+      "Aplicar una política de continuidad",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "7",
+      "Reconocer una variación de esquema",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "8",
+      "Validar una prueba negativa",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "9",
+      "Interpretar una conciliación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "10",
+      "Determinar criterios de liberación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Total",
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Estado",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Plantilla_Documentacion": {
+    "header": [
+     "Campo",
+     "Descripción del participante"
+    ],
+    "rows": [
+     [
+      "Nombre del objeto",
+      null
+     ],
+     [
+      "Tipo de objeto",
+      null
+     ],
+     [
+      "Propósito",
+      null
+     ],
+     [
+      "Entradas",
+      null
+     ],
+     [
+      "Tipos de entrada",
+      null
+     ],
+     [
+      "Parámetros opcionales",
+      null
+     ],
+     [
+      "Valores predeterminados",
+      null
+     ],
+     [
+      "Salida",
+      null
+     ],
+     [
+      "Granularidad",
+      null
+     ],
+     [
+      "Errores esperados",
+      null
+     ],
+     [
+      "Dependencias",
+      null
+     ],
+     [
+      "Versión",
+      null
+     ],
+     [
+      "Casos de prueba",
+      null
+     ],
+     [
+      "Responsable",
+      null
+     ]
+    ],
+    "total_rows": 14
+   }
+  },
+  "M10_L12_Libro_Trabajo.xlsx": {
+   "Instrucciones": {
+    "header": [
+     "Elemento",
+     "Descripción"
+    ],
+    "rows": [
+     [
+      "Programa",
+      "Power Query para la Automatización y Preparación de Datos"
+     ],
+     [
+      "Autor e instructor",
+      "Sergio Moreno Banda"
+     ],
+     [
+      "Lección",
+      "12. Funciones de orden superior y composición"
+     ],
+     [
+      "Objetivo",
+      "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles."
+     ],
+     [
+      "Modo de uso",
+      "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion."
+     ],
+     [
+      "Criterio de aprobación",
+      "80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+     ],
+     [
+      "Resultados esperados",
+      null
+     ],
+     [
+      "Contrato explícito",
+      null
+     ],
+     [
+      "Trazabilidad de entradas y salidas",
+      null
+     ],
+     [
+      "Pruebas positivas, negativas y de frontera",
+      null
+     ],
+     [
+      "Conciliación completa",
+      null
+     ],
+     [
+      "Documentación de decisiones",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Datos_Practica": {
+    "header": [
+     "Movimiento",
+     "FechaMovimiento",
+     "CodigoMaterial",
+     "Cantidad",
+     "Unidad",
+     "Almacen",
+     "Responsable",
+     "Observacion"
+    ],
+    "rows": [
+     [
+      "MOV-001",
+      "2026-01-05",
+      "MAT-1001",
+      "125.5",
+      "PZA",
+      "A01",
+      "Ana",
+      "Entrada ordinaria"
+     ],
+     [
+      "MOV-002",
+      "2026-01-06",
+      "MAT-1002",
+      "250",
+      "KG",
+      "A02",
+      "Luis",
+      "Transferencia"
+     ],
+     [
+      "MOV-003",
+      "2026-01-07",
+      "MAT-1003",
+      "0",
+      "PZA",
+      "A01",
+      "Marta",
+      "Cantidad límite"
+     ],
+     [
+      "MOV-004",
+      "31/02/2026",
+      "MAT-1004",
+      "PENDIENTE",
+      "L",
+      "A03",
+      "Carlos",
+      "Datos inválidos"
+     ],
+     [
+      "  mov-005  ",
+      "2026-01-09",
+      " mat-1005 ",
+      "-25",
+      "PZA",
+      "A99",
+      "Rosa",
+      "Revisión funcional"
+     ],
+     [
+      "MOV-006",
+      null,
+      "MAT-1006",
+      null,
+      "KG",
+      "A02",
+      "Pedro",
+      null
+     ],
+     [
+      "MOV-007",
+      "2026-01-11",
+      "MAT-1007",
+      "1000000",
+      "PZA",
+      "A01",
+      "Elena",
+      "Límite superior"
+     ],
+     [
+      "MOV-008",
+      "2026-01-12",
+      "MAT-1008",
+      "1000000.001",
+      "PZA",
+      "A01",
+      "Jorge",
+      "Fuera de rango"
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Actividades": {
+    "header": [
+     "Id",
+     "Actividad",
+     "Evidencia requerida",
+     "Estado",
+     "Puntuación máxima",
+     "Puntuación obtenida",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "A01",
+      "Identificar entradas, parámetros y dependencias",
+      "Matriz completada",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A02",
+      "Construir o adaptar la consulta M principal",
+      "Consulta funcional",
+      "Pendiente",
+      20,
+      null,
+      null
+     ],
+     [
+      "A03",
+      "Aplicar contratos de entrada y salida",
+      "Contrato documentado",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A04",
+      "Ejecutar caso válido",
+      "Resultado esperado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A05",
+      "Ejecutar caso nulo o vacío",
+      "Diagnóstico correcto",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A06",
+      "Ejecutar caso incompatible",
+      "Error controlado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A07",
+      "Construir controles de conciliación",
+      "Diferencias en cero",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A08",
+      "Documentar versión y decisiones",
+      "Ficha técnica",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      "Total",
+      null,
+      null,
+      "Aprobado si obtiene 80 o más"
+     ]
+    ],
+    "total_rows": 9
+   },
+   "Casos_Prueba": {
+    "header": [
+     "IdCaso",
+     "Tipo",
+     "Escenario",
+     "Entrada",
+     "Resultado esperado",
+     "Resultado obtenido",
+     "Cumple",
+     "Regla cubierta",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "T01",
+      "POSITIVA",
+      "Entrada válida",
+      "25",
+      "Resultado correcto",
+      null,
+      null,
+      "Ruta principal",
+      null
+     ],
+     [
+      "T02",
+      "NEGATIVA",
+      "Valor ausente",
+      "null",
+      "Ausencia clasificada",
+      null,
+      null,
+      "Nulabilidad",
+      null
+     ],
+     [
+      "T03",
+      "NEGATIVA",
+      "Tipo incompatible",
+      "PENDIENTE",
+      "Error controlado",
+      null,
+      null,
+      "Conversión",
+      null
+     ],
+     [
+      "T04",
+      "FRONTERA",
+      "Límite inferior",
+      "0",
+      "Según regla",
+      null,
+      null,
+      "Límite inferior",
+      null
+     ],
+     [
+      "T05",
+      "FRONTERA",
+      "Límite superior",
+      "1000000",
+      "Según regla",
+      null,
+      null,
+      "Límite superior",
+      null
+     ],
+     [
+      "T06",
+      "CONTRATO",
+      "Campo o columna ausente",
+      "Esquema incompleto",
+      "Rechazo o cuarentena",
+      null,
+      null,
+      "Contrato",
+      null
+     ],
+     [
+      "T07",
+      "REGRESION",
+      "Versión aprobada",
+      "1.0.0",
+      "Mismo contrato",
+      null,
+      null,
+      "Versionado",
+      null
+     ],
+     [
+      "T08",
+      "CONCILIACION",
+      "Poblaciones completas",
+      "Totales",
+      "Diferencia 0",
+      null,
+      null,
+      "Conciliación",
+      null
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Conciliacion": {
+    "header": [
+     "Control",
+     "Total base",
+     "Componente 1",
+     "Componente 2",
+     "Componente 3",
+     "Diferencia",
+     "Resultado"
+    ],
+    "rows": [
+     [
+      "Archivos",
+      12,
+      8,
+      2,
+      2,
+      null,
+      null
+     ],
+     [
+      "Filas",
+      100,
+      80,
+      15,
+      5,
+      null,
+      null
+     ],
+     [
+      "Errores",
+      20,
+      12,
+      5,
+      3,
+      null,
+      null
+     ],
+     [
+      "Pruebas",
+      10,
+      8,
+      1,
+      1,
+      null,
+      null
+     ],
+     [
+      "Funciones",
+      6,
+      5,
+      1,
+      0,
+      null,
+      null
+     ]
+    ],
+    "total_rows": 5
+   },
+   "Evaluacion": {
+    "header": [
+     "Pregunta",
+     "Competencia",
+     "Respuesta del participante",
+     "Respuesta correcta",
+     "Puntos",
+     "Puntos obtenidos"
+    ],
+    "rows": [
+     [
+      "1",
+      "Definir el concepto central de la lección",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "2",
+      "Identificar un contrato correcto",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "3",
+      "Diferenciar error y valor nulo",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "4",
+      "Seleccionar la técnica M adecuada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "5",
+      "Interpretar una salida estructurada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "6",
+      "Aplicar una política de continuidad",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "7",
+      "Reconocer una variación de esquema",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "8",
+      "Validar una prueba negativa",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "9",
+      "Interpretar una conciliación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "10",
+      "Determinar criterios de liberación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Total",
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Estado",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Plantilla_Documentacion": {
+    "header": [
+     "Campo",
+     "Descripción del participante"
+    ],
+    "rows": [
+     [
+      "Nombre del objeto",
+      null
+     ],
+     [
+      "Tipo de objeto",
+      null
+     ],
+     [
+      "Propósito",
+      null
+     ],
+     [
+      "Entradas",
+      null
+     ],
+     [
+      "Tipos de entrada",
+      null
+     ],
+     [
+      "Parámetros opcionales",
+      null
+     ],
+     [
+      "Valores predeterminados",
+      null
+     ],
+     [
+      "Salida",
+      null
+     ],
+     [
+      "Granularidad",
+      null
+     ],
+     [
+      "Errores esperados",
+      null
+     ],
+     [
+      "Dependencias",
+      null
+     ],
+     [
+      "Versión",
+      null
+     ],
+     [
+      "Casos de prueba",
+      null
+     ],
+     [
+      "Responsable",
+      null
+     ]
+    ],
+    "total_rows": 14
+   }
+  },
+  "M10_L13_Libro_Trabajo.xlsx": {
+   "Instrucciones": {
+    "header": [
+     "Elemento",
+     "Descripción"
+    ],
+    "rows": [
+     [
+      "Programa",
+      "Power Query para la Automatización y Preparación de Datos"
+     ],
+     [
+      "Autor e instructor",
+      "Sergio Moreno Banda"
+     ],
+     [
+      "Lección",
+      "13. Aplicación de funciones a múltiples archivos"
+     ],
+     [
+      "Objetivo",
+      "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles."
+     ],
+     [
+      "Modo de uso",
+      "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion."
+     ],
+     [
+      "Criterio de aprobación",
+      "80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+     ],
+     [
+      "Resultados esperados",
+      null
+     ],
+     [
+      "Contrato explícito",
+      null
+     ],
+     [
+      "Trazabilidad de entradas y salidas",
+      null
+     ],
+     [
+      "Pruebas positivas, negativas y de frontera",
+      null
+     ],
+     [
+      "Conciliación completa",
+      null
+     ],
+     [
+      "Documentación de decisiones",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Datos_Practica": {
+    "header": [
+     "Movimiento",
+     "FechaMovimiento",
+     "CodigoMaterial",
+     "Cantidad",
+     "Unidad",
+     "Almacen",
+     "Responsable",
+     "Observacion"
+    ],
+    "rows": [
+     [
+      "MOV-001",
+      "2026-01-05",
+      "MAT-1001",
+      "125.5",
+      "PZA",
+      "A01",
+      "Ana",
+      "Entrada ordinaria"
+     ],
+     [
+      "MOV-002",
+      "2026-01-06",
+      "MAT-1002",
+      "250",
+      "KG",
+      "A02",
+      "Luis",
+      "Transferencia"
+     ],
+     [
+      "MOV-003",
+      "2026-01-07",
+      "MAT-1003",
+      "0",
+      "PZA",
+      "A01",
+      "Marta",
+      "Cantidad límite"
+     ],
+     [
+      "MOV-004",
+      "31/02/2026",
+      "MAT-1004",
+      "PENDIENTE",
+      "L",
+      "A03",
+      "Carlos",
+      "Datos inválidos"
+     ],
+     [
+      "  mov-005  ",
+      "2026-01-09",
+      " mat-1005 ",
+      "-25",
+      "PZA",
+      "A99",
+      "Rosa",
+      "Revisión funcional"
+     ],
+     [
+      "MOV-006",
+      null,
+      "MAT-1006",
+      null,
+      "KG",
+      "A02",
+      "Pedro",
+      null
+     ],
+     [
+      "MOV-007",
+      "2026-01-11",
+      "MAT-1007",
+      "1000000",
+      "PZA",
+      "A01",
+      "Elena",
+      "Límite superior"
+     ],
+     [
+      "MOV-008",
+      "2026-01-12",
+      "MAT-1008",
+      "1000000.001",
+      "PZA",
+      "A01",
+      "Jorge",
+      "Fuera de rango"
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Actividades": {
+    "header": [
+     "Id",
+     "Actividad",
+     "Evidencia requerida",
+     "Estado",
+     "Puntuación máxima",
+     "Puntuación obtenida",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "A01",
+      "Identificar entradas, parámetros y dependencias",
+      "Matriz completada",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A02",
+      "Construir o adaptar la consulta M principal",
+      "Consulta funcional",
+      "Pendiente",
+      20,
+      null,
+      null
+     ],
+     [
+      "A03",
+      "Aplicar contratos de entrada y salida",
+      "Contrato documentado",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A04",
+      "Ejecutar caso válido",
+      "Resultado esperado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A05",
+      "Ejecutar caso nulo o vacío",
+      "Diagnóstico correcto",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A06",
+      "Ejecutar caso incompatible",
+      "Error controlado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A07",
+      "Construir controles de conciliación",
+      "Diferencias en cero",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A08",
+      "Documentar versión y decisiones",
+      "Ficha técnica",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      "Total",
+      null,
+      null,
+      "Aprobado si obtiene 80 o más"
+     ]
+    ],
+    "total_rows": 9
+   },
+   "Casos_Prueba": {
+    "header": [
+     "IdCaso",
+     "Tipo",
+     "Escenario",
+     "Entrada",
+     "Resultado esperado",
+     "Resultado obtenido",
+     "Cumple",
+     "Regla cubierta",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "T01",
+      "POSITIVA",
+      "Entrada válida",
+      "25",
+      "Resultado correcto",
+      null,
+      null,
+      "Ruta principal",
+      null
+     ],
+     [
+      "T02",
+      "NEGATIVA",
+      "Valor ausente",
+      "null",
+      "Ausencia clasificada",
+      null,
+      null,
+      "Nulabilidad",
+      null
+     ],
+     [
+      "T03",
+      "NEGATIVA",
+      "Tipo incompatible",
+      "PENDIENTE",
+      "Error controlado",
+      null,
+      null,
+      "Conversión",
+      null
+     ],
+     [
+      "T04",
+      "FRONTERA",
+      "Límite inferior",
+      "0",
+      "Según regla",
+      null,
+      null,
+      "Límite inferior",
+      null
+     ],
+     [
+      "T05",
+      "FRONTERA",
+      "Límite superior",
+      "1000000",
+      "Según regla",
+      null,
+      null,
+      "Límite superior",
+      null
+     ],
+     [
+      "T06",
+      "CONTRATO",
+      "Campo o columna ausente",
+      "Esquema incompleto",
+      "Rechazo o cuarentena",
+      null,
+      null,
+      "Contrato",
+      null
+     ],
+     [
+      "T07",
+      "REGRESION",
+      "Versión aprobada",
+      "1.0.0",
+      "Mismo contrato",
+      null,
+      null,
+      "Versionado",
+      null
+     ],
+     [
+      "T08",
+      "CONCILIACION",
+      "Poblaciones completas",
+      "Totales",
+      "Diferencia 0",
+      null,
+      null,
+      "Conciliación",
+      null
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Conciliacion": {
+    "header": [
+     "Control",
+     "Total base",
+     "Componente 1",
+     "Componente 2",
+     "Componente 3",
+     "Diferencia",
+     "Resultado"
+    ],
+    "rows": [
+     [
+      "Archivos",
+      12,
+      8,
+      2,
+      2,
+      null,
+      null
+     ],
+     [
+      "Filas",
+      100,
+      80,
+      15,
+      5,
+      null,
+      null
+     ],
+     [
+      "Errores",
+      20,
+      12,
+      5,
+      3,
+      null,
+      null
+     ],
+     [
+      "Pruebas",
+      10,
+      8,
+      1,
+      1,
+      null,
+      null
+     ],
+     [
+      "Funciones",
+      6,
+      5,
+      1,
+      0,
+      null,
+      null
+     ]
+    ],
+    "total_rows": 5
+   },
+   "Evaluacion": {
+    "header": [
+     "Pregunta",
+     "Competencia",
+     "Respuesta del participante",
+     "Respuesta correcta",
+     "Puntos",
+     "Puntos obtenidos"
+    ],
+    "rows": [
+     [
+      "1",
+      "Definir el concepto central de la lección",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "2",
+      "Identificar un contrato correcto",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "3",
+      "Diferenciar error y valor nulo",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "4",
+      "Seleccionar la técnica M adecuada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "5",
+      "Interpretar una salida estructurada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "6",
+      "Aplicar una política de continuidad",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "7",
+      "Reconocer una variación de esquema",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "8",
+      "Validar una prueba negativa",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "9",
+      "Interpretar una conciliación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "10",
+      "Determinar criterios de liberación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Total",
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Estado",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Plantilla_Documentacion": {
+    "header": [
+     "Campo",
+     "Descripción del participante"
+    ],
+    "rows": [
+     [
+      "Nombre del objeto",
+      null
+     ],
+     [
+      "Tipo de objeto",
+      null
+     ],
+     [
+      "Propósito",
+      null
+     ],
+     [
+      "Entradas",
+      null
+     ],
+     [
+      "Tipos de entrada",
+      null
+     ],
+     [
+      "Parámetros opcionales",
+      null
+     ],
+     [
+      "Valores predeterminados",
+      null
+     ],
+     [
+      "Salida",
+      null
+     ],
+     [
+      "Granularidad",
+      null
+     ],
+     [
+      "Errores esperados",
+      null
+     ],
+     [
+      "Dependencias",
+      null
+     ],
+     [
+      "Versión",
+      null
+     ],
+     [
+      "Casos de prueba",
+      null
+     ],
+     [
+      "Responsable",
+      null
+     ]
+    ],
+    "total_rows": 14
+   }
+  },
+  "M10_L14_Libro_Trabajo.xlsx": {
+   "Instrucciones": {
+    "header": [
+     "Elemento",
+     "Descripción"
+    ],
+    "rows": [
+     [
+      "Programa",
+      "Power Query para la Automatización y Preparación de Datos"
+     ],
+     [
+      "Autor e instructor",
+      "Sergio Moreno Banda"
+     ],
+     [
+      "Lección",
+      "14. Variaciones de esquema y control de archivos"
+     ],
+     [
+      "Objetivo",
+      "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles."
+     ],
+     [
+      "Modo de uso",
+      "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion."
+     ],
+     [
+      "Criterio de aprobación",
+      "80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+     ],
+     [
+      "Resultados esperados",
+      null
+     ],
+     [
+      "Contrato explícito",
+      null
+     ],
+     [
+      "Trazabilidad de entradas y salidas",
+      null
+     ],
+     [
+      "Pruebas positivas, negativas y de frontera",
+      null
+     ],
+     [
+      "Conciliación completa",
+      null
+     ],
+     [
+      "Documentación de decisiones",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Datos_Practica": {
+    "header": [
+     "Movimiento",
+     "FechaMovimiento",
+     "CodigoMaterial",
+     "Cantidad",
+     "Unidad",
+     "Almacen",
+     "Responsable",
+     "Observacion"
+    ],
+    "rows": [
+     [
+      "MOV-001",
+      "2026-01-05",
+      "MAT-1001",
+      "125.5",
+      "PZA",
+      "A01",
+      "Ana",
+      "Entrada ordinaria"
+     ],
+     [
+      "MOV-002",
+      "2026-01-06",
+      "MAT-1002",
+      "250",
+      "KG",
+      "A02",
+      "Luis",
+      "Transferencia"
+     ],
+     [
+      "MOV-003",
+      "2026-01-07",
+      "MAT-1003",
+      "0",
+      "PZA",
+      "A01",
+      "Marta",
+      "Cantidad límite"
+     ],
+     [
+      "MOV-004",
+      "31/02/2026",
+      "MAT-1004",
+      "PENDIENTE",
+      "L",
+      "A03",
+      "Carlos",
+      "Datos inválidos"
+     ],
+     [
+      "  mov-005  ",
+      "2026-01-09",
+      " mat-1005 ",
+      "-25",
+      "PZA",
+      "A99",
+      "Rosa",
+      "Revisión funcional"
+     ],
+     [
+      "MOV-006",
+      null,
+      "MAT-1006",
+      null,
+      "KG",
+      "A02",
+      "Pedro",
+      null
+     ],
+     [
+      "MOV-007",
+      "2026-01-11",
+      "MAT-1007",
+      "1000000",
+      "PZA",
+      "A01",
+      "Elena",
+      "Límite superior"
+     ],
+     [
+      "MOV-008",
+      "2026-01-12",
+      "MAT-1008",
+      "1000000.001",
+      "PZA",
+      "A01",
+      "Jorge",
+      "Fuera de rango"
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Actividades": {
+    "header": [
+     "Id",
+     "Actividad",
+     "Evidencia requerida",
+     "Estado",
+     "Puntuación máxima",
+     "Puntuación obtenida",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "A01",
+      "Identificar entradas, parámetros y dependencias",
+      "Matriz completada",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A02",
+      "Construir o adaptar la consulta M principal",
+      "Consulta funcional",
+      "Pendiente",
+      20,
+      null,
+      null
+     ],
+     [
+      "A03",
+      "Aplicar contratos de entrada y salida",
+      "Contrato documentado",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A04",
+      "Ejecutar caso válido",
+      "Resultado esperado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A05",
+      "Ejecutar caso nulo o vacío",
+      "Diagnóstico correcto",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A06",
+      "Ejecutar caso incompatible",
+      "Error controlado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A07",
+      "Construir controles de conciliación",
+      "Diferencias en cero",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A08",
+      "Documentar versión y decisiones",
+      "Ficha técnica",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      "Total",
+      null,
+      null,
+      "Aprobado si obtiene 80 o más"
+     ]
+    ],
+    "total_rows": 9
+   },
+   "Casos_Prueba": {
+    "header": [
+     "IdCaso",
+     "Tipo",
+     "Escenario",
+     "Entrada",
+     "Resultado esperado",
+     "Resultado obtenido",
+     "Cumple",
+     "Regla cubierta",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "T01",
+      "POSITIVA",
+      "Entrada válida",
+      "25",
+      "Resultado correcto",
+      null,
+      null,
+      "Ruta principal",
+      null
+     ],
+     [
+      "T02",
+      "NEGATIVA",
+      "Valor ausente",
+      "null",
+      "Ausencia clasificada",
+      null,
+      null,
+      "Nulabilidad",
+      null
+     ],
+     [
+      "T03",
+      "NEGATIVA",
+      "Tipo incompatible",
+      "PENDIENTE",
+      "Error controlado",
+      null,
+      null,
+      "Conversión",
+      null
+     ],
+     [
+      "T04",
+      "FRONTERA",
+      "Límite inferior",
+      "0",
+      "Según regla",
+      null,
+      null,
+      "Límite inferior",
+      null
+     ],
+     [
+      "T05",
+      "FRONTERA",
+      "Límite superior",
+      "1000000",
+      "Según regla",
+      null,
+      null,
+      "Límite superior",
+      null
+     ],
+     [
+      "T06",
+      "CONTRATO",
+      "Campo o columna ausente",
+      "Esquema incompleto",
+      "Rechazo o cuarentena",
+      null,
+      null,
+      "Contrato",
+      null
+     ],
+     [
+      "T07",
+      "REGRESION",
+      "Versión aprobada",
+      "1.0.0",
+      "Mismo contrato",
+      null,
+      null,
+      "Versionado",
+      null
+     ],
+     [
+      "T08",
+      "CONCILIACION",
+      "Poblaciones completas",
+      "Totales",
+      "Diferencia 0",
+      null,
+      null,
+      "Conciliación",
+      null
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Conciliacion": {
+    "header": [
+     "Control",
+     "Total base",
+     "Componente 1",
+     "Componente 2",
+     "Componente 3",
+     "Diferencia",
+     "Resultado"
+    ],
+    "rows": [
+     [
+      "Archivos",
+      12,
+      8,
+      2,
+      2,
+      null,
+      null
+     ],
+     [
+      "Filas",
+      100,
+      80,
+      15,
+      5,
+      null,
+      null
+     ],
+     [
+      "Errores",
+      20,
+      12,
+      5,
+      3,
+      null,
+      null
+     ],
+     [
+      "Pruebas",
+      10,
+      8,
+      1,
+      1,
+      null,
+      null
+     ],
+     [
+      "Funciones",
+      6,
+      5,
+      1,
+      0,
+      null,
+      null
+     ]
+    ],
+    "total_rows": 5
+   },
+   "Evaluacion": {
+    "header": [
+     "Pregunta",
+     "Competencia",
+     "Respuesta del participante",
+     "Respuesta correcta",
+     "Puntos",
+     "Puntos obtenidos"
+    ],
+    "rows": [
+     [
+      "1",
+      "Definir el concepto central de la lección",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "2",
+      "Identificar un contrato correcto",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "3",
+      "Diferenciar error y valor nulo",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "4",
+      "Seleccionar la técnica M adecuada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "5",
+      "Interpretar una salida estructurada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "6",
+      "Aplicar una política de continuidad",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "7",
+      "Reconocer una variación de esquema",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "8",
+      "Validar una prueba negativa",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "9",
+      "Interpretar una conciliación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "10",
+      "Determinar criterios de liberación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Total",
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Estado",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Plantilla_Documentacion": {
+    "header": [
+     "Campo",
+     "Descripción del participante"
+    ],
+    "rows": [
+     [
+      "Nombre del objeto",
+      null
+     ],
+     [
+      "Tipo de objeto",
+      null
+     ],
+     [
+      "Propósito",
+      null
+     ],
+     [
+      "Entradas",
+      null
+     ],
+     [
+      "Tipos de entrada",
+      null
+     ],
+     [
+      "Parámetros opcionales",
+      null
+     ],
+     [
+      "Valores predeterminados",
+      null
+     ],
+     [
+      "Salida",
+      null
+     ],
+     [
+      "Granularidad",
+      null
+     ],
+     [
+      "Errores esperados",
+      null
+     ],
+     [
+      "Dependencias",
+      null
+     ],
+     [
+      "Versión",
+      null
+     ],
+     [
+      "Casos de prueba",
+      null
+     ],
+     [
+      "Responsable",
+      null
+     ]
+    ],
+    "total_rows": 14
+   }
+  },
+  "M10_L15_Libro_Trabajo.xlsx": {
+   "Instrucciones": {
+    "header": [
+     "Elemento",
+     "Descripción"
+    ],
+    "rows": [
+     [
+      "Programa",
+      "Power Query para la Automatización y Preparación de Datos"
+     ],
+     [
+      "Autor e instructor",
+      "Sergio Moreno Banda"
+     ],
+     [
+      "Lección",
+      "15. Manejo de errores con try, otherwise y catch"
+     ],
+     [
+      "Objetivo",
+      "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles."
+     ],
+     [
+      "Modo de uso",
+      "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion."
+     ],
+     [
+      "Criterio de aprobación",
+      "80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+     ],
+     [
+      "Resultados esperados",
+      null
+     ],
+     [
+      "Contrato explícito",
+      null
+     ],
+     [
+      "Trazabilidad de entradas y salidas",
+      null
+     ],
+     [
+      "Pruebas positivas, negativas y de frontera",
+      null
+     ],
+     [
+      "Conciliación completa",
+      null
+     ],
+     [
+      "Documentación de decisiones",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Datos_Practica": {
+    "header": [
+     "Movimiento",
+     "FechaMovimiento",
+     "CodigoMaterial",
+     "Cantidad",
+     "Unidad",
+     "Almacen",
+     "Responsable",
+     "Observacion"
+    ],
+    "rows": [
+     [
+      "MOV-001",
+      "2026-01-05",
+      "MAT-1001",
+      "125.5",
+      "PZA",
+      "A01",
+      "Ana",
+      "Entrada ordinaria"
+     ],
+     [
+      "MOV-002",
+      "2026-01-06",
+      "MAT-1002",
+      "250",
+      "KG",
+      "A02",
+      "Luis",
+      "Transferencia"
+     ],
+     [
+      "MOV-003",
+      "2026-01-07",
+      "MAT-1003",
+      "0",
+      "PZA",
+      "A01",
+      "Marta",
+      "Cantidad límite"
+     ],
+     [
+      "MOV-004",
+      "31/02/2026",
+      "MAT-1004",
+      "PENDIENTE",
+      "L",
+      "A03",
+      "Carlos",
+      "Datos inválidos"
+     ],
+     [
+      "  mov-005  ",
+      "2026-01-09",
+      " mat-1005 ",
+      "-25",
+      "PZA",
+      "A99",
+      "Rosa",
+      "Revisión funcional"
+     ],
+     [
+      "MOV-006",
+      null,
+      "MAT-1006",
+      null,
+      "KG",
+      "A02",
+      "Pedro",
+      null
+     ],
+     [
+      "MOV-007",
+      "2026-01-11",
+      "MAT-1007",
+      "1000000",
+      "PZA",
+      "A01",
+      "Elena",
+      "Límite superior"
+     ],
+     [
+      "MOV-008",
+      "2026-01-12",
+      "MAT-1008",
+      "1000000.001",
+      "PZA",
+      "A01",
+      "Jorge",
+      "Fuera de rango"
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Actividades": {
+    "header": [
+     "Id",
+     "Actividad",
+     "Evidencia requerida",
+     "Estado",
+     "Puntuación máxima",
+     "Puntuación obtenida",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "A01",
+      "Identificar entradas, parámetros y dependencias",
+      "Matriz completada",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A02",
+      "Construir o adaptar la consulta M principal",
+      "Consulta funcional",
+      "Pendiente",
+      20,
+      null,
+      null
+     ],
+     [
+      "A03",
+      "Aplicar contratos de entrada y salida",
+      "Contrato documentado",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A04",
+      "Ejecutar caso válido",
+      "Resultado esperado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A05",
+      "Ejecutar caso nulo o vacío",
+      "Diagnóstico correcto",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A06",
+      "Ejecutar caso incompatible",
+      "Error controlado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A07",
+      "Construir controles de conciliación",
+      "Diferencias en cero",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A08",
+      "Documentar versión y decisiones",
+      "Ficha técnica",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      "Total",
+      null,
+      null,
+      "Aprobado si obtiene 80 o más"
+     ]
+    ],
+    "total_rows": 9
+   },
+   "Casos_Prueba": {
+    "header": [
+     "IdCaso",
+     "Tipo",
+     "Escenario",
+     "Entrada",
+     "Resultado esperado",
+     "Resultado obtenido",
+     "Cumple",
+     "Regla cubierta",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "T01",
+      "POSITIVA",
+      "Entrada válida",
+      "25",
+      "Resultado correcto",
+      null,
+      null,
+      "Ruta principal",
+      null
+     ],
+     [
+      "T02",
+      "NEGATIVA",
+      "Valor ausente",
+      "null",
+      "Ausencia clasificada",
+      null,
+      null,
+      "Nulabilidad",
+      null
+     ],
+     [
+      "T03",
+      "NEGATIVA",
+      "Tipo incompatible",
+      "PENDIENTE",
+      "Error controlado",
+      null,
+      null,
+      "Conversión",
+      null
+     ],
+     [
+      "T04",
+      "FRONTERA",
+      "Límite inferior",
+      "0",
+      "Según regla",
+      null,
+      null,
+      "Límite inferior",
+      null
+     ],
+     [
+      "T05",
+      "FRONTERA",
+      "Límite superior",
+      "1000000",
+      "Según regla",
+      null,
+      null,
+      "Límite superior",
+      null
+     ],
+     [
+      "T06",
+      "CONTRATO",
+      "Campo o columna ausente",
+      "Esquema incompleto",
+      "Rechazo o cuarentena",
+      null,
+      null,
+      "Contrato",
+      null
+     ],
+     [
+      "T07",
+      "REGRESION",
+      "Versión aprobada",
+      "1.0.0",
+      "Mismo contrato",
+      null,
+      null,
+      "Versionado",
+      null
+     ],
+     [
+      "T08",
+      "CONCILIACION",
+      "Poblaciones completas",
+      "Totales",
+      "Diferencia 0",
+      null,
+      null,
+      "Conciliación",
+      null
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Conciliacion": {
+    "header": [
+     "Control",
+     "Total base",
+     "Componente 1",
+     "Componente 2",
+     "Componente 3",
+     "Diferencia",
+     "Resultado"
+    ],
+    "rows": [
+     [
+      "Archivos",
+      12,
+      8,
+      2,
+      2,
+      null,
+      null
+     ],
+     [
+      "Filas",
+      100,
+      80,
+      15,
+      5,
+      null,
+      null
+     ],
+     [
+      "Errores",
+      20,
+      12,
+      5,
+      3,
+      null,
+      null
+     ],
+     [
+      "Pruebas",
+      10,
+      8,
+      1,
+      1,
+      null,
+      null
+     ],
+     [
+      "Funciones",
+      6,
+      5,
+      1,
+      0,
+      null,
+      null
+     ]
+    ],
+    "total_rows": 5
+   },
+   "Evaluacion": {
+    "header": [
+     "Pregunta",
+     "Competencia",
+     "Respuesta del participante",
+     "Respuesta correcta",
+     "Puntos",
+     "Puntos obtenidos"
+    ],
+    "rows": [
+     [
+      "1",
+      "Definir el concepto central de la lección",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "2",
+      "Identificar un contrato correcto",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "3",
+      "Diferenciar error y valor nulo",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "4",
+      "Seleccionar la técnica M adecuada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "5",
+      "Interpretar una salida estructurada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "6",
+      "Aplicar una política de continuidad",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "7",
+      "Reconocer una variación de esquema",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "8",
+      "Validar una prueba negativa",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "9",
+      "Interpretar una conciliación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "10",
+      "Determinar criterios de liberación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Total",
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Estado",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Plantilla_Documentacion": {
+    "header": [
+     "Campo",
+     "Descripción del participante"
+    ],
+    "rows": [
+     [
+      "Nombre del objeto",
+      null
+     ],
+     [
+      "Tipo de objeto",
+      null
+     ],
+     [
+      "Propósito",
+      null
+     ],
+     [
+      "Entradas",
+      null
+     ],
+     [
+      "Tipos de entrada",
+      null
+     ],
+     [
+      "Parámetros opcionales",
+      null
+     ],
+     [
+      "Valores predeterminados",
+      null
+     ],
+     [
+      "Salida",
+      null
+     ],
+     [
+      "Granularidad",
+      null
+     ],
+     [
+      "Errores esperados",
+      null
+     ],
+     [
+      "Dependencias",
+      null
+     ],
+     [
+      "Versión",
+      null
+     ],
+     [
+      "Casos de prueba",
+      null
+     ],
+     [
+      "Responsable",
+      null
+     ]
+    ],
+    "total_rows": 14
+   }
+  },
+  "M10_L16_Libro_Trabajo.xlsx": {
+   "Instrucciones": {
+    "header": [
+     "Elemento",
+     "Descripción"
+    ],
+    "rows": [
+     [
+      "Programa",
+      "Power Query para la Automatización y Preparación de Datos"
+     ],
+     [
+      "Autor e instructor",
+      "Sergio Moreno Banda"
+     ],
+     [
+      "Lección",
+      "16. Control, recuperación y propagación de errores"
+     ],
+     [
+      "Objetivo",
+      "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles."
+     ],
+     [
+      "Modo de uso",
+      "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion."
+     ],
+     [
+      "Criterio de aprobación",
+      "80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+     ],
+     [
+      "Resultados esperados",
+      null
+     ],
+     [
+      "Contrato explícito",
+      null
+     ],
+     [
+      "Trazabilidad de entradas y salidas",
+      null
+     ],
+     [
+      "Pruebas positivas, negativas y de frontera",
+      null
+     ],
+     [
+      "Conciliación completa",
+      null
+     ],
+     [
+      "Documentación de decisiones",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Datos_Practica": {
+    "header": [
+     "Movimiento",
+     "FechaMovimiento",
+     "CodigoMaterial",
+     "Cantidad",
+     "Unidad",
+     "Almacen",
+     "Responsable",
+     "Observacion"
+    ],
+    "rows": [
+     [
+      "MOV-001",
+      "2026-01-05",
+      "MAT-1001",
+      "125.5",
+      "PZA",
+      "A01",
+      "Ana",
+      "Entrada ordinaria"
+     ],
+     [
+      "MOV-002",
+      "2026-01-06",
+      "MAT-1002",
+      "250",
+      "KG",
+      "A02",
+      "Luis",
+      "Transferencia"
+     ],
+     [
+      "MOV-003",
+      "2026-01-07",
+      "MAT-1003",
+      "0",
+      "PZA",
+      "A01",
+      "Marta",
+      "Cantidad límite"
+     ],
+     [
+      "MOV-004",
+      "31/02/2026",
+      "MAT-1004",
+      "PENDIENTE",
+      "L",
+      "A03",
+      "Carlos",
+      "Datos inválidos"
+     ],
+     [
+      "  mov-005  ",
+      "2026-01-09",
+      " mat-1005 ",
+      "-25",
+      "PZA",
+      "A99",
+      "Rosa",
+      "Revisión funcional"
+     ],
+     [
+      "MOV-006",
+      null,
+      "MAT-1006",
+      null,
+      "KG",
+      "A02",
+      "Pedro",
+      null
+     ],
+     [
+      "MOV-007",
+      "2026-01-11",
+      "MAT-1007",
+      "1000000",
+      "PZA",
+      "A01",
+      "Elena",
+      "Límite superior"
+     ],
+     [
+      "MOV-008",
+      "2026-01-12",
+      "MAT-1008",
+      "1000000.001",
+      "PZA",
+      "A01",
+      "Jorge",
+      "Fuera de rango"
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Actividades": {
+    "header": [
+     "Id",
+     "Actividad",
+     "Evidencia requerida",
+     "Estado",
+     "Puntuación máxima",
+     "Puntuación obtenida",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "A01",
+      "Identificar entradas, parámetros y dependencias",
+      "Matriz completada",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A02",
+      "Construir o adaptar la consulta M principal",
+      "Consulta funcional",
+      "Pendiente",
+      20,
+      null,
+      null
+     ],
+     [
+      "A03",
+      "Aplicar contratos de entrada y salida",
+      "Contrato documentado",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A04",
+      "Ejecutar caso válido",
+      "Resultado esperado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A05",
+      "Ejecutar caso nulo o vacío",
+      "Diagnóstico correcto",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A06",
+      "Ejecutar caso incompatible",
+      "Error controlado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A07",
+      "Construir controles de conciliación",
+      "Diferencias en cero",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A08",
+      "Documentar versión y decisiones",
+      "Ficha técnica",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      "Total",
+      null,
+      null,
+      "Aprobado si obtiene 80 o más"
+     ]
+    ],
+    "total_rows": 9
+   },
+   "Casos_Prueba": {
+    "header": [
+     "IdCaso",
+     "Tipo",
+     "Escenario",
+     "Entrada",
+     "Resultado esperado",
+     "Resultado obtenido",
+     "Cumple",
+     "Regla cubierta",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "T01",
+      "POSITIVA",
+      "Entrada válida",
+      "25",
+      "Resultado correcto",
+      null,
+      null,
+      "Ruta principal",
+      null
+     ],
+     [
+      "T02",
+      "NEGATIVA",
+      "Valor ausente",
+      "null",
+      "Ausencia clasificada",
+      null,
+      null,
+      "Nulabilidad",
+      null
+     ],
+     [
+      "T03",
+      "NEGATIVA",
+      "Tipo incompatible",
+      "PENDIENTE",
+      "Error controlado",
+      null,
+      null,
+      "Conversión",
+      null
+     ],
+     [
+      "T04",
+      "FRONTERA",
+      "Límite inferior",
+      "0",
+      "Según regla",
+      null,
+      null,
+      "Límite inferior",
+      null
+     ],
+     [
+      "T05",
+      "FRONTERA",
+      "Límite superior",
+      "1000000",
+      "Según regla",
+      null,
+      null,
+      "Límite superior",
+      null
+     ],
+     [
+      "T06",
+      "CONTRATO",
+      "Campo o columna ausente",
+      "Esquema incompleto",
+      "Rechazo o cuarentena",
+      null,
+      null,
+      "Contrato",
+      null
+     ],
+     [
+      "T07",
+      "REGRESION",
+      "Versión aprobada",
+      "1.0.0",
+      "Mismo contrato",
+      null,
+      null,
+      "Versionado",
+      null
+     ],
+     [
+      "T08",
+      "CONCILIACION",
+      "Poblaciones completas",
+      "Totales",
+      "Diferencia 0",
+      null,
+      null,
+      "Conciliación",
+      null
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Conciliacion": {
+    "header": [
+     "Control",
+     "Total base",
+     "Componente 1",
+     "Componente 2",
+     "Componente 3",
+     "Diferencia",
+     "Resultado"
+    ],
+    "rows": [
+     [
+      "Archivos",
+      12,
+      8,
+      2,
+      2,
+      null,
+      null
+     ],
+     [
+      "Filas",
+      100,
+      80,
+      15,
+      5,
+      null,
+      null
+     ],
+     [
+      "Errores",
+      20,
+      12,
+      5,
+      3,
+      null,
+      null
+     ],
+     [
+      "Pruebas",
+      10,
+      8,
+      1,
+      1,
+      null,
+      null
+     ],
+     [
+      "Funciones",
+      6,
+      5,
+      1,
+      0,
+      null,
+      null
+     ]
+    ],
+    "total_rows": 5
+   },
+   "Evaluacion": {
+    "header": [
+     "Pregunta",
+     "Competencia",
+     "Respuesta del participante",
+     "Respuesta correcta",
+     "Puntos",
+     "Puntos obtenidos"
+    ],
+    "rows": [
+     [
+      "1",
+      "Definir el concepto central de la lección",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "2",
+      "Identificar un contrato correcto",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "3",
+      "Diferenciar error y valor nulo",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "4",
+      "Seleccionar la técnica M adecuada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "5",
+      "Interpretar una salida estructurada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "6",
+      "Aplicar una política de continuidad",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "7",
+      "Reconocer una variación de esquema",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "8",
+      "Validar una prueba negativa",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "9",
+      "Interpretar una conciliación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "10",
+      "Determinar criterios de liberación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Total",
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Estado",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Plantilla_Documentacion": {
+    "header": [
+     "Campo",
+     "Descripción del participante"
+    ],
+    "rows": [
+     [
+      "Nombre del objeto",
+      null
+     ],
+     [
+      "Tipo de objeto",
+      null
+     ],
+     [
+      "Propósito",
+      null
+     ],
+     [
+      "Entradas",
+      null
+     ],
+     [
+      "Tipos de entrada",
+      null
+     ],
+     [
+      "Parámetros opcionales",
+      null
+     ],
+     [
+      "Valores predeterminados",
+      null
+     ],
+     [
+      "Salida",
+      null
+     ],
+     [
+      "Granularidad",
+      null
+     ],
+     [
+      "Errores esperados",
+      null
+     ],
+     [
+      "Dependencias",
+      null
+     ],
+     [
+      "Versión",
+      null
+     ],
+     [
+      "Casos de prueba",
+      null
+     ],
+     [
+      "Responsable",
+      null
+     ]
+    ],
+    "total_rows": 14
+   }
+  },
+  "M10_L18_Libro_Trabajo.xlsx": {
+   "Instrucciones": {
+    "header": [
+     "Elemento",
+     "Descripción"
+    ],
+    "rows": [
+     [
+      "Programa",
+      "Power Query para la Automatización y Preparación de Datos"
+     ],
+     [
+      "Autor e instructor",
+      "Sergio Moreno Banda"
+     ],
+     [
+      "Lección",
+      "18. Proyecto integrador, evaluación y reto del módulo"
+     ],
+     [
+      "Objetivo",
+      "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles."
+     ],
+     [
+      "Modo de uso",
+      "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion."
+     ],
+     [
+      "Criterio de aprobación",
+      "80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+     ],
+     [
+      "Resultados esperados",
+      null
+     ],
+     [
+      "Contrato explícito",
+      null
+     ],
+     [
+      "Trazabilidad de entradas y salidas",
+      null
+     ],
+     [
+      "Pruebas positivas, negativas y de frontera",
+      null
+     ],
+     [
+      "Conciliación completa",
+      null
+     ],
+     [
+      "Documentación de decisiones",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Datos_Practica": {
+    "header": [
+     "Movimiento",
+     "FechaMovimiento",
+     "CodigoMaterial",
+     "Cantidad",
+     "Unidad",
+     "Almacen",
+     "Responsable",
+     "Observacion"
+    ],
+    "rows": [
+     [
+      "MOV-001",
+      "2026-01-05",
+      "MAT-1001",
+      "125.5",
+      "PZA",
+      "A01",
+      "Ana",
+      "Entrada ordinaria"
+     ],
+     [
+      "MOV-002",
+      "2026-01-06",
+      "MAT-1002",
+      "250",
+      "KG",
+      "A02",
+      "Luis",
+      "Transferencia"
+     ],
+     [
+      "MOV-003",
+      "2026-01-07",
+      "MAT-1003",
+      "0",
+      "PZA",
+      "A01",
+      "Marta",
+      "Cantidad límite"
+     ],
+     [
+      "MOV-004",
+      "31/02/2026",
+      "MAT-1004",
+      "PENDIENTE",
+      "L",
+      "A03",
+      "Carlos",
+      "Datos inválidos"
+     ],
+     [
+      "  mov-005  ",
+      "2026-01-09",
+      " mat-1005 ",
+      "-25",
+      "PZA",
+      "A99",
+      "Rosa",
+      "Revisión funcional"
+     ],
+     [
+      "MOV-006",
+      null,
+      "MAT-1006",
+      null,
+      "KG",
+      "A02",
+      "Pedro",
+      null
+     ],
+     [
+      "MOV-007",
+      "2026-01-11",
+      "MAT-1007",
+      "1000000",
+      "PZA",
+      "A01",
+      "Elena",
+      "Límite superior"
+     ],
+     [
+      "MOV-008",
+      "2026-01-12",
+      "MAT-1008",
+      "1000000.001",
+      "PZA",
+      "A01",
+      "Jorge",
+      "Fuera de rango"
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Actividades": {
+    "header": [
+     "Id",
+     "Actividad",
+     "Evidencia requerida",
+     "Estado",
+     "Puntuación máxima",
+     "Puntuación obtenida",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "A01",
+      "Identificar entradas, parámetros y dependencias",
+      "Matriz completada",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A02",
+      "Construir o adaptar la consulta M principal",
+      "Consulta funcional",
+      "Pendiente",
+      20,
+      null,
+      null
+     ],
+     [
+      "A03",
+      "Aplicar contratos de entrada y salida",
+      "Contrato documentado",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A04",
+      "Ejecutar caso válido",
+      "Resultado esperado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A05",
+      "Ejecutar caso nulo o vacío",
+      "Diagnóstico correcto",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A06",
+      "Ejecutar caso incompatible",
+      "Error controlado",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      "A07",
+      "Construir controles de conciliación",
+      "Diferencias en cero",
+      "Pendiente",
+      15,
+      null,
+      null
+     ],
+     [
+      "A08",
+      "Documentar versión y decisiones",
+      "Ficha técnica",
+      "Pendiente",
+      10,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      "Total",
+      null,
+      null,
+      "Aprobado si obtiene 80 o más"
+     ]
+    ],
+    "total_rows": 9
+   },
+   "Casos_Prueba": {
+    "header": [
+     "IdCaso",
+     "Tipo",
+     "Escenario",
+     "Entrada",
+     "Resultado esperado",
+     "Resultado obtenido",
+     "Cumple",
+     "Regla cubierta",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      "T01",
+      "POSITIVA",
+      "Entrada válida",
+      "25",
+      "Resultado correcto",
+      null,
+      null,
+      "Ruta principal",
+      null
+     ],
+     [
+      "T02",
+      "NEGATIVA",
+      "Valor ausente",
+      "null",
+      "Ausencia clasificada",
+      null,
+      null,
+      "Nulabilidad",
+      null
+     ],
+     [
+      "T03",
+      "NEGATIVA",
+      "Tipo incompatible",
+      "PENDIENTE",
+      "Error controlado",
+      null,
+      null,
+      "Conversión",
+      null
+     ],
+     [
+      "T04",
+      "FRONTERA",
+      "Límite inferior",
+      "0",
+      "Según regla",
+      null,
+      null,
+      "Límite inferior",
+      null
+     ],
+     [
+      "T05",
+      "FRONTERA",
+      "Límite superior",
+      "1000000",
+      "Según regla",
+      null,
+      null,
+      "Límite superior",
+      null
+     ],
+     [
+      "T06",
+      "CONTRATO",
+      "Campo o columna ausente",
+      "Esquema incompleto",
+      "Rechazo o cuarentena",
+      null,
+      null,
+      "Contrato",
+      null
+     ],
+     [
+      "T07",
+      "REGRESION",
+      "Versión aprobada",
+      "1.0.0",
+      "Mismo contrato",
+      null,
+      null,
+      "Versionado",
+      null
+     ],
+     [
+      "T08",
+      "CONCILIACION",
+      "Poblaciones completas",
+      "Totales",
+      "Diferencia 0",
+      null,
+      null,
+      "Conciliación",
+      null
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Conciliacion": {
+    "header": [
+     "Control",
+     "Total base",
+     "Componente 1",
+     "Componente 2",
+     "Componente 3",
+     "Diferencia",
+     "Resultado"
+    ],
+    "rows": [
+     [
+      "Archivos",
+      12,
+      8,
+      2,
+      2,
+      null,
+      null
+     ],
+     [
+      "Filas",
+      100,
+      80,
+      15,
+      5,
+      null,
+      null
+     ],
+     [
+      "Errores",
+      20,
+      12,
+      5,
+      3,
+      null,
+      null
+     ],
+     [
+      "Pruebas",
+      10,
+      8,
+      1,
+      1,
+      null,
+      null
+     ],
+     [
+      "Funciones",
+      6,
+      5,
+      1,
+      0,
+      null,
+      null
+     ]
+    ],
+    "total_rows": 5
+   },
+   "Evaluacion": {
+    "header": [
+     "Pregunta",
+     "Competencia",
+     "Respuesta del participante",
+     "Respuesta correcta",
+     "Puntos",
+     "Puntos obtenidos"
+    ],
+    "rows": [
+     [
+      "1",
+      "Definir el concepto central de la lección",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "2",
+      "Identificar un contrato correcto",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "3",
+      "Diferenciar error y valor nulo",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "4",
+      "Seleccionar la técnica M adecuada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "5",
+      "Interpretar una salida estructurada",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "6",
+      "Aplicar una política de continuidad",
+      null,
+      "B",
+      10,
+      null
+     ],
+     [
+      "7",
+      "Reconocer una variación de esquema",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "8",
+      "Validar una prueba negativa",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "9",
+      "Interpretar una conciliación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      "10",
+      "Determinar criterios de liberación",
+      null,
+      "A",
+      10,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Total",
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      "Estado",
+      null
+     ]
+    ],
+    "total_rows": 12
+   },
+   "Plantilla_Documentacion": {
+    "header": [
+     "Campo",
+     "Descripción del participante"
+    ],
+    "rows": [
+     [
+      "Nombre del objeto",
+      null
+     ],
+     [
+      "Tipo de objeto",
+      null
+     ],
+     [
+      "Propósito",
+      null
+     ],
+     [
+      "Entradas",
+      null
+     ],
+     [
+      "Tipos de entrada",
+      null
+     ],
+     [
+      "Parámetros opcionales",
+      null
+     ],
+     [
+      "Valores predeterminados",
+      null
+     ],
+     [
+      "Salida",
+      null
+     ],
+     [
+      "Granularidad",
+      null
+     ],
+     [
+      "Errores esperados",
+      null
+     ],
+     [
+      "Dependencias",
+      null
+     ],
+     [
+      "Versión",
+      null
+     ],
+     [
+      "Casos de prueba",
+      null
+     ],
+     [
+      "Responsable",
+      null
+     ]
+    ],
+    "total_rows": 14
+   }
+  },
+  "M10_Proyecto_Integrador_Maestro.xlsx": {
+   "Mapa_Modulo": {
+    "header": [
+     "Lección",
+     "Título",
+     "Libro de trabajo",
+     "Estado",
+     "Porcentaje",
+     "Observaciones"
+    ],
+    "rows": [
+     [
+      1,
+      "Parámetros en Power Query",
+      "M10_L01_Libro_Trabajo.xlsx",
+      "Pendiente",
+      0,
+      null
+     ],
+     [
+      2,
+      "Configuración por ambiente",
+      "M10_L02_Libro_Trabajo.xlsx",
+      "Pendiente",
+      0,
+      null
+     ],
+     [
+      3,
+      "Rutas y orígenes dinámicos",
+      "M10_L03_Libro_Trabajo.xlsx",
+      "Pendiente",
+      0,
+      null
+     ],
+     [
+      4,
+      "Parámetros funcionales y de control",
+      "M10_L04_Libro_Trabajo.xlsx",
+      "Pendiente",
+      0,
+      null
+     ],
+     [
+      5,
+      "Validación de parámetros",
+      "M10_L05_Libro_Trabajo.xlsx",
+      "Pendiente",
+      0,
+      null
+     ],
+     [
+      6,
+      "Consultas dinámicas controladas",
+      "M10_L06_Libro_Trabajo.xlsx",
+      "Pendiente",
+      0,
+      null
+     ],
+     [
+      7,
+      "Introducción a funciones personalizadas",
+      "M10_L07_Libro_Trabajo.xlsx",
+      "Pendiente",
+      0,
+      null
+     ],
+     [
+      8,
+      "Contratos de entrada y parámetros de funciones",
+      "M10_L08_Libro_Trabajo.xlsx",
+      "Pendiente",
+      0,
+      null
+     ],
+     [
+      9,
+      "Contratos y valores de salida",
+      "M10_L09_Libro_Trabajo.xlsx",
+      "Pendiente",
+      0,
+      null
+     ],
+     [
+      10,
+      "Conversión de una consulta en función",
+      "M10_L10_Libro_Trabajo.xlsx",
+      "Pendiente",
+      0,
+      null
+     ],
+     [
+      11,
+      "Invocación, pruebas unitarias y documentación",
+      "M10_L11_Libro_Trabajo.xlsx",
+      "Pendiente",
+      0,
+      null
+     ],
+     [
+      12,
+      "Funciones de orden superior y composición",
+      "M10_L12_Libro_Trabajo.xlsx",
+      "Pendiente",
+      0,
+      null
+     ],
+     [
+      13,
+      "Aplicación de funciones a múltiples archivos",
+      "M10_L13_Libro_Trabajo.xlsx",
+      "Pendiente",
+      0,
+      null
+     ],
+     [
+      14,
+      "Variaciones de esquema y control de archivos",
+      "M10_L14_Libro_Trabajo.xlsx",
+      "Pendiente",
+      0,
+      null
+     ],
+     [
+      15,
+      "Manejo de errores con try, otherwise y catch",
+      "M10_L15_Libro_Trabajo.xlsx",
+      "Pendiente",
+      0,
+      null
+     ],
+     [
+      16,
+      "Control, recuperación y propagación de errores",
+      "M10_L16_Libro_Trabajo.xlsx",
+      "Pendiente",
+      0,
+      null
+     ],
+     [
+      17,
+      "Observabilidad, bitácoras y diagnóstico operativo",
+      "M10_L17_Libro_Trabajo.xlsx",
+      "Pendiente",
+      0,
+      null
+     ],
+     [
+      18,
+      "Proyecto integrador, evaluación y reto del módulo",
+      "M10_L18_Libro_Trabajo.xlsx",
+      "Pendiente",
+      0,
+      null
+     ]
+    ],
+    "total_rows": 18
+   },
+   "Catalogo_Funciones": {
+    "header": [
+     "Nombre",
+     "Categoría",
+     "Entrada",
+     "Salida",
+     "Versión",
+     "Estado pruebas"
+    ],
+    "rows": [
+     [
+      "fx_PrepararTexto",
+      "Conversión/Control",
+      "Según contrato",
+      "record/any",
+      "1.0.0",
+      "Pendiente"
+     ],
+     [
+      "fx_ConvertirNumeroSeguro",
+      "Conversión/Control",
+      "Según contrato",
+      "record/any",
+      "1.0.0",
+      "Pendiente"
+     ],
+     [
+      "fx_ConvertirFechaSegura",
+      "Conversión/Control",
+      "Según contrato",
+      "record/any",
+      "1.0.0",
+      "Pendiente"
+     ],
+     [
+      "fx_ValidarRango",
+      "Conversión/Control",
+      "Según contrato",
+      "record/any",
+      "1.0.0",
+      "Pendiente"
+     ],
+     [
+      "fx_AfirmarIgualdad",
+      "Conversión/Control",
+      "Según contrato",
+      "record/any",
+      "1.0.0",
+      "Pendiente"
+     ],
+     [
+      "fx_NormalizarError",
+      "Conversión/Control",
+      "Según contrato",
+      "record/any",
+      "1.0.0",
+      "Pendiente"
+     ],
+     [
+      "fx_ValidarEsquemaArchivo",
+      "Conversión/Control",
+      "Según contrato",
+      "record/any",
+      "1.0.0",
+      "Pendiente"
+     ],
+     [
+      "fx_EvaluarLiberacion",
+      "Conversión/Control",
+      "Según contrato",
+      "record/any",
+      "1.0.0",
+      "Pendiente"
+     ]
+    ],
+    "total_rows": 8
+   },
+   "Catalogo_Errores": {
+    "header": [
+     "Código",
+     "Categoría",
+     "Severidad",
+     "Acción",
+     "Recuperable"
+    ],
+    "rows": [
+     [
+      "CONV-NUM-001",
+      "Conversión numérica",
+      "ERROR",
+      "Aislar fila",
+      "No"
+     ],
+     [
+      "CONV-FEC-001",
+      "Conversión fecha",
+      "ERROR",
+      "Aislar fila",
+      "No"
+     ],
+     [
+      "SCH-REQ-001",
+      "Esquema",
+      "CRITICA",
+      "Cuarentena",
+      "No"
+     ],
+     [
+      "SRC-TMP-001",
+      "Origen temporal",
+      "ERROR",
+      "Reintentar",
+      "Sí"
+     ],
+     [
+      "UNK-ERR-001",
+      "Desconocido",
+      "CRITICA",
+      "Relanzar",
+      "No"
+     ]
+    ],
+    "total_rows": 5
+   },
+   "Versiones_Esquema": {
+    "header": [
+     "Versión",
+     "Columnas",
+     "Vigencia",
+     "Activa"
+    ],
+    "rows": [
+     [
+      "1.0",
+      "Movimiento|Fecha|Material|CantidadTexto|Unidad|Centro",
+      "2025",
+      "No"
+     ],
+     [
+      "1.1",
+      "Movimiento|FechaMovimiento|CodigoMaterial|Cantidad|Unidad|Almacen",
+      "2026",
+      "Sí"
+     ],
+     [
+      "1.2",
+      "Movimiento|FechaMovimiento|CodigoMaterial|Cantidad|Unidad|Almacen|Responsable|Observacion",
+      "2026",
+      "Sí"
+     ]
+    ],
+    "total_rows": 3
+   },
+   "Mapeo_Columnas": {
+    "header": [
+     "Versión",
+     "NombreOrigen",
+     "NombreEstandar",
+     "Activo"
+    ],
+    "rows": [
+     [
+      "1.0",
+      "Fecha",
+      "FechaMovimiento",
+      "Sí"
+     ],
+     [
+      "1.0",
+      "Material",
+      "CodigoMaterial",
+      "Sí"
+     ],
+     [
+      "1.0",
+      "CantidadTexto",
+      "Cantidad",
+      "Sí"
+     ],
+     [
+      "1.0",
+      "Centro",
+      "Almacen",
+      "Sí"
+     ]
+    ],
+    "total_rows": 4
+   },
+   "Control_Liberacion": {
+    "header": [
+     "Indicador",
+     "Valor",
+     "Condición",
+     "Cumple"
+    ],
+    "rows": [
+     [
+      "Errores no controlados",
+      0,
+      null,
+      null
+     ],
+     [
+      "Diferencia archivos",
+      0,
+      null,
+      null
+     ],
+     [
+      "Diferencia filas",
+      0,
+      null,
+      null
+     ],
+     [
+      "Funciones sin prueba",
+      0,
+      null,
+      null
+     ],
+     [
+      "Puede liberarse",
+      null,
+      "Todos cumplen",
+      null
+     ]
+    ],
+    "total_rows": 5
+   }
+  },
+  "M10_Movimientos_Validos.csv": {
+   "Datos": {
+    "header": [
+     "Movimiento",
+     "FechaMovimiento",
+     "CodigoMaterial",
+     "Cantidad",
+     "Unidad",
+     "Almacen",
+     "Responsable",
+     "Observacion"
+    ],
+    "rows": [
+     [
+      "MOV-001",
+      "2026-01-05",
+      "MAT-1001",
+      "125.5",
+      "PZA",
+      "A01",
+      "Ana",
+      "Entrada ordinaria"
+     ],
+     [
+      "MOV-002",
+      "2026-01-06",
+      "MAT-1002",
+      "250",
+      "KG",
+      "A02",
+      "Luis",
+      "Transferencia"
+     ],
+     [
+      "MOV-007",
+      "2026-01-11",
+      "MAT-1007",
+      "1000000",
+      "PZA",
+      "A01",
+      "Elena",
+      "Límite superior"
+     ]
+    ],
+    "total_rows": 3
+   }
+  },
+  "M10_Movimientos_Errores.csv": {
+   "Datos": {
+    "header": [
+     "Movimiento",
+     "FechaMovimiento",
+     "CodigoMaterial",
+     "Cantidad",
+     "Unidad",
+     "Almacen",
+     "Responsable",
+     "Observacion"
+    ],
+    "rows": [
+     [
+      "MOV-001",
+      "2026-01-05",
+      "MAT-1001",
+      "125.5",
+      "PZA",
+      "A01",
+      "Ana",
+      "Entrada ordinaria"
+     ],
+     [
+      "MOV-002",
+      "2026-01-06",
+      "MAT-1002",
+      "250",
+      "KG",
+      "A02",
+      "Luis",
+      "Transferencia"
+     ],
+     [
+      "MOV-003",
+      "2026-01-07",
+      "MAT-1003",
+      "0",
+      "PZA",
+      "A01",
+      "Marta",
+      "Cantidad límite"
+     ],
+     [
+      "MOV-004",
+      "31/02/2026",
+      "MAT-1004",
+      "PENDIENTE",
+      "L",
+      "A03",
+      "Carlos",
+      "Datos inválidos"
+     ],
+     [
+      "  mov-005  ",
+      "2026-01-09",
+      " mat-1005 ",
+      "-25",
+      "PZA",
+      "A99",
+      "Rosa",
+      "Revisión funcional"
+     ],
+     [
+      "MOV-006",
+      "",
+      "MAT-1006",
+      "",
+      "KG",
+      "A02",
+      "Pedro",
+      ""
+     ],
+     [
+      "MOV-007",
+      "2026-01-11",
+      "MAT-1007",
+      "1000000",
+      "PZA",
+      "A01",
+      "Elena",
+      "Límite superior"
+     ],
+     [
+      "MOV-008",
+      "2026-01-12",
+      "MAT-1008",
+      "1000000.001",
+      "PZA",
+      "A01",
+      "Jorge",
+      "Fuera de rango"
+     ]
+    ],
+    "total_rows": 8
+   }
+  },
+  "M10_Movimientos_Esquema_Historico.csv": {
+   "Datos": {
+    "header": [
+     "Movimiento",
+     "FechaMovimiento",
+     "CodigoMaterial",
+     "Cantidad",
+     "Unidad",
+     "Almacen",
+     "Responsable",
+     "Observacion"
+    ],
+    "rows": [
+     [
+      "MOV-H01",
+      "2025-12-01",
+      "MAT-9001",
+      "15",
+      "PZA",
+      "A01",
+      "Ana",
+      "Histórico"
+     ],
+     [
+      "MOV-H02",
+      "2025-12-02",
+      "MAT-9002",
+      "20",
+      "KG",
+      "A02",
+      "Luis",
+      "Histórico"
+     ]
+    ],
+    "total_rows": 2
+   }
+  },
+  "M10_Movimientos_Nombres_Historicos.csv": {
+   "Datos": {
+    "header": [
+     "Movimiento",
+     "Fecha",
+     "Material",
+     "CantidadTexto",
+     "Unidad",
+     "Centro",
+     "Responsable",
+     "Observacion"
+    ],
+    "rows": [
+     [
+      "MOV-H01",
+      "2025-12-01",
+      "MAT-9001",
+      "15",
+      "PZA",
+      "A01",
+      "Ana",
+      "Histórico"
+     ]
+    ],
+    "total_rows": 1
+   }
+  },
+  "M10_Movimientos_Columna_Faltante.csv": {
+   "Datos": {
+    "header": [
+     "Movimiento",
+     "FechaMovimiento",
+     "CodigoMaterial",
+     "Unidad",
+     "Almacen",
+     "Responsable",
+     "Observacion"
+    ],
+    "rows": [
+     [
+      "MOV-X1",
+      "2026-02-01",
+      "MAT-X1",
+      "PZA",
+      "A01",
+      "Ana",
+      "Sin cantidad"
+     ]
+    ],
+    "total_rows": 1
+   }
+  },
+  "M10_Movimientos_Columnas_Adicionales.csv": {
+   "Datos": {
+    "header": [
+     "Movimiento",
+     "FechaMovimiento",
+     "CodigoMaterial",
+     "Cantidad",
+     "Unidad",
+     "Almacen",
+     "Responsable",
+     "Observacion",
+     "Lote",
+     "CentroCosto"
+    ],
+    "rows": [
+     [
+      "MOV-001",
+      "2026-01-05",
+      "MAT-1001",
+      "125.5",
+      "PZA",
+      "A01",
+      "Ana",
+      "Entrada ordinaria",
+      "L001",
+      "CC100"
+     ]
+    ],
+    "total_rows": 1
+   }
+  },
+  "M10_Movimientos_Archivo_Vacio.csv": {
+   "Datos": {
+    "header": [
+     "Movimiento",
+     "FechaMovimiento",
+     "CodigoMaterial",
+     "Cantidad",
+     "Unidad",
+     "Almacen",
+     "Responsable",
+     "Observacion"
+    ],
+    "rows": [],
+    "total_rows": 0
+   }
+  },
+  "M10_Archivo_Danado.csv": {
+   "Datos": {
+    "header": [
+     "Advertencia"
+    ],
+    "rows": [
+     [
+      "Este archivo está intencionalmente dañado (contenido binario no válido) y se usa para practicar la detección de archivos corruptos en Power Query. No es posible previsualizar su contenido como tabla."
+     ]
+    ],
+    "total_rows": 1
+   }
+  }
+ },
+ "instrucciones": {
+  "M10_L01_Libro_Trabajo.xlsx": {
+   "proposito": "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles.",
+   "actividades": [
+    "Contrato explícito",
+    "Trazabilidad de entradas y salidas",
+    "Pruebas positivas, negativas y de frontera",
+    "Conciliación completa",
+    "Documentación de decisiones"
+   ],
+   "importante": "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion. Criterio de aprobación: 80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+  },
+  "M10_L02_Libro_Trabajo.xlsx": {
+   "proposito": "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles.",
+   "actividades": [
+    "Contrato explícito",
+    "Trazabilidad de entradas y salidas",
+    "Pruebas positivas, negativas y de frontera",
+    "Conciliación completa",
+    "Documentación de decisiones"
+   ],
+   "importante": "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion. Criterio de aprobación: 80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+  },
+  "M10_L03_Libro_Trabajo.xlsx": {
+   "proposito": "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles.",
+   "actividades": [
+    "Contrato explícito",
+    "Trazabilidad de entradas y salidas",
+    "Pruebas positivas, negativas y de frontera",
+    "Conciliación completa",
+    "Documentación de decisiones"
+   ],
+   "importante": "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion. Criterio de aprobación: 80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+  },
+  "M10_L04_Libro_Trabajo.xlsx": {
+   "proposito": "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles.",
+   "actividades": [
+    "Contrato explícito",
+    "Trazabilidad de entradas y salidas",
+    "Pruebas positivas, negativas y de frontera",
+    "Conciliación completa",
+    "Documentación de decisiones"
+   ],
+   "importante": "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion. Criterio de aprobación: 80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+  },
+  "M10_L05_Libro_Trabajo.xlsx": {
+   "proposito": "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles.",
+   "actividades": [
+    "Contrato explícito",
+    "Trazabilidad de entradas y salidas",
+    "Pruebas positivas, negativas y de frontera",
+    "Conciliación completa",
+    "Documentación de decisiones"
+   ],
+   "importante": "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion. Criterio de aprobación: 80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+  },
+  "M10_L06_Libro_Trabajo.xlsx": {
+   "proposito": "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles.",
+   "actividades": [
+    "Contrato explícito",
+    "Trazabilidad de entradas y salidas",
+    "Pruebas positivas, negativas y de frontera",
+    "Conciliación completa",
+    "Documentación de decisiones"
+   ],
+   "importante": "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion. Criterio de aprobación: 80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+  },
+  "M10_L07_Libro_Trabajo.xlsx": {
+   "proposito": "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles.",
+   "actividades": [
+    "Contrato explícito",
+    "Trazabilidad de entradas y salidas",
+    "Pruebas positivas, negativas y de frontera",
+    "Conciliación completa",
+    "Documentación de decisiones"
+   ],
+   "importante": "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion. Criterio de aprobación: 80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+  },
+  "M10_L08_Libro_Trabajo.xlsx": {
+   "proposito": "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles.",
+   "actividades": [
+    "Contrato explícito",
+    "Trazabilidad de entradas y salidas",
+    "Pruebas positivas, negativas y de frontera",
+    "Conciliación completa",
+    "Documentación de decisiones"
+   ],
+   "importante": "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion. Criterio de aprobación: 80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+  },
+  "M10_L09_Libro_Trabajo.xlsx": {
+   "proposito": "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles.",
+   "actividades": [
+    "Contrato explícito",
+    "Trazabilidad de entradas y salidas",
+    "Pruebas positivas, negativas y de frontera",
+    "Conciliación completa",
+    "Documentación de decisiones"
+   ],
+   "importante": "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion. Criterio de aprobación: 80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+  },
+  "M10_L10_Libro_Trabajo.xlsx": {
+   "proposito": "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles.",
+   "actividades": [
+    "Contrato explícito",
+    "Trazabilidad de entradas y salidas",
+    "Pruebas positivas, negativas y de frontera",
+    "Conciliación completa",
+    "Documentación de decisiones"
+   ],
+   "importante": "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion. Criterio de aprobación: 80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+  },
+  "M10_L11_Libro_Trabajo.xlsx": {
+   "proposito": "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles.",
+   "actividades": [
+    "Contrato explícito",
+    "Trazabilidad de entradas y salidas",
+    "Pruebas positivas, negativas y de frontera",
+    "Conciliación completa",
+    "Documentación de decisiones"
+   ],
+   "importante": "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion. Criterio de aprobación: 80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+  },
+  "M10_L12_Libro_Trabajo.xlsx": {
+   "proposito": "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles.",
+   "actividades": [
+    "Contrato explícito",
+    "Trazabilidad de entradas y salidas",
+    "Pruebas positivas, negativas y de frontera",
+    "Conciliación completa",
+    "Documentación de decisiones"
+   ],
+   "importante": "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion. Criterio de aprobación: 80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+  },
+  "M10_L13_Libro_Trabajo.xlsx": {
+   "proposito": "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles.",
+   "actividades": [
+    "Contrato explícito",
+    "Trazabilidad de entradas y salidas",
+    "Pruebas positivas, negativas y de frontera",
+    "Conciliación completa",
+    "Documentación de decisiones"
+   ],
+   "importante": "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion. Criterio de aprobación: 80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+  },
+  "M10_L14_Libro_Trabajo.xlsx": {
+   "proposito": "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles.",
+   "actividades": [
+    "Contrato explícito",
+    "Trazabilidad de entradas y salidas",
+    "Pruebas positivas, negativas y de frontera",
+    "Conciliación completa",
+    "Documentación de decisiones"
+   ],
+   "importante": "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion. Criterio de aprobación: 80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+  },
+  "M10_L15_Libro_Trabajo.xlsx": {
+   "proposito": "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles.",
+   "actividades": [
+    "Contrato explícito",
+    "Trazabilidad de entradas y salidas",
+    "Pruebas positivas, negativas y de frontera",
+    "Conciliación completa",
+    "Documentación de decisiones"
+   ],
+   "importante": "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion. Criterio de aprobación: 80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+  },
+  "M10_L16_Libro_Trabajo.xlsx": {
+   "proposito": "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles.",
+   "actividades": [
+    "Contrato explícito",
+    "Trazabilidad de entradas y salidas",
+    "Pruebas positivas, negativas y de frontera",
+    "Conciliación completa",
+    "Documentación de decisiones"
+   ],
+   "importante": "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion. Criterio de aprobación: 80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+  },
+  "M10_L18_Libro_Trabajo.xlsx": {
+   "proposito": "Aplicar los conceptos de la lección mediante datos, actividades, pruebas y controles.",
+   "actividades": [
+    "Contrato explícito",
+    "Trazabilidad de entradas y salidas",
+    "Pruebas positivas, negativas y de frontera",
+    "Conciliación completa",
+    "Documentación de decisiones"
+   ],
+   "importante": "1) Revise Datos_Practica. 2) Importe tablas a Power Query. 3) Complete Actividades. 4) Ejecute Casos_Prueba. 5) Revise Conciliacion. Criterio de aprobación: 80 % mínimo, diferencias de conciliación en cero y errores no controlados en cero."
+  }
+ }
+}

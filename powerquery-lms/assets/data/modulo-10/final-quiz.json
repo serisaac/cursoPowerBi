@@ -1,0 +1,102 @@
+[
+ {
+  "q": "¿Cuál es la diferencia principal entre un parámetro funcional y un parámetro técnico?",
+  "opts": [
+   "El parámetro funcional controla una regla del proceso; el técnico controla infraestructura u origen",
+   "No existe ninguna diferencia práctica entre ambos",
+   "El parámetro técnico solo puede usarse en el Editor avanzado",
+   "El parámetro funcional siempre debe ser una lista de valores sugeridos"
+  ],
+  "correct": 0
+ },
+ {
+  "q": "¿Cuándo conviene reemplazar varios parámetros individuales por un registro de configuración?",
+  "opts": [
+   "Nunca, un registro de configuración no puede usarse en Power Query",
+   "Cuando existen varios valores relacionados que conviene administrar y documentar en conjunto",
+   "Solo cuando los valores son de tipo fecha",
+   "Cuando la consulta no requiere validación"
+  ],
+  "correct": 1
+ },
+ {
+  "q": "En una función personalizada, ¿qué representa el contrato de entrada?",
+  "opts": [
+   "El nombre de la consulta que invoca la función",
+   "Un comentario opcional dentro del código M",
+   "Las reglas explícitas sobre qué parámetros recibe la función, sus tipos y sus restricciones",
+   "El resultado que la función devuelve al finalizar"
+  ],
+  "correct": 2
+ },
+ {
+  "q": "¿Qué garantiza un contrato de salida bien definido en una función personalizada?",
+  "opts": [
+   "Que la función nunca produzca un error",
+   "Que el resultado tenga una estructura y un tipo consistentes, sin importar la entrada",
+   "Que la función se ejecute más rápido",
+   "Que la función no necesite pruebas"
+  ],
+  "correct": 1
+ },
+ {
+  "q": "Al convertir una consulta existente en una función reutilizable, ¿qué debe reemplazarse por parámetros?",
+  "opts": [
+   "Todos los pasos de la consulta sin excepción",
+   "Únicamente el nombre de la consulta",
+   "Los valores fijos que deberían poder cambiar entre invocaciones",
+   "Solamente los comentarios del código"
+  ],
+  "correct": 2
+ },
+ {
+  "q": "¿Para qué sirven las pruebas unitarias al documentar una función personalizada?",
+  "opts": [
+   "Para decorar visualmente la consulta",
+   "Para demostrar con casos positivos, negativos y de frontera que la función se comporta como su contrato indica",
+   "Para reemplazar la necesidad de definir un contrato de entrada",
+   "Para acelerar el Query Folding"
+  ],
+  "correct": 1
+ },
+ {
+  "q": "¿Qué caracteriza a una función de orden superior en M?",
+  "opts": [
+   "Una función que solo puede aplicarse a texto",
+   "Una función que recibe o devuelve otra función, como al invocarla desde Table.TransformColumns o List.Transform",
+   "Una función que no admite parámetros",
+   "Una función que solo existe dentro de Power BI, no de Excel"
+  ],
+  "correct": 1
+ },
+ {
+  "q": "Al aplicar una misma función a múltiples archivos de una carpeta, ¿qué riesgo debe controlarse explícitamente?",
+  "opts": [
+   "Que Power Query no permita procesar más de un archivo",
+   "Que archivos con un esquema distinto al esperado se combinen sin ser detectados",
+   "Que los archivos deban tener el mismo nombre",
+   "Que la carpeta contenga subcarpetas"
+  ],
+  "correct": 1
+ },
+ {
+  "q": "Cuando se detecta una variación de esquema entre archivos históricos y actuales, ¿cuál es la práctica correcta?",
+  "opts": [
+   "Ignorar las columnas que no coincidan",
+   "Rechazar automáticamente todos los archivos sin revisión",
+   "Homologar las versiones conocidas mediante un mapeo documentado y enviar los esquemas desconocidos a revisión o cuarentena",
+   "Renombrar manualmente cada archivo antes de importarlo"
+  ],
+  "correct": 2
+ },
+ {
+  "q": "¿Qué diferencia hay entre usar 'try...otherwise' y dejar que un error se propague sin control?",
+  "opts": [
+   "Ninguna, ambos producen el mismo resultado final",
+   "'try...otherwise' permite capturar el error, clasificarlo y decidir una recuperación autorizada en lugar de detener la consulta",
+   "'try...otherwise' solo funciona con valores numéricos",
+   "Dejar que el error se propague siempre es la mejor práctica"
+  ],
+  "correct": 1
+ }
+]

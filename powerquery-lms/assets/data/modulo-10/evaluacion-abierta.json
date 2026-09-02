@@ -1,0 +1,763 @@
+{
+ "1": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Parte A. Conceptos (25% de la evaluación): 1. Explique qué es un parámetro. 2. Diferencie parámetro y consulta escalar. 3. Diferencie parámetro funcional y técnico. 4. Diferencie valor sugerido y valor autorizado. 5. Explique cuándo utilizar un registro de configuración.",
+    "puntos": 25,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Cree parámetros tipados. Diferencie reglas y orígenes. Valide los parámetros. Construya un registro de configuración. Utilice parámetros en una consulta. Conserve la configuración aplicada. Ejecute casos positivos y negativos. Complete las actividades. Resuelva el reto. Mantenga: Diferencia de filas = 0 Escenarios no ejecutados = 0 Parámetros sin validar = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 2,
+    "tipo": "Abierta",
+    "pregunta": "Parte B. Creación (20% de la evaluación): 1. Crear: 2. PFechaInicial 3. PFechaFinal 4. PAlmacen 5. PCantidadMinima 6. PCantidadMaxima 7. PCultura 8. Documentar sus propiedades.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Cree parámetros tipados. Diferencie reglas y orígenes. Valide los parámetros. Construya un registro de configuración. Utilice parámetros en una consulta. Conserve la configuración aplicada. Ejecute casos positivos y negativos. Complete las actividades. Resuelva el reto. Mantenga: Diferencia de filas = 0 Escenarios no ejecutados = 0 Parámetros sin validar = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 3,
+    "tipo": "Abierta",
+    "pregunta": "Parte C. Validación (20% de la evaluación): 1. Construir controles para: 2. Periodo. 3. Límites numéricos. 4. Almacén. 5. Cultura. 6. Modo de ejecución.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Cree parámetros tipados. Diferencie reglas y orígenes. Valide los parámetros. Construya un registro de configuración. Utilice parámetros en una consulta. Conserve la configuración aplicada. Ejecute casos positivos y negativos. Complete las actividades. Resuelva el reto. Mantenga: Diferencia de filas = 0 Escenarios no ejecutados = 0 Parámetros sin validar = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 4,
+    "tipo": "Abierta",
+    "pregunta": "Parte D. Aplicación (25% de la evaluación): 1. Construir una consulta que: 2. Utilice parámetros; 3. Agrupe la configuración; 4. Valide los parámetros; 5. Prepare fechas y cantidades; 6. Clasifique filas; 7. Separe válidos y revisión; 8. Conserve la configuración aplicada.",
+    "puntos": 25,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Cree parámetros tipados. Diferencie reglas y orígenes. Valide los parámetros. Construya un registro de configuración. Utilice parámetros en una consulta. Conserve la configuración aplicada. Ejecute casos positivos y negativos. Complete las actividades. Resuelva el reto. Mantenga: Diferencia de filas = 0 Escenarios no ejecutados = 0 Parámetros sin validar = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 5,
+    "tipo": "Abierta",
+    "pregunta": "Parte E. Pruebas y conciliación (10% de la evaluación): 1. Demostrar: 2. Filas recibidas 3. = 4. Filas válidas 5. + 6. Filas para revisión 7. También: 8. Escenarios definidos 9. = 10. Escenarios ejecutados 11. + 12. Escenarios no ejecutados",
+    "puntos": 10,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Cree parámetros tipados. Diferencie reglas y orígenes. Valide los parámetros. Construya un registro de configuración. Utilice parámetros en una consulta. Conserve la configuración aplicada. Ejecute casos positivos y negativos. Complete las actividades. Resuelva el reto. Mantenga: Diferencia de filas = 0 Escenarios no ejecutados = 0 Parámetros sin validar = 0 Errores no controlados = 0",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 100
+ },
+ "2": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Parte A. Conceptos (25% de la evaluación): 1. Diferencie tipo técnico y dominio funcional. 2. Explique la obligatoriedad de un parámetro. 3. Diferencie valor actual y predeterminado. 4. Explique por qué una lista sugerida no constituye una restricción. 5. Diferencie una lista de valores manual y una consulta de lista. 6. Explique qué es una validación relacional.",
+    "puntos": 25,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Cree parámetros tipados. Diferencie tipo y dominio. Valide rangos y periodos. Controle valores nulos. Diferencie valores sugeridos y autorizados. Conserve valores originales y aplicados. Identifique valores predeterminados. Construya funciones de validación. Genere un diagnóstico tabular. Bloquee configuraciones incompatibles. Ejecute los casos de prueba. Complete las actividades. Resuelva el reto. Mantenga: Diferencia de parámetros = 0 Escenarios no ejecutados = 0 Parámetros obligatorios sin validar = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 2,
+    "tipo": "Abierta",
+    "pregunta": "Parte B. Creación (20% de la evaluación): 1. Crear y documentar: 2. PAlmacen 3. PModoProcesamiento 4. PCantidadMinima 5. PCantidadMaxima 6. PFechaInicial 7. PFechaFinal 8. PIncluirInactivos",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Cree parámetros tipados. Diferencie tipo y dominio. Valide rangos y periodos. Controle valores nulos. Diferencie valores sugeridos y autorizados. Conserve valores originales y aplicados. Identifique valores predeterminados. Construya funciones de validación. Genere un diagnóstico tabular. Bloquee configuraciones incompatibles. Ejecute los casos de prueba. Complete las actividades. Resuelva el reto. Mantenga: Diferencia de parámetros = 0 Escenarios no ejecutados = 0 Parámetros obligatorios sin validar = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 3,
+    "tipo": "Abierta",
+    "pregunta": "Parte C. Funciones (20% de la evaluación): 1. Construir: 2. Fx_ValidarParametroTexto 3. Fx_ValidarParametroNumero 4. Fx_ValidarParametroFecha 5. Fx_ValidarParametroLogico",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Cree parámetros tipados. Diferencie tipo y dominio. Valide rangos y periodos. Controle valores nulos. Diferencie valores sugeridos y autorizados. Conserve valores originales y aplicados. Identifique valores predeterminados. Construya funciones de validación. Genere un diagnóstico tabular. Bloquee configuraciones incompatibles. Ejecute los casos de prueba. Complete las actividades. Resuelva el reto. Mantenga: Diferencia de parámetros = 0 Escenarios no ejecutados = 0 Parámetros obligatorios sin validar = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 4,
+    "tipo": "Abierta",
+    "pregunta": "Parte D. Aplicación (25% de la evaluación): 1. Construir una consulta que: 2. Valide cada parámetro; 3. Valide relaciones; 4. Genere una tabla de diagnóstico; 5. Consolide la configuración; 6. Bloquee la ejecución incompatible; 7. Utilice la configuración en una tabla de movimientos; 8. Conserve valores y estados.",
+    "puntos": 25,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Cree parámetros tipados. Diferencie tipo y dominio. Valide rangos y periodos. Controle valores nulos. Diferencie valores sugeridos y autorizados. Conserve valores originales y aplicados. Identifique valores predeterminados. Construya funciones de validación. Genere un diagnóstico tabular. Bloquee configuraciones incompatibles. Ejecute los casos de prueba. Complete las actividades. Resuelva el reto. Mantenga: Diferencia de parámetros = 0 Escenarios no ejecutados = 0 Parámetros obligatorios sin validar = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 5,
+    "tipo": "Abierta",
+    "pregunta": "Parte E. Pruebas y conciliación (10% de la evaluación): 1. Demostrar: 2. Parámetros definidos 3. = 4. Parámetros válidos 5. + 6. Parámetros inválidos 7. + 8. Parámetros opcionales ausentes 9. También: 10. Escenarios definidos 11. = 12. Escenarios ejecutados 13. + 14. Escenarios no ejecutados",
+    "puntos": 10,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Cree parámetros tipados. Diferencie tipo y dominio. Valide rangos y periodos. Controle valores nulos. Diferencie valores sugeridos y autorizados. Conserve valores originales y aplicados. Identifique valores predeterminados. Construya funciones de validación. Genere un diagnóstico tabular. Bloquee configuraciones incompatibles. Ejecute los casos de prueba. Complete las actividades. Resuelva el reto. Mantenga: Diferencia de parámetros = 0 Escenarios no ejecutados = 0 Parámetros obligatorios sin validar = 0 Errores no controlados = 0",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 100
+ },
+ "3": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Evaluación de cierre (100% de la evaluación): El material fuente de esta lección no incluye un desglose en partes A-E como en las demás lecciones del módulo. Con base en los criterios de aprobación de la lección, explique y demuestre: Obtenga al menos 80 %. Diferencie parámetros, configuraciones y reglas. Centralice fechas y límites. Configure tolerancias. Construya dominios autorizados. Defina modos de procesamiento. Asigne severidades. Registre sustituciones. Valide contradicciones. Construya configuraciones jerárquicas. Compare al menos tres escenarios. Complete las actividades. Resuelva el reto. Mantenga: Diferencia de filas = 0 Diferencia de cantidades = 0 Configuraciones sin validar = 0 Cambios sin versión = 0 Escenarios no ejecutados = 0 Errores no controlados = 0",
+    "puntos": 100,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Diferencie parámetros, configuraciones y reglas. Centralice fechas y límites. Configure tolerancias. Construya dominios autorizados. Defina modos de procesamiento. Asigne severidades. Registre sustituciones. Valide contradicciones. Construya configuraciones jerárquicas. Compare al menos tres escenarios. Complete las actividades. Resuelva el reto. Mantenga: Diferencia de filas = 0 Diferencia de cantidades = 0 Configuraciones sin validar = 0 Cambios sin versión = 0 Escenarios no ejecutados = 0 Errores no controlados = 0",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 100
+ },
+ "4": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Parte A. Conceptos (25% de la evaluación): 1. Diferencie parámetro de interfaz y registro de configuración. 2. Explique la diferencia entre configuración plana y jerárquica. 3. Diferencie campo ausente y campo con null. 4. Explique el uso de Record.FieldOrDefault. 5. Explique el riesgo de una combinación superficial. 6. Defina qué es una configuración efectiva.",
+    "puntos": 25,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Diferencie parámetros y configuración. Construya registros planos y jerárquicos. Valide campos obligatorios y opcionales. Detecte campos adicionales. Diferencie ausencia y null. Aplique valores predeterminados de forma trazable. Combine registros por sección. Cree configuraciones por ambiente. Construya una configuración efectiva. Conserve las capas de origen. Complete las actividades. Resuelva el reto. Mantenga: Bloques sin validar = 0 Campos obligatorios sin explicar = 0 Sobrescrituras sin registrar = 0 Escenarios no ejecutados = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 2,
+    "tipo": "Abierta",
+    "pregunta": "Parte B. Estructuras (20% de la evaluación): 1. Construir: 2. Configuración base 3. Configuración de ambiente 4. Cambios de interfaz 5. Contrato 6. Configuración efectiva",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Diferencie parámetros y configuración. Construya registros planos y jerárquicos. Valide campos obligatorios y opcionales. Detecte campos adicionales. Diferencie ausencia y null. Aplique valores predeterminados de forma trazable. Combine registros por sección. Cree configuraciones por ambiente. Construya una configuración efectiva. Conserve las capas de origen. Complete las actividades. Resuelva el reto. Mantenga: Bloques sin validar = 0 Campos obligatorios sin explicar = 0 Sobrescrituras sin registrar = 0 Escenarios no ejecutados = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 3,
+    "tipo": "Abierta",
+    "pregunta": "Parte C. Funciones (20% de la evaluación): 1. Construir: 2. Fx_CombinarSeccion 3. Fx_ValidarContratoConfiguracion",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Diferencie parámetros y configuración. Construya registros planos y jerárquicos. Valide campos obligatorios y opcionales. Detecte campos adicionales. Diferencie ausencia y null. Aplique valores predeterminados de forma trazable. Combine registros por sección. Cree configuraciones por ambiente. Construya una configuración efectiva. Conserve las capas de origen. Complete las actividades. Resuelva el reto. Mantenga: Bloques sin validar = 0 Campos obligatorios sin explicar = 0 Sobrescrituras sin registrar = 0 Escenarios no ejecutados = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 4,
+    "tipo": "Abierta",
+    "pregunta": "Parte D. Aplicación (25% de la evaluación): 1. Crear una solución que: 2. Seleccione un ambiente; 3. Aplique parámetros de interfaz; 4. Combine los registros por sección; 5. Detecte campos desconocidos; 6. Aplique valores predeterminados; 7. Valide el contrato; 8. Conserve las capas; 9. Entregue una configuración efectiva.",
+    "puntos": 25,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Diferencie parámetros y configuración. Construya registros planos y jerárquicos. Valide campos obligatorios y opcionales. Detecte campos adicionales. Diferencie ausencia y null. Aplique valores predeterminados de forma trazable. Combine registros por sección. Cree configuraciones por ambiente. Construya una configuración efectiva. Conserve las capas de origen. Complete las actividades. Resuelva el reto. Mantenga: Bloques sin validar = 0 Campos obligatorios sin explicar = 0 Sobrescrituras sin registrar = 0 Escenarios no ejecutados = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 5,
+    "tipo": "Abierta",
+    "pregunta": "Parte E. Pruebas y conciliación (10% de la evaluación): 1. Demostrar: 2. Bloques esperados 3. = 4. Bloques válidos 5. + 6. Bloques faltantes 7. + 8. Bloques incompatibles 9. También: 10. Campos efectivos 11. = 12. Campos heredados 13. + 14. Campos sobrescritos 15. + 16. Campos predeterminados",
+    "puntos": 10,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Diferencie parámetros y configuración. Construya registros planos y jerárquicos. Valide campos obligatorios y opcionales. Detecte campos adicionales. Diferencie ausencia y null. Aplique valores predeterminados de forma trazable. Combine registros por sección. Cree configuraciones por ambiente. Construya una configuración efectiva. Conserve las capas de origen. Complete las actividades. Resuelva el reto. Mantenga: Bloques sin validar = 0 Campos obligatorios sin explicar = 0 Sobrescrituras sin registrar = 0 Escenarios no ejecutados = 0 Errores no controlados = 0",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 100
+ },
+ "5": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Parte A. Conceptos (25% de la evaluación): 1. Diferencie ruta, origen, conexión y navegación. 2. Explique la diferencia entre archivo y carpeta. 3. Diferencie Folder.Contents y Folder.Files. 4. Explique la función de una ruta UNC. 5. Diferencie URL de sitio y URL de archivo. 6. Explique por qué parametrizar una ruta no garantiza portabilidad.",
+    "puntos": 25,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Parametrice rutas de forma segura. Separe ubicación y credenciales. Diferencie archivo, carpeta, SharePoint y base de datos. Filtre archivos antes de combinarlos. Conserve trazabilidad. Diagnostique accesibilidad. Configure ambientes. Documente gateway y permisos. Pruebe portabilidad. Complete las actividades. Resuelva el reto. Mantenga: Diferencia de archivos = 0 Diferencia de orígenes = 0 Archivos sin clasificación = 0 Dependencias sin documentar = 0 Credenciales expuestas = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 2,
+    "tipo": "Abierta",
+    "pregunta": "Parte B. Configuración (20% de la evaluación): 1. Construir registros para: 2. Desarrollo 3. Pruebas 4. Producción 5. Incluir: 6. Tipo de origen 7. Ubicación 8. Objeto 9. Necesidad de gateway 10. Método de autenticación esperado",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Parametrice rutas de forma segura. Separe ubicación y credenciales. Diferencie archivo, carpeta, SharePoint y base de datos. Filtre archivos antes de combinarlos. Conserve trazabilidad. Diagnostique accesibilidad. Configure ambientes. Documente gateway y permisos. Pruebe portabilidad. Complete las actividades. Resuelva el reto. Mantenga: Diferencia de archivos = 0 Diferencia de orígenes = 0 Archivos sin clasificación = 0 Dependencias sin documentar = 0 Credenciales expuestas = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 3,
+    "tipo": "Abierta",
+    "pregunta": "Parte C. Funciones (20% de la evaluación): 1. Construir: 2. Fx_ValidarRuta 3. Fx_ProbarArchivo 4. Fx_ObtenerArchivosCarpeta 5. Fx_ResolverOrigen",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Parametrice rutas de forma segura. Separe ubicación y credenciales. Diferencie archivo, carpeta, SharePoint y base de datos. Filtre archivos antes de combinarlos. Conserve trazabilidad. Diagnostique accesibilidad. Configure ambientes. Documente gateway y permisos. Pruebe portabilidad. Complete las actividades. Resuelva el reto. Mantenga: Diferencia de archivos = 0 Diferencia de orígenes = 0 Archivos sin clasificación = 0 Dependencias sin documentar = 0 Credenciales expuestas = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 4,
+    "tipo": "Abierta",
+    "pregunta": "Parte D. Aplicación (25% de la evaluación): 1. Construir una consulta que: 2. Seleccione un ambiente; 3. Resuelva el origen; 4. Pruebe accesibilidad; 5. Filtre archivos; 6. Conserve trazabilidad; 7. Clasifique archivos; 8. Devuelva procesados y rechazados; 9. Documente dependencias.",
+    "puntos": 25,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Parametrice rutas de forma segura. Separe ubicación y credenciales. Diferencie archivo, carpeta, SharePoint y base de datos. Filtre archivos antes de combinarlos. Conserve trazabilidad. Diagnostique accesibilidad. Configure ambientes. Documente gateway y permisos. Pruebe portabilidad. Complete las actividades. Resuelva el reto. Mantenga: Diferencia de archivos = 0 Diferencia de orígenes = 0 Archivos sin clasificación = 0 Dependencias sin documentar = 0 Credenciales expuestas = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 5,
+    "tipo": "Abierta",
+    "pregunta": "Parte E. Pruebas y conciliación (10% de la evaluación): 1. Demostrar: 2. Archivos encontrados 3. = 4. Archivos autorizados 5. + 6. Archivos excluidos 7. También: 8. Archivos autorizados 9. = 10. Archivos procesados 11. + 12. Archivos rechazados",
+    "puntos": 10,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Parametrice rutas de forma segura. Separe ubicación y credenciales. Diferencie archivo, carpeta, SharePoint y base de datos. Filtre archivos antes de combinarlos. Conserve trazabilidad. Diagnostique accesibilidad. Configure ambientes. Documente gateway y permisos. Pruebe portabilidad. Complete las actividades. Resuelva el reto. Mantenga: Diferencia de archivos = 0 Diferencia de orígenes = 0 Archivos sin clasificación = 0 Dependencias sin documentar = 0 Credenciales expuestas = 0 Errores no controlados = 0",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 100
+ },
+ "6": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Parte A. Conceptos (25% de la evaluación): 1. Diferencie dinamismo controlado y abierto. 2. Explique los niveles de dinamismo. 3. Explique por qué debe contarse la cardinalidad. 4. Explique los riesgos del código M generado como texto. 5. Explique la relación entre dinamismo y credenciales. 6. Explique la relación entre parámetros y Query Folding.",
+    "puntos": 25,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Construya consultas dinámicas controladas. Valide archivos y objetos. Detecte coincidencias múltiples. Valide columnas obligatorias. Utilice operadores autorizados. Seleccione funciones desde un catálogo. Evite código M libre. Conserve un contrato estable. Documente credenciales y plegado. Complete las actividades. Resuelva el reto. Mantenga: Diferencia de archivos = 0 Diferencia de objetos = 0 Diferencia de columnas = 0 Diferencia de filas = 0 Código dinámico no autorizado = 0 Escenarios no ejecutados = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 2,
+    "tipo": "Abierta",
+    "pregunta": "Parte B. Navegación (20% de la evaluación): 1. Construir una consulta que seleccione: 2. Archivo 3. Tabla u hoja 4. Columnas obligatorias 5. Columnas opcionales 6. Debe diagnosticar ausencias y duplicidades.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Construya consultas dinámicas controladas. Valide archivos y objetos. Detecte coincidencias múltiples. Valide columnas obligatorias. Utilice operadores autorizados. Seleccione funciones desde un catálogo. Evite código M libre. Conserve un contrato estable. Documente credenciales y plegado. Complete las actividades. Resuelva el reto. Mantenga: Diferencia de archivos = 0 Diferencia de objetos = 0 Diferencia de columnas = 0 Diferencia de filas = 0 Código dinámico no autorizado = 0 Escenarios no ejecutados = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 3,
+    "tipo": "Abierta",
+    "pregunta": "Parte C. Funciones (20% de la evaluación): 1. Construir: 2. Fx_SeleccionarArchivo 3. Fx_SeleccionarObjetoExcel 4. Fx_Comparar 5. Fx_EvaluarReglasDinamicas",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Construya consultas dinámicas controladas. Valide archivos y objetos. Detecte coincidencias múltiples. Valide columnas obligatorias. Utilice operadores autorizados. Seleccione funciones desde un catálogo. Evite código M libre. Conserve un contrato estable. Documente credenciales y plegado. Complete las actividades. Resuelva el reto. Mantenga: Diferencia de archivos = 0 Diferencia de objetos = 0 Diferencia de columnas = 0 Diferencia de filas = 0 Código dinámico no autorizado = 0 Escenarios no ejecutados = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 4,
+    "tipo": "Abierta",
+    "pregunta": "Parte D. Aplicación (25% de la evaluación): 1. Crear una solución que: 2. Resuelva el ambiente; 3. Seleccione un archivo; 4. Seleccione un objeto; 5. Valide el esquema; 6. Aplique filtros configurables; 7. Seleccione una operación autorizada; 8. Conserve trazabilidad; 9. Genere diagnóstico; 10. Mantenga un contrato estable.",
+    "puntos": 25,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Construya consultas dinámicas controladas. Valide archivos y objetos. Detecte coincidencias múltiples. Valide columnas obligatorias. Utilice operadores autorizados. Seleccione funciones desde un catálogo. Evite código M libre. Conserve un contrato estable. Documente credenciales y plegado. Complete las actividades. Resuelva el reto. Mantenga: Diferencia de archivos = 0 Diferencia de objetos = 0 Diferencia de columnas = 0 Diferencia de filas = 0 Código dinámico no autorizado = 0 Escenarios no ejecutados = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 5,
+    "tipo": "Abierta",
+    "pregunta": "Parte E. Pruebas y conciliación (10% de la evaluación): 1. Demostrar: 2. Filas recibidas 3. = 4. Filas conservadas 5. + 6. Filas excluidas 7. También: 8. Columnas solicitadas 9. = 10. Columnas disponibles 11. + 12. Columnas faltantes",
+    "puntos": 10,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Construya consultas dinámicas controladas. Valide archivos y objetos. Detecte coincidencias múltiples. Valide columnas obligatorias. Utilice operadores autorizados. Seleccione funciones desde un catálogo. Evite código M libre. Conserve un contrato estable. Documente credenciales y plegado. Complete las actividades. Resuelva el reto. Mantenga: Diferencia de archivos = 0 Diferencia de objetos = 0 Diferencia de columnas = 0 Diferencia de filas = 0 Código dinámico no autorizado = 0 Escenarios no ejecutados = 0 Errores no controlados = 0",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 100
+ },
+ "7": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Parte A. Conceptos (25% de la evaluación): 1. Explique qué es una función personalizada. 2. Diferencie función nativa y personalizada. 3. Diferencie parámetro obligatorio y opcional. 4. Explique el contrato de salida. 5. Diferencie error técnico e incumplimiento funcional. 6. Explique cuándo conviene crear una función.",
+    "puntos": 25,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Construya funciones con tipos. Utilice parámetros obligatorios y opcionales. Defina contratos de salida. Encapsule una responsabilidad. Evite dependencias ocultas. Devuelva registros diagnósticos. Capture errores. Aplique funciones a diferentes estructuras. Documente y versione sus funciones. Ejecute pruebas unitarias. Complete las actividades. Resuelva el reto. Mantenga: Funciones sin prueba = 0 Casos fallidos = 0 Casos no ejecutados = 0 Invocaciones sin explicar = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 2,
+    "tipo": "Abierta",
+    "pregunta": "Parte B. Construcción (20% de la evaluación): 1. Construir funciones que devuelvan: 2. Texto 3. Número 4. Lista 5. Registro 6. Tabla",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Construya funciones con tipos. Utilice parámetros obligatorios y opcionales. Defina contratos de salida. Encapsule una responsabilidad. Evite dependencias ocultas. Devuelva registros diagnósticos. Capture errores. Aplique funciones a diferentes estructuras. Documente y versione sus funciones. Ejecute pruebas unitarias. Complete las actividades. Resuelva el reto. Mantenga: Funciones sin prueba = 0 Casos fallidos = 0 Casos no ejecutados = 0 Invocaciones sin explicar = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 3,
+    "tipo": "Abierta",
+    "pregunta": "Parte C. Aplicación (20% de la evaluación): 1. Aplicar funciones a: 2. Lista 3. Celda 4. Columna 5. Fila 6. Tabla",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Construya funciones con tipos. Utilice parámetros obligatorios y opcionales. Defina contratos de salida. Encapsule una responsabilidad. Evite dependencias ocultas. Devuelva registros diagnósticos. Capture errores. Aplique funciones a diferentes estructuras. Documente y versione sus funciones. Ejecute pruebas unitarias. Complete las actividades. Resuelva el reto. Mantenga: Funciones sin prueba = 0 Casos fallidos = 0 Casos no ejecutados = 0 Invocaciones sin explicar = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 4,
+    "tipo": "Abierta",
+    "pregunta": "Parte D. Diagnóstico (25% de la evaluación): 1. Construir una función que: 2. Conserve el valor original; 3. Transforme el valor; 4. Capture errores; 5. Asigne un estado; 6. Devuelva un registro; 7. Declare la versión; 8. Tenga parámetros opcionales.",
+    "puntos": 25,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Construya funciones con tipos. Utilice parámetros obligatorios y opcionales. Defina contratos de salida. Encapsule una responsabilidad. Evite dependencias ocultas. Devuelva registros diagnósticos. Capture errores. Aplique funciones a diferentes estructuras. Documente y versione sus funciones. Ejecute pruebas unitarias. Complete las actividades. Resuelva el reto. Mantenga: Funciones sin prueba = 0 Casos fallidos = 0 Casos no ejecutados = 0 Invocaciones sin explicar = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 5,
+    "tipo": "Abierta",
+    "pregunta": "Parte E. Pruebas y conciliación (10% de la evaluación): 1. Demostrar: 2. Casos definidos 3. = 4. Casos aprobados 5. + 6. Casos fallidos 7. + 8. Casos no ejecutados 9. También: 10. Filas recibidas 11. = 12. Evaluaciones generadas",
+    "puntos": 10,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Construya funciones con tipos. Utilice parámetros obligatorios y opcionales. Defina contratos de salida. Encapsule una responsabilidad. Evite dependencias ocultas. Devuelva registros diagnósticos. Capture errores. Aplique funciones a diferentes estructuras. Documente y versione sus funciones. Ejecute pruebas unitarias. Complete las actividades. Resuelva el reto. Mantenga: Funciones sin prueba = 0 Casos fallidos = 0 Casos no ejecutados = 0 Invocaciones sin explicar = 0 Errores no controlados = 0",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 100
+ },
+ "8": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Parte A. Conceptos (25% de la evaluación): 1. Explique qué es un contrato de entrada. 2. Diferencie parámetro y argumento. 3. Diferencie optional y nullable. 4. Explique cuándo utilizar any. 5. Explique por qué table no garantiza columnas. 6. Explique por qué record no garantiza campos.",
+    "puntos": 25,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Defina contratos explícitos. Diferencie argumentos y parámetros. Utilice parámetros obligatorios y opcionales. Controle la nulabilidad. Valide listas, registros, tablas y funciones. Valide relaciones entre argumentos. Registre valores predeterminados. Genere diagnósticos contractuales. Devuelva contratos estables. Complete las actividades. Resuelva el reto. Mantenga: Contratos sin prueba = 0 Parámetros sin validar = 0 Argumentos sin explicar = 0 Invocaciones sin clasificar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 2,
+    "tipo": "Abierta",
+    "pregunta": "Parte B. Firmas (20% de la evaluación): 1. Construir firmas para funciones que reciban: 2. Valores escalares 3. Lista 4. Registro 5. Tabla 6. Función",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Defina contratos explícitos. Diferencie argumentos y parámetros. Utilice parámetros obligatorios y opcionales. Controle la nulabilidad. Valide listas, registros, tablas y funciones. Valide relaciones entre argumentos. Registre valores predeterminados. Genere diagnósticos contractuales. Devuelva contratos estables. Complete las actividades. Resuelva el reto. Mantenga: Contratos sin prueba = 0 Parámetros sin validar = 0 Argumentos sin explicar = 0 Invocaciones sin clasificar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 3,
+    "tipo": "Abierta",
+    "pregunta": "Parte C. Validación (20% de la evaluación): 1. Construir: 2. Fx_ValidarListaNumerica 3. Fx_ValidarConfiguracionCantidad 4. Fx_ValidarTablaEntrada",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Defina contratos explícitos. Diferencie argumentos y parámetros. Utilice parámetros obligatorios y opcionales. Controle la nulabilidad. Valide listas, registros, tablas y funciones. Valide relaciones entre argumentos. Registre valores predeterminados. Genere diagnósticos contractuales. Devuelva contratos estables. Complete las actividades. Resuelva el reto. Mantenga: Contratos sin prueba = 0 Parámetros sin validar = 0 Argumentos sin explicar = 0 Invocaciones sin clasificar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 4,
+    "tipo": "Abierta",
+    "pregunta": "Parte D. Integración (25% de la evaluación): 1. Construir una función que: 2. Reciba una tabla; 3. Reciba una configuración; 4. Reciba una función opcional; 5. Valide columnas; 6. Valide campos; 7. Valide relaciones; 8. Aplique valores predeterminados; 9. Devuelva datos y diagnóstico.",
+    "puntos": 25,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Defina contratos explícitos. Diferencie argumentos y parámetros. Utilice parámetros obligatorios y opcionales. Controle la nulabilidad. Valide listas, registros, tablas y funciones. Valide relaciones entre argumentos. Registre valores predeterminados. Genere diagnósticos contractuales. Devuelva contratos estables. Complete las actividades. Resuelva el reto. Mantenga: Contratos sin prueba = 0 Parámetros sin validar = 0 Argumentos sin explicar = 0 Invocaciones sin clasificar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 5,
+    "tipo": "Abierta",
+    "pregunta": "Parte E. Pruebas y conciliación (10% de la evaluación): 1. Demostrar: 2. Invocaciones ejecutadas 3. = 4. Invocaciones correctas 5. + 6. Invocaciones rechazadas 7. + 8. Invocaciones con error controlado 9. También: 10. Contratos definidos 11. = 12. Contratos probados 13. + 14. Contratos sin prueba",
+    "puntos": 10,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Defina contratos explícitos. Diferencie argumentos y parámetros. Utilice parámetros obligatorios y opcionales. Controle la nulabilidad. Valide listas, registros, tablas y funciones. Valide relaciones entre argumentos. Registre valores predeterminados. Genere diagnósticos contractuales. Devuelva contratos estables. Complete las actividades. Resuelva el reto. Mantenga: Contratos sin prueba = 0 Parámetros sin validar = 0 Argumentos sin explicar = 0 Invocaciones sin clasificar = 0 Casos no ejecutados = 0 Errores no controlados = 0",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 100
+ },
+ "9": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Parte A. Conceptos (25% de la evaluación): 1. Explique qué es un contrato de salida. 2. Diferencie null, error y no aplicable. 3. Diferencie salida escalar y registro diagnóstico. 4. Explique qué es una tabla vacía tipada. 5. Explique la granularidad. 6. Explique qué constituye un cambio incompatible.",
+    "puntos": 25,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Diseñe contratos de salida. Declare tipos de retorno. Mantenga estructuras estables. Diferencie errores e incumplimientos. Cree tablas vacías tipadas. Valide esquemas. Documente la granularidad. Asigne códigos y estados. Conserve configuración y versión. Pruebe todas las ramas. Complete las actividades. Resuelva el reto. Mantenga: Contratos de salida sin prueba = 0 Registros incompatibles = 0 Tablas sin esquema definido = 0 Invocaciones sin clasificar = 0 Diferencia de filas = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 2,
+    "tipo": "Abierta",
+    "pregunta": "Parte B. Construcción (20% de la evaluación): 1. Crear funciones que devuelvan: 2. Número anulable 3. Lista 4. Registro 5. Tabla 6. Registro con varias tablas",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Diseñe contratos de salida. Declare tipos de retorno. Mantenga estructuras estables. Diferencie errores e incumplimientos. Cree tablas vacías tipadas. Valide esquemas. Documente la granularidad. Asigne códigos y estados. Conserve configuración y versión. Pruebe todas las ramas. Complete las actividades. Resuelva el reto. Mantenga: Contratos de salida sin prueba = 0 Registros incompatibles = 0 Tablas sin esquema definido = 0 Invocaciones sin clasificar = 0 Diferencia de filas = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 3,
+    "tipo": "Abierta",
+    "pregunta": "Parte C. Validación (20% de la evaluación): 1. Construir: 2. Fx_NormalizarResultado 3. Fx_ValidarSalidaTabla 4. Validar campos, columnas y tipos.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Diseñe contratos de salida. Declare tipos de retorno. Mantenga estructuras estables. Diferencie errores e incumplimientos. Cree tablas vacías tipadas. Valide esquemas. Documente la granularidad. Asigne códigos y estados. Conserve configuración y versión. Pruebe todas las ramas. Complete las actividades. Resuelva el reto. Mantenga: Contratos de salida sin prueba = 0 Registros incompatibles = 0 Tablas sin esquema definido = 0 Invocaciones sin clasificar = 0 Diferencia de filas = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 4,
+    "tipo": "Abierta",
+    "pregunta": "Parte D. Integración (25% de la evaluación): 1. Construir una función que: 2. Conserve entradas; 3. Procese valores; 4. Capture errores; 5. Genere códigos; 6. Devuelva datos clasificados; 7. Separe válidos y revisión; 8. Incluya controles; 9. Informe granularidad y versión.",
+    "puntos": 25,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Diseñe contratos de salida. Declare tipos de retorno. Mantenga estructuras estables. Diferencie errores e incumplimientos. Cree tablas vacías tipadas. Valide esquemas. Documente la granularidad. Asigne códigos y estados. Conserve configuración y versión. Pruebe todas las ramas. Complete las actividades. Resuelva el reto. Mantenga: Contratos de salida sin prueba = 0 Registros incompatibles = 0 Tablas sin esquema definido = 0 Invocaciones sin clasificar = 0 Diferencia de filas = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 5,
+    "tipo": "Abierta",
+    "pregunta": "Parte E. Pruebas y conciliación (10% de la evaluación): 1. Demostrar: 2. Invocaciones recibidas 3. = 4. Invocaciones correctas 5. + 6. Incumplimientos 7. + 8. Errores 9. + 10. No aplicables 11. También: 12. Filas recibidas 13. = 14. Filas válidas 15. + 16. Filas para revisión",
+    "puntos": 10,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Diseñe contratos de salida. Declare tipos de retorno. Mantenga estructuras estables. Diferencie errores e incumplimientos. Cree tablas vacías tipadas. Valide esquemas. Documente la granularidad. Asigne códigos y estados. Conserve configuración y versión. Pruebe todas las ramas. Complete las actividades. Resuelva el reto. Mantenga: Contratos de salida sin prueba = 0 Registros incompatibles = 0 Tablas sin esquema definido = 0 Invocaciones sin clasificar = 0 Diferencia de filas = 0 Errores no controlados = 0",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 100
+ },
+ "10": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Parte A. Conceptos (20% de la evaluación): 1. Explique cómo identificar lógica reutilizable. 2. Diferencie origen y transformación. 3. Explique el propósito del archivo de muestra. 4. Explique el parámetro binario. 5. Describa la relación entre la consulta vinculada y la función.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Convierta una consulta en función. Elimine dependencias ocultas. Utilice un parámetro binario. Construya una consulta de muestra. Comprenda la vinculación. Declare contratos. Valide esquemas. Invoque la función por archivo. Conserve trazabilidad. Separe correctos y rechazados. Ejecute pruebas de regresión. Complete las actividades. Resuelva el reto. Mantenga: Funciones sin prueba = 0 Archivos sin clasificación = 0 Diferencia de archivos = 0 Diferencia de filas = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 2,
+    "tipo": "Abierta",
+    "pregunta": "Parte B. Conversión manual (20% de la evaluación): 1. Convertir: 2. Una consulta escalar. 3. Una consulta tabular. 4. Una consulta de archivo.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Convierta una consulta en función. Elimine dependencias ocultas. Utilice un parámetro binario. Construya una consulta de muestra. Comprenda la vinculación. Declare contratos. Valide esquemas. Invoque la función por archivo. Conserve trazabilidad. Separe correctos y rechazados. Ejecute pruebas de regresión. Complete las actividades. Resuelva el reto. Mantenga: Funciones sin prueba = 0 Archivos sin clasificación = 0 Diferencia de archivos = 0 Diferencia de filas = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 3,
+    "tipo": "Abierta",
+    "pregunta": "Parte C. Conversión mediante interfaz (20% de la evaluación): 1. Crear: 2. PContenidoArchivo 3. Stg_TransformarArchivoMuestra 4. Fx_TransformarArchivo",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Convierta una consulta en función. Elimine dependencias ocultas. Utilice un parámetro binario. Construya una consulta de muestra. Comprenda la vinculación. Declare contratos. Valide esquemas. Invoque la función por archivo. Conserve trazabilidad. Separe correctos y rechazados. Ejecute pruebas de regresión. Complete las actividades. Resuelva el reto. Mantenga: Funciones sin prueba = 0 Archivos sin clasificación = 0 Diferencia de archivos = 0 Diferencia de filas = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 4,
+    "tipo": "Abierta",
+    "pregunta": "Parte D. Invocación y combinación (25% de la evaluación): 1. Invocar la función por archivo. 2. Conservar trazabilidad. 3. Expandir el contrato. 4. Separar correctos y rechazados. 5. Combinar las tablas válidas.",
+    "puntos": 25,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Convierta una consulta en función. Elimine dependencias ocultas. Utilice un parámetro binario. Construya una consulta de muestra. Comprenda la vinculación. Declare contratos. Valide esquemas. Invoque la función por archivo. Conserve trazabilidad. Separe correctos y rechazados. Ejecute pruebas de regresión. Complete las actividades. Resuelva el reto. Mantenga: Funciones sin prueba = 0 Archivos sin clasificación = 0 Diferencia de archivos = 0 Diferencia de filas = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 5,
+    "tipo": "Abierta",
+    "pregunta": "Parte E. Pruebas y conciliación (15% de la evaluación): 1. Demostrar: 2. Archivos autorizados 3. = 4. Archivos correctos 5. + 6. Archivos rechazados 7. También: 8. Suma de filas producidas 9. = 10. Filas combinadas",
+    "puntos": 15,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Convierta una consulta en función. Elimine dependencias ocultas. Utilice un parámetro binario. Construya una consulta de muestra. Comprenda la vinculación. Declare contratos. Valide esquemas. Invoque la función por archivo. Conserve trazabilidad. Separe correctos y rechazados. Ejecute pruebas de regresión. Complete las actividades. Resuelva el reto. Mantenga: Funciones sin prueba = 0 Archivos sin clasificación = 0 Diferencia de archivos = 0 Diferencia de filas = 0 Errores no controlados = 0",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 100
+ },
+ "11": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Parte A. Conceptos (20% de la evaluación): 1. Explique qué significa invocar una función. 2. Diferencie prueba positiva, negativa y de frontera. 3. Explique qué es una aserción. 4. Explique qué significa cobertura. 5. Diferencie prueba negativa aprobada y prueba fallida. 6. Explique la finalidad de una prueba de regresión.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Invoque funciones desde distintos contextos. Capture errores de invocación. Construya casos positivos, negativos y de frontera. Defina resultados esperados. Implemente aserciones. Valide contratos. Mida cobertura. Documente funciones. Registre versiones. Ejecute pruebas de regresión. Complete las actividades. Resuelva el reto. Mantenga: Casos fallidos = 0 Casos no ejecutados = 0 Reglas sin prueba = 0 Contratos sin validar = 0 Funciones sin documentación = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 2,
+    "tipo": "Abierta",
+    "pregunta": "Parte B. Invocación (20% de la evaluación): 1. Invocar funciones: 2. Directamente 3. Desde una consulta 4. Sobre una lista 5. Por fila 6. Por archivo",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Invoque funciones desde distintos contextos. Capture errores de invocación. Construya casos positivos, negativos y de frontera. Defina resultados esperados. Implemente aserciones. Valide contratos. Mida cobertura. Documente funciones. Registre versiones. Ejecute pruebas de regresión. Complete las actividades. Resuelva el reto. Mantenga: Casos fallidos = 0 Casos no ejecutados = 0 Reglas sin prueba = 0 Contratos sin validar = 0 Funciones sin documentación = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 3,
+    "tipo": "Abierta",
+    "pregunta": "Parte C. Automatización (25% de la evaluación): 1. Construir: 2. Fx_AfirmarIgualdad 3. Fx_AfirmarContratoRegistro 4. Tst_fx_ConvertirCantidad",
+    "puntos": 25,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Invoque funciones desde distintos contextos. Capture errores de invocación. Construya casos positivos, negativos y de frontera. Defina resultados esperados. Implemente aserciones. Valide contratos. Mida cobertura. Documente funciones. Registre versiones. Ejecute pruebas de regresión. Complete las actividades. Resuelva el reto. Mantenga: Casos fallidos = 0 Casos no ejecutados = 0 Reglas sin prueba = 0 Contratos sin validar = 0 Funciones sin documentación = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 4,
+    "tipo": "Abierta",
+    "pregunta": "Parte D. Documentación y regresión (20% de la evaluación): 1. Documentar la firma. 2. Agregar ejemplos. 3. Registrar versión. 4. Modificar la función. 5. Ejecutar nuevamente todas las pruebas.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Invoque funciones desde distintos contextos. Capture errores de invocación. Construya casos positivos, negativos y de frontera. Defina resultados esperados. Implemente aserciones. Valide contratos. Mida cobertura. Documente funciones. Registre versiones. Ejecute pruebas de regresión. Complete las actividades. Resuelva el reto. Mantenga: Casos fallidos = 0 Casos no ejecutados = 0 Reglas sin prueba = 0 Contratos sin validar = 0 Funciones sin documentación = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 5,
+    "tipo": "Abierta",
+    "pregunta": "Parte E. Cobertura y conciliación (15% de la evaluación): 1. Demostrar: 2. Casos definidos 3. = 4. Casos aprobados 5. + 6. Casos fallidos 7. + 8. Casos no ejecutados 9. También: 10. Reglas definidas 11. = 12. Reglas probadas 13. + 14. Reglas sin prueba",
+    "puntos": 15,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Invoque funciones desde distintos contextos. Capture errores de invocación. Construya casos positivos, negativos y de frontera. Defina resultados esperados. Implemente aserciones. Valide contratos. Mida cobertura. Documente funciones. Registre versiones. Ejecute pruebas de regresión. Complete las actividades. Resuelva el reto. Mantenga: Casos fallidos = 0 Casos no ejecutados = 0 Reglas sin prueba = 0 Contratos sin validar = 0 Funciones sin documentación = 0 Errores no controlados = 0",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 100
+ },
+ "12": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Parte A. Conceptos (20% de la evaluación): 1. Explique qué es una función de orden superior. 2. Diferencie transformador y predicado. 3. Explique qué es composición. 4. Explique qué es una función identidad. 5. Explique la captura de configuración. 6. Explique el propósito de un adaptador.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Construya funciones de orden superior. Reciba y devuelva funciones. Componga funciones compatibles. Mantenga un catálogo autorizado. Construya una canalización diagnóstica. Controle etapas bloqueantes. Conserve resultados intermedios. Documente el orden. Pruebe funciones y composiciones. Complete las actividades. Resuelva el reto. Mantenga: Funciones no autorizadas ejecutadas = 0 Funciones sin prueba = 0 Etapas sin documentación = 0 Diferencia de etapas = 0 Diferencia de filas = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 2,
+    "tipo": "Abierta",
+    "pregunta": "Parte B. Construcción (20% de la evaluación): 1. Crear: 2. Fx_ComponerDos 3. Fx_CrearValidadorRango 4. Fx_CrearPreparadorTexto 5. Fx_Identidad",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Construya funciones de orden superior. Reciba y devuelva funciones. Componga funciones compatibles. Mantenga un catálogo autorizado. Construya una canalización diagnóstica. Controle etapas bloqueantes. Conserve resultados intermedios. Documente el orden. Pruebe funciones y composiciones. Complete las actividades. Resuelva el reto. Mantenga: Funciones no autorizadas ejecutadas = 0 Funciones sin prueba = 0 Etapas sin documentación = 0 Diferencia de etapas = 0 Diferencia de filas = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 3,
+    "tipo": "Abierta",
+    "pregunta": "Parte C. Canalización (25% de la evaluación): 1. Construir: 2. Fx_EjecutarEtapa 3. Fx_EjecutarCanalizacion 4. Debe conservar: 5. Entrada. 6. Salida. 7. Estado. 8. Error. 9. Posibilidad de continuar. 10. Resultados por etapa.",
+    "puntos": 25,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Construya funciones de orden superior. Reciba y devuelva funciones. Componga funciones compatibles. Mantenga un catálogo autorizado. Construya una canalización diagnóstica. Controle etapas bloqueantes. Conserve resultados intermedios. Documente el orden. Pruebe funciones y composiciones. Complete las actividades. Resuelva el reto. Mantenga: Funciones no autorizadas ejecutadas = 0 Funciones sin prueba = 0 Etapas sin documentación = 0 Diferencia de etapas = 0 Diferencia de filas = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 4,
+    "tipo": "Abierta",
+    "pregunta": "Parte D. Aplicación (20% de la evaluación): 1. Construir una canalización para: 2. Preparar una cantidad 3. Convertirla 4. Validarla 5. Clasificarla 6. Aplicarla a una tabla de movimientos.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Construya funciones de orden superior. Reciba y devuelva funciones. Componga funciones compatibles. Mantenga un catálogo autorizado. Construya una canalización diagnóstica. Controle etapas bloqueantes. Conserve resultados intermedios. Documente el orden. Pruebe funciones y composiciones. Complete las actividades. Resuelva el reto. Mantenga: Funciones no autorizadas ejecutadas = 0 Funciones sin prueba = 0 Etapas sin documentación = 0 Diferencia de etapas = 0 Diferencia de filas = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 5,
+    "tipo": "Abierta",
+    "pregunta": "Parte E. Pruebas y conciliación (15% de la evaluación): 1. Demostrar: 2. Etapas esperadas 3. = 4. Etapas ejecutadas 5. + 6. Etapas no ejecutadas 7. También: 8. Filas recibidas 9. = 10. Filas válidas 11. + 12. Filas para revisión",
+    "puntos": 15,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Construya funciones de orden superior. Reciba y devuelva funciones. Componga funciones compatibles. Mantenga un catálogo autorizado. Construya una canalización diagnóstica. Controle etapas bloqueantes. Conserve resultados intermedios. Documente el orden. Pruebe funciones y composiciones. Complete las actividades. Resuelva el reto. Mantenga: Funciones no autorizadas ejecutadas = 0 Funciones sin prueba = 0 Etapas sin documentación = 0 Diferencia de etapas = 0 Diferencia de filas = 0 Errores no controlados = 0",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 100
+ },
+ "13": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Parte A. Conceptos (20% de la evaluación): 1. Explique la vista del sistema de archivos. 2. Describa la columna Content. 3. Diferencie archivo excluido y rechazado. 4. Explique la finalidad del archivo de muestra. 5. Defina procesamiento parcial. 6. Explique por qué la trazabilidad debe agregarse antes de combinar.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Filtre archivos antes de invocar. Documente todas las exclusiones. Capture errores por archivo. Valide contratos. Clasifique rechazos. Conserve trazabilidad. Detecte duplicados. Combine únicamente tablas correctas. Aplique políticas de procesamiento. Construya una bitácora. Complete las actividades. Resuelva el reto. Mantenga: Archivos sin clasificación = 0 Diferencia de selección = 0 Diferencia de procesamiento = 0 Diferencia de filas = 0 Diferencia de cantidades = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 2,
+    "tipo": "Abierta",
+    "pregunta": "Parte B. Selección (20% de la evaluación): 1. Construir una consulta que: 2. Identifique archivos. 3. Asigne una causa. 4. Separe autorizados y excluidos. 5. Detecte duplicados. 6. Seleccione una muestra.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Filtre archivos antes de invocar. Documente todas las exclusiones. Capture errores por archivo. Valide contratos. Clasifique rechazos. Conserve trazabilidad. Detecte duplicados. Combine únicamente tablas correctas. Aplique políticas de procesamiento. Construya una bitácora. Complete las actividades. Resuelva el reto. Mantenga: Archivos sin clasificación = 0 Diferencia de selección = 0 Diferencia de procesamiento = 0 Diferencia de filas = 0 Diferencia de cantidades = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 3,
+    "tipo": "Abierta",
+    "pregunta": "Parte C. Invocación (20% de la evaluación): 1. Invocar una función por archivo. 2. Capturar errores. 3. Normalizar resultados. 4. Validar el contrato. 5. Clasificar rechazos.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Filtre archivos antes de invocar. Documente todas las exclusiones. Capture errores por archivo. Valide contratos. Clasifique rechazos. Conserve trazabilidad. Detecte duplicados. Combine únicamente tablas correctas. Aplique políticas de procesamiento. Construya una bitácora. Complete las actividades. Resuelva el reto. Mantenga: Archivos sin clasificación = 0 Diferencia de selección = 0 Diferencia de procesamiento = 0 Diferencia de filas = 0 Diferencia de cantidades = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 4,
+    "tipo": "Abierta",
+    "pregunta": "Parte D. Consolidación (25% de la evaluación): 1. Agregar trazabilidad. 2. Combinar tablas válidas. 3. Devolver tabla vacía cuando corresponda. 4. Generar bitácora. 5. Aplicar política estricta y tolerante.",
+    "puntos": 25,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Filtre archivos antes de invocar. Documente todas las exclusiones. Capture errores por archivo. Valide contratos. Clasifique rechazos. Conserve trazabilidad. Detecte duplicados. Combine únicamente tablas correctas. Aplique políticas de procesamiento. Construya una bitácora. Complete las actividades. Resuelva el reto. Mantenga: Archivos sin clasificación = 0 Diferencia de selección = 0 Diferencia de procesamiento = 0 Diferencia de filas = 0 Diferencia de cantidades = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 5,
+    "tipo": "Abierta",
+    "pregunta": "Parte E. Conciliación (15% de la evaluación): 1. Demostrar: 2. Archivos encontrados 3. = 4. Archivos autorizados 5. + 6. Archivos excluidos 7. Archivos autorizados 8. = 9. Archivos correctos 10. + 11. Archivos rechazados 12. Filas informadas 13. = 14. Filas combinadas",
+    "puntos": 15,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Filtre archivos antes de invocar. Documente todas las exclusiones. Capture errores por archivo. Valide contratos. Clasifique rechazos. Conserve trazabilidad. Detecte duplicados. Combine únicamente tablas correctas. Aplique políticas de procesamiento. Construya una bitácora. Complete las actividades. Resuelva el reto. Mantenga: Archivos sin clasificación = 0 Diferencia de selección = 0 Diferencia de procesamiento = 0 Diferencia de filas = 0 Diferencia de cantidades = 0 Errores no controlados = 0",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 100
+ },
+ "14": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Parte A. Conceptos (20% de la evaluación): 1. Explique qué es un esquema. 2. Diferencie esquema mínimo y completo. 3. Diferencie columna obligatoria y opcional. 4. Diferencie archivo vacío y dañado. 5. Explique una versión de esquema. 6. Explique el propósito de la cuarentena.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Construya contratos de esquema. Distinga columnas obligatorias y opcionales. Identifique versiones. Utilice mapeos autorizados. Detecte conflictos. Homologue estructuras. Valide el esquema efectivo. Construya una cuarentena. Detecte duplicados. Mantenga una bitácora. Complete las actividades. Resuelva el reto. Mantenga: Esquemas desconocidos combinados = 0 Columnas obligatorias inventadas = 0 Mapeos ambiguos aplicados = 0 Archivos sin clasificación = 0 Diferencia de archivos = 0 Diferencia de filas = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 2,
+    "tipo": "Abierta",
+    "pregunta": "Parte B. Contratos (20% de la evaluación): 1. Construir: 2. Contrato de columnas 3. Catálogo de versiones 4. Catálogo de equivalencias 5. Política de adicionales 6. Política de archivos vacíos",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Construya contratos de esquema. Distinga columnas obligatorias y opcionales. Identifique versiones. Utilice mapeos autorizados. Detecte conflictos. Homologue estructuras. Valide el esquema efectivo. Construya una cuarentena. Detecte duplicados. Mantenga una bitácora. Complete las actividades. Resuelva el reto. Mantenga: Esquemas desconocidos combinados = 0 Columnas obligatorias inventadas = 0 Mapeos ambiguos aplicados = 0 Archivos sin clasificación = 0 Diferencia de archivos = 0 Diferencia de filas = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 3,
+    "tipo": "Abierta",
+    "pregunta": "Parte C. Funciones (25% de la evaluación): 1. Construir: 2. Fx_ValidarMapeoColumnas 3. Fx_ValidarEsquemaArchivo 4. Fx_AgregarOpcionalesFaltantes 5. Fx_HomologarEsquema",
+    "puntos": 25,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Construya contratos de esquema. Distinga columnas obligatorias y opcionales. Identifique versiones. Utilice mapeos autorizados. Detecte conflictos. Homologue estructuras. Valide el esquema efectivo. Construya una cuarentena. Detecte duplicados. Mantenga una bitácora. Complete las actividades. Resuelva el reto. Mantenga: Esquemas desconocidos combinados = 0 Columnas obligatorias inventadas = 0 Mapeos ambiguos aplicados = 0 Archivos sin clasificación = 0 Diferencia de archivos = 0 Diferencia de filas = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 4,
+    "tipo": "Abierta",
+    "pregunta": "Parte D. Integración (20% de la evaluación): 1. Crear una consulta que: 2. Detecte la versión. 3. Seleccione el mapeo. 4. Homologue. 5. Valide el resultado. 6. Clasifique el archivo. 7. Separe aceptados y cuarentena. 8. Combine únicamente archivos compatibles.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Construya contratos de esquema. Distinga columnas obligatorias y opcionales. Identifique versiones. Utilice mapeos autorizados. Detecte conflictos. Homologue estructuras. Valide el esquema efectivo. Construya una cuarentena. Detecte duplicados. Mantenga una bitácora. Complete las actividades. Resuelva el reto. Mantenga: Esquemas desconocidos combinados = 0 Columnas obligatorias inventadas = 0 Mapeos ambiguos aplicados = 0 Archivos sin clasificación = 0 Diferencia de archivos = 0 Diferencia de filas = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 5,
+    "tipo": "Abierta",
+    "pregunta": "Parte E. Pruebas y conciliación (15% de la evaluación): 1. Demostrar: 2. Archivos evaluados 3. = 4. Archivos aceptados 5. + 6. Archivos en cuarentena 7. También: 8. Filas informadas 9. = 10. Filas combinadas",
+    "puntos": 15,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Construya contratos de esquema. Distinga columnas obligatorias y opcionales. Identifique versiones. Utilice mapeos autorizados. Detecte conflictos. Homologue estructuras. Valide el esquema efectivo. Construya una cuarentena. Detecte duplicados. Mantenga una bitácora. Complete las actividades. Resuelva el reto. Mantenga: Esquemas desconocidos combinados = 0 Columnas obligatorias inventadas = 0 Mapeos ambiguos aplicados = 0 Archivos sin clasificación = 0 Diferencia de archivos = 0 Diferencia de filas = 0 Errores no controlados = 0",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 100
+ },
+ "15": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Parte A. Conceptos (20% de la evaluación): 1. Diferencie null y error. 2. Explique la propagación de errores. 3. Describa el registro producido por try. 4. Diferencie otherwise y catch. 5. Diferencie error técnico e incumplimiento funcional. 6. Explique la finalidad de Error.Record.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Utilice correctamente try. Interprete el registro de intento. Utilice otherwise de manera justificada. Utilice catch para tratar errores. Construya errores con Error.Record. Conserve causa, mensaje y detalle. Separe errores técnicos y funcionales. Capture errores por valor, fila y archivo. Registre sustituciones. Aplique severidades. Construya una tabla diagnóstica. Complete las actividades. Resuelva el reto. Mantenga: Errores desconocidos ocultos = 0 Sustituciones sin registrar = 0 Filas sin clasificación = 0 Archivos sin clasificación = 0 Diferencia de filas = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 2,
+    "tipo": "Abierta",
+    "pregunta": "Parte B. Conversión segura (20% de la evaluación): 1. Construir: 2. Fx_ConvertirNumeroSeguro 3. Fx_ConvertirFechaSegura 4. Fx_NormalizarError",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Utilice correctamente try. Interprete el registro de intento. Utilice otherwise de manera justificada. Utilice catch para tratar errores. Construya errores con Error.Record. Conserve causa, mensaje y detalle. Separe errores técnicos y funcionales. Capture errores por valor, fila y archivo. Registre sustituciones. Aplique severidades. Construya una tabla diagnóstica. Complete las actividades. Resuelva el reto. Mantenga: Errores desconocidos ocultos = 0 Sustituciones sin registrar = 0 Filas sin clasificación = 0 Archivos sin clasificación = 0 Diferencia de filas = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 3,
+    "tipo": "Abierta",
+    "pregunta": "Parte C. Sustituciones y políticas (20% de la evaluación): 1. Definir sustituciones autorizadas. 2. Distinguir ausencia y error. 3. Registrar el valor aplicado. 4. Asignar severidades. 5. Aplicar modos de procesamiento.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Utilice correctamente try. Interprete el registro de intento. Utilice otherwise de manera justificada. Utilice catch para tratar errores. Construya errores con Error.Record. Conserve causa, mensaje y detalle. Separe errores técnicos y funcionales. Capture errores por valor, fila y archivo. Registre sustituciones. Aplique severidades. Construya una tabla diagnóstica. Complete las actividades. Resuelva el reto. Mantenga: Errores desconocidos ocultos = 0 Sustituciones sin registrar = 0 Filas sin clasificación = 0 Archivos sin clasificación = 0 Diferencia de filas = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 4,
+    "tipo": "Abierta",
+    "pregunta": "Parte D. Integración (25% de la evaluación): 1. Crear una consulta que: 2. Conserve valores originales; 3. Capture errores por campo; 4. Agrupe errores por fila; 5. Genere una tabla de errores; 6. Separe válidos y revisión; 7. Conserve el contexto; 8. Calcule indicadores; 9. Aplique una política.",
+    "puntos": 25,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Utilice correctamente try. Interprete el registro de intento. Utilice otherwise de manera justificada. Utilice catch para tratar errores. Construya errores con Error.Record. Conserve causa, mensaje y detalle. Separe errores técnicos y funcionales. Capture errores por valor, fila y archivo. Registre sustituciones. Aplique severidades. Construya una tabla diagnóstica. Complete las actividades. Resuelva el reto. Mantenga: Errores desconocidos ocultos = 0 Sustituciones sin registrar = 0 Filas sin clasificación = 0 Archivos sin clasificación = 0 Diferencia de filas = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 5,
+    "tipo": "Abierta",
+    "pregunta": "Parte E. Pruebas y conciliación (15% de la evaluación): 1. Demostrar: 2. Filas recibidas 3. = 4. Filas válidas 5. + 6. Filas para revisión 7. También: 8. Errores detectados 9. = 10. Errores normalizados 11. + 12. Errores no controlados",
+    "puntos": 15,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Utilice correctamente try. Interprete el registro de intento. Utilice otherwise de manera justificada. Utilice catch para tratar errores. Construya errores con Error.Record. Conserve causa, mensaje y detalle. Separe errores técnicos y funcionales. Capture errores por valor, fila y archivo. Registre sustituciones. Aplique severidades. Construya una tabla diagnóstica. Complete las actividades. Resuelva el reto. Mantenga: Errores desconocidos ocultos = 0 Sustituciones sin registrar = 0 Filas sin clasificación = 0 Archivos sin clasificación = 0 Diferencia de filas = 0 Errores no controlados = 0",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 100
+ },
+ "16": {
+  "tipo": "estandar",
+  "items": [
+   {
+    "no": 1,
+    "tipo": "Abierta",
+    "pregunta": "Parte A. Conceptos (20% de la evaluación): 1. Diferencie captura y recuperación. 2. Explique qué es un error recuperable. 3. Diferencie recuperación y degradación. 4. Explique el relanzamiento enriquecido. 5. Explique cuándo debe reintentarse. 6. Diferencie recuperación aparente y efectiva.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Clasifique correctamente errores. Recupere solo causas autorizadas. Relance errores desconocidos. Conserve la causa original. Implemente reintentos limitados. Valide fuentes alternativas. Identifique salidas degradadas. Aplique tolerancias globales. Construya una bitácora jerárquica. Ejecute pruebas de recuperación. Complete las actividades. Resuelva el reto. Mantenga: Errores desconocidos ocultos = 0 Recuperaciones sin validar = 0 Reintentos sin límite = 0 Salidas degradadas no identificadas = 0 Alternativas sin conciliar = 0 Diferencia de archivos = 0 Diferencia de filas = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 2,
+    "tipo": "Abierta",
+    "pregunta": "Parte B. Clasificación (20% de la evaluación): 1. Construir: 2. Catálogo de errores 3. Catálogo de acciones 4. Política de recuperación 5. Política de reintentos 6. Límites de tolerancia",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Clasifique correctamente errores. Recupere solo causas autorizadas. Relance errores desconocidos. Conserve la causa original. Implemente reintentos limitados. Valide fuentes alternativas. Identifique salidas degradadas. Aplique tolerancias globales. Construya una bitácora jerárquica. Ejecute pruebas de recuperación. Complete las actividades. Resuelva el reto. Mantenga: Errores desconocidos ocultos = 0 Recuperaciones sin validar = 0 Reintentos sin límite = 0 Salidas degradadas no identificadas = 0 Alternativas sin conciliar = 0 Diferencia de archivos = 0 Diferencia de filas = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 3,
+    "tipo": "Abierta",
+    "pregunta": "Parte C. Funciones (25% de la evaluación): 1. Construir: 2. Fx_DeterminarAccionError 3. Fx_EnriquecerError 4. Fx_ObtenerCausaRaiz 5. Fx_Reintentar 6. Fx_EjecutarConRecuperacion",
+    "puntos": 25,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Clasifique correctamente errores. Recupere solo causas autorizadas. Relance errores desconocidos. Conserve la causa original. Implemente reintentos limitados. Valide fuentes alternativas. Identifique salidas degradadas. Aplique tolerancias globales. Construya una bitácora jerárquica. Ejecute pruebas de recuperación. Complete las actividades. Resuelva el reto. Mantenga: Errores desconocidos ocultos = 0 Recuperaciones sin validar = 0 Reintentos sin límite = 0 Salidas degradadas no identificadas = 0 Alternativas sin conciliar = 0 Diferencia de archivos = 0 Diferencia de filas = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 4,
+    "tipo": "Abierta",
+    "pregunta": "Parte D. Integración (20% de la evaluación): 1. Crear una solución que: 2. Ejecute una operación principal. 3. Capture el error. 4. Determine la acción. 5. Utilice una alternativa autorizada. 6. Valide la recuperación. 7. Aísle resultados incompatibles. 8. Conserve los intentos. 9. Aplique límites globales.",
+    "puntos": 20,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Clasifique correctamente errores. Recupere solo causas autorizadas. Relance errores desconocidos. Conserve la causa original. Implemente reintentos limitados. Valide fuentes alternativas. Identifique salidas degradadas. Aplique tolerancias globales. Construya una bitácora jerárquica. Ejecute pruebas de recuperación. Complete las actividades. Resuelva el reto. Mantenga: Errores desconocidos ocultos = 0 Recuperaciones sin validar = 0 Reintentos sin límite = 0 Salidas degradadas no identificadas = 0 Alternativas sin conciliar = 0 Diferencia de archivos = 0 Diferencia de filas = 0 Errores no controlados = 0",
+    "criterio": ""
+   },
+   {
+    "no": 5,
+    "tipo": "Abierta",
+    "pregunta": "Parte E. Pruebas y conciliación (15% de la evaluación): 1. Demostrar: 2. Recuperaciones intentadas 3. = 4. Recuperaciones validadas 5. + 6. Recuperaciones inválidas 7. + 8. Alternativas con error 9. También: 10. Archivos evaluados 11. = 12. Archivos correctos 13. + 14. Archivos recuperados 15. + 16. Archivos degradados 17. + 18. Archivos en cuarentena",
+    "puntos": 15,
+    "respuestaInstructor": "Criterios de aprobación de la lección: Obtenga al menos 80 %. Apruebe el quiz. Clasifique correctamente errores. Recupere solo causas autorizadas. Relance errores desconocidos. Conserve la causa original. Implemente reintentos limitados. Valide fuentes alternativas. Identifique salidas degradadas. Aplique tolerancias globales. Construya una bitácora jerárquica. Ejecute pruebas de recuperación. Complete las actividades. Resuelva el reto. Mantenga: Errores desconocidos ocultos = 0 Recuperaciones sin validar = 0 Reintentos sin límite = 0 Salidas degradadas no identificadas = 0 Alternativas sin conciliar = 0 Diferencia de archivos = 0 Diferencia de filas = 0 Errores no controlados = 0",
+    "criterio": ""
+   }
+  ],
+  "totalPuntos": 100
+ },
+ "17": {
+  "tipo": "rubrica",
+  "items": [
+   {
+    "criterio": "A. Configuración y parámetros",
+    "puntos": 10,
+    "condicionLogro": "El participante aplica correctamente: ambientes, rutas, valores predeterminados, dominios, validación y protección de información."
+   },
+   {
+    "criterio": "B. Funciones y contratos",
+    "puntos": 15,
+    "condicionLogro": "El participante aplica correctamente: funciones reutilizables, contratos de entrada, contratos de salida, documentación, versionado y dependencias explícitas."
+   },
+   {
+    "criterio": "C. Procesamiento de archivos",
+    "puntos": 15,
+    "condicionLogro": "El participante aplica correctamente: filtrado previo, columna Content, invocación, trazabilidad, correctos y rechazados y duplicados."
+   },
+   {
+    "criterio": "D. Esquemas",
+    "puntos": 15,
+    "condicionLogro": "El participante aplica correctamente: versiones, columnas faltantes, columnas adicionales, mapeos, homologación y cuarentena."
+   },
+   {
+    "criterio": "E. Errores y recuperación",
+    "puntos": 15,
+    "condicionLogro": "El participante aplica correctamente: try, errores estructurados, clasificación, propagación, recuperación y tolerancias."
+   },
+   {
+    "criterio": "F. Pruebas",
+    "puntos": 10,
+    "condicionLogro": "El participante aplica correctamente: pruebas positivas, negativas, fronteras, integración, regresión y cobertura."
+   },
+   {
+    "criterio": "G. Observabilidad",
+    "puntos": 10,
+    "condicionLogro": "El participante aplica correctamente: identificador de ejecución, bitácoras, métricas, alertas, estados y motivos de bloqueo."
+   },
+   {
+    "criterio": "H. Conciliación y liberación",
+    "puntos": 10,
+    "condicionLogro": "El participante aplica correctamente: archivos, filas, cantidades, errores, recuperaciones y decisión final."
+   }
+  ],
+  "totalPuntos": 100,
+  "condicionesNoAprobacion": [
+   "Archivos desaparecidos sin clasificación",
+   "Columnas obligatorias inventadas",
+   "Errores críticos ocultos",
+   "Recuperaciones no validadas",
+   "Credenciales o secretos expuestos",
+   "Diferencias de conciliación no explicadas",
+   "Funciones críticas sin pruebas",
+   "Esquemas desconocidos combinados",
+   "Errores no controlados"
+  ]
+ }
+}

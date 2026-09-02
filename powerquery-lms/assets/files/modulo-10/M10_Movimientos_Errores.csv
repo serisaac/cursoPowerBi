@@ -1,0 +1,9 @@
+﻿Movimiento,FechaMovimiento,CodigoMaterial,Cantidad,Unidad,Almacen,Responsable,Observacion
+MOV-001,2026-01-05,MAT-1001,125.5,PZA,A01,Ana,Entrada ordinaria
+MOV-002,2026-01-06,MAT-1002,250,KG,A02,Luis,Transferencia
+MOV-003,2026-01-07,MAT-1003,0,PZA,A01,Marta,Cantidad límite
+MOV-004,31/02/2026,MAT-1004,PENDIENTE,L,A03,Carlos,Datos inválidos
+  mov-005  ,2026-01-09, mat-1005 ,-25,PZA,A99,Rosa,Revisión funcional
+MOV-006,,MAT-1006,,KG,A02,Pedro,
+MOV-007,2026-01-11,MAT-1007,1000000,PZA,A01,Elena,Límite superior
+MOV-008,2026-01-12,MAT-1008,1000000.001,PZA,A01,Jorge,Fuera de rango
