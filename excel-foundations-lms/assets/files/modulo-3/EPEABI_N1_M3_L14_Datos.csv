@@ -1,0 +1,81 @@
+﻿Orden_Original,Folio,Fecha_Operacion,Hora_Operacion,Codigo_Cliente,Cliente,Codigo_Producto,Producto,Categoria,Region,Sucursal,Canal,Estado,Prioridad,Cantidad,Precio_Unitario,Porcentaje_Descuento,Costo_Unitario,Fecha_Compromiso,Fecha_Entrega,Responsable,Archivo_Origen
+1,OP-000001,2026-01-08,08:05:00,C-0002,Cliente 2,P-100,Monitor 24,Tecnologia,Norte,SUC-02,Tienda,Pendiente,Alta,4,637,0.05,356.72,2026-01-16,2026-01-12,Resp 2,archivo_02.csv
+2,OP-000002,2026-01-15,09:10:00,C-0003,Cliente 3,P-200,Teclado,Tecnologia,Centro,SUC-03,Distribuidor,Cancelado,Media,7,774,0.1,441.18,2026-01-24,2026-01-20,Resp 3,archivo_03.csv
+3,OP-000003,2026-01-22,10:15:00,C-0004,Cliente 4,P-300,Mouse,Tecnologia,Sur,SUC-04,Digital,En revision,Baja,10,911,0.15,528.38,2026-02-01,2026-01-28,Resp 4,archivo_04.csv
+4,OP-000004,2026-01-29,11:20:00,C-0005,Cliente 5,P-400,Laptop,Tecnologia,Pacifico,SUC-05,Tienda,Aprobado,Critica,13,1048,0,618.32,2026-02-09,2026-02-05,Resp 5,archivo_05.csv
+5,OP-000005,2026-02-05,12:25:00,C-0006,Cliente 6,P-500,Dock,Tecnologia,Norte,SUC-06,Distribuidor,Pendiente,Alta,16,1185,0.05,711.0,2026-02-17,2026-02-13,Resp 6,archivo_06.csv
+6,OP-000006,2026-02-12,13:30:00,C-0007,Cliente 7,P-100,Monitor 24,Tecnologia,Centro,SUC-07,Digital,Cancelado,Media,19,1322,0.1,806.42,2026-02-25,2026-02-21,Resp 7,archivo_01.csv
+7,OP-000007,2026-02-19,14:35:00,C-0008,Cliente 8,P-200,Teclado,Tecnologia, Sur,SUC-08,Tienda,En revision,Baja,22,1459,0.15,904.58,2026-03-05,2026-03-01,Resp 8,archivo_02.csv
+8,OP-000008,2026-02-26,15:40:00,C-0009,Cliente 9,P-300,Mouse,Tecnologia,Pacifico,SUC-01,Distribuidor,Aprobado,Critica,25,1596,0,877.8,2026-03-13,2026-03-09,Resp 9,archivo_03.csv
+9,OP-000009,2026-03-05,16:45:00,C-0010,Cliente 10,P-400,Laptop,Tecnologia,Norte,SUC-02,Digital,Pendiente,Alta,28,1733,0.05,970.48,2026-03-21,2026-03-17,Resp 10,archivo_04.csv
+10,OP-000010,2026-03-12,17:50:00,C-0011,Cliente 11,P-500,Dock,Tecnologia,Centro,SUC-03,Tienda,Cancelado,Media,31,1870,0.1,1065.9,2026-03-19,2026-03-25,Resp 11,archivo_05.csv
+11,OP-000011,2026-03-19,18:55:00,C-0012,Cliente 12,P-100,Monitor 24,Tecnologia,Sur,SUC-04,Distribuidor,En revision,Baja,34,2007,0.15,1164.06,2026-03-27,2026-04-02,Resp 12,archivo_06.csv
+12,OP-000012,2026-03-26,07:00:00,C-0013,Cliente 13,P-200,Teclado,Tecnologia,Pacifico,SUC-05,Digital,Aprobado,Critica,37,2144,0,1264.96,2026-04-04,2026-04-10,Resp 1,archivo_01.csv
+13,OP-000013,02/04/2026,08:05:00,C-0014,Cliente 14,P-300,Mouse,Tecnologia,Norte,SUC-06,Tienda,Pendiente,Alta,40,2281,0.05,1368.6,2026-04-12,2026-04-18,Resp 2,archivo_02.csv
+14,OP-000014,2026-04-09,09:10:00,C-0015,Cliente 15,P-400,Laptop,Tecnologia,Centro,SUC-07,Distribuidor,Cancelado,Media,43,2418,0.1,1474.98,2026-04-20,2026-04-26,Resp 3,archivo_03.csv
+15,OP-000015,2026-04-16,10:15:00,C-0016,Cliente 16,P-500,Dock,Tecnologia,Sur,SUC-08,Digital,En revision,Baja,46,2555,0.15,1584.1,2026-04-28,2026-04-19,Resp 4,archivo_04.csv
+16,OP-000016,2026-04-23,11:20:00,C-0017,Cliente 17,P-100,Monitor 24,Tecnologia,Pacifico,SUC-01,Tienda,Aprobado,Critica,2,2692,0,1480.6,2026-05-06,2026-04-27,Resp 5,archivo_05.csv
+17,OP-000017,2026-04-30,12:25:00,C-0018,Cliente 18,P-200,Teclado,Tecnologia,Norte,SUC-02,Distribuidor,Pendiente,Alta,5,2829,0.05,1584.24,2026-05-14,2026-05-05,Resp 6,archivo_06.csv
+18,OP-000018,2026-05-07,13:30:00,C-0019,Cliente 19,P-300,Mouse,Tecnologia,Centro,SUC-03,Digital,Cancelado,Media,8,2966,0.1,1690.62,2026-05-22,2026-05-13,Resp 7,archivo_01.csv
+19,OP-000019,2026-05-14,14:35:00,C-0020,Cliente 20,P-400,Laptop,Tecnologia,Sur,SUC-04,Tienda,En revision,Baja,11,3103,0.15,1799.74,2026-05-30,2026-05-21,Resp 8,archivo_02.csv
+20,OP-000020,2026-05-21,15:40:00,C-0021,Cliente 21,P-500,Dock,Tecnologia,Pacifico,SUC-05,Distribuidor,Aprobado,Critica,14,3240,0,1911.6,2026-05-28,2026-05-29,Resp 9,archivo_03.csv
+21,OP-000021,2026-05-28,16:45:00,C-0022,Cliente 22,P-100,Monitor 24,Tecnologia,Norte,SUC-06,Digital,Pendiente,Alta,17,3377,0.05,2026.2,2026-06-05,2026-06-06,Resp 10,archivo_04.csv
+22,OP-000022,2026-06-04,17:50:00,C-0023,Cliente 23,P-200,Teclado,Tecnologia,Centro,SUC-07,Tienda,Cancelado,Media,20,3514,0.1,2143.54,2026-06-13,2026-06-14,Resp 11,archivo_05.csv
+23,OP-000023,2026-06-11,18:55:00,C-0024,Cliente 24,P-300,Mouse,Tecnologia,Sur,SUC-08,Distribuidor,En revision,Baja,23,3651,15,2263.62,2026-06-21,2026-06-22,Resp 12,archivo_06.csv
+24,OP-000024,2026-06-18,07:00:00,C-0025,Cliente 25,P-400,Laptop,Tecnologia,Pacifico,SUC-01,Digital,Aprobado,Critica,26,3788,0,2083.4,2026-06-29,2026-06-30,Resp 1,archivo_01.csv
+25,OP-000025,2026-06-25,08:05:00,C-0026,Cliente 26,P-500,Dock,Tecnologia,Norte,SUC-02,Tienda,Pendiente,Alta,29,3925,0.05,2198.0,2026-07-07,2026-07-08,Resp 2,archivo_02.csv
+26,OP-000026,2026-07-02,09:10:00,C-0027,Cliente 27,P-100,Monitor 24,Tecnologia,Centro,SUC-03,Distribuidor,Cancelado,Media,32,4062,0.1,2315.34,2026-07-15,2026-07-16,Resp 3,archivo_03.csv
+27,OP-000027,2026-07-09,10:15:00,C-0028,Cliente 28,P-200,Teclado,Tecnologia,Sur,SUC-04,Digital,En revision,Baja,35,4199,0.15,2435.42,2026-07-23,2026-07-24,Resp 4,archivo_04.csv
+28,OP-000028,2026-07-16,11:20:00,C-0029,Cliente 29,P-300,Mouse,Tecnologia,Pacifico,SUC-05,Tienda,Aprobado,Critica,38,4336,0,2558.24,2026-07-31,2026-08-01,Resp 5,archivo_05.csv
+29,OP-29,2026-07-23,12:25:00,C-0030,Cliente 30,P-400,Laptop,Tecnologia,Norte,SUC-06,Distribuidor,Pendiente,Alta,41,4473,0.05,2683.8,2026-08-08,2026-08-09,Resp 6,archivo_06.csv
+30,OP-000030,2026-07-30,13:30:00,C-0031,Cliente 31,P-500,Dock,Tecnologia,Centro,SUC-07,Digital,Cancelado,Media,44,4610,0.1,2812.1,2026-08-06,2026-08-02,Resp 7,archivo_01.csv
+31,OP-000031,2026-08-06,14:35:00,C-0032,Cliente 32,P-100,Monitor 24,Tecnologia, Sur,SUC-08,Tienda,En revision,Baja,47,4747,0.15,2943.14,2026-08-14,2026-08-10,Resp 8,archivo_02.csv
+32,OP-000032,2026-08-13,15:40:00,C-0033,Cliente 33,P-200,Teclado,Tecnologia,Pacifico,SUC-01,Distribuidor,Aprobado,Critica,3,4884,0,2686.2,2026-08-22,2026-08-18,Resp 9,archivo_03.csv
+33,OP-000033,2026-08-20,16:45:00,C-0034,Cliente 34,P-300,Mouse,Tecnologia,Norte,SUC-02,Digital,Pendiente,Alta,6,5021,0.05,2811.76,2026-08-30,2026-08-26,Resp 10,archivo_04.csv
+34,OP-000034,2026-08-27,17:50:00,C-0035,Cliente 35,P-400,Laptop,Tecnologia,Centro,SUC-03,Tienda,Cancelado,Media,9,5158,0.1,2940.06,2026-09-07,2026-09-03,Resp 11,archivo_05.csv
+35,OP-000035,2026-01-06,18:55:00,C-0001,Cliente 1,P-500,Dock,Tecnologia,Sur,SUC-04,Distribuidor,En revision,Baja,12,5295,0.15,3071.1,2026-01-18,2026-01-14,Resp 12,archivo_06.csv
+36,OP-000036,2026-01-13,07:00:00,C-0002,Cliente 2,P-100,Monitor 24,Tecnologia,Pacifico,SUC-05,Digital,Aprobado,Critica,15,5432,0,3204.88,2026-01-26,2026-01-22,Resp 1,archivo_01.csv
+37,OP-000037,2026-01-20,08:05:00,C-0003,Cliente 3,P-200,Teclado,Tecnologia,Norte,SUC-06,Tienda,Aprobado ,Alta,18,5569,0.05,3341.4,2026-02-03,2026-01-30,Resp 2,archivo_02.csv
+38,OP-000038,2026-01-27,09:10:00,C-0004,Cliente 4,P-300,Mouse,Tecnologia,Centro,SUC-07,Distribuidor,Cancelado,Media,21,5706,0.1,3480.66,2026-02-11,2026-02-07,Resp 3,archivo_03.csv
+39,OP-000039,2026-02-03,10:15:00,C-0005,Cliente 5,P-400,Laptop,Tecnologia,Sur,SUC-08,Digital,En revision,Baja,24,5843,0.15,3622.66,2026-02-19,2026-02-15,Resp 4,archivo_04.csv
+40,OP-000040,2026-02-10,11:20:00,C-0006,Cliente 6,P-500,Dock,Tecnologia,Pacifico,SUC-01,Tienda,Aprobado,Critica,27,5980,0,3289.0,2026-02-17,2026-02-23,Resp 5,archivo_05.csv
+41,OP-000041,2026-02-17,12:25:00,C-0007,Cliente 7,P-100,Monitor 24,Tecnologia,Norte,SUC-02,Distribuidor,Pendiente,Alta,-5,6117,0.05,3425.52,2026-02-25,2026-03-03,Resp 6,archivo_06.csv
+42,OP-000042,2026-02-24,13:30:00,C-0008,Cliente 8,P-200,Teclado,Tecnologia,Centro,SUC-03,Digital,Cancelado,Media,33,6254,0.1,3564.78,2026-03-05,2026-03-11,Resp 7,archivo_01.csv
+43,OP-000043,2026-03-03,14:35:00,C-0009,Cliente 9,P-300,Mouse,Tecnologia,Sur,SUC-04,Tienda,En revision,Baja,36,6391,0.15,3706.78,2026-03-13,2026-03-19,Resp 8,archivo_02.csv
+44,OP-000044,2026-03-10,15:40:00,C-0010,Cliente 10,P-400,Laptop,Tecnologia,Pacifico,SUC-05,Distribuidor,Aprobado,Critica,39,6528,0,3851.52,2026-03-21,2026-03-27,Resp 9,archivo_03.csv
+45,OP-000045,2026-03-17,16:45:00,C-0011,Cliente 11,P-500,Dock,Tecnologia,Norte,SUC-06,Digital,Pendiente,Alta,42,6665,0.05,3999.0,2026-03-29,2026-03-20,Resp 10,archivo_04.csv
+46,OP-000046,2026-03-24,17:50:00,C-0012,Cliente 12,P-100,Monitor 24,Tecnologia,Centro,SUC-07,Tienda,Cancelado,Media,45,6802,0.1,4149.22,2026-04-06,2026-03-28,Resp 11,archivo_05.csv
+47,OP-000047,2026-03-31,18:55:00,C-0013,Cliente 13,P-200,Teclado,Tecnologia,Sur,SUC-08,Distribuidor,En revision,Baja,1,6939,0.15,4302.18,2026-04-14,2026-04-05,Resp 12,archivo_06.csv
+48,OP-000048,2026-04-07,07:00:00,C-0014,Cliente 14,P-300,Mouse,Tecnologia,Pacifico,SUC-01,Digital,Aprobado,Critica,4,7076,0,3891.8,2026-04-22,2026-04-13,Resp 1,archivo_01.csv
+49,OP-000049,2026-04-14,08:05:00,C-0015,Cliente 15,P-400,Laptop,Tecnologia,Norte,SUC-02,Tienda,Pendiente,Alta,7,7213,0.05,4039.28,2026-04-30,2026-04-21,Resp 2,archivo_02.csv
+50,OP-000050,2026-04-21,09:10:00,C-0016,Cliente 16,P-500,Dock,Tecnologia,Centro,SUC-03,Distribuidor,Cancelado,Media,10,7350,0.1,4189.5,2026-04-28,2026-04-29,Resp 3,archivo_03.csv
+51,OP-000051,2026-04-28,10:15:00,C-0017,Cliente 17,P-100,Monitor 24,Tecnologia,Sur,SUC-04,Digital,En revision,Baja,13,7487,0.15,4342.46,2026-05-06,2026-05-07,Resp 4,archivo_04.csv
+52,OP-000052,2026-05-05,11:20:00,C-0018,Cliente 18,P-200,Teclado,Tecnologia,Pacifico,SUC-05,Tienda,Aprobado,Critica,16,7624,0,4498.16,2026-05-14,2026-05-15,Resp 5,archivo_05.csv
+53,OP-000053,2026-05-12,12:25:00,C-0019,Cliente 19,P-300,Mouse,Tecnologia,Norte,SUC-06,Distribuidor,Pendiente,Alta,19,7761,0.05,4656.6,2026-05-22,2026-05-23,Resp 6,archivo_06.csv
+54,OP-000054,2026-05-19,13:30:00,C-0020,Cliente 20,P-400,Laptop,Tecnologia,Centro,SUC-07,Digital,Cancelado,Media,22,7898,0.1,4817.78,2026-05-30,2026-05-31,Resp 7,archivo_01.csv
+55,OP-000055,2026-05-26,14:35:00,C-0021,Cliente 21,P-500,Dock,Tecnologia,Sur,SUC-08,Tienda,En revision,Baja,25,8035,0.15,4981.7,2026-06-07,2026-06-08,Resp 8,archivo_02.csv
+56,OP-000056,2026-06-02,15:40:00,C-0022,Cliente 22,P-100,Monitor 24,Tecnologia,Pacifico,SUC-01,Distribuidor,Aprobado,Critica,28,8172,0,4494.6,2026-06-15,2026-06-16,Resp 9,archivo_03.csv
+57,OP-000057,2026-06-09,16:45:00,C-0023,Cliente 23,P-200,Teclado,Tecnologia,Norte,SUC-02,Digital,Pendiente,Alta,31,8309,0.05,4653.04,2026-06-23,2026-06-24,Resp 10,archivo_04.csv
+58,OP-000058,2026-06-16,17:50:00,C-0024,Cliente 24,P-300,Mouse,Tecnologia,Centro,SUC-03,Tienda,Cancelado,Media,34,8446,0.1,4814.22,2026-07-01,2026-07-02,Resp 11,archivo_05.csv
+59,OP-000059,2026-06-23,18:55:00,C-0025,Cliente 25,P-400,Laptop,Tecnologia,Sur,SUC-04,Distribuidor,En revision,Baja,37,8583,0.15,4978.14,2026-07-09,2026-07-10,Resp 12,archivo_06.csv
+60,OP-000060,2026-06-30,07:00:00,C-0026,Cliente 26,P-500,Dock,Tecnologia,Pacifico,SUC-05,Digital,Aprobado,Critica,40,8720,0,5144.8,2026-07-07,2026-07-03,Resp 1,archivo_01.csv
+61,OP-000061,2026-07-07,08:05:00,C-0027,Cliente 27,P-100,Monitor 24,Tecnologia,Norte,SUC-06,Tienda,Pendiente,Alta,43,8857,0.05,5314.2,2026-07-15,2026-07-11,Resp 2,archivo_02.csv
+62,OP-000062,2026-07-14,09:10:00,C-0028,Cliente 28,P-200,Teclado,Tecnologia,Centro,SUC-07,Distribuidor,Cancelado,Media,46,8994,0.1,5486.34,2026-07-23,2026-07-19,Resp 3,archivo_03.csv
+63,OP-000063,2026-07-21,10:15:00,C-0029,Cliente 29,P-300,Mouse,Tecnologia,Sur,SUC-08,Digital,En revision,Baja,2,9131,0.15,5661.22,2026-07-31,2026-07-27,Resp 4,archivo_04.csv
+64,OP-000064,2026-07-28,11:20:00,C-0030,Cliente 30,P-400,Laptop,Tecnologia,Pacifico,SUC-01,Tienda,Aprobado,Critica,5,9268,0,5097.4,2026-08-08,2026-08-04,Resp 5,archivo_05.csv
+65,OP-000065,2026-08-04,12:25:00,C-0031,Cliente 31,P-500,Dock,Tecnologia,Norte,SUC-02,Distribuidor,Pendiente,Alta,8,9405,0.05,5266.8,2026-08-16,2026-08-12,Resp 6,archivo_06.csv
+66,OP-000066,2026-08-11,13:30:00,C-0032,Cliente 32,P-100,Monitor 24,Tecnologia,Centro,SUC-03,Digital,Cancelado,Media,11,9542,0.1,5438.94,2026-08-24,2026-08-20,Resp 7,archivo_01.csv
+67,OP-000067,2026-08-18,14:35:00,C-0033,Cliente 33,P-200,Teclado,Tecnologia,Sur,SUC-04,Tienda,En revision,Baja,14,9679,0.15,5613.82,2026-09-01,2026-08-28,Resp 8,archivo_02.csv
+68,OP-000068,2026-08-25,15:40:00,C-0034,Cliente 34,P-300,Mouse,Tecnologia,Pacifico,SUC-05,Distribuidor,Aprobado,Critica,17,9816,0,5791.44,2026-09-09,2026-09-05,Resp 9,archivo_03.csv
+69,OP-000069,2026-01-04,16:45:00,C-0035,Cliente 35,P-400,Laptop,Tecnologia,Norte,SUC-06,Digital,Pendiente,Alta,20,9953,0.05,5971.8,2026-01-20,2026-01-16,Resp 10,archivo_04.csv
+70,OP-000070,2026-01-11,17:50:00,C-0001,Cliente 1,P-500,Dock,Tecnologia,Centro,SUC-07,Tienda,Cancelado,Media,23,10090,0.1,6154.9,2026-01-18,2026-01-24,Resp 11,archivo_05.csv
+71,OP-000071,2026-01-18,18:55:00,C-0002,Cliente 2,P-100,Monitor 24,Tecnologia,Sur,SUC-08,Distribuidor,En revision,Baja,26,10227,0.15,6340.74,2026-01-26,2026-02-01,Resp 12,archivo_06.csv
+72,OP-000072,2026-01-25,07:00:00,C-0003,Cliente 3,P-200,Teclado,Tecnologia,Pacifico,SUC-01,Digital,Aprobado,Critica,29,10364,0,5700.2,2026-02-03,2026-02-09,Resp 1,archivo_01.csv
+73,OP-000073,2026-02-01,08:05:00,C-0004,Cliente 4,P-300,Mouse,Tecnologia,Norte,SUC-02,Tienda,Pendiente,Alta,32,10501,0.05,5880.56,2026-02-11,2026-02-17,Resp 2,archivo_02.csv
+74,OP-000074,2026-02-08,09:10:00,C-0005,Cliente 5,P-400,Laptop,Tecnologia,Centro,SUC-03,Distribuidor,Cancelado,Media,35,10638,0.1,6063.66,2026-02-19,2026-02-25,Resp 3,archivo_03.csv
+75,OP-000075,2026-02-15,10:15:00,C-0006,Cliente 6,P-500,Dock,Tecnologia,Sur,SUC-04,Digital,En revision,Baja,38,10775,0.15,6249.5,2026-02-27,2026-02-18,Resp 4,archivo_04.csv
+76,OP-000076,2026-02-22,11:20:00,C-0007,Cliente 7,P-100,Monitor 24,Tecnologia,Pacifico,SUC-05,Tienda,Aprobado,Critica,41,10912,0,6438.08,2026-03-07,2026-02-26,Resp 5,archivo_05.csv
+77,OP-000077,2026-03-01,12:25:00,C-0008,Cliente 8,P-200,Teclado,Tecnologia,Norte,SUC-06,Distribuidor,Pendiente,Alta,44,11049,0.05,6629.4,2026-03-15,2026-03-06,Resp 6,archivo_06.csv
+78,OP-000078,2026-03-08,13:30:00,C-0009,Cliente 9,P-300,Mouse,Tecnologia,Centro,SUC-07,Digital,Cancelado,Media,47,11186,0.1,6823.46,2026-03-23,2026-03-14,Resp 7,archivo_01.csv
+79,OP-000079,2026-03-15,14:35:00,C-0010,Cliente 10,P-400,Laptop,Tecnologia,Sur,SUC-08,Tienda,En revision,Baja,3,11323,0.15,7020.26,2026-03-31,2026-03-22,Resp 8,archivo_02.csv
+80,OP-000080,2026-03-22,15:40:00,C-0011,Cliente 11,P-500,Dock,Tecnologia,Pacifico,SUC-01,Distribuidor,Aprobado,Critica,6,11460,0,6303.0,2026-03-29,2026-03-30,Resp 9,archivo_03.csv

@@ -1,0 +1,252 @@
+[
+  {
+    "q": "¿Qué referencia debe utilizarse para un parámetro que no debe cambiar al copiar?",
+    "opts": [
+      "Relativa",
+      "Absoluta",
+      "Parcialmente vacía",
+      "Textual"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué función debe utilizarse cuando todos los requisitos deben cumplirse?",
+    "opts": [
+      "O",
+      "Y",
+      "NO",
+      "CONTAR"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué operador incluye el valor situado exactamente en el límite mínimo?",
+    "opts": [
+      ">",
+      ">=",
+      "",
+      "<>"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué función trata específicamente el error #N/A?",
+    "opts": [
+      "SI.ERROR",
+      "SI.ND",
+      "ESBLANCO",
+      "ESTEXTO"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué función suma mediante varios criterios simultáneos?",
+    "opts": [
+      "SUMAR.SI",
+      "SUMAR.SI.CONJUNTO",
+      "CONTAR.SI",
+      "SUMA"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Cómo se combina un operador con un criterio almacenado en B2?",
+    "opts": [
+      "\">=B2\"",
+      "\">=\"&B2",
+      ">=&B2",
+      "\">=\"+B2"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué función retira espacios iniciales, finales y repetidos convencionales?",
+    "opts": [
+      "LARGO",
+      "ESPACIOS",
+      "EXTRAE",
+      "CONCAT"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Por qué un folio con ceros iniciales debe mantenerse como texto?",
+    "opts": [
+      "Para proteger la hoja",
+      "Para conservar su estructura",
+      "Para calcular un promedio",
+      "Para aplicar un impuesto"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué función desplaza una fecha por meses naturales?",
+    "opts": [
+      "DIAS",
+      "FECHA.MES",
+      "DIA.LAB",
+      "FIN.MES"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué función obtiene el último día real de un mes?",
+    "opts": [
+      "DIA",
+      "FIN.MES",
+      "MES",
+      "FECHA"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué función devuelve una fecha futura calculada en días laborables?",
+    "opts": [
+      "DIAS.LAB",
+      "DIA.LAB",
+      "DIAS",
+      "HOY"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué coincidencia debe utilizarse en BUSCARV para un código único?",
+    "opts": [
+      "VERDADERO",
+      "FALSO",
+      "Aproximada",
+      "Omitida"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué ventaja ofrece BUSCARX?",
+    "opts": [
+      "Solo busca hacia la derecha",
+      "Separa la matriz buscada de la devuelta",
+      "Requiere un índice fijo",
+      "Elimina duplicados"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué devuelve COINCIDIR?",
+    "opts": [
+      "El contenido final",
+      "Una posición relativa",
+      "Una hoja",
+      "Una fórmula textual"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué necesita ÍNDICE para devolver una intersección bidimensional?",
+    "opts": [
+      "Una fecha y una hora",
+      "Una posición de fila y una de columna",
+      "Dos criterios de suma",
+      "Una función lógica"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Cómo se representa normalmente la lógica Y en una expresión matricial de FILTRAR?",
+    "opts": [
+      "Mediante suma",
+      "Mediante multiplicación",
+      "Mediante división",
+      "Mediante concatenación"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Cómo se representa normalmente la lógica O?",
+    "opts": [
+      "Multiplicación",
+      "Suma",
+      "División",
+      "Potencia"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué hace UNICOS?",
+    "opts": [
+      "Elimina permanentemente duplicados",
+      "Genera una vista sin repeticiones",
+      "Ordena de mayor a menor",
+      "Convierte texto en número"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué necesita una matriz dinámica para expandirse?",
+    "opts": [
+      "Celdas combinadas",
+      "Un área libre",
+      "Filtros manuales",
+      "Formato condicional"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué es un falso cero?",
+    "opts": [
+      "Un número negativo",
+      "Un error o ausencia convertido en cero",
+      "Una celda vacía",
+      "Un importe redondeado"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué es un falso positivo?",
+    "opts": [
+      "Rechazar una operación válida",
+      "Aprobar una operación que no cumple",
+      "Obtener una utilidad positiva",
+      "Detectar un error"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué es una prueba de regresión?",
+    "opts": [
+      "Comprobar que una corrección no alteró resultados relacionados",
+      "Ordenar de forma descendente",
+      "Eliminar datos nuevos",
+      "Convertir fórmulas en valores"
+    ],
+    "correct": 0
+  },
+  {
+    "q": "¿Cuándo debe utilizarse una fecha de corte fija?",
+    "opts": [
+      "En cierres históricos reproducibles",
+      "En todos los tableros diarios",
+      "Solo para fechas futuras",
+      "Nunca"
+    ],
+    "correct": 0
+  },
+  {
+    "q": "¿Cuándo está conciliado un modelo?",
+    "opts": [
+      "Cuando no muestra errores visibles",
+      "Cuando todos los registros e importes quedan explicados y las diferencias son cero",
+      "Cuando contiene muchas fórmulas",
+      "Cuando está protegido"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué debe hacerse antes de quitar duplicados?",
+    "opts": [
+      "Proteger la hoja",
+      "Preservar y revisar el origen",
+      "Convertir las claves a número",
+      "Ordenar de forma descendente"
+    ],
+    "correct": 1
+  }
+]

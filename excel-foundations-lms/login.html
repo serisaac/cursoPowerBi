@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EPEABI Nivel 1 - Iniciar sesión</title>
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-slate-100 text-slate-800 h-screen flex items-center justify-center">
+
+<div class="w-80 space-y-4">
+    <div class="text-center space-y-2 mb-2">
+        <div class="inline-flex p-3 bg-emerald-500/10 rounded-lg border border-emerald-500/20">
+            <i data-lucide="file-spreadsheet" class="text-emerald-600 w-6 h-6"></i>
+        </div>
+        <h1 class="text-lg font-bold text-slate-900">EPEABI Nivel 1: Excel Foundations Specialist</h1>
+        <p class="text-xs text-slate-500">Iniciar sesión</p>
+        <a href="../powerquery-lms/index.html" class="text-[11px] text-slate-400 hover:text-slate-700 transition inline-flex items-center gap-1">
+            <i data-lucide="arrow-left" class="w-3 h-3"></i> Volver al catálogo de cursos
+        </a>
+    </div>
+
+    <div class="bg-white border border-slate-200 rounded-xl shadow-sm p-6 space-y-4">
+        <form id="login-form" class="space-y-4">
+            <div class="space-y-1">
+                <label for="login-email" class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Correo</label>
+                <input id="login-email" type="email" required autocomplete="username" placeholder="tu@correo.com" class="w-full text-xs p-3 border border-slate-200 rounded-lg focus:outline-none focus:border-emerald-500 text-slate-700 bg-slate-50/50">
+            </div>
+            <div class="space-y-1">
+                <label for="login-password" class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Contraseña</label>
+                <input id="login-password" type="password" required autocomplete="current-password" placeholder="••••••••" class="w-full text-xs p-3 border border-slate-200 rounded-lg focus:outline-none focus:border-emerald-500 text-slate-700 bg-slate-50/50">
+            </div>
+            <p id="login-error" class="hidden text-xs bg-rose-100 text-rose-800 rounded-lg p-2.5">Correo o contraseña incorrectos.</p>
+            <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 rounded-lg text-xs transition shadow-sm">Iniciar sesión</button>
+        </form>
+    </div>
+
+    <div class="p-3.5 bg-amber-50 border border-amber-200 rounded-lg text-[11px] text-amber-900 leading-relaxed">
+        <strong>Acceso de prueba (temporal):</strong> admin@test.com / admin123 &mdash; alumno@test.com / alumno123
+    </div>
+</div>
+
+<script src="assets/js/icons.js"></script>
+<script src="assets/js/auth.js"></script>
+<script>
+if (isAuthenticated()) {
+    window.location.href = "index.html";
+}
+document.addEventListener('DOMContentLoaded', () => {
+    safeIcons();
+    document.getElementById('login-form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const email = document.getElementById('login-email').value;
+        const password = document.getElementById('login-password').value;
+        const errorEl = document.getElementById('login-error');
+        if (login(email, password)) {
+            window.location.href = "index.html";
+        } else {
+            errorEl.classList.remove('hidden');
+        }
+    });
+});
+</script>
+</body>
+</html>

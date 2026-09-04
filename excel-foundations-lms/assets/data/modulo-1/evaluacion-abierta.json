@@ -1,0 +1,252 @@
+{
+  "16": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "¿Cuándo se vuelve efectiva la propiedad Bloqueada?",
+        "puntos": 7,
+        "respuestaInstructor": "Cuando se protege la hoja. [support.mi...rosoft.com], [support.mi...rosoft.com]",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué propiedad impide mostrar una fórmula en la barra?",
+        "puntos": 7,
+        "respuestaInstructor": "La propiedad Oculta.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué debe hacerse antes de proteger una plantilla de captura?",
+        "puntos": 7,
+        "respuestaInstructor": "Clasificar las celdas y desbloquear las entradas.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué controla la protección de estructura?",
+        "puntos": 7,
+        "respuestaInstructor": "Agregar, eliminar, mover, copiar, ocultar, mostrar o renombrar hojas. [support.mi...rosoft.com], [support.mi...rosoft.com]",
+        "criterio": ""
+      },
+      {
+        "no": 5,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué protección impide abrir el archivo sin contraseña?",
+        "puntos": 7,
+        "respuestaInstructor": "La protección del archivo mediante contraseña o controles equivalentes.",
+        "criterio": ""
+      },
+      {
+        "no": 6,
+        "tipo": "Abierta",
+        "pregunta": "¿Por qué debe permitirse seleccionar celdas desbloqueadas?",
+        "puntos": 7,
+        "respuestaInstructor": "Para que el usuario pueda navegar y capturar en las áreas autorizadas.",
+        "criterio": ""
+      },
+      {
+        "no": 7,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué requisito puede necesitar un filtro en una hoja protegida?",
+        "puntos": 7,
+        "respuestaInstructor": "El filtro debe existir y el permiso correspondiente debe mantenerse activo.",
+        "criterio": ""
+      },
+      {
+        "no": 8,
+        "tipo": "Abierta",
+        "pregunta": "¿Por qué deben evitarse rangos editables superpuestos?",
+        "puntos": 7,
+        "respuestaInstructor": "Porque generan permisos ambiguos y dificultan el mantenimiento.",
+        "criterio": ""
+      },
+      {
+        "no": 9,
+        "tipo": "Abierta",
+        "pregunta": "¿La ocultación de fórmulas protege completamente su lógica?",
+        "puntos": 7,
+        "respuestaInstructor": "No. Es un control operativo, no un mecanismo completo de seguridad.",
+        "criterio": ""
+      },
+      {
+        "no": 10,
+        "tipo": "Abierta",
+        "pregunta": "¿Dónde debe almacenarse la contraseña?",
+        "puntos": 7,
+        "respuestaInstructor": "En un repositorio seguro externo al archivo.",
+        "criterio": ""
+      },
+      {
+        "no": 11,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué debe probarse después de proteger objetos?",
+        "puntos": 6,
+        "respuestaInstructor": "Movimiento, tamaño, edición, eliminación y funcionamiento autorizado.",
+        "criterio": ""
+      },
+      {
+        "no": 12,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué riesgo existe al permitir eliminar filas?",
+        "puntos": 6,
+        "respuestaInstructor": "Puede provocar pérdida de registros, totales y evidencia.",
+        "criterio": ""
+      },
+      {
+        "no": 13,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué debe comprobarse con una tabla protegida?",
+        "puntos": 6,
+        "respuestaInstructor": "Filtros, ordenamiento, nuevas filas, fórmulas y totales.",
+        "criterio": ""
+      },
+      {
+        "no": 14,
+        "tipo": "Abierta",
+        "pregunta": "¿Por qué debe mantenerse una copia maestra?",
+        "puntos": 6,
+        "respuestaInstructor": "Para realizar mantenimiento y recuperar el libro mediante un procedimiento controlado.",
+        "criterio": ""
+      },
+      {
+        "no": 15,
+        "tipo": "Abierta",
+        "pregunta": "¿Cuál es el objetivo de una protección adecuada?",
+        "puntos": 6,
+        "respuestaInstructor": "Permitir la tarea autorizada y evitar modificaciones innecesarias.",
+        "criterio": ""
+      }
+    ]
+  },
+  "17": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué diferencia existe entre revisión y auditoría?",
+        "puntos": 7,
+        "respuestaInstructor": "La auditoría conserva evidencia del alcance, hallazgos, cambios y conclusión.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "¿Por qué debe conservarse el archivo recibido?",
+        "puntos": 7,
+        "respuestaInstructor": "Para mantener el estado original y poder demostrar las diferencias.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué es un control preventivo?",
+        "puntos": 7,
+        "respuestaInstructor": "Una medida destinada a evitar el error antes de que ocurra.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué significa una constante dentro de una columna calculada?",
+        "puntos": 7,
+        "respuestaInstructor": "Que una fórmula pudo haber sido sustituida por un valor, aunque debe revisarse el contexto.",
+        "criterio": ""
+      },
+      {
+        "no": 5,
+        "tipo": "Abierta",
+        "pregunta": "¿Un error lógico siempre muestra un código de error?",
+        "puntos": 7,
+        "respuestaInstructor": "No. Una fórmula puede ser técnicamente válida y producir un resultado empresarial incorrecto.",
+        "criterio": ""
+      },
+      {
+        "no": 6,
+        "tipo": "Abierta",
+        "pregunta": "¿Por qué debe comprobarse el modo de cálculo?",
+        "puntos": 7,
+        "respuestaInstructor": "Porque el archivo puede mostrar resultados desactualizados.",
+        "criterio": ""
+      },
+      {
+        "no": 7,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué debe registrarse sobre un vínculo externo?",
+        "puntos": 7,
+        "respuestaInstructor": "Origen, estado, fecha, actualización, impacto y responsable.",
+        "criterio": ""
+      },
+      {
+        "no": 8,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué significa reconciliar un indicador?",
+        "puntos": 7,
+        "respuestaInstructor": "Demostrar que el resultado del resumen coincide con sus fuentes.",
+        "criterio": ""
+      },
+      {
+        "no": 9,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué debe revisarse después de corregir una fórmula?",
+        "puntos": 7,
+        "respuestaInstructor": "El total, las dependencias, los gráficos, la impresión y la protección.",
+        "criterio": ""
+      },
+      {
+        "no": 10,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué distingue un hallazgo crítico?",
+        "puntos": 7,
+        "respuestaInstructor": "Puede comprometer los resultados, la operación o la confidencialidad.",
+        "criterio": ""
+      },
+      {
+        "no": 11,
+        "tipo": "Abierta",
+        "pregunta": "¿El Comprobador de accesibilidad sustituye la revisión manual?",
+        "puntos": 6,
+        "respuestaInstructor": "No. Debe complementarse con inspección manual. [support.mi...rosoft.com], [support.mi...rosoft.com]",
+        "criterio": ""
+      },
+      {
+        "no": 12,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué puede ocurrir al romper un vínculo?",
+        "puntos": 6,
+        "respuestaInstructor": "Las fórmulas vinculadas pueden convertirse en valores y perder actualización.",
+        "criterio": ""
+      },
+      {
+        "no": 13,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué debe comprobarse en el PDF?",
+        "puntos": 6,
+        "respuestaInstructor": "Orden, páginas, legibilidad, gráficos e información confidencial.",
+        "criterio": ""
+      },
+      {
+        "no": 14,
+        "tipo": "Abierta",
+        "pregunta": "¿Cuándo puede aprobarse con observaciones?",
+        "puntos": 6,
+        "respuestaInstructor": "Cuando no existen errores críticos y los pendientes menores están documentados.",
+        "criterio": ""
+      },
+      {
+        "no": 15,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué resultado debe tener la diferencia pendiente antes de una aprobación completa?",
+        "puntos": 6,
+        "respuestaInstructor": "Cero, salvo que exista una tolerancia autorizada y documentada.",
+        "criterio": ""
+      }
+    ]
+  }
+}

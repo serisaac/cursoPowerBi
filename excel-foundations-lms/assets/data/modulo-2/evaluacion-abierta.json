@@ -1,0 +1,542 @@
+{
+  "6": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué devuelve la función Y cuando todas sus condiciones son verdaderas?",
+        "puntos": 7,
+        "respuestaInstructor": "VERDADERO, porque todas las pruebas cumplen.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué devuelve Y cuando una condición es falsa?",
+        "puntos": 7,
+        "respuestaInstructor": "FALSO, porque Y exige que todos sus argumentos sean verdaderos.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué necesita O para devolver verdadero?",
+        "puntos": 7,
+        "respuestaInstructor": "Al menos una condición verdadera.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué hace la función NO?",
+        "puntos": 7,
+        "respuestaInstructor": "Invierte el valor lógico de su argumento.",
+        "criterio": ""
+      },
+      {
+        "no": 5,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué diferencia existe entre > y >=?",
+        "puntos": 7,
+        "respuestaInstructor": ">= incluye la igualdad; > no la incluye.",
+        "criterio": ""
+      },
+      {
+        "no": 6,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué función corresponde a requisitos obligatorios?",
+        "puntos": 7,
+        "respuestaInstructor": "Y.",
+        "criterio": ""
+      },
+      {
+        "no": 7,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué función corresponde a condiciones alternativas?",
+        "puntos": 7,
+        "respuestaInstructor": "O.",
+        "criterio": ""
+      },
+      {
+        "no": 8,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué prueba identifica un estado distinto de Cancelado?",
+        "puntos": 7,
+        "respuestaInstructor": "=A2<>\"Cancelado\" o una expresión equivalente con NO.",
+        "criterio": ""
+      },
+      {
+        "no": 9,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué es un falso positivo empresarial?",
+        "puntos": 7,
+        "respuestaInstructor": "La fórmula aprueba un registro que no debería aprobarse.",
+        "criterio": ""
+      },
+      {
+        "no": 10,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué es un falso negativo?",
+        "puntos": 7,
+        "respuestaInstructor": "La fórmula rechaza un registro que sí cumple.",
+        "criterio": ""
+      },
+      {
+        "no": 11,
+        "tipo": "Abierta",
+        "pregunta": "¿Por qué deben probarse los límites exactos?",
+        "puntos": 7,
+        "respuestaInstructor": "Porque permiten comprobar si el límite es inclusivo.",
+        "criterio": ""
+      },
+      {
+        "no": 12,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué riesgo presenta escribir \"VERDADERO\" manualmente?",
+        "puntos": 7,
+        "respuestaInstructor": "El contenido deja de responder a los datos.",
+        "criterio": ""
+      },
+      {
+        "no": 13,
+        "tipo": "Abierta",
+        "pregunta": "¿Por qué deben revisarse los paréntesis?",
+        "puntos": 7,
+        "respuestaInstructor": "Porque determinan qué condiciones se agrupan.",
+        "criterio": ""
+      },
+      {
+        "no": 14,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué combinación representa “no cancelado y cliente VIP o importe alto”?",
+        "puntos": 7,
+        "respuestaInstructor": "Requiere Y para no cancelado y O para las alternativas.",
+        "criterio": ""
+      },
+      {
+        "no": 15,
+        "tipo": "Abierta",
+        "pregunta": "¿Cómo se valida una regla lógica?",
+        "puntos": 7,
+        "respuestaInstructor": "Mediante comparaciones individuales, tabla de verdad, casos límite y conciliación.",
+        "criterio": ""
+      }
+    ]
+  },
+  "9": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué función suma mediante un criterio?",
+        "puntos": 7,
+        "respuestaInstructor": "SUMAR.SI.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué función suma mediante varios criterios?",
+        "puntos": 7,
+        "respuestaInstructor": "SUMAR.SI.CONJUNTO.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué función cuenta mediante un criterio?",
+        "puntos": 7,
+        "respuestaInstructor": "CONTAR.SI.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué función cuenta mediante varios criterios?",
+        "puntos": 7,
+        "respuestaInstructor": "CONTAR.SI.CONJUNTO.",
+        "criterio": ""
+      },
+      {
+        "no": 5,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué representa el rango en SUMAR.SI?",
+        "puntos": 7,
+        "respuestaInstructor": "Es la columna donde se evalúa el criterio.",
+        "criterio": ""
+      },
+      {
+        "no": 6,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué representa el rango de suma?",
+        "puntos": 7,
+        "respuestaInstructor": "Es la columna cuyos valores deben agregarse.",
+        "criterio": ""
+      },
+      {
+        "no": 7,
+        "tipo": "Abierta",
+        "pregunta": "¿Cómo se escribe un criterio mayor o igual que 50?",
+        "puntos": 7,
+        "respuestaInstructor": "Como texto: \">=50\".",
+        "criterio": ""
+      },
+      {
+        "no": 8,
+        "tipo": "Abierta",
+        "pregunta": "¿Cómo se utiliza un límite almacenado en B2?",
+        "puntos": 7,
+        "respuestaInstructor": "Concatenando: \">=\"&B2.",
+        "criterio": ""
+      },
+      {
+        "no": 9,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué representa * en un criterio?",
+        "puntos": 7,
+        "respuestaInstructor": "Cualquier secuencia de caracteres.",
+        "criterio": ""
+      },
+      {
+        "no": 10,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué representa ??",
+        "puntos": 7,
+        "respuestaInstructor": "Un carácter individual.",
+        "criterio": ""
+      },
+      {
+        "no": 11,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué diferencia existe entre PAC* y *PAC*?",
+        "puntos": 7,
+        "respuestaInstructor": "PAC* exige que el texto comience con PAC; *PAC* permite que PAC aparezca en cualquier posición.",
+        "criterio": ""
+      },
+      {
+        "no": 12,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué riesgo producen rangos de distinto tamaño?",
+        "puntos": 7,
+        "respuestaInstructor": "Pueden generar errores o asociaciones incorrectas; en SUMAR.SI.CONJUNTO, los rangos deben tener dimensiones coherentes.",
+        "criterio": ""
+      },
+      {
+        "no": 13,
+        "tipo": "Abierta",
+        "pregunta": "¿Cómo se construye un intervalo?",
+        "puntos": 7,
+        "respuestaInstructor": "Aplicando un criterio inferior y otro superior al mismo campo.",
+        "criterio": ""
+      },
+      {
+        "no": 14,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué lógica aplican normalmente los criterios de una función CONJUNTO?",
+        "puntos": 7,
+        "respuestaInstructor": "Lógica Y, porque todas las condiciones indicadas deben cumplirse.",
+        "criterio": ""
+      },
+      {
+        "no": 15,
+        "tipo": "Abierta",
+        "pregunta": "¿Cómo se valida un indicador condicional?",
+        "puntos": 7,
+        "respuestaInstructor": "Mediante filtros, controles auxiliares, casos límite y conciliación.",
+        "criterio": ""
+      }
+    ]
+  },
+  "13": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "¿Dónde busca BUSCARV la clave?",
+        "puntos": 7,
+        "respuestaInstructor": "En la primera columna de la matriz seleccionada.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué representa el tercer argumento?",
+        "puntos": 7,
+        "respuestaInstructor": "La posición de la columna que contiene el resultado.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué significa FALSO?",
+        "puntos": 7,
+        "respuestaInstructor": "Solicita coincidencia exacta.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué significa VERDADERO?",
+        "puntos": 7,
+        "respuestaInstructor": "Solicita coincidencia aproximada.",
+        "criterio": ""
+      },
+      {
+        "no": 5,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué ocurre si se omite el cuarto argumento?",
+        "puntos": 7,
+        "respuestaInstructor": "Se utiliza coincidencia aproximada.",
+        "criterio": ""
+      },
+      {
+        "no": 6,
+        "tipo": "Abierta",
+        "pregunta": "¿Cuándo debe utilizarse coincidencia exacta?",
+        "puntos": 7,
+        "respuestaInstructor": "Para códigos, folios y otras claves únicas.",
+        "criterio": ""
+      },
+      {
+        "no": 7,
+        "tipo": "Abierta",
+        "pregunta": "¿Cuándo es apropiada la coincidencia aproximada?",
+        "puntos": 7,
+        "respuestaInstructor": "Para bandas o escalas con límites ordenados.",
+        "criterio": ""
+      },
+      {
+        "no": 8,
+        "tipo": "Abierta",
+        "pregunta": "¿Por qué debe ordenarse una tabla aproximada?",
+        "puntos": 7,
+        "respuestaInstructor": "Porque la función debe identificar correctamente el límite inferior aplicable.",
+        "criterio": ""
+      },
+      {
+        "no": 9,
+        "tipo": "Abierta",
+        "pregunta": "¿Por qué debe fijarse la matriz?",
+        "puntos": 7,
+        "respuestaInstructor": "Para evitar que el catálogo se desplace al copiar.",
+        "criterio": ""
+      },
+      {
+        "no": 10,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué función trata específicamente #N/A?",
+        "puntos": 7,
+        "respuestaInstructor": "SI.ND.",
+        "criterio": ""
+      },
+      {
+        "no": 11,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué riesgo presenta SI.ERROR con valor cero?",
+        "puntos": 7,
+        "respuestaInstructor": "Puede ocultar un error estructural como si fuera un resultado válido.",
+        "criterio": ""
+      },
+      {
+        "no": 12,
+        "tipo": "Abierta",
+        "pregunta": "¿Puede BUSCARV devolver directamente una columna a la izquierda?",
+        "puntos": 7,
+        "respuestaInstructor": "No de forma directa, porque busca de izquierda a derecha.",
+        "criterio": ""
+      },
+      {
+        "no": 13,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué ocurre con claves duplicadas?",
+        "puntos": 7,
+        "respuestaInstructor": "El resultado puede ser ambiguo y debe auditarse.",
+        "criterio": ""
+      },
+      {
+        "no": 14,
+        "tipo": "Abierta",
+        "pregunta": "¿Por qué pueden fallar claves visualmente iguales?",
+        "puntos": 7,
+        "respuestaInstructor": "Pueden diferir por espacios o por tipo de dato.",
+        "criterio": ""
+      },
+      {
+        "no": 15,
+        "tipo": "Abierta",
+        "pregunta": "¿Cómo se valida una búsqueda?",
+        "puntos": 7,
+        "respuestaInstructor": "Mediante casos conocidos, ausencias, límites, comparación con el catálogo y conciliación.",
+        "criterio": ""
+      }
+    ]
+  },
+  "17": {
+    "tipo": "estandar",
+    "items": [
+      {
+        "no": 1,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué referencia debe utilizarse para un parámetro fijo?",
+        "puntos": 5,
+        "respuestaInstructor": "Una referencia absoluta, para que no se desplace al copiar.",
+        "criterio": ""
+      },
+      {
+        "no": 2,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué función permite tratar específicamente #N/A?",
+        "puntos": 5,
+        "respuestaInstructor": "SI.ND.",
+        "criterio": ""
+      },
+      {
+        "no": 3,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué función lógica corresponde a requisitos obligatorios?",
+        "puntos": 5,
+        "respuestaInstructor": "Y.",
+        "criterio": ""
+      },
+      {
+        "no": 4,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué diferencia existe entre SUMAR.SI y SUMAR.SI.CONJUNTO?",
+        "puntos": 5,
+        "respuestaInstructor": "La primera utiliza un criterio y la segunda permite varios criterios simultáneos.",
+        "criterio": ""
+      },
+      {
+        "no": 5,
+        "tipo": "Abierta",
+        "pregunta": "¿Por qué deben normalizarse las claves?",
+        "puntos": 5,
+        "respuestaInstructor": "Para eliminar diferencias de espacios, estructura o formato sin alterar el original.",
+        "criterio": ""
+      },
+      {
+        "no": 6,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué función permite agregar meses naturales?",
+        "puntos": 5,
+        "respuestaInstructor": "FECHA.MES.",
+        "criterio": ""
+      },
+      {
+        "no": 7,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué función calcula una fecha futura laborable?",
+        "puntos": 5,
+        "respuestaInstructor": "DIA.LAB o DIA.LAB.INTL, según el calendario.",
+        "criterio": ""
+      },
+      {
+        "no": 8,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué tipo de coincidencia se utiliza para códigos?",
+        "puntos": 5,
+        "respuestaInstructor": "Coincidencia exacta.",
+        "criterio": ""
+      },
+      {
+        "no": 9,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué ventaja ofrece BUSCARX frente a un índice fijo?",
+        "puntos": 5,
+        "respuestaInstructor": "Separa la matriz buscada de la devuelta y no depende de un índice numérico.",
+        "criterio": ""
+      },
+      {
+        "no": 10,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué devuelve COINCIDIR?",
+        "puntos": 5,
+        "respuestaInstructor": "Una posición relativa.",
+        "criterio": ""
+      },
+      {
+        "no": 11,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué permite una búsqueda bidimensional?",
+        "puntos": 5,
+        "respuestaInstructor": "Recuperar la intersección de una fila y una columna.",
+        "criterio": ""
+      },
+      {
+        "no": 12,
+        "tipo": "Abierta",
+        "pregunta": "¿Cómo se representa lógica Y en FILTRAR?",
+        "puntos": 5,
+        "respuestaInstructor": "Mediante la multiplicación de expresiones lógicas.",
+        "criterio": ""
+      },
+      {
+        "no": 13,
+        "tipo": "Abierta",
+        "pregunta": "¿Cómo se representa lógica O?",
+        "puntos": 5,
+        "respuestaInstructor": "Mediante la suma de expresiones lógicas.",
+        "criterio": ""
+      },
+      {
+        "no": 14,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué diferencia existe entre UNICOS y Quitar duplicados?",
+        "puntos": 5,
+        "respuestaInstructor": "UNICOS genera una vista; Quitar duplicados modifica el origen.",
+        "criterio": ""
+      },
+      {
+        "no": 15,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué bloquea un resultado dinámico?",
+        "puntos": 5,
+        "respuestaInstructor": "Celdas ocupadas, combinadas u otros resultados en la zona de expansión.",
+        "criterio": ""
+      },
+      {
+        "no": 16,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué es una prueba de regresión?",
+        "puntos": 5,
+        "respuestaInstructor": "Comprobar que una corrección no haya alterado otros cálculos.",
+        "criterio": ""
+      },
+      {
+        "no": 17,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué es un falso positivo?",
+        "puntos": 5,
+        "respuestaInstructor": "Aprobar una operación que no cumple.",
+        "criterio": ""
+      },
+      {
+        "no": 18,
+        "tipo": "Abierta",
+        "pregunta": "¿Qué es un falso cero?",
+        "puntos": 5,
+        "respuestaInstructor": "Sustituir un error o ausencia por cero y tratarlo como resultado válido.",
+        "criterio": ""
+      },
+      {
+        "no": 19,
+        "tipo": "Abierta",
+        "pregunta": "¿Cuándo debe utilizarse una fecha de corte fija?",
+        "puntos": 5,
+        "respuestaInstructor": "En cierres históricos y reportes reproducibles.",
+        "criterio": ""
+      },
+      {
+        "no": 20,
+        "tipo": "Abierta",
+        "pregunta": "¿Cuándo está conciliado un modelo?",
+        "puntos": 5,
+        "respuestaInstructor": "Cuando todos los registros e importes quedan explicados y las diferencias son cero.",
+        "criterio": ""
+      }
+    ]
+  }
+}

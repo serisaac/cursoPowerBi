@@ -1,0 +1,5 @@
+EPEABI - Modulo 3: Tablas y gestion estructurada de datos
+
+Contenido: 18 carpetas de leccion. Cada una incluye Inicial, Practica, Solucion, Rubrica y Datos CSV.
+Los libros con segmentaciones contienen la zona y tareas para insertarlas manualmente en Excel.
+Las formulas se recalculan al abrirse en Microsoft Excel.

@@ -1,0 +1,302 @@
+[
+  {
+    "q": "¿Qué debe hacerse antes de modificar una fuente empresarial?",
+    "opts": [
+      "Ordenar los datos",
+      "Aplicar filtros",
+      "Preservar una copia original",
+      "Quitar duplicados"
+    ],
+    "correct": 2
+  },
+  {
+    "q": "¿Qué condición caracteriza una base rectangular?",
+    "opts": [
+      "Una fila por registro y una columna por campo",
+      "Celdas combinadas en el detalle",
+      "Totales entre los registros",
+      "Encabezados distribuidos en varias filas"
+    ],
+    "correct": 0
+  },
+  {
+    "q": "¿Qué ocurre al crear una tabla?",
+    "opts": [
+      "Excel asigna nombres a la tabla y sus columnas",
+      "Las fórmulas desaparecen",
+      "Los datos se convierten en texto",
+      "La tabla queda protegida automáticamente"
+    ],
+    "correct": 0
+  },
+  {
+    "q": "¿Qué ventaja ofrece una referencia estructurada?",
+    "opts": [
+      "Evita todos los errores",
+      "Crea segmentaciones",
+      "Utiliza nombres de tabla y campos",
+      "Elimina valores vacíos"
+    ],
+    "correct": 2
+  },
+  {
+    "q": "¿Cuál es una referencia de fila actual?",
+    "opts": [
+      "[Cantidad]",
+      "[[#Totales]]",
+      "A:A",
+      "[@Cantidad]"
+    ],
+    "correct": 3
+  },
+  {
+    "q": "¿Qué caracteriza una columna calculada?",
+    "opts": [
+      "Solo funciona fuera de tablas",
+      "Cada fila utiliza una fórmula sin relación",
+      "La misma fórmula se extiende a las filas de la columna",
+      "No admite referencias estructuradas"
+    ],
+    "correct": 2
+  },
+  {
+    "q": "¿Qué función responde a las filas visibles?",
+    "opts": [
+      "TEXTO",
+      "LARGO",
+      "SUBTOTALES",
+      "SUMA general"
+    ],
+    "correct": 2
+  },
+  {
+    "q": "¿Qué código de SUBTOTALES cuenta celdas no vacías visibles?",
+    "opts": [
+      "103",
+      "101",
+      "104",
+      "109"
+    ],
+    "correct": 0
+  },
+  {
+    "q": "¿Qué código suma valores visibles e ignora también filas ocultas manualmente?",
+    "opts": [
+      "103",
+      "9",
+      "3",
+      "109"
+    ],
+    "correct": 3
+  },
+  {
+    "q": "¿Qué debe preservarse antes de ordenar?",
+    "opts": [
+      "La celda activa",
+      "Una clave de orden original",
+      "El color de la tabla",
+      "El tamaño de la ventana"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué riesgo existe al ordenar solo una columna?",
+    "opts": [
+      "Cambiar los formatos",
+      "Activar Autofiltro",
+      "Separar los campos de sus registros",
+      "Crear una tabla dinámica"
+    ],
+    "correct": 2
+  },
+  {
+    "q": "¿Qué necesita una prioridad como Crítica, Alta, Media y Baja?",
+    "opts": [
+      "Un orden alfabético",
+      "Un formato contable",
+      "Una serie de fechas",
+      "Una lista personalizada"
+    ],
+    "correct": 3
+  },
+  {
+    "q": "¿Qué hace un filtro?",
+    "opts": [
+      "Convierte los datos",
+      "Elimina las filas",
+      "Oculta temporalmente las filas que no cumplen el criterio",
+      "Ordena permanentemente"
+    ],
+    "correct": 2
+  },
+  {
+    "q": "¿Qué lógica utiliza un intervalo interno?",
+    "opts": [
+      "O",
+      "NO",
+      "XOR",
+      "Y"
+    ],
+    "correct": 3
+  },
+  {
+    "q": "¿Qué lógica utiliza un conjunto de valores externos?",
+    "opts": [
+      "Igual",
+      "O",
+      "Y",
+      "Promedio"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué significa “al menos 50,000”?",
+    "opts": [
+      "Menor o igual que 50,000",
+      "Mayor que 50,000",
+      "Igual a 50",
+      "Mayor o igual que 50,000"
+    ],
+    "correct": 3
+  },
+  {
+    "q": "¿Qué representa * en un filtro de texto?",
+    "opts": [
+      "Solo números",
+      "Cualquier cantidad de caracteres",
+      "Un carácter individual",
+      "Una celda vacía"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué debe comprobarse al filtrar por color?",
+    "opts": [
+      "Solo el tono",
+      "El valor y la regla subyacentes",
+      "El nombre de la hoja",
+      "La orientación de impresión"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Qué campos son adecuados para segmentaciones?",
+    "opts": [
+      "Comentarios extensos",
+      "Importes exactos",
+      "Categorías con pocos valores distintos",
+      "Folios únicos"
+    ],
+    "correct": 2
+  },
+  {
+    "q": "¿Qué lógica representan varios elementos de una segmentación del mismo campo?",
+    "opts": [
+      "O",
+      "Ninguna",
+      "Exclusión",
+      "Y"
+    ],
+    "correct": 0
+  },
+  {
+    "q": "¿Qué lógica representan criterios del Filtro avanzado en la misma fila?",
+    "opts": [
+      "O",
+      "Suma",
+      "NO",
+      "Y"
+    ],
+    "correct": 3
+  },
+  {
+    "q": "¿Qué lógica representan criterios en filas diferentes?",
+    "opts": [
+      "Promedio",
+      "Concatenación",
+      "Y",
+      "O"
+    ],
+    "correct": 3
+  },
+  {
+    "q": "¿Qué debe ocurrir con los encabezados de criterios directos?",
+    "opts": [
+      "Deben ser diferentes",
+      "Deben contener fórmulas",
+      "Deben coincidir con los encabezados de la fuente",
+      "Deben permanecer vacíos"
+    ],
+    "correct": 2
+  },
+  {
+    "q": "¿Cómo debe ser el encabezado de un criterio calculado?",
+    "opts": [
+      "Diferente de los encabezados de la fuente",
+      "Numérico",
+      "Igual al campo evaluado",
+      "Vacío"
+    ],
+    "correct": 0
+  },
+  {
+    "q": "¿Qué debe permanecer relativo en un criterio calculado?",
+    "opts": [
+      "La fila del registro evaluado",
+      "El parámetro",
+      "La fecha de corte",
+      "El promedio autorizado"
+    ],
+    "correct": 0
+  },
+  {
+    "q": "¿Qué hace Solo registros únicos?",
+    "opts": [
+      "Oculta o extrae repeticiones sin eliminarlas de la fuente",
+      "Convierte la tabla en rango",
+      "Elimina duplicados permanentemente",
+      "Cambia las claves"
+    ],
+    "correct": 0
+  },
+  {
+    "q": "¿Qué determina si dos filas se consideran duplicadas?",
+    "opts": [
+      "Las columnas seleccionadas como clave",
+      "El ancho de las columnas",
+      "El color de la fila",
+      "La posición en la hoja"
+    ],
+    "correct": 0
+  },
+  {
+    "q": "¿Qué debe definirse antes de quitar duplicados?",
+    "opts": [
+      "El área de impresión",
+      "El estilo de segmentación",
+      "El color del encabezado",
+      "La política de supervivencia"
+    ],
+    "correct": 3
+  },
+  {
+    "q": "¿Qué demuestra una conciliación igual a cero?",
+    "opts": [
+      "Que la tabla está vacía",
+      "Que los componentes explican el total de control",
+      "Que no existen fórmulas",
+      "Que todos los filtros están activos"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "¿Cuándo está aprobado el proyecto?",
+    "opts": [
+      "Cuando tiene segmentaciones",
+      "Cuando se redujo el número de filas",
+      "Cuando contiene una tabla",
+      "Cuando la solución es íntegra, reproducible, probada y conciliada"
+    ],
+    "correct": 3
+  }
+]

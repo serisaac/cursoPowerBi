@@ -1,0 +1,102 @@
+[
+  {
+    "q": "¿Qué condición distingue a una base rectangular?",
+    "opts": [
+      "Una fila por registro y una columna por variable.",
+      "Una hoja por celda.",
+      "Varias tablas superpuestas.",
+      "Totales intercalados."
+    ],
+    "correct": 0
+  },
+  {
+    "q": "¿Por qué debe conservarse el archivo original?",
+    "opts": [
+      "Para mantener evidencia del estado recibido.",
+      "Para duplicar errores.",
+      "Para aumentar el tamaño.",
+      "Para cambiar la extensión."
+    ],
+    "correct": 0
+  },
+  {
+    "q": "¿Qué indica una constante dentro de una columna calculada?",
+    "opts": [
+      "Puede representar una fórmula sustituida.",
+      "Siempre es correcta.",
+      "Es un gráfico.",
+      "Es una hoja oculta."
+    ],
+    "correct": 0
+  },
+  {
+    "q": "¿Cuál debe ser la diferencia entre el detalle y el resumen?",
+    "opts": [
+      "Cero, salvo tolerancia autorizada.",
+      "Cualquier importe.",
+      "Diez por ciento.",
+      "No debe calcularse."
+    ],
+    "correct": 0
+  },
+  {
+    "q": "¿Qué debe incluir un gráfico accesible?",
+    "opts": [
+      "Título y texto alternativo.",
+      "Solo colores.",
+      "Celdas combinadas.",
+      "Una contraseña."
+    ],
+    "correct": 0
+  },
+  {
+    "q": "¿Qué protección impide agregar o eliminar hojas?",
+    "opts": [
+      "Protección de estructura.",
+      "Formato condicional.",
+      "Bloqueo de una celda.",
+      "Área de impresión."
+    ],
+    "correct": 0
+  },
+  {
+    "q": "¿Qué sucede con una celda bloqueada si la hoja no está protegida?",
+    "opts": [
+      "Sigue siendo editable.",
+      "El archivo se cierra.",
+      "Se convierte en imagen.",
+      "Se elimina."
+    ],
+    "correct": 0
+  },
+  {
+    "q": "¿Qué debe hacerse después de corregir una fórmula?",
+    "opts": [
+      "Ejecutar pruebas de regresión.",
+      "Eliminar la bitácora.",
+      "Romper los vínculos.",
+      "Ocultar los resultados."
+    ],
+    "correct": 0
+  },
+  {
+    "q": "¿Qué debe comprobarse después de generar el PDF?",
+    "opts": [
+      "Todas sus páginas y el contenido autorizado.",
+      "Solo el nombre.",
+      "Únicamente la primera página.",
+      "Solo la extensión."
+    ],
+    "correct": 0
+  },
+  {
+    "q": "¿Cuándo debe rechazarse el libro?",
+    "opts": [
+      "Cuando existan errores críticos o resultados sin conciliar.",
+      "Cuando tenga más de una hoja.",
+      "Cuando utilice fórmulas.",
+      "Cuando incluya un resumen."
+    ],
+    "correct": 0
+  }
+]
