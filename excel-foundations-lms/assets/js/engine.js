@@ -6,6 +6,8 @@
 const MODULE_NUMBER = parseInt(CURRENT_MODULE_ID.split('_')[1], 10);
 const DATA_BASE = `../../assets/data/modulo-${MODULE_NUMBER}/`;
 const FILES_BASE = `../../assets/files/modulo-${MODULE_NUMBER}/`;
+// Vista de libro: se activa por módulo declarando `const BOOK_VIEW = true;` antes de cargar engine.js.
+const BOOK_VIEW_ON = (typeof BOOK_VIEW !== 'undefined') && BOOK_VIEW === true;
 
 const MIME_BY_EXT = {
     xlsx: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
@@ -78,6 +80,7 @@ async function initModule() {
     loadModuleNotes();
     renderCourseModulesSidebar();
     renderLessonNav();
+    await ensureBookFontsLoaded(); // evita repaginar con métricas distintas cuando la fuente termina de cargar
     renderLessonContent(1);
     renderQuizSelector();
     renderQuizFor(1);
@@ -148,6 +151,18 @@ function renderCourseModulesSidebar() {
 // ---------- LESSON NAV ----------
 function renderLessonNav() {
     const nav = document.getElementById('lesson-nav');
+    if (BOOK_VIEW_ON) {
+        nav.classList.add('book-chapters');
+        nav.innerHTML = LESSONS.map(l => {
+            const done = isLessonComplete(l.id);
+            return `<button onclick="renderLessonContent(${l.id})" id="nav-btn-${l.id}" class="book-chapter-btn lms-chapter-btn ${l.id===currentLessonId?'active':''} text-[11px] font-semibold px-2.5 rounded-md border border-transparent flex items-center gap-1">
+                ${done ? '<i data-lucide="check-circle-2" class="w-3 h-3"></i>' : ''}
+                Cap. ${l.id}
+            </button>`;
+        }).join('');
+        safeIcons();
+        return;
+    }
     nav.innerHTML = LESSONS.map(l => {
         const done = isLessonComplete(l.id);
         return `<button onclick="renderLessonContent(${l.id})" id="nav-btn-${l.id}" class="lesson-nav-btn ${l.id===currentLessonId?'active':''} text-[11px] font-semibold px-2.5 py-1.5 rounded-md border border-transparent text-slate-600 hover:bg-white flex items-center gap-1">
@@ -160,11 +175,19 @@ function renderLessonNav() {
 
 function getLesson(id) { return LESSONS.find(l => l.id === Number(id)); }
 
-function renderLessonContent(id) {
+function renderLessonContent(id, jumpToEnd) {
     currentLessonId = id;
     const l = getLesson(id);
     const container = document.getElementById('lesson-content');
     const read = !!moduleState.theoryRead[id];
+
+    if (BOOK_VIEW_ON) {
+        renderLessonContentBook(id, l, read, container, jumpToEnd);
+        renderLessonNav();
+        document.getElementById('video-lesson-title').innerText = `Clase Grabada: Lección ${id} — ${l.title}`;
+        safeIcons();
+        return;
+    }
 
     let secsHtml = l.secciones.map((s, idx) => `
         <article class="space-y-2 p-4 bg-white border border-slate-200 rounded-xl shadow-sm">
@@ -251,6 +274,287 @@ function renderLessonContent(id) {
     document.getElementById('video-lesson-title').innerText = `Clase Grabada: Lección ${id} — ${l.title}`;
     safeIcons();
 }
+
+// Espera a que la fuente Lora (usada por la vista de libro) termine de cargar antes de
+// paginar, para que la medición de altura no cambie a mitad de sesión cuando la fuente llega.
+async function ensureBookFontsLoaded() {
+    if (!BOOK_VIEW_ON || !document.fonts) return;
+    try {
+        await Promise.all([
+            document.fonts.load('400 16px Lora'),
+            document.fonts.load('600 16px Lora'),
+            document.fonts.load('700 16px Lora'),
+            document.fonts.load('italic 400 16px Lora'),
+        ]);
+        await document.fonts.ready;
+    } catch (e) { /* si falla la carga, se pagina con la fuente de reemplazo */ }
+}
+
+// Estado de paginación del libro (solo relevante cuando BOOK_VIEW_ON).
+let bookSpreads = [['']];
+let bookSpreadIndex = 0;
+let bookLeavesPerSpread = 2;
+let bookLeafHeightPx = 0;
+
+// .book-leaf se rellena a sí misma con height:100% a través de una cadena de flexbox
+// (#lesson-content > #book-onscreen > .book-spread-outer > .book-spread > .book-leaf,
+// ver styles.css), así que aquí no adivinamos su alto: simplemente medimos el que el
+// navegador ya calculó para la hoja real. Ese número es el que usa paginateBookBlocks
+// para que su "probe" (que no vive dentro de esa cadena de flexbox) mida exactamente
+// lo mismo que la hoja que el usuario ve.
+function updateBookLeafHeightVar(container) {
+    const leaf = container && container.querySelector('.book-leaf');
+    if (!leaf) return bookLeafHeightPx;
+    bookLeafHeightPx = Math.round(leaf.getBoundingClientRect().height);
+    return bookLeafHeightPx;
+}
+
+// Se basa en el ancho real del panel de contenido (no en el de la ventana completa),
+// porque el sidebar de 320px reduce el espacio disponible para el spread de dos hojas.
+function computeLeavesPerSpread() {
+    const ref = document.getElementById('lesson-content');
+    const w = (ref && ref.clientWidth) || window.innerWidth;
+    return w < 760 ? 1 : 2;
+}
+
+// Divide un texto largo en varios <p> más cortos (por límite de frases), para que la
+// paginación pueda repartirlo entre varias hojas en vez de tratarlo como un bloque indivisible.
+function splitTextIntoParaBlocks(text, extraClass, maxLen) {
+    maxLen = maxLen || 420;
+    extraClass = extraClass || '';
+    if (!text || text.length <= maxLen) return [`<p class="book-para ${extraClass}">${text||''}</p>`];
+    const sentences = text.split(/(?<=\.)\s+/);
+    const chunks = [];
+    let cur = '';
+    sentences.forEach(sent => {
+        if (cur && (cur + ' ' + sent).trim().length > maxLen) {
+            chunks.push(cur.trim());
+            cur = sent;
+        } else {
+            cur = (cur ? cur + ' ' : '') + sent;
+        }
+    });
+    if (cur) chunks.push(cur.trim());
+    return chunks.map(c => `<p class="book-para ${extraClass}">${c}</p>`);
+}
+
+// Igual que splitTextIntoParaBlocks pero para listas (<ul>/<ol>): una lista larga es un
+// bloque indivisible para el paginador, así que si una lección tiene muchos objetivos o
+// puntos de resumen, esa lista sola puede no caber en una hoja y forzar scroll interno.
+// La partimos en varias listas más chicas para que el paginador pueda repartirlas entre
+// varias hojas igual que hace con los párrafos largos.
+function splitListIntoBlocks(items, tag, listClass, listStyle, maxPerChunk) {
+    maxPerChunk = maxPerChunk || 6;
+    if (!items || !items.length) return [`<${tag} class="${listClass}" style="${listStyle}"></${tag}>`];
+    const chunks = [];
+    for (let i = 0; i < items.length; i += maxPerChunk) {
+        const liHtml = items.slice(i, i + maxPerChunk).map(o => `<li>${o}</li>`).join('');
+        chunks.push(`<${tag} class="${listClass}" style="${listStyle}">${liHtml}</${tag}>`);
+    }
+    return chunks;
+}
+
+function buildLessonBlocks(id, l, read) {
+    const blocks = [];
+    blocks.push(`
+        <div class="book-block-header">
+            <span class="book-kicker">Capítulo ${id} de ${TOTAL_LESSONS} &bull; ${l.duracion} &bull; ${l.dificultad}</span>
+            <h2 class="book-title mt-1">${l.title}</h2>
+            <hr class="book-divider">
+        </div>`);
+
+    splitTextIntoParaBlocks(l.situacion, 'book-italic mb-2', 420).forEach(p => blocks.push(p));
+
+    const objChunks = splitListIntoBlocks(l.objetivos, 'ul', 'book-note-list', 'padding-left:1.2rem; list-style:disc;');
+    blocks.push(`
+        <div class="mb-2">
+            <p class="book-section-title flex items-center gap-2 mb-2"><span class="book-section-num shrink-0">&#9670;</span>Objetivos de aprendizaje</p>
+            ${objChunks[0]}
+        </div>`);
+    for (let c = 1; c < objChunks.length; c++) {
+        blocks.push(`<div class="mb-2">${objChunks[c]}</div>`);
+    }
+
+    l.secciones.forEach((s, idx) => {
+        const paraChunks = splitTextIntoParaBlocks(s.para, '', 480);
+        blocks.push(`
+        <div class="mb-2">
+            <p class="book-section-title flex items-center gap-2 mb-1"><span class="book-section-num shrink-0">${idx+1}</span>${s.title}</p>
+            ${paraChunks[0]}
+        </div>`);
+        for (let c = 1; c < paraChunks.length; c++) {
+            blocks.push(`<div class="mb-2">${paraChunks[c]}</div>`);
+        }
+    });
+
+    const resChunks = splitListIntoBlocks(l.resumen, 'ol', 'book-note-list', 'padding-left:1.2rem; list-style:decimal;');
+    blocks.push(`
+        <div class="book-note-box p-3 mb-2">
+            <p class="book-section-title flex items-center gap-2 mb-2"><span class="book-section-num shrink-0">&#9670;</span>Resumen del capítulo</p>
+            ${resChunks[0]}
+        </div>`);
+    for (let c = 1; c < resChunks.length; c++) {
+        blocks.push(`<div class="book-note-box p-3 mb-2">${resChunks[c]}</div>`);
+    }
+
+    if (l.quiz && l.quiz.length > 0) {
+        blocks.push(`<div class="book-callout mb-2">Esta lección tiene una evaluación de ${l.quiz.length} preguntas en la pestaña <button onclick="switchTab('quiz'); renderQuizFor(${id})" class="underline font-semibold">Evaluaciones</button>.</div>`);
+    } else if (NO_QUIZ_LESSON_IDS.includes(id)) {
+        blocks.push(`<div class="book-callout mb-2">Esta lección no tiene quiz: se aprueba marcando el entregable en la pestaña <button onclick="switchTab('quiz'); renderQuizFor(${id})" class="underline font-semibold">Evaluaciones</button>.</div>`);
+    } else if (id === TOTAL_LESSONS && FINAL_QUIZ.length > 0) {
+        blocks.push(`<div class="book-callout mb-2">Esta lección incluye la <strong>evaluación final integradora</strong> (${FINAL_QUIZ.length} preguntas) en la pestaña <button onclick="switchTab('quiz'); renderQuizFor('final')" class="underline font-semibold">Evaluaciones</button>.</div>`);
+    }
+
+    if (l.files && l.files.length > 0) {
+        blocks.push(`<div class="book-callout mb-2">Esta lección tiene ${l.files.length} archivo${l.files.length>1?'s':''} de práctica en la pestaña <button onclick="switchTab('practice'); renderPracticeFor(${id})" class="underline font-semibold">Práctica (Datos)</button>.</div>`);
+    }
+
+    blocks.push(`
+        <div class="book-block-end">
+            <button onclick="toggleTheoryReadBook(${id})" id="book-mark-btn" class="book-mark-btn ${read?'done':''}">${read ? 'Lectura Completada ✓' : 'Marcar Lectura como Completada'}</button>
+            <p class="book-endnote">Fin del Capítulo ${id}</p>
+        </div>`);
+
+    return blocks;
+}
+
+// Reparte los bloques en "hojas" del tamaño real de .book-leaf, midiendo su altura en un
+// clon oculto, para que cada hoja quepa sin scroll (o con el mínimo posible).
+function paginateBookBlocks(blocks) {
+    const probe = document.createElement('div');
+    probe.className = 'book-leaf';
+    probe.style.visibility = 'hidden';
+    probe.style.position = 'absolute';
+    probe.style.left = '-9999px';
+    probe.style.top = '0';
+    // El probe cuelga de <body>, no de la cadena de flexbox real (.book-spread /
+    // #book-onscreen), así que ni su "flex: 1 1 0%" ni su "height: 100%" se aplican ahí:
+    // sin fijar ancho y alto explícitos aquí, mediría con su propio ancho de bloque y una
+    // altura basada en su contenido en vez del tamaño real que le tocó a la hoja en pantalla.
+    // Eso haría que el texto envuelva distinto y que la paginación calcule mal cuánto cabe,
+    // dejando espacio vacío o forzando scroll interno en la hoja real.
+    const realLeaf = document.getElementById('book-leaf-left');
+    if (realLeaf) probe.style.width = realLeaf.getBoundingClientRect().width + 'px';
+    probe.style.height = (bookLeafHeightPx || 620) + 'px';
+    document.body.appendChild(probe);
+    const maxHeight = probe.clientHeight;
+    probe.style.height = 'auto';
+    probe.style.maxHeight = 'none';
+
+    const pages = [];
+    let current = [];
+    probe.innerHTML = '';
+    for (let i = 0; i < blocks.length; i++) {
+        const attempt = current.concat([blocks[i]]);
+        probe.innerHTML = attempt.join('');
+        if (probe.scrollHeight > maxHeight && current.length > 0) {
+            pages.push(current.join(''));
+            current = [blocks[i]];
+            probe.innerHTML = current.join('');
+        } else {
+            current = attempt;
+        }
+    }
+    if (current.length) pages.push(current.join(''));
+    document.body.removeChild(probe);
+    return pages.length ? pages : [''];
+}
+
+function groupIntoSpreads(pages, leavesPerSpread) {
+    const spreads = [];
+    for (let i = 0; i < pages.length; i += leavesPerSpread) {
+        spreads.push(pages.slice(i, i + leavesPerSpread));
+    }
+    return spreads.length ? spreads : [['']];
+}
+
+function renderLessonContentBook(id, l, read, container, jumpToEnd) {
+    bookLeavesPerSpread = computeLeavesPerSpread();
+    const blocks = buildLessonBlocks(id, l, read);
+
+    container.innerHTML = `
+        <div id="book-onscreen">
+            <div class="book-spread-outer">
+                <button class="book-turn-btn" onclick="turnBookPage('prev')" id="book-turn-prev"><i data-lucide="chevron-left" class="w-4 h-4"></i></button>
+                <div class="book-spread ${bookLeavesPerSpread===1?'single':''}" id="book-spread-el">
+                    <div class="book-leaf book-leaf-left" id="book-leaf-left"></div>
+                    <div class="book-spine"></div>
+                    <div class="book-leaf book-leaf-right" id="book-leaf-right"></div>
+                </div>
+                <button class="book-turn-btn" onclick="turnBookPage('next')" id="book-turn-next"><i data-lucide="chevron-right" class="w-4 h-4"></i></button>
+            </div>
+            <div class="book-spread-footer"><span class="book-pagenum" id="book-spread-indicator"></span></div>
+        </div>
+        <div id="book-print-only" class="book-print-only">${blocks.join('')}</div>
+    `;
+
+    updateBookLeafHeightVar(container);
+    const pages = paginateBookBlocks(blocks);
+    bookSpreads = groupIntoSpreads(pages, bookLeavesPerSpread);
+    bookSpreadIndex = jumpToEnd ? bookSpreads.length - 1 : 0;
+    renderBookSpread();
+}
+
+function renderBookSpread() {
+    const spread = bookSpreads[bookSpreadIndex] || [''];
+    const leftEl = document.getElementById('book-leaf-left');
+    const rightEl = document.getElementById('book-leaf-right');
+    if (leftEl) leftEl.innerHTML = spread[0] || '';
+    if (rightEl && bookLeavesPerSpread === 2) {
+        rightEl.innerHTML = spread[1] !== undefined ? spread[1] : bookBlankLeafHtml();
+    }
+    const indicator = document.getElementById('book-spread-indicator');
+    if (indicator) indicator.textContent = `Capítulo ${currentLessonId} · Hoja ${bookSpreadIndex+1} de ${bookSpreads.length}`;
+
+    const prevBtn = document.getElementById('book-turn-prev');
+    const nextBtn = document.getElementById('book-turn-next');
+    if (prevBtn) prevBtn.disabled = (bookSpreadIndex === 0 && currentLessonId === 1);
+    if (nextBtn) nextBtn.disabled = (bookSpreadIndex === bookSpreads.length - 1 && currentLessonId === TOTAL_LESSONS);
+    safeIcons();
+}
+
+function bookBlankLeafHtml() {
+    return `<div class="book-leaf-blank"><i data-lucide="book-open" class="w-6 h-6"></i><span>Fin del Capítulo ${currentLessonId}</span></div>`;
+}
+
+function turnBookPage(dir) {
+    if (dir === 'next') {
+        if (bookSpreadIndex < bookSpreads.length - 1) { bookSpreadIndex++; renderBookSpread(); }
+        else if (currentLessonId < TOTAL_LESSONS) { renderLessonContent(currentLessonId + 1); }
+    } else {
+        if (bookSpreadIndex > 0) { bookSpreadIndex--; renderBookSpread(); }
+        else if (currentLessonId > 1) { renderLessonContent(currentLessonId - 1, true); }
+    }
+}
+
+function toggleTheoryReadBook(id) {
+    moduleState.theoryRead[id] = !moduleState.theoryRead[id];
+    saveState();
+    renderLessonNav();
+    renderBadges();
+    const btn = document.getElementById('book-mark-btn');
+    if (btn) {
+        const read = !!moduleState.theoryRead[id];
+        btn.textContent = read ? 'Lectura Completada ✓' : 'Marcar Lectura como Completada';
+        btn.classList.toggle('done', read);
+    }
+}
+
+let bookResizeTimer = null;
+window.addEventListener('resize', () => {
+    if (!BOOK_VIEW_ON || !moduleState) return;
+    clearTimeout(bookResizeTimer);
+    bookResizeTimer = setTimeout(() => {
+        const newLeaves = computeLeavesPerSpread();
+        const prevHeight = bookLeafHeightPx;
+        const newHeight = updateBookLeafHeightVar(document.getElementById('lesson-content'));
+        // Solo repaginar si cambia el modo hoja única/doble o si el alto disponible
+        // cambió lo suficiente como para que valga la pena recalcular las páginas.
+        if (newLeaves !== bookLeavesPerSpread || Math.abs(newHeight - prevHeight) > 24) {
+            renderLessonContent(currentLessonId);
+        }
+    }, 250);
+});
 
 function prevLesson() { if (currentLessonId > 1) renderLessonContent(currentLessonId - 1); }
 function nextLesson() { if (currentLessonId < TOTAL_LESSONS) renderLessonContent(currentLessonId + 1); }

@@ -5,14 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EPEABI Nivel 1 - Módulo 1 Completo</title>
 <link rel="stylesheet" href="../../assets/css/styles.css">
+<link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body class="bg-slate-100 text-slate-800 h-screen flex flex-col overflow-hidden">
 
-<header class="bg-slate-900 text-white h-16 flex items-center justify-between px-6 z-20 shadow-md shrink-0 border-b border-slate-800 no-print">
+<header class="lms-header bg-slate-900 text-white flex items-center justify-between px-6 z-20 shadow-md shrink-0 border-b border-slate-800 no-print">
     <div class="flex items-center space-x-4">
-        <div class="p-2 bg-emerald-500/10 rounded-lg border border-emerald-500/20">
-            <i data-lucide="file-spreadsheet" class="text-emerald-400 w-5 h-5"></i>
-        </div>
+        <img src="../../assets/img/logo-icon.png" alt="Logo Formavexa" class="h-9">
         <div>
             <h1 class="text-sm font-bold text-slate-100 tracking-wide">Módulo 1: Introducción al Ecosistema Excel</h1>
             <p class="text-xs text-slate-400">EPEABI Nivel 1 &bull; Nivel Básico &bull; 18 lecciones</p>
@@ -44,7 +46,7 @@
 </header>
 
 <div class="flex flex-1 overflow-hidden">
-<main class="flex-1 bg-slate-50 overflow-y-auto p-6 custom-scrollbar flex flex-col space-y-6">
+<main class="lms-main-pane flex-1 bg-slate-50 overflow-y-auto px-4 custom-scrollbar flex flex-col space-y-2">
 
     <section id="badge-banner" class="hidden relative bg-gradient-to-br from-slate-900 via-slate-900 to-emerald-950 border border-emerald-500/40 rounded-2xl shadow-xl overflow-hidden p-5 text-white no-print">
         <button onclick="dismissBadgeBanner()" class="absolute top-3 right-3 text-slate-400 hover:text-white p-1 rounded-lg bg-slate-800/50 hover:bg-slate-800 transition z-20" title="Cerrar notificación">
@@ -77,44 +79,41 @@
     </section>
 
     <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden flex flex-col flex-1">
-        <div id="tab-btn-container" class="flex border-b border-slate-200 bg-slate-100/70 p-1.5 gap-1 no-print overflow-x-auto">
-            <button onclick="switchTab('theory')" id="tab-btn-theory" class="flex-1 py-2.5 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-2 transition bg-white text-emerald-700 shadow-sm border border-slate-200 whitespace-nowrap">
+        <div id="tab-btn-container" class="lms-tab-bar flex border-b border-slate-200 bg-slate-100/70 gap-1 no-print overflow-x-auto">
+            <button onclick="switchTab('theory')" id="tab-btn-theory" class="lms-tab-btn flex-1 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-2 transition bg-white text-emerald-700 shadow-sm border border-slate-200 whitespace-nowrap">
                 <i data-lucide="book-open" class="w-4 h-4"></i> Contenido Teórico
             </button>
-            <button onclick="switchTab('video')" id="tab-btn-video" class="flex-1 py-2.5 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-2 transition text-slate-600 hover:text-slate-900 whitespace-nowrap">
+            <button onclick="switchTab('video')" id="tab-btn-video" class="lms-tab-btn flex-1 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-2 transition text-slate-600 hover:text-slate-900 whitespace-nowrap">
                 <i data-lucide="video" class="w-4 h-4"></i> Video de Tutoría
             </button>
-            <button onclick="switchTab('practice')" id="tab-btn-practice" class="flex-1 py-2.5 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-2 transition text-slate-600 hover:text-slate-900 whitespace-nowrap">
+            <button onclick="switchTab('practice')" id="tab-btn-practice" class="lms-tab-btn flex-1 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-2 transition text-slate-600 hover:text-slate-900 whitespace-nowrap">
                 <i data-lucide="table" class="w-4 h-4"></i> Práctica (Datos)
             </button>
-            <button onclick="switchTab('quiz')" id="tab-btn-quiz" class="flex-1 py-2.5 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-2 transition text-slate-600 hover:text-slate-900 whitespace-nowrap">
+            <button onclick="switchTab('quiz')" id="tab-btn-quiz" class="lms-tab-btn flex-1 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-2 transition text-slate-600 hover:text-slate-900 whitespace-nowrap">
                 <i data-lucide="check-square" class="w-4 h-4"></i> Evaluaciones
             </button>
-            <button onclick="switchTab('forum')" id="tab-btn-forum" class="flex-1 py-2.5 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-2 transition text-slate-600 hover:text-slate-900 whitespace-nowrap">
+            <button onclick="switchTab('forum')" id="tab-btn-forum" class="lms-tab-btn flex-1 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-2 transition text-slate-600 hover:text-slate-900 whitespace-nowrap">
                 <i data-lucide="messages-square" class="w-4 h-4"></i> Foro de Soporte
             </button>
-            <button onclick="switchTab('badges')" id="tab-btn-badges" class="flex-1 py-2.5 px-3 rounded-lg text-xs font-bold flex items-center justify-center gap-2 transition text-amber-700 bg-amber-50 hover:bg-amber-100 border border-amber-200/80 whitespace-nowrap">
+            <button onclick="switchTab('badges')" id="tab-btn-badges" class="lms-tab-btn flex-1 px-3 rounded-lg text-xs font-bold flex items-center justify-center gap-2 transition text-amber-700 bg-amber-50 hover:bg-amber-100 border border-amber-200/80 whitespace-nowrap">
                 <i data-lucide="trophy" class="w-4 h-4 text-amber-600"></i> Mis Insignias
             </button>
         </div>
 
-        <div class="p-6 flex-1 overflow-y-auto custom-scrollbar">
+        <div class="lms-content-pane px-4 flex-1 overflow-y-auto custom-scrollbar">
 
         <!-- TEORÍA -->
-        <div id="tab-theory" class="space-y-4">
-            <div class="border-b border-slate-200 pb-4 flex justify-between items-start gap-4">
-                <div>
-                    <h2 class="text-xl font-bold text-slate-900 mb-1">Manual del Módulo 1</h2>
-                    <p class="text-xs text-slate-600 leading-relaxed">Introducción al ecosistema Excel — 18 lecciones completas, de la creación de un libro profesional al proyecto integrador y reto final.</p>
-                </div>
+        <div id="tab-theory" class="space-y-1 flex flex-col h-full">
+            <div class="lms-theory-header border-b border-slate-200 flex justify-between items-center gap-4 shrink-0">
+                <h2 class="text-sm font-bold text-slate-900">Manual del Módulo 1</h2>
                 <button onclick="exportTheoryToPDF()" class="no-print bg-slate-900 hover:bg-slate-800 text-white text-xs px-3.5 py-2 rounded-lg font-medium transition shadow flex items-center gap-1.5 shrink-0">
                     <i data-lucide="file-down" class="w-4 h-4 text-emerald-400"></i> Descargar Lección (PDF)
                 </button>
             </div>
 
-            <div id="lesson-nav" class="flex flex-wrap gap-1.5 p-2 bg-slate-100/80 border border-slate-200 rounded-lg no-print"></div>
+            <div id="lesson-nav" class="lms-chapter-nav flex flex-wrap gap-1.5 bg-slate-100/80 border border-slate-200 rounded-lg no-print shrink-0"></div>
 
-            <div id="lesson-content" class="space-y-5"></div>
+            <div id="lesson-content" class="flex-1 min-h-0 flex flex-col"></div>
         </div>
 
         <!-- VIDEO -->
@@ -254,6 +253,7 @@ if (authUserNameEl && authUser) authUserNameEl.textContent = authUser.name;
 <script src="../../assets/js/course-modules.js"></script>
 <script>
 const CURRENT_MODULE_ID = "modulo_1";
+const BOOK_VIEW = true; // Vista de libro para el contenido teórico (piloto: solo Módulo 1)
 </script>
 <script src="../../assets/js/engine.js"></script>
 </body>
